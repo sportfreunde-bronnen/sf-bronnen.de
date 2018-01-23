@@ -1,0 +1,29 @@
+{
+  "name": "sf-bronnen.de",
+  "version": "1.0.0",
+  "description": "website sf-bronnen.de",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sportfreunde-bronnen/sf-bronnen.de.git"
+  },
+  "keywords": [
+    "sportfreunde",
+    "bronnen",
+    "fussball",
+    "gymnastik",
+    "aikido"
+  ],
+  "author": "Magnus Buk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sportfreunde-bronnen/sf-bronnen.de/issues"
+  },
+  "homepage": "https://github.com/sportfreunde-bronnen/sf-bronnen.de#readme",
+  "devDependencies": {
+    "compass": "^0.1.1"
+  }
+}
