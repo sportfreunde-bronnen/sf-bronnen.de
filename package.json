@@ -4,7 +4,8 @@
   "description": "website sf-bronnen.de",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "grunt watch",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,14 @@
   },
   "homepage": "https://github.com/sportfreunde-bronnen/sf-bronnen.de#readme",
   "devDependencies": {
-    "compass": "^0.1.1"
+    "autoprefixer": "^7.1.0",
+    "bootstrap": "^4.0.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^2.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
   }
 }
