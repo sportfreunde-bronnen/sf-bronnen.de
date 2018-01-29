@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'src/sass/',
           src: ['*.scss'],
-          dest: 'dist/css/',
+          dest: '../kirby/assets/css/',
           ext: '.css'
         }]
       }
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         ]
       },
       dist: {
-        src: ['dist/css/*.css']
+        src: ['../kirby/assets/css/*.css']
       }
     }
   });
