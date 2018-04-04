@@ -1,0 +1,20 @@
+type: group
+fields:
+  head1:
+    type: headline
+    label: Sonstige Angaben
+  trainer:
+    label: Übungsleiter/in
+    type: wysiwyg
+  ort:
+    label: Trainingsort
+    type: wysiwyg
+  zeiten:
+    label: Trainingszeiten
+    type: wysiwyg
+  anmeldung:
+    label: Anmeldung/Infos
+    type: wysiwyg
+  kosten:
+    label: Kosten (wenn benötigt)
+    type: wysiwyg

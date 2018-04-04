@@ -12,9 +12,10 @@ sourcecode for the website sf-bronnen.de
 ## Instructions
 ```bash
 # 1. Install dependencies
-cd frontend
+cd ./frontend
 npm install
 
 #2 Start dev mode (watching for changes)
-npm dev
+cd ./frontend
+npm run dev
 ```

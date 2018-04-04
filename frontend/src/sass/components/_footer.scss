@@ -1,0 +1,188 @@
+/* Footer Top Section Styles Starts */
+
+.footer-top {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #323946;
+}
+
+.footer-top.sub {
+  background-image: url(assets/images/footer-top-bg.jpg);
+}
+
+.footer-top h5 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #565f71;
+}
+
+.foot-info {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.foot-sm-links {
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-left: -7px;
+}
+
+.foot-sm-links li {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.foot-sm-links li .fa {
+  font-size: 18px;
+}
+
+.foot-sm-links li a:hover .fa {
+  color: #89daff;
+}
+
+.foot-list-style-1,
+.foot-address-list {
+  margin-bottom: 0;
+}
+
+.foot-address-list li {
+  font-size: 16px;
+}
+
+.foot-address-list li + li {
+  margin-top: 5px;
+}
+
+.foot-address-list .fa {
+  margin-top: 5px;
+  margin-right: 25px;
+  font-size: 24px;
+}
+
+.foot-address-list .fa-envelope {
+  font-size: 20px;
+}
+
+.foot-address-list .fa,
+.foot-address-list span {
+  float: left;
+}
+
+.foot-address-list strong {
+  font-size: 18px;
+}
+
+.foot-list-style-1 li {
+  font-size: 18px;
+}
+
+.foot-list-style-1 li::before {
+  content: "-";
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.foot-list-style-1 li + li {
+  margin-top: 5px;
+}
+
+/* Footer Top 1 Section Styles Starts */
+
+.footer-top-1 {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: #f7f7f7;
+}
+
+.foot-col-1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.foot-col-1 h5 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: #222;
+  font-size: 20px;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.foot-col-1 h5 .fa {
+  margin-right: 10px;
+  color: $brightBlue;
+  font-size: 22px;
+  vertical-align: -1px;
+}
+
+.foot-col-1 ul {
+  margin-top: 15px;
+}
+
+.foot-col-1 ul > li {
+  padding-top: 6px;
+  font-size: 16px;
+}
+
+ul.list-phone-no li {
+  color: #606060;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+ul.list-post-tags {
+  margin-top: 10px;
+}
+
+ul.list-post-tags > li {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+ul.list-post-tags > li > a {
+  padding: 10px 20px;
+  color: #606060;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+}
+
+ul.list-post-tags > li > a:hover,
+ul.list-post-tags > li > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: $brightBlue;
+}
+
+/* Copyright Styles Starts */
+
+.copyright,
+.copyright-1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #262e3c;
+}
+
+.copyright-1 {
+  background-color: $brightBlue
+}
+
+.copyright-1 ul > li + li {
+  padding-left: 10px;
+}
+
+.copyright-1 ul > li .fa {
+  font-size: 18px;
+}
+
+.copyright .red {
+  color: red;
+}
+
+.footer-top a,
+.copyright a,
+.copyright-1 a {
+  &:hover {
+    color: inherit;
+  }
+  color: #fff;
+}

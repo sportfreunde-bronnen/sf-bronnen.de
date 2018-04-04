@@ -16,6 +16,10 @@ for more information: http://getkirby.com/license
 */
 
 c::set('license', 'put your license key here');
+c::set('debug', true);
+
+c::set('ka.image.shrink.maxDimension', 2000);
+//c::set('kirby.extension.autopublish.templates', array('bericht'));
 
 /*
 

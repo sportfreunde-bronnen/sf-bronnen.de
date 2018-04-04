@@ -1,0 +1,18 @@
+title: Aktuelles
+options:
+  url: false
+  status: false
+  template: false
+  delete: false
+pages:
+  sort: date desc
+  num:
+    mode: date
+    field: added
+    format: Ymd
+  template: bericht
+  url: false
+fields:
+  title:
+    extends: title
+    readonly: true

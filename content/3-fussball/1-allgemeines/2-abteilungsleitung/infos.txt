@@ -1,0 +1,29 @@
+Title: Informationen
+
+----
+
+People: 
+
+- 
+  name: Tobias Wischnat
+  aufgabe: Abteilungsleiter
+  email: tobiaswischnat@gmx.de
+  phone: 0176 63092664
+- 
+  name: Roland Schick
+  aufgabe: Stellvertretender Abteilungsleiter
+  email: roland.schick@web.de
+  phone: ""
+- 
+  name: Oliver Radnick
+  aufgabe: Spielleiter
+  email: ""
+  phone: ""
+
+----
+
+Headline: Fußball bei den Sportfreunden
+
+----
+
+Infotext: Mit mehr als 200 Mitgliedern stellt die Abteilung Fußball die mitgliederstärkste Abteilung der Sportfreunde. Die erste Herrenmannschaft spielt in der Kreisliga A Riß Staffel 2 und wird durch die zweite Mannschaft in der entsprechend zugehörigen Reserveliga ergänzt.

@@ -1,0 +1,209 @@
+.main-menu {
+  margin-bottom: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-image: linear-gradient(to top, #fff 20%, $navBgColorDarker 100%);
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.main-menu.one {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $brightBlue;
+  border: none;
+  z-index: 9;
+  -webkit-transform: translateY(27px);
+  -moz-transform: translateY(27px);
+  transform: translateY(27px);
+}
+
+.main-menu .navbar-toggler {
+  margin-top: 10px;
+  color: #323946;
+  font-size: 1rem;
+}
+
+.main-menu.one .navbar-toggler {
+  color: #fff;
+}
+
+.main-menu .navbar-toggler:hover {
+}
+
+.main-menu .navbar-toggler:focus {
+  outline: none;
+}
+
+.main-menu .navbar-toggler:hover,
+.main-menu .navbar-toggler:focus {
+  color: $brightBlue;
+  background-color: #fff;
+}
+
+.main-menu .navbar-nav > .nav-item > a {
+  padding: 14px 30px 14px 0;
+  color: #323946;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.main-menu .navbar-nav > .nav-item > .dropdown-toggle::after {
+  display: none;
+}
+
+.main-menu .navbar-nav > .nav-item > a .fa {
+  margin-left: 5px;
+}
+
+.main-menu .navbar-nav > .nav-item:hover > a,
+.main-menu .navbar-nav > .nav-item > a:hover,
+.main-menu .navbar-nav > .nav-item > a:focus {
+}
+
+.main-menu .navbar-nav > .nav-item.active > a {
+  font-weight: 500;
+}
+
+.main-menu .navbar-nav > .nav-item:hover > a,
+.main-menu .navbar-nav > .nav-item > a:hover,
+.main-menu .navbar-nav > .nav-item > a:focus,
+.main-menu .navbar-nav > .nav-item.active > a {
+  color: $brightBlue;
+}
+
+.main-menu .navbar-toggler:hover,
+.main-menu .navbar-toggler:focus,
+.main-menu.one .navbar-nav > .nav-item:hover > a,
+.main-menu.one .navbar-nav > .nav-item > a:hover,
+.main-menu.one .navbar-nav > .nav-item > a:focus,
+.main-menu.one .navbar-nav > .nav-item.active > a {
+  background: none;
+}
+
+.main-menu.one .navbar-toggler,
+.main-menu.one .navbar-nav > .nav-item > a {
+  color: #f6f6f6;
+}
+
+.main-menu.one h6,
+.main-menu.one h6 a,
+.main-menu.one h6:hover a,
+.main-menu.one h6:focus a,
+.main-menu.one .navbar-toggler:hover,
+.main-menu.one .navbar-toggler:focus,
+.main-menu.one .navbar-nav > .nav-item:hover > a,
+.main-menu.one .navbar-nav > .nav-item > a:hover,
+.main-menu.one .navbar-nav > .nav-item > a:focus,
+.main-menu.one .navbar-nav > .nav-item.active > a {
+  color: #fff;
+}
+
+.main-menu .navbar-nav.navbar-right > .nav-item > a {
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 0.8rem;
+}
+
+.main-menu.one h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px 20px;
+  font-weight: 500;
+  background-color: #3e3e3e;
+}
+
+.main-menu.one h6:hover,
+.main-menu.one h6:focus {
+  background-color: #222;
+}
+
+.main-menu.one h6 a:hover,
+.main-menu.one h6 a:focus {
+  text-decoration: none;
+}
+
+.main-menu .open .dropdown-menu,
+.main-menu .dropdown-menu {
+  margin-top: 0;
+  background-color: $navBgColor;
+  padding: 0;
+  left: 0;
+  border: 2px solid $darkBlue;
+}
+
+.main-menu .dropdown-menu > a.dropdown-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #000;
+  font-size: 0.9rem;
+  &.sub {
+    padding-top: 5px;
+    color: #fff;
+    padding-bottom: 5px;
+    padding-left: 17px;
+    background-color: $darkBlue;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    &:hover, &:focus {
+      background-color: $darkBlue;
+      padding-left: 17px;
+    }
+    &.active {
+      font-weight: normal;
+      background-color: $darkBlue;
+      padding-left: 17px;
+      &:hover, &:focus {
+        background-color: $darkBlue;
+        padding-left: 17px;
+      }
+    }
+    &:first-child {
+      border-top: none;
+    }
+  }
+}
+
+
+.main-menu .dropdown-menu > a.dropdown-item:hover,
+.main-menu .dropdown-menu > a.dropdown-item:focus {
+  background-color: $navBgColorDarker;
+}
+
+.main-menu .dropdown-menu > a.dropdown-item.active,
+.main-menu .dropdown-menu > a.dropdown-item.active:hover,
+.main-menu .dropdown-menu > a.dropdown-item.active:focus {
+  background-color: $navBgColorDarker;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.main-menu.one .dropdown-menu > a.dropdown-item.active,
+.main-menu.one .dropdown-menu > a.dropdown-item.active:hover,
+.main-menu.one .dropdown-menu > a.dropdown-item.active:focus {
+  background-color: #3f3f3f;
+}
+
+.main-menu .form-inline .form-control {
+  padding-left: 16px;
+  padding-right: 12px;
+  color: #1b1b1b;
+}
+
+.main-menu .form-inline .btn {
+  padding: 7px 14px;
+  color: $brightBlue;
+}
+
+.main-menu .form-inline .form-control,
+.main-menu .form-inline .btn {
+  background-color: #ededed;
+  border: none;
+}
+
+#departmentViewScroll img {
+  height: 30px;
+  width: auto;
+  padding-left: 10px;
+}

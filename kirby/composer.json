@@ -1,7 +1,11 @@
 {
   "name": "getkirby/kirby",
   "description": "The Kirby 2 core.",
-  "keywords": ["core", "kirby", "cms"],
+  "keywords": [
+    "core",
+    "kirby",
+    "cms"
+  ],
   "homepage": "https://getkirby.com",
   "license": "proprietary",
   "authors": [
@@ -18,7 +22,9 @@
     "source": "https://github.com/getkirby/kirby"
   },
   "autoload": {
-    "files": ["composer.php"]
+    "files": [
+      "composer.php"
+    ]
   },
   "require": {
     "php": ">=5.4.0",

@@ -1,0 +1,48 @@
+#accordion-downloads {
+  margin-top: 60px;
+}
+
+#accordion-downloads .card {
+  margin-top: 20px;
+  border: none;
+}
+
+#accordion-downloads .card-header {
+  padding: 15px 30px;
+  position: relative;
+  background-color: $navBgColor;
+  border: none;
+}
+
+#accordion-downloads h5.card-title {
+  &.card-title {
+    margin-bottom: 0;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+#accordion-downloads .card-title,
+#accordion-downloads .card-title a,
+#accordion-downloads .card-title a:hover,
+#accordion-downloads .card-title a:focus {
+  color: #323946;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#accordion-downloads .card-title .fa {
+  padding: 17px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  cursor: pointer;
+  background-color: $brightBlue;
+}
+
+#accordion-downloads .card-body {
+  padding: 30px 20px 20px;
+  background-color: #fff;
+  border: none;
+}

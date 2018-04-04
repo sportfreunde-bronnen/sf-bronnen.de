@@ -1,0 +1,19 @@
+Title: Informationen
+
+----
+
+People: 
+
+- 
+  name: Melanie Schmid
+  aufgabe: Abteilungsleiterin
+  email: mullusch@web.de
+  phone: ""
+
+----
+
+Headline: Gymnastik bei den Sportfreunden
+
+----
+
+Infotext: Du bist schon Mitglied bei den Sportfreunden Bronnen? Dann kannst Du an allen Dauerangeboten teilnehmen, die Dich interessieren und in Deinen Zeitplan passen. Du interessierst Dich für ein Angebot, bist aber kein Mitglied? Dann melde Dich bei dem betreffenden Übungsleiter und man hilft Dir weiter. Übrigens, als Mitglied sind auch unsere Kurse günstiger zu buchen. Viel Spaß und ein gutes Körpergefühl beim Sporttreiben!

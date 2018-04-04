@@ -1,0 +1,25 @@
+title: Kontakt
+pages: false
+options:
+  url: false
+  delete: false
+  template: false
+  visible: false
+  status: false
+fields:
+  ansprechpartner:
+    label: Ansprechpartner
+    type: structure
+    entry: >
+      <b>{{name}}</b> ({{aufgabe}} / {{email}})
+    fields:
+      name:
+        label: Vollständiger Name
+        type: text
+      aufgabe:
+        label: Aufgabe
+        type: text
+      email:
+        label: E-Mail
+        help: Wird nicht öffentlich angezeigt
+        type: email

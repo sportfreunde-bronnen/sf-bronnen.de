@@ -1,8 +1,8 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
-      options: { livereload: true },
+      options: {livereload: true},
       scss: {
         files: ['src/sass/**/*.scss'],
         tasks: ['sass', 'postcss'],
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'src/sass/',
           src: ['*.scss'],
-          dest: '../kirby/assets/css/',
+          dest: '../assets/css/',
           ext: '.css'
         }]
       }
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         ]
       },
       dist: {
-        src: ['../kirby/assets/css/*.css']
+        src: ['../assets/css/*.css']
       }
     }
   });
@@ -46,5 +46,5 @@ module.exports = function(grunt) {
 
   // Set task aliases
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('build', ['sass','postcss']);
+  grunt.registerTask('build', ['sass', 'postcss']);
 };

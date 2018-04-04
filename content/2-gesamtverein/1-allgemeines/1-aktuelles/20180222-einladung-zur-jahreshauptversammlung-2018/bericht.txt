@@ -1,0 +1,49 @@
+Delimiter1: 
+
+----
+
+Datum: 2018-02-22
+
+----
+
+Author: magnus
+
+----
+
+Title: Einladung zur Jahreshauptversammlung 2018
+
+----
+
+Teaserimage: teaser-3.png
+
+----
+
+Text: 
+
+Am Fr., 02.03.2018 ab 19.30 Uhr findet die alljährliche Jahreshauptversammlung der Sportfreunde Bronnen statt. Informieren Sie sich darüber, was im letzten Jahr bei den Sportfreunden Bronnen lief und wie sich die Sportfreunde für die Zukunft aufstellen!
+
+Weitere Informationen finden Sie hier: [Zur Einladung.](/gesamtverein/veranstaltungen/jahreshauptversammlung)
+
+----
+
+Textimages: 
+
+----
+
+Tags: gesamtverein,jhv
+
+----
+
+Delimiter2: 
+
+----
+
+Gallerytoggle: no
+
+----
+
+Galleryheadline: 
+
+----
+
+Galleryimages: 

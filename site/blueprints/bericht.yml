@@ -1,0 +1,73 @@
+title: Bericht
+options:
+  url: false
+fields:
+  delimiter1:
+    label: Daten zum Artikel
+    type: headline
+  datum:
+    label: Datum
+    type: date
+    format: dd.mm.YYYY
+    default: today
+    width: 1/2
+    readonly: true
+    required: true
+    help: Schreibgeschützt
+  author:
+    label: Autor
+    type: user
+    required: true
+    width: 1/2
+    help: Autor des Artikels
+  title:
+    extends: title
+  teaserImage:
+    label: Teaser Bild
+    type: select
+    options: query
+    required: true
+    help: Bild, das in der Artikel-Übersicht angezeigt wird
+    query:
+      page: ../
+      fetch: images
+      value: '{{filename}}'
+      text: '{{filename}}'
+  text:
+    label: Text
+    type: wysiwyg
+  textImages:
+    label: Bilder für Text
+    type: selector
+    mode: multiple
+    types:
+      - image
+  tags:
+    label: Tags/Kategorien
+    type: tags
+    required: true
+  delimiter2:
+    label: Bildergalerie (optional)
+    type: headline
+  galleryToggle:
+    label: Soll eine Bildergalerie angelegt werden?
+    type: fieldtoggle
+    options:
+      no: Nein
+      yes: Ja
+    show:
+      yes: galleryHeadline galleryImages
+    hide:
+      no: galleryHeadline galleryImages
+  galleryHeadline:
+    label: Beschreibung der Galerie
+    type: text
+    title: Überschrift
+    help: Zum Beispiel "Bilder vom Spiel"
+  galleryImages:
+    label: Bilder
+    type: selector
+    mode: multiple
+    types:
+      - image
+pages: false

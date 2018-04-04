@@ -1,0 +1,68 @@
+title: Startseite
+pages:
+  template:
+    - contact
+    - textOnly
+fields:
+  zitat:
+    label: Teaser
+    type: text
+  text:
+    label: Begrüßungstext
+    type: wysiwyg
+  slider:
+    label: Slider
+    type: headline
+  slides:
+    label: Slides
+    help: Reihenfolge kann per Drag and Drop angepasst werden. Für neue Slider Bilder gilt das Format 2000x656 Pixel
+    type: structure
+    entry: >
+      <b>{{title}}</b><br/>{{text}}
+    fields:
+      infos:
+        label: Informationen
+        type: headline
+      title:
+        label: Überschrift
+        type: text
+        validate:
+          maxLength: 30
+      text:
+        label: Text
+        type: text
+      textPosition:
+        label: Textposition
+        type: radio
+        options:
+          left: Links
+          right: Rechts
+      sliderImage:
+        label: Bild
+        type: image
+      linksHeadline:
+        label: Links
+        type: headline
+        help: Link hinter dem "Mehr erfahren" Button. Internet ODER externer Link
+      internalLink:
+        label: Internet Link
+        type: page
+      externalLink:
+        label: Externer Link
+        type: url
+        help: Bitte mit http:// angeben
+  footerLinks:
+    label: Links im Footer
+    type: headline
+  links:
+    label: Freunde & Bekannte
+    type: structure
+    entry: >
+      {{name}} - {{link}}
+    fields:
+      name:
+        label: Name
+        type: text
+      link:
+        label: Link
+        type: url

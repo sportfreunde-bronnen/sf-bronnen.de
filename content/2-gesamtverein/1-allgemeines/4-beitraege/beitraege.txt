@@ -1,0 +1,61 @@
+Title: Beiträge
+
+----
+
+Beitraege: 
+
+- 
+  name: Jugendliche bis 18 J.
+  grundbeitrag: "21.00"
+  grundbeitragzusatz: ""
+  fussball: "25.00"
+  fussballzusatz: ""
+  gymnastik: "35.00"
+  gymnastikzusatz: ""
+  aikido: "35.00"
+  aikidozusatz: '*'
+- 
+  name: Erwachsene ab 18 Jahren
+  grundbeitrag: "31.00"
+  grundbeitragzusatz: ""
+  fussball: "30.00"
+  fussballzusatz: ""
+  gymnastik: "35.00"
+  gymnastikzusatz: ""
+  aikido: "35.00"
+  aikidozusatz: '*'
+- 
+  name: Familie pF / pK
+  grundbeitrag: "52.00"
+  grundbeitragzusatz: pF
+  fussball: "25.00"
+  fussballzusatz: pK
+  gymnastik: "15.00"
+  gymnastikzusatz: pK
+  aikido: "35.00"
+  aikidozusatz: 'pK *'
+- 
+  name: Passive Mitglieder
+  grundbeitrag: "26.00"
+  grundbeitragzusatz: ""
+  fussball: "0"
+  fussballzusatz: ""
+  gymnastik: "0"
+  gymnastikzusatz: ""
+  aikido: "0"
+  aikidozusatz: ""
+
+----
+
+Zusatz: 
+
+****
+\*  = Nur zur Information, der Aikido Beitrag wird über eine getrennte Einzugsermächtigung erhoben.
+****
+**pF** = pro Familie
+**pK** = pro Kopf
+****
+
+----
+
+Headline: Jährliche Beiträge

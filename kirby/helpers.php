@@ -3,65 +3,78 @@
 /**
  * Embeds a snippet from the snippet folder
  *
- * @param string $file
- * @param mixed $data array or object
+ * @param string  $file
+ * @param mixed   $data array or object
  * @param boolean $return
+ *
  * @return string
  */
-function snippet($file, $data = array(), $return = false) {
-  return kirby::instance()->component('snippet')->render($file, $data, $return);
+function snippet($file, $data = array(), $return = false)
+{
+    return kirby::instance()->component('snippet')
+        ->render($file, $data, $return);
 }
 
 /**
  * Builds a css link tag for relative or absolute urls
  *
- * @param string $url
+ * @param string       $url
  * @param string|array $media Either a media string or an array of attributes
+ *
  * @return string
  */
-function css() {
-  return call([kirby::instance()->component('css'), 'tag'], func_get_args());
+function css()
+{
+    return call([kirby::instance()->component('css'), 'tag'], func_get_args());
 }
 
 /**
  * Builds a script tag for relative or absolute links
  *
- * @param string $src
+ * @param string        $src
  * @param boolean|array $async Either true for the async attribute or an array of attributes
+ *
  * @return string
  */
-function js() {
-  return call([kirby::instance()->component('js'), 'tag'], func_get_args());
+function js()
+{
+    return call([kirby::instance()->component('js'), 'tag'], func_get_args());
 }
 
 /**
  * Global markdown parser shortcut
  *
  * @param string $text
+ *
  * @return string
  */
-function markdown($text) {
-  return kirby::instance()->component('markdown')->parse($text);
+function markdown($text)
+{
+    return kirby::instance()->component('markdown')->parse($text);
 }
 
 /**
  * Global smartypants parser shortcut
  *
  * @param string $text
+ *
  * @return string
  */
-function smartypants($text) {
-  return kirby::instance()->component('smartypants')->parse($text, true);
+function smartypants($text)
+{
+    return kirby::instance()->component('smartypants')->parse($text, true);
 }
 
 /**
  * Converts a string to Kirbytext
  *
  * @param Field/string $field
+ *
  * @return string
  */
-function kirbytext($field, $page = null) {
-  return (string)new Kirbytext($field, $page);
+function kirbytext($field, $page = null)
+{
+    return (string)new Kirbytext($field, $page);
 }
 
 /**
@@ -69,8 +82,9 @@ function kirbytext($field, $page = null) {
  *
  * @return Kirby
  */
-function kirby($class = null) {
-  return kirby::instance($class);
+function kirby($class = null)
+{
+    return kirby::instance($class);
 }
 
 /**
@@ -78,8 +92,9 @@ function kirby($class = null) {
  *
  * @return Site
  */
-function site() {
-  return kirby::instance()->site();
+function site()
+{
+    return kirby::instance()->site();
 }
 
 /**
@@ -87,8 +102,10 @@ function site() {
  *
  * @return Page
  */
-function page() {
-  return call_user_func_array(array(kirby::instance()->site(), 'page'), func_get_args());
+function page()
+{
+    return call_user_func_array(array(kirby::instance()->site(), 'page'),
+        func_get_args());
 }
 
 /**
@@ -96,33 +113,36 @@ function page() {
  *
  * @param array $data
  */
-function pages($data = array()) {
-  return new Pages($data);
+function pages($data = array())
+{
+    return new Pages($data);
 }
 
 /**
  * Creates an excerpt without html and kirbytext
  *
- * @param mixed $text Variable object or string
- * @param int $length The number of characters which should be included in the excerpt
+ * @param mixed $text   Variable object or string
+ * @param int   $length The number of characters which should be included in the excerpt
  * @param array $params an array of options for kirbytext: array('markdown' => true, 'smartypants' => true)
+ *
  * @return string The shortened text
  */
-function excerpt($text, $length = 140, $mode = 'chars') {
+function excerpt($text, $length = 140, $mode = 'chars')
+{
 
-  if(strtolower($mode) == 'words') {
-    $text = str::excerpt(kirbytext($text), 0);    
+    if (strtolower($mode) == 'words') {
+        $text = str::excerpt(kirbytext($text), 0);
 
-    if(str_word_count($text, 0) > $length) {
-      $words = str_word_count($text, 2);
-      $pos   = array_keys($words);
-      $text  = str::substr($text, 0, $pos[$length]) . '...';
+        if (str_word_count($text, 0) > $length) {
+            $words = str_word_count($text, 2);
+            $pos = array_keys($words);
+            $text = str::substr($text, 0, $pos[$length]) . '...';
+        }
+        return $text;
+
+    } else {
+        return str::excerpt(kirbytext($text), $length);
     }
-    return $text;
-
-  } else {
-    return str::excerpt(kirbytext($text), $length);    
-  }
 
 }
 
@@ -132,30 +152,33 @@ function excerpt($text, $length = 140, $mode = 'chars') {
  * @param string $uri
  * @param string $template
  * @param string $lang
+ *
  * @return string
  */
-function textfile($uri, $template, $lang = null) {
+function textfile($uri, $template, $lang = null)
+{
 
-  $curi   = '';
-  $parts  = str::split($uri, '/');
-  $parent = site();
+    $curi = '';
+    $parts = str::split($uri, '/');
+    $parent = site();
 
-  foreach($parts as $p) {
+    foreach ($parts as $p) {
 
-    if($parent and $child = $parent->children()->find($p)) {
-      $curi  .= '/' . $child->dirname();
-      $parent = $child;
-    } else {
-      $curi .= '/' . $p;
-      $parent = null;
+        if ($parent and $child = $parent->children()->find($p)) {
+            $curi .= '/' . $child->dirname();
+            $parent = $child;
+        } else {
+            $curi .= '/' . $p;
+            $parent = null;
+        }
+
     }
 
-  }
-
-  $uri  = ltrim($curi, '/');
-  $root = kirby::instance()->roots()->content();
-  $ext  = kirby::instance()->option('content.file.extension', 'txt');
-  return $root . DS . r(!empty($uri), str_replace('/', DS, $uri) . DS) . $template . r($lang, '.' . $lang) . '.' . $ext;
+    $uri = ltrim($curi, '/');
+    $root = kirby::instance()->roots()->content();
+    $ext = kirby::instance()->option('content.file.extension', 'txt');
+    return $root . DS . r(!empty($uri), str_replace('/', DS, $uri) . DS)
+        . $template . r($lang, '.' . $lang) . '.' . $ext;
 
 }
 
@@ -163,46 +186,52 @@ function textfile($uri, $template, $lang = null) {
  * Renders a kirbytag
  *
  * @param array $attr
+ *
  * @return Kirbytag
  */
-function kirbytag($attr) {
-  return new Kirbytag(null, key($attr), $attr);
+function kirbytag($attr)
+{
+    return new Kirbytag(null, key($attr), $attr);
 }
 
 /**
  * Builds a Youtube video iframe
  *
  * @param string $url
- * @param mixed $width
- * @param mixed $height
+ * @param mixed  $width
+ * @param mixed  $height
  * @param string $class
+ *
  * @return string
  */
-function youtube($url, $width = null, $height = null, $class = null) {
-  return kirbytag(array(
-    'youtube' => $url,
-    'width'   => $width,
-    'height'  => $height,
-    'class'   => $class
-  ));
+function youtube($url, $width = null, $height = null, $class = null)
+{
+    return kirbytag(array(
+        'youtube' => $url,
+        'width'   => $width,
+        'height'  => $height,
+        'class'   => $class
+    ));
 }
 
 /**
  * Builds a Vimeo video iframe
  *
  * @param string $url
- * @param mixed $width
- * @param mixed $height
+ * @param mixed  $width
+ * @param mixed  $height
  * @param string $class
+ *
  * @return string
  */
-function vimeo($url, $width = null, $height = null, $class = null) {
-  return kirbytag(array(
-    'vimeo'   => $url,
-    'width'   => $width,
-    'height'  => $height,
-    'class'   => $class
-  ));
+function vimeo($url, $width = null, $height = null, $class = null)
+{
+    return kirbytag(array(
+        'vimeo'  => $url,
+        'width'  => $width,
+        'height' => $height,
+        'class'  => $class
+    ));
 }
 
 /**
@@ -212,15 +241,17 @@ function vimeo($url, $width = null, $height = null, $class = null) {
  * @param string $text
  * @param string $title
  * @param string $class
+ *
  * @return string
  */
-function twitter($username, $text = null, $title = null, $class = null) {
-  return kirbytag(array(
-    'twitter' => $username,
-    'text'    => $text,
-    'title'   => $title,
-    'class'   => $class
-  ));
+function twitter($username, $text = null, $title = null, $class = null)
+{
+    return kirbytag(array(
+        'twitter' => $username,
+        'text'    => $text,
+        'title'   => $title,
+        'class'   => $class
+    ));
 }
 
 /**
@@ -228,13 +259,15 @@ function twitter($username, $text = null, $title = null, $class = null) {
  *
  * @param string $url
  * @param string $file
+ *
  * @return string
  */
-function gist($url, $file = null) {
-  return kirbytag(array(
-    'gist' => $url,
-    'file' => $file,
-  ));
+function gist($url, $file = null)
+{
+    return kirbytag(array(
+        'gist' => $url,
+        'file' => $file,
+    ));
 }
 
 /**
@@ -242,71 +275,80 @@ function gist($url, $file = null) {
  *
  * @return string
  */
-function thisUrl() {
-  return url::current();
+function thisUrl()
+{
+    return url::current();
 }
 
 /**
- * Give this any kind of array 
+ * Give this any kind of array
  * to get some kirby style structure
- * 
+ *
  * @param mixed $data
  * @param mixed $page
  * @param mixed $key
+ *
  * @return mixed
  */
-function structure($data, $page = null, $key = null) {
+function structure($data, $page = null, $key = null)
+{
 
-  if(is_null($page)) {
-    $page = page();
-  }
-
-  if(is_array($data)) {
-    $result = new Structure();
-    $result->page = $page;
-    foreach($data as $key => $value) {
-      $result->append($key, structure($value, $page, $key));
+    if (is_null($page)) {
+        $page = page();
     }
-    return $result;
-  } else if(is_a($data, 'Field')) {
-    return $data;
-  } else {
-    return new Field($page, $key, $data);
-  } 
 
-};
+    if (is_array($data)) {
+        $result = new Structure();
+        $result->page = $page;
+        foreach ($data as $key => $value) {
+            $result->append($key, structure($value, $page, $key));
+        }
+        return $result;
+    } else {
+        if (is_a($data, 'Field')) {
+            return $data;
+        } else {
+            return new Field($page, $key, $data);
+        }
+    }
+
+}
+
+;
 
 
 /**
  * Return an image from any page
  * specified by the path
- * 
- * Example: 
+ *
+ * Example:
  * <?= image('some/page/myimage.jpg') ?>
- * 
+ *
  * @param string $path
+ *
  * @return File|null
  */
-function image($path = null) {
+function image($path = null)
+{
 
-  if($path === null) {
-    return page()->image();
-  }
+    if ($path === null) {
+        return page()->image();
+    }
 
-  $uri      = dirname($path);
-  $filename = basename($path);
+    $uri = dirname($path);
+    $filename = basename($path);
 
-  if($uri == '.') {
-    $uri = null;
-  }
-  
-  $page = $uri == '/' ? site() : page($uri);
+    if ($uri == '.') {
+        $uri = null;
+    }
 
-  if($page) {
-    return $page->image($filename);
-  } else {
-    return null;
-  }
+    $page = $uri == '/' ? site() : page($uri);
+
+    if ($page) {
+        return $page->image($filename);
+    } else {
+        return null;
+    }
 
 }
 
@@ -315,13 +357,15 @@ function image($path = null) {
  *
  * @param mixed Either a file path or a Media object
  * @param array An array of additional params for the thumb
+ *
  * @return object Thumb
  */
-function thumb($image, $params = array(), $obj = true) {
-  if(is_a($image, 'File') || is_a($image, 'Asset')) {
-    return $obj ? $image->thumb($params) : $image->thumb($params)->url();
-  } else {
-    $class = new Thumb($image, $params);
-    return $obj ? $class : $class->url();
-  }
+function thumb($image, $params = array(), $obj = true)
+{
+    if (is_a($image, 'File') || is_a($image, 'Asset')) {
+        return $obj ? $image->thumb($params) : $image->thumb($params)->url();
+    } else {
+        $class = new Thumb($image, $params);
+        return $obj ? $class : $class->url();
+    }
 }

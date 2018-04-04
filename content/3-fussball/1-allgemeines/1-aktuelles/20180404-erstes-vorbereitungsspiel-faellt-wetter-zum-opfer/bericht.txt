@@ -1,0 +1,49 @@
+Delimiter1: 
+
+----
+
+Datum: 2018-02-22
+
+----
+
+Author: magnus
+
+----
+
+Title: Erstes Vorbereitungsspiel fällt Wetter zum Opfer
+
+----
+
+Text: 
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+----
+
+Textimages: 
+
+----
+
+Tags: erste mannschaft,zweite mannschaft,fussball
+
+----
+
+Delimiter2: 
+
+----
+
+Gallerytoggle: no
+
+----
+
+Galleryheadline: 
+
+----
+
+Galleryimages: 
+
+----
+
+Teaserimage: teaser8.png

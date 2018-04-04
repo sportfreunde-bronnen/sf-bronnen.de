@@ -1,7 +1,11 @@
 <?php
 
-if(!defined('KIRBY')) define('KIRBY', true);
-if(!defined('DS'))    define('DS', DIRECTORY_SEPARATOR);
+if (!defined('KIRBY')) {
+    define('KIRBY', true);
+}
+if (!defined('DS')) {
+    define('DS', DIRECTORY_SEPARATOR);
+}
 
 // load all dependencies
 include(__DIR__ . DS . 'vendor' . DS . 'autoload.php');

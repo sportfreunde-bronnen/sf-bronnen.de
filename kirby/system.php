@@ -13,8 +13,8 @@ include(__DIR__ . DS . 'bootstrap.php');
 
 // take the old variables to setup roots
 $kirby = kirby();
-$kirby->roots->index   = $root;
-$kirby->roots->site    = $rootSite;
+$kirby->roots->index = $root;
+$kirby->roots->site = $rootSite;
 $kirby->roots->content = $rootContent;
 
 // render

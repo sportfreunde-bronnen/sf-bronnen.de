@@ -1,0 +1,36 @@
+Title: Vorstand
+
+----
+
+Personen: 
+
+- 
+  name: Benjamin Baur
+  funktion: 1. Vorstand
+  start: "2012"
+  bild: baur_ben.jpg
+- 
+  name: Simon Baur
+  funktion: 2. Vorstand
+  start: "2017"
+  bild: baur_simon.jpg
+- 
+  name: Magnus Buk
+  funktion: 2. Vorstand
+  start: "2017"
+  bild: buk_magnus.jpg
+- 
+  name: Ruth Hofele
+  funktion: Schriftführerein
+  start: "2018"
+  bild: braig_andrea.jpg
+- 
+  name: Martin Bringazi
+  funktion: Kassierer
+  start: ????
+  bild: bringazi_martin.jpg
+- 
+  name: Maximilian Braig
+  funktion: Kassierer
+  start: ????
+  bild: braig_maxi.jpg
