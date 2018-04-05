@@ -33,7 +33,19 @@
                 <p class="spacer-small"></p>
             </div>
             <div class="col-md-4 col-sm-12">
-                <h5 class="sub-heading-2 text-xs-center">Weitere Artikel</h5><br>
+                <?php if ($page->textImages()->isNotEmpty()): ?>
+                    <div class="mb-3">
+                    <?php foreach (explode(',', $page->textImages()) as $imageUrl): $image = $page->images()->find($imageUrl); ?>
+                    <figure>
+                        <img src="<?= $image->resize(750)->url();?>" class="img-fluid mb-2" alt="<?= $image->caption();?> - Sportfreunde Bronnen"/>
+                        <figcaption>
+                            <small><?= $image->caption();?></small>
+                        </figcaption>
+                    </figure>
+                    <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+                <h5 class="sub-heading-2 text-xs-center mb-0">Weitere Artikel</h5><br>
                 <ul class="list-unstyled list-post-1">
                 <?php foreach ($site->index()->visible()->filterBy('template', 'bericht')->sortBy('datum', 'desc') as $post): ?>
                     <?php if ($post === $page) continue; ?>
@@ -42,7 +54,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <p><?= substr($post->text(), 0, 50) . '...';?></p>
-                                <a href="<?= $post->url();?>" class="more-link animation" title="Zum Artikel: <?= $post->title();?>">Weiterlesen..</a>
+                                <a href="<?= $post->url();?>" class="more-link animation" title="Zum Artikel: <?= $post->title();?>">Weiterlesen</a>
                             </div>
                         </div>
                     </li>

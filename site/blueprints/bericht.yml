@@ -11,7 +11,6 @@ fields:
     format: dd.mm.YYYY
     default: today
     width: 1/2
-    readonly: true
     required: true
     help: Schreibgeschützt
   author:
@@ -71,3 +70,8 @@ fields:
     types:
       - image
 pages: false
+files:
+  fields:
+    caption:
+      type: text
+      label: Beschreibung
