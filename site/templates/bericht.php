@@ -33,35 +33,20 @@
                 <p class="spacer-small"></p>
             </div>
             <div class="col-md-4 col-sm-12">
-                <h5 class="sub-heading-2 text-xs-center">Letzte Artikel</h5><br>
+                <h5 class="sub-heading-2 text-xs-center">Weitere Artikel</h5><br>
                 <ul class="list-unstyled list-post-1">
+                <?php foreach ($site->index()->visible()->filterBy('template', 'bericht')->sortBy('datum', 'desc') as $post): ?>
+                    <?php if ($post === $page) continue; ?>
                     <li>
-                        <h6 class="sub-heading-1">Technology Solutions</h6>
+                        <h6 class="sub-heading-1"><?= $post->title();?></h6>
                         <div class="row">
                             <div class="col-12">
-                                <p>There are many variations of passages of available ....</p>
-                                <a href="#" class="more-link animation">More..</a>
+                                <p><?= substr($post->text(), 0, 50) . '...';?></p>
+                                <a href="<?= $post->url();?>" class="more-link animation" title="Zum Artikel: <?= $post->title();?>">Weiterlesen..</a>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <h6 class="sub-heading-1">Investment Management</h6>
-                        <div class="row">
-                            <div class="col-12">
-                                <p>There are many variations of passages of available ....</p>
-                                <a href="#" class="more-link animation">More..</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <h6 class="sub-heading-1">Retirement Planning</h6>
-                        <div class="row">
-                            <div class="col-12">
-                                <p>There are many variations of passages of available ....</p>
-                                <a href="#" class="more-link animation">More..</a>
-                            </div>
-                        </div>
-                    </li>
+                <?php endforeach; ?>
                 </ul>
                 <div class="spacer-medium"></div>
             </div>

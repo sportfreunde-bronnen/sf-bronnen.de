@@ -1,0 +1,17 @@
+label: Zuständige Personen
+type: structure
+fields:
+  name:
+    type: text
+    label: Vollständiger Name
+    required: true
+  aufgabe:
+    type: text
+    label: Aufgabe
+    required: true
+  email:
+    type: email
+    label: E-Mail Adresse
+  phone:
+    type: tel
+    label: Telefon (optional)

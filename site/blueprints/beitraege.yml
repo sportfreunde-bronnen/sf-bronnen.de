@@ -21,6 +21,7 @@ fields:
         label: Grundbeitrag
         type: number
         width: 2/3
+        step: .50
       grundbeitragZusatz:
         label: Zusatz
         type: text
@@ -29,6 +30,7 @@ fields:
         label: Zuschlag Fußball
         type: number
         width: 2/3
+        step: .50
       fussballZusatz:
         label: Zusatz
         type: text
@@ -37,6 +39,7 @@ fields:
         label: Zuschlag Gymnastik
         type: number
         width: 2/3
+        step: .50
       gymnastikZusatz:
         label: Zusatz
         type: text
@@ -45,6 +48,7 @@ fields:
         label: Zuschlag Aikido
         type: number
         width: 2/3
+        step: .50
       aikidoZusatz:
         label: Zusatz
         type: text

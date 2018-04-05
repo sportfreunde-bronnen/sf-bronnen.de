@@ -1,0 +1,49 @@
+Delimiter1: 
+
+----
+
+Datum: 2018-04-05
+
+----
+
+Author: magnus
+
+----
+
+Title: Neue Webseite online
+
+----
+
+Teaserimage: teaser-5-webseite.png
+
+----
+
+Text: 
+
+Nach Monaten des digitalen Brachliegens präsentieren sich die Sportfreunde Bronnen ab sofort mit einem neuen Auftritt im World Wide Web.
+
+Besonderer Wert wurde hierbei auf Schlichtheit, Aktualität, eine gute Bedienbarkeit, eine übersichtliche Handhabe sowie eine schnell zu den gewünschten Informationen führende Grundstruktur gelegt. Selbstverständlich ist die Seite auch auf mobilen Endgeräten problemlos bedienbar.
+
+----
+
+Textimages: 
+
+----
+
+Tags: webseite,gesamtverein
+
+----
+
+Delimiter2: 
+
+----
+
+Gallerytoggle: no
+
+----
+
+Galleryheadline: 
+
+----
+
+Galleryimages: 

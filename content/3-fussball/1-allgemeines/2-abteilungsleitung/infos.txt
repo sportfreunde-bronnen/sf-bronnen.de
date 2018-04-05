@@ -19,6 +19,11 @@ People:
   aufgabe: Spielleiter
   email: ""
   phone: ""
+- 
+  name: Jürgen Anic
+  aufgabe: Jugendleiter
+  email: j.anic@freenet.de
+  phone: 0171 50 87 369
 
 ----
 
@@ -26,4 +31,18 @@ Headline: Fußball bei den Sportfreunden
 
 ----
 
-Infotext: Mit mehr als 200 Mitgliedern stellt die Abteilung Fußball die mitgliederstärkste Abteilung der Sportfreunde. Die erste Herrenmannschaft spielt in der Kreisliga A Riß Staffel 2 und wird durch die zweite Mannschaft in der entsprechend zugehörigen Reserveliga ergänzt.
+Infotext: 
+
+Mit mehr als 200 Mitgliedern stellt die Abteilung Fußball die mitgliederstärkste Abteilung der Sportfreunde. Die **erste Herrenmannschaft** spielt in der Kreisliga A Riß Staffel 2 und wird durch die **zweite Mannschaft** in der entsprechend zugehörigen Reserveliga ergänzt.
+
+Im **Jugendbereich** stellen wir gemeinsam mit dem FC Hüttisheim und der TSG Achstetten Mannschaften von der A-Jugend bis zu den Bambini:
+
+- Bei den A- und B-Junioren stellen wir je ein Team (A11, B11) in der Bezirksstaffel
+- Bei den C- und D-Junioren haben wir je zwei Teams (C11, C7, 2x D9) gemeldet. Bei den D-Junioren ist ebenfalls der SV Burgrieden mit im Boot
+- Die E-Junioren spielen mit drei 7er Mannschaften
+- Die F-Junioren stellen drei 5er Mannschaften bei Spieltagen
+- Weiterhin haben wir ein Mädchenteam im Spielbetrieb: C9-Juniorinnen
+
+Insgesamt haben wir etwa 180 Jugendspieler und rund 30 Trainer in der Spielgemeinschaft.
+
+Für das etwas fortgeschrittenere Alter bieten die Sportfreunde zudem eine **[Ü30](/fussball/ah/ue30)** sowie eine **[Ü50-Mannschaft](/fussball/ah/ue50)**, über die Sie sich ebenfalls auf dieser Seite informieren können.
