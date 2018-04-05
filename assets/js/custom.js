@@ -2,29 +2,33 @@
 
   "use strict";
 
-  $(window).scroll(function() {
-    var toTop = $(window).scrollTop();
-    var nav = $('nav');
-    var departmentViewScroll = $('#departmentViewScroll');
+  if (window.innerWidth >= 768) {
 
-    if (toTop > 60 && departmentViewScroll.hasClass('invisible')) {
-      departmentViewScroll.removeClass('invisible');
-    }
+    $(window).scroll(function () {
+      var toTop = $(window).scrollTop();
+      var nav = $('nav');
+      var departmentViewScroll = $('#departmentViewScroll');
 
-    if (toTop <= 60 && !departmentViewScroll.hasClass('invisible')) {
-      departmentViewScroll.addClass('invisible');
-    }
+      if (toTop > 60 && departmentViewScroll.hasClass('invisible')) {
+        departmentViewScroll.removeClass('invisible');
+      }
 
-    if (toTop > 189 && !nav.hasClass('fixed-top')) {
-      nav.addClass('fixed-top');
-      nav.addClass('op-50');
+      if (toTop <= 60 && !departmentViewScroll.hasClass('invisible')) {
+        departmentViewScroll.addClass('invisible');
+      }
 
-    }
-    if (toTop <= 189 && nav.hasClass('fixed-top')) {
-      nav.removeClass('fixed-top');
-      nav.removeClass('op-50');
-    }
-  });
+      if (toTop > 189 && !nav.hasClass('fixed-top')) {
+        nav.addClass('fixed-top');
+        nav.addClass('op-50');
+
+      }
+      if (toTop <= 189 && nav.hasClass('fixed-top')) {
+        nav.removeClass('fixed-top');
+        nav.removeClass('op-50');
+      }
+    });
+
+  }
 
     // Backstretch Header Full
 	$(".header-full").backstretch([

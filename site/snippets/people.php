@@ -3,7 +3,7 @@
     <div class="col-12">
         <div class="bio-box-1 two-col row">
             <?php foreach ($page->people()->toStructure() as $person): ?>
-                <div class="col-6 mb-5">
+                <div class="col-12 col-md-6 mb-md-5">
                     <h5 class="text-weight-normal"><?= $person->name();?></h5>
                     <p class="designation text-weight-light text-grey-color"><?= $person->aufgabe();?></p>
                     <?php if (!$person->email()->isEmpty()): ?>

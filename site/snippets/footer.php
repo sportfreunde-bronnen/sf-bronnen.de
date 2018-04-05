@@ -1,15 +1,11 @@
 <section class="footer-top">
     <div class="container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left text-lite-color">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6">
                 <div class="foot-info">
                     <p class="text-weight-light">
                         <em>Die Sportfreunde Bronnen sind ein über 600 Mitglieder fassender Verein bei Laupheim in Oberschwaben. Mit unseren Abteilungen Fitness/Gymnastik, Fußball und Aikido vermitteln wir Spaß und Freude am Sport und an der Bewegung.</em>
                     </p>
-                    <ul class="list-unstyled list-inline foot-sm-links">
-                        <li class="list-inline-item text-weight-medium">Social Media:</li>
-                        <li class="list-inline-item"><a href="https://www.facebook.com/sportfreundebronnen/" title="Die Sportfreunde Bronnen auf Facebook"><i class="fa fa-facebook animation"></i></a></li>
-                    </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -27,9 +23,6 @@
                         <span><a href="mailto:info@sf-bronnen.de">info@sf-bronnen.de</a></span>
                     </li>
                 </ul>
-            </div>
-            <div class="w-100 d-md-block d-lg-none">
-                <p><br><br></p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <h5>Auf die Schnelle</h5>
