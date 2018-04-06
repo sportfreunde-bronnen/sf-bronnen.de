@@ -7,6 +7,7 @@ options:
   visible: false
   status: false
 fields:
+  headline: headline
   ansprechpartner:
     label: Ansprechpartner
     type: structure

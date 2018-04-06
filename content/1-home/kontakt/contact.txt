@@ -68,3 +68,7 @@ Ansprechpartner:
   name: Sonstiges
   aufgabe: Für sonstige Belange
   email: info@sf-bronnen.de
+
+----
+
+Headline: Ansprechpartner für alle Anliegen

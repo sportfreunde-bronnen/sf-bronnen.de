@@ -8,3 +8,9 @@ fields:
   text:
     label: Text
     type:  textarea
+    buttons:
+      - bold
+      - h2
+      - h3
+      - h4
+      - h5

@@ -2,9 +2,8 @@ title: Default
 pages: true
 files: true
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
+  headline: headline
   text:
     label: Text
     type:  wysiwyg

@@ -4,10 +4,12 @@ Title: Vereinsartikel
 
 Text: 
 
-## SFB Merchandising
-
 Sie interessieren sich für Vereinsartikel der Sportfreunde Bronnen wie T-Shirts, Mützen oder Gläser? Eine Bestellung ist nun auch online möglich. Besuchen Sie hierfür einfach unseren Online-Shop und bestellen Sie schnell, sicher und einfach die gewünschten Produkte!
 
 So erreichen Sie unseren Shop: **<https://shop.sf-bronnen.de>**
 
 Bei Fragen können Sie sich jederzeit an die E-Mail Adresse **shop@sf-bronnen.de** wenden!
+
+----
+
+Headline: SFB Merchandising
