@@ -33,3 +33,12 @@ Zitate:
     Nur wer sich bewegt, steht meist mitten
     im Leben.
   person: Martin Gerhard Reisenberg
+- 
+  text: 'Nur wo Körper- und Geistestätigkeit in geordneter lebendiger Wechselwirkung stehen, ist wahres Leben.'
+  person: Friedrich Fröbel
+- 
+  text: >
+    Wir sind verantwortlich für das, was
+    wir tun, aber auch für das, was wir
+    nicht tun.
+  person: Voltaire

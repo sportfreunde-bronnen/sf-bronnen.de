@@ -15,12 +15,9 @@
                         <span>
                             <strong>Sportfreunde Bronnen 1949 e.V.</strong></br>
                             Färbergässle 2/1<br/>
-                            88471 Laupheim
+                            88471 Laupheim<br/>
+                            info@sf-bronnen.de
                         </span>
-                    </li>
-                    <li class="clearfix">
-                        <i class="fa fa-envelope"></i>
-                        <span><a href="mailto:info@sf-bronnen.de">info@sf-bronnen.de</a></span>
                     </li>
                 </ul>
             </div>

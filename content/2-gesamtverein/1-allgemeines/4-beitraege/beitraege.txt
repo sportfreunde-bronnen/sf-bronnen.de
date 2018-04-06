@@ -59,3 +59,7 @@ Zusatz:
 ----
 
 Headline: Jährliche Beiträge
+
+----
+
+Text: Bei Fragen zu unseren Beiträgen dürfen Sie sich gerne jederzeit an unsere Mitgliederverwaltung wenden. Diese erreichen Sie über unser **[Kontaktformular](/home/kontakt)**.

@@ -8,6 +8,9 @@ fields:
   headline:
     label: Überschrift
     type: text
+  text:
+    type: wysiwyg
+    label: Text
   beitraege:
     label: Beiträge
     type: structure

@@ -37,7 +37,7 @@
 <header class="main-header">
     <div class="container text-xs-center pl-sm-0 pr-sm-0">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 text-xs-center text-sm-center text-md-left">
+            <div class="col-lg-4 col-md-5 col-sm-12 text-xs-center text-sm-center text-md-left">
                 <a href="/"><img src="/assets/images/sfb/Sportfreunde_Bronnen_Logo_1.svg" alt="Fin Adviser" class="pulse img-center-xs logo"></a>
             </div>
         </div>

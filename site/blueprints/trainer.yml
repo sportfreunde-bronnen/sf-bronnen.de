@@ -1,0 +1,18 @@
+title: Trainerchronik
+options:
+  template: false
+  delete: false
+  url: false
+  status: false
+fields:
+  title: title
+  headline: headline
+  coaches:
+    type: structure
+    fields:
+      name:
+        type: text
+        label: Trainer
+      zeitraum:
+        type: text
+        label: Zeitraum

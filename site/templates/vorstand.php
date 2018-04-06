@@ -11,9 +11,6 @@
             <?php foreach ($page->personen()->toStructure() as $person):?>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="bio-box-1">
-                    <!--
-                    <img src="<?= $person->bild()->toFile()->resize(300)->url(); ?>" alt="Image" class="img-fluid img-center-xs animation">
-                    -->
                     <div class="bio-data mt-3">
                         <h5 class="animation text-weight-normal mt-0"><?= $person->name();?></h5>
                         <p class="designation text-weight-light text-grey-color"><b><?= $person->funktion();?></b> (seit <?= $person->start();?>)</p>
