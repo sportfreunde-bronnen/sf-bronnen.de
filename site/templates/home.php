@@ -21,11 +21,11 @@
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
-        <a class="carousel-control-prev animation d-xs-none" href="#main-slider" role="button" data-slide="prev">
+        <a class="carousel-control-prev animation" href="#main-slider" role="button" data-slide="prev">
             <span class="fa fa-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next animation d-xs-none" href="#main-slider" role="button" data-slide="next">
+        <a class="carousel-control-next animation" href="#main-slider" role="button" data-slide="next">
             <span class="fa fa-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>

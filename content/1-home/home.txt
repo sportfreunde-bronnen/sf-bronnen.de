@@ -30,8 +30,8 @@ Slides:
   text: Wir haben da was!
   sliderimage: slider-sfb-3.jpg
   textposition: left
-  internallink: ""
-  externallink: http://www.heise.de
+  internallink: gesamtverein/allgemeines/svz
+  externallink: ""
 
 ----
 

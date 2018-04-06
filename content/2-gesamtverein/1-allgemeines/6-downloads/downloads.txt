@@ -11,7 +11,7 @@ Downloads:
 - 
   category: Sportvereinszentrum
   downloads: >
-    sfb-bewirtungscheckliste_svz_kurz_20141021mh.pdf,sfb-hausordnung_svz_20141021mh.pdf,sfb-nutzungsvertrag_svz_2016_juli.pdf,sfb-svz-termine_stand_3.2.17-em.xls
+    flyer_svz-bronnen.pdf,sfb-bewirtungscheckliste_svz_kurz_20141021mh.pdf,sfb-hausordnung_svz_20141021mh.pdf,sfb-nutzungsvertrag_svz_2016_juli.pdf,sfb-svz-termine_stand_3.2.17-em.xls
 - 
   category: Presse und Medien
   downloads: >

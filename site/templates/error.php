@@ -6,9 +6,8 @@
     </section>
     <div class="page">
         <div class="main-container container text-center pl-sm-0 pr-sm-0">
-            <h1 class="text-spl-color text-weight-normal">4<i class="fa fa-meh-o"></i>4</h1>
             <h4 class="main-heading-1 text-spl-color text-spl-color text-center text-uppercase text-weight-normal">Sorry, diese Seite gibt es nicht.</h4>
-            <p class="lead">Immer schön sportlich bleiben.</p>
+            <p class="lead">Trotz allem - immer schön sportlich bleiben!</p>
             <a href="/" class="btn btn-black btn-big animation text-medium">Zur Startseite</a>
             <div class="spacer-medium"></div>
         </div>
