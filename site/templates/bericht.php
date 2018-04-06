@@ -63,6 +63,9 @@
                 <div class="spacer-medium"></div>
             </div>
         </div>
+        <?php if ($page->galleryImages()->isNotEmpty()): ?>
+            <?php snippet('gallery', ['images' => $page->convertFilesToCollection($page->galleryImages()), 'desc' => $page->galleryName()]); ?>
+        <?php endif; ?>
     </div>
 </div>
 <?php snippet('footer'); ?>

@@ -53,3 +53,7 @@ Author: magnus
 ----
 
 Teaserimage: teaser5.png
+
+----
+
+Galleryname: 

@@ -12,8 +12,7 @@
             </div>
         </div>
         <hr/>
-        <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-5">Bildergalerie</h3>
-        <?php snippet('gallery', ['images' => $page->convertFilesToCollection($page->gallery()), 'desc' => 'SVZ Bronnen']); ?>
+        <?php snippet('gallery', ['images' => $page->convertFilesToCollection($page->gallery()), 'desc' => 'Bildergalerie']); ?>
         <hr/>
         <section class="section-area section-testimonials">
             <div class="container text-xs-center text-sm-center text-md-left">

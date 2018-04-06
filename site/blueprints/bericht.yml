@@ -45,30 +45,8 @@ fields:
     label: Tags/Kategorien
     type: tags
     required: true
-  delimiter2:
-    label: Bildergalerie (optional)
-    type: headline
-  galleryToggle:
-    label: Soll eine Bildergalerie angelegt werden?
-    type: fieldtoggle
-    options:
-      no: Nein
-      yes: Ja
-    show:
-      yes: galleryHeadline galleryImages
-    hide:
-      no: galleryHeadline galleryImages
-  galleryHeadline:
-    label: Beschreibung der Galerie
-    type: text
-    title: Überschrift
-    help: Zum Beispiel "Bilder vom Spiel"
-  galleryImages:
-    label: Bilder
-    type: selector
-    mode: multiple
-    types:
-      - image
+  gallery:
+    extends: gallery
 pages: false
 files:
   fields:

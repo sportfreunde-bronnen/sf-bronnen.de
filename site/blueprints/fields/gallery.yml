@@ -1,0 +1,24 @@
+type: group
+fields:
+  delimiter2:
+    label: Bildergalerie (optional)
+    type: headline
+  galleryToggle:
+    label: Soll eine Bildergalerie angelegt werden?
+    type: fieldtoggle
+    options:
+      no: Nein
+      yes: Ja
+    show:
+      yes: galleryName galleryImages
+    hide:
+      no: galleryName galleryImages
+  galleryName:
+    type: text
+    label: Name der Galerie
+  galleryImages:
+    label: Bildergalerie
+    type: selector
+    mode: multiple
+    types:
+      - image
