@@ -9,8 +9,6 @@
       var nav = $('nav');
       var departmentViewScroll = $('#departmentViewScroll');
 
-      console.log(toTop);
-
       if (toTop > 60 && departmentViewScroll.hasClass('invisible')) {
         departmentViewScroll.removeClass('invisible');
       }
