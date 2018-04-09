@@ -21,6 +21,11 @@ c::set('debug', true);
 c::set('ka.image.shrink.maxDimension', 2000);
 //c::set('kirby.extension.autopublish.templates', array('bericht'));
 
+c::set('mailerHost', 'sslout.df.eu');
+c::set('mailerFrom', 'kontaktformular@sf-bronnen.de');
+c::set('mailerPassword', 'ym_Amw17ykkc');
+c::set('MailerSSLPort', '465');
+
 /*
 
 ---------------------------------------

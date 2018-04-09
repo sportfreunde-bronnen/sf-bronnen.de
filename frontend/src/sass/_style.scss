@@ -2263,3 +2263,20 @@ table.table-kurs {
 .op-50 {
   opacity: 0.9;
 }
+
+.uniform__potty {
+  position: absolute;
+  left: -9999px;
+}
+
+div.uniform-errors {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: $color-red;
+  color: #fff;
+}
+
+
+div.uniform-errors__item::before {
+  content: ('-');
+}
