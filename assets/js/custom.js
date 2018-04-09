@@ -9,6 +9,8 @@
       var nav = $('nav');
       var departmentViewScroll = $('#departmentViewScroll');
 
+      console.log(toTop);
+
       if (toTop > 60 && departmentViewScroll.hasClass('invisible')) {
         departmentViewScroll.removeClass('invisible');
       }
@@ -17,14 +19,16 @@
         departmentViewScroll.addClass('invisible');
       }
 
-      if (toTop > 189 && !nav.hasClass('fixed-top')) {
+      if (toTop > 188 && !nav.hasClass('fixed-top')) {
         nav.addClass('fixed-top');
         nav.addClass('op-50');
+        console.log("ADD");
 
       }
-      if (toTop <= 189 && nav.hasClass('fixed-top')) {
+      if (toTop <= 100 && nav.hasClass('fixed-top')) {
         nav.removeClass('fixed-top');
         nav.removeClass('op-50');
+        console.log("REMOVE");
       }
     });
 
