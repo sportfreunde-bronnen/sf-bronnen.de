@@ -126,10 +126,14 @@
 .main-menu .open .dropdown-menu,
 .main-menu .dropdown-menu {
   margin-top: 0;
-  background-color: $navBgColor;
   padding: 0;
   left: 0;
-  border: 2px solid $darkBlue;
+  background: none;
+  border: none;
+  @include media-breakpoint-up(md) {
+    border: 2px solid $darkBlue;
+    background-color: $navBgColor;
+  }
 }
 
 .main-menu .dropdown-menu > a.dropdown-item {
@@ -139,24 +143,33 @@
   font-size: 0.9rem;
   &.sub {
     padding-top: 5px;
-    color: #fff;
     padding-bottom: 5px;
     padding-left: 17px;
-    background-color: $darkBlue;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     font-size: 1rem;
-    &:hover, &:focus {
+    font-weight: bold;
+    @include media-breakpoint-up(md) {
+      font-weight: normal;
+      color: #fff;
       background-color: $darkBlue;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    &:hover, &:focus {
+      @include media-breakpoint-up(md) {
+        background-color: $darkBlue;
+      }
       padding-left: 17px;
     }
     &.active {
-      font-weight: normal;
-      background-color: $darkBlue;
       padding-left: 17px;
-      &:hover, &:focus {
+      @include media-breakpoint-up(md) {
         background-color: $darkBlue;
+      }
+      &:hover, &:focus {
         padding-left: 17px;
+        @include media-breakpoint-up(md) {
+          background-color: $darkBlue;
+        }
       }
     }
     &:first-child {
@@ -165,17 +178,22 @@
   }
 }
 
-
 .main-menu .dropdown-menu > a.dropdown-item:hover,
 .main-menu .dropdown-menu > a.dropdown-item:focus {
-  background-color: $navBgColorDarker;
+  background: none;
+  @include media-breakpoint-up(md) {
+    background-color: $navBgColorDarker;
+  }
 }
 
 .main-menu .dropdown-menu > a.dropdown-item.active,
 .main-menu .dropdown-menu > a.dropdown-item.active:hover,
 .main-menu .dropdown-menu > a.dropdown-item.active:focus {
-  background-color: $navBgColorDarker;
-  padding-left: 20px;
+  background: none;
+  @include media-breakpoint-up(md) {
+    background-color: $navBgColorDarker;
+    padding-left: 20px;
+  }
   font-weight: bold;
 }
 
