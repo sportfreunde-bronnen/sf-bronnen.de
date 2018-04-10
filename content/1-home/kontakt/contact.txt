@@ -5,6 +5,10 @@ Title: Kontakt
 Ansprechpartner: 
 
 - 
+  name: Gesamte Vorstandschaft
+  aufgabe: E-Mail Verteiler
+  email: vorstand@sf-bronnen.de
+- 
   name: Benjamin Baur
   aufgabe: 1. Vorsitzender
   email: benjamin.baur@gmx.de
