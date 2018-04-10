@@ -1,0 +1,38 @@
+title: Zwickel Anmeldung
+options:
+  pages: false
+  delete: false
+  url: false
+fields:
+  title: title
+  headline: headline
+  text:
+    label: Text
+    type:  wysiwyg
+  teams:
+    type: structure
+    label: Angemeldete Mannschaften
+    entry: >
+      <b>{{name}}</b> ({{contact}} - {{email}}) - Bezahlt: {{payed}}
+    fields:
+      name:
+        type: text
+        label: Name des Teams
+        required: true
+      ort:
+        type: text
+        label: Ort
+        required: true
+      contact:
+        type: text
+        label: Ansprechpartner
+        required: true
+      email:
+        type: email
+        label: E-Mail Adresse für Rückfragen
+        required: true
+      payed:
+        type: checkbox
+        label: Bezahlt (Änderungen nur durch Sigge)?
+        text: Ja, Startbeitrag wurde bezahlt.
+        default: 0

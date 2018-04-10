@@ -1,0 +1,103 @@
+<?php snippet('header'); ?>
+<section class="main-banner text-xs-center text-sm-center text-md-left">
+    <div class="container text-lite-color pl-sm-0 pr-sm-0">
+        <h1 class="text-weight-medium"><?= $page->title();?></h1>
+    </div>
+</section>
+<div class="page">
+    <div class="main-container container pl-sm-0 pr-sm-0">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs"><?= $page->headline();?></h2>
+                <?= $page->text()->kirbytext();?>
+                <hr/>
+                <?php if ($page->images()): ?>
+                    <div class="text-center">
+                        <?php foreach($page->images() as $image): ?>
+                            <img src="<?= $image->resize(750)->url();?>" class="img-fluid"/>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($page->people()->isNotEmpty()): ?>
+                    <?php snippet('people');?>
+                <?php endif; ?>
+            </div>
+            <div class="col-12">
+                <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-2">Anmeldung</h3>
+                <?php if(isset($success)): ?>
+                    <div class="alert alert-success">
+                        <?= $success; ?>
+                    </div>
+                <hr/>
+                <?php endif; ?>
+                <?php if($alert): ?>
+                    <div class="alert alert-danger">
+                        <ul class="mb-0">
+                            <?php foreach($alert as $message): ?>
+                                <li><?= html($message) ?></li>
+                            <?php endforeach ?>
+                        </ul>
+                    </div>
+                <?php endif ?>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" role="form">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="fname">Name eurer Mannschaft: *</label>
+                                <input type="text" class="form-control flat" value="<?= isset($data['name']) ? esc($data['name']) : '' ?>" name="name" id="name" required="required" placeholder="Wie heißt eure Mannschaft?">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="lname">Ortschaft *</label>
+                                <input type="text" class="form-control flat" value="<?= isset($data['ort']) ? esc($data['ort']) : '' ?>" name="ort" id="ort" placeholder="Woher seid ihr?">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="lname">Ansprechpartner: *</label>
+                                <input type="text" class="form-control flat" value="<?= isset($data['contact']) ? esc($data['contact']) : '' ?>" name="contact" id="contact" placeholder="Wer ist euer Ansprechpartner?">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="email">E-Mail: *</label>
+                                <input type="email" class="form-control flat" value="<?= isset($data['email']) ? esc($data['email']) : '' ?>" name="email" id="email" required="required" placeholder="E-Mail Adresse">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>
+                                <small>* = Pflichtfeld</small>
+                            <hr/>
+                            <small>
+                                Wenn Sie die im Kontaktformular eingegebenen Daten durch Klick auf den nachfolgenden Button übersenden, erklären Sie sich damit einverstanden, dass wir Ihre Angaben für die Durchführung des Zwickel-Gemeindecups 2018 verwenden. Eine Weitergabe an Dritte findet grundsätzlich nicht statt, es sei denn geltende Datenschutzvorschriften rechtfertigen eine Übertragung oder wir dazu gesetzlich verpflichtet sind. Sie können Ihre erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Im Falle des Widerrufs werden Ihre Daten umgehend gelöscht. Ihre Daten werden ansonsten gelöscht, wenn das Turnier beendet oder der Zweck der Speicherung entfallen ist. Sie können sich jederzeit über die zu Ihrer Person gespeicherten Daten informieren. Weitere Informationen zum Datenschutz finden Sie auch in der <a href="/home/datenschutz" title="Zur Datenschutzerklärung der Sportfreunde Bronnen">Datenschutzerklärung</a> dieser Webseite.
+                            </small>
+                            </p>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="submit" class="btn btn-1 btn-big animation col-12 col-md-4" value="Mannschaft anmelden">
+                        </div>
+                    </div>
+                    <div class="honey">
+                        <label for="message">If you are a human, leave this field empty</label>
+                        <input type="website" name="website" id="website" placeholder="http://example.com" value="<?= isset($data['website']) ? esc($data['website']) : '' ?>"/>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <hr/>
+                <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs">Bestätigte Mannschaften</h3>
+                <ul class="mb-0">
+                <?php $i = 0; foreach ($page->teams()->toStructure() as $team): ?>
+                    <?php if ($team->payed()->value() == 1): $i++; ?>
+                        <li><?= $team->name();?></li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+                <?php if (0 === $i): ?>
+                <li>Noch keine Daten vorhanden</li>
+                <?php endif;?>
+                </ul>
+        </div>
+    </div>
+</div>
+<?php snippet('footer');?>

@@ -1,0 +1,19 @@
+Title: Förderverein
+
+----
+
+Text: Diese Seite befindet sich aktuell im Aufbau. Weitere Informationen zu unserem Förderverein erhalten Sie in Kürze!
+
+----
+
+Headline: Sportfreunde Bronnen Förderverein
+
+----
+
+People: 
+
+- 
+  name: Tobias Mangold
+  aufgabe: 1. Vorsitzender
+  email: info@mangold-immobilien.de
+  phone: ""

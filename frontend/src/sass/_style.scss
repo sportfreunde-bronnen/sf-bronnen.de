@@ -2264,10 +2264,12 @@ table.table-kurs {
   opacity: 0.9;
 }
 
-.uniform__potty {
+.uniform__potty,
+.honey {
   position: absolute;
   left: -9999px;
 }
+
 
 div.uniform-errors {
   padding: 1rem;
@@ -2275,7 +2277,6 @@ div.uniform-errors {
   background-color: $color-red;
   color: #fff;
 }
-
 
 div.uniform-errors__item::before {
   content: ('-');

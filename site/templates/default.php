@@ -16,6 +16,9 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
+    <?php if ($page->people()->isNotEmpty()): ?>
+        <?php snippet('people');?>
+    <?php endif; ?>
 </div>
 </div>
 <?php snippet('footer');?>
