@@ -8,6 +8,8 @@ sourcecode for the website sf-bronnen.de
 |---|---|
 |frontend/|frontend stylesheets built with bootstrap4, sass and grunt|
 |kirby/|kirby CMS|
+|content/|page content|
+
 
 ## Instructions
 ```bash
