@@ -52,7 +52,7 @@
                 <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mb-0"><span>Aktuelles</span> aus dem Verein</h4>
                 <div class="row">
                     <div id="blog-post-carousel" class="owl-carousel mt-0">
-                    <?php foreach ($site->index()->visible()->filterBy('template', 'bericht')->sortBy('datum', 'desc')->limit(3) as $post): ?>
+                    <?php foreach ($site->index()->visible()->filterBy('template', 'bericht')->sortBy('datum', 'desc')->limit(6) as $post): ?>
                         <div class="box-3 news-box">
                             <a href="<?= $post->url();?>" title="Zum Artikel - <?= $post->title();?>">
                             <?php if ($post->teaserimage()->isNotEmpty()): ?>
