@@ -70,8 +70,8 @@
           nav: true
         },
         1200: {
-          items: 3,
-          nav: false
+          items: 5,
+          nav: true
         }
       }
   });
