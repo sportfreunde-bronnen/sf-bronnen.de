@@ -19,11 +19,12 @@ Links:
 Slides: 
 
 - 
-  title: Neubau Sportplatz
-  text: Bilder, Fortschritt und Aktuelles.
-  sliderimage: slider-sfb-2.jpg
+  title: Zwickel Gemeinde-Cup 2018
+  text: Infos, Anmeldung und mehr
+  sliderimage: slider-sfb-4.jpg
   textposition: right
-  internallink: fussball/allgemeines/sportgelaende
+  internallink: >
+    gesamtverein/veranstaltungen/zwickel-gemeindecup
   externallink: ""
 - 
   title: Sie suchen eine Location?

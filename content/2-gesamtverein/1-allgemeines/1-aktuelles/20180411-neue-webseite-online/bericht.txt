@@ -1,0 +1,62 @@
+Delimiter1: 
+
+----
+
+Datum: 2018-04-11
+
+----
+
+Author: magnus
+
+----
+
+Title: Neue Webseite online
+
+----
+
+Teaserimage: teaser-5-webseite.png
+
+----
+
+Text: 
+
+Ab sofort präsentieren sich die Sportfreunde Bronnen mit einem neuen und modernen Auftritt im World Wide Web.
+
+**Weniger ist manchmal mehr  
+**Besonderer Wert wurde hierbei auf Schlichtheit, fortlaufende Aktualität, eine gute Bedienbarkeit sowie eine schnell zu den gewünschten Informationen führende Grundstruktur gelegt. Auch auf mobilen Endgeräten ist die neue Seite problemlos nutzbar.
+
+**Abteilungsspezifische Informationen**  
+ Zusätzlich zum Reiter "Gesamtverein", wo Ihr alles über den Gesamtverein findet, präsentiert sich jede Abteilung mit einer eigenen Rubrik. Hier findet Ihr abteilungsspezifische Informationen wie aktuelle News, Downloads uvm. Um sich einen schnellen Einblick verschaffen zu können, werden alle News aus den Abteilungen auf der Startseite zusammengefasst dargestellt.
+
+In den kommenden Tagen und Wochen werden die noch fehlenden Informationen schnellstmöglich ergänzt. Für Fragen, das Melden von Fehlern oder sonstigen Anliegen benutzt bitte unser neues [Kontaktformular](/home/kontakt).
+
+Viel Spaß beim Stöbern!  
+Die [Vorstandschaft](/gesamtverein/allgemeines/vorstand) der Sportfreunde Bronnen
+
+----
+
+Textimages: 
+
+----
+
+Tags: webseite,gesamtverein
+
+----
+
+Delimiter2: 
+
+----
+
+Gallerytoggle: no
+
+----
+
+Galleryheadline: 
+
+----
+
+Galleryimages: 
+
+----
+
+Galleryname: 

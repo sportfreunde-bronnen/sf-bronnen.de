@@ -1,8 +1,8 @@
-Title: Zwickel-Gemeindecup
+Title: Zwickel Gemeinde-Cup
 
 ----
 
-Shorttitle: 1. Zwickel-Gemeindecup (Elfmeterturnier)
+Shorttitle: 1. Zwickel Gemeinde-Cup (Elfmeterturnier)
 
 ----
 
@@ -20,7 +20,7 @@ Ort: Sportgelände Bronnen
 
 Text: 
 
-## 1. Zwickel-Gemeindecup
+## 1. Zwickel Gemeinde-Cup
 
 Der Nachttopf ist zurück! Nach der Pensionierung des legendären Zwickel-Night-Cup vor einigen Jahren, bringen die Sportfreunde Bronnen den berühmten Nachttopf zurück in die oberschwäbische Turnierlandschaft.
 

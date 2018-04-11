@@ -28,6 +28,14 @@
                     <div class="alert alert-success">
                         <?= $success; ?>
                     </div>
+                    <div class="alert alert-info">
+                        Zum finalen Abschluss der Anmeldung überweist bitte die Startgebühr (20€) auf das folgende Konto:<br/>
+                        <b>Empfänger</b>: Zwickel Gemeinde-Cup<br/>
+                        <b>IBAN</b>: DE73 6549 1320 0009 2500 18<br/>
+                        <b>BIC</b>: GENODES1VBL<br/>
+                        <b>Kreditinstitut</b>: VR-Bank Laupheim-Illertal eG<br/>
+                        <b>Verwendungszweck</b>: Euren „TEAM-NAMEN“ bitte unbedingt angeben !!
+                    </div>
                 <hr/>
                 <?php endif; ?>
                 <?php if($alert): ?>
