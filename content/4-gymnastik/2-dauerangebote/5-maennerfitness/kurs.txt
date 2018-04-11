@@ -6,7 +6,7 @@ Headline: Tu Deinem Körper was Gutes!
 
 ----
 
-Text: Dir ist klar, dass Di Deine Fitness nur erhältst, wenn Du regelmäßig Deine Muskulatur kräftigst und Deine Gelenke mobilisierst? Dabei sorgt der Einsatz verschiedener Kleingeräte für ein abwechslungsreiches, intensives und effektives Training. Spiele und Zirkel um Deine Ausdauerfähigkeit zu verbessern, dürfen natürlich nicht fehlen. Komm doch einfach mal Vorbei zum unverbindlichen Schnuppern!
+Text: Dir ist klar, dass Du Deine Fitness nur erhältst, wenn Du regelmäßig Deine Muskulatur kräftigst und Deine Gelenke mobilisierst? Dabei sorgt der Einsatz verschiedener Kleingeräte für ein abwechslungsreiches, intensives und effektives Training. Spiele und Zirkel um Deine Ausdauerfähigkeit zu verbessern, dürfen natürlich nicht fehlen. Komm doch einfach mal Vorbei zum unverbindlichen Schnuppern!
 
 ----
 
@@ -27,3 +27,7 @@ Anmeldung: 07392-911951 oder gfeger@gmx.de
 ----
 
 Kosten: 
+
+----
+
+Hinweis: 

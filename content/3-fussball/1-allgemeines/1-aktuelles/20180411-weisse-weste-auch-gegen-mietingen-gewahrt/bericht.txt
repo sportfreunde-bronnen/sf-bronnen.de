@@ -28,13 +28,13 @@ Nach der Halbzeit versuchten die Bronner das Ergebnis geschickt zu verwalten. Br
 
 Fotos vom Spiel: <https://www.fupa.net/…/sv-mietingen-ii-sf-bronne…/foto1.html>
 
----
+- - - - - -
 
 Zeit zum Durchschnaufen? Fehlanzeige! Aufgrund der vielen Spielabsagen der Vorrunde geht es bereits morgen (Dienstag, 27.03.) mit einem Nachholspiel weiter. Zu Gast sind die Mannen von Spielertrainer Georg Depperschmidt vom SC Schönebürg e.V. 1927, die aktuell den vierten Tabellenplatz belegen und mit einem klaren Sieg gegen Ummendorf und einem Unentschieden gegen unsere Burgrieder Nachbarn in die Rückrunde starteten. Die Heimelf will ihre aufsteigende Form natürlich bestätigen und wird alles daran setzen, die Punkte in Bronnen zu behalten.
 
 Anpfiff: 18.30 Uhr
 
----
+- - - - - -
 
 Das Nachholspiel der Reserve gegen Schönebürg findet einen Tag später (Mittwoch, 28.03) statt. Anpfiff hierzu ist ebenfalls um 18.30 Uhr.
 
@@ -52,12 +52,12 @@ Delimiter2:
 
 ----
 
-Gallerytoggle: no
+Gallerytoggle: yes
 
 ----
 
-Galleryname: 
+Galleryname: Bilder vom Spiel
 
 ----
 
-Galleryimages: 
+Galleryimages: img_5249.jpg,img_5282.jpg,img_5301.jpg,img_5312.jpg
