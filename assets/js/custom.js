@@ -20,13 +20,11 @@
       if (toTop > 188 && !nav.hasClass('fixed-top')) {
         nav.addClass('fixed-top');
         nav.addClass('op-50');
-        console.log("ADD");
 
       }
       if (toTop <= 100 && nav.hasClass('fixed-top')) {
         nav.removeClass('fixed-top');
         nav.removeClass('op-50');
-        console.log("REMOVE");
       }
     });
 
@@ -60,7 +58,22 @@
       stopOnHover : true,
       navigation : true, // Show next and prev buttons
       pagination : false,
-      navigationText : ["<span class='fa fa-chevron-left animation'></span>","<span class='fa fa-chevron-right animation'></span>"]
+      navigationText : ["<span class='fa fa-chevron-left animation'></span>","<span class='fa fa-chevron-right animation'></span>"],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        768: {
+          items: 2,
+          nav: true
+        },
+        1200: {
+          items: 3,
+          nav: false
+        }
+      }
   });
 
   // ACCORDION

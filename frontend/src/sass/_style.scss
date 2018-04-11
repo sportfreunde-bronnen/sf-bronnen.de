@@ -1231,20 +1231,20 @@ ul#gallery-grid .hover-content:hover a {
 
 /* Blog Post Carousel Styles Starts */
 
-#blog-post-carousel .owl-controls .owl-buttons .owl-prev,
-#blog-post-carousel .owl-controls .owl-buttons .owl-next {
-  font-size: 36px;
+#blog-post-carousel .owl-nav .owl-prev,
+#blog-post-carousel .owl-nav .owl-next {
+  font-size: 50px;
   color: #323946;
   opacity: 1;
   background: none;
 }
 
-#blog-post-carousel .owl-controls .owl-buttons .owl-prev:hover,
-#blog-post-carousel .owl-controls .owl-buttons .owl-next:hover {
+#blog-post-carousel .owl-nav .owl-prev:hover,
+#blog-post-carousel .owl-nav .owl-next:hover {
   color: $brightBlue;
 }
 
-#featured-blog-post-carousel .owl-controls {
+#featured-blog-post-carousel .owl-nav {
   margin-top: 0;
   margin-bottom: 50px;
 }
