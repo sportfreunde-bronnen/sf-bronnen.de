@@ -47,7 +47,7 @@
                 <?php endif; ?>
                 <h5 class="sub-heading-2 text-xs-center mb-0">Weitere Artikel</h5><br>
                 <ul class="list-unstyled list-post-1">
-                <?php foreach ($site->index()->visible()->filterBy('template', 'bericht')->sortBy('datum', 'desc') as $post): ?>
+                <?php foreach ($site->index()->visible()->filterBy('template', 'bericht')->sortBy('datum', 'desc')->limit(3) as $post): ?>
                     <?php if ($post === $page) continue; ?>
                     <li>
                         <h6 class="sub-heading-1"><?= $post->title();?></h6>
