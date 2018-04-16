@@ -15,9 +15,15 @@
                                         <?php foreach ($page->children() as $subPage): ?>
                                             <?php if ($subPage->hasChildren()): ?>
                                                 <a class="dropdown-item sub <?= ($subPage->isOpen()) ? ' active' : '';?>"><?= $subPage->title();?></a>
-                                                <?php foreach ($subPage->children()->visible() as $subSubPage): ?>
-                                                    <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?></a>
-                                                <?php endforeach;?>
+                                                <?php if ($subPage->title() == 'Veranstaltungen'):?>
+                                                    <?php foreach ($subPage->children()->visible()->sortBy('datum') as $subSubPage): ?>
+                                                        <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?></a>
+                                                    <?php endforeach;?>
+                                                <?php else: ?>
+                                                    <?php foreach ($subPage->children()->visible() as $subSubPage): ?>
+                                                        <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?></a>
+                                                    <?php endforeach;?>
+                                                <?php endif; ?>
                                             <?php else: ?>
                                                 <a class="dropdown-item<?= ($subPage->isOpen()) ? ' active' : '';?>" href="<?= $subPage->url();?>"><?= $subPage->title();?></a>
                                             <?php endif; ?>

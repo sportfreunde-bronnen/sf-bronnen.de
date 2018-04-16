@@ -18,7 +18,10 @@
                         <tbody>
                         <tr>
                             <td class="font-weight-bold">Wann?</td>
-                            <td><?= $page->datum()->toGermanDate();?></td>
+                            <td>
+                                <?= $page->datum()->toGermanDate();?>
+                                <?php if ($page->datumbis()->isNotEmpty()): ?> - <?= $page->datumbis()->toGermanDate();?><?endif; ?>
+                            </td>
                         </tr>
                         <tr>
                             <td class="font-weight-bold">Wo?</td>
