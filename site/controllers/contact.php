@@ -18,6 +18,10 @@ return function ($site, $pages, $page) {
         'nachricht' => [
             'rules' => ['required'],
             'message' => 'Bitte geben Sie eine Anfrage ein.'
+        ],
+        'dataDeclaration' => [
+            'rules' => ['required'],
+            'message' => 'Bitte bestätigen Sie die Einwilligung zur Nutzung Ihrer personenbezogenen Daten'
         ]
     ]);
     if (r::is('POST')) {

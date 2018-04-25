@@ -25,7 +25,8 @@
                                     <label for="selectEmpfaenger">Empfänger: *</label>
                                     <select class="form-control flat no-border-radius" id="selectEmpfaenger" name="empfaenger">
                                         <?php $i = 0; foreach ($page->ansprechpartner()->toStructure() as $ansprechpartner): $i++; ?>
-                                            <option value="<?= $ansprechpartner->email();?>"><?= $ansprechpartner->name();?> (<?= $ansprechpartner->aufgabe();?>)</option>
+                                            <?php $selected = ($form->old('empfaenger') == $ansprechpartner->email()) ? ' selected ' : ' ';?>
+                                            <option<?= $selected; ?>value="<?= $ansprechpartner->email();?>"><?= $ansprechpartner->name();?> (<?= $ansprechpartner->aufgabe();?>)</option>
                                         <?php endforeach; ?>
                                     </select>
                                 </div>
@@ -55,13 +56,19 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <p>
-                                    <small>* = Pflichtfeld</small>
-                                    <hr/>
-                                    <small>
-                                        Wenn Sie die im Kontaktformular eingegebenen Daten durch Klick auf den nachfolgenden Button übersenden, erklären Sie sich damit einverstanden, dass wir Ihre Angaben für die Beantwortung Ihrer Anfrage bzw. Kontaktaufnahme verwenden. Eine Weitergabe an Dritte findet grundsätzlich nicht statt, es sei denn geltende Datenschutzvorschriften rechtfertigen eine Übertragung oder wir dazu gesetzlich verpflichtet sind. Sie können Ihre erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Im Falle des Widerrufs werden Ihre Daten umgehend gelöscht. Ihre Daten werden ansonsten gelöscht, wenn wir Ihre Anfrage bearbeitet haben oder der Zweck der Speicherung entfallen ist. Sie können sich jederzeit über die zu Ihrer Person gespeicherten Daten informieren. Weitere Informationen zum Datenschutz finden Sie auch in der <a href="/home/datenschutz" title="Zur Datenschutzerklärung der Sportfreunde Bronnen">Datenschutzerklärung</a> dieser Webseite.
-                                    </small>
-                                </p>
+                                <hr/>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1" name="dataDeclaration" value="0">
+                                    <label class="custom-control-label" for="customCheck1">
+                                        <small>
+                                            * Ich erkläre mich damit einverstanden, dass die Sportfreunde Bronnen 1949 e.V. meine Angaben für die Beantwortung meiner Anfrage bzw. Kontaktaufnahme verwenden.
+                                            Eine Weitergabe an Dritte findet grundsätzlich nicht statt, es sei denn geltende Datenschutzvorschriften rechtfertigen eine Übertragung oder die Sportfreunde Bronnen 1949 e.V. sind dazu gesetzlich verpflichtet. Sie können Ihre erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Im Falle des Widerrufs werden Ihre Daten umgehend gelöscht. Ihre Daten werden ansonsten gelöscht, wenn wir Ihre Anfrage bearbeitet haben oder der Zweck der Speicherung entfallen ist. Sie können sich jederzeit über die zu Ihrer Person gespeicherten Daten informieren. Weitere Informationen zum Datenschutz finden Sie auch in der <a href="/home/datenschutz" title="Zur Datenschutzerklärung der Sportfreunde Bronnen">Datenschutzerklärung</a> dieser Webseite.
+                                        </small>
+                                    </label>
+                                </div>
+                                <hr/>
+                                <small>* = Pflichtfeld</small>
+                                <hr/>
                             </div>
                             <div class="col-sm-12">
                                 <input type="submit" class="btn btn-1 btn-big animation col-12 col-md-4" value="Nachricht abschicken">

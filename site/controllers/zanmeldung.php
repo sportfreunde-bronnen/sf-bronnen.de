@@ -26,14 +26,16 @@ return function($site, $pages, $page) {
             'contact'  => get('contact'),
             'ort'   => get('ort'),
             'email'     => get('email'),
-            'payed' => 0
+            'payed' => 0,
+            'dataDeclaration' => get('dataDeclaration')
         );
 
         $rules = array(
             'name' => array('required'),
             'contact' => array('required'),
             'ort' => array('required'),
-            'email' => array('required', 'email'),
+            'dataDeclaration' => array('required'),
+            'email' => array('required', 'email')
         );
 
         $messages = array(
@@ -41,6 +43,7 @@ return function($site, $pages, $page) {
             'contact' => 'Bitte gib einen Ansprechpartner an',
             'ort' => 'Bitte gib an, woher ihr seid',
             'email' => 'Bitte gib eine valide E-Mail Adresse an',
+            'dataDeclaration' => 'Bitte bestätigen Sie die Einwilligung zur Nutzung Ihrer personenbezogenen Daten'
         );
 
 

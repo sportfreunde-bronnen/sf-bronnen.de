@@ -8,6 +8,14 @@ Headline: Zwickel Gemeinde-Cup 2018
 
 Teams: 
 
+- 
+  name: dasdasd
+  contact: dasdasd
+  ort: dasdasd
+  email: dasdasd@web.de
+  payed: 0
+  dataDeclaration: "0"
+
 ----
 
 Text: 
