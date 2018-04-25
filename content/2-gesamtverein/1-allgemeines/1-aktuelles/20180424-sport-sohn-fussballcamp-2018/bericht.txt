@@ -1,0 +1,45 @@
+Delimiter1: 
+
+----
+
+Datum: 2018-04-24
+
+----
+
+Author: magnus
+
+----
+
+Title: SPORT SOHN Fußballcamp 2018
+
+----
+
+Teaserimage: teaser-fussballcamp.png
+
+----
+
+Text: Auch in diesem Jahr findet wieder das SPORT SOHN Fußballcamp statt. Den genauen Ablauf, weitere Informationen und eine Anleitung zur Anmeldung erhalten Sie auf der [**Veranstaltungsseite**](/gesamtverein/veranstaltungen/fussball-camp-2018).
+
+----
+
+Textimages: 
+
+----
+
+Tags: gesamtverein,jugendfussball,veranstaltung
+
+----
+
+Delimiter2: 
+
+----
+
+Gallerytoggle: no
+
+----
+
+Galleryname: 
+
+----
+
+Galleryimages: 
