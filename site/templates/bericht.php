@@ -3,7 +3,7 @@
     <div class="main-container container pl-sm-0 pr-sm-0 page--bericht">
         <div class="row">
             <div class="col-md-8 col-sm-12">
-                <div class="blog-post single text-xs-center">
+                <div class="blog-post single">
                     <div class="box-3">
                         <div class="inner">
                             <p class="date-meta text-grey-color text-uppercase">
@@ -45,7 +45,7 @@
                     <?php endforeach; ?>
                     </div>
                 <?php endif; ?>
-                <h5 class="sub-heading-2 text-xs-center mb-0">Weitere Artikel</h5><br>
+                <h5 class="sub-heading-2 mb-0">Weitere Artikel</h5><br>
                 <ul class="list-unstyled list-post-1">
                 <?php foreach ($site->index()->visible()->filterBy('template', 'bericht')->sortBy('datum', 'desc')->limit(3) as $post): ?>
                     <?php if ($post === $page) continue; ?>
