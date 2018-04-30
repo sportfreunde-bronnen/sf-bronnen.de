@@ -100,7 +100,7 @@ Sponsoren:
 - 
   name: Halder Werkzeuge
   ort: Bronnen
-  webseite: ""
+  webseite: https://www.halder.com/de/
 - 
   name: HM-Stahlvertriebs-GmbH
   ort: Oberholzheim
