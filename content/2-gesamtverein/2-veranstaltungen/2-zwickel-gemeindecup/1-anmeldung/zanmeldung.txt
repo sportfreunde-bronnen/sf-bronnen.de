@@ -9,11 +9,11 @@ Headline: Zwickel-Gemeinde-Cup 2018
 Teams: 
 
 - 
-  name: Jugendtrainer
-  contact: Daniel Sießegger
+  name: Hallofcwieso?
+  contact: Simon Dilger
   ort: Achstetten
-  email: siessegger19@googlemail.com
-  payed: 0
+  email: dille-8@web.de
+  payed: "0"
   dataDeclaration: "0"
 - 
   name: Rottalkicker
