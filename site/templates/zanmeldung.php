@@ -22,6 +22,7 @@
                     <?php snippet('people');?>
                 <?php endif; ?>
             </div>
+            <?php if (1==2): ?>
             <div class="col-12">
                 <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-2">Anmeldung</h3>
                 <?php if(isset($success)): ?>
@@ -98,6 +99,7 @@
                     </div>
                 </form>
             </div>
+            <?php endif; ?>
             <div class="col-12">
                 <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-5">Bestätigte Mannschaften</h3>
                 <ul class="mb-0">
