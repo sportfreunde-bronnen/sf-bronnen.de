@@ -2,17 +2,142 @@ Title: Anmeldung
 
 ----
 
-Headline: Zwickel Gemeinde-Cup 2018
+Headline: Zwickel-Gemeinde-Cup 2018
 
 ----
 
 Teams: 
 
 - 
-  name: dasdasd
-  contact: dasdasd
-  ort: dasdasd
-  email: dasdasd@web.de
+  name: Jugendtrainer
+  contact: Daniel Sießegger
+  ort: Achstetten
+  email: siessegger19@googlemail.com
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: Rottalkicker
+  contact: Melanie Schmid
+  ort: Bronnen
+  email: mullusch@web.de
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: Familie ehrenlos
+  contact: Marion Müller
+  ort: Laupheim
+  email: 06-selina@web.de
+  payed: "1"
+  dataDeclaration: "0"
+- 
+  name: Ajax Dauerstramm
+  contact: David Reuder
+  ort: Bronnen, Achstetten
+  email: david.reuder@web.de
+  payed: "1"
+  dataDeclaration: "0"
+- 
+  name: Pfostenbomber
+  contact: Sonia Maunz
+  ort: Erbach
+  email: sonia.maunz@googlemail.com
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: FC Paradiso
+  contact: Matthias Lebherz
+  ort: Menkheef
+  email: matthias.lebherz91@gmail.com
+  payed: "1"
+  dataDeclaration: "0"
+- 
+  name: Söhne Menkheefs
+  contact: Magnus Buk
+  ort: Bronnen
+  email: MagnusBuk@gmx.de
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: Jesuslatschen
+  contact: Nico Miller
+  ort: Rot
+  email: maik-nicomiller@web.de
+  payed: "1"
+  dataDeclaration: "0"
+- 
+  name: Energie Kopfnuss
+  contact: Christian Gavric
+  ort: Laupheim
+  email: c.gavric@gmx.de
+  payed: "1"
+  dataDeclaration: "0"
+- 
+  name: 1.FC SieWillJa
+  contact: Dominik Sachs
+  ort: Oberholzheim
+  email: ds.sachs@web.de
+  payed: "1"
+  dataDeclaration: "0"
+- 
+  name: Hangover 96
+  contact: Sachs Jan
+  ort: Oberholzheim
+  email: sn.sachs@web.de
+  payed: "1"
+  dataDeclaration: "0"
+- 
+  name: "Gert D' Suscht"
+  contact: Björn Knierim
+  ort: Achstetten und Burgrieden
+  email: knai@gmx.de
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: Vorstandschaft SFB
+  ort: Bronnen
+  contact: Magnus Buk
+  email: MagnusBuk@gmx.de
+  payed: "0"
+- 
+  name: Dönertiere
+  contact: Kevin Metzger
+  ort: Laupheim
+  email: kevin.metzger@gmx.de
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: FFW Bronnen
+  contact: Felix Schöffmann
+  ort: Bronna
+  email: felix.schoeffmann@icloud.com
+  payed: "1"
+  dataDeclaration: "0"
+- 
+  name: MG Bronner-Holz
+  contact: Baur Peter
+  ort: Bronnen
+  email: Simon.Baur@gmx.de
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: Hopfen und Filz
+  contact: Patrick Seidler
+  ort: Laupheim
+  email: patrick.seidler@gmx.de
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: Bier Bier Bier Bett Bett Bett
+  contact: Kevin Werner
+  ort: Oberholzheim
+  email: maximilian.braig@gmx.de
+  payed: 0
+  dataDeclaration: "0"
+- 
+  name: Arsenal LongDong
+  contact: Matthias Benkovic
+  ort: Oberholzheim und Burgrieden
+  email: matze.fvo@gmail.com
   payed: 0
   dataDeclaration: "0"
 

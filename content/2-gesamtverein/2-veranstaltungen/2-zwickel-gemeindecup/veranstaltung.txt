@@ -1,8 +1,8 @@
-Title: Zwickel Gemeinde-Cup
+Title: Zwickel-Gemeinde-Cup
 
 ----
 
-Shorttitle: 1. Zwickel Gemeinde-Cup (Elfmeterturnier)
+Shorttitle: 1. Zwickel-Gemeinde-Cup (Elfmeterturnier)
 
 ----
 
@@ -20,7 +20,7 @@ Ort: Sportgelände Bronnen
 
 Text: 
 
-## 1. Zwickel Gemeinde-Cup
+## 1. Zwickel-Gemeinde-Cup
 
 Der Nachttopf ist zurück! Nach der Pensionierung des legendären Zwickel-Night-Cup vor einigen Jahren, bringen die Sportfreunde Bronnen den berühmten Nachttopf zurück in die oberschwäbische Turnierlandschaft.
 
@@ -46,12 +46,16 @@ Line2:
 
 ----
 
-Doc: 
+Doc: gemeindecup_flyer.pdf
 
 ----
 
-Documentdescription: 
+Documentdescription: Flyer
 
 ----
 
 Related: gesamtverein/veranstaltungen/uhlmann-halder-cup
+
+----
+
+Datumbis: 

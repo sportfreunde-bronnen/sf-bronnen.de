@@ -19,10 +19,10 @@ Links:
 Slides: 
 
 - 
-  title: Zwickel Gemeinde-Cup 2018
+  title: Zwickel-Gemeinde-Cup 2018
   text: Infos, Anmeldung und mehr
-  sliderimage: slider-sfb-4.jpg
-  textposition: right
+  sliderimage: slider-sfb-zgc2018.jpg
+  textposition: left
   internallink: >
     gesamtverein/veranstaltungen/zwickel-gemeindecup
   externallink: ""
@@ -30,7 +30,7 @@ Slides:
   title: Sie suchen eine Location?
   text: Wir haben da was!
   sliderimage: slider-sfb-3.jpg
-  textposition: left
+  textposition: right
   internallink: gesamtverein/allgemeines/svz
   externallink: ""
 

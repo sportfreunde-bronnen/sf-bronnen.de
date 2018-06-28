@@ -14,7 +14,15 @@ Text:
 
 ## 22. Uhlmann-Halder-Cup 2018
 
-Weitere Infos folgen rechtzeitig.
+Der Uhlmann-Halder-Cup ist das Kleinfeld-Fußballturnier für Betriebsmannschaften in Oberschwaben. In diesem Jahr folgt bereits die 22. Ausgabe des beliebten Turniers, das von der Firma Uhlmann aus Laupheim, der Erwin Halder KG aus Bronnen und den Sportfreunden federführend organisiert wird.
+
+Die Betriebsmannschaften verschiedenster Sparten treten in spannenden Spielen gegeneinander an und ermitteln die beste Betriebsmannschaft.
+
+Für alle interessierten Zuschauer sowie Mitarbeiter der teilnehmenden Firmen findet parallel ab 19.00 eine After-Work-Party statt, bei der Ihr mit Freunden und Kollegen in den Spielpausen feiern könnt.
+
+Für das leibliche Wohl ist selbstverständlich bestens gesorgt.
+
+Wir freuen uns auf euer Kommen!
 
 ----
 
@@ -46,7 +54,7 @@ Documentdescription: Flyer
 
 ----
 
-Doc: 
+Doc: flyer_uhlmann_flyeralarm.pdf
 
 ----
 
