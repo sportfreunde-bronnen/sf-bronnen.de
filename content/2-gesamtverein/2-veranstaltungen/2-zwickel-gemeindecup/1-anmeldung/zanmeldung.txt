@@ -140,6 +140,13 @@ Teams:
   email: matze.fvo@gmail.com
   payed: 0
   dataDeclaration: "0"
+- 
+  name: Hacke Attacke
+  contact: Fabian Schmid
+  ort: Oberholzheim
+  email: fabi.oho@web.de
+  payed: 0
+  dataDeclaration: "0"
 
 ----
 
