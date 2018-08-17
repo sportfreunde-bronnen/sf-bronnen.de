@@ -19,12 +19,12 @@ Links:
 Slides: 
 
 - 
-  title: Zwickel-Gemeinde-Cup 2018
-  text: Infos, Anmeldung und mehr
-  sliderimage: slider-sfb-zgc2018.jpg
+  title: Weißwurstfrühstück
+  text: unseres Fördervereins am 23.09.2018
   textposition: left
+  sliderimage: slider-weisswurst.jpg
   internallink: >
-    gesamtverein/veranstaltungen/zwickel-gemeindecup
+    gesamtverein/veranstaltungen/weisswurstfruehstueck
   externallink: ""
 - 
   title: Sie suchen eine Location?

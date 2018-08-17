@@ -2,7 +2,7 @@ Title: Oktoberfest
 
 ----
 
-Datum: 
+Datum: 2018-10-19
 
 ----
 
@@ -30,7 +30,7 @@ Document:
 
 ----
 
-Related: gesamtverein/veranstaltungen/uhlmann-halder-cup
+Related: gesamtverein/veranstaltungen/weihnachtsfeier
 
 ----
 
@@ -43,3 +43,7 @@ Doc:
 ----
 
 Documentdescription: 
+
+----
+
+Datumbis: 
