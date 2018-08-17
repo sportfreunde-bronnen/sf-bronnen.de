@@ -47,33 +47,63 @@
             </div>
         </section>
 
-        <div class="main-container container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
+        <div class="main-container container pl-sm-0 pr-sm-0 pb-0 text-xs-center text-sm-center text-md-left">
             <section class="section-latest-news">
                 <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mb-0"><span>Aktuelles</span> aus dem Verein</h4>
                 <div class="row">
                     <div id="blog-post-carousel" class="owl-carousel mt-0">
-                    <?php foreach ($site->index()->visible()->filterBy('template', 'bericht')->sortBy('datum', 'desc')->limit(6) as $post): ?>
-                        <div class="box-3 news-box">
-                            <a href="<?= $post->url();?>" title="Zum Artikel - <?= $post->title();?>">
-                            <?php if ($post->teaserimage()->isNotEmpty()): ?>
-                                <img src="<?= $post->parent()->images()->find($post->teaserimage())->url();?>" alt="News Images" class="img-fluid img-center">
+                        <?php foreach ($page->getLatestNews() as $post): ?>
+                            <div class="box-3 news-box">
+                                <a href="<?= $post->url();?>" title="Zum Artikel - <?= $post->title();?>">
+                                    <?php if ($post->teaserimage()->isNotEmpty()): ?>
+                                        <img src="<?= $post->parent()->images()->find($post->teaserimage())->url();?>" alt="News Images" class="img-fluid img-center">
+                                    <?php else: ?>
+                                        <img src="/assets/images/blog/blog-thumb-2.jpg" alt="News Images" class="img-fluid img-center">
+                                    <?php endif; ?>
+                                </a>
+                                <div class="news-box-content">
+                                    <div class="time-stamp text-center">
+                                        <span class="text-weight-light"><?= date('d.m.Y', strtotime($post->datum()));?> - <?= $post->parents()->last()->title();?></span>
+                                    </div>
+                                    <h6 class="text-weight-medium"><a title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>"><?= $post->title();?></a></h6>
+                                    <hr/>
+                                    <p><?= substr($post->text(), 0, 100); ?>...</p>
+                                    <ul class="list-unstyled list-inline text-normal">
+                                        <li class="list-inline-item text-weight-medium"><a class="h6" title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>">Weiterlesen</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="main-container container pl-sm-0 pr-sm-0 pt-0 text-xs-center text-sm-center text-md-left">
+            <section class="section-upcoming-events">
+                <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mb-0"><span>Kommende</span> Veranstaltungen</h4>
+                <div class="row mt-4">
+                    <?php foreach ($page->getNextEvents() as $event): ?>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="<?= $event->url();?>">
+                            <?php if ($event->vimage()->isNotEmpty()): ?>
+                                <img src="<?= $event->vimage()->toFile()->crop(400,200)->url();?>" alt="News Images" class="img-fluid img-center pb-2">
                             <?php else: ?>
                                 <img src="/assets/images/blog/blog-thumb-2.jpg" alt="News Images" class="img-fluid img-center">
                             <?php endif; ?>
                             </a>
-                            <div class="news-box-content">
-                                <div class="time-stamp text-center">
-                                    <span class="text-weight-light"><?= date('d.m.Y', strtotime($post->datum()));?> - <?= $post->parents()->last()->title();?></span>
-                                </div>
-                                <h6 class="text-weight-medium"><a title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>"><?= $post->title();?></a></h6>
-                                <hr/>
-                                <p><?= substr($post->text(), 0, 100); ?>...</p>
-                                <ul class="list-unstyled list-inline text-normal">
-                                    <li class="list-inline-item text-weight-medium"><a class="h6" title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>">Weiterlesen</a></li>
-                                </ul>
-                            </div>
+                            <a href="<?= $event->url();?>">
+                                <b><?= $page->formatDate($event->datum());?></b>: <?= $event->title();?>
+                            </a>
+                            <br/>
+                            <small><?= $event->shorttitle();?></small>
+                            <br/>
                         </div>
                     <?php endforeach; ?>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <hr/>
                     </div>
                 </div>
             </section>
