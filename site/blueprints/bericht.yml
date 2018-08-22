@@ -23,12 +23,12 @@ fields:
     extends: title
   teaserImage:
     label: Teaser Bild
-    type: select
+    type: image
     options: query
     required: true
     help: Bild, das in der Artikel-Übersicht angezeigt wird
     query:
-      page: ../
+      page: ./
       fetch: images
       value: '{{filename}}'
       text: '{{filename}}'
