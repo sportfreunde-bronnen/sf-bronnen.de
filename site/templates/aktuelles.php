@@ -9,7 +9,7 @@
                         <div class="box-3 animation text-xs-center">
                             <p>
                                 <?php if ($post->teaserimage()->isNotEmpty()): ?>
-                                    <a href="<?= $post->url();?>"><?= $post->title();?>
+                                    <a href="<?= $post->url();?>">
                                         <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->url();?>" alt="Blog Image" class="img-fluid img-center-xs">
                                     </a>
                                 <?php endif; ?>
