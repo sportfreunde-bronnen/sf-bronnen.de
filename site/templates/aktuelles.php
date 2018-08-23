@@ -9,7 +9,9 @@
                         <div class="box-3 animation text-xs-center">
                             <p>
                                 <?php if ($post->teaserimage()->isNotEmpty()): ?>
-                                    <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->url();?>" alt="Blog Image" class="img-fluid img-center-xs">
+                                    <a href="<?= $post->url();?>"><?= $post->title();?>
+                                        <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->url();?>" alt="Blog Image" class="img-fluid img-center-xs">
+                                    </a>
                                 <?php endif; ?>
                             </p>
                             <div class="inner">
