@@ -4,7 +4,7 @@
     <div class="main-container container pl-sm-0 pr-sm-0">
         <?php if ($page->children()->count() > 0): ?>
             <div class="row blog-post">
-                <?php foreach ($page->children()->sortBy('datum', 'desc') as $post): ?>
+                <?php foreach ($page->children()->visible()->sortBy('datum', 'desc') as $post): ?>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="box-3 animation text-xs-center">
                             <p>
