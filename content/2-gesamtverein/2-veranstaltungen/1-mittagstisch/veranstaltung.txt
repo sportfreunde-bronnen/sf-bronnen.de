@@ -2,7 +2,7 @@ Title: Mittagstisch
 
 ----
 
-Datum: 2018-03-11 12:00
+Datum: 2018-11-11 12:00
 
 ----
 
@@ -12,7 +12,7 @@ Ort: SVZ
 
 Text: 
 
-## 5. Mittagstisch
+## 6. Mittagstisch
 
 Es stehen wieder leckere Sachen auf der Speisekarte! Kommt vorbei :)
 
@@ -45,3 +45,7 @@ Doc:
 ----
 
 Documentdescription: 
+
+----
+
+Datumbis: 

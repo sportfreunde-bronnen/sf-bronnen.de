@@ -6,7 +6,7 @@ Datum: 2018-12-08 19:00
 
 ----
 
-Ort: Gemeindezentrum Bronnen
+Ort: SVZ
 
 ----
 
@@ -37,3 +37,15 @@ Related:
 ----
 
 Shorttitle: Weihnachtsfeier des Gesamtvereins im Gemeindezentrum Bronnen.
+
+----
+
+Datumbis: 
+
+----
+
+Doc: 
+
+----
+
+Documentdescription: 

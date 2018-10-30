@@ -48,7 +48,7 @@ Textimages: svz_2.jpg,svz_5.jpg,svz_6.jpg,svz_9.jpg
 
 ----
 
-Gallery: spielplatz-1.jpg,spielplatz-2.jpg,svz_2.jpg,svz_5.jpg,svz_6.jpg,svz_9.jpg
+Gallery: img_5320.jpg,spielplatz-1.jpg,spielplatz-2.jpg,svz_2.jpg,svz_5.jpg,svz_6.jpg,svz_9.jpg
 
 ----
 

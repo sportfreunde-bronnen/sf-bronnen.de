@@ -5,27 +5,22 @@ Title: Startseite
 Links: 
 
 - 
+  name: 'SV Baustetten <3'
+  link: http://www.sv-baustetten.de
+- 
   name: Musikverein Oberholzheim
   link: http://mv-oberholzheim.de/
 - 
-  name: Narrenzunft Bronnen
-  link: https://nz-bronnen.de/
-- 
   name: TSG Achstetten
   link: http://tsg-achstetten.de/
+- 
+  name: Narrenzunft Bronnen
+  link: https://nz-bronnen.de/
 
 ----
 
 Slides: 
 
-- 
-  title: Weißwurstfrühstück
-  text: unseres Fördervereins am 23.09.2018
-  textposition: left
-  sliderimage: slider-weisswurst.jpg
-  internallink: >
-    gesamtverein/veranstaltungen/weisswurstfruehstueck
-  externallink: ""
 - 
   title: Sie suchen eine Location?
   text: Wir haben da was!

@@ -7,7 +7,7 @@ Downloads:
 - 
   category: Verein
   downloads: >
-    beitrittserklarung_stand_10.04.2018.pdf,ehrenordnung_2014.pdf,patenschaftsvertrag_2017.06.23.pdf,vereinssatzung_-hauptsatzung-_stand_06.03.2015.pdf
+    beitrittserklarung_stand_08.2018.pdf,ehrenordnung_2014.pdf,patenschaftsvertrag_2017.06.23.pdf,vereinssatzung_-hauptsatzung-_stand_06.03.2015.pdf
 - 
   category: Sportvereinszentrum
   downloads: >
