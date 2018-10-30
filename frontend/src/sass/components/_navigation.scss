@@ -2,9 +2,8 @@
   margin-bottom: 0;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-image: linear-gradient(to top, #fff 20%, $navBgColorDarker 100%);
-  border: none;
-  border-bottom: 1px solid #d8d8d8;
+  background-color: $brightBlue;
+  border-bottom: 2px solid #fff;
 }
 
 .main-menu.one {
@@ -20,7 +19,7 @@
 
 .main-menu .navbar-toggler {
   margin-top: 10px;
-  color: #323946;
+  color: #fff;
   font-size: 1rem;
 }
 
@@ -43,7 +42,7 @@
 
 .main-menu .navbar-nav > .nav-item > a {
   padding: 14px 30px 14px 0;
-  color: #323946;
+  color: #fff;
   font-size: 1rem;
   font-weight: normal;
 }
@@ -69,7 +68,7 @@
 .main-menu .navbar-nav > .nav-item > a:hover,
 .main-menu .navbar-nav > .nav-item > a:focus,
 .main-menu .navbar-nav > .nav-item.active > a {
-  color: $brightBlue;
+  color: #fff;
 }
 
 .main-menu .navbar-toggler:hover,
@@ -131,7 +130,7 @@
   background: none;
   border: none;
   @include media-breakpoint-up(md) {
-    border: 2px solid $darkBlue;
+    border: 2px solid $brightBlue;
     background-color: $navBgColor;
   }
 }
@@ -150,25 +149,25 @@
     @include media-breakpoint-up(md) {
       font-weight: normal;
       color: #fff;
-      background-color: $darkBlue;
+      background-color: $brightBlue;
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
     }
     &:hover, &:focus {
       @include media-breakpoint-up(md) {
-        background-color: $darkBlue;
+        background-color: $brightBlue;
       }
       padding-left: 17px;
     }
     &.active {
       padding-left: 17px;
       @include media-breakpoint-up(md) {
-        background-color: $darkBlue;
+        background-color: $brightBlue;
       }
       &:hover, &:focus {
         padding-left: 17px;
         @include media-breakpoint-up(md) {
-          background-color: $darkBlue;
+          background-color: $brightBlue;
         }
       }
     }
@@ -217,6 +216,10 @@
 .main-menu .form-inline .btn {
   background-color: #ededed;
   border: none;
+}
+
+#departmentViewScroll {
+  color: #fff;
 }
 
 #departmentViewScroll img {
