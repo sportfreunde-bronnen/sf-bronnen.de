@@ -10,7 +10,7 @@
     <?php snippet('metatitle');?>
 
     <link href="/assets/images/sfb/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <link href="/assets/css/sfb.css" rel="stylesheet">
+    <link href="/assets/css/sfb.css?d=<?= filemtime('assets/css/sfb.css');?>" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
     <link href="/assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -36,8 +36,8 @@
 <header class="main-header">
     <div class="container text-xs-center pl-sm-0 pr-sm-0">
         <div class="row">
-            <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo">
-                <a href="/">Sportfreunde Bronnen 1949 e.V.</a>
+            <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
+                <a href="/"><img class="sfblogo" src="/assets/images/sfb/logo.svg"/>Sportfreunde Bronnen 1949 e.V.</a>
             </div>
         </div>
     </div>

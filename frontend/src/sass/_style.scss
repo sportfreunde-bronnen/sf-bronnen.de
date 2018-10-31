@@ -34,7 +34,7 @@ h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -324,9 +324,23 @@ h2.main-heading-1 {
         text-decoration: none;
       }
     }
+    img {
+      width: 80px;
+      height: 89px;
+      margin-right: 3rem;
+      @include media-breakpoint-down(sm) {
+        margin-right: 1rem;
+        width: 50px;
+        height: 55px;
+        float: left;
+      }
+    }
     @include media-breakpoint-down(md) {
       font-size: 2rem;
       line-height: 2rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 1.5rem;
     }
   }
 }
@@ -451,6 +465,10 @@ h2.main-heading-1 {
   padding-bottom: 30px;
   background-color: $darkBlue;
   color: #fff ! important;
+  opacity: .7;
+  h1 {
+    margin-bottom: 0;
+  }
 }
 
 /* Breadcrumb Styles Starts */
@@ -2277,7 +2295,6 @@ table.table-kurs {
   position: absolute;
   left: -9999px;
 }
-
 
 div.uniform-errors {
   padding: 1rem;
