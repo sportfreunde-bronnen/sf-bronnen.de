@@ -21,14 +21,16 @@
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
-        <a class="carousel-control-prev animation" href="#main-slider" role="button" data-slide="prev">
-            <span class="fa fa-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next animation" href="#main-slider" role="button" data-slide="next">
-            <span class="fa fa-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <?php if ($page->slides()->toStructure()->count() > 1): ?>
+            <a class="carousel-control-prev animation" href="#main-slider" role="button" data-slide="prev">
+                <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next animation" href="#main-slider" role="button" data-slide="next">
+                <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        <?php endif; ?>
     </div>
 
     <div class="page">
