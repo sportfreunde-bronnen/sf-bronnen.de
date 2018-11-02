@@ -1,7 +1,7 @@
 .main-menu {
   margin-bottom: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: $brightBlue;
   border-bottom: 2px solid #fff;
 }
@@ -41,7 +41,7 @@
 }
 
 .main-menu .navbar-nav > .nav-item > a {
-  padding: 14px 30px 14px 0;
+  padding: 14px 15px 14px 15px;
   color: #fff;
   font-size: 1rem;
   font-weight: normal;
@@ -58,6 +58,14 @@
 .main-menu .navbar-nav > .nav-item:hover > a,
 .main-menu .navbar-nav > .nav-item > a:hover,
 .main-menu .navbar-nav > .nav-item > a:focus {
+}
+
+.main-menu .navbar-nav > .nav-item.active {
+  background-color: $darkBlue;
+  margin-top: -1px;
+  border-right: 1px solid $darkBlue;
+  border-left: 1px solid $darkBlue;
+  border-top: 1px solid $lightBlue;
 }
 
 .main-menu .navbar-nav > .nav-item.active > a {
@@ -130,7 +138,7 @@
   background: none;
   border: none;
   @include media-breakpoint-up(md) {
-    border: 2px solid $brightBlue;
+    border: none;
     background-color: $navBgColor;
   }
 }
@@ -138,8 +146,11 @@
 .main-menu .dropdown-menu > a.dropdown-item {
   padding-top: 3px;
   padding-bottom: 3px;
-  color: #000;
+  color: #fff;
   font-size: 0.9rem;
+  @include media-breakpoint-up(md) {
+    color: #000;
+  }
   &.sub {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -162,7 +173,7 @@
     &.active {
       padding-left: 17px;
       @include media-breakpoint-up(md) {
-        background-color: $brightBlue;
+        background-color: $darkBlue;
       }
       &:hover, &:focus {
         padding-left: 17px;

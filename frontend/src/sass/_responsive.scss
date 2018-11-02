@@ -64,6 +64,10 @@
 
   /* Main Menu Styles Starts */
 
+  .main-menu {
+    padding-left: 0;
+  }
+
   .main-menu .navbar-collapse {
     padding-left: 0;
     padding-right: 0;
@@ -266,7 +270,7 @@
     padding-right: 0;
   }
   .main-menu .navbar-nav > .nav-item > a {
-    padding-left: 0;
+    padding-left: 15px;
     padding-right: 15px;
     font-size: 15px;
   }
