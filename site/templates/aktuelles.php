@@ -2,7 +2,7 @@
 <?php snippet('h1'); ?>
 <div class="page">
     <div class="main-container container pl-sm-0 pr-sm-0">
-        <?php if ($page->children()->count() > 0): ?>
+        <?php if ($page->children()->visible()->count() > 0): ?>
             <div class="row blog-post">
                 <?php foreach ($page->children()->visible()->sortBy('datum', 'desc') as $post): ?>
                     <div class="col-lg-4 col-md-6 col-sm-12">
