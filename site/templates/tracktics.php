@@ -7,6 +7,9 @@
 <div class="page">
     <div class="main-container container pl-sm-0 pr-sm-0">
         <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs"><?= $page->spieler();?> vs. <?= $page->gegner();?> (<?= date('d.m.Y', $page->date());?>)</h2>
+        <hr/>
+        <?= $page->parent()->text()->kirbytext();?>
+        <hr/>
         <?php if ($page->images()): ?>
             <div class="text-center">
                 <?php foreach($page->images() as $image): ?>

@@ -3,3 +3,15 @@ Title: Tracktics
 ----
 
 Headline: Tracktics Stats
+
+----
+
+Text: 
+
+**Sprinten**: > 21,6km/h  
+**Rennen**: zwischen 13,2km/h und 21,6km/h  
+**Joggen**: zwischen 7,2km/h und 13,2km/h  
+**Gehen**: unter 7,2km/h
+
+**Hohe Intensität**: Sprinten + Rennen  
+**Niedrige Intensität**: Joggen + Gehen

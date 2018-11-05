@@ -8,5 +8,8 @@ fields:
     extends: title
     readonly: true
   headline: headline
+  text:
+    label: Text
+    type: wysiwyg
 pages:
   template: tracktics
