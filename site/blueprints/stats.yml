@@ -1,0 +1,12 @@
+title: Statistiken
+options:
+  url: false
+  status: false
+  delete: false
+fields:
+  title:
+    extends: title
+    readonly: true
+  headline: headline
+pages:
+  template: tracktics
