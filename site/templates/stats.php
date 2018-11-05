@@ -11,8 +11,8 @@
             <thead>
             <tr>
                 <th>Datum</th>
-                <th>Spiel</th>
                 <th>Spieler</th>
+                <th>Spiel</th>
                 <th>Mannschaft</th>
                 <th>&nbsp;</th>
             </tr>
