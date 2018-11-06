@@ -1,4 +1,4 @@
-<div class="container pl-sm-0 pr-sm-0">
+<div class="container pl-sm-0 pr-sm-0 mt-5">
     <h2 class="main-heading-1 text-spl-color text-weight-normal"><?= $desc;?></h2>
     <ul class="row list-unstyled shuffle" id="gallery-grid" style="position: relative; height: 1104px; transition: height 500ms ease-out;">
         <?php foreach ($images as $image): ?>

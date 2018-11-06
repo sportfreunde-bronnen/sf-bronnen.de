@@ -1,5 +1,43 @@
 div.page--bericht {
+  @include media-breakpoint-between(md, lg) {
+    margin-right: 15px;
+  }
   h1 {
     text-shadow: none;
   }
+  padding-top: 0;
+
+  div.right-column {
+    position: relative;
+    background-color: $brightBlue;
+    color: #fff;
+    padding-top: 1rem;
+    a {
+      color: inherit;
+      font-weight: bold;
+    }
+    div.advertising-hint {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 50px;
+      line-height: 50px;
+      vertical-align: middle;
+      text-align: center;
+      width: 100%;
+      background-color: $darkBlue;
+      font-weight: bold;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+    div.images {
+      border-bottom: 3px solid #fff;
+    }
+    ul.list-post-1 {
+      li {
+      }
+    }
+  }
+
 }
