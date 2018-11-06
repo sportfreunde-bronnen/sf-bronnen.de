@@ -7,6 +7,7 @@ $result = [];
 foreach ($page->parent()->children()->visible()->sortBy('datum', 'DESC') as $news):
 
     $newsData = [];
+    $newsData['id'] = (string)$news->getId();
     $newsData['date'] = (string)$news->datum();
     $newsData['title'] = (string)$news->title()->text();
     $newsData['text'] = (string)strip_tags($news->text()->markdown());

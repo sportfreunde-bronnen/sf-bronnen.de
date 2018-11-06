@@ -7,5 +7,7 @@
  */
 class BerichtPage extends DownloadsPage
 {
-
+    public function getId() {
+        return md5($this->id());
+    }
 }
