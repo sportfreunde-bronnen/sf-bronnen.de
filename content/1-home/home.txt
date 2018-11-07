@@ -30,6 +30,17 @@ Slides:
     gesamtverein/veranstaltungen/mittagstisch
   externallink: ""
 - 
+  title: VR Förderaktion
+  text: >
+    2.000,00€ für die Jugend. Jetzt
+    abstimmen!
+  textposition: left
+  sliderimage: slider-dummy.jpg
+  internallink: ""
+  externallink: >
+    https://www.vr-foerderaktion.de/antraege/2018/4e04b346cdcf27167ffe0b72dcf18baf/
+  buttontext: Zur Abstimmung
+- 
   title: Sie suchen eine Location?
   text: Wir haben da was!
   sliderimage: slider-sfb-3.jpg

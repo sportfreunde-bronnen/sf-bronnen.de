@@ -10,9 +10,21 @@
                             <h2 class="text-weight-medium"><?= $slide->title();?></h2>
                             <h5 class="text-weight-light"><?= $slide->text();?></h5>
                             <?php if ($slide->internallink()->isNotEmpty()): ?>
-                                <a href="<?= $slide->internallink();?>" class="btn btn-1 animation text-weight-medium">Mehr erfahren</a>
+                                <a href="<?= $slide->internallink();?>" class="btn btn-1 animation text-weight-medium">
+                                    <?php if ($slide->buttonText()->empty()): ?>
+                                        Mehr erfahren
+                                    <?php else: ?>
+                                        <?= $slide->buttonText();?>
+                                    <?php endif; ?>
+                                </a>
                             <?php elseif($slide->externallink()->isNotEmpty()): ?>
-                                <a href="<?= $slide->externallink();?>" class="btn btn-1 animation text-weight-medium">Mehr erfahren</a>
+                                <a href="<?= $slide->externallink();?>" class="btn btn-1 animation text-weight-medium">
+                                    <?php if ($slide->buttonText()->empty()): ?>
+                                        Mehr erfahren
+                                    <?php else: ?>
+                                        <?= $slide->buttonText();?>
+                                    <?php endif; ?>
+                                </a>
                             <?php else: ?>
 
                             <?php endif; ?>

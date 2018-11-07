@@ -51,6 +51,9 @@ fields:
         label: Externer Link
         type: url
         help: Bitte mit http:// angeben
+      buttonText:
+        type: text
+        label: Text für Button (optional)
   footerLinks:
     label: Links im Footer
     type: headline
