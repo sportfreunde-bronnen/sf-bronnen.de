@@ -15,9 +15,10 @@
                                 <?php endif; ?>
                             </p>
                             <div class="inner">
-                                <p class="date-meta text-grey-color text-uppercase">
-                                    <span class="badge badge-secondary">
-                                        <i class="fa fa-calendar"></i> <?= date('d.m.Y', strtotime($post->datum()));?>
+                                <p class="date-meta text-grey-color">
+                                    <span class="badge badge-primary">
+                                        <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', strtotime($post->datum()));?>
+                                        <i class="fa fa-user ml-3"></i>&nbsp; <?= sprintf('%s %s', site()->user($post->author())->firstName(), site()->user($post->author())->lastName());?>
                                     </span>
                                 </p>
                                 <h6 class="sub-heading-1 tiny text-medium text-xs-center">
