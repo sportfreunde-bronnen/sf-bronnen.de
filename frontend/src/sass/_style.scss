@@ -1,5 +1,5 @@
 body {
-  font: 16px/24px 'Roboto', sans-serif;
+  font: 16px/24px 'Saira Semi Condensed', sans-serif;
   color: #323946;
 }
 
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 h1 {
@@ -76,7 +76,7 @@ h6 {
 }
 
 .font1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 .font2,
@@ -1288,6 +1288,15 @@ ul#gallery-grid .hover-content:hover a {
 
 .blog-post.single .blog-post-content p {
   margin-bottom: 25px;
+  &:first-child {
+    &::first-letter {
+      font-weight: 700;
+      font-size: 3rem;
+      color: $lightBlue;
+      float:left;
+      padding: 10px 10px 10px 0;
+    }
+  }
 }
 
 .blog-post-content blockquote {

@@ -6,9 +6,10 @@
                 <div class="blog-post single mt-3">
                     <div class="box-3 mb-0">
                         <div class="inner">
-                            <p class="date-meta text-grey-color text-uppercase">
-                                <span class="badge badge-secondary">
-                                    <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', strtotime($page->datum()));?>
+                            <p class="date-meta text-grey-color">
+                                <span class="badge badge-primary">
+                                    <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', strtotime($page->datum()));?> |
+                                    <i class="fa fa-user"></i>&nbsp; <?= sprintf('%s %s', site()->user($page->author())->firstName(), site()->user($page->author())->lastName());?>
                                 </span>&nbsp
                             </p>
                             <h1 class="sub--1 tiny text-medium h3">

@@ -4,6 +4,10 @@ div.page--bericht {
   }
   h1 {
     text-shadow: none;
+    margin-bottom: 1rem;
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+    }
   }
   padding-top: 0;
 
