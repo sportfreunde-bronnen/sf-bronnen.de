@@ -112,13 +112,9 @@
                             <br/>
                             <small><?= $event->shorttitle();?></small>
                             <br/>
+                            <hr class="d-block d-sm-none"/>
                         </div>
                     <?php endforeach; ?>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <hr/>
-                    </div>
                 </div>
             </section>
         </div>
