@@ -12,7 +12,7 @@
                                 <a href="<?= $page->url();?>" class="nav-link dropdown-toggle" data-toggle="dropdown"><?= $page->title();?> <i class="fa fa-angle-down"></i></a>
                                 <?php if ($page->hasChildren()): ?>
                                     <div class="dropdown-menu rounded-0">
-                                        <?php foreach ($page->children() as $subPage): ?>
+                                        <?php foreach ($page->children()->visible() as $subPage): ?>
                                             <?php if ($subPage->hasChildren()): ?>
                                                 <a class="dropdown-item sub <?= ($subPage->isOpen()) ? ' active' : '';?>"><?= $subPage->title();?></a>
                                                 <?php if ($subPage->title() == 'Veranstaltungen'):?>
