@@ -18,3 +18,8 @@ fields:
   kosten:
     label: Kosten (wenn benötigt)
     type: wysiwyg
+  alexaId:
+    type: text
+    label: Alexa Mapping (nur für Magnus interessant)
+    required: false
+    help: Mapping für Alexa Skill. Nur für Magnus
