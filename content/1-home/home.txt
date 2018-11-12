@@ -22,14 +22,6 @@ Links:
 Slides: 
 
 - 
-  title: Mittagstisch am 11.11.2018
-  text: Leckere Speisen warten auf Euch!
-  textposition: left
-  sliderimage: slider-mittagessen.jpg
-  internallink: >
-    gesamtverein/veranstaltungen/mittagstisch
-  externallink: ""
-- 
   title: VR Förderaktion
   text: >
     2.000,00€ für die Jugend. Jetzt

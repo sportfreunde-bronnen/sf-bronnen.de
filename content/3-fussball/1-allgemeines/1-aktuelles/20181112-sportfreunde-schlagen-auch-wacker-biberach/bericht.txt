@@ -50,7 +50,7 @@ Textimages: aimg_6289.jpg,bimg_6286.jpg
 
 ----
 
-Tags: fussball,erste mannschaft,zweite mannschaft,spielbericht
+Tags: fussball,erste mannschaft,zweite mannschaft,spielbericht,saison1819
 
 ----
 
@@ -66,4 +66,4 @@ Galleryname: Bilder beider Spiele
 
 ----
 
-Galleryimages: img_6244.jpg,img_6246.jpg,img_6247.jpg,img_6250.jpg,img_6253.jpg,img_6257.jpg,img_6263.jpg,img_6266.jpg,img_6267.jpg,img_6271.jpg,img_6278.jpg,img_6283.jpg,img_6286.jpg,img_6289.jpg,img_6295.jpg,img_6297.jpg,img_6300.jpg,img_6302.jpg,img_6306.jpg,img_6313.jpg,img_6319.jpg,img_6322.jpg,img_6325.jpg,img_6333.jpg,img_6340.jpg,img_6348.jpg,img_6350.jpg,img_6353.jpg,img_6360.jpg,img_6361.jpg
+Galleryimages: img_6244.jpg,img_6246.jpg,img_6247.jpg,img_6250.jpg,img_6253.jpg,img_6257.jpg,img_6263.jpg,img_6266.jpg,img_6267.jpg,img_6271.jpg,img_6278.jpg,img_6283.jpg,img_6289.jpg,img_6295.jpg,img_6297.jpg,img_6300.jpg,img_6302.jpg,img_6306.jpg,img_6313.jpg,img_6319.jpg,img_6322.jpg,img_6325.jpg,img_6333.jpg,img_6340.jpg,img_6348.jpg,img_6350.jpg,img_6353.jpg,img_6360.jpg,img_6361.jpg

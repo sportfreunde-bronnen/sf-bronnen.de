@@ -2,7 +2,7 @@ Title: Zwickel-Gemeinde-Cup
 
 ----
 
-Shorttitle: 1. Zwickel-Gemeinde-Cup (Elfmeterturnier)
+Shorttitle: 2. Zwickel-Gemeinde-Cup (Elfmeterturnier)
 
 ----
 
@@ -10,7 +10,7 @@ Line1:
 
 ----
 
-Datum: 2018-06-30 18:00
+Datum: 2019-06-29 18:00
 
 ----
 
@@ -20,15 +20,15 @@ Ort: Sportgelände Bronnen
 
 Text: 
 
-## 1. Zwickel-Gemeinde-Cup
+## 2. Zwickel-Gemeinde-Cup
 
-Der Nachttopf ist zurück! Nach der Pensionierung des legendären Zwickel-Night-Cup vor einigen Jahren, bringen die Sportfreunde Bronnen den berühmten Nachttopf zurück in die oberschwäbische Turnierlandschaft.
+Nach dem Erfolg im ersten Jahr findet auch im Jahr 2019 wieder der Zwickel-Gemeinde-Cup statt.
 
 Hierbei können sich beliebige Mannschaften aus der Gesamtgemeinde Achstetten in einem familiären und spaßbetonten Elfmeterturnier messen und das beste Team der Gemeinde Achstetten ausspielen.
 
-Weitere Informationen sowie eine Möglichkeit zur Online Anmeldung folgen schon bald!
+Weitere Informationen sowie eine Möglichkeit zur Online Anmeldung folgen im ersten zweiten Quartal 2019.
 
-**Zur Online-Anmeldung (eine Anmeldung ist nicht mehr möglich!)**
+**Zur Online-Anmeldung (eine Anmeldung ist noch nicht möglich!)**
 
 **[Angemeldete Mannschaften](/gesamtverein/veranstaltungen/zwickel-gemeindecup/anmeldung)**
 
@@ -46,11 +46,11 @@ Line2:
 
 ----
 
-Doc: gemeindecup_flyer.pdf
+Doc: 
 
 ----
 
-Documentdescription: Flyer
+Documentdescription: 
 
 ----
 

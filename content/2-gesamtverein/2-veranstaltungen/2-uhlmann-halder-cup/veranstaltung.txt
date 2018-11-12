@@ -2,7 +2,7 @@ Title: Uhlmann-Halder-Cup
 
 ----
 
-Datum: 2018-06-29 18:00
+Datum: 2019-06-28 18:00
 
 ----
 
@@ -12,9 +12,9 @@ Ort: Sportgelände Bronnen
 
 Text: 
 
-## 22. Uhlmann-Halder-Cup 2018
+## 23. Uhlmann-Halder-Cup 2019
 
-Der Uhlmann-Halder-Cup ist das Kleinfeld-Fußballturnier für Betriebsmannschaften in Oberschwaben. In diesem Jahr folgt bereits die 22. Ausgabe des beliebten Turniers, das von der Firma Uhlmann aus Laupheim, der Erwin Halder KG aus Bronnen und den Sportfreunden federführend organisiert wird.
+Der Uhlmann-Halder-Cup ist das Kleinfeld-Fußballturnier für Betriebsmannschaften in Oberschwaben. Im Jahr 2019 folgt bereits die 23. Ausgabe des beliebten Turniers, das von der Firma Uhlmann aus Laupheim, der Erwin Halder KG aus Bronnen und den Sportfreunden federführend organisiert wird.
 
 Die Betriebsmannschaften verschiedenster Sparten treten in spannenden Spielen gegeneinander an und ermitteln die beste Betriebsmannschaft.
 
@@ -50,11 +50,11 @@ Shorttitle: Das Kleinfeldturnier für Betriebsmannschaften in Oberschwaben.
 
 ----
 
-Documentdescription: Flyer
+Documentdescription: 
 
 ----
 
-Doc: flyer_uhlmann_flyeralarm.pdf
+Doc: 
 
 ----
 
