@@ -5,10 +5,10 @@ options:
   template: false
   delete: false
 pages:
-  sort: date desc
+  sort: datum desc
   num:
     mode: date
-    field: added
+    field: datum
     format: Ymd
   template: bericht
   url: false
