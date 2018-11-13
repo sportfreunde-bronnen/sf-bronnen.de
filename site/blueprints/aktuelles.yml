@@ -10,6 +10,7 @@ pages:
     mode: date
     field: datum
     format: Ymd
+    display: d.m.Y
   template: bericht
   url: false
 fields:
