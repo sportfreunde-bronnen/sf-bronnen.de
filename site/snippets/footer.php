@@ -53,5 +53,3 @@
 <script src="/assets/js/plugins/owl-carousel2/owl.carousel.min.js"></script>
 <script src="/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="/assets/js/custom.js"></script>
-</body>
-</html>

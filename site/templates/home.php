@@ -122,4 +122,4 @@
     </div>
 
 </div>
-<?php snippet('footer'); ?>
+<?php snippet('footer'); ?><?php snippet('close'); ?>

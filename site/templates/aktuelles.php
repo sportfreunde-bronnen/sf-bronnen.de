@@ -2,10 +2,18 @@
 <?php snippet('h1'); ?>
 <div class="page">
     <div class="main-container container pl-sm-0 pr-sm-0">
+        <div class="text-center">
+            <ul class="list-unstyled list-inline" id="article-filter">
+                <li class="list-inline-item"><a href="#" class="btn animation active" data-group="all">Alles</a></li>
+                <?php foreach ($page->getUsedTags() as $tag): ?>
+                    <li class="list-inline-item"><a href="#" class="btn animation" data-group="<?= $tag; ?>"><?= $tag; ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
         <?php if ($page->children()->visible()->count() > 0): ?>
-            <div class="row blog-post">
+            <div class="row blog-post" id="article-grid">
                 <?php foreach ($page->children()->visible()->sortBy('datum', 'desc') as $post): ?>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-groups='<?= $post->getNewsGroupsAsShuffleArray();?>'>
                         <div class="box-3 animation text-xs-center">
                             <p>
                                 <?php if ($post->teaserimage()->isNotEmpty()): ?>
@@ -41,3 +49,24 @@
     </div>
 </div>
 <?php snippet('footer'); ?>
+<script>
+  $(function() {
+    // Gallery FILTERS
+    var $grid = $('#article-grid');
+    $grid.shuffle({
+      itemSelector: '.article-grid-item', // the selector for the items in the grid
+      speed: 500 // Transition/animation speed (milliseconds)
+    });
+    /* reshuffle when user clicks a filter item */
+    $('#article-filter li a').click(function (e) {
+      // set active class
+      $('#article-filter li a').removeClass('active');
+      $(this).addClass('active');
+      // get group name from clicked item
+      var groupName = $(this).attr('data-group');
+      // reshuffle grid
+      $grid.shuffle('shuffle', groupName );
+    });
+  });
+</script>
+<?php snippet('close'); ?>
