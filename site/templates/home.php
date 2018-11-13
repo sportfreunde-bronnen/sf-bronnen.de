@@ -98,7 +98,7 @@
                 <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mb-0"><span>Kommende</span> Veranstaltungen</h4>
                 <div class="row mt-4">
                     <?php foreach ($page->getNextEvents() as $event): ?>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
                             <a href="<?= $event->url();?>">
                             <?php if ($event->vimage()->isNotEmpty()): ?>
                                 <img src="<?= $event->vimage()->toFile()->crop(400,200)->url();?>" alt="News Images" class="img-fluid img-center pb-2">
