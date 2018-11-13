@@ -5,6 +5,7 @@ options:
   template: false
   delete: false
 pages:
+  limit: 10
   sort: datum desc
   num:
     mode: date
