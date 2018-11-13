@@ -1026,27 +1026,27 @@ h2.main-heading-1 {
 
 /* Gallery Page Styles Starts */
 
-ul#gallery-filter {
+ul#article-filter {
   margin-bottom: 30px;
 }
 
-ul#gallery-filter li {
+ul#article-filter li {
   padding-bottom: 15px;
 }
 
-ul#gallery-filter li a.btn {
+ul#article-filter li a.btn {
   padding: 6px 16px;
   font-size: 14px;
   color: #323946;
   background-color: #ddd;
 }
 
-ul#gallery-filter li a:hover,
-ul#gallery-filter li a.active,
-ul#gallery-filter li a:focus {
+ul#article-filter li a:hover,
+ul#article-filter li a.active,
+ul#article-filter li a:focus {
   color: #fff;
   outline: none;
-  background: $brightBlue;
+  background: $darkBlue;
 }
 
 ul#gallery-grid {
@@ -2232,9 +2232,9 @@ ul#gallery-grid li .img-responsive,
 #accordion-downloads h5.card-title,
 #accordion-help .card,
 .appointment-form .form-control,
-ul#gallery-filter li a:hover,
-ul#gallery-filter li a.active,
-ul#gallery-filter li a:focus {
+ul#article-filter li a:hover,
+ul#article-filter li a.active,
+ul#article-filter li a:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

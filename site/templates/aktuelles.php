@@ -2,15 +2,15 @@
 <?php snippet('h1'); ?>
 <div class="page">
     <div class="main-container container pl-sm-0 pr-sm-0">
-        <div class="text-center">
-            <ul class="list-unstyled list-inline" id="article-filter">
-                <li class="list-inline-item"><a href="#" class="btn animation active" data-group="all">Alles</a></li>
-                <?php foreach ($page->getUsedTags() as $tag): ?>
-                    <li class="list-inline-item"><a href="#" class="btn animation" data-group="<?= $tag; ?>"><?= $tag; ?></a></li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
         <?php if ($page->children()->visible()->count() > 0): ?>
+            <div class="text-center">
+                <ul class="list-unstyled list-inline" id="article-filter">
+                    <li class="list-inline-item"><a href="#" class="btn animation active" data-group="all">Alles</a></li>
+                    <?php foreach ($page->getUsedTags() as $tag): ?>
+                        <li class="list-inline-item"><a href="#" class="btn animation" data-group="<?= $tag; ?>"><?= $tag; ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
             <div class="row blog-post" id="article-grid">
                 <?php foreach ($page->children()->visible()->sortBy('datum', 'desc') as $post): ?>
                     <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-groups='<?= $post->getNewsGroupsAsShuffleArray();?>'>
