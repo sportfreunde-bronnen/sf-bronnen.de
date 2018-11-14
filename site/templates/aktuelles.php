@@ -1,4 +1,3 @@
-<?php $page->getArticles();?>
 <?php snippet('header'); ?>
 <?php snippet('h1'); ?>
 <div class="page">
@@ -6,9 +5,9 @@
         <?php if ($page->children()->visible()->count() > 0): ?>
             <div class="text-center">
                 <ul class="list-unstyled list-inline" id="article-filter">
-                    <li class="list-inline-item"><a href="#" class="btn animation active" data-group="all">Alles</a></li>
+                    <li class="list-inline-item"><a href="#" class="btn animation<?= ('all' === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="all">Alles</a></li>
                     <?php foreach ($page->getUsedTags() as $tag): ?>
-                        <li class="list-inline-item"><a href="#" class="btn animation" data-group="<?= $tag; ?>"><?= $tag; ?></a></li>
+                        <li class="list-inline-item"><a href="#" class="btn animation<?= ($tag === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="<?= $tag; ?>"><?= $tag; ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
@@ -54,10 +53,10 @@
   $(function() {
     var $grid = $('#article-grid');
     $grid.shuffle({
-      itemSelector: '.article-grid-item', // the selector for the items in the grid
-      speed: 500, // Transition/animation speed (milliseconds)
+      itemSelector: '.article-grid-item',
+      speed: 500,
       buffer: 50,
-      useTransforms: false
+      group: '<?= $page->getActiveTagGroup();?>'
     });
     $('#article-filter li a').click(function (e) {
       // set active class
@@ -66,7 +65,7 @@
       // get group name from clicked item
       var groupName = $(this).attr('data-group');
       // reshuffle grid
-      $grid.shuffle('shuffle', groupName );
+      $grid.shuffle('shuffle', groupName);
     });
   });
 </script>

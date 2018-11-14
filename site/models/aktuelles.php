@@ -31,4 +31,20 @@ class AktuellesPage extends Page
             ->visible()
             ->sortBy('datum', 'desc');
     }
+
+    public function isInitialFiltering()
+    {
+        return !(empty(kirby()->request()->query()->tag()));
+    }
+
+    /**
+     * Returns the active tag group
+     */
+    public function getActiveTagGroup()
+    {
+        if ($this->isInitialFiltering()) {
+            return kirby()->request()->query()->tag();
+        }
+        return 'all';
+    }
 }
