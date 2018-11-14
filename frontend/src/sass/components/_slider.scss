@@ -3,10 +3,11 @@
 }
 
 #main-slider {
+
   .carousel-item {
-    height: 100vh;
+    height: calc(100vh - #{$navigationHeightXS});
     img {
-      height: calc(100vh - #{$navigationHeightXS});
+      height: 100%;
       max-width: 2000px;
     }
 
