@@ -1,7 +1,7 @@
 <nav id="nav" class="main-menu navbar navbar-expand-md rounded-0">
     <div class="container pl-sm-0 pr-sm-0">
         <div class="col-12 col-md-10 pl-md-0">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target=".navbar-cat-collapse" aria-controls=".navbar-cat-collapse" aria-expanded="false" aria-badge="Toggle navigation">
+            <button class="navbar-toggler ml-auto pl-0 collapsed" type="button" data-toggle="collapse" data-target=".navbar-cat-collapse" aria-controls=".navbar-cat-collapse" aria-expanded="false" aria-badge="Toggle navigation">
                 <span class="navbar-toggler-icon fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse navbar-cat-collapse animation">

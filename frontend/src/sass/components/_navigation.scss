@@ -16,6 +16,21 @@
   transform: translateY(27px);
 }
 
+button.navbar-toggler {
+  font-size: 1.3rem ! important;
+  span.navbar-toggler-icon {
+    transition: all 0.5s ease;
+  }
+  span.navbar-toggler-icon.fa-bars:before {
+    content: "\f037";
+  }
+  &.collapsed {
+    span.navbar-toggler-icon.fa-bars:before {
+      content: "\f039";
+    }
+  }
+}
+
 .main-menu .navbar-toggler {
   margin-top: 10px;
   color: #fff;
@@ -35,7 +50,7 @@
 
 .main-menu .navbar-toggler:hover,
 .main-menu .navbar-toggler:focus {
-  color: $brightBlue;
+  color: #fff;
   background-color: #fff;
 }
 
