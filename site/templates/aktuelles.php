@@ -1,6 +1,6 @@
 <?php snippet('header'); ?>
 <?php snippet('h1'); ?>
-<div class="page">
+<div class="page page--articles">
     <div class="main-container container pl-sm-0 pr-sm-0">
         <?php if ($page->children()->visible()->count() > 0): ?>
             <div class="text-center">
@@ -55,7 +55,6 @@
     $grid.shuffle({
       itemSelector: '.article-grid-item',
       speed: 500,
-      buffer: 50,
       group: '<?= $page->getActiveTagGroup();?>'
     });
     $('#article-filter li a').click(function (e) {

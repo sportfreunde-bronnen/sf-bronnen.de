@@ -1,0 +1,29 @@
+.page--articles {
+  div.box-3 {
+    @include media-breakpoint-up(md) {
+      min-height: 520px;
+    }
+    p.text-md-right {
+      -webkit-transition: background-color .2s ease, padding .2s ease;
+      -moz-transition: background-color .2s ease, padding .2s ease;
+      transition: background-color .2s ease, padding .2s ease;
+      a {
+        color: inherit;
+      }
+    }
+    &:hover {
+      p.text-md-right {
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+        background-color: $darkBlue;
+        a {
+          font-weight: 500;
+          &:before {
+            content: '>> ';
+          }
+        }
+      }
+    }
+  }
+}
