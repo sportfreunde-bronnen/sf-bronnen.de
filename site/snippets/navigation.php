@@ -8,10 +8,10 @@
                 <ul class="nav navbar-nav text-weight-bold">
                     <?php foreach($pages->visible() as $page): ?>
                         <?php if ($page->children()->visible()->count()): ?>
-                            <li class="nav-item dropdown<?= ($page->isOpen()) ? ' active' : '';?>">
+                            <li class="nav-item dropdown<?= ($page->isOpen()) ? ' active show' : '';?>">
                                 <a href="<?= $page->url();?>" class="nav-link dropdown-toggle" data-toggle="dropdown"><?= $page->title();?> <i class="fa fa-angle-down"></i></a>
                                 <?php if ($page->hasChildren()): ?>
-                                    <div class="dropdown-menu rounded-0">
+                                    <div class="dropdown-menu rounded-0<?= ($page->isOpen()) ? ' show' : '';?>">
                                         <?php foreach ($page->children()->visible() as $subPage): ?>
                                             <?php if ($subPage->hasChildren()): ?>
                                                 <a class="dropdown-item sub <?= ($subPage->isOpen()) ? ' active' : '';?>"><?= $subPage->title();?></a>

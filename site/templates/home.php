@@ -1,6 +1,6 @@
 <?php snippet('header'); ?>
 <div class="template--home">
-    <div id="main-slider" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="main-slider" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <?php if ($page->slides()->isNotEmpty()): ?>
                 <?php $i = 0; foreach ($page->slides()->toStructure() as $slide): $i++;?>
