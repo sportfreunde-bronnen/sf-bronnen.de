@@ -48,7 +48,6 @@
 <script src="/assets/js/jquery-3.3.1.min.js"></script>
 <script src="/assets/js/popper.min.js"></script>
 <script src="/assets/js/bootstrap.js"></script>
-<script src="/assets/js/plugins/backstretch/jquery.backstretch.min.js"></script>
 <script src="/assets/js/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
 <script src="/assets/js/plugins/owl-carousel2/owl.carousel.min.js"></script>
 <script src="/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>

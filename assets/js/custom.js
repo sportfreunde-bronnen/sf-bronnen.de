@@ -30,22 +30,6 @@
 
   }
 
-    // Backstretch Header Full
-	$(".header-full").backstretch([
-        "images/slider/slider-full-img1.jpg", 
-        "images/slider/slider-full-img2.jpg", 
-        "images/slider/slider-full-img3.jpg"
-  ], {duration: 4000, fade: 750, fadeFirstImage:false});
-  
-  $(".header-full #next").click(function(x) {
-      x.preventDefault();
-      $(".header-full").data("backstretch").next();
-  });
-  $(".header-full #prev").click(function(x) {
-      x.preventDefault();
-      $(".header-full").data("backstretch").prev();
-  });
-  
   // REMOVE # FROM URL
   $( 'a[href="#"]' ).click( function(event) {
       //event.preventDefault();
