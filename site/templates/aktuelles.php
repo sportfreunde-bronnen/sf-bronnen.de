@@ -1,3 +1,4 @@
+<?php $page->getArticles();?>
 <?php snippet('header'); ?>
 <?php snippet('h1'); ?>
 <div class="page">
@@ -12,7 +13,7 @@
                 </ul>
             </div>
             <div class="row blog-post" id="article-grid">
-                <?php foreach ($page->children()->visible()->sortBy('datum', 'desc') as $post): ?>
+                <?php foreach ($page->getArticles() as $post): ?>
                     <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-groups='<?= $post->getNewsGroupsAsShuffleArray();?>'>
                         <div class="box-3 animation text-xs-center">
                             <p>
@@ -51,13 +52,13 @@
 <?php snippet('footer'); ?>
 <script>
   $(function() {
-    // Gallery FILTERS
     var $grid = $('#article-grid');
     $grid.shuffle({
       itemSelector: '.article-grid-item', // the selector for the items in the grid
-      speed: 500 // Transition/animation speed (milliseconds)
+      speed: 500, // Transition/animation speed (milliseconds)
+      buffer: 50,
+      useTransforms: false
     });
-    /* reshuffle when user clicks a filter item */
     $('#article-filter li a').click(function (e) {
       // set active class
       $('#article-filter li a').removeClass('active');
