@@ -23,11 +23,12 @@
                     <div class="card-body">
                         <ul class="list-group">
                             <?php foreach ($page->convertFilesToCollection($downloadBlock->downloads()) as $download):; ?>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <li class="list-group-item d-sm-flex justify-content-between align-items-center text-left">
                                     <a href="<?= $download->url();?>">
                                         <strong><?= $download->description();?></strong>
                                     </a>
-                                    <span class="badge badge-primary badge-pill"><?= strtoupper($download->extension());?>, <?= $page->convertFileSize($download->size());?></span>
+                                    <span class="d-block d-sm-none"><?= strtoupper($download->extension());?>, <?= $page->convertFileSize($download->size());?></span>
+                                    <span class="badge badge-primary badge-pill d-none d-sm-block"><?= strtoupper($download->extension());?>, <?= $page->convertFileSize($download->size());?></span>
                                 </li>
                             <?php endforeach; ?>
                         </ul>

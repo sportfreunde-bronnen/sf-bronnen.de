@@ -12,13 +12,17 @@
   position: relative;
   background-color: $navBgColor;
   border: none;
+  text-align: left;
 }
 
 #accordion-downloads h5.card-title {
   &.card-title {
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
+    @include media-breakpoint-down(xs) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -45,4 +49,19 @@
   padding: 30px 20px 20px;
   background-color: #fff;
   border: none;
+
+  li.list-group-item {
+    a {
+      display: block;
+      width: 100%;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 1rem;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 15px 0 15px 0;
+  }
+
 }
