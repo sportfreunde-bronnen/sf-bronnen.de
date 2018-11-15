@@ -5,3 +5,4 @@
 /thumbs/*
 vendor/
 counter.json
+site/cache/*
