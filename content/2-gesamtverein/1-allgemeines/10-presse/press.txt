@@ -1,0 +1,1065 @@
+Title: Pressearchiv
+
+----
+
+Headline: Die Sportfreunde in der Presse
+
+----
+
+Articles: 
+
+- 
+  title: Schupp folgt auf Laupheimer in Bronnen
+  url: >
+    https://www.schwaebische.de/home_artikel,-schupp-folgt-auf-laupheimer-in-bronnen-_arid,10956120.html
+  date: 2018-10-30
+  tags: fussball
+  text: 'Michael Laupheimer hört zur Winterpause aus beruflichen Gründen als Spielertrainer der Sportfreunde Bronnen auf. Das teilt der aktuelle Tabellenvierte der Fußball-Kreisliga A II auf seiner Hompage mit. Der Nachfolger steht bereits fest und kommt aus den eigenen Reihen: Mittelfeldspieler Johannes Schupp. Er soll ab der Vorbereitung auf die Rückrunde gemeinsam mit Marc Nilius das SF-Spielertrainerduo bilden.'
+- 
+  title: >
+    „Den Frauen gefällt es, mal unter
+    sich zu sein“
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-den-frauen-gef%C3%A4llt-es-mal-unter-sich-zu-sein-_arid,10915660.html'
+  date: 2018-08-10
+  tags: gymnastik,aktionen
+  text: 'In fünf Wochen steigt in der Laupheimer Innenstadt eine Premiere: eine Laufveranstaltung nur für Frauen, organisiert von zwei Männern und unterstützt von einem Schirm-Herrn, nämlich Oberbürgermeister Gerold Rechle. Die beiden Veranstalter Alexander Schwarz und Thorsten Schmid haben hierfür extra eine Sportevent GbR gegründet und hoffen am Samstag, 15. September, auf viel Frauenpower in Laupheim. „Wir sind guter Dinge, dass wir 350 Läuferinnen an den Start bekommen“, sagt Alexander Schwarz im Gespräch mit SZ-Redakteur Reiner Schick.'
+- 
+  title: Ein Jahr im Zeichen des Sportplatzbaus
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-ein-jahr-im-zeichen-des-sportplatzbaus-_arid,10831137.html
+  date: 2018-03-06
+  tags: sportplatzneubau
+  text: >
+    Der Neubau des Sportplatzes stand im
+    vergangenen Jahr bei den Sportfreunden
+    Bronnen im Mittelpunkt des Geschehens.
+    Dies ging aus der Jahreshauptversammlung
+    des Vereins hervor, bei der Vorsitzender
+    Benjamin Baur in Abwesenheit für zwei
+    weitere Jahre einstimmig gewählt wurde
+    und zahlreiche langjährige Mitglieder
+    und Mitarbeiter geehrt wurden.
+- 
+  title: >
+    VR-Förderevent sprengt 100
+    000-Euro-Marke
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-vr-f%C3%B6rderevent-sprengt-100-000-euro-marke-_arid,10805047.html'
+  date: 2018-01-19
+  tags: aktionen
+  text: >
+    Die Volksbank Raiffeisenbank
+    Laupheim-Illertal hat bei ihrem
+    Förderevent 2018 erstmals eine
+    sechsstellige Gesamtsumme
+    ausgeschüttet. Von den 101 650 Euro
+    profitierten 111 Vereine und
+    Einrichtungen.
+- 
+  title: >
+    Achstetten will fast sieben Millionen
+    Euro ausgeben
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/achstetten_artikel,-achstetten-will-fast-sieben-millionen-euro-ausgeben-_arid,10803571.html
+  date: 2018-01-17
+  tags: gemeinde,sportplatzneubau
+  text: >
+    Die Gemeinde Achstetten möchte in
+    diesem Jahr fast sieben Millionen Euro
+    investieren und hierfür etwa zwei
+    Millionen Euro neue Schulden aufnehmen.
+    Das ging am Montag aus den
+    Haushaltsplan-Vorberatungen im
+    Gemeinderat hervor.
+- 
+  title: >
+    Sportfreunde übergeben Spielplatz an
+    Gemeinde
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/achstetten_artikel,-sportfreunde-%C3%BCbergeben-spielplatz-an-gemeinde-_arid,10681096.html'
+  date: 2017-06-07
+  tags: gemeinde,sportplatzneubau
+  text: >
+    Der Spieplatz am Sportgelände der
+    Sportfreunde Bronnen gehört jetzt
+    offiziell der Gemeinde Achstetten.
+- 
+  title: >
+    Bronnens Fußballer beginnen
+    Sportplatzneubau
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/achstetten_artikel,-bronnens-fu%C3%9Fballer-beginnen-sportplatzneubau-_arid,10681093.html'
+  date: 2017-06-07
+  tags: sportplatzneubau
+  text: >
+    Die Bauarbeiten für den neuen
+    Sportplatz in Bronnen können beginnen.
+    Am Dienstagabend haben die
+    Verantwortlichen den symbolischen
+    Spatenstich für den neuen Rasen
+    gesetzt. 320 000 Euro soll der Neubau
+    des Hauptspielfeldes kosten.
+- 
+  title: >
+    Höhere Ausgaben als Einnahmen in
+    Achstetten
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/achstetten_artikel,-h%C3%B6here-ausgaben-als-einnahmen-in-achstetten-_arid,10644621.html'
+  date: 2017-04-04
+  tags: gemeinde,sportplatzneubau
+  text: 'Einstimmig hat der Achstetter Gemeinderat am vergangenen Montag den Haushaltsplan für 2017 verabschiedet. Als große Ausgabepunkte für die kommenden Jahre sieht Bürgermeister Kai Feneberg den Umbau der Schule Achstetten, der Neubau des Kindergarten Stetten, den Umbau der bisherigen Schul- und Kindergartenräume in Oberholzheim, die Sanierung der Feuerwehrhäuser, den Zuschuss an die Sportfreunde Bronnen und die Zuschussrate für die TSG Achstetten.'
+- 
+  title: >
+    Bronnen setzt künftig auf erfahrenes
+    Duo
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-bronnen-setzt-k%C3%BCnftig-auf-erfahrenes-duo-_arid,10640347.html'
+  date: 2017-03-29
+  tags: fussball
+  text: >
+    Die SF Bronnnen werden mit Michael
+    Laupheimer und Marc Nilius als
+    gleichberechtigtem Spielertrainerduo in
+    die kommende Saison gehen. Bei den
+    Sportfreunden, die aktuell noch um den
+    Klassenhalt in der Fußball-Kreisliga A
+    II spielen, werden sie die Nachfolge von
+    Sergej Haus antreten.
+- 
+  title: Kampf dem Maulwurf-Paradies
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-kampf-dem-maulwurf-paradies-_arid,10584952.html
+  date: 2016-12-21
+  tags: sportplatzneubau
+  text: >
+    Die Sportfreunde Bronnen erhalten für
+    die geplante Erneuerung ihres
+    Sportplatzes einen Sonderzuschuss der
+    Gemeinde Achstetten in Höhe von bis zu
+    87 500 Euro. Darauf einigte sich der
+    Gemeinderat am Montag nach längerer
+    Diskussion einstimmig. Die Höchstsumme
+    entspricht 25 Prozent der vom Verein
+    berechneten Gesamtkosten in Höhe von
+    rund 350 000 Euro. Sollten die Kosten
+    niedriger ausfallen, verringert sich die
+    Sonderförderung entsprechend. Darüber
+    hinaus steht den Sportfreunden laut
+    Gemeindeordnung ein Regelzuschuss von
+    zehn Prozent der Baukosten ...
+- 
+  title: Volksbank Laupheim gewinnt den Cup
+  url: >
+    https://www.schwaebische.de/home_artikel,-volksbank-laupheim-gewinnt-den-cup-_arid,10473762.html
+  date: 2016-06-20
+  tags: uhlmann-halder-cup,veranstaltungen
+  text: >
+    Zielstrebige Fußballmannschaften und
+    super Stimmung hat es am Freitag beim
+    20. Uhlmann-Halder-Cup gegeben.
+    Insgesamt 24 Mannschaften nahmen an dem
+    Spektakel teil und lieferten sich einen
+    harten Kampf um den begehrten Pokal. Im
+    temporeichen Endspiel begegneten sich
+    die Mannschaften von Volksbank Laupheim
+    und R-Pharm auf Augenhöhe. Die
+    Mannschaft der Volksbank entschied das
+    Turnier nach regulärer Spielzeit im
+    Neunmeter schießen 3:1 für sich.
+- 
+  title: >
+    Aikido-Nachwuchs verbessert seine
+    Technik
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-aikido-nachwuchs-verbessert-seine-technik-_arid,10418955.html
+  date: 2016-03-23
+  tags: aikido
+  text: 'Am vergangenen Samstag war es wieder soweit, der erste Aikido-Kinder- und Jugendlehrgang in diesem Jahr fand in Bronnen statt. 18 Kinder aus ganz Baden-Württemberg sowie einige Erwachsene folgten der Einladung der Aikidoabteilung der Sportfreunde Bronnen und nahmen an dem Lehrgang teil.'
+- 
+  title: >
+    Für 60 Jahre Treue erhält Erwin
+    Thierfeld Ehrenurkunde
+  url: 'https://www.schwaebische.de/home_artikel,-f%C3%BCr-60-jahre-treue-erh%C3%A4lt-erwin-thierfeld-ehrenurkunde-_arid,10407260.html'
+  date: 2016-03-06
+  tags: jhv
+  text: >
+    Die Sportfreunde Bronnen haben sich zur
+    Hauptversammlung getroffen. Davor hatte
+    auch der Förderverein getagt. Beide
+    Versammlungen schlossen mit einem
+    positiven Fazit.
+- 
+  title: Kankang Minteh schnürt Doppelpack
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-kankang-minteh-schn%C3%BCrt-doppelpack-_arid,10293616.html'
+  date: 2015-08-26
+  tags: fussball,integration
+  text: >
+    „Ich schieße 15 Tore.“ Diese
+    selbstbewusste Aussage stammt von
+    Kankang Minteh, einem Flüchtling aus
+    Gambia, der seit Saisonbeginn für die
+    Sportfreunde Bronnen in der
+    Fußball-Kreisliga A II spielt. Den
+    Worten hat der 22-Jährige gleich am
+    zweiten Spieltag Taten folgen lassen.
+    Minteh schnürte einen Doppelpack und
+    führte die Sportfreunde nach einem
+    zwischenzeitlichen 0:1-Rückstand zur
+    Pause zu einem 2:1-Heimerfolg gegen den
+    TSV Wain.
+- 
+  title: 1:0 für die Integration
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-10-f%C3%BCr-die-integration-_arid,10284171.html'
+  date: 2015-08-07
+  tags: fussball,integration
+  text: >
+    Sie sei „tief beeindruckt von der
+    Bereitschaft der Menschen in
+    Baden-Württemberg, sich ehrenamtlich
+    für Flüchtlinge einzusetzen“, sagte
+    Sozialministerin Katrin Altpeter in
+    einer Presseerklärung am Freitag. Ein
+    Beispiel für das Engagement liefern
+    derzeit die Sportfreunde Bronnen, die
+    vier junge Männer aus Gambia in den
+    Verein und die Fußballmannschaft
+    aufgenommen hat. Ein weiterer spielt
+    inzwischen Handball beim HRW.
+- 
+  title: Firma Zeba siegt zum zweiten Mal
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-firma-zeba-siegt-zum-zweiten-mal-_arid,10263870.html
+  date: 2015-07-05
+  tags: uhlmann-halder-cup
+  text: >
+    Tolle Stimmung und attraktiven Fußball
+    sowie eine perfekte Show im Festzelt
+    haben die Firmenmannschaften am Freitag
+    beim Fußballfest der SF Bronnen erlebt.
+    Die Mannschaft der Firma Zeba (Wain) hat
+    überraschend das Turnier um den
+    Uhlmann-Halder-Cup für
+    Betriebsmannschaften zum zweiten Mal
+    hintereinander gewonnen. Die Truppe von
+    Kapitän Ivanko Zeba entschied das
+    Finale gegen den starken Favoriten MSR
+    mit 2:1.
+- 
+  title: Neue Gesichter im SFB-Vorstand
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-neue-gesichter-im-sfb-vorstand-_arid,10190886.html
+  date: 2015-03-09
+  tags: jhv
+  text: >
+    Zahlreiche Ehrungen und einige
+    Veränderungen im Vorstand haben die
+    Hauptversammlung der Sportfreunde
+    Bronnen geprägt. Sascha Stecken und
+    Elke Maiser übernahmen den
+    stellvertretenden Vorsitz von Martin
+    Halder, der mit der Vereinsehrennadel in
+    Gold ausgezeichnet wurde
+- 
+  title: Sportfreunde Bronnen tagen
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-sportfreunde-bronnen-tagen-_arid,10181813.html
+  date: 2015-02-24
+  tags: jhv
+  text: >
+    Die Sportfreunde Bronnen laden am
+    Freitag, 6. März, um 19.30 Uhr zur
+    Hauptversammlung ins Sportvereinszentrum
+    ein. Neben den Berichten des Vorstands
+    und der verschiedenen Abteilungen werden
+    auch Neuwahlen und Ehrungen vorgenommen.
+    Anträge können bis spätestens zum 27.
+    Februar schriftlich beim Vorsitzenden
+    Benjamin Baur eingereicht werden.
+- 
+  title: >
+    Gemeinderat genehmigt Soccer-Halle und
+    finanzielle Unterstützung
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/achstetten_artikel,-gemeinderat-genehmigt-soccer-halle-und-finanzielle-unterst%C3%BCtzung-_arid,10077225.html'
+  date: 2014-09-02
+  tags: gemeinde
+  text: >
+    In der Gemeinderatssitzung am 8. Juli
+    haben die Achstetter Gemeinderäte einer
+    finanziellen Beteiligung an einem
+    überdachten Kleinspielfeld, einer
+    Soccer-Halle, in Höhe von 200 000 Euro
+    zusätzlich zur Regelförderung von zehn
+    Prozent grundsätzlich zugestimmt. Die
+    TSG Achstetten möchte so eine Halle
+    neben dem Sportplatzgelände bauen. In
+    der Gemeinderatssitzung am Montag wurde
+    das entsprechende Baugesuch für das
+    überdachte Kleinspielfeld behandelt.
+- 
+  title: >
+    „Einiges ist in Vergessenheit
+    geraten“
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-einiges-ist-in-vergessenheit-geraten-_arid,10047711.html
+  date: 2014-07-13
+  tags: gemeinde
+  text: >
+    Gut 30 Zuhörer sind der Einladung von
+    Achstettens Bürgermeister Kai Feneberg
+    zum Bürgergespräch im Bronner
+    Gemeindezentrum gefolgt. Die
+    Veranstaltung am Freitag stand merklich
+    im Zeichen des Bürgermeisterwahlkampfs.
+- 
+  title: >
+    TSG Achstetten will Tribüne mit
+    Umkleiden und Soccer-Halle bauen
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/achstetten_artikel,-tsg-achstetten-will-trib%C3%BCne-mit-umkleiden-und-soccer-halle-bauen-_arid,10045403.html'
+  date: 2014-07-09
+  tags: gemeinde
+  text: >
+    Die TSG Achstetten will in erheblichem
+    Umfang in ihre Sportanlagen investieren.
+    Der Vorsitzende Gerd Rothenbacher hat
+    das Projekt am Dienstag im Gemeinderat
+    vorgestellt. Er knüpfte daran die
+    Frage, ob die Gemeinde sich eine
+    zusätzliche finanzielle Beteiligung
+    vorstellen kann.
+- 
+  title: >
+    Bei den Bambini heißt der Sieger SF
+    Bronnen
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-bei-den-bambini-hei%C3%9Ft-der-sieger-sf-bronnen-_arid,10041951.html'
+  date: 2014-07-03
+  tags: zwickel-junior-cup
+  text: >
+    Der 6. Junior-Cup auf dem
+    Bronner-Sportplatz war trotz der
+    schlechten Witterung eine gelungene
+    Sportveranstaltung der vielen
+    Jugendmannschaften. Viele Zuschauer
+    schauten dem sportlichen Treiben der
+    Jungkicker zu und sparten nicht mit
+    großem Beifall.
+- 
+  title: >
+    „Fußball ist unser Leben“ erobert
+    Platz eins
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-fu%C3%9Fball-ist-unser-leben-erobert-platz-eins-_arid,10002692.html'
+  date: 2014-05-01
+  tags: fussball,aktionen,maibaum
+  text: 'Hermann Sontheimers Augen leuchten vor Freude. 20 Jahre, von 1954 bis 1974, hat er für die Sportfreunde Bronnen Fußball gespielt. Auch mit 77 verpasst er keine Partie seines Vereins. Sontheimer war Torjäger, wie Uwe Seeler, mit dem er das Geburtsdatum teilt: 5. November 1936. Am Mittwochabend bestaunt er den Maien der Freiwilligen Feuerwehr: „Was für ein Baum!“'
+- 
+  title: >
+    Bernhard Heigel ist dem Verein seit 50
+    Jahren treu
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-bernhard-heigel-ist-dem-verein-seit-50-jahren-treu-_arid,5602570.html
+  date: 2014-03-10
+  tags: jhv
+  text: >
+    Ein positives Fazit über das vergangene
+    Vereinsjahr hat der Vorsitzende Benjamin
+    Baur bei der Hauptversammlung der
+    Sportfreunde Bronnen gezogen. Bei den
+    Wahlen wurden der Vorsitzende Baur und
+    Schriftführer Jürgen Anic in ihren
+    Ämtern bestätigt.
+- 
+  title: >
+    Volksbank Raiffeisenbank
+    Laupheim-Illertal spendet 30 700 Euro
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-volksbank-raiffeisenbank-laupheim-illertal-spendet-30-700-euro-_arid,5560076.html
+  date: 2013-12-28
+  tags: aktionen
+  text: >
+    Im Rahmen ihrer alljährlichen
+    Weihnachtsaktion hat die Volksbank
+    Raiffeisenbank Laupheim-Illertal
+    insgesamt 30 700 Euro an Vereine in der
+    Region ausgeschüttet. „Das ist einer
+    der angenehmsten Termine am
+    Jahresende“, sagte der
+    Vorstandsvorsitzende Hans Fleschhut am
+    Freitag bei der offiziellen Vergabe im
+    Richard-Heumann-Saal. Als
+    Genossenschaftsbank sei die
+    Unterstützung des Gemeinwohls eine
+    wichtige Aufgabe, so Fleschhut. Im
+    Illertal fließt etwa die gleiche Summe
+    im Januar an dortige Vereine.
+- 
+  title: >
+    Kreissparkasse Biberach verteilte
+    Spendenschecks zum Abschluss der
+    Kalenderaktion
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-kreissparkasse-biberach-verteilte-spendenschecks-zum-abschluss-der-kalenderaktion-_arid,5558403.html
+  date: 2013-12-23
+  tags: aktionen
+  text: >
+    Die Adventskalenderaktion der
+    Kreissparkasse Biberach hat ihren
+    Höhepunkt erreicht. 36 Spendenschecks
+    wurden am Abschlussabend überreicht.
+    Insgesamt hat die Kreissparkasse in
+    diesem Jahr 62 000 Euro allein über
+    diese Aktion an Vereine, gemeinnützige
+    Einrichtungen und Organisationen im
+    Landkreis Biberach überreicht.
+- 
+  title: >
+    Fairness-Auszeichnung für Fußballer
+    Benjamin Baur
+  url: 'https://www.schwaebische.de/home_artikel,-fairness-auszeichnung-f%C3%BCr-fu%C3%9Fballer-benjamin-baur-_arid,5558805.html'
+  date: 2013-12-26
+  text: >
+    Benjamin Baur, Vorsitzender der SF
+    Bronnen, ist im Rahmen der Aktion
+    „Fair ist mehr" des Württembergischen
+    Fußballverbands (WFV) ausgezeichnet
+    worden.
+  tags: fussball,fairness
+- 
+  title: Was so alles „id ganz bacha“ ist
+  url: >
+    https://www.schwaebische.de/home_artikel,-was-so-alles-id-ganz-bacha-ist-_arid,5545506.html
+  date: 2013-12-03
+  tags: aktionen,veranstaltungen
+  text: >
+    Viel zu lachen hat es für die rund 300
+    Besucher beim Auftritt der
+    Kabarettgruppe „Saubachkomede“ in
+    der Gemeindehalle in Bronnen gegeben, zu
+    dem die heimischen Sportfreunde
+    eingeladen hatten. Drei Stunden lang
+    nahmen die sieben Komödianten Alwin,
+    Edgar und Egon Hagel, Oliver und Markus
+    Burkhardt, Michael Ogger sowie Melanie
+    Traub manches aufs Korn, was gemäß dem
+    Titel ihres neuen Programms „Id ganz
+    bacha“ ist.
+- 
+  title: Camp beschert Spaß und Action
+  url: 'https://www.schwaebische.de/home_artikel,-camp-beschert-spa%C3%9F-und-action-_arid,5474708.html'
+  date: 2013-07-26
+  tags: fussball,jugend,adventure-camp
+  text: >
+    34 Kinder haben beim Adventure Camp der
+    Sportfreunde Bronnen teilgenommen.
+    Zunächst konnte sich jedes Kind ein
+    Adventure-Camp-Shirt bedrucken. Während
+    ein Teil der Kinder die Campflagge
+    bemalte, machte eine andere Gruppe sich
+    an die Bemalung des Adventuremans.
+- 
+  title: >
+    Sportfreunde Bronnen meistern auch
+    stürmische Stunden
+  url: 'https://www.schwaebische.de/home_artikel,-sportfreunde-bronnen-meistern-auch-st%C3%BCrmische-stunden-_arid,5402738.html'
+  date: 2013-03-04
+  tags: jhv
+  text: >
+    Auf ein Jahr mit vielen Aktivitäten
+    haben die Sportfreunde Bronnen bei ihrer
+    Jahreshauptversammlung zurückgeblickt.
+    Das machten die Berichte des
+    Vorsitzenden Benjamin Baur und der
+    weiteren Verantwortlichen des Vereins
+    deutlich.
+- 
+  title: 38 Kinder geben ihr Bestes
+  url: >
+    https://www.schwaebische.de/home_artikel,-38-kinder-geben-ihr-bestes-_arid,5299232.html
+  date: 2012-08-09
+  tags: fussball,jugend,adventure-camp
+  text: >
+    Die Sportfreunde Bronnen haben zum
+    ersten Mal ein Adventure-Camp
+    veranstaltet. 38 Kinder aus der näheren
+    Umgebung haben an der dreitägigen
+    Veranstaltung teilgenommen.
+- 
+  title: Die „Koma-Brüder“ sind hellwach
+  url: 'https://www.schwaebische.de/home_artikel,-die-koma-br%C3%BCder-sind-hellwach-_arid,5278974.html'
+  date: 2012-07-02
+  tags: zwickel,veranstaltungen
+  text: >
+    Der Kampf um den Nachttopf war am
+    Samstag eine gewittrige, nasse
+    Angelegenheit. Nach einer Unterbrechung
+    und der Siegerehrung wurde trotzdem
+    weiter gefeiert.
+- 
+  title: Die Mitgliedsbeiträge steigen dynamisch
+  url: 'https://www.schwaebische.de/home_artikel,-die-mitgliedsbeitr%C3%A4ge-steigen-dynamisch-_arid,5217052.html'
+  date: 2012-03-04
+  tags: jhv
+  text: >
+    Die Sportfreunde Bronnen haben bei ihrer
+    Jahreshauptversammlung auf das
+    vergangene Jahr zurück geblickt. Heftig
+    diskutiert wurde die letztlich
+    beschlossene, dynamische Erhöhung der
+    Mitgliedsbeiträge.
+- 
+  title: >
+    Das Jubiläum wirft seinen Schatten
+    voraus
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/achstetten_artikel,-das-jubil%C3%A4um-wirft-seinen-schatten-voraus-_arid,5217054.html'
+  date: 2012-03-04
+  tags: gemeinde,jugend
+  text: >
+    Ein Großereignis wirft seine Schatten
+    voraus. Die Vorbereitung zum
+    150-jährigen Jubiläum der TSG
+    Achstetten laufen auf Hochtouren. Im
+    Sommer wird mit einem Festabend am
+    Freitag, 29. Juni, und mit einem
+    Festwochenende vom Freitag 6., bis
+    Sonntag, 8. Juli, gefeiert. Dabei soll
+    die ganze Bandbreite des TSG-Angebots
+    den Gästen präsentiert werden, so der
+    Vorsitzende Werner Schick bei der
+    Jahreshauptversammlung des Vereins. Er
+    bat alle Mitglieder, Freunde und Gönner
+    um weitere Mithilfe bei der Vorbereitung
+    dazu, damit „dieses Fest ein
+    wirkliches ...
+- 
+  title: Benjamin Baur folgt auf Oliver Bentele
+  url: >
+    https://www.schwaebische.de/home_artikel,-benjamin-baur-folgt-auf-oliver-bentele-_arid,5217053.html
+  date: 2012-03-04
+  tags: jhv
+  text: >
+    Oliver Bentele hat nach 15-jähriger
+    Tätigkeit sein Amt als Vorsitzender der
+    Sportfreunde Bronnen abgegeben. In seine
+    Amtszeit fiel die Entwicklung vom reinen
+    Fußballverein mit rund 200 Mitgliedern
+    zum Mehrspartenverein, der aktuell 704
+    Mitglieder zählt.
+- 
+  title: 'Überraschung: Schmid siegt'
+  url: 'https://www.schwaebische.de/home_artikel,-%C3%BCberraschung-schmid-siegt-_arid,5098418.html'
+  date: 2011-07-03
+  tags: uhlmann-halder-cup,veranstaltungen
+  text: >
+    Die Mannschaft der Firma Schmid hat am
+    Freitagabend überraschend das Turnier
+    um den Uhlmann-Halder-Cup für
+    Betriebsmannschaften auf dem
+    Sportgelände der Sportfreunde Bronnen
+    gewonnen. Die Truppe von Kapitän
+    Manfred Bischoff entschied das Finale
+    gegen den haushohen Favoriten Uhlmann 1
+    nach einem torlosen 0:0 mit 5:4 im
+    Neunmeterschießen. „Vor vier Wochen
+    erst angemeldet, nun Sieger, das ist ein
+    Sommermärchen für uns“, meinte der
+    Spielführer. „Natürlich freut man
+    sich, wenn das schlechter Wetter vorbei
+    zieht“, meinen die beiden Macher der
+    ...
+- 
+  title: >
+    Die Vorstandschaft der Sportfreunde
+    Bronnen formiert sich neu
+  url: >
+    https://www.schwaebische.de/home_artikel,-die-vorstandschaft-der-sportfreunde-bronnen-formiert-sich-neu-_arid,5037612.html
+  date: 2011-02-28
+  tags: jhv
+  text: >
+    Ein Abend des Wechsels ist die
+    Hauptversammlung der Sportfreunde
+    Bronnen gewesen. Fast die ganze
+    Vorstandschaft stellte ihre Ämter zur
+    Verfügung. Zuvor stand aber noch eine
+    Satzungsänderung an. Bisher wurden alle
+    Vorstandmitglieder für zwei Jahre
+    gewählt. Um zu verhindern, dass in
+    einem Wahljahr alle ihre Posten
+    aufgeben, wurde die Satzung mit
+    Zustimmung der Versammlung dahingehend
+    geändert, dass in diesem Jahr der
+    Vorstand und der Schriftführer nur für
+    ein Jahr gewählt wurden.
+- 
+  title: Sportfreunde zocken um den Nachttopf
+  url: >
+    https://www.schwaebische.de/home_artikel,-sportfreunde-zocken-um-den-nachttopf-_arid,4128513.html
+  date: 2010-07-12
+  tags: zwickel,veranstaltungen
+  text: 'Fußball und Party in der Nacht -- unter dieses Motto haben die Sportfreunde ihren 17. Zwickel-Night-Cup auf dem Sportgelände in Bronnen gefeiert. Der Veranstalter zündete ein Feuerwerk für Fußballer und Musikfans bis weit nach Mitternacht. Gewinner wurde zum dritten Mal nach 2007/08 die Mannschaft Dinamo aus Laupheim.'
+- 
+  title: >
+    Kinder im Kongo kicken mit Schuhen aus
+    Deutschland
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-kinder-im-kongo-kicken-mit-schuhen-aus-deutschland-_arid,4125684.html
+  date: 2010-07-07
+  tags: soziales
+  text: >
+    Viele Vereine aus der Region haben hat
+    für das Projekt „Kicken im Kongo“
+    des gemeinnützigen Vereins „Hallo
+    Kongo“ Fußballschuhe, Trikots und
+    Bälle gesammelt, um Kinder in Afrika zu
+    unterstützen und ihnen eine Freude zu
+    bereiten. Nun ist die erste Ladung in
+    Afrika angekommen, einer weitere ist
+    unterwegs.
+- 
+  title: Landrat Schmid besucht Achstetten
+  url: >
+    https://www.schwaebische.de/landkreis/landkreis-biberach/achstetten_artikel,-landrat-schmid-besucht-achstetten-_arid,4122707.html
+  date: 2010-07-01
+  tags: gemeinde
+  text: >
+    Als 42. von 44 Kreisgemeinden hat
+    Landrat Dr. Heiko Schmid die Gemeinde
+    Achstetten besucht. Beim Gespräch mit
+    den Bürgern blickte er in eine positive
+    Zukunft der Gemeinde.
+- 
+  title: Fußball trifft Aikido
+  url: 'https://www.schwaebische.de/home_artikel,-fu%C3%9Fball-trifft-aikido-_arid,4090014.html'
+  date: 2010-04-28
+  tags: aikido
+  text: >
+    Am vergangenen Wochenende haben sich in
+    Bronnen zwei sehr unterschiedliche
+    Sportarten zum gemeinsamen
+    Aikidotraining getroffen. 16 Jugendliche
+    im Alter von 14 bis 16 Jahren der
+    Fußball-B-Jugend des Sportvereins
+    Renhardsweiler kamen zu den Aikidoka der
+    Sportfreunde-Bronnen.
+- 
+  title: >
+    "Tragt den Stolz auf das Geleistete im
+    Herzen"
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2919003.html
+  date: 2009-07-21
+  tags: 60jahre,svz
+  text: 'BRONNEN - 60 Jahre Sportfreunde Bronnen: Mit einem ganzen Wochenende voller Höhepunkte hat der Verein dieses Jubiläum gefeiert. Ein ganz besonderes Geschenk zum Geburtstag haben sich die Sportfreunde Bronnen dabei selbst gemacht. Mit viel ehrenamtlicher Arbeit und Fleiß ist neben dem Fußballplatz ein neues, komfortables Sportheim entstanden.'
+- 
+  title: >
+    Auch zu zwölft finden die Ex-Profis
+    ihren Meister
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2918638.html
+  date: 2009-07-20
+  tags: 60jahre
+  text: "'Vor allem Klaus Augenthaler schaute etwas grimmig drein am Freitagabend auf dem Bronner Sportgelände. „Wenn ihr keine Lust habt, dann hättet ihr daheim bleiben können“, schrie er – gut hörbar für viele Zuschauer – Anfang der zweiten Halbzeit über den Platz. Adressaten waren die Mitspieler seiner Mannschaft, die 0:2 zurücklag – und so etwas nicht mehr gewohnt war."
+- 
+  title: "Bomber der Nation" gibt Autogramme
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2912914.html
+  date: 2009-07-17
+  tags: 60jahre
+  text: 'BRONNEN - Erst seit gestern Nachmittag steht es fest: Neben dem Allstar-Team des FC Bayern München um Klaus Augenthaler & Co. ist heute ein weiterer Ex-Weltmeister auf dem Sportgelände in Bronnen zu Gast - Deutschlands Fußball-Rekordtorjäger Gerd Müller gibt ab etwa 16 Uhr Autogramme. Er wird begleitet vom ehemaligen Bayern-Präsidenten Willi O. Hoffmann.'
+- 
+  title: Ex-Profis zaubern zum 60. Geburtstag
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2909109.html
+  date: 2009-07-15
+  tags: 60jahre
+  text: 'BRONNEN - Die Fußballfans in der Region dürfen sich freuen: Mit einer ganzen Reihe namhafter Ex-Profis tritt das Allstar-Team des deutschen Rekordmeisters FC Bayern München am 17. Juli in Bronnen gegen eine Ü-35-Auswahl des Bezirks Riß an. Die Partie ist das Jubiläumsspiel der heuer 60 Jahre alten Sportfreunde Bronnen.'
+- 
+  title: Augenthaler, Kögl und Pflügler zaubern
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2902613.html
+  date: 2009-07-10
+  tags: 60jahre
+  text: 'Die Fußballfans in der Region dürfen sich freuen: Mit einer ganzen Reihe namhafter Ex-Profis tritt das Allstar-Team des deutschen Rekordmeisters FC Bayern München am 17. Juli in Bronnen gegen eine Ü-35-Auswahl des Bezirks Riß an. Die Partie ist das Jubiläumsspiel der heuer 60 Jahre alten Sportfreunde Bronnen.'
+- 
+  title: Bayern-Allstars krönen Vereinsjubiläum
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2765275.html
+  date: 2009-04-18
+  tags: 60jahre
+  text: 'BRONNEN - Die Sportfreunde Bronnen feiern vom 17. bis 19. Juli ihr 60-jähriges Vereinsbestehen und die Einweihung des neuen Sportheimes. Höhepunkt der Festlichkeiten ist am Freitag, 17. Juli, das Gastspiel des "Allstar-Teams" des FC Bayern München gegen eine Ü35-Bezirksauswahl.'
+- 
+  title: VR-Bank fördert die Region
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2751133.html
+  date: 2009-04-09
+  tags: aktionen
+  text: 'Unter dem Motto "Gewinnen - Sparen - Helfen" hat die VR-Bank Ellwangen mit den Zweckerträgen aus dem Gewinnsparfonds des Jahres 2008 insgesamt 55 verschiedene Vereine und Institutionen aus ihrem Geschäftsgebiet mit Spenden unterstützt. Verteilt wurden 42 501 Euro.'
+- 
+  title: 'Torwart-Casting bei der Olympia - Stürmer Buk hält SFB-Kasten sauber'
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2545491.html
+  date: 2008-11-11
+  tags: fussball
+  text: Durchs Netz geblinzelt
+- 
+  title: Im Derby geht es "um die Wurst"
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2508740.html
+  date: 2008-09-18
+  tags: fussball,gemeinde
+  text: 'Derbyfieber in Achstetten und Bronnen: Die zweite Mannschaft der heimischen TSG und die benachbarten Sportfreunde treffen sich am heutigen Donnerstagabend (19 Uhr) zum Gemeindeduell.'
+- 
+  title: 39 Teams streiten um einen Nachttopf
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2460454.html
+  date: 2008-07-15
+  tags: zwickel,veranstaltungen
+  text: 'BRONNEN - Fußball und Party bis  in die Nacht - das ist auch beim 15. Zwickel-Night-Cup der Sportfreunde in Bronnen wieder das Motto gewesen. Zum zweiten Mal in Folge gewann "Dinamo Laup-heim" den Nachttopf.'
+- 
+  title: Der treueste SFB-Fan nimmt Abschied
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2349566.html
+  date: 2008-04-16
+  tags: soziales,fussball
+  text: Namen und Nachrichten
+- 
+  title: Im Rottal gibt"s viel Gesprächsstoff
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2326450.html
+  date: 2008-04-01
+  tags: fussball,gemeinde
+  text: Durchs Netz geblinzelt
+- 
+  title: >
+    Erste Jugendliche erhalten den gelben
+    Gürtel
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2313389.html
+  date: 2008-03-20
+  tags: ""
+  text: 'Nach neunmonatigem regelmäßigem Training unter Anleitung von Melanie Lengenfelder und Harald Unrath haben Miriam Humm, Onur Baran, Fabio und Tim Hochdorfer sowie Tom Unrath von der Aikido-Abteilung der Sportfreunde Bronnen die Prüfung für den gelben Gürtel bestanden. Aikido ist eine relativ junge asiatische Sportart, die verschiedene Kampf- und entspannende Sportarten verbindet. Aikido dient der Verteidigung; den Angriffen wird geschickt ausgewichen oder die Kraft des Angreifers wird durch einfache Bewegungsabläufe gegen den Angreifer gelenkt.'
+- 
+  title: Gemeinderat sagt Ja zu neuem Sportheim
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2285229.html
+  date: 2008-02-27
+  tags: svz,gemeinde
+  text: 'Ihr vorläufiges Einverständnis haben die Achstetter Gemeinderäte am Montag zum geplanten Sportheim-Neubau der Sportfreunde Bronnen erklärt. Um noch für dieses Jahr Zuschüsse vom Württembergischen Landessportbund (WLSB) zu erhalten, sei es notwendig, dem Baugesuch jetzt einen positiven Bescheid zu geben, erklärte Bürgermeister Kai Feneberg. Die Räte stimmten dem Vorhaben - vorbehaltlich der  Zustimmung der Fachbehörden und anderer noch zu klärender Punkte - zu.'
+- 
+  title: >
+    Der Zwickel-Cup soll in diesem Jahr
+    Nachwuchs bekommen
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2266893.html
+  date: 2008-02-12
+  tags: >
+    zwickel,veranstaltungen,zwickel-junior-cup
+  text: 'BRONNEN - Am Freitag haben sich Mitglieder, Freunde und Gönner der Sportfreunde Bronnen zur Jahreshauptversammlung getroffen. Das vergangene Jahr hat vor allem der Sportheim-Neubau geprägt.'
+- 
+  title: Pohl wird Trainer bei den SF Bronnen
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2225322.html
+  date: 2008-01-07
+  tags: fussball
+  text: >
+    Fußball-Kreisligist SF Bronnen wechselt
+    in der Winterpause den Trainer. Der
+    Achstetter Hartmut Pohl, der vor kurzem
+    beim Donau-Bezirksligisten VfL
+    Munderkingen aufhörte, löst in Bronnen
+    den glücklosen Georg Ströbele ab. Die
+    Sportfreunde liegen in der Kreisliga A,
+    Staffel 2, auf dem letzten
+    Tabellenplatz.
+- 
+  title: Karatekas kommen zusammen
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2123539.html
+  date: 2007-09-29
+  tags: karate
+  text: >
+    Ein erstes "Oberschwabentraining" in
+    Bronnen hat die Karateabteilung der
+    Sportfreunde Bronnen als Erfolg
+    gewertet. Es soll durchaus eine
+    Fortsetzung geben, melden die
+    zufriedenen Sportler.
+- 
+  title: Bronner zeigen feine Kampfkunst
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2117506.html
+  date: 2007-09-25
+  tags: karate
+  text: 'Über viele Besucher am Tag der offenen Tür haben sich die Mitglieder der Karateabteilung der  Sportfreunde Bronnen gefreut. Die Kindergruppe von Karate Bronnen eröffnete die Veranstaltung. Das Bild zeigt den zehnjährigen Alexander Lutzke, der den Angriff des gleichaltrigen Rick Unrath zu meistern versucht, und gleich anschließend die Attacke der zwölfjährigen Anna Wöhrle.'
+- 
+  title: Trainer landen auf der Matte
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2080776.html
+  date: 2007-08-17
+  tags: karate
+  text: >
+    Im Rahmen der Sommerferienprogramme der
+    Gemeinden Achstetten und Burgrieden hat
+    die Karateabteilung der Sportfreunde
+    Bronnen erstmals ein
+    Selbstbehauptungstraining angeboten.
+    Angesprochen waren unterschiedliche
+    Altersgruppen.
+- 
+  title: An drei Tagen rollt der Fußball
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2059563.html
+  date: 2007-07-26
+  tags: >
+    zwickel,uhlmann-halder-cup,veranstaltungen
+  text: >
+    Vom Freitag, 27. Juli, bis Sonntag, 29.
+    Juli, lädt die Fußballabteilung der
+    Sportfreunde Schwendi zum 9.
+    Sportwochenende ein. Es werden
+    verschiedene Turniere gespielt,
+    begleitet von einem attraktiven
+    Rahmenprogramm.
+- 
+  title: >
+    Dinamo sichert sich beim
+    Neunmeterschießen den Topf
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2040483.html
+  date: 2007-07-10
+  tags: zwickel,veranstaltungen
+  text: 'Fußball und Party in der Nacht - unter diesem Motto haben Sportfreunde ihren 14. Zwickel-Night-Cup am Samstag auf dem Sportgelände in Bronnen gefeiert. Unter funkelnden Sternen zündete der Veranstalter ein Feuerwerk für Fußballer und Musikfans bis weit nach Mitternacht. Gewinner wurden überraschend die Kicker mit dem Namen Dinamo aus Laupheim.'
+- 
+  title: Die Sportfreunde entgehen dem Abstieg
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2015912.html
+  date: 2007-06-18
+  tags: fussball,relegation
+  text: >
+    Der Kelch des Abstiegs in die Kreisliga
+    ist an den Sportfreunden Bronnen noch
+    einmal vorbeigegangen. Mit einem
+    4:1-Sieg über den SV Altheim sicherten
+    sich die Sportfreunde eine weitere
+    Saison die Zugehörigkeit in der
+    Kreisliga A.
+- 
+  title: '4:1 - Bronnen bleibt in der Kreisliga A'
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2015642.html
+  date: 2007-06-18
+  tags: fussball,relegation
+  text: 'Die SF Bronnen  dürfen weiterhin in der Kreisliga A, Staffel 2, spielen, der SV Altheim hat den Aufstieg verpasst: Die Sportfreunde setzten sich gestern im Relegationsspiel in Baustetten mit 4:1 durch. Dabei erwischten die Bronner vor 850 Zuschauern einen Start nach Maß, als Sergej Haus bereits nach zwei Minuten traf. Nach etwa 20 Minuten ließ der Spielfluss der SFB nach, und Holger Barthold glich in der 29. Minute für den SV Altheim aus. Kurz vor der Pause brachte Magnus Buck Bronnen erneut in Führung.'
+- 
+  title: Bittere Pille oder süßes Geschenk
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,2014716.html
+  date: 2007-06-16
+  tags: fussball,relegation
+  text: >
+    Die SF Bronnen und der SV Altheim
+    kämpfen am morgigen Sonntag ab 17 Uhr
+    in Baustetten um einen Platz in der
+    Kreisliga A. Für die SFB wäre der
+    Abstieg eine bittere Pille, für den SVA
+    wäre der Aufstieg ein süßes Geschenk.
+- 
+  title: Ab sofort ist Karate möglich
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1941263.html
+  date: 2007-04-04
+  tags: karate
+  text: >
+    Ab sofort bieten die Sportfreunde
+    Bronnen eine eigene Karateabteilung an.
+    Unter der Leitung von Theo Hunger (4.
+    Dan), lizenzierter A-Trainer und im
+    Hauptberuf Selbstverteidigungstrainer
+    der Polizei, kann man dienstags und
+    donnerstags in der Gemeindehalle in
+    Bronnen Karate betreiben.
+- 
+  title: >
+    Neues Sportheim nimmt planerisch Gestalt
+    an
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1863284.html
+  date: 2007-01-30
+  tags: svz
+  text: 'Zufrieden mit dem Jahr 2006 hat sich Oliver Bentele, Vorsitzender der Sportfreun-de Bronnen, bei der Hauptversammlung gezeigt: "In allen Bereichen konnten die Zahlen noch gesteigert werden."'
+- 
+  title: >
+    Sportfreunde ehren ihre treuen
+    Mitglieder und Funktionäre
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1863335.html
+  date: 2007-01-30
+  tags: jhv
+  text: >
+    Verdiente Vereinsmitglieder sind bei der
+    Hauptversammlung der Sportfreunde
+    Bronnen geehrt worden. Inge Guther,
+    Meike Sontheimer, Matthias Haase,
+    Wolfbert Pischzan und Hans Barth
+    erhielten die Vereinsehrennadel in
+    Bronze für zehnjährige Zugehörigkeit.
+    20 Jahre bei den Sportfreunden sind Gerd
+    Rieber und Oliver Bentele, die mit der
+    Vereinsehrennadel in Silber
+    ausgezeichnet wurden. 50 Jahre halten
+    Herbert Rieber, Erwin Thierfeld und
+    Ernst Jauss dem Bronner Sportverein die
+    Treue, wofür ihnen die
+    Vereinsehrennadel in Gold verliehen
+    wurde.
+- 
+  title: 'Was ist eigentlich Aikido? - Bronner Sportler verraten es am Samstag'
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1863198.html
+  date: 2007-01-30
+  tags: aikido
+  text: 'Was ist Aikido? Sport, moralische Verhaltenslehre oder Selbstverteidigung? Diese Frage wird am Samstag, 3. Februar, ab 15 Uhr in der Turn- und Gemeindehalle Bronnen durch die Aikido-Abteilung der Bronner Sportfreunde beantwortet. Zu Gast ist die Geislinger Jugendgruppe. Erfahrungsgemäß kann eine Mehrzahl aller Personen mit diesem Begriff keine oder nur ungenaue Vorstellungen verbinden. Faszinierend und geheimnisvoll mutet Außenstehenden die Szenerie an, die sich allwöchentlich in der Gemeindehalle in Bronnen abspielt.'
+- 
+  title: SF Bronnen berät Neubau
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1857675.html
+  date: 2007-01-24
+  tags: svz
+  text: Hauptversammlungen
+- 
+  title: >
+    Der "Leo" und sein Einfluss aufs
+    Ballspiel
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1769366.html
+  date: 2006-09-19
+  tags: fussball
+  text: Von Andreas Wagner
+- 
+  title: Der Sportheim-Neubau
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1599812.html
+  date: 2006-02-07
+  tags: svz,jhv
+  text: beschäftigt die Sportfreunde
+- 
+  title: Sportfreunde Bronnen feiern mit Kindern
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1331347.html
+  date: 2005-02-08
+  tags: kinderfasching,veranstaltungen
+  text: "Ein paar schöne Stunden hat Karlheinz Kösling den Gästen beim Kinderfasching der Sportfreunde Bronnen gewünscht. Zusammen mit seiner Frau Sabine hatte er in der Wielandhalle in Oberholzheim ein Unterhaltungsprogramm für die kleinen Faschingsfans zusammengestellt. Bewegungsspiele hieß das Motto. Dabei wurden Turngeräte kreativ eingesetzt. Dicht besiedelt von Feen, Pippi's, Rittern oder Indianern waren die zu Wippen oder Zügen umfunktionierten Bänke."
+- 
+  title: >
+    Den Abstieg haben die Bronner inzwischen
+    gut verdaut
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1325385.html
+  date: 2005-01-31
+  tags: jhv
+  text: 'BRONNEN - Am vergangenen Freitag trafen sich Mitglieder, Freunde und Gönner der Sportfreunde Bronnen zu deren 56. Jahreshauptversammlung.'
+- 
+  title: Formen der Beständigkeit
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1292576.html
+  date: 2004-12-14
+  tags: fussball,ehrungen
+  text: Von Andreas Wagner
+- 
+  title: >
+    Seit 30 Jahren machen Bronner Frauen
+    Gymnastik
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1253655.html
+  date: 2004-10-29
+  tags: gymnastik
+  text: 'Die " Dienstags-Frauen" sind die Gymnastik-Pioniere der Sportfreunde Bronnen. Im Oktober 1974 startete die heute  25 Frauen zählende Dienstags-Gruppe als erste Gymnastikgruppe der Sportfreunde Bronnen mit ihren Übungsabenden. " Damals wurde  noch im alten Gymnastikraum in der Bronner Schule geturnt", erzählt Rosemarie Kress aus Achstetten. Sie ist bereits seit 27 Jahren Übungsleiterin der Frauen. Rund 15 Frauen der Gründungsmitglieder sind heute immer noch  aktiv.'
+- 
+  title: Als Ortsvorsteher stets ein offenes Ohr
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1243259.html
+  date: 2004-10-16
+  tags: gemeinde
+  text: 'BRONNEN - Der langjährige Bronner Kommunalpolitiker Georg Peisker wurde am Donnerstag in den Ruhestand verabschiedet.'
+- 
+  title: Bronnens Schiedsrichter-Pionier wird 70
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,1039983.html
+  date: 2004-02-04
+  tags: ehrungen,fussball
+  text: 'u  Feststimmung herrscht am heutigen Mittwoch bei der Familie Adolf Schick in Bronnen: Der nimmermüde Fußball-Funktionär feiert seinen 70. Geburtstag. Im Bezirk Riß hat er sich einen Namen als Staffelleiter der Bezirksliga (seit 25 Jahren) und der Senioren (seit 31 Jahren) gemacht, vor allem als Schiedsrichter kennt man ihn aber auch weit über die Region hinaus. Seit fast 50 Jahren eilt er Wochenende für Wochenende über die Sportplätze - wobei das "eilt" durchaus wörtlich zu nehmen ist: Obwohl er schon 70 Lenze und mehr als 2500 Spiele "auf ...'
+- 
+  title: Fußball und Party mitten in der Nacht
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,860197.html
+  date: 2003-07-15
+  tags: >
+    uhlmann-halder-cup,zwickel,veranstaltungen
+  text: 'BRONNEN - Fußball und Party in der Nacht - unter diesem Motto feierten die Sportfreunde  ihren 10. Zwickel-Night-Cup  am Samstag auf dem Sportgelände in Bronnen. Bei Kaiserwetter am Nachmittag und  unter funkelnden Sternen zündete der Veranstalter ein Feuerwerk für Fußballer und Musikfans bis weit bis nach Mitternacht. Gewinner wurden überraschend die jungen Kicker vom SV Mietingen mit dem Namen Memory-Club.'
+- 
+  title: Die Mitgliedsbeiträge bleiben stabil
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,701419.html
+  date: 2003-02-02
+  tags: jhv
+  text: >
+    Trotz hoher Belastungen sollen die
+    Mitgliedsbeiträge bei den Sportfreunden
+    Bronnen auch 2003 nicht erhöht werden.
+    Zur Aufbesserung der Finanzen hofft der
+    Verein auch dieses Jahr auf ein gutes
+    Ergebnis beim "Zwickel Night-Cup".
+- 
+  title: Sportfreunde Bronnen
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,695613.html
+  date: 2003-01-27
+  tags: jhv
+  text: >
+    Die Sportfreunde Bronnen haben am
+    Freitag, 31. Januar, Hauptversammlung im
+    Gemeindezentrum Bronnen. Beginn ist um
+    19.30 Uhr. Die komplette Vorstandschaft
+    steht zur Wahl.
+- 
+  title: Finanziell nicht auf Rosen gebetet
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,374588.html
+  date: 2002-01-27
+  tags: jhv
+  text: ""
+- 
+  title: Weiter Kooperation Achstetten-Bronnen
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,227327.html
+  date: 2001-07-23
+  tags: gemeinde,fussball,jugend
+  text: "'BRONNEN/ACHSTETTEN (reis) - Die Sportfreunde Bronnen und die TSG Achstetten arbeiten auch in der kommenden Saison im Jugendfußballbereich zusammen."
+- 
+  title: "Dreggade Fiaß" marschieren durch
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,215606.html
+  date: 2001-07-08
+  tags: zwickel,veranstaltungen
+  text: |
+    'BRONNEN - Zum achten Mal veranstalteten  am Samstag die Sportfreunde Bronnen den "Zwickel-Night-Cup". Dabei kämpften 36 Mannschaften aus ganz Oberschwaben um den begehrten Nachttopf.  Sieger wurde die Mannschaft "Dreggade Fiaß", die sich  im Endspiel gegen "SV Feldweg" durchsetzten konnte.
+- 
+  title: >
+    Nach bestandener Reifeprüfung steht das
+    Wort "Abstieg" auf dem Index
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,186596.html
+  date: 2001-05-31
+  tags: fussball
+  text: ""
+- 
+  title: Nachwuchs bereitet Sportfreunden Freude
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,125048.html
+  date: 2001-03-15
+  tags: jugend,fussball
+  text: "'BRONNEN (hd ) - Die Sportfreunde Bronnen wollen ihre Jugendarbeit  ausweiten. Unter diesen Vorzeichen hatte ihr neuer Jugendleiter, Peter Baur, die Vereinsführung samt Abteilungsleitung und alle Jugendtrainer ins Gemeindezentrum eingeladen."
+- 
+  title: Kostümierte Jungnarren
+  url: >
+    https://www.schwaebische.de/home_artikel,-_arid,109649.html
+  date: 2001-02-25
+  tags: veranstaltungen
+  text: |
+    'OBERHOLZHEIM (man) - Viel Bewegung und "ganz was Anderes" gab es am gestrigen Sonntag bei der traditionellen "Kenderfasnet" der Sportfreunde Bronnen in der Mehrzweckhalle.
+
+----
+
+Text: Das Pressearchiv bis zurück ins Jahr 2001 der Sportfreunde Bronnen. Viel Spaß beim Stöbern!
