@@ -19,12 +19,10 @@
 
       if (toTop > 188 && !nav.hasClass('fixed-top')) {
         nav.addClass('fixed-top');
-        nav.addClass('op-50');
 
       }
       if (toTop <= 100 && nav.hasClass('fixed-top')) {
         nav.removeClass('fixed-top');
-        nav.removeClass('op-50');
       }
     });
 
