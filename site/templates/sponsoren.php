@@ -4,7 +4,7 @@
         <h1 class="text-weight-medium"><?= $page->title();?></h1>
     </div>
 </section>
-<div class="page">
+<div class="page page--sponsors">
     <div class="main-container container pl-sm-0 pr-sm-0">
         <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs"><?= $page->headline();?></h2>
         <?= $page->text()->kirbytext();?>
@@ -14,7 +14,7 @@
                     <?php if ($box): ?>
                     </div>
                     <?php endif; ?>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 sponsor-box">
                     <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mb-3 mb-md-5"><?= strtoupper($current);?></h3>
                 <?php endif; ?>
                 <?php if ($sponsor->webseite()->isNotEmpty()):?>
