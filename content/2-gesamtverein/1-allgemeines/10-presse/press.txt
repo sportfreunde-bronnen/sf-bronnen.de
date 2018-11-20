@@ -426,15 +426,15 @@ Articles:
   text: >
     Viel zu lachen hat es für die rund 300
     Besucher beim Auftritt der
-    Kabarettgruppe „Saubachkomede“ in
-    der Gemeindehalle in Bronnen gegeben, zu
-    dem die heimischen Sportfreunde
-    eingeladen hatten. Drei Stunden lang
-    nahmen die sieben Komödianten Alwin,
-    Edgar und Egon Hagel, Oliver und Markus
-    Burkhardt, Michael Ogger sowie Melanie
-    Traub manches aufs Korn, was gemäß dem
-    Titel ihres neuen Programms „Id ganz
+    Kabarettgruppe Saubachkomede in der
+    Gemeindehalle in Bronnen gegeben, zu dem
+    die heimischen Sportfreunde eingeladen
+    hatten. Drei Stunden lang nahmen die
+    sieben Komödianten Alwin, Edgar und
+    Egon Hagel, Oliver und Markus Burkhardt,
+    Michael Ogger sowie Melanie Traub
+    manches aufs Korn, was gemäß dem Titel
+    ihres neuen Programms „Id ganz
     bacha“ ist.
 - 
   title: Camp beschert Spaß und Action
