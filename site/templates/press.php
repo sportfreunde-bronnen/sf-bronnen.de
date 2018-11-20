@@ -26,13 +26,13 @@
                                     </span>
                                 </p>
                                 <h6 class="sub-heading-1 tiny text-medium text-xs-center">
-                                    <a href="<?= $article->url();?>"><?= $article->title();?></a>
+                                    <a target="_blank" href="<?= $article->url();?>"><?= $article->title();?></a>
                                 </h6>
                                 <p class="text-grey-color">
                                     <?= substr($article->text(), 0, 100) . '...';?>
                                 </p>
                                 <p class="text-md-right">
-                                    <a href="<?= $article->url();?>" class="more-link animation">Zum Artikel</a>
+                                    <a target="_blank" href="<?= $article->url();?>" class="more-link animation">Zum Artikel</a>
                                 </p>
                             </div>
                         </div>
