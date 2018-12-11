@@ -1059,6 +1059,12 @@ Articles:
   tags: veranstaltungen
   text: |
     'OBERHOLZHEIM (man) - Viel Bewegung und "ganz was Anderes" gab es am gestrigen Sonntag bei der traditionellen "Kenderfasnet" der Sportfreunde Bronnen in der Mehrzweckhalle.
+- 
+  title: 'Nach 45 Jahren: Adolf Schick hört als Senioren-Staffelleiter auf'
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-nach-45-jahren-adolf-schick-h%C3%B6rt-als-senioren-staffelleiter-auf-_arid,10977178.html'
+  text: 'Eine Ära ist zu Ende gegangen: Beim 46. Staffeltag unter seiner Leitung hat Adolf Schick in Äpfingen bekannt gegeben, dass er als Staffelleiter der Fußball-Senioren aufhört. Als Schicks Nachfolger wurde Klaus Kuhn gewählt.'
+  date: 2018-12-10
+  tags: fussball
 
 ----
 

@@ -106,4 +106,7 @@ Coaches:
   zeitraum: '08/2014 - 06/2017'
 - 
   name: 'Michael Laupheimer & Marc Nilius (beide Spielertrainer)'
-  zeitraum: ab 07/2017
+  zeitraum: '07/2017 - 12/2018'
+- 
+  name: 'Marc Nilius & Johannes Schupp (beide Spielertrainer)'
+  zeitraum: ab 01/2019
