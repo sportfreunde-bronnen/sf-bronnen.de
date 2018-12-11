@@ -16,7 +16,7 @@
             </div>
             <div class="row blog-post" id="article-grid">
                 <?php foreach ($articles as $article): ?>
-                    <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-groups='<?= $page->getNewsGroupsAsShuffleArray($article);?>'>
+                    <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-date-created="<?= $article->date();?>" data-groups='<?= $page->getNewsGroupsAsShuffleArray($article);?>'>
                         <div class="box-3 animation text-xs-center">
                             <div class="inner">
                                 <p class="date-meta text-grey-color">
@@ -45,15 +45,27 @@
     </div>
 </div>
 <?php snippet('footer'); ?>
-<!--
 <script>
   $(function() {
+
+    function sortByDate(element) {
+      return element.data('date-created');
+    }
+
     var $grid = $('#article-grid');
+
+    var $sortObject = {
+        reverse: true,
+        by: sortByDate
+    };
+
     $grid.shuffle({
       itemSelector: '.article-grid-item',
       speed: 500,
-      group: '<?= $page->getActiveTagGroup();?>'
+      group: '<?= $page->getActiveTagGroup();?>',
+      initialSort: $sortObject
     });
+
     $('#article-filter li a').click(function (e) {
       // set active class
       $('#article-filter li a').removeClass('active');
@@ -62,8 +74,8 @@
       var groupName = $(this).attr('data-group');
       // reshuffle grid
       $grid.shuffle('shuffle', groupName);
+      $grid.shuffle('sort', $sortObject);
     });
   });
 </script>
--->
 <?php snippet('close'); ?>
