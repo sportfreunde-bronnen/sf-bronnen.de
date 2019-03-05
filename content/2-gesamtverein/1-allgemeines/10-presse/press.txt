@@ -1065,6 +1065,17 @@ Articles:
   text: 'Eine Ära ist zu Ende gegangen: Beim 46. Staffeltag unter seiner Leitung hat Adolf Schick in Äpfingen bekannt gegeben, dass er als Staffelleiter der Fußball-Senioren aufhört. Als Schicks Nachfolger wurde Klaus Kuhn gewählt.'
   date: 2018-12-10
   tags: fussball
+- 
+  title: >
+    Adolf Schick feiert 60-jähriges
+    Jubiläum
+  url: 'https://www.schwaebische.de/home_artikel,-adolf-schick-feiert-60-j%C3%A4hriges-jubil%C3%A4um-_arid,10311255.html'
+  text: >
+    Adolf Schick von den Sportfreunden
+    Bronnen hat sein 60-jähriges Jubiläum
+    als Fußball-Schiedsrichter gefeiert.
+  date: 2015-09-24
+  tags: fussball
 
 ----
 

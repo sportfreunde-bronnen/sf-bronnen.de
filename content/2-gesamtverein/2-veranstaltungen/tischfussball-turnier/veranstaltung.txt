@@ -1,0 +1,65 @@
+Title: Tischfußball-Turnier
+
+----
+
+Shorttitle: Das beliebte Tischfußball-Turnier der Sportfreunde Bronnen
+
+----
+
+Line1: 
+
+----
+
+Datum: 2019-02-16 18:00
+
+----
+
+Datumbis: 
+
+----
+
+Ort: SVZ
+
+----
+
+Text: 
+
+Bereits zum 6. Mal findet in diesem Jahr unser beliebtes Tischfußball-Turnier statt.
+
+Eine Anmeldung ist per **E-Mail** an **o.bentele@bs-bo.de** möglich!
+
+Weitere Informationen:
+
+**Wann**: 16.02.2019 ab 18.00 Uhr  
+**Wo**: Im SVZ in Bronnen  
+**Modus**: Gespielt wird in Teams á 2 Spielern  
+**Startgebühr**: 10€ pro Team  
+**Anmeldung**: [o.bentele@bs-bo.de](mailto:o.bentele@bs-bo.de)
+
+Wir freuen uns über zahlreiche Teilnehmer!
+
+Eure Sportfreunde Bronnen
+
+----
+
+Vimage: tischkicker-slider.jpg
+
+----
+
+Imageposition: top
+
+----
+
+Line2: 
+
+----
+
+Doc: einladung-tischfussball_2019.pdf
+
+----
+
+Documentdescription: Einladung
+
+----
+
+Related: gesamtverein/veranstaltungen/jahreshauptversammlung
