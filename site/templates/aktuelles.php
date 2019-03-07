@@ -26,7 +26,11 @@
                                 <p class="date-meta text-grey-color">
                                     <span class="badge badge-primary">
                                         <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', strtotime($post->datum()));?>
-                                        <i class="fa fa-user ml-3"></i>&nbsp; <?= sprintf('%s %s', site()->user($post->author())->firstName(), site()->user($post->author())->lastName());?>
+                                        <?php if ($post->author2()->isEmpty()): ?>
+                                            <i class="fa fa-user ml-3"></i>&nbsp; <?= sprintf('%s %s', site()->user($post->author())->firstName(), site()->user($post->author())->lastName());?>
+                                        <?php else: ?>
+                                            <i class="fa fa-user ml-3"></i>&nbsp;&nbsp; <?= sprintf('%s', $post->author2());?>
+                                        <?php endif; ?>
                                     </span>
                                 </p>
                                 <h6 class="sub-heading-1 tiny text-medium text-xs-center">

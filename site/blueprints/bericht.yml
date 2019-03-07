@@ -10,15 +10,20 @@ fields:
     type: date
     format: dd.mm.YYYY
     default: today
-    width: 1/2
+    width: 1/3
     required: true
     help: Schreibgeschützt
   author:
     label: Autor
     type: user
     required: true
-    width: 1/2
+    width: 1/3
     help: Autor des Artikels
+  author2:
+    label: Externer Autor
+    type: text
+    width: 1/3
+    help: Externer Autor (z.B. Reporter einer Zeitung)
   title:
     extends: title
   teaserImage:
