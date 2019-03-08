@@ -54,6 +54,17 @@ fields:
       buttonText:
         type: text
         label: Text für Button (optional)
+  footerTexts:
+    label: Texte im Footer
+    type: headline
+  footerText:
+    label: Text im Footer links
+    width: 1/2
+    type: wysiwyg
+  footerAddress:
+    label: Adresse im Footer
+    width: 1/2
+    type: wysiwyg
   footerLinks:
     label: Links im Footer
     type: headline

@@ -4,7 +4,9 @@
             <div class="col-lg-3 col-md-6">
                 <div class="foot-info">
                     <p class="text-weight-light">
-                        <em>Die Sportfreunde Bronnen sind ein über 600 Mitglieder fassender Verein bei Laupheim in Oberschwaben. Mit unseren Abteilungen Fitness/Gymnastik, Fußball und Aikido vermitteln wir Spaß und Freude am Sport und an der Bewegung.</em>
+                        <em>
+                            <?= $site->homePage()->footerText();?>
+                        </em>
                     </p>
                 </div>
             </div>
@@ -13,10 +15,7 @@
                 <ul class="list-unstyled foot-address-list text-weight-light">
                     <li class="clearfix">
                         <span>
-                            <strong>Sportfreunde Bronnen 1949 e.V.</strong></br>
-                            Färbergässle 2/1<br/>
-                            88471 Laupheim<br/>
-                            info@sf-bronnen.de
+                            <?= $site->homePage()->footerAddress()->kirbytext();?>
                         </span>
                     </li>
                 </ul>
