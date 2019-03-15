@@ -47,6 +47,18 @@
 
     <div class="page">
 
+        <?php if ($upcomingData = $page->getLatestResults()): ?>
+            <section class="football-upcoming">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 pt-2 pb-2 text-center">
+                            <i class="fa fa-calendar pr-2"></i><?= $upcomingData;?><i class="fa fa-calendar pl-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php endif; ?>
+
         <section class="pt-5">
             <div class="container  pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
                 <div class="row">
