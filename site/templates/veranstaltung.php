@@ -40,7 +40,7 @@
                         <div class="box-3 animation text-xs-center text-sm-center text-md-left mt-0">
                             <?php if ($related->vimage()->isNotEmpty()): ?>
                                 <p>
-                                    <img src="<?= $related->vimage()->toFile()->resize(350)->url();?>" alt="Blog Image" class="img-fluid img-center-xs img-center-sm">
+                                    <img src="<?= $related->vimage()->toFile()->resize(350)->url();?>" alt="Veranstaltungsbild - <?= $related->title();?> - Sportfreunde Bronnen" class="img-fluid img-center-xs img-center-sm">
                                 </p>
                             <?php endif; ?>
                             <div class="inner">

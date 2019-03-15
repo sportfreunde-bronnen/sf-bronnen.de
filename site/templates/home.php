@@ -70,9 +70,9 @@
                             <div class="box-3 news-box">
                                 <a href="<?= $post->url();?>" title="Zum Artikel - <?= $post->title();?>">
                                     <?php if ($post->teaserimage()->isNotEmpty()): ?>
-                                        <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->url(); ?>" alt="News Images" class="img-fluid img-center">
+                                        <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->url(); ?>" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
                                     <?php else: ?>
-                                        <img src="/assets/images/blog/blog-thumb-2.jpg" alt="News Images" class="img-fluid img-center">
+                                        <img src="/assets/images/blog/blog-thumb-2.jpg" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
                                     <?php endif; ?>
                                 </a>
                                 <div class="news-box-content">
@@ -101,9 +101,9 @@
                         <div class="col-12 col-sm-6 col-lg-4">
                             <a href="<?= $event->url();?>">
                             <?php if ($event->vimage()->isNotEmpty()): ?>
-                                <img src="<?= $event->vimage()->toFile()->crop(400,200)->url();?>" alt="News Images" class="img-fluid img-center pb-2">
+                                <img src="<?= $event->vimage()->toFile()->crop(400,200)->url();?>" alt="Veranstaltungsbild - <?= $event->title();?> - Sportfreunde Bronnen" class="img-fluid img-center pb-2">
                             <?php else: ?>
-                                <img src="/assets/images/blog/blog-thumb-2.jpg" alt="News Images" class="img-fluid img-center">
+                                <img src="/assets/images/blog/blog-thumb-2.jpg" alt="Veranstaltungsbild - <?= $event->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
                             <?php endif; ?>
                             </a>
                             <a href="<?= $event->url();?>">
