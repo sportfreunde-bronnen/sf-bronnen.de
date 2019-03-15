@@ -18,7 +18,7 @@
                             <p>
                                 <?php if ($post->teaserimage()->isNotEmpty()): ?>
                                     <a href="<?= $post->url();?>">
-                                        <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->url();?>" alt="Blog Image" class="img-fluid img-center-xs">
+                                        <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->resize(750)->url();?>" alt="Blog Image" class="img-fluid img-center-xs">
                                     </a>
                                 <?php endif; ?>
                             </p>
