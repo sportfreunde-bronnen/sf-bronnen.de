@@ -1076,6 +1076,18 @@ Articles:
     als Fußball-Schiedsrichter gefeiert.
   date: 2015-09-24
   tags: fussball
+- 
+  title: >
+    Schuldenabbau und Jubiläum stehen im
+    Fokus
+  url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/biberach_artikel,-schuldenabbau-und-jubil%C3%A4um-stehen-im-fokus-_arid,11018767.html'
+  text: >
+    „Nicht viel zu schimpfen“ hat der
+    Vorsitzende Benjamin Baur bei der
+    Hauptversammlung der Sportfreunde
+    Bronnen gehabt.
+  date: 2019-03-07
+  tags: jhv,ehrungen
 
 ----
 
