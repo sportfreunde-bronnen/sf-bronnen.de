@@ -58,6 +58,8 @@
       }
   });
 
+  $('div.owl-nav').addClass('text-center');
+
   // ACCORDION
   var $active = $("#accordion .collapse.show, #accordion-downloads .collapse.show")
                   .prev()
