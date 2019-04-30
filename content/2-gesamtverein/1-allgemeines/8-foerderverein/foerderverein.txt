@@ -37,3 +37,4 @@ People:
   aufgabe: 1. Vorsitzender
   email: foerderverein@sf-bronnen.de
   phone: ""
+  address: 'Gartenstraße 38<br/>88480 Achstetten'
