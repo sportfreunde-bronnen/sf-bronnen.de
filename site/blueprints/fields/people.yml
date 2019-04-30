@@ -15,3 +15,8 @@ fields:
   phone:
     type: tel
     label: Telefon (optional)
+    required: false
+  address:
+    type: text
+    label: Adresse (optional)
+    required: false

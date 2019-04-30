@@ -6,6 +6,9 @@
                 <div class="col-12 col-md-6 mb-md-5">
                     <h5 class="text-weight-normal"><?= $person->name();?></h5>
                     <p class="designation text-weight-light text-grey-color"><?= $person->aufgabe();?></p>
+                    <?php if (!$person->address()->isEmpty()): ?>
+                        <p class="text-weight-medium mt-2"><span class="text-weight-light text-grey-color"><?= $person->address();?></span></p>
+                    <?php endif; ?>
                     <?php if (!$person->email()->isEmpty()): ?>
                         <p class="text-weight-medium mt-2">E-Mail: <span class="text-weight-light text-grey-color"><a href="mailto:<?= $person->email();?>"><?= $person->email();?></a></span></p>
                     <?php endif; ?>
