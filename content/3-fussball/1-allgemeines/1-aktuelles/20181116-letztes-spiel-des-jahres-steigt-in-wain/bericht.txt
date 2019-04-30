@@ -39,7 +39,7 @@ Textimages: img_6033.jpg
 
 ----
 
-Tags: fussball,erste mannschaft,zweite mannschaft,vorbericht
+Tags: fussball,erste mannschaft,zweite mannschaft,vorbericht,saison1819
 
 ----
 
@@ -56,3 +56,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Author2: 

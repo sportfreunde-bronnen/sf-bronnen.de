@@ -2,18 +2,38 @@ Title: Förderverein
 
 ----
 
-Text: Diese Seite befindet sich aktuell im Aufbau. Weitere Informationen zu unserem Förderverein erhalten Sie in Kürze!
+Text: 
+
+Wir sind ein kleiner Verein mit tollen Mitgliedern und Sponsoren. Durch Spenden und Sponsoring helfen Sie mit, die ehrgeizigen Ziele und herausfordernden Aufgaben des Vereins und dessen Mitglieder zu unterstützen und zu erreichen.   
+ Werden Sie Teil unserer Sportfreunde Familie.
+
+**Zweck**
+
+Der Verein verfolgt ausschließlich gemeinnützige Zwecke und fördert den Sport und die soziale Verantwortung in finanzieller und ideeller Weise.
+
+**Spendenkonto**
+
+Förderverein Sportfreunde Bronnen e.V.  
+ IBAN: DE63 6549 1320 0071 1910 03  
+ BIC: GENODES1VBL  
+ Institut: Volksbank Raiffeisenbank Laupheim-Illertal eG
+
+**Downloads**
+
+- [Satzung](https://sf-bronnen.de/content/2-gesamtverein/1-allgemeines/8-foerderverein/satzung-fordervereins-sf-bronnen-e.v-20170303.pdf)
+- [Formular Premiumpartner](https://sf-bronnen.de/content/2-gesamtverein/1-allgemeines/8-foerderverein/sfb-vordruck-beitrittserklarung-premiumpartner-forderverein-20190401.pdf)
+- [Kontakt und Angebote des Fördervereins SF Bronnen e.V.](https://sf-bronnen.de/content/2-gesamtverein/1-allgemeines/8-foerderverein/angebote-foerdervereinsfb-20190401.pdf)
 
 ----
 
-Headline: Sportfreunde Bronnen Förderverein
+Headline: Förderverein SF Bronnen e.V.
 
 ----
 
 People: 
 
 - 
-  name: Tobias Mangold
+  name: Martin Halder
   aufgabe: 1. Vorsitzender
-  email: info@mangold-immobilien.de
+  email: foerderverein@sf-bronnen.de
   phone: ""
