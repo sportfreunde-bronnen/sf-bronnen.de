@@ -22,7 +22,7 @@
                     <?php snippet('people');?>
                 <?php endif; ?>
             </div>
-            <?php if (1==2): ?>
+            <?php if (2==2): ?>
             <div class="col-12">
                 <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-2">Anmeldung</h3>
                 <?php if(isset($success)): ?>
