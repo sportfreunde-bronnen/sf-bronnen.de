@@ -27,7 +27,8 @@ return function($site, $pages, $page) {
             'ort'   => get('ort'),
             'email'     => get('email'),
             'payed' => 0,
-            'dataDeclaration' => get('dataDeclaration')
+            'dataDeclaration' => get('dataDeclaration'),
+            'year' => date('Y')
         );
 
         $rules = array(

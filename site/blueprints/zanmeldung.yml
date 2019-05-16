@@ -13,7 +13,7 @@ fields:
     type: structure
     label: Angemeldete Mannschaften
     entry: >
-      <b>{{name}}</b> ({{contact}} - {{email}}) - Bezahlt: {{payed}}
+      <b>{{name}}</b> ({{contact}} - {{email}}) - Bezahlt: {{payed}} --- Jahr {{year}}
     fields:
       name:
         type: text
@@ -36,3 +36,8 @@ fields:
         label: Bezahlt (Änderungen nur durch Sigge)?
         text: Ja, Startbeitrag wurde bezahlt.
         default: 0
+      year:
+        type: int
+        label: Jahr
+        requred: true
+        default: 2019

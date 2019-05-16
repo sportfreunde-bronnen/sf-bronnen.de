@@ -31,7 +31,7 @@
                     </div>
                     <div class="alert alert-info">
                         Zum finalen Abschluss der Anmeldung überweist bitte die Startgebühr (20€) auf das folgende Konto:<br/>
-                        <b>Empfänger</b>: Zwickel Gemeinde-Cup<br/>
+                        <b>Empfänger</b>: Zwickel-Elfer-Cup<br/>
                         <b>IBAN</b>: DE73 6549 1320 0009 2500 18<br/>
                         <b>BIC</b>: GENODES1VBL<br/>
                         <b>Kreditinstitut</b>: VR-Bank Laupheim-Illertal eG<br/>
@@ -80,7 +80,7 @@
                                 <input type="checkbox" class="custom-control-input" id="dataDeclarationCheck" name="dataDeclaration" value="0">
                                 <label class="custom-control-label" for="dataDeclarationCheck">
                                     <small>
-                                        * Ich erkläre mich damit einverstanden, dass die Sportfreunde Bronnen 1949 e.V. meine Angaben für die Durchführung des Zwickel-Gemeindecups 2018 verwenden.
+                                        * Ich erkläre mich damit einverstanden, dass die Sportfreunde Bronnen 1949 e.V. meine Angaben für die Durchführung des Zwickel-Elfercups 2019 verwenden.
                                         Eine Weitergabe an Dritte findet grundsätzlich nicht statt, es sei denn geltende Datenschutzvorschriften rechtfertigen eine Übertragung oder die Sportfreunde Bronnen 1949 e.V. sind dazu gesetzlich verpflichtet. Sie können Ihre erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Im Falle des Widerrufs werden Ihre Daten umgehend gelöscht. Ihre Daten werden ansonsten gelöscht, wenn wir Ihre Anfrage bearbeitet haben oder der Zweck der Speicherung entfallen ist. Sie können sich jederzeit über die zu Ihrer Person gespeicherten Daten informieren. Weitere Informationen zum Datenschutz finden Sie auch in der <a href="/home/datenschutz" title="Zur Datenschutzerklärung der Sportfreunde Bronnen">Datenschutzerklärung</a> dieser Webseite.
                                     </small>
                                 </label>
@@ -101,9 +101,9 @@
             </div>
             <?php endif; ?>
             <div class="col-12">
-                <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-5">Bestätigte Mannschaften</h3>
+                <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-5">Bestätigte Mannschaften <?= date('Y');?></h3>
                 <ul class="mb-0">
-                <?php $i = 0; foreach ($page->teams()->toStructure() as $team): ?>
+                <?php $i = 0; foreach ($page->teams()->toStructure()->filterBy('year', date('Y')) as $team): ?>
                     <?php if ($team->payed()->value() == 1): $i++; ?>
                         <li><?= $team->name();?></li>
                     <?php endif; ?>
