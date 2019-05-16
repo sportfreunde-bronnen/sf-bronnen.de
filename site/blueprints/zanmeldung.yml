@@ -11,7 +11,7 @@ fields:
     type:  wysiwyg
   teams:
     type: structure
-    sort: year desc
+    sort: year asc
     label: Angemeldete Mannschaften
     entry: >
       <b>{{name}}</b> ({{contact}} - {{email}}) - Bezahlt: {{payed}} --- Jahr {{year}}
