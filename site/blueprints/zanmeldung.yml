@@ -37,7 +37,7 @@ fields:
         text: Ja, Startbeitrag wurde bezahlt.
         default: 0
       year:
-        type: int
+        type: number
         label: Jahr
         requred: true
         default: 2019
