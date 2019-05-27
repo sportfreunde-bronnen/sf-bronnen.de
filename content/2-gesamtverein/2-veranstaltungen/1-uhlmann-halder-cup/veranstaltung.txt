@@ -24,6 +24,10 @@ Für das leibliche Wohl ist selbstverständlich bestens gesorgt.
 
 Wir freuen uns auf euer Kommen!
 
+Link zur Facebook-Veranstaltung: https://www.facebook.com/events/560269094380425/
+
+(image: flyeruhlmanndruck.jpg width: 100%)
+
 ----
 
 Image: 
@@ -50,11 +54,11 @@ Shorttitle: Das Kleinfeldturnier für Betriebsmannschaften in Oberschwaben.
 
 ----
 
-Documentdescription: 
+Documentdescription: Flyer (PDF)
 
 ----
 
-Doc: 
+Doc: flyeruhlmanndruck.pdf
 
 ----
 

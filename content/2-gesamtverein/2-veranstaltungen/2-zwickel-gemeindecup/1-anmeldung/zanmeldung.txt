@@ -2,7 +2,7 @@ Title: Anmeldung
 
 ----
 
-Headline: Zwickel-Gemeinde-Cup 2018
+Headline: Zwickel-Elfer-Cup 2019
 
 ----
 
@@ -15,6 +15,7 @@ Teams:
   email: dille-8@web.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Rottalkicker
   contact: Melanie Schmid
@@ -22,6 +23,7 @@ Teams:
   email: mullusch@web.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Familie ehrenlos
   contact: Marion Müller
@@ -29,6 +31,7 @@ Teams:
   email: 06-selina@web.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Ajax Dauerstramm
   contact: David Reuder
@@ -36,6 +39,7 @@ Teams:
   email: david.reuder@web.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Pfostenbomber
   contact: Sonia Maunz
@@ -43,6 +47,7 @@ Teams:
   email: sonia.maunz@googlemail.com
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: FC Paradiso
   contact: Matthias Lebherz
@@ -50,6 +55,7 @@ Teams:
   email: matthias.lebherz91@gmail.com
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Söhne Menkheefs
   contact: Magnus Buk
@@ -57,6 +63,7 @@ Teams:
   email: MagnusBuk@gmx.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Jesuslatschen
   contact: Nico Miller
@@ -64,6 +71,7 @@ Teams:
   email: maik-nicomiller@web.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Energie Kopfnuss
   contact: Christian Gavric
@@ -71,6 +79,7 @@ Teams:
   email: c.gavric@gmx.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: 1.FC SieWillJa
   contact: Dominik Sachs
@@ -78,6 +87,7 @@ Teams:
   email: ds.sachs@web.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Hangover 96
   contact: Sachs Jan
@@ -85,19 +95,22 @@ Teams:
   email: sn.sachs@web.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: "Gert D' Suscht"
   contact: Björn Knierim
   ort: Achstetten und Burgrieden
   email: knai@gmx.de
-  payed: 0
+  payed: "0"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Vorstandschaft SFB
   ort: Bronnen
   contact: Magnus Buk
   email: MagnusBuk@gmx.de
   payed: "1"
+  year: "2018"
 - 
   name: Dönertiere
   contact: Kevin Metzger
@@ -105,6 +118,7 @@ Teams:
   email: kevin.metzger@gmx.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: FFW Bronnen
   contact: Felix Schöffmann
@@ -112,6 +126,7 @@ Teams:
   email: felix.schoeffmann@icloud.com
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: MG Bronner-Holz
   contact: Baur Peter
@@ -119,6 +134,7 @@ Teams:
   email: Simon.Baur@gmx.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Hopfen und Filz
   contact: Patrick Seidler
@@ -126,6 +142,7 @@ Teams:
   email: patrick.seidler@gmx.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Bier Bier Bier Bett Bett Bett
   contact: Kevin Werner
@@ -133,13 +150,15 @@ Teams:
   email: maximilian.braig@gmx.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Arsenal LongDong
   contact: Matthias Benkovic
   ort: Oberholzheim und Burgrieden
   email: matze.fvo@gmail.com
-  payed: 0
+  payed: "0"
   dataDeclaration: "0"
+  year: "2018"
 - 
   name: Hacke Attacke
   contact: Fabian Schmid
@@ -147,7 +166,32 @@ Teams:
   email: fabi.oho@web.de
   payed: "1"
   dataDeclaration: "0"
+  year: "2018"
+- 
+  name: 1. FC Wilde Hilde
+  contact: Nico Ruf
+  ort: Baustetten
+  email: ruf.nico@gmx.net
+  payed: 0
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Rottalkicker
+  contact: Melanie Schmid
+  ort: Bronnen
+  email: mullusch@web.de
+  payed: 0
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: "Krümel's Monster"
+  contact: Melanie Schmid
+  ort: Bronnen
+  email: mullusch@web.de
+  payed: 0
+  dataDeclaration: "0"
+  year: "2019"
 
 ----
 
-Text: Die Anmeldung für den Zwickel-Gemeinde-Cup 2018 ist leider geschlossen. 
+Text: 

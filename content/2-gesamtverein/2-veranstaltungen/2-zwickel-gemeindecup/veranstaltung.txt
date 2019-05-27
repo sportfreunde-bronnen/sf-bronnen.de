@@ -1,8 +1,8 @@
-Title: Zwickel-Gemeinde-Cup
+Title: Zwickel-Elfer-Cup
 
 ----
 
-Shorttitle: 2. Zwickel-Gemeinde-Cup (Elfmeterturnier)
+Shorttitle: 2. Zwickel-Elfer-Cup (Elfmeterturnier)
 
 ----
 
@@ -20,17 +20,27 @@ Ort: Sportgelände Bronnen
 
 Text: 
 
-## 2. Zwickel-Gemeinde-Cup
+## 2. Zwickel-Elfer-Cup
 
-Nach dem Erfolg im ersten Jahr findet auch im Jahr 2019 wieder der Zwickel-Gemeinde-Cup statt.
+Nach dem Erfolg im ersten Jahr findet auch im Jahr 2019 wieder der Zwickel-Elfer-Cup statt.
 
-Hierbei können sich beliebige Mannschaften aus der Gesamtgemeinde Achstetten in einem familiären und spaßbetonten Elfmeterturnier messen und das beste Team der Gemeinde Achstetten ausspielen.
+Hierbei können sich beliebige Mannschaften in einem familiären und spaßbetonten Elfmeterturnier messen und den verdienten Sieger ausspielen.
 
-Weitere Informationen sowie eine Möglichkeit zur Online Anmeldung folgen im ersten zweiten Quartal 2019.
+Eine Anmeldung ist bereits möglich!
 
-**Zur Online-Anmeldung (eine Anmeldung ist noch nicht möglich!)**
+- - - - - -
+
+**>> [Zur Online-Anmeldung](/gesamtverein/veranstaltungen/zwickel-gemeindecup/anmeldung) <<**
 
 **[Angemeldete Mannschaften](/gesamtverein/veranstaltungen/zwickel-gemeindecup/anmeldung)**
+
+---
+
+Zur Facebook-Veranstaltung: <https://www.facebook.com/events/2206363759478437/>
+
+- - - - - -
+
+(image: flyer-elfer-cup-2019.jpg width: 100%)
 
 ----
 
@@ -46,11 +56,11 @@ Line2:
 
 ----
 
-Doc: 
+Doc: 2019-elfercup-flyer.pdf
 
 ----
 
-Documentdescription: 
+Documentdescription: Flyer (PDF)
 
 ----
 
