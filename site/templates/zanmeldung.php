@@ -104,7 +104,7 @@
                 <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-5">Bestätigte Mannschaften <?= date('Y');?></h3>
                 <ul class="mb-0">
                 <?php $i = 0; foreach ($page->teams()->toStructure()->filterBy('year', date('Y')) as $team): $i++; ?>
-                    <li><b><?= $team->name();?></b> - (Startgebühr: <?= $team->payed() === 1 ? 'Bezahlt' : 'Offen';?>)</li>
+                    <li><b><?= $team->name();?></b> - (Startgebühr: <?= $team->payed() == 1 ? 'Bezahlt' : 'Offen';?>)</li>
                 <?php endforeach; ?>
                 <?php if (0 === $i): ?>
                     <li>Noch keine Daten vorhanden</li>
