@@ -23,7 +23,7 @@ Slides:
 
 - 
   title: Zwickel-Elfer-Cup 2019
-  text: 'Elfmeterturnier - Anmeldung freigeschalten!'
+  text: 'Elfmeterturnier - Eine Anmeldung ist noch bis Do, 27.06, möglich!'
   textposition: left
   sliderimage: slider-sfb-4.jpg
   internallink: >

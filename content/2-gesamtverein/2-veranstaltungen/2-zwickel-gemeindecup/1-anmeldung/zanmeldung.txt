@@ -172,7 +172,7 @@ Teams:
   contact: Nico Ruf
   ort: Baustetten
   email: ruf.nico@gmx.net
-  payed: 0
+  payed: "1"
   dataDeclaration: "0"
   year: "2019"
 - 
@@ -180,7 +180,7 @@ Teams:
   contact: Melanie Schmid
   ort: Bronnen
   email: mullusch@web.de
-  payed: 0
+  payed: "1"
   dataDeclaration: "0"
   year: "2019"
 - 
@@ -188,6 +188,118 @@ Teams:
   contact: Melanie Schmid
   ort: Bronnen
   email: mullusch@web.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: FC Wadenkrampf
+  contact: Dominik Sachs
+  ort: Oberholzheim
+  email: ds.sachs@web.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: FC Køpinnacken
+  contact: Dilber robert
+  ort: Laupheim
+  email: Robert.dilber@gmx.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Stiftung Wadentest
+  contact: Selina Zerinius
+  ort: Achstetten
+  email: selina.zerinius@web.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Glasbier Rangers
+  contact: Tobi Speidel
+  ort: Stetten
+  email: tobi.speidel@gmx.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: FC Paradiso
+  contact: Stephan Schrepler
+  ort: Lauphem
+  email: kevinmikejosef@web.de
+  payed: 0
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: FC Energie Kopfnuss
+  contact: Christian Gavric
+  ort: Laupheim
+  email: c.gavric@gmx.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Die Mulmer
+  contact: Noah Kösling
+  ort: Laupheim, Achstetten, Oberholzheim
+  email: noah.koesling@t-online.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Alarm für Krombacher 11
+  contact: Simon Feger
+  ort: Burgrieden
+  email: simon.feger@gmx.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Pampers United
+  contact: Carola Glöķler
+  ort: Dellmensingen
+  email: fam.gloekler@googlemail.com
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Fc Holzbein Kiel
+  contact: Jan Sachs
+  ort: Oberholzheim
+  email: sn.sachs@web.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: TimeToShine
+  contact: Michael Adler
+  ort: Burgrieden
+  email: adlerm@gmx.net
+  payed: 0
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Schigger Bude
+  contact: Ben Baur
+  ort: Laupheim
+  email: benbaur84@gmail.com
+  payed: 0
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: We want Freibier
+  contact: Haaga Markus
+  ort: Bronnen
+  email: markushaaga@web.de
+  payed: "1"
+  dataDeclaration: "0"
+  year: "2019"
+- 
+  name: Oldie‘s
+  contact: Ismet Multu
+  ort: Laupheim
+  email: mutluismet25@gmail.com
   payed: 0
   dataDeclaration: "0"
   year: "2019"
