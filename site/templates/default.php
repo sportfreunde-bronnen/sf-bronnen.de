@@ -12,7 +12,7 @@
     <?php if ($page->images()): ?>
         <div class="text-center">
             <?php foreach($page->images() as $image): ?>
-                <img class="mb-2" src="<?= $image->resize(750)->url();?>" class="img-fluid"/>
+                <img src="<?= $image->resize(750)->url();?>" class="mb-2 img-fluid"/>
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
