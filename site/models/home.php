@@ -46,7 +46,6 @@ class HomePage extends Page
 
     public function getLatestResults()
     {
-        return false; #summer break
         try {
             if (file_exists(self::$latestCacheFile)) {
                 if (time() - filemtime(self::$latestCacheFile) >= 1800) {
