@@ -10,7 +10,7 @@ Line1:
 
 ----
 
-Datum: 2019-07-27
+Datum: 2019-07-27 10:00
 
 ----
 
@@ -26,11 +26,36 @@ Text:
 
 ## Rottalpokal 2019 in Bronnen
 
-Im Rahmen der Feierlichkeiten zum 70-jährigen Jubiläum der Sportfreunde findet der Rottapokal in diesem Jahr auf unserem Sportgelände statt.
+Im Rahmen der Feierlichkeiten zum 70-jährigen Jubiläum der Sportfreunde findet der **Rottapokal** in diesem Jahr auf unserem Sportgelände statt. Wir freuen uns, dass die folgenden Mannschaften ihre Teilnahme zugesagt haben:
 
-**Wann?** Samstag, 27.07.2019
+*Gruppe A*
 
-Weitere Informationen gibt es bald an dieser Stelle!
+SV Baustetten  
+ SGM Burgrieden/Orsenhausen  
+ SF Bronnen
+
+*Gruppe B*
+
+*TSG Achstetten  
+ SV Burgrieden  
+ FV Rot*
+
+Gespielt wird Jeder gegen Jeden in zwei Dreiergruppen. Die beiden erstplatzierten qualifizieren sich direkt für das Finale. Die zweit- und drittplatzierten tragen die Platzierungsspiele aus.
+
+**Weitere Informationen**
+
+**Wo? **Sportgelände Bronnen  
+**Wann?** Samstag, 27.07.2019 ab 10:00 Uhr, Endspiel um 17:35 Uhr  
+**Spielzeit? **2 x 25 Minuten
+
+**Downloads**
+
+[Turnierbestimmungen](https://sf-bronnen.de/content/2-gesamtverein/2-veranstaltungen/4-rottalpokal-2019/rottalpokal-_turnierbestimmungen.pdf)  
+[Spielplan](https://sf-bronnen.de/content/2-gesamtverein/2-veranstaltungen/4-rottalpokal-2019/rottalpokal_spielplan.pdf)
+
+**Liveticker**
+
+Liveticker für jedes Spiel und Informationen am Turniertag erhaltet ihr über FuPa: https://www.fupa.net/liga/rottalpokal-80494.html
 
 ----
 
@@ -46,11 +71,11 @@ Line2:
 
 ----
 
-Doc: 
+Doc: rottalpokal-_turnierbestimmungen.pdf
 
 ----
 
-Documentdescription: 
+Documentdescription: Spielplan
 
 ----
 

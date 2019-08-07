@@ -26,10 +26,7 @@ Ort: Sportvereinszentrum Bronnen
 
 ----
 
-Zeiten: 
-
-Montag: 19:30 - 20:45 Uhr  
- Mittwoch: 18:00 - 19:20 Uhr
+Zeiten: Montag: 18:30 - 19:45 Uhr
 
 ----
 

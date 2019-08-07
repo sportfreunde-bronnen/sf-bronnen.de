@@ -2,7 +2,7 @@ Title: Oktoberfest
 
 ----
 
-Datum: 2018-10-19
+Datum: 2019-10-18
 
 ----
 
@@ -12,9 +12,9 @@ Ort: SVZ Bronnen
 
 Text: 
 
-## Oktoberfest 2018
+## Oktoberfest 2019
 
-Bereits zum 6. Mal findet das beliebte Oktoberfest in unserem SVZ statt. Erlebt bei Hendl, kühlem Fassbier und feinster Livemusik einen zünftigen Abend in feinster Gesellschaft. Für die musikalische Unterhaltung sorgt in diesem Jahr das Duo Kelhbach-EXpress vom Bodensee. Gute Laune garantiert!
+Bereits zum 7. Mal findet das beliebte Oktoberfest in unserem SVZ statt. Erlebt bei Hendl, kühlem Fassbier und feinster Livemusik einen zünftigen Abend in feinster Gesellschaft. Für die musikalische Unterhaltung sorgt in diesem Jahr das Duo Kelhbach-EXpress vom Bodensee. Gute Laune garantiert!
 
 Reserviert jetzt einen Tisch für acht Personen zum Preis von 150€. Im Preis inbegriffen sind:
 
@@ -48,11 +48,11 @@ Shorttitle: Das legendäre Oktoberfest der Sportfreunde Bronnen.
 
 ----
 
-Doc: oktoberfest-2018-sfb-flyer.jpg
+Doc: 
 
 ----
 
-Documentdescription: Flyer 2018
+Documentdescription: 
 
 ----
 

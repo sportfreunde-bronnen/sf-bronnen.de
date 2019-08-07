@@ -166,6 +166,11 @@ Ereignisse:
     - Renovierung des Trainingsplatzes
     - Pflasterung der Fläche zwischen SVZ und Hauptspielfeld
     - Instandsetzung des Parkplatzes mit Abgrenzung der einzelnen Parkflächen sowie Installation einer Höhenbegrenzung bei der Einfahrt auf das Vereinsgelände
+- 
+  jahr: "2019"
+  ereignis: |
+    - Feier des 70-jährigen Vereinsbestehens mit einem Festabend sowie der Ausrichtung des Rottalpokals
+    - Erstellung einer zweiten Vereinschronik in Buchform
 
 ----
 

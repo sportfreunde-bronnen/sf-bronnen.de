@@ -22,14 +22,16 @@ Links:
 Slides: 
 
 - 
-  title: Zwickel-Elfer-Cup 2019
-  text: 'Elfmeterturnier - Eine Anmeldung ist noch bis Do, 27.06, möglich!'
+  title: '70 Jahre SFB - die Chronik'
+  text: >
+    Sichere Dir jetzt Dein Exemplar mit
+    Informationen uvm. aus den letzten 20
+    Jahren Sportfreunde Bronnen!
   textposition: left
-  sliderimage: slider-sfb-4.jpg
-  internallink: >
-    gesamtverein/veranstaltungen/zwickel-gemeindecup
+  sliderimage: slider-chronik.jpg
+  internallink: gesamtverein/allgemeines/jahre-chronik
   externallink: ""
-  buttontext: 'Infos & Anmeldung'
+  buttontext: 'Infos & Kauf'
 - 
   title: Sie suchen eine Location?
   text: Wir haben da was!
