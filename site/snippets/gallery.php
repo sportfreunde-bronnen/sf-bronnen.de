@@ -1,5 +1,5 @@
-<div class="container pl-sm-0 pr-sm-0 mt-5">
-    <h2 class="main-heading-1 text-spl-color text-weight-normal"><?= $desc;?></h2>
+<div class="container pl-sm-0 pr-sm-0">
+    <h5 class="sub-heading-2"><?= $desc;?></h5>
     <ul class="row list-unstyled shuffle" id="gallery-grid" style="position: relative; height: 1104px; transition: height 500ms ease-out;">
         <?php foreach ($images as $image): ?>
             <li class="col-lg-4 col-md-6 col-sm-12 gallery-grid-item shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 500ms ease-out, opacity 500ms ease-out;">

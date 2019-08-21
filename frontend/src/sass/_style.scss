@@ -1292,15 +1292,6 @@ ul#gallery-grid .hover-content:hover a {
 
 .blog-post.single .blog-post-content p {
   margin-bottom: 25px;
-  &:first-child {
-    &::first-letter {
-      font-weight: 700;
-      font-size: 3rem;
-      color: $lightBlue;
-      float:left;
-      padding: 10px 10px 10px 0;
-    }
-  }
 }
 
 .blog-post-content blockquote {
@@ -2175,7 +2166,6 @@ ul#gallery-grid .hover-content:hover a {
 #main-slider.sub > .carousel-inner > .carousel-item > img.img-fluid,
 .rc-5,
 .box-2 img,
-.box-3,
 .sblock-1,
 .pricing-table,
 ul#gallery-grid .hover-content,

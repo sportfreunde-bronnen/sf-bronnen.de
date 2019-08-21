@@ -32,6 +32,7 @@
     width: 100%;
     height: auto;
     position: relative;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -39,15 +40,35 @@
       max-width: 100%;
       max-height: 750px;
       overflow: hidden;
+      -webkit-transition: 1s linear;
+      transition: 1s linear;
     }
 
     &:hover {
       img {
-        -webkit-filter: grayscale(1);
-        filter: grayscale(1);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
       }
       div.first--article--read {
         display: block;
+      }
+    }
+
+    div.first--article--desc {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: right;
+      padding: 20px;
+      color: #fff;
+      width: 100%;
+      background-color: rgba(0, 72, 105, 0.9);
+      float: right;
+      @include media-breakpoint-down(sm) {
+        padding: 0 0 0 10px;
+        font-size: .75rem;
+        line-height: 1rem;
+        text-align: left;
       }
     }
 

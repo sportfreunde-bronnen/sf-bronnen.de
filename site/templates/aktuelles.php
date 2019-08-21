@@ -23,6 +23,7 @@
         </div>
     </div>
     <div class="main-container container pl-sm-0 pr-sm-0 pt-0">
+        <h5 class="sub-heading-2 mb-5">Archiv</h5>
         <?php if ($page->children()->visible()->count() > 0): ?>
             <div class="text-center">
                 <ul class="list-unstyled list-inline" id="article-filter">
