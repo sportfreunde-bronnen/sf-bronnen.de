@@ -82,6 +82,7 @@
       }
 
       @include media-breakpoint-down(sm) {
+        padding: 10px;
         span.title {
           font-size: 1.25rem;
         }
