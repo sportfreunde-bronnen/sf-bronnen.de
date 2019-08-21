@@ -1,18 +1,39 @@
 <?php snippet('header'); ?>
 <?php snippet('h1'); ?>
-<div class="page page--articles">
-    <div class="main-container container pl-sm-0 pr-sm-0">
+    <div class="container p-0 container--first--article">
+        <div class="page page--articles">
+            <?php $firstArticle = $page->children()->visible()->sortBy('datum', 'desc')->first();?>
+            <?php if ($firstArticle): ?>
+                <div class="first--article mb-5">
+                    <?php if ($firstArticle->teaserimage()->isNotEmpty()):?>
+                        <a href="<?= $firstArticle->url();?>" title="Zum Artikel: <?= $firstArticle->title();?>">
+                            <img src="<?= $site->find($firstArticle->uri())->images()->find($firstArticle->teaserimage())->url();?>"/>
+                        </a>
+                        <div class="first--article--headline">
+                                <span class="title">
+                                    <a href="<?= $firstArticle->url();?>" title="Zum Artikel: <?= $firstArticle->title();?>"><?= $firstArticle->title();?></a>
+                                </span>
+                            <span class="date">
+                                    <?= date('d.m.Y', strtotime($firstArticle->datum()));?>
+                                </span>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+    <div class="main-container container pl-sm-0 pr-sm-0 pt-0">
         <?php if ($page->children()->visible()->count() > 0): ?>
             <div class="text-center">
                 <ul class="list-unstyled list-inline" id="article-filter">
-                    <li class="list-inline-item"><a href="#" class="btn animation<?= ('all' === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="all">Alles</a></li>
+                    <li class="list-inline-item"><a class="btn animation<?= ('all' === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="all">Alles</a></li>
                     <?php foreach ($page->getUsedTags() as $tag): ?>
-                        <li class="list-inline-item"><a href="#" class="btn animation<?= ($tag === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="<?= $tag; ?>"><?= $tag; ?></a></li>
+                        <li class="list-inline-item"><a class="btn animation<?= ($tag === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="<?= $tag; ?>"><?= $tag; ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
             <div class="row blog-post" id="article-grid">
-                <?php foreach ($page->getArticles() as $post): ?>
+                <?php foreach ($page->getArticles()->slice(1, 1000) as $post): ?>
                     <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-groups='<?= $post->getNewsGroupsAsShuffleArray();?>'>
                         <div class="box-3 animation text-xs-center">
                             <p>

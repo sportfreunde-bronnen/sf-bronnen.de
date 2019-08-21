@@ -26,4 +26,77 @@
       }
     }
   }
+
+  div.first--article {
+    background-color: $darkBlue;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 750px;
+      overflow: hidden;
+    }
+
+    &:hover {
+      img {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+      }
+      div.first--article--read {
+        display: block;
+      }
+    }
+
+    div.first--article--headline {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 72, 105, 0.75);
+      color: #fff;
+      padding: 50px;
+      font-size: 2rem;
+      span.title {
+        display: block;
+      }
+      span.date {
+        margin-top: 1rem;
+        display: block;
+        font-size: 1.25rem;
+      }
+      a {
+        color: inherit;
+      }
+      @include media-breakpoint-down(md) {
+        padding: 20px;
+        span.title {
+          font-size: 1.5rem;
+        }
+        span.date {
+          font-size: 1rem;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        span.title {
+          font-size: 1.25rem;
+        }
+        span.date {
+          font-size: .75rem;
+        }
+      }
+    }
+
+  }
+
+}
+
+@include media-breakpoint-only(md) {
+  div.container--first--article {
+    max-width: 100%;
+  }
 }
