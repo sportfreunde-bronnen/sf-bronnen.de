@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    <div class="main-container container pl-sm-0 pr-sm-0 page--bericht">
+    <div class="container pl-sm-0 pr-sm-0 page--bericht">
         <div class="row">
             <div class="col-12">
                 <div class="blog-post single mt-0">

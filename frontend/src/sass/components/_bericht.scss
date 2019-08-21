@@ -31,19 +31,6 @@ div.page--bericht {
       color: inherit;
       font-weight: bold;
     }
-    div.advertising-hint {
-      height: 50px;
-      line-height: 50px;
-      vertical-align: middle;
-      text-align: center;
-      width: 100%;
-      background-color: $darkBlue;
-      font-weight: bold;
-      color: #fff;
-      @include media-breakpoint-down(sm) {
-        display: none;
-      }
-    }
     div.images {
       border-bottom: 3px solid #fff;
     }
