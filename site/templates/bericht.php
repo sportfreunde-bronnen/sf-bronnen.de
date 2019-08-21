@@ -11,6 +11,11 @@
                         </span>
                         <span class="date">
                             <?= date('d.m.Y', strtotime($page->datum()));?>
+                            <?php if ($page->author2()->isEmpty()): ?>
+                                <i class="fa fa-user ml-2"></i>&nbsp; <?= sprintf('%s %s', site()->user($page->author())->firstName(), site()->user($page->author())->lastName());?>
+                            <?php else: ?>
+                                <i class="fa fa-user ml-2"></i>&nbsp; <?= sprintf('%s', $page->author2());?>
+                            <?php endif; ?>
                         </span>
                     </div>
                     <div class="first--article--desc">
@@ -60,16 +65,6 @@
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
-                            <p class="date-meta text-grey-color">
-                                <span class="badge badge-primary">
-                                    <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', strtotime($page->datum()));?>
-                                    <?php if ($page->author2()->isEmpty()): ?>
-                                        <i class="fa fa-user ml-2"></i>&nbsp; <?= sprintf('%s %s', site()->user($page->author())->firstName(), site()->user($page->author())->lastName());?>
-                                    <?php else: ?>
-                                        <i class="fa fa-user ml-2"></i>&nbsp; <?= sprintf('%s', $page->author2());?>
-                                    <?php endif; ?>
-                                </span>
-                            </p>
                         </div>
                     </div>
                 </div>

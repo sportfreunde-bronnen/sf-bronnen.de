@@ -118,7 +118,7 @@
 
 }
 
-@include media-breakpoint-only(md) {
+@include media-breakpoint-down(lg) {
   div.container--first--article {
     max-width: 100%;
   }
