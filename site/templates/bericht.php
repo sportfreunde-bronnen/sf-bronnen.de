@@ -53,8 +53,8 @@
                                 <?= $page->text()->kirbytext(); ?>
                             </div>
                             <div class="clearfix">
+                                <h6 class="mb-0">Tags:</h6>
                                 <ul class="list-unstyled list-inline blog-post-tags float-md-left animation">
-                                    <li class="list-inline-item"><h6>Tags: </h6></li>
                                     <?php foreach (explode(',', $page->tags()) as $tag): ?>
                                         <li class="list-inline-item"><i class="fa fa-tag"></i> <a href="<?= $page->parent()->url();?>?tag=<?= $tag;?>"><?= $tag;?></a></li>
                                     <?php endforeach; ?>
