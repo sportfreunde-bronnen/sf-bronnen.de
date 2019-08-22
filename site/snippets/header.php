@@ -37,7 +37,7 @@
     <div class="container text-xs-center pl-sm-0 pr-sm-0">
         <div class="row">
             <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
-                <a href="/" class="sfb-headline"><img class="sfblogo" src="/assets/images/sfb/logo.svg"/><span class="claim">Sportfreunde Bronnen 1949 e.V.</span></a>
+                <a href="/" class="sfb-headline"><img class="sfblogo rotate" src="/assets/images/sfb/logo.svg"/><span class="claim">Sportfreunde Bronnen 1949 e.V.</span></a>
             </div>
         </div>
     </div>
