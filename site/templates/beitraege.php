@@ -6,7 +6,7 @@
 </section>
 <div class="page">
     <div class="main-container container pl-sm-0 pr-sm-0">
-        <h2 class="main-heading-1 text-spl-color text-weight-normal text-uppercase"><?= $page->headline();?></h2>
+        <h2 class="main-heading-1 text-spl-color text-weight-normal text-uppercase text-center text-md-left"><?= $page->headline();?></h2>
         <p><?= $page->text()->kirbytext();?></p>
         <div class="row">
             <?php foreach ($page->beitraege()->toStructure() as $beitrag): ?>
