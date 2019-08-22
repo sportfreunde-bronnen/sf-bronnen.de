@@ -103,9 +103,12 @@ h2.main-heading-1 {
 
 .main-heading-1::after {
   margin-top: 30px;
-  width: 85px;
+  width: 100px;
   height: 2px;
   background-color: #d5d5d5;
+  @include media-breakpoint-down(sm) {
+    margin-top: 20px;
+  }
 }
 
 .main-heading-1.text-left::after,

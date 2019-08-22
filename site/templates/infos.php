@@ -7,7 +7,7 @@
     </section>
     <div class="page">
         <div class="main-container container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
-            <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs"><?= $page->headline();?></h2>
+            <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
             <?= nl2br($page->infotext()->kirbytext());?>
             <hr/>
             <?php snippet('people');?>

@@ -6,7 +6,7 @@
         </div>
     </section>
     <div class="main-container container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
-        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs"><?= $page->headline();?></h2>
+        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
         Es fehlt etwas? Lass es uns wissen!
         <main role="main" class="container py-0 timeline">
             <!-- Line component -->

@@ -6,7 +6,7 @@
 </section>
 <div class="page">
     <div class="main-container container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
-        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs">Vorstandschaft</h2>
+        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left">Vorstandschaft</h2>
         <div class="row">
             <?php foreach ($page->personen()->toStructure() as $person):?>
             <div class="col-lg-3 col-md-6 col-sm-12">

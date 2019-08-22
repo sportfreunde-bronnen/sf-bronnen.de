@@ -2,7 +2,7 @@
 <div class="page page--downloads">
     <?php snippet('h1'); ?>
     <div class="main-container container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
-        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs"><?= $page->headline();?></h2>
+        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
         <div id="accordion-downloads">
             <?php if ($page->downloads()->toStructure()->count() > 0): ?>
             <?php $i = 0; foreach ($page->downloads()->toStructure() as $downloadBlock): $i++; ?>

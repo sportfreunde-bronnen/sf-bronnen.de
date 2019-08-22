@@ -8,7 +8,7 @@
     <div class="main-container container pl-sm-0 pr-sm-0">
         <div class="row">
             <div class="col-12">
-                <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs"><?= $page->headline();?></h2>
+                <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
                 <?= $page->text()->kirbytext();?>
                 <hr/>
                 <?php if ($page->images()): ?>
@@ -24,7 +24,7 @@
             </div>
             <?php if (2==2): ?>
             <div class="col-12">
-                <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-2">Anmeldung</h3>
+                <h3 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left mt-2">Anmeldung</h3>
                 <?php if(isset($success)): ?>
                     <div class="alert alert-success">
                         <?= $success; ?>
@@ -101,7 +101,7 @@
             </div>
             <?php endif; ?>
             <div class="col-12">
-                <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-5">Bestätigte Mannschaften <?= date('Y');?></h3>
+                <h3 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left mt-5">Bestätigte Mannschaften <?= date('Y');?></h3>
                 <ul class="mb-0">
                 <?php $i = 0; foreach ($page->teams()->toStructure()->filterBy('year', date('Y')) as $team): $i++; ?>
                     <li><b><?= $team->name();?></b> - (Startgebühr: <?= $team->payed() == '1' ? 'Bezahlt' : 'Offen';?>)</li>

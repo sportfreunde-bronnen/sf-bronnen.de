@@ -2,7 +2,7 @@
 <div class="page page--press">
     <?php snippet('h1'); ?>
     <div class="main-container container pl-sm-0 pr-sm-0">
-        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center-xs"><?= $page->headline();?></h2>
+        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
         <?= $page->text()->kirbytext();?>
         <?php $articles = $page->articles()->toStructure();?>
         <?php if ($articles->count() > 0): ?>
