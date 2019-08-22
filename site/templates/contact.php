@@ -8,7 +8,7 @@
     <div class="main-container container pl-sm-0 pr-sm-0">
         <div class="row text-md-left">
             <div class="col-12">
-                <h2 class="main-heading-1 text-spl-color text-uppercase text-weight-normal"><?= $page->headline();?></h2>
+                <h2 class="main-heading-1 text-spl-color text-uppercase text-weight-normal text-center text-md-left"><?= $page->headline();?></h2>
                 <div class="contact-form-wrap">
                     <h5 class="sub-heading-1">Kontaktformular</h5>
                     <?php if ($form->success()): ?>
