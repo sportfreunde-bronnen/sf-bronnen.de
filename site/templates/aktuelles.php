@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="main-container container pl-sm-0 pr-sm-0 pt-0">
-        <h5 class="sub-heading-2 mb-5">Archiv</h5>
+        <h5 class="sub-heading-2 mb-5" id="archive--headline">Archiv</h5>
         <?php if ($page->children()->visible()->count() > 0): ?>
             <div class="text-center">
                 <ul class="list-unstyled list-inline" id="article-filter">
@@ -95,6 +95,13 @@
       // reshuffle grid
       $grid.shuffle('shuffle', groupName);
     });
+
+    <?php if ($page->isInitialFiltering()): ?>
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#archive--headline").offset().top - 80
+        }, 1000);
+    <?php endif; ?>
+
   });
 </script>
 <?php snippet('close'); ?>
