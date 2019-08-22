@@ -50,4 +50,4 @@
 <script src="/assets/js/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
 <script src="/assets/js/plugins/owl-carousel2/owl.carousel.min.js"></script>
 <script src="/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/custom.js?d=<?= filemtime('assets/js/custom.js');?>"></script>
