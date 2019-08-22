@@ -18,7 +18,7 @@
                             <?php endif; ?>
                         </span>
                     </div>
-                    <div class="first--article--desc">
+                    <div class="first--article--desc text-center text-md-right">
                         <?= $titleImage->caption();?>
                     </div>
                 <?php endif; ?>

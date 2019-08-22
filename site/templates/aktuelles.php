@@ -10,12 +10,15 @@
                             <img src="<?= $site->find($firstArticle->uri())->images()->find($firstArticle->teaserimage())->url();?>"/>
                         </a>
                         <div class="first--article--headline">
-                                <span class="title">
-                                    <a href="<?= $firstArticle->url();?>" title="Zum Artikel: <?= $firstArticle->title();?>"><?= $firstArticle->title();?></a>
-                                </span>
+                            <span class="title">
+                                <a href="<?= $firstArticle->url();?>" title="Zum Artikel: <?= $firstArticle->title();?>"><?= $firstArticle->title();?></a>
+                            </span>
                             <span class="date">
-                                    <?= date('d.m.Y', strtotime($firstArticle->datum()));?>
-                                </span>
+                                <?= date('d.m.Y', strtotime($firstArticle->datum()));?>
+                            </span>
+                            <a class="btn btn-1 animation pull-right" href="<?= $firstArticle->url();?>" title="Zum Artikel: <?= $firstArticle->title();?>">
+                                Artikel lesen
+                            </a>
                         </div>
                     <?php endif; ?>
                 </div>
