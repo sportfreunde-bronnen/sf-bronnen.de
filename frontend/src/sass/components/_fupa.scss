@@ -16,14 +16,8 @@ div.fupa_widget {
   div#teamdiv {
     table.content_table_std {
       td {
-        font-size: 1rem;
-        &.spielername {
-          a {
-            font-size: 1rem;
-            &::first-letter {
-              font-weight: 500;
-            }
-          }
+        a.spieler_linkurl {
+          font-size: 1rem;
         }
       }
       tr th {
