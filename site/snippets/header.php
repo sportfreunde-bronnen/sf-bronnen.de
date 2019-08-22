@@ -19,7 +19,7 @@
     <link href="/assets/js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid pl-0 pr-0 d-xs-none">
+<div class="container-fluid pl-0 pr-0 d-none d-mb-block">
     <div class="top-bar">
         <div class="container">
             <div class="container-fluid clearfix text-xs-center text-sm-center text-md-left pl-sm-0 pr-sm-0">
@@ -37,7 +37,7 @@
     <div class="container text-xs-center pl-sm-0 pr-sm-0">
         <div class="row">
             <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
-                <a href="/" class="sfb-headline"><img class="sfblogo" src="/assets/images/sfb/logo.svg"/>Sportfreunde Bronnen 1949 e.V.</a>
+                <a href="/" class="sfb-headline"><img class="sfblogo" src="/assets/images/sfb/logo.svg"/><span class="claim">Sportfreunde Bronnen 1949 e.V.</span></a>
             </div>
         </div>
     </div>

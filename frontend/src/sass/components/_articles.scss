@@ -114,6 +114,16 @@
       }
     }
 
+    @include media-breakpoint-down(sm) {
+      height: calc(100vh - #{$navigationHeightXSArticle});
+      img {
+        height: 100%;
+        width: 100% ! important;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+
   }
 
 }
