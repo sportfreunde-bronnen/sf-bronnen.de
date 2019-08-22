@@ -41,3 +41,18 @@ div.page--bericht {
   }
 
 }
+
+div.page--articles {
+  div.first--article {
+    @include media-breakpoint-down(sm) {
+      height: calc(100vh - #{$navigationHeightXSArticleDetail});
+      height: calc((var(--vh, 1vh) * 100) - #{$navigationHeightXSArticleDetail});
+      img {
+        height: 100%;
+        width: 100% ! important;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+  }
+}
