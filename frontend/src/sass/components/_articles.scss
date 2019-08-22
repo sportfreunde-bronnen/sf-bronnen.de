@@ -65,7 +65,7 @@
       background-color: rgba(0, 72, 105, 0.9);
       float: right;
       @include media-breakpoint-down(sm) {
-        padding: 0 0 0 10px;
+        padding: 2px;
         font-size: .75rem;
         line-height: 1rem;
         text-align: left;
