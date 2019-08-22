@@ -1,6 +1,4 @@
-div.page--bericht {
-  @include media-breakpoint-between(md, lg) {
-  }
+div.page--single--article {
   h1 {
     text-shadow: none;
     margin-bottom: 1rem;
@@ -40,9 +38,6 @@ div.page--bericht {
     }
   }
 
-}
-
-div.page--articles {
   div.first--article {
     @include media-breakpoint-down(sm) {
       height: calc(100vh - #{$navigationHeightXSArticleDetail});
@@ -55,4 +50,5 @@ div.page--articles {
       }
     }
   }
+
 }

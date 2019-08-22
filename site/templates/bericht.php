@@ -1,7 +1,7 @@
 <?php snippet('header'); ?>
 <div class="page">
     <div class="container p-0 container--first--article">
-        <div class="page page--articles">
+        <div class="page page--single--article">
             <div class="first--article">
                 <?php if ($titleImage = $page->getTitleImage()):?>
                     <img src="<?= $titleImage->resize(1500)->url();?>"/>
@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="blog-post single mt-0">
-                    <div class="mb-0 box-3">
+                    <div class="mb-3 box-3">
                         <div class="inner">
                             <?php if (!$titleImage): ?>
                                 <p class="date-meta text-grey-color pt-4">
