@@ -19,7 +19,7 @@
     <link href="/assets/js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid pl-0 pr-0 d-none d-mb-block">
+<div class="container-fluid pl-0 pr-0 d-none d-md-block">
     <div class="top-bar">
         <div class="container">
             <div class="container-fluid clearfix text-xs-center text-sm-center text-md-left pl-sm-0 pr-sm-0">
