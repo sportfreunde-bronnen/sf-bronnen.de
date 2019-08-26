@@ -7,7 +7,7 @@
                 <div class="first--article mb-5">
                     <?php if ($firstArticle->teaserimage()->isNotEmpty()):?>
                         <a href="<?= $firstArticle->url();?>" title="Zum Artikel: <?= $firstArticle->title();?>">
-                            <img src="<?= $site->find($firstArticle->uri())->images()->find($firstArticle->teaserimage())->url();?>"/>
+                            <img src="<?= $site->find($firstArticle->uri())->images()->find($firstArticle->teaserimage())->resize(1500)->url();?>"/>
                         </a>
                         <div class="first--article--headline">
                             <span class="title">
