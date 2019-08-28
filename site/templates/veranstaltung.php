@@ -37,27 +37,31 @@
                     </table>
                     <?php if ($page->related()->isNotEmpty()): $related = $page->related()->toPage(); ?>
                         <h5 class="sub-heading-2 mt-4">Auch interessant:</h5>
-                        <div class="box-3 animation text-xs-center text-sm-center text-md-left mt-0">
-                            <?php if ($related->vimage()->isNotEmpty()): ?>
-                                <p>
-                                    <img src="<?= $related->vimage()->toFile()->resize(350)->url();?>" alt="Veranstaltungsbild - <?= $related->title();?> - Sportfreunde Bronnen" class="img-fluid img-center-xs img-center-sm">
-                                </p>
-                            <?php endif; ?>
-                            <div class="inner">
-                                <p class="date-meta text-grey-color text-uppercase">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-12">
+                                <div class="box-3 animation text-xs-center text-sm-center text-md-left mt-0">
+                                    <?php if ($related->vimage()->isNotEmpty()): ?>
+                                        <p>
+                                            <img src="<?= $related->vimage()->toFile()->resize(350)->url();?>" alt="Veranstaltungsbild - <?= $related->title();?> - Sportfreunde Bronnen" class="img-fluid img-center-xs img-center-sm">
+                                        </p>
+                                    <?php endif; ?>
+                                    <div class="inner">
+                                        <p class="date-meta text-grey-color text-uppercase">
                                     <span class="badge p-1 badge-secondary">
                                         <i class="fa fa-calendar"></i>&nbsp; <?= $related->datum()->toGermanDate(); ?>
                                     </span>
-                                </p>
-                                <h6 class="sub-heading-1 tiny text-weight-medium text-xs-center text-sm-center text-md-left">
-                                    <?= $related->title();?>
-                                </h6>
-                                <p class="text-grey-color">
-                                    <?= $related->shorttitle();?>
-                                </p>
-                                <p class="text-md-right">
-                                    <a href="<?= $related->url();?>" class="more-link animation">Mehr erfahren</a>
-                                </p>
+                                        </p>
+                                        <h6 class="sub-heading-1 tiny text-weight-medium text-xs-center text-sm-center text-md-left">
+                                            <?= $related->title();?>
+                                        </h6>
+                                        <p class="text-grey-color">
+                                            <?= $related->shorttitle();?>
+                                        </p>
+                                        <p class="text-md-right">
+                                            <a href="<?= $related->url();?>" class="more-link animation">Mehr erfahren</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     <?php endif; ?>
