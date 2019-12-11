@@ -48,11 +48,11 @@ Shorttitle: Das legendäre Oktoberfest der Sportfreunde Bronnen.
 
 ----
 
-Doc: 
+Doc: druck_oktoberfest_2019_flyer_vs.jpg
 
 ----
 
-Documentdescription: 
+Documentdescription: Flyer
 
 ----
 
