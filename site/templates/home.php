@@ -47,7 +47,7 @@
 
     <div class="page">
 
-        <?php if ($upcomingData = $page->getLatestResults()): ?>
+        <?php if ($upcomingData = $page->getLatestResults() && 1 == 2): ?>
             <section class="football-upcoming">
                 <div class="container-fluid">
                     <div class="row">
