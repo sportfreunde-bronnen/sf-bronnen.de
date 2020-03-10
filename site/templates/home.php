@@ -93,7 +93,7 @@
                                     </div>
                                     <h6 class="text-weight-medium"><a title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>"><?= $post->title();?></a></h6>
                                     <hr/>
-                                    <p><?= substr($post->text(), 0, 100); ?>...</p>
+                                    <p><?= substr(strip_tags($post->text()->kirbytext()), 0, 100); ?>...</p>
                                     <ul class="list-unstyled list-inline text-normal">
                                         <li class="list-inline-item text-weight-medium"><a class="h6" title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>">Weiterlesen</a></li>
                                     </ul>

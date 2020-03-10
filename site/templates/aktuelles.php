@@ -62,7 +62,7 @@
                                     <a href="<?= $post->url();?>"><?= $post->title();?></a>
                                 </h6>
                                 <p class="text-grey-color">
-                                    <?= substr($post->text(), 0, 100) . '...';?>
+                                    <?= substr(strip_tags($post->text()->kirbytext()), 0, 100); ?>...
                                 </p>
                                 <p class="text-md-right">
                                     <a href="<?= $post->url();?>" class="more-link animation">Weiterlesen</a>
