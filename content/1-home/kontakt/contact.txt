@@ -9,9 +9,9 @@ Ansprechpartner:
   aufgabe: E-Mail Verteiler
   email: vorstand@sf-bronnen.de
 - 
-  name: Benjamin Baur
+  name: Martin Pannek
   aufgabe: 1. Vorsitzender
-  email: benjamin.baur@gmx.de
+  email: martin-pannek@web.de
 - 
   name: Simon Baur
   aufgabe: 2. Vorsitzender

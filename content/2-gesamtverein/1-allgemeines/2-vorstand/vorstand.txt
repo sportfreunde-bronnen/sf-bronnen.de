@@ -5,9 +5,9 @@ Title: Vorstand
 Personen: 
 
 - 
-  name: Benjamin Baur
+  name: Martin Pannek
   funktion: 1. Vorstand
-  start: "2012"
+  start: "2020"
   bild: baur_ben.jpg
 - 
   name: Simon Baur
@@ -29,8 +29,3 @@ Personen:
   funktion: Kassierer
   start: "2011"
   bild: bringazi_martin.jpg
-- 
-  name: Maximilian Braig
-  funktion: Kassierer
-  start: "2016"
-  bild: braig_maxi.jpg

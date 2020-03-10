@@ -19,7 +19,7 @@ fields:
 options:
   template: false
   url: false
-  status: false
+  status: true
 pages: false
 files:
   fields:
