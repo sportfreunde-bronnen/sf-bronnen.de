@@ -25,6 +25,7 @@
             <div class="container-fluid clearfix text-xs-center text-sm-center text-md-left pl-sm-0 pr-sm-0">
                 <ul class="list-unstyled list-inline float-md-left mb-0 animation">
                     <li class="list-inline-item"><a href="https://www.facebook.com/sportfreundebronnen/" title="Die Sportfreunde Bronnen auf Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/sfb1949/" title="Die Sportfreunde Bronnen auf Instagram"><i class="fa fa-instagram"></i></a></li>
                     <li class="list-inline-item"><a href="https://github.com/sportfreunde-bronnen/" title="Die Sportfreunde Bronnen auf Github - Open Source"><i class="fa fa-github"></i></a></li>
                     <li class="list-inline-item"><a href="https://shop.sf-bronnen.de" title="Der Online Shop der Sportfreunde Bronnen"><i class="fa fa-shopping-cart"></i></a></li>
                 </ul>
