@@ -17,7 +17,7 @@
                         <img src="<?= $image->resize(750)->url();;?>" class="figure-img img-fluid">
                         <figcaption class="figure-caption"><?= $image->caption();?></figcaption>
                     </figure>
-                    <hr/>
+                    <hr class="d-md-none"/>
                 </div>
             <?php endforeach; ?>
         </div>
