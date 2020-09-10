@@ -10,11 +10,14 @@
     <?= $page->text()->kirbytext();?>
     <hr/>
     <?php if ($page->images()): ?>
-        <div class="text-center">
-            <?php foreach($page->images() as $image): ?>
-                <img src="<?= $image->resize(750)->url();?>" class="mb-2 img-fluid"/>
-            <?php endforeach; ?>
-        </div>
+        <?php foreach($page->images() as $image): ?>
+            <div class="text-center">
+                <figure class="figure">
+                    <img src="<?= $image->resize(750)->url();;?>" class="figure-img img-fluid">
+                    <figcaption class="figure-caption"><?= $image->caption();?></figcaption>
+                </figure>
+            </div>
+        <?php endforeach; ?>
     <?php endif; ?>
     <?php if ($page->people()->isNotEmpty()): ?>
         <?php snippet('people');?>
