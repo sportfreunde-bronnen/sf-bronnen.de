@@ -1,6 +1,10 @@
 title: Default
 pages: true
-files: true
+files:
+  fields:
+    caption:
+      type: text
+      label: Beschreibung
 fields:
   title: title
   headline: headline
