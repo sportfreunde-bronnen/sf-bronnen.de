@@ -37,7 +37,7 @@
                 </ul>
             </div>
             <div class="row blog-post" id="article-grid">
-                <?php foreach ($page->getArticles()->slice(1, 1000) as $post): ?>
+                <?php foreach ($page->getArticles()->slice(0, 1000) as $post): ?>
                     <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-groups='<?= $post->getNewsGroupsAsShuffleArray();?>'>
                         <div class="box-3 animation text-xs-center">
                             <p>
