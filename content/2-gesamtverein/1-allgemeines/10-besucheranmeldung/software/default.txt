@@ -1,0 +1,48 @@
+Title: Corona Software für Vereine
+
+----
+
+Headline: Besucherregistrierung leicht gemacht
+
+----
+
+Text: 
+
+## Informationen
+
+Um die Erfassung aller Besucher\_innen für Veranstaltungen unseres Vereins (z.B. Fußballspiele) einfacher zu gestalten, haben wir eine eigenständige Lösung (webbasiert) entwickelt, die eine einfache Online-Vorregistrierung für die verschiedenen Veranstaltungen bietet. Nach dem Ausfüllen des Formulars wird ein QR-Code erzeugt (und an die angegebene E-Mail Adresse geschickt), der beim Einlass zur Veranstaltung nur noch vorgezeigt werden muss. Durch das ebenfalls integrierte Modul zum Scannen der QR-Codes wird die Erzeugung von Besucherlisten ein Kinderspiel. Das Scannen der QR-Codes erfolgt über einen externen Scanner, der per Bluetooth an ein Handy bzw. PC gekoppelt werden kann. Über das Backend können im Anschluss an die Veranstaltung die Besucherlisten der gescannten Personen erzeugt werden.
+
+Aufgerufen werden kann die Software über den Browser (Chrome, Safari, Firefox usw.) an jedem Endgerät (Smartphone, Laptop, Tablet) mit Internetzugriff. 
+
+Technische Anforderungen:
+
+- Webserver mit PHP (>= 7.4) und MySQL Datenbank und eigener Domain
+- Möglichkeit zur Erstellung eines SSL-Zertifikates
+
+Funktionsumfang:
+
+- Verwaltung von Veranstaltungen (Backend)
+- Modul zum Scannen der QR-Codes (Backend)
+- Erzeugung von Besucherlisten (Backend)
+- Online Registrierung für die angelegten Veranstaltungen
+- Hinterlegung bestimmter Kontingente (z.B. für "Veranstaltung XYZ" dürfen sich maximal 100 Personen registrieren)
+- Farbliche Anpassung der Software an eure Vereinsfarben
+- Problemlose Nutzung auf mobilen Endgeräten
+- Automatische Löschung der Veranstaltung sowie der registrierten Besucherdaten nach vier Wochen (über Cronjob)
+
+Es fallen keinerlei Kosten für die Nutzung der Software an. Lediglich der externe QR-Code Scanner muss von euch erworben werden (ca. 60€ bei Amazon)
+
+Ihr habt Interesse oder seid an einer Demo interessiert? Schreibt uns an **info@sf-bronnen.de**
+
+**Referenzen:**
+
+- Sportfreunde Bronnen 1949 e.V. ([Besucheranmeldung](https://besucher.sf-bronnen.de))
+- Sportverein Baltringen e. V. ([Besucheranmeldung](https://besucher.sv-baltringen.de))
+
+**Demo:**
+
+<https://demo.sf-bronnen.de>
+
+Logindaten gibt es auf Anfrage.
+
+**Screenshots:**

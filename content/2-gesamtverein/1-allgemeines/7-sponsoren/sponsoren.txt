@@ -1,0 +1,255 @@
+Title: Sponsoren
+
+----
+
+Headline: Unsere Sponsoren und Partner
+
+----
+
+Text: Wir bedanken uns recht herzlich bei unseren Sponsoren, Partnern und sonstigen Unterstützern.
+
+----
+
+Sponsoren: 
+
+- 
+  name: Academy Fahrschule Roloff GmbH
+  ort: Laupheim
+  webseite: >
+    http://academy-fahrschule-roloff.de/start/start.html
+- 
+  name: Landschlächterei Angele
+  ort: Walpertshofen
+  webseite: http://www.landschlaechterei-angele.de/
+- 
+  name: Getränke-Service Bailer
+  ort: Achstetten
+  webseite: http://www.getraenke-bailer.de/
+- 
+  name: Bau Grund Süd
+  ort: Bad Wurzach
+  webseite: http://www.baugrundsued.de/
+- 
+  name: 'Bau & Heim Massivbau Immobilien'
+  ort: Laupheim
+  webseite: ""
+- 
+  name: Konrad Baur GmbH
+  ort: Bad Schussenried
+  webseite: http://www.kbaur-gmbh.com/
+- 
+  name: Autohaus Beck
+  ort: Oberholzheim
+  webseite: ""
+- 
+  name: Flaschnerei Bruno Berg
+  ort: Achstetten
+  webseite: ""
+- 
+  name: Bottenschein Reisen
+  ort: Ehingen
+  webseite: http://www.bottenschein.de/
+- 
+  name: Apotheker Andreas Buck
+  ort: Laupheim
+  webseite: ""
+- 
+  name: Flaschnerei Dürr
+  ort: Laupheim
+  webseite: http://www.flaschner-duerr.de/
+- 
+  name: Erbacher Planungsbüro
+  ort: Erbach
+  webseite: http://www.erbacher-planungsbuero.de/
+- 
+  name: Autohaus Filser
+  ort: Laupheim
+  webseite: http://www.autohaus-filser.net/
+- 
+  name: Reisebüro Flöter
+  ort: Laupheim
+  webseite: https://www.rbfloeter.de/
+- 
+  name: Glass Hobby Design
+  ort: Laupheim
+  webseite: http://www.glass-hobby-design.de/
+- 
+  name: Glasprinter
+  ort: Riedlingen
+  webseite: https://www.glasprinter.de/
+- 
+  name: GMS Biogas
+  ort: Oberholzheim
+  webseite: ""
+- 
+  name: Brauerei Gold Ochsen GmbH
+  ort: Ulm
+  webseite: https://www.goldochsen.de/
+- 
+  name: Erwin Halder KG
+  ort: Bronnen
+  webseite: https://www.halder.com/de/
+- 
+  name: Halder Schneidtechnik
+  ort: Bronnen
+  webseite: http://www.halderschneidtechnik.de/
+- 
+  name: Halder Werkzeuge
+  ort: Bronnen
+  webseite: https://www.halder.com/de/
+- 
+  name: HM-Stahlvertriebs-GmbH
+  ort: Oberholzheim
+  webseite: http://www.hm-stahlvertrieb.de/
+- 
+  name: Autohaus Humm
+  ort: Laupheim
+  webseite: ""
+- 
+  name: Paul Jäger
+  ort: Achstetten
+  webseite: ""
+- 
+  name: 'Garten- und Landschaftsbau Josip'
+  ort: Laupheim
+  webseite: http://www.josip-galabau.de/
+- 
+  name: Gemeinde Achstetten
+  ort: Achstetten
+  webseite: http://www.achstetten.de/
+- 
+  name: Schreinerei Kennerknecht
+  ort: Oberholzheim
+  webseite: http://www.schreinerei-kennerknecht.com/
+- 
+  name: Imbiss Kley
+  ort: Achstetten
+  webseite: ""
+- 
+  name: Kreissparkasse Biberach
+  ort: Biberach
+  webseite: https://www.ksk-bc.de/de/home.html
+- 
+  name: Kronenbrauerei Laupheim
+  ort: Laupheim
+  webseite: http://www.kronenbrauerei-laupheim.de/
+- 
+  name: Kühnbach Kies + Transportbeton
+  ort: Achstetten
+  webseite: http://www.kuehnbach-beton.de/
+- 
+  name: Uwe Lengenfelder
+  ort: Oberholzheim
+  webseite: ""
+- 
+  name: 'Licon mt GmbH & Co. KG'
+  ort: Untersulmetingen
+  webseite: http://www.licon.com/de
+- 
+  name: Steuerkanzlei Lifka
+  ort: Bronnen
+  webseite: http://lifka.info/
+- 
+  name: Locher Haustechnik
+  ort: Erbach
+  webseite: >
+    http://www.locher-haustechnik.de/cms/front_content.php
+- 
+  name: Lutz Bau
+  ort: Burgrieden
+  webseite: http://baulutz.de/
+- 
+  name: Mangold Immobilien
+  ort: Laupheim
+  webseite: http://mangold-immobilien.de
+- 
+  name: Mangold Küchen
+  ort: Staig
+  webseite: http://www.kuechen-mangold.de/
+- 
+  name: Bäckerei Mäschle
+  ort: Laupheim
+  webseite: http://www.baeckerei-maeschle.de/
+- 
+  name: Elektro Mäschle
+  ort: Oberholzheim
+  webseite: ""
+- 
+  name: Bauunternehmen Maucher
+  ort: Burgrieden
+  webseite: http://maucher-bau.de/de
+- 
+  name: 'MCI Marketing Services & Partner'
+  ort: Achstetten
+  webseite: >
+    http://www.mci-marketing.ch/mci-partner.html
+- 
+  name: Möbel Borst
+  ort: Bietigheim-Bissingen
+  webseite: https://www.moebel-borst.de/
+- 
+  name: Ingenierbüro Reuder
+  ort: Bronnen
+  webseite: http://www.reuder.de/
+- 
+  name: Ingenierbüro Rohmer
+  ort: Laupheim
+  webseite: https://www.statik-rohmer.de/de/
+- 
+  name: Sachs Gerüstbau
+  ort: Oberholzheim
+  webseite: http://www.gerüstbau-sachs.de/
+- 
+  name: Ingenierbüro Sauter
+  ort: Oberholzheim
+  webseite: ""
+- 
+  name: Gartengestaltung Schick
+  ort: Bronnen
+  webseite: http://www.schick-gartengestaltung.de/
+- 
+  name: Schweizer Bau
+  ort: Burgrieden
+  webseite: http://www.schweizerbau.de/
+- 
+  name: SV Sparkassen Versicherung
+  ort: Laupheim
+  webseite: >
+    https://www.sparkassenversicherung.de/content/aussendienst/d/dietmar_koenig/team/
+- 
+  name: Tabak Gartenbau
+  ort: Bronnen
+  webseite: https://www.gartenbau-tabak.de/
+- 
+  name: VR Laupheim-Illertal
+  ort: Laupheim
+  webseite: https://www.vr-li.de/privatkunden.html
+- 
+  name: Cornelia Weber Zentralschmiertechnik
+  ort: Bronnen
+  webseite: https://www.zentralschmiertechnik.info/
+- 
+  name: Werz Zerspanungstechnik
+  ort: Untersulmetingen
+  webseite: http://www.werz-cnc.de/
+- 
+  name: Veeser Umzüge Biberach
+  ort: Biberach
+  webseite: https://www.veeser-bc.com/
+- 
+  name: Exapt Solutions
+  ort: Bronnen
+  webseite: https://www.exapt-solutions.de/
+- 
+  name: 'Sarikaya Garten- und Pflasterarbeiten'
+  ort: Aßmannshardt
+  webseite: https://www.sarikaya-c.de
+- 
+  name: Röchling Industrial Laupheim GmbH
+  ort: Laupheim
+  webseite: >
+    https://www.roechling-industrial.com/de/laupheim
+- 
+  name: 'M & D Flachdachtechnik'
+  ort: Laupheim
+  webseite: http://www.md-dachtechnik.de/

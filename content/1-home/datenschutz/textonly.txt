@@ -67,10 +67,9 @@ Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten 
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter sind die:
 
 Sportfreunde Bronnen 1949 e.V.  
- Straßäckerweg 28  
+Adam-Ries-Straße 13  
  88471 Laupheim  
  Deutschland  
- Tel.: 0173 7018749  
  E-Mail: datenschutz@sf-bronnen.de  
  Website: www.sf-bronnen.de
 
@@ -178,7 +177,7 @@ Ein soziales Netzwerk ist ein im Internet betriebener sozialer Treffpunkt, eine 
 
 Betreibergesellschaft von Facebook ist die Facebook, Inc., 1 Hacker Way, Menlo Park, CA 94025, USA. Für die Verarbeitung personenbezogener Daten Verantwortlicher ist, wenn eine betroffene Person außerhalb der USA oder Kanada lebt, die Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland.
 
-Durch jeden Aufruf einer der Einzelseiten dieser Internetseite, die durch den für die Verarbeitung Verantwortlichen betrieben wird und auf welcher eine Facebook-Komponente (Facebook-Plug-In) integriert wurde, wird der Internetbrowser auf dem informationstechnologischen System der betroffenen Person automatisch durch die jeweilige Facebook-Komponente veranlasst, eine Darstellung der entsprechenden Facebook-Komponente von Facebook herunterzuladen. Eine Gesamtübersicht über alle Facebook-Plug-Ins kann unter [](https://developers.facebook.com/docs/plugins/?locale=de_DE)[](https://developers.facebook.com/docs/plugins/?locale=de\_DE)[](https://developers.facebook.com/docs/plugins/?locale=de\\\_DE)[](https://developers.facebook.com/docs/plugins/?locale=de\\\\\\\_DE)[https://developers.facebook.com/docs/plugins/?locale=de\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_DE](https://developers.facebook.com/docs/plugins/?locale=de\\\\\\\\\\\\\\\_DE) abgerufen werden. Im Rahmen dieses technischen Verfahrens erhält Facebook Kenntnis darüber, welche konkrete Unterseite unserer Internetseite durch die betroffene Person besucht wird.
+Durch jeden Aufruf einer der Einzelseiten dieser Internetseite, die durch den für die Verarbeitung Verantwortlichen betrieben wird und auf welcher eine Facebook-Komponente (Facebook-Plug-In) integriert wurde, wird der Internetbrowser auf dem informationstechnologischen System der betroffenen Person automatisch durch die jeweilige Facebook-Komponente veranlasst, eine Darstellung der entsprechenden Facebook-Komponente von Facebook herunterzuladen. Eine Gesamtübersicht über alle Facebook-Plug-Ins kann unter [](https://developers.facebook.com/docs/plugins/?locale=de_DE)[](https://developers.facebook.com/docs/plugins/?locale=de\_DE)[](https://developers.facebook.com/docs/plugins/?locale=de\\\_DE)[](https://developers.facebook.com/docs/plugins/?locale=de\\\\\\\_DE)[](https://developers.facebook.com/docs/plugins/?locale=de\\\\\\\\\\\\\\\_DE)[https://developers.facebook.com/docs/plugins/?locale=de\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_DE](https://developers.facebook.com/docs/plugins/?locale=de\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_DE) abgerufen werden. Im Rahmen dieses technischen Verfahrens erhält Facebook Kenntnis darüber, welche konkrete Unterseite unserer Internetseite durch die betroffene Person besucht wird.
 
 Sofern die betroffene Person gleichzeitig bei Facebook eingeloggt ist, erkennt Facebook mit jedem Aufruf unserer Internetseite durch die betroffene Person und während der gesamten Dauer des jeweiligen Aufenthaltes auf unserer Internetseite, welche konkrete Unterseite unserer Internetseite die betroffene Person besucht. Diese Informationen werden durch die Facebook-Komponente gesammelt und durch Facebook dem jeweiligen Facebook-Account der betroffenen Person zugeordnet. Betätigt die betroffene Person einen der auf unserer Internetseite integrierten Facebook-Buttons, beispielsweise den „Gefällt mir“-Button, oder gibt die betroffene Person einen Kommentar ab, ordnet Facebook diese Information dem persönlichen Facebook-Benutzerkonto der betroffenen Person zu und speichert diese personenbezogenen Daten.
 

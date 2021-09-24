@@ -25,25 +25,25 @@ Ansprechpartner:
   aufgabe: Kassierer
   email: martin_bringazi@web.de
 - 
-  name: Maximilian Braig
-  aufgabe: Kassierer, Vereinsartikel
-  email: maximilian.braig@gmx.de
-- 
   name: Ruth Hofele
   aufgabe: Schriftführerin
   email: molly@ruthili.de
 - 
+  name: Conny Rohmer
+  aufgabe: Vermietung SVZ
+  email: connyrohmer@web.de
+- 
   name: Oliver Bentele
-  aufgabe: Bandenwerbung, Vermietung SVZ
+  aufgabe: Bandenwerbung
   email: o.bentele@bs-bo.de
 - 
   name: Jürgen Anic
   aufgabe: Jugendleiter Gesamtverein
   email: j.anic@freenet.de
 - 
-  name: Harald Unrath
+  name: Klaus Romer
   aufgabe: Abteilungsleiter Aikido
-  email: aikidobronnen@aol.com
+  email: SFB-Abt-Aikido@web.de
 - 
   name: Melanie Schmid
   aufgabe: Abteilungsleiterin Gymnastik
@@ -65,7 +65,7 @@ Ansprechpartner:
   aufgabe: Mitgliederverwaltung
   email: petra@hannes.me
 - 
-  name: Tobias Mangold
+  name: Martin Halder
   aufgabe: 1. Vorsitzender Förderverein
   email: foerderverein@sf-bronnen.de
 - 

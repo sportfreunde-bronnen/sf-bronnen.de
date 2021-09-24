@@ -171,6 +171,12 @@ Ereignisse:
   ereignis: |
     - Feier des 70-jährigen Vereinsbestehens mit einem Festabend sowie der Ausrichtung des Rottalpokals
     - Erstellung einer zweiten Vereinschronik in Buchform
+- 
+  jahr: "2020"
+  ereignis: |
+    - Renovierung des SVZ (Streichen von innen und außen)
+    - Integration einer smarten Bewässerungsanlage
+    - COVID-19 Pandemie
 
 ----
 

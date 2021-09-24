@@ -10,7 +10,7 @@ Line1:
 
 ----
 
-Datum: 2019-06-29 18:00
+Datum: 2022-06-25 18:00
 
 ----
 
@@ -20,27 +20,9 @@ Ort: Sportgelände Bronnen
 
 Text: 
 
-## 2. Zwickel-Elfer-Cup
+## 3. Zwickel-Elfer-Cup
 
-Nach dem Erfolg im ersten Jahr findet auch im Jahr 2019 wieder der Zwickel-Elfer-Cup statt.
-
-Hierbei können sich beliebige Mannschaften in einem familiären und spaßbetonten Elfmeterturnier messen und den verdienten Sieger ausspielen.
-
-Die Anmeldung ist noch bis einschließlich **Donnerstag, 27.06.2019**, möglich! Wir freuen uns auf weitere Anmeldungen!
-
-- - - - - -
-
-**>> [Zur Online-Anmeldung](/gesamtverein/veranstaltungen/zwickel-gemeindecup/anmeldung) **
-
-**[Angemeldete Mannschaften](/gesamtverein/veranstaltungen/zwickel-gemeindecup/anmeldung)**
-
-- - - - - -
-
-Zur Facebook-Veranstaltung: <https://www.facebook.com/events/2206363759478437/>
-
-- - - - - -
-
-(image: flyer-elfer-cup-2019.jpg width: 100%)
+Weitere Informationen sowie eine Einladung folgen zu gegebener Zeit.
 
 ----
 
@@ -56,7 +38,7 @@ Line2:
 
 ----
 
-Doc: 2019-elfercup-flyer.pdf
+Doc: 
 
 ----
 

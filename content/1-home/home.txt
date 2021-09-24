@@ -22,23 +22,36 @@ Links:
 Slides: 
 
 - 
+  title: Zuschauer aufgepasst!
+  text: >
+    Du besuchst ein Heimspiel unserer
+    Fußballer? Jetzt über das Prozedere
+    vor Ort informieren.
+  textposition: left
+  sliderimage: slider-dummy.jpg
+  internallink: >
+    gesamtverein/allgemeines/besucheranmeldung
+  externallink: ""
+  buttontext: Erklärung + Hygienekonzept
+- 
+  title: Amazon Smile
+  text: >
+    Du willst mit deinen nächsten
+    Einkäufen auf Amazon die Sportfreunde
+    unterstützen?
+  textposition: left
+  sliderimage: slider-sfb-4.jpg
+  internallink: gesamtverein/allgemeines/amazon-smile
+  externallink: ""
+  buttontext: "So geht's"
+- 
   title: Sie suchen eine Location?
   text: Wir haben da was!
   sliderimage: slider-sfb-3.jpg
-  textposition: right
+  textposition: left
   internallink: gesamtverein/allgemeines/svz
   externallink: ""
-- 
-  title: '70 Jahre SFB - die Chronik'
-  text: >
-    Sichere Dir jetzt Dein Exemplar mit
-    Informationen uvm. aus den letzten 20
-    Jahren Sportfreunde Bronnen!
-  textposition: left
-  sliderimage: slider-chronik.jpg
-  internallink: gesamtverein/allgemeines/jahre-chronik
-  externallink: ""
-  buttontext: 'Infos & Kauf'
+  buttontext: ""
 
 ----
 
@@ -65,6 +78,6 @@ Footertext: Die Sportfreunde Bronnen sind ein über 600 Mitglieder fassender Ver
 Footeraddress: 
 
 **Sportfreunde Bronnen 1949 e.V.**  
-Adam-Ries-Straße 13  
+ Adam-Ries-Straße 13  
  88471 Laupheim  
  info@sf-bronnen.de

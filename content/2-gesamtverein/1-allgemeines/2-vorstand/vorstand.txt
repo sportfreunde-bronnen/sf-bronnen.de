@@ -10,9 +10,9 @@ Personen:
   start: "2020"
   bild: baur_ben.jpg
 - 
-  name: Simon Baur
+  name: Thomas Baur-Beyerlin
   funktion: 2. Vorstand
-  start: "2017"
+  start: "2021"
   bild: baur_simon.jpg
 - 
   name: Magnus Buk

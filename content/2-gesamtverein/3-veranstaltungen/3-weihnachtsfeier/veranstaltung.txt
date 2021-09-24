@@ -2,7 +2,7 @@ Title: Weihnachtsfeier
 
 ----
 
-Datum: 2019-12-07 19:00
+Datum: 2021-12-11 19:00
 
 ----
 
@@ -12,11 +12,9 @@ Ort: SVZ
 
 Text: 
 
-## Weihnachtsfeier 2019
+## Weihnachtsfeier 2021
 
-Der Termin für die Weihnachtsfeier 2019 ist der 07.12.2019.
-
-Einladungen werden rechtzeitig versandt.
+Termin für die diesjährige Weihnachtsfeier. Über das finale Stattfinden wird unter Berücksichtigung der pandemischen Lage rechtzeitig entschieden.
 
 ----
 
@@ -36,7 +34,7 @@ Related: gesamtverein/veranstaltungen/zwickel-gemeindecup
 
 ----
 
-Shorttitle: Weihnachtsfeier des Gesamtvereins im Sportvereinszentrum.
+Shorttitle: Weihnachtsfeier 2021
 
 ----
 
