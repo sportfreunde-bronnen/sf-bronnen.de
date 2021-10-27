@@ -72,7 +72,7 @@ class CertificateAction extends Action
 
             $data = $this->form->data();
 
-            $response = $client->request('POST', '/certificate', ['json' => [
+            $response = $client->request('POST', '/api/certificate', ['json' => [
                 'address' => $data['address'],
                 'email' => $data['email']
             ]]);
