@@ -31,14 +31,14 @@
                                 <div class="form-group">
                                     <label for="address">Adresse: *</label>
                                     <textarea class="form-control flat" rows="4" name="address" id="address" required="required" placeholder="Max Mustermann\nMusterweg 12\n88480 Musterhausen"><?php echo $form->old('address'); ?></textarea>
-                                    Welche Adresse soll auf der Bescheinigung stehen?
+                                    <small>Welche Adresse soll auf der Bescheinigung stehen?</small>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="email">E-Mail: *</label>
                                     <input type="email" class="form-control flat" value="<?php echo $form->old('email'); ?>" name="email" id="email" required="required" placeholder="Deine E-Mail Adresse">
-                                    An welche E-Mail Adresse dürfen wir Dir die Bescheinigung schicken?
+                                    <small>An welche E-Mail Adresse dürfen wir Dir die Bescheinigung schicken?</small>
                                 </div>
                             </div>
                             <div class="col-sm-12">
