@@ -1,0 +1,10 @@
+title: Mitgliederbescheinigung
+pages: false
+options:
+  url: false
+  delete: true
+  template: false
+  visible: true
+  status: true
+fields:
+  headline: headline
