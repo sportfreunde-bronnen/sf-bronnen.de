@@ -4,6 +4,7 @@ namespace Uniform\Actions;
 
 use C;
 use PHPMailer\PHPMailer\PHPMailer;
+use GuzzleHttp\Client;
 
 include_once(__DIR__ . '/../../vendor/autoload.php');
 
@@ -67,9 +68,18 @@ class CertificateAction extends Action
     {
         try {
 
+            $client = new Client(['base_uri' => c::get('backendApiUri')]);
+
             $data = $this->form->data();
 
-            var_dump($data);die();
+            $response = $client->request('POST', '/certificate', ['json' => [
+                'address' => $data['address'],
+                'email' => $data['email']
+            ]]);
+
+            if ($response->getStatusCode() !== 200) {
+                throw new \Exception("Leider ist ein technischer Fehler aufgetreten. Bitte versuche es erneut!");
+            }
 
         } catch (\Exception $e) {
             $this->fail($e->getMessage());
