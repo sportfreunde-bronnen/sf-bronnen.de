@@ -10,7 +10,7 @@
             <div class="col-12">
                 <h2 class="main-heading-1 text-spl-color text-uppercase text-weight-normal text-center text-md-left"><?= $page->headline();?></h2>
                 <div class="contact-form-wrap">
-                    <h5 class="sub-heading-1">Mitgliedschaftsbescheinigung beantragen</h5>
+                    <h5 class="sub-heading-1">Beantragung</h5>
                     <p>
                         <strong>
                             Du brauchst eine Mitgliederbescheinigung für Deine Krankenkasse oder andere Zwecke? Kein Problem.
