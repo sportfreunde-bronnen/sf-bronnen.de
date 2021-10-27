@@ -2,7 +2,7 @@ Title: Eltern-Kind-Turnen
 
 ----
 
-Headline: Für Turnzwerge (ab 2-5 Jahre)
+Headline: Für Kleinkinder (ab 2-5 Jahre)
 
 ----
 
@@ -31,3 +31,7 @@ Hinweis:
 ----
 
 Kosten: 
+
+----
+
+Alexaid: 
