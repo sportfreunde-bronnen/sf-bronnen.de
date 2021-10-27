@@ -13,14 +13,14 @@
                     <h5 class="sub-heading-1">Mitgliedschaftsbescheinigung beantragen</h5>
                     <p>
                         <strong>
-                            Du brauchst eine Mitgliederbescheinigung für Deine Krankenkasse oder andere Zwecke? Kein Problem. Fülle einfach das unten stehende Formular aus und wir senden Dir deine Bescheinigung per
-                            E-Mail zu.
+                            Du brauchst eine Mitgliederbescheinigung für Deine Krankenkasse oder andere Zwecke? Kein Problem.
+                            Fülle einfach das unten stehende Formular aus. Nach der Prüfung durch unsere Mitgliederverwaltung senden wir Dir die Bescheinigung an die angegebene E-Mail Adresse zu.
                         </strong>
                     </p>
                     <hr/>
                     <?php if ($form->success()): ?>
                         <div class="alert alert-success mb-5">
-                            Vielen Dank für Ihre Anfrage. Wir werden die Bescheinigung so schnell wie möglich ausstellen.
+                            Vielen Dank für Deine Anfrage. Wir werden die Bescheinigung so schnell wie möglich ausstellen.
                         </div>
                     <?php else: ?>
                         <?php snippet('uniform/errors', ['form' => $form]); ?>
@@ -37,7 +37,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="email">E-Mail: *</label>
-                                    <input type="email" class="form-control flat" value="<?php echo $form->old('email'); ?>" name="email" id="email" required="required" placeholder="Ihre E-Mail Adresse">
+                                    <input type="email" class="form-control flat" value="<?php echo $form->old('email'); ?>" name="email" id="email" required="required" placeholder="Deine E-Mail Adresse">
                                     An welche E-Mail Adresse dürfen wir Dir die Bescheinigung schicken?
                                 </div>
                             </div>
