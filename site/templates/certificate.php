@@ -11,6 +11,13 @@
                 <h2 class="main-heading-1 text-spl-color text-uppercase text-weight-normal text-center text-md-left"><?= $page->headline();?></h2>
                 <div class="contact-form-wrap">
                     <h5 class="sub-heading-1">Mitgliedschaftsbescheinigung beantragen</h5>
+                    <p>
+                        <strong>
+                            Du brauchst eine Mitgliederbescheinigung für Deine Krankenkasse oder andere Zwecke? Kein Problem. Fülle einfach das unten stehende Formular aus und wir senden Dir deine Bescheinigung per
+                            E-Mail zu.
+                        </strong>
+                    </p>
+                    <hr/>
                     <?php if ($form->success()): ?>
                         <div class="alert alert-success mb-5">
                             Vielen Dank für Ihre Anfrage. Wir werden die Bescheinigung so schnell wie möglich ausstellen.
@@ -23,7 +30,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="address">Adresse: *</label>
-                                    <textarea class="form-control flat" rows="8" name="address" id="address" required="required" placeholder="Max Mustermann\nMusterweg 12\n88480 Musterhausen"><?php echo $form->old('address'); ?></textarea>
+                                    <textarea class="form-control flat" rows="4" name="address" id="address" required="required" placeholder="Max Mustermann\nMusterweg 12\n88480 Musterhausen"><?php echo $form->old('address'); ?></textarea>
                                     Welche Adresse soll auf der Bescheinigung stehen?
                                 </div>
                             </div>

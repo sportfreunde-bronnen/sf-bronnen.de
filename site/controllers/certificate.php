@@ -15,8 +15,8 @@ return function ($site, $pages, $page) {
             'message' => 'Bitte bestätigen Sie die Einwilligung zur Nutzung Ihrer personenbezogenen Daten'
         ]
     ]);
-
-    // TODO - Call API
-
+    if (r::is('POST')) {
+        $form->certificateAction([]);
+    }
     return compact('form');
 };

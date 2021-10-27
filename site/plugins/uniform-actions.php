@@ -17,7 +17,7 @@ class PhpMailerAction extends Action
 
             $mail = new PHPMailer;
             $mail->isSMTP();
-	    //$mail->SMTPDebug = true;
+            //$mail->SMTPDebug = true;
             $mail->Host = c::get('mailerHost');
             $mail->SMTPAuth = true;
             $mail->Username = c::get('mailerFrom');
@@ -54,6 +54,22 @@ EOM;
             if(!$mail->send()) {
                 throw new \Exception('Fehler beim Versenden der E-Mail');
             }
+
+        } catch (\Exception $e) {
+            $this->fail($e->getMessage());
+        }
+    }
+}
+
+class CertificateAction extends Action
+{
+    public function perform()
+    {
+        try {
+
+            $data = $this->form->data();
+
+            var_dump($data);die();
 
         } catch (\Exception $e) {
             $this->fail($e->getMessage());
