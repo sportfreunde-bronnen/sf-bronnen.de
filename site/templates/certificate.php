@@ -29,9 +29,11 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="address">Adresse: *</label>
-                                    <textarea class="form-control flat" rows="4" name="address" id="address" required="required" placeholder="Max Mustermann\nMusterweg 12\n88480 Musterhausen"><?php echo $form->old('address'); ?></textarea>
-                                    <small>Welche Adresse soll auf der Bescheinigung stehen?</small>
+                                    <label for="address">Name und Anschrift: *</label>
+                                    <textarea class="form-control flat" rows="4" name="address" id="address" required="required" placeholder="Max Mustermann
+                                    Musterweg 12
+                                    88480 Musterhausen"><?php echo $form->old('address'); ?></textarea>
+                                    <small>Wird für die Empfängeranschrift auf der Bescheinigung verwendet?</small>
                                 </div>
                             </div>
                             <div class="col-sm-12">
