@@ -71,7 +71,7 @@
 <?php snippet('footer'); ?>
 <script>
   $(function() {
-    $('#address').attr('placeholder', 'Max Mustermann\nMusterweg12\n88480 Musterhausen');
+    $('#address').attr('placeholder', 'Max Mustermann\nMusterweg 12\n88480 Musterhausen');
   });
 </script>
 <?php snippet('close'); ?>
