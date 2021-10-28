@@ -31,14 +31,9 @@
                                 <div class="form-group">
                                     <label for="address">Name und Anschrift: *</label>
                                     <textarea class="form-control flat" rows="4" name="address" id="address" required="required" placeholder=""><?php echo $form->old('address'); ?></textarea>
-                                    <small>Wird für die Empfängeranschrift auf der Bescheinigung verwendet?</small>
+                                    <small>Wird für die Empfängeranschrift auf der Bescheinigung verwendet</small>
                                 </div>
                             </div>
-                            <script>
-                                $(function() {
-                                  $('#address').attr('placeholder', 'Max Mustermann\nMusterweg12\n88480 Musterhausen');
-                                });
-                            </script>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="email">E-Mail: *</label>
@@ -73,4 +68,10 @@
         </div>
     </div>
 </div>
-<?php snippet('footer'); ?><?php snippet('close'); ?>
+<?php snippet('footer'); ?>
+<script>
+  $(function() {
+    $('#address').attr('placeholder', 'Max Mustermann\nMusterweg12\n88480 Musterhausen');
+  });
+</script>
+<?php snippet('close'); ?>
