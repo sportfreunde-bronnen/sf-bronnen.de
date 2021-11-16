@@ -13,7 +13,7 @@
                     <h5 class="sub-heading-1">Beantragung</h5>
                     <p>
                         <strong>
-                            Du brauchst eine Mitgliederbescheinigung für Deine Krankenkasse oder andere Zwecke? Kein Problem.
+                            Du brauchst eine Mitgliedschaftsbescheinigung für Deine Krankenkasse oder andere Zwecke? Kein Problem.
                             Fülle einfach das unten stehende Formular aus. Nach der Prüfung durch unsere Mitgliederverwaltung senden wir Dir die Bescheinigung an die angegebene E-Mail Adresse zu.
                         </strong>
                     </p>
