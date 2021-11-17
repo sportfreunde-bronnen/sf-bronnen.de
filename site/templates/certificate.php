@@ -10,7 +10,7 @@
             <div class="col-12">
                 <h2 class="main-heading-1 text-spl-color text-uppercase text-weight-normal text-center text-md-left"><?= $page->headline();?></h2>
                 <div class="contact-form-wrap">
-                    <h5 class="sub-heading-1"><?= $page->subHeadline();?></h5>
+                    <h5 class="sub-heading-1"><?= $page->subTitle();?></h5>
                     <p>
                         <?= $page->text()->kirbytext();?>
                     </p>
