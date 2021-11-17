@@ -7,7 +7,7 @@ Downloads:
 - 
   category: COVID-19
   downloads: >
-    20210701_hk_sport-und-trainingsbetrieb.pdf,20210701_hk_wettkampfbetrieb.pdf
+    2021102_hk_sport-und-trainingsbetrieb.pdf,20211102_hk_wettkampfbetrieb.pdf
 - 
   category: Sportvereinszentrum
   downloads: >

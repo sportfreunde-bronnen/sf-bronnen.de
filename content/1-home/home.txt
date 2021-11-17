@@ -22,17 +22,13 @@ Links:
 Slides: 
 
 - 
-  title: Zuschauer aufgepasst!
-  text: >
-    Du besuchst ein Heimspiel unserer
-    Fußballer? Jetzt über das Prozedere
-    vor Ort informieren.
+  title: Sie suchen eine Location?
+  text: Wir haben da was!
+  sliderimage: slider-sfb-3.jpg
   textposition: left
-  sliderimage: slider-dummy.jpg
-  internallink: >
-    gesamtverein/allgemeines/besucheranmeldung
+  internallink: gesamtverein/allgemeines/svz
   externallink: ""
-  buttontext: Erklärung + Hygienekonzept
+  buttontext: ""
 - 
   title: Amazon Smile
   text: >
@@ -45,13 +41,17 @@ Slides:
   externallink: ""
   buttontext: "So geht's"
 - 
-  title: Sie suchen eine Location?
-  text: Wir haben da was!
-  sliderimage: slider-sfb-3.jpg
+  title: Regeln für Heimspiele
+  text: >
+    Zutritt auf Sportgelände nur noch mit
+    2G-Nachweis möglich! Jetzt über das
+    Prozedere vor Ort informieren.
   textposition: left
-  internallink: gesamtverein/allgemeines/svz
+  sliderimage: slider-dummy.jpg
+  internallink: >
+    gesamtverein/allgemeines/besucheranmeldung
   externallink: ""
-  buttontext: ""
+  buttontext: Erklärung + Hygienekonzept
 
 ----
 
