@@ -8,6 +8,9 @@ options:
   status: true
 fields:
   title: title
+  subTitle:
+    label: SubHeadline
+    type: text
   headline: headline
   text:
     label: text
