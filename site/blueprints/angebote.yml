@@ -1,9 +1,0 @@
-title: Angebote
-options:
-  template: false
-  url: false
-  delete: false
-fields:
-  title: title
-pages:
-  template: kurs

@@ -5,7 +5,7 @@ header('Content-type: application/json; charset=utf-8');
 // Get all events
 $result = [];
 
-foreach ($page->parent()->children()->visible()->sortBy('datum', 'DESC') as $event):
+foreach ($page->parent()->children()->listed()->sortBy('datum', 'DESC') as $event):
 
     $eventData = [];
     $eventData['dateStart'] = (string)$event->datum();

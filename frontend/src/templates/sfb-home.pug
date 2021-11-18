@@ -1,0 +1,241 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+  - var vendorStyles = ['tiny-slider/dist/tiny-slider.css']
+  - var vendorScripts = ['tiny-slider/dist/min/tiny-slider.js', 'jarallax/dist/jarallax.min.js']
+  - var parentMenu = 'Demos'
+  - var pageTitle = 'Mobile App Showcase'
+  - var isNavbarButtonLight = true
+
+//- Navbar
+block navbar
+  include partials/navbar-floating-light
+
+//- Page Content
+block content
+
+  // Hero - Featured Products (tabs)
+  section.position-relative.bg-gradient.pt-5.pt-lg-6.pb-7.mb-7
+    .shape.shape-bottom.shape-curve.bg-body
+      svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3000 185.4')
+        path(fill='currentColor' d='M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z')
+
+    // Tabs
+    .container.pb-7
+      .row.align-items-center.pb-7.pt-7
+
+        .col-lg-9
+          .tab-content
+            #camera.tab-pane.fade.show.active
+              .row.align-items-center
+                .col-12.order-lg-1.text-center.text-lg-start
+                  .ps-xl-5
+                    h2.h1.text-light Wir haben da was!
+                    p.fs-lg.text-light.mb-lg-5 Jetzt unser SVZ mieten
+                    a(href='#').btn.btn-translucent-light Jetzt informieren
+            #sneakers.tab-pane.fade
+              .row.align-items-center
+                .col-lg-6.order-lg-2.pb-1.mb-4.pb-lg-0.mb-lg-0
+                  .mx-auto(style='max-width: 443px;')
+                    img(src='img/demo/shop-homepage/hero/02.png' alt='Running Sneakers')
+                .col-lg-6.order-lg-1.text-center.text-lg-start
+                  .ps-xl-5
+                    h2.h1.text-light Running Sneakers Sports Collection
+                    p.fs-lg.text-light.mb-lg-5 Run like never before. Money back guarantee
+                    a(href='#').btn.btn-translucent-light Get now - $99.00
+            #vr.tab-pane.fade
+              .row.align-items-center
+                .col-lg-6.order-lg-2.pb-1.mb-4.pb-lg-0.mb-lg-0
+                  .mx-auto(style='max-width: 443px;')
+                    img(src='img/demo/shop-homepage/hero/03.png' alt='VR Headset')
+                .col-lg-6.order-lg-1.text-center.text-lg-start
+                  .ps-xl-5
+                    h2.h1.text-light Wireless Virtual Reality Headset
+                    p.fs-lg.text-light.mb-lg-5 Run like never before. Money back guarantee
+                    a(href='#').btn.btn-translucent-light Get now - $180.00
+        .col-lg-3
+          ul(role='tablist').nav.nav-tabs.media-tabs.media-tabs-light.justify-content-center.justify-content-lg-start.pb-3.mb-4.pb-lg-0.mb-lg-0
+            li.nav-item.me-3.mb-3.w-100
+              a(href='#camera' class='nav-link active' data-bs-toggle='tab' role='tab')
+                .d-flex.align-items-center
+                  .w-100.ps-2.ms-1
+                    .d-flex.justify-content-between.align-items-center
+                      .fs-sm.pe-1 Sie suchen eine Location?
+                      i.ai-chevron-right.lead.ms-2.me-1
+            li.nav-item.me-3.mb-3.w-100
+              a(href='#sneakers' class='nav-link' data-bs-toggle='tab' role='tab')
+                .d-flex.align-items-center
+                  .w-100.ps-2.ms-1
+                    .d-flex.justify-content-between.align-items-center
+                      .fs-sm.pe-1 Amazon Smile
+                      i.ai-chevron-right.lead.ms-2.me-1
+            li.nav-item.me-3.mb-3.w-100
+              a(href='#vr' class='nav-link' data-bs-toggle='tab' role='tab')
+                .d-flex.align-items-center
+                  .w-100.ps-2.ms-1
+                    .d-flex.justify-content-between.align-items-center
+                      .fs-sm.pe-1 Regeln für Heimspiele - 2G!
+                      i.ai-chevron-right.lead.ms-2.me-1
+
+
+  // Pricing
+  section.container.my-2.pt-5.my-md-0.pt-md-6.pt-lg-7.pb-4.pb-md-6
+    h2.text-center.pt-2.pb-4 Choose your plan
+    .pricing-wrap
+      .price-switch.justify-content-center.justify-content-sm-end.pb-2.mb-4
+        span.price-label.me-2 Monthly
+        .form-check.form-switch
+          input(type='checkbox' id='priceSwitch').form-check-input
+          label(for='priceSwitch').form-check-label
+        span.price-label.ms-1 Annual
+      .row
+        .col-lg-4.col-sm-6.mb-grid-gutter
+          .card.border-0.shadow.w-100
+            .card-img-top.bg-secondary.text-center.py-5.px-grid-gutter
+              h3.text-body.mb-0 Free
+            .card-body.px-grid-gutter.py-grid-gutter
+              .d-flex.align-items-end.py-2.px-4.mb-4
+                span.h2.fw-normal.text-muted.mb-1.me-2 $
+                span.price.display-2.fw-normal.text-primary.px-1.me-2(data-current-price='0' data-new-price='0') 0
+                span.h3.fs-lg.fw-medium.text-muted.mb-2 per<br>month
+              ul.list-unstyled.py-2.mb-4
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span 20 millions tracks
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span Shuffle play
+                li.d-flex.align-items-center.mb-3
+                  i.ai-x.fs-xl.text-muted.me-2
+                  span.text-muted No ads
+                li.d-flex.align-items-center.mb-3
+                  i.ai-x.fs-xl.text-muted.me-2
+                  span.text-muted Get unlimited skips
+                li.d-flex.align-items-center.mb-3
+                  i.ai-x.fs-xl.text-muted.me-2
+                  span.text-muted Offline mode
+                li.d-flex.align-items-center.mb-3
+                  i.ai-x.fs-xl.text-muted.me-2
+                  span.text-muted 7 profiles
+              .text-center.mb-2
+                a(href='#').btn.btn-outline-primary Get started
+        .col-lg-4.col-sm-6.mb-grid-gutter
+          .card.card-active.w-100
+            .card-img-top.bg-gradient.text-center.py-5.px-grid-gutter
+              h3.text-light.mb-0 Premium
+            .card-body.px-grid-gutter.py-grid-gutter
+              .d-flex.align-items-end.py-2.px-4.mb-4
+                span.h2.fw-normal.text-muted.mb-1.me-2 $
+                span.price.display-2.fw-normal.text-primary.px-1.me-2(data-current-price='10' data-new-price='8') 10
+                span.h3.fs-lg.fw-medium.text-muted.mb-2 per<br>month
+              ul.list-unstyled.py-2.mb-4
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span 20 millions tracks
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span Shuffle play
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span No ads
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span Get unlimited skips
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span Offline mode
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span 7 profiles
+              .text-center.mb-2
+                a(href='#').btn.btn-primary Get started
+        .col-lg-4.col-sm-12.mb-grid-gutter
+          .card.border-0.shadow.w-100
+            .card-img-top.bg-secondary.text-center.py-5.px-grid-gutter
+              h3.text-body.mb-0 Family
+            .card-body.px-grid-gutter.py-grid-gutter
+              .d-flex.align-items-end.py-2.px-4.mb-4
+                span.h2.fw-normal.text-muted.mb-1.me-2 $
+                span.price.display-2.fw-normal.text-primary.px-1.me-2(data-current-price='15' data-new-price='12') 15
+                span.h3.fs-lg.fw-medium.text-muted.mb-2 per<br>month
+              ul.list-unstyled.py-2.mb-4
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span 20 millions tracks
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span Shuffle play
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span No ads
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span Get unlimited skips
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span Offline mode
+                li.d-flex.align-items-center.mb-3
+                  i.ai-check.fs-xl.text-primary.me-2
+                  span 7 profiles
+              .text-center.mb-2
+                a(href='#').btn.btn-outline-primary Get started
+  
+
+  // FAQ
+  section.container.pb-5.mb-3.pb-md-6.pb-lg-7
+    h2.text-center.mb-5 Frequent questions
+    .row.align-items-center
+      .col-md-6.mb-5.mb-md-0
+        #faq.accordion
+
+          .accordion-item.shadow
+            h2#faq-heading-1.accordion-header
+              button(type='button' data-bs-toggle='collapse' data-bs-target='#faq-content-1' aria-expanded='true' aria-controls='faq-content-1').accordion-button How do I create a playlist?
+            #faq-content-1.accordion-collapse.collapse.show(aria-labelledby='faq-heading-1' data-bs-parent='#faq')
+              .accordion-body
+                .fs-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+          .accordion-item.shadow
+            h2#faq-heading-2.accordion-header
+              button(type='button' data-bs-toggle='collapse' data-bs-target='#faq-content-2' aria-expanded='false' aria-controls='faq-content-2').accordion-button.collapsed Is it only possible to shuffle play music?
+            #faq-content-2.accordion-collapse.collapse(aria-labelledby='faq-heading-2' data-bs-parent='#faq')
+              .accordion-body
+                .fs-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+          .accordion-item.shadow
+            h2#faq-heading-3.accordion-header
+              button(type='button' data-bs-toggle='collapse' data-bs-target='#faq-content-3' aria-expanded='false' aria-controls='faq-content-3').accordion-button.collapsed Where can I find Podcasts?
+            #faq-content-3.accordion-collapse.collapse(aria-labelledby='faq-heading-3' data-bs-parent='#faq')
+              .accordion-body
+                .fs-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+          .accordion-item.shadow
+            h2#faq-heading-4.accordion-header
+              button(type='button' data-bs-toggle='collapse' data-bs-target='#faq-content-4' aria-expanded='false' aria-controls='faq-content-4').accordion-button.collapsed How do I activate Data Saver mode?
+            #faq-content-4.accordion-collapse.collapse(aria-labelledby='faq-heading-4' data-bs-parent='#faq')
+              .accordion-body
+                .fs-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+      .col-md-6
+        img(src='img/demo/mobile-app/faq-illustration.svg' alt='Illustration').d-block.mx-auto
+  
+
+  // CTA
+  section.bg-gradient.py-5.pt-md-7.pb-md-6
+    .container.text-center.pt-3.pb-2.pt-md-0.pb-md-0
+      h2.text-light.mb-5 Love music like we do? Try Around Premium
+      .d-sm-flex.justify-content-center
+        .me-sm-3.mb-3
+          a(href='#' role='button').btn-market.btn-apple
+            span.btn-market-subtitle Download on the
+            span.btn-market-title App Store
+        .mb-3
+          a(href='#' role='button').btn-market.btn-google
+            span.btn-market-subtitle Download on the
+            span.btn-market-title Google Play
+
+
+//- Footer
+block footer
+  include partials/footer-default

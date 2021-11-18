@@ -1,0 +1,8 @@
+title: Förderverein
+fields:
+  title: title
+  headline: fields/headline
+  text:
+    type: textarea
+    label: Text
+  people: fields/people

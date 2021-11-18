@@ -3,8 +3,8 @@
     <div class="container p-0 container--first--article">
         <div class="page page--single--article">
             <div class="first--article">
-                <?php if ($titleImage = $page->getTitleImage()):?>
-                    <img src="<?= $titleImage->resize(1500)->url();?>"/>
+                <?php if ($page->getTitleImage()):?>
+                    <img src="<?= $page->getTitleImage()->resize(1500)->url();?>"/>
                     <div class="first--article--headline">
                         <span class="title">
                             <?= $page->title();?>
@@ -19,7 +19,7 @@
                         </span>
                     </div>
                     <div class="first--article--desc text-center text-md-right">
-                        <?= $titleImage->caption();?>
+                        <?= $page->getTitleImage()->caption();?>
                     </div>
                 <?php endif; ?>
             </div>
@@ -31,7 +31,7 @@
                 <div class="blog-post single mt-0">
                     <div class="mb-3 box-3">
                         <div class="inner">
-                            <?php if (!$titleImage): ?>
+                            <?php if (!$page->getTitleImage()): ?>
                                 <p class="date-meta text-grey-color pt-4">
                                 <span class="badge badge-primary">
                                     <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', strtotime($page->datum()));?>
@@ -73,7 +73,7 @@
             <div class="col-12 right-column">
 
                 <?php if ($page->galleryImages()->isNotEmpty()): ?>
-                    <?php snippet('gallery', ['images' => $page->convertFilesToCollection($page->galleryImages()), 'desc' => $page->galleryName()]); ?>
+                    <?php snippet('gallery', ['images' => $page->galleryImages()->toFiles(), 'desc' => $page->galleryName()]); ?>
                 <?php endif; ?>
 
                 <h5 class="sub-heading-2 mb-0">Auch interessant</h5>

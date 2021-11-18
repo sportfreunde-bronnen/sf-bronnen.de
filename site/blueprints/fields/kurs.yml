@@ -4,20 +4,24 @@ fields:
     type: headline
     label: Sonstige Angaben
   trainer:
-    label: Übungsleiter/in
-    type: wysiwyg
+    label: Übungsleiter:in
+    type: textarea
+    width: 1/2
   ort:
     label: Trainingsort
-    type: wysiwyg
+    type: textarea
+    width: 1/2
   zeiten:
     label: Trainingszeiten
-    type: wysiwyg
+    type: textarea
+    width: 1/2
   anmeldung:
     label: Anmeldung/Infos
-    type: wysiwyg
+    type: textarea
+    width: 1/2
   kosten:
     label: Kosten (wenn benötigt)
-    type: wysiwyg
+    type: textarea
   alexaId:
     type: text
     label: Alexa Mapping (nur für Magnus interessant)

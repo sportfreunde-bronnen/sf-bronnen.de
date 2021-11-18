@@ -1,0 +1,12 @@
+title: Attraktive Herren
+options:
+  delete: false
+  url: false
+  status: false
+fields:
+  title: title
+  headline: fields/headline
+  text:
+    type: textarea
+    required: true
+  people: fields/people

@@ -2,12 +2,13 @@
 <?php snippet('h1'); ?>
     <div class="container p-0 container--first--article">
         <div class="page page--articles">
-            <?php $firstArticle = $page->children()->visible()->sortBy('datum', 'desc')->first();?>
+            <?php $firstArticle = $page->children()->listed()->sortBy('datum', 'desc')->first();?>
             <?php if ($firstArticle): ?>
                 <div class="first--article mb-5">
                     <?php if ($firstArticle->teaserimage()->isNotEmpty()):?>
+
                         <a href="<?= $firstArticle->url();?>" title="Zum Artikel: <?= $firstArticle->title();?>">
-                            <img src="<?= $site->find($firstArticle->uri())->images()->find($firstArticle->teaserimage())->resize(1500)->url();?>"/>
+                            <img src="<?= $firstArticle->teaserimage()->toFile()->resize(1500)->url();?>"/>
                         </a>
                         <div class="first--article--headline">
                             <span class="title">
@@ -27,7 +28,7 @@
     </div>
     <div class="main-container container pl-sm-0 pr-sm-0 pt-0">
         <h5 class="sub-heading-2 mb-5" id="archive--headline">Archiv</h5>
-        <?php if ($page->children()->visible()->count() > 0): ?>
+        <?php if ($page->children()->listed()->count() > 0): ?>
             <div class="text-center">
                 <ul class="list-unstyled list-inline" id="article-filter">
                     <li class="list-inline-item"><a class="btn animation<?= ('all' === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="all">Alles</a></li>
@@ -43,7 +44,7 @@
                             <p>
                                 <?php if ($post->teaserimage()->isNotEmpty()): ?>
                                     <a href="<?= $post->url();?>">
-                                        <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->resize(750)->url();?>" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center-xs">
+                                        <img src="<?= $post->teaserimage()->toFile()->resize(750)->url();?>" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center-xs">
                                     </a>
                                 <?php endif; ?>
                             </p>

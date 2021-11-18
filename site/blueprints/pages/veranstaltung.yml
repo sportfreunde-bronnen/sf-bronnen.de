@@ -1,0 +1,7 @@
+title: Veranstaltung
+options:
+  url: false
+  delete: false
+fields:
+  veranstaltung:
+    extends: fields/veranstaltung

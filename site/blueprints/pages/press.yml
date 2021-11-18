@@ -1,0 +1,39 @@
+title: Presse
+pages: false
+options:
+  url: false
+  delete: false
+fields:
+  headline:
+    extends: fields/headline
+  text:
+    label: Beschreibungstext
+    type: textarea
+    required: true
+  articles:
+    label: Presseberichte
+    type: structure
+    entry: >
+      <b>{{date}}: {{title}}</b><br/><a href="{{url}}">{{url}}</a> -> {{tags}}<br/>{{text}}
+    fields:
+      title:
+        label: Titel
+        type: text
+        required: true
+      url:
+        label: URL
+        type: text
+        required: true
+      text:
+        label: Einleitungstext
+        type: text
+        required: false
+      date:
+        label: Datum
+        type: date
+        format: YYYY-mm-dd
+        required: true
+      tags:
+        label: Kategorien
+        type: tags
+        required: false

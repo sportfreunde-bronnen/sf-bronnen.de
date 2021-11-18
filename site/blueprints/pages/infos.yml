@@ -1,0 +1,10 @@
+title: Infos
+options:
+  pages: false
+fields:
+  headline:
+    extends: fields/headline
+  infotext:
+    type: textarea
+    label: Begrüßungstext
+  people: fields/people

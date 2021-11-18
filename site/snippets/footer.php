@@ -32,7 +32,7 @@
                 <h5>Freunde & Partner</h5>
                 <ul class="list-unstyled foot-list-style-1 text-weight-light">
                     <?php foreach ($site->homePage()->links()->toStructure() as $link): ?>
-                        <li><a title="Zur Webseite: <?= $link->name;?>" href="<?= $link->link;?>"><?= $link->name;?></a></li>
+                        <li><a title="Zur Webseite: <?= $link->name();?>" href="<?= $link->link();?>"><?= $link->name();?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>

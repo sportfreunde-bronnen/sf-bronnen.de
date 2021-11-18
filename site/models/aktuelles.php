@@ -5,7 +5,7 @@
  *
  * @author Magnus Buk <MagnusBuk@gmx.de>
  */
-class AktuellesPage extends Page
+class AktuellesPage extends \Kirby\Cms\Page
 {
     /**
      * Get all used tags for the page
@@ -14,7 +14,7 @@ class AktuellesPage extends Page
      */
     public function getUsedTags()
     {
-        $tags = $this->children()->visible()->pluck('tags', ',', true);
+        $tags = $this->children()->listed()->pluck('tags', ',', true);
         $tags = array_diff($tags, ["gesamtverein", "fussball", "gymnastik"]);
         asort($tags);
         return $tags;
@@ -23,18 +23,18 @@ class AktuellesPage extends Page
     /**
      * Returns all visible articles for the article overview
      *
-     * @return Collection
+     * @return \Kirby\Cms\Collection
      */
     public function getArticles()
     {
         return $this->children()
-            ->visible()
+            ->listed()
             ->sortBy('datum', 'desc');
     }
 
     public function isInitialFiltering()
     {
-        return !(empty(kirby()->request()->query()->tag()));
+        return !is_null(get('tag', null));
     }
 
     /**
@@ -43,7 +43,7 @@ class AktuellesPage extends Page
     public function getActiveTagGroup()
     {
         if ($this->isInitialFiltering()) {
-            return kirby()->request()->query()->tag();
+            return get('tag');
         }
         return 'all';
     }

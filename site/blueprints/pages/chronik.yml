@@ -1,0 +1,22 @@
+title: Chronik
+pages: false
+files: false
+options:
+  url: false
+  template: false
+  status: false
+  files: false
+fields:
+  headline: fields/headline
+  ereignisse:
+    label: Ereignisse
+    type: structure
+    entry: >
+      {{jahr}} - {{ereignis}}
+    fields:
+      jahr:
+        label: Jahr
+        type: text
+      ereignis:
+        label: Ereignis
+        type: textarea

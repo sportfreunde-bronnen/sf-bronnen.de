@@ -4,7 +4,7 @@ header('Content-type: application/json; charset=utf-8');
 
 $result = [];
 
-foreach ($site->index()->visible()->filterBy('template', 'kurs') as $course):
+foreach ($site->index()->listed()->filterBy('template', 'kurs') as $course):
 
     $courseData = [];
     $courseData['id'] = (string)($course->alexaId()->isEmpty() ? $course->title()->text() : $course->alexaId());

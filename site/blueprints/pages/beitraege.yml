@@ -1,0 +1,61 @@
+title: Beiträge
+pages: false
+options:
+  template: false
+  url: false
+  status: false
+fields:
+  headline:
+    label: Überschrift
+    type: text
+  text:
+    type: textarea
+    label: Text
+  beitraege:
+    label: Beiträge
+    type: structure
+    entry: >
+      <b>{{name}}</b><br/>Grundbeitrag: {{grundbeitrag}} {{grundbeitragzusatz}}<br/>Zuschlag Fussball: {{fussball}} {{fussballzusatz}}<br/>Zuschlag Gymnastik: {{gymnastik}} {{gymnastikzusatz}}<br/>Zuschlag Aikido: {{aikido}} {{aikidozusatz}}
+    fields:
+      name:
+        label: Preisstaffelung
+        type: text
+      grundbeitrag:
+        label: Grundbeitrag
+        type: number
+        width: 2/3
+        step: .50
+      grundbeitragZusatz:
+        label: Zusatz
+        type: text
+        width: 1/3
+      fussball:
+        label: Zuschlag Fußball
+        type: number
+        width: 2/3
+        step: .50
+      fussballZusatz:
+        label: Zusatz
+        type: text
+        width: 1/3
+      gymnastik:
+        label: Zuschlag Gymnastik
+        type: number
+        width: 2/3
+        step: .50
+      gymnastikZusatz:
+        label: Zusatz
+        type: text
+        width: 1/3
+      aikido:
+        label: Zuschlag Aikido
+        type: number
+        width: 2/3
+        step: .50
+      aikidoZusatz:
+        label: Zusatz
+        type: text
+        width: 1/3
+  zusatz:
+    label: Text Legende
+    type: textarea

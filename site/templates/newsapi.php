@@ -4,7 +4,7 @@ header('Content-type: application/json; charset=utf-8');
 
 $result = [];
 
-foreach ($page->parent()->children()->visible()->sortBy('datum', 'DESC')->limit(5) as $news):
+foreach ($page->parent()->children()->listed()->sortBy('datum', 'DESC')->limit(5) as $news):
 
     $newsData = [];
     $newsData['id'] = (string)$news->getId();

@@ -1,5 +1,7 @@
 <?php
 
+include 'downloads.php';
+
 /**
  * Class BerichtPage
  *
@@ -21,24 +23,16 @@ class BerichtPage extends DownloadsPage
 
     public function getTitleImage()
     {
-        $images = explode(',', $this->textImages());
-        if (count($images) === 0) {
-            return false;
-        }
-        return $this->images()->find($images[0]);
+        return $this->textImages()->toFiles()->first();
     }
 
     public function getMoreImages()
     {
-        $images = explode(',', $this->textImages());
-        if (count($images) <= 1) {
+        $images = $this->textImages()->toFiles();
+        if ($images->count() <= 1) {
             return false;
         }
-        $imagesArray = [];
-        foreach ($images as $imageUrl) {
-            $imagesArray[] = $this->images()->find($imageUrl);
-        }
-        return array_slice($imagesArray, 1, 1);
+        return $images->slice(1,1);
     }
 
     public function getLatestNews()
@@ -46,7 +40,7 @@ class BerichtPage extends DownloadsPage
         return $this
             ->site()
             ->index()
-            ->visible()
+            ->listed()
             ->filterBy('template', 'bericht')
             ->sortBy('datum', 'desc')
             ->limit(6);

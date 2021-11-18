@@ -1,0 +1,31 @@
+title: SVZ
+fields:
+  title: title
+  headline: fields/headline
+  text:
+    type: textarea
+    required: true
+    label: Text
+    width: 1/2
+  facts:
+    type: textarea
+    required: true
+    label: Fakten
+    width: 1/2
+  gallery:
+    label: Bildergalerie
+    type: files
+    multiple: true
+  quotes:
+    label: Stimmen
+    type: structure
+    fields:
+      quote:
+        type: textarea
+        required: true
+        label: Stimme
+files:
+  fields:
+    caption:
+      type: text
+      label: Beschreibung

@@ -6,21 +6,21 @@
             </button>
             <div class="collapse navbar-collapse navbar-cat-collapse animation">
                 <ul class="nav navbar-nav text-weight-bold">
-                    <?php foreach($pages->visible() as $page): ?>
-                        <?php if ($page->children()->visible()->count()): ?>
+                    <?php foreach($pages->listed() as $page): ?>
+                        <?php if ($page->children()->listed()->count()): ?>
                             <li class="nav-item dropdown<?= ($page->isOpen()) ? ' active show' : '';?>">
                                 <a href="<?= $page->url();?>" class="nav-link dropdown-toggle" data-toggle="dropdown"><?= $page->title();?> <i class="fa fa-angle-down"></i></a>
                                 <?php if ($page->hasChildren()): ?>
                                     <div class="dropdown-menu rounded-0">
-                                        <?php foreach ($page->children()->visible() as $subPage): ?>
+                                        <?php foreach ($page->children()->listed() as $subPage): ?>
                                             <?php if ($subPage->hasChildren()): ?>
                                                 <a class="dropdown-item sub <?= ($subPage->isOpen()) ? ' active' : '';?>"><?= $subPage->title();?></a>
                                                 <?php if ($subPage->title() == 'Veranstaltungen'):?>
-                                                    <?php foreach ($subPage->children()->visible()->sortBy('datum') as $subSubPage): ?>
+                                                    <?php foreach ($subPage->children()->listed()->sortBy('datum') as $subSubPage): ?>
                                                         <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?></a>
                                                     <?php endforeach;?>
                                                 <?php else: ?>
-                                                    <?php foreach ($subPage->children()->visible() as $subSubPage): ?>
+                                                    <?php foreach ($subPage->children()->listed() as $subSubPage): ?>
                                                         <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?></a>
                                                     <?php endforeach;?>
                                                 <?php endif; ?>

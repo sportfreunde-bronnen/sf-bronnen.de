@@ -1,0 +1,14 @@
+title: Gymnastik Kurs
+fields:
+  title: title
+  headline: fields/headline
+  text:
+    label: Beschreibungstext
+    type: textarea
+    required: true
+  hinweis:
+    label: Hinweis
+    type: text
+    help: Präsenter Hinweis auf der Kursseite (z.B. "Handtücher mitbringen" o.ä.)
+  kurs:
+    extends: fields/kurs

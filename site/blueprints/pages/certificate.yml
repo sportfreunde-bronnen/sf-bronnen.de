@@ -1,0 +1,17 @@
+title: Mitgliederbescheinigung
+pages: false
+options:
+  url: false
+  delete: true
+  template: false
+  visible: true
+  status: true
+fields:
+  title: title
+  headline: fields/headline
+  subTitle:
+    label: Text Überschrift
+    type: text
+  text:
+    label: Erklärungstext
+    type: textarea

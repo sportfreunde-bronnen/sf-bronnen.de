@@ -1,0 +1,27 @@
+title: Tracktics
+pages: false
+options:
+  delete: false
+  url: true
+fields:
+  date:
+    type: date
+    required: true
+    label: Datum des Spiels
+    help: Wann war das Spiel?
+  gegner:
+    type: text
+    required: true
+    label: Gegner
+    help: Wer war der Gegner im Spiel?
+  spieler:
+    type: text
+    required: true
+    label: Spieler
+    help: Welcher Spieler hat den Tracker getragen?
+  category:
+    label: Mannschaft
+    type: radio
+    options:
+      erste: Erste Mannschaft
+      zweite: Zweite Mannschaft

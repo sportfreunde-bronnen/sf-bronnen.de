@@ -1,48 +1,79 @@
 {
-  "name": "getkirby/kirby",
-  "description": "The Kirby 2 core.",
+  "name": "getkirby/cms",
+  "type": "kirby-cms",
+  "description": "The Kirby 3 core",
   "keywords": [
-    "core",
     "kirby",
-    "cms"
+    "cms",
+    "core"
   ],
   "homepage": "https://getkirby.com",
+  "version": "3.6.0",
   "license": "proprietary",
   "authors": [
     {
-      "name": "Bastian Allgeier",
-      "email": "bastian@getkirby.com",
-      "homepage": "http://bastianallgeier.com"
+      "name": "Kirby Team",
+      "email": "support@getkirby.com",
+      "homepage": "https://getkirby.com"
     }
   ],
+  "require": {
+    "php": ">=7.4.0 <8.1.0",
+    "ext-ctype": "*",
+    "ext-mbstring": "*",
+    "claviska/simpleimage": "3.6.3",
+    "filp/whoops": "2.14.4",
+    "getkirby/composer-installer": "^1.2.1",
+    "laminas/laminas-escaper": "2.9.0",
+    "michelf/php-smartypants": "1.8.1",
+    "mustangostang/spyc": "0.6.3",
+    "phpmailer/phpmailer": "6.5.1",
+    "psr/log": "1.1.4",
+    "true/punycode": "2.1.1"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "platform-check": false
+  },
+  "autoload": {
+    "psr-4": {
+      "Kirby\\": "src/"
+    },
+    "classmap": [
+      "dependencies/"
+    ],
+    "files": [
+      "config/setup.php",
+      "config/helpers.php"
+    ]
+  },
+  "scripts": {
+    "post-update-cmd": "curl -o cacert.pem https://curl.se/ca/cacert.pem",
+    "analyze": [
+      "@analyze:composer",
+      "@analyze:psalm",
+      "@analyze:phpcpd",
+      "@analyze:phpmd"
+    ],
+    "analyze:composer": "composer validate --strict --no-check-version --no-check-all",
+    "analyze:phpcpd": "phpcpd --fuzzy --exclude tests --exclude vendor .",
+    "analyze:phpmd": "phpmd . ansi phpmd.xml.dist --exclude 'dependencies/*,tests/*,vendor/*'",
+    "analyze:psalm": "psalm",
+    "build": "./scripts/build",
+    "ci": [
+      "@fix",
+      "@analyze",
+      "@test"
+    ],
+    "fix": "php-cs-fixer fix",
+    "test": "phpunit --stderr --coverage-html=tests/coverage",
+    "zip": "composer archive --format=zip --file=dist"
+  },
   "support": {
     "email": "support@getkirby.com",
     "issues": "https://github.com/getkirby/kirby/issues",
     "forum": "https://forum.getkirby.com",
     "source": "https://github.com/getkirby/kirby"
   },
-  "autoload": {
-    "files": [
-      "composer.php"
-    ]
-  },
-  "require": {
-    "php": ">=5.4.0",
-    "ext-mbstring": "*",
-    "ext-gd": "*",
-    "erusev/parsedown-extra": "0.7.*",
-    "michelf/php-smartypants": "1.8.*",
-    "getkirby/toolkit": "2.5.8",
-    "filp/whoops": "2.1.*"
-  },
-  "archive": {
-    "exclude": [
-      "/.gitmodules",
-      "/.gitignore",
-      "/.travis.yml",
-      "phpunit.xml",
-      "/test",
-      "/vendor"
-    ]
-  }
+  "_comment": "TODO: psr/log is not used by Kirby; drop pinned version when Kirby no longer supports PHP 7"
 }

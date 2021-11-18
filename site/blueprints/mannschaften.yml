@@ -1,9 +1,0 @@
-title: Mannschaften
-fields:
-  title: title
-pages:
-  template: mannschaft
-options:
-  template: false
-  url: false
-  delete: false

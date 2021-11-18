@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: docker/php.dockerfile
+    working_dir: /app
+    volumes:
+      - sock:/sock
+      - ./:/app
+    networks:
+      - php-net
+    container_name: sfb-php
+
+  nginx:
+    build:
+      context: ./
+      dockerfile: docker/nginx.dockerfile
+    ports:
+      - 1949:80
+    volumes:
+      - sock:/sock
+      - ./:/app
+    depends_on:
+      - php
+    networks:
+      - php-net
+    container_name: sfb-nginx
+
+
+volumes:
+  sock:
+    driver: local
+
+networks:
+  php-net:
+    driver: bridge

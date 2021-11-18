@@ -17,7 +17,7 @@ class HomePage extends Page
             $this
                 ->site()
                 ->index()
-                ->visible()
+                ->listed()
                 ->filterBy('template', 'veranstaltung')
                 ->filter(function ($page) {
                     if (strtotime($page->datum()) === -1) {
@@ -34,7 +34,7 @@ class HomePage extends Page
         return $this
             ->site()
             ->index()
-            ->visible()
+            ->listed()
             ->filterBy('template', 'bericht')
             ->sortBy('datum', 'desc')
             ->limit(6);

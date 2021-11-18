@@ -5,10 +5,10 @@ fields:
     type: headline
   galleryToggle:
     label: Soll eine Bildergalerie angelegt werden?
-    type: fieldtoggle
-    options:
-      no: Nein
-      yes: Ja
+    type: toggle
+    text:
+      - "no"
+      - "yes"
     show:
       yes: galleryName galleryImages
     hide:
@@ -18,7 +18,6 @@ fields:
     label: Name der Galerie
   galleryImages:
     label: Bildergalerie
-    type: selector
+    type: files
     mode: multiple
-    types:
-      - image
+    query: page.images

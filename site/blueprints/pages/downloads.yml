@@ -1,0 +1,22 @@
+title: Downloads
+options:
+  template: false
+  url: false
+  status: true
+pages: false
+preset: page
+fields:
+  title: title
+  headline: fields/headline
+  downloads:
+    title: Dateien
+    type: structure
+    fields:
+      category:
+        label: Kategorie
+        type: text
+        required: true
+      downloads:
+        label: Dateien
+        type: files
+        multiple: true

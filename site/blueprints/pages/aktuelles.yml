@@ -1,0 +1,16 @@
+title: Aktuelles
+sections:
+  pages:
+    headline: News
+    status: all
+    templates: bericht
+    sortBy: datum desc
+    limit: 12
+    layout: cards
+options:
+  url: false
+  status: false
+  template: false
+  delete: false
+
+

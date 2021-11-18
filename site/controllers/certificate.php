@@ -1,5 +1,9 @@
 <?php
+
+require(__DIR__ . '/../../vendor/autoload.php');
+
 use Uniform\Form;
+
 return function ($site, $pages, $page) {
     $form = new Form([
         'email' => [
@@ -16,7 +20,8 @@ return function ($site, $pages, $page) {
         ]
     ]);
     if (r::is('POST')) {
-        $form->certificateAction([]);
+        $form->action(\Uniform\Actions\CertificateAction::class);
+        //$form->certificateAction([]);
     }
     return compact('form');
 };
