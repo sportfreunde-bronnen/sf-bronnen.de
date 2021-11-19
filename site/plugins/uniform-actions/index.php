@@ -16,12 +16,12 @@ class PhpMailerAction extends Action
 
             $mail = new PHPMailer;
             $mail->isSMTP();
-            $mail->SMTPDebug = true;
+            //$mail->SMTPDebug = true;
             $mail->Host = c::get('mailerHost');
             $mail->SMTPAuth = true;
             $mail->Username = c::get('mailerFrom');
             $mail->Password = c::get('mailerPassword');
-            $mail->SMTPSecure = 'tls';
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = c::get('MailerSSLPort');
             $mail->CharSet = 'UTF-8';
 
