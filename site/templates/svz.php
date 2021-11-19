@@ -12,7 +12,7 @@
             </div>
         </div>
         <hr/>
-        <?php snippet('gallery', ['images' => $page->convertFilesToCollection($page->gallery()), 'desc' => 'Bildergalerie']); ?>
+        <?php snippet('gallery', ['images' => $page->gallery()->toFiles(), 'desc' => 'Bildergalerie']); ?>
         <hr/>
         <section class="section-area section-testimonials">
             <div class="container text-xs-center text-sm-center text-md-left">

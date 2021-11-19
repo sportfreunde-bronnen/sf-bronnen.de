@@ -22,7 +22,7 @@
                 <div id="collapse<?= $i;?>" class="collapse" data-parent="#accordion-downloads">
                     <div class="card-body">
                         <ul class="list-group">
-                            <?php foreach ($page->convertFilesToCollection($downloadBlock->downloads()) as $download):; ?>
+                            <?php foreach ($downloadBlock->downloads()->toFiles() as $download):; ?>
                                 <li class="list-group-item d-sm-flex justify-content-between align-items-center text-left">
                                     <a href="<?= $download->url();?>">
                                         <strong><?= $download->description();?></strong>
