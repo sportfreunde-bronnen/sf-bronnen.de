@@ -16,12 +16,12 @@
             </div>
             <div class="row blog-post" id="article-grid">
                 <?php foreach ($articles as $article): ?>
-                    <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-date-created="<?= $article->date();?>" data-groups='<?= $page->getNewsGroupsAsShuffleArray($article);?>'>
+                    <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-date-created="<?= $article->date()->toDate('Y-m-d');?>" data-groups='<?= $page->getNewsGroupsAsShuffleArray($article);?>'>
                         <div class="box-3 animation text-xs-center">
                             <div class="inner">
                                 <p class="date-meta text-grey-color">
                                     <span class="badge badge-primary">
-                                        <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', $article->date());?>
+                                        <i class="fa fa-calendar"></i>&nbsp; <?= $article->date()->toDate('d.m.Y');?>
                                         Schwäbische Zeitung
                                     </span>
                                 </p>

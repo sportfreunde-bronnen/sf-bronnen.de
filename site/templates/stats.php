@@ -20,7 +20,7 @@
             <tbody>
             <?php foreach ($page->children() as $statsPage): ?>
                 <tr>
-                    <td class="text-weight-bold"><?= date('d.m.Y', $statsPage->date());?></td>
+                    <td class="text-weight-bold"><?= $statsPage->date()->toDate('d.m.Y');?></td>
                     <td><?= $statsPage->spieler();?></td>
                     <td><?= $statsPage->gegner();?></td>
                     <td><?= ucfirst($statsPage->category());?></td>

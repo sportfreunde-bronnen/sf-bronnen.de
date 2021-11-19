@@ -25,14 +25,14 @@ class PressPage extends Page
     public function getActiveTagGroup()
     {
         if ($this->isInitialFiltering()) {
-            return kirby()->request()->query()->tag();
+            return get('tag');
         }
         return 'all';
     }
 
     public function isInitialFiltering()
     {
-        return !(empty(kirby()->request()->query()->tag()));
+        return !is_null(get('tag', null));
     }
 
     public function getNewsGroupsAsShuffleArray($structure)
