@@ -44,6 +44,8 @@ Icon
 /site/sessions/*
 !/site/sessions/index.html
 
+/site/config/config.php
+
 # License
 # ---------------
 
