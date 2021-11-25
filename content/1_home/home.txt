@@ -22,6 +22,18 @@ Links:
 Slides: 
 
 - 
+  title: Regeln für Heimspiele (2G+)
+  text: >
+    Zutritt auf Sportgelände nur noch mit
+    2G PLUS Nachweis möglich! Jetzt über
+    das Prozedere vor Ort informieren.
+  textposition: left
+  sliderimage: slider-dummy.jpg
+  internallink: >
+    gesamtverein/allgemeines/besucheranmeldung
+  externallink: ""
+  buttontext: Erklärung + Hygienekonzept
+- 
   title: Sie suchen eine Location?
   text: Wir haben da was!
   sliderimage: slider-sfb-3.jpg
@@ -40,18 +52,6 @@ Slides:
   internallink: gesamtverein/allgemeines/amazon-smile
   externallink: ""
   buttontext: "So geht's"
-- 
-  title: Regeln für Heimspiele
-  text: >
-    Zutritt auf Sportgelände nur noch mit
-    2G-Nachweis möglich! Jetzt über das
-    Prozedere vor Ort informieren.
-  textposition: left
-  sliderimage: slider-dummy.jpg
-  internallink: >
-    gesamtverein/allgemeines/besucheranmeldung
-  externallink: ""
-  buttontext: Erklärung + Hygienekonzept
 
 ----
 
