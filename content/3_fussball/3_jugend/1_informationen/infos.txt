@@ -6,7 +6,7 @@ Headline: Jugendfußball
 
 ----
 
-Infotext: 
+Infotext:
 
 Im Jugendbereich stellen wir alle Mannschaften von den A-Junioren bis zu den Bambini.
 
@@ -14,44 +14,44 @@ In allen Altersklassen spielen wir als Spielgemeinschaft (SGM) mit unseren Nachb
 
 **Trainingsorte und -zeiten Saison 2021/2022:**
 
-**A-Junioren:  
-**Trainingszeiten: Di. 18:00 - 19:30 & Do. 19:00 - 20:30  
- Training/Spiele: Bronnen  
+**A-Junioren:
+**Trainingszeiten: Di. 18:00 - 19:30 & Do. 19:00 - 20:30
+ Training/Spiele: Bronnen
  Jahrgang: 2003/2004
 
-**B-Junioren:**  
- Trainingszeiten: Di. + Do. 17:30 - 19:00  
- Training/Spiele: Achstetten  
+**B-Junioren:**
+ Trainingszeiten: Di. + Do. 17:30 - 19:00
+ Training/Spiele: Achstetten
  Jahrgang: 2005/2006
 
-**C-Junioren:**  
- Trainingszeiten: Di. + Do. 18:00 - 19:30  
- Training/Spiele: Hüttisheim  
+**C-Junioren:**
+ Trainingszeiten: Di. + Do. 18:00 - 19:30
+ Training/Spiele: Hüttisheim
  Jahrgang: 2007/2008
 
-**D-Junioren:**  
- Trainingszeiten: Di. + Do. 17:30 - 19:00  
- Training/Spiele: Achstetten  
+**D-Junioren:**
+ Trainingszeiten: Di. + Do. 17:30 - 19:00
+ Training/Spiele: Achstetten
  Jahrgang: 2009/2010
 
-**E-Junioren:**  
- Trainingszeiten: Mo. + Mi. 17:30 - 19:00  
- Training/Spiele: Bronnen  
+**E-Junioren:**
+ Trainingszeiten: Mo. + Mi. 17:30 - 19:00
+ Training/Spiele: Bronnen
  Jahrgang: 2011/2012
 
-**E-Junioren:**  
- Trainingszeiten: Mo. + Mi. 17:30 - 19:00  
- Training/Spiele: Achstetten  
+**E-Junioren:**
+ Trainingszeiten: Mo. + Mi. 17:30 - 19:00
+ Training/Spiele: Achstetten
  Jahrgang: 2013/2014
 
-**Bambini:**  
- Trainingszeiten: Mi. 16:30 - 17:30  
- Training/Spiele: Achstetten  
+**Bambini:**
+ Trainingszeiten: Mi. 16:30 - 17:30
+ Training/Spiele: Achstetten
  Jahrgang: 2015/2016
 
 ----
 
-People: 
+People:
 
 - 
   name: Jürgen Anic

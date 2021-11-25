@@ -2,7 +2,15 @@ Title: Weihnachtsfeier
 
 ----
 
-Datum: 2021-12-11 19:00
+Shorttitle: Weihnachtsfeier 2021 - ABGESAGT
+
+----
+
+Datum: 2021-12-11 19:00:00
+
+----
+
+Datumbis: 
 
 ----
 
@@ -10,48 +18,19 @@ Ort: SVZ
 
 ----
 
-Text: 
+Text:
 
 ## Weihnachtsfeier 2021
 
-Je nach den zum Zeitpunkt der Weihnachtsfeier geltenden Corona-Regeln ist eine Teilnahme nach Voranmeldung (Informationen hierzu folgen) unter folgenden Voraussetzungen möglich:
-
-**Basisstufe:**  
- Teilnahme mit 3G-Nachweis (Schnelltest genügt)
-
-**Warnstufe:**  
- Teilnahme mit 3G+ Nachweis (PCR-Test verpflichtend)
-
-**Alarmstufe:**  
- Teilnahme mit 2G-Nachweis
-
-Aufgrund der aktuellen Lage ist die Weihnachtsfeier akut gefährdet. Wir werden zeitnah eine Entscheidung treffen, in welcher Form die Feier stattfinden kann.
-
-*Aktuell befinden wir uns in der Warnstufe (Stand: 03.11.2021)*
+Aufgrund der aktuellen Situation haben wir beschlossen, die Weihnachtsfeier auch im Jahr 2021 abzusagen.
 
 ----
 
-Vimage: cookie-2957962_1280.jpg
+Vimage: - cookie-2957962_1280.jpg
 
 ----
 
 Imageposition: top
-
-----
-
-Document: 
-
-----
-
-Related: gesamtverein/veranstaltungen/zwickel-gemeindecup
-
-----
-
-Shorttitle: Weihnachtsfeier 2021
-
-----
-
-Datumbis: 
 
 ----
 
@@ -60,3 +39,14 @@ Doc:
 ----
 
 Documentdescription: 
+
+----
+
+Related:
+
+- >
+  gesamtverein/veranstaltungen/zwickel-gemeindecup
+
+----
+
+Document: 
