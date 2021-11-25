@@ -82,7 +82,7 @@
                         <div class="col-12 col-md-6 col-lg-4 news-box">
                             <a href="<?= $post->url();?>" title="Zum Artikel - <?= $post->title();?>">
                                 <?php if ($post->teaserimage()->isNotEmpty()): ?>
-                                    <img src="<?= $site->find($post->uri())->images()->find($post->teaserimage())->url(); ?>" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
+                                  <img src="<?= $post->teaserimage()->toFile()->url();?>" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
                                 <?php else: ?>
                                     <img src="/assets/images/blog/blog-thumb-2.jpg" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
                                 <?php endif; ?>
