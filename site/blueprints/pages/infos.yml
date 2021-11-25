@@ -5,6 +5,6 @@ fields:
   headline:
     extends: fields/headline
   infotext:
-    type: textarea
+    type: writer
     label: Begrüßungstext
   people: fields/people
