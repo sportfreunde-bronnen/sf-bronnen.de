@@ -1,6 +1,7 @@
 title: Infos
 options:
   pages: false
+preset: page
 fields:
   headline:
     extends: fields/headline
