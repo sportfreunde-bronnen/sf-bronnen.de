@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: SPORT SOHN Fußballcamp 2018
 
 ----
 
@@ -6,15 +6,19 @@ Datum: 2018-04-24
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
-Title: SPORT SOHN Fußballcamp 2018
+Author2: 
 
 ----
 
-Teaserimage: teaser-fussballcamp.png
+Teaserimage:
+
+- teaser-fussballcamp.png
 
 ----
 
@@ -26,15 +30,11 @@ Textimages:
 
 ----
 
-Tags: gesamtverein,jugendfussball,veranstaltung
+Tags: gesamtverein, jugendfussball, veranstaltung
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 

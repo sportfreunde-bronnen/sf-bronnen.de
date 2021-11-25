@@ -6,8 +6,22 @@ Headline: Jugendfußball
 
 ----
 
-<<<<<<< HEAD
-Infotext:
+Infotext: <p>Im Jugendbereich stellen wir alle Mannschaften von den A-Junioren bis zu den Bambini.</p><p><br></p><p>In allen Altersklassen spielen wir als Spielgemeinschaft (SGM) mit unseren Nachbarvereinen von der TSG Achstetten und dem FC Hüttisheim.</p><p><br></p><p><strong>Trainingsorte und -zeiten Saison 2021/2022:</strong></p><p><br></p><p><strong>A-Junioren:<br><br></strong>Trainingszeiten: Di. 18:00 - 19:30 &amp; Do. 19:00 - 20:30<br><br>Training/Spiele: Bronnen<br><br>Jahrgang: 2003/2004</p><p><br></p><p><strong>B-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2005/2006</p><p><br></p><p><strong>C-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 18:00 - 19:30<br><br>Training/Spiele: Hüttisheim<br><br>Jahrgang: 2007/2008</p><p><br></p><p><strong>D-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2009/2010</p><p><br></p><p><strong>E-Junioren:</strong><br><br>Trainingszeiten: Mo. + Mi. 17:30 - 19:00<br><br>Training/Spiele: Bronnen<br><br>Jahrgang: 2011/2012</p><p><br></p><p><strong>E-Junioren:</strong><br><br>Trainingszeiten: Mo. + Mi. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2013/2014</p><p><br></p><p><strong>Bambini:</strong><br><br>Trainingszeiten: Mi. 16:30 - 17:30<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2015/2016</p>
+
+----
+
+People:
+
+- 
+  name: Jürgen Anic
+  aufgabe: Jugendleiter SFB
+  email: j.anic@freenet.de
+  phone: 0171 / 5087 369
+  address: ""
+
+----
+
+Head-infotext:
 
 Im Jugendbereich stellen wir alle Mannschaften von den A-Junioren bis zu den Bambini.
 
@@ -52,14 +66,3 @@ In allen Altersklassen spielen wir als Spielgemeinschaft (SGM) mit unseren Nachb
 =======
 Infotext: <p>Im Jugendbereich stellen wir alle Mannschaften von den A-Junioren bis zu den Bambini.</p><p><br></p><p>In allen Altersklassen spielen wir als Spielgemeinschaft (SGM) mit unseren Nachbarvereinen von der TSG Achstetten und dem FC Hüttisheim.</p><p><br></p><p><strong>Trainingsorte und -zeiten Saison 2021/2022:</strong></p><p><br></p><p><strong>A-Junioren:<br><br></strong>Trainingszeiten: Di. 18:00 - 19:30 &amp; Do. 19:00 - 20:30<br><br>Training/Spiele: Bronnen<br><br>Jahrgang: 2003/2004</p><p><br></p><p><strong>B-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2005/2006</p><p><br></p><p><strong>C-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 18:00 - 19:30<br><br>Training/Spiele: Hüttisheim<br><br>Jahrgang: 2007/2008</p><p><br></p><p><strong>D-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2009/2010</p><p><br></p><p><strong>E-Junioren:</strong><br><br>Trainingszeiten: Mo. + Mi. 17:30 - 19:00<br><br>Training/Spiele: Bronnen<br><br>Jahrgang: 2011/2012</p><p><br></p><p><strong>E-Junioren:</strong><br><br>Trainingszeiten: Mo. + Mi. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2013/2014</p><p><br></p><p><strong>Bambini:</strong><br><br>Trainingszeiten: Mi. 16:30 - 17:30<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2015/2016</p>
 >>>>>>> 7869c9923c38c5da0bc5a3395142aa7b1bb08569
-
-----
-
-People:
-
-- 
-  name: Jürgen Anic
-  aufgabe: Jugendleiter SFB
-  email: j.anic@freenet.de
-  phone: 0171 / 5087 369
-  address: ""

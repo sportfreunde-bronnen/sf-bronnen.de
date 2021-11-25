@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: Sportfreundinnen trainieren digital
 
 ----
 
@@ -6,7 +6,9 @@ Datum: 2020-05-13
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
@@ -14,15 +16,13 @@ Author2: SZ
 
 ----
 
-Title: Sportfreundinnen trainieren digital
+Teaserimage:
+
+- sportfreundinnen-trainieren-digital.jpg
 
 ----
 
-Teaserimage: sportfreundinnen-trainieren-digital.jpg
-
-----
-
-Text: 
+Text:
 
 Die Einstellung des aktiven gemeinschaftlichen Schwitzens im Vereinsleben traf auch die Sportfreundinnen der SF Bronnen hart. Keine Gruppenzusammenkünfte mehr in Zeiten von Corona. Kein Bodystyle, kein Zumba im Gemeindezentrum.
 
@@ -42,15 +42,11 @@ Textimages:
 
 ----
 
-Tags: gymnastik,corona
+Tags: gymnastik, corona
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 

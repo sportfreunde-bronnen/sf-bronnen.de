@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: JHV: Sportfreunde wollen zur Energiewende beitragen
 
 ----
 
@@ -6,7 +6,9 @@ Datum: 2021-09-24
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
@@ -14,15 +16,13 @@ Author2: SZ
 
 ----
 
-Title: JHV: Sportfreunde wollen zur Energiewende beitragen
+Teaserimage:
+
+- dsc_0964.jpg
 
 ----
 
-Teaserimage: dsc_0964.jpg
-
-----
-
-Text: 
+Text:
 
 Die Sportfreunde Bronnen haben am vergangenen Freitag ihre im März abgesagte Jahreshauptversammlung nachgeholt und ein Resümee für das Jahr 2020 gezogen. Der Vorsitzende Martin Pannek blickte auf eine turbulente Zeit zurück. Mit Ausnahme der beiden Sommer lag das Vereinsleben größtenteils brach. Pannek dankte den Mitgliedern für ihre Solidarität; sie hätten sämtliche Maßnahmen mitgetragen, das habe die Geschlossenheit innerhalb des Vereins noch weiter gefestigt.
 
@@ -72,19 +72,17 @@ Zum Abschluss der Versammlung wurde Simon Baur verabschiedet. Martin Pannek und 
 
 ----
 
-Textimages: dsc_0964.jpg
+Textimages:
+
+- dsc_0964.jpg
 
 ----
 
-Tags: gesamtverein,jhv
+Tags: gesamtverein, jhv
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 

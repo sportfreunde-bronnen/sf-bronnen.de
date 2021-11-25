@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: Schuldenabbau und Jubiläum stehen im Fokus
 
 ----
 
@@ -6,19 +6,23 @@ Datum: 2019-03-07
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
-Title: Schuldenabbau und Jubiläum stehen im Fokus
+Author2: Reiner Schick (SZ)
 
 ----
 
-Teaserimage: jhv2019-szon.jpg
+Teaserimage:
+
+- jhv2019-szon.jpg
 
 ----
 
-Text: 
+Text:
 
 Sportfreunde Bronnen ziehen bei der Hauptversammlung eine positive Bilanz - 70-jähriges Bestehen wird in diesem Jahr gefeiert
 
@@ -52,19 +56,17 @@ Link zum Artikel der Schwäbischen Zeitung: https://www.schwaebische.de/landkre
 
 ----
 
-Textimages: jhv2019-szon.jpg
+Textimages:
+
+- jhv2019-szon.jpg
 
 ----
 
-Tags: gesamtverein,jhv
+Tags: gesamtverein, jhv
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 
@@ -73,7 +75,3 @@ Galleryname:
 ----
 
 Galleryimages: 
-
-----
-
-Author2: Reiner Schick (SZ)

@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: VR-Radeln beschert den Sportfreunden vierstelligen Betrag!
 
 ----
 
@@ -6,19 +6,23 @@ Datum: 2018-06-13
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
-Title: VR-Radeln beschert den Sportfreunden vierstelligen Betrag!
+Author2: 
 
 ----
 
-Teaserimage: sfb-vrradeln.png
+Teaserimage:
+
+- sfb-vrradeln.png
 
 ----
 
-Text: 
+Text:
 
 Eine positive Überraschung durften die Vertreter der Sportfreunde Bronnen auf der gestrigen Preisverleihung des diesjährigen VR-Radeln machen. Das von der Volksbank Raiffeisenbank Laupheim-Illertal veranstaltete Event, bei dem man alle Geschäftsstellen der Bank im Landkreis mit dem Fahrrad anfahren und Stempel für seinen Verein sammeln konnte, beschert den Sportfreunden einen tollen Betrag über **1.020,00€**, der in die die neuen LED Flutlichtanlage auf dem Sportgelände investiert wird. Mit **358 Stempeln** von insgesamt **55 Radlern** erreichten die Sportfreunde einen tollen 19. Platz.
 
@@ -28,19 +32,17 @@ Link zum VR-Radeln: <https://www.vr-li.de/wir-fuer-sie/engagement/vr-radeln.htm
 
 ----
 
-Textimages: sfb-vrradeln.png
+Textimages:
+
+- sfb-vrradeln.png
 
 ----
 
-Tags: gesamtverein,aktionen
+Tags: gesamtverein, aktionen
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 

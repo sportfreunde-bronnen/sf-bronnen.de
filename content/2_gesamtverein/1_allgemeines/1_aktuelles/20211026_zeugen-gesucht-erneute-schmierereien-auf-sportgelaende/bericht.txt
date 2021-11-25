@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: Zeugen gesucht! Erneute Schmierereien auf Sportgelände
 
 ----
 
@@ -6,7 +6,9 @@ Datum: 2021-10-26
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
@@ -14,15 +16,13 @@ Author2:
 
 ----
 
-Title: Zeugen gesucht! Erneute Schmierereien auf Sportgelände
+Teaserimage:
+
+- spray-6.jpg
 
 ----
 
-Teaserimage: spray-6.jpg
-
-----
-
-Text: 
+Text:
 
 Wieder einmal haben sich Unbekannte mit Spraydosen auf unserem Vereinsgelände einen wirklich schlechten Scherz erlaubt. Der Sachschaden (der nur zu einem geringen Teil von der Versicherung bezahlt wird) beläuft sich einmal mehr auf einen vierstelligen Betrag, die Polizei wurde bereits am Samstag eingeschaltet. Bei diesen Schmierereien handelt es sich um Beschädigung fremden Eigentums und ist somit eine **Straftat**.
 
@@ -42,11 +42,7 @@ Tags: gesamtverein
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: yes
+Gallerytoggle: false
 
 ----
 
@@ -54,4 +50,4 @@ Galleryname: Schmierereien
 
 ----
 
-Galleryimages: spray-1.jpg,spray-2.jpg,spray-3.jpg,spray-4.jpg,spray-5.jpg,spray-6.jpg,spray-7.jpg,spray-8.jpg
+Galleryimages: 

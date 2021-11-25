@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: VR Förderaktion 2018
 
 ----
 
@@ -6,19 +6,23 @@ Datum: 2018-11-08
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
-Title: VR Förderaktion 2018
+Author2: 
 
 ----
 
-Teaserimage: sfb.1024x0.jpg
+Teaserimage:
+
+- sfb.1024x0.jpg
 
 ----
 
-Text: 
+Text:
 
 Nach unseren tollen Erfolgen im vergangenen Jahr sind wir auch diesmal wieder bei der VR Förderaktion der VR Laupheim-Illertal dabei.
 
@@ -45,19 +49,17 @@ Eure Sportfreunde
 
 ----
 
-Textimages: sfb.1024x0.jpg
+Textimages:
+
+- sfb.1024x0.jpg
 
 ----
 
-Tags: gesamtverein,aktionen,jugendfussball
+Tags: gesamtverein, aktionen, jugendfussball
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 

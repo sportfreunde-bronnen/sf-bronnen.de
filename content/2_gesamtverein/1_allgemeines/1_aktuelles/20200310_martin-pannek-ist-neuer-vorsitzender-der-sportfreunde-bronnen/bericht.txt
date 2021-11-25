@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: Martin Pannek ist neuer Vorsitzender der Sportfreunde Bronnen
 
 ----
 
@@ -6,7 +6,9 @@ Datum: 2020-03-10
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
@@ -14,15 +16,13 @@ Author2: Sonja Niederer (SZ)
 
 ----
 
-Title: Martin Pannek ist neuer Vorsitzender der Sportfreunde Bronnen
+Teaserimage:
+
+- a_ehrungen.jpg
 
 ----
 
-Teaserimage: a_ehrungen.jpg
-
-----
-
-Text: 
+Text:
 
 ## „Haltet so zusammen wie bisher“
 
@@ -56,19 +56,17 @@ Der neue Vorsitzende Martin Pannek stellte sich kurz vor. Seit 2017 wohnt er mit
 
 ----
 
-Textimages: a_ehrungen.jpg
+Textimages:
+
+- a_ehrungen.jpg
 
 ----
 
-Tags: gesamtverein,jhv
+Tags: gesamtverein, jhv
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: yes
+Gallerytoggle: false
 
 ----
 
@@ -76,4 +74,4 @@ Galleryname: Bilder der JHV
 
 ----
 
-Galleryimages: a_ehrungen.jpg,baur-und-pannek.jpg,vier-vorstaende.jpg
+Galleryimages: 

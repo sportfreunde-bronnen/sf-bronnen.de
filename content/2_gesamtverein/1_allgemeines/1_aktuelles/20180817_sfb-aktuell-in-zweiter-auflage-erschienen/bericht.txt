@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: SFB Aktuell in zweiter Auflage erschienen
 
 ----
 
@@ -6,19 +6,23 @@ Datum: 2018-08-17
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
-Title: SFB Aktuell in zweiter Auflage erschienen
+Author2: 
 
 ----
 
-Teaserimage: sfb-aktuell-2.jpg
+Teaserimage:
+
+- sfb-aktuell-2.jpg
 
 ----
 
-Text: 
+Text:
 
 Bereits in der zweiten Auflage ist unser "SFB Aktuell" erschienen, das seit dieser Woche im SVZ ausliegt und von allen Interessierten mitgenommen werden kann.
 
@@ -30,19 +34,18 @@ Eure Sportfreunde
 
 ----
 
-Textimages: bildschirmfoto-2018-08-17-um-10.16.01.png
+Textimages:
+
+- >
+  bildschirmfoto-2018-08-17-um-10.16.01.png
 
 ----
 
-Tags: gesamtverein,förderverein
+Tags: gesamtverein, förderverein
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 

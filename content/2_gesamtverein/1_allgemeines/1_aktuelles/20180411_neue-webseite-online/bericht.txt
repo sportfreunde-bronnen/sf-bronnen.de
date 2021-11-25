@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: Neue Webseite online
 
 ----
 
@@ -6,19 +6,23 @@ Datum: 2018-04-11
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
-Title: Neue Webseite online
+Author2: 
 
 ----
 
-Teaserimage: teaser-5-webseite.png
+Teaserimage:
+
+- teaser-5-webseite.png
 
 ----
 
-Text: 
+Text:
 
 Ab sofort präsentieren sich die Sportfreunde Bronnen mit einem neuen und modernen Auftritt im World Wide Web.
 
@@ -39,19 +43,15 @@ Textimages:
 
 ----
 
-Tags: webseite,gesamtverein
+Tags: webseite, gesamtverein
 
 ----
 
-Delimiter2: 
+Gallerytoggle: false
 
 ----
 
-Gallerytoggle: no
-
-----
-
-Galleryheadline: 
+Galleryname: 
 
 ----
 
@@ -59,4 +59,4 @@ Galleryimages:
 
 ----
 
-Galleryname: 
+Galleryheadline: 

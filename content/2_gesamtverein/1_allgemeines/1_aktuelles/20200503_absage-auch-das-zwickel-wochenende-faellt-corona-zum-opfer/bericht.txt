@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: Absage: Auch das Zwickel-Wochenende fällt Corona zum Opfer
 
 ----
 
@@ -6,7 +6,9 @@ Datum: 2020-05-03
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
@@ -14,15 +16,13 @@ Author2:
 
 ----
 
-Title: Absage: Auch das Zwickel-Wochenende fällt Corona zum Opfer
+Teaserimage:
+
+- p1010599.jpg
 
 ----
 
-Teaserimage: p1010599.jpg
-
-----
-
-Text: 
+Text:
 
 Liebe Besucherinnen und Besucher,
 
@@ -45,19 +45,17 @@ Sportliche Grüße
 
 ----
 
-Textimages: p1010599.jpg
+Textimages:
+
+- p1010599.jpg
 
 ----
 
-Tags: gesamtverein,veranstaltung,corona
+Tags: gesamtverein, veranstaltung, corona
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 

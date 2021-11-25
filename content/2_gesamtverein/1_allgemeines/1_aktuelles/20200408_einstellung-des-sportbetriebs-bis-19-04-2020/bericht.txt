@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: Corona (Update): Einstellung des Sportbetriebs auf unbestimmte Zeit
 
 ----
 
@@ -6,7 +6,9 @@ Datum: 2020-04-08
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
@@ -14,15 +16,13 @@ Author2:
 
 ----
 
-Title: Corona (Update): Einstellung des Sportbetriebs auf unbestimmte Zeit
+Teaserimage:
+
+- img_7708.jpg
 
 ----
 
-Teaserimage: img_7708.jpg
-
-----
-
-Text: 
+Text:
 
 *Verlängerung der Aussetzung von Sport- und Trainingsbetrieb auf unbestimmte Zeit*
 
@@ -77,19 +77,17 @@ Sobald es weitere Informationen seitens der Gemeinde gibt werden wir euch inform
 
 ----
 
-Textimages: img_7708.jpg
+Textimages:
+
+- img_7708.jpg
 
 ----
 
-Tags: gesamtverein,corona
+Tags: gesamtverein, corona
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 

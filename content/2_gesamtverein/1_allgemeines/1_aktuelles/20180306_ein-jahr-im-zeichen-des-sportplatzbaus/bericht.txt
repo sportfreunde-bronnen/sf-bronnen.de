@@ -1,4 +1,4 @@
-Delimiter1: 
+Title: Ein Jahr im Zeichen des Sportplatzbaus
 
 ----
 
@@ -6,19 +6,23 @@ Datum: 2018-03-06
 
 ----
 
-Author: magnus
+Author:
+
+- 16pohVSK
 
 ----
 
-Title: Ein Jahr im Zeichen des Sportplatzbaus
+Author2: 
 
 ----
 
-Teaserimage: teaser-1.png
+Teaserimage:
+
+- teaser-1.png
 
 ----
 
-Text: 
+Text:
 
 Der Neubau des Sportplatzes stand im vergangenen Jahr bei den Sportfreunden Bronnen im Mittelpunkt des Geschehens. Dies ging aus der Jahreshauptversammlung des Vereins hervor, bei der Vorsitzender Benjamin Baur in Abwesenheit für zwei weitere Jahre einstimmig gewählt wurde und zahlreiche langjährige Mitglieder und Mitarbeiter geehrt wurden.
 
@@ -48,19 +52,18 @@ Text: Schwäbische Zeitung, Klaus Pasedag
 
 ----
 
-Textimages: 5073771_3_detailtablet_b996118866z.1_20180306190751_000_glf4si7hm.2-0.jpg
+Textimages:
+
+- >
+  5073771_3_detailtablet_b996118866z.1_20180306190751_000_glf4si7hm.2-0.jpg
 
 ----
 
-Tags: gesamtverein,jhv
+Tags: gesamtverein, jhv
 
 ----
 
-Delimiter2: 
-
-----
-
-Gallerytoggle: no
+Gallerytoggle: false
 
 ----
 
