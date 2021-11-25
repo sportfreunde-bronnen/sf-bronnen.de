@@ -53,7 +53,7 @@
                                     <span class="badge badge-primary">
                                         <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', strtotime($post->datum()));?>
                                         <?php if ($post->author2()->isEmpty()): ?>
-                                            <i class="fa fa-user ml-3"></i>&nbsp; <?= sprintf('%s %s', site()->user($post->author())->firstName(), site()->user($post->author())->lastName());?>
+                                            <i class="fa fa-user ml-3"></i>&nbsp; <?= $post->author()->toUser()?->alias() ?? 'SFB';?>
                                         <?php else: ?>
                                             <i class="fa fa-user ml-3"></i>&nbsp;&nbsp; <?= sprintf('%s', $post->author2());?>
                                         <?php endif; ?>

@@ -12,7 +12,7 @@
                         <span class="date">
                             <?= date('d.m.Y', strtotime($page->datum()));?>
                             <?php if ($page->author2()->isEmpty()): ?>
-                                <i class="fa fa-user ml-2"></i>&nbsp; <?= $page->author()->toUser()->alias();?>
+                                <i class="fa fa-user ml-2"></i>&nbsp; <?= $page->author()->toUser()?->alias() ?? 'SFB';?>
                             <?php else: ?>
                                 <i class="fa fa-user ml-2"></i>&nbsp; <?= sprintf('%s', $page->author2());?>
                             <?php endif; ?>

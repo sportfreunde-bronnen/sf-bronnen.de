@@ -11,7 +11,7 @@ foreach ($page->parent()->children()->listed()->sortBy('datum', 'DESC')->limit(5
     $newsData['date'] = (string)$news->datum();
     $newsData['title'] = (string)$news->title()->text();
     $newsData['text'] = (string)strip_tags($news->text()->markdown());
-    $newsData['author'] = (string)$news->author();
+    $newsData['author'] = (string)$news->author()->toUser()?->alias() ?? 'SFB';
 
     if ($news->textImages()->isNotEmpty()):
         $newsData['img'] = [];
