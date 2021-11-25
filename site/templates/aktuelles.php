@@ -33,7 +33,7 @@
                 <ul class="list-unstyled list-inline" id="article-filter">
                     <li class="list-inline-item"><a class="btn animation<?= ('all' === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="all">Alles</a></li>
                     <?php foreach ($page->getUsedTags() as $tag): ?>
-                        <li class="list-inline-item"><a class="btn animation<?= ($tag === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="<?= $tag; ?>"><?= $tag; ?></a></li>
+                        <li class="list-inline-item"><a class="btn animation<?= ($tag === $page->getActiveTagGroup()) ? ' active' : '';?>" data-group="<?= trim($tag); ?>"><?= trim($tag); ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>

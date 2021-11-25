@@ -1,55 +1,64 @@
 title: Bericht
 options:
   url: false
-fields:
-  delimiter1:
-    label: Daten zum Artikel
-    type: headline
-  datum:
-    label: Datum
-    type: date
-    display: dd.mm.YYYY
-    format: Y-m-d
-    default: today
-    width: 1/3
-    required: true
-    help: Schreibgeschützt
-  author:
-    label: Autor
-    type: users
-    required: true
-    width: 1/3
-    help: Autor des Artikels
-  author2:
-    label: Externer Autor
-    type: text
-    width: 1/3
-    help: Externer Autor (z.B. Reporter einer Zeitung)
-  teaserImage:
-    label: Teaser Bild
-    type: files
-    options: query
-    required: true
-    multiple: false
-    help: Bild, das in der Artikel-Übersicht angezeigt wird
-    query: page.images
-  text:
-    label: Text
-    type: textarea
-  textImages:
-    label: Bilder für Text
-    type: files
-    mode: multiple
-    query: page.images
-  tags:
-    label: Tags/Kategorien
-    type: tags
-    required: true
-  gallery:
-    extends: fields/gallery
 pages: false
-files:
-  fields:
-    caption:
-      type: text
-      label: Beschreibung
+columns:
+  main:
+    width: 3/4
+    sections:
+      content:
+        type: fields
+        fields:
+          delimiter1:
+            label: Daten zum Bericht
+            type: headline
+          datum:
+            label: Datum
+            type: date
+            display: dd.mm.YYYY
+            format: Y-m-d
+            default: today
+            width: 1/3
+            required: true
+            help: Schreibgeschützt
+          author:
+            label: Autor
+            type: users
+            required: true
+            width: 1/3
+            help: Autor des Artikels
+          author2:
+            label: Externer Autor
+            type: text
+            width: 1/3
+            help: Externer Autor (z.B. Reporter einer Zeitung)
+          teaserImage:
+            label: Teaser Bild
+            type: files
+            options: query
+            required: true
+            multiple: false
+            help: Bild, das in der Artikel-Übersicht angezeigt wird
+            query: page.images
+          textImages:
+            label: Bilder für Text
+            type: files
+            mode: multiple
+            query: page.images
+            help: Das erste Bild ist das Hauptbild des Berichts ganz oben. Alle weiteren Bilder werden in den Text eingebettet.
+          text:
+            label: Text
+            type: textarea
+          tags:
+            label: Tags/Kategorien
+            type: tags
+            required: true
+          gallery:
+            extends: fields/gallery
+
+  sidebar:
+    width: 1/4
+    sections:
+      files:
+        type: files
+        headline: Dateien

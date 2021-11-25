@@ -18,6 +18,7 @@ class BerichtPage extends DownloadsPage
     {
         $tags = $this->tags();
         $tags = explode(',', $tags);
+        $tags = array_map('trim', $tags);
         return sprintf('["all","%s"]', implode('","', $tags));
     }
 

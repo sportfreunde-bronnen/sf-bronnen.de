@@ -3,21 +3,13 @@ fields:
   delimiter2:
     label: Bildergalerie (optional)
     type: headline
-  galleryToggle:
-    label: Soll eine Bildergalerie angelegt werden?
-    type: toggle
-    text:
-      - "no"
-      - "yes"
-    show:
-      yes: galleryName galleryImages
-    hide:
-      no: galleryName galleryImages
   galleryName:
     type: text
     label: Name der Galerie
+    help: Überschrift der Galerie
   galleryImages:
     label: Bildergalerie
     type: files
     mode: multiple
     query: page.images
+    help: Bilder, die in der Galerie angezeigt werden sollen

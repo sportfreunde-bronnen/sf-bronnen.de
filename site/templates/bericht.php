@@ -19,7 +19,7 @@
                         </span>
                     </div>
                     <div class="first--article--desc text-center text-md-right">
-                        <?= $page->getTitleImage()->caption();?>
+                        <?= $page->getTitleImage()->caption()->value() ?? $page->getTitleImage()->description();?>
                     </div>
                 <?php endif; ?>
             </div>
@@ -61,7 +61,7 @@
                                 <h6 class="mb-0">Tags:</h6>
                                 <ul class="list-unstyled list-inline blog-post-tags float-md-left animation">
                                     <?php foreach (explode(',', $page->tags()) as $tag): ?>
-                                        <li class="list-inline-item"><i class="fa fa-tag"></i> <a href="<?= $page->parent()->url();?>?tag=<?= $tag;?>"><?= $tag;?></a></li>
+                                        <li class="list-inline-item"><i class="fa fa-tag"></i> <a href="<?= $page->parent()->url();?>?tag=<?= trim($tag);?>"><?= trim($tag);?></a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
