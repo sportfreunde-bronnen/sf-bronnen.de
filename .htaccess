@@ -8,6 +8,8 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
+RedirectMatch 301 /aikido/allgemeines/infos(?!$) https://sf-bronnen.de/aikido/allgemeines/infos
+
 # make sure to set the RewriteBase correctly
 # if you are running the site in a subfolder;
 # otherwise links or the entire site will break.
