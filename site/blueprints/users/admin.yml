@@ -1,0 +1,4 @@
+fields:
+  alias:
+    type: text
+    label: Name (wird in Berichten angezeigt)
