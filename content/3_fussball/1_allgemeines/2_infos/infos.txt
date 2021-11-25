@@ -2,39 +2,37 @@ Title: Informationen
 
 ----
 
-People: 
+Headline: Fußball bei den Sportfreunden
+
+----
+
+Infotext: <p>Mit mehr als 200 Mitgliedern stellt die Abteilung Fußball die mitgliederstärkste Abteilung der Sportfreunde. Die <strong>erste Herrenmannschaft</strong> spielt in der Kreisliga A Riß Staffel 2 und wird durch die <strong>zweite Mannschaft</strong> in der entsprechend zugehörigen Reserveliga ergänzt. Im <strong>Jugendbereich</strong> stellen wir gemeinsam mit dem FC Hüttisheim und der TSG Achstetten Mannschaften von der A-Jugend bis zu den Bambini. Weitere Informationen gibt es <a href="https://sf-bronnen.de/fussball/jugend/informationen" rel="noopener noreferrer">hier</a>. Für das etwas fortgeschrittenere Alter bieten die Sportfreunde zudem eine <strong><a href="http://localhost:1949/fussball/ah/ue30" rel="noopener noreferrer">Ü30</a></strong> sowie eine <strong><a href="http://localhost:1949/fussball/ah/ue50" rel="noopener noreferrer">Ü50-Mannschaft</a></strong>, über die Sie sich ebenfalls auf dieser Seite informieren können.</p>
+
+----
+
+People:
 
 - 
   name: Tobias Wischnat
   aufgabe: Abteilungsleiter
   email: tobiaswischnat@gmx.de
   phone: 0176 63092664
+  address: ""
 - 
   name: Roland Schick
   aufgabe: Stellvertretender Abteilungsleiter
   email: roland.schick@web.de
   phone: ""
+  address: ""
 - 
   name: Oliver Radnick
   aufgabe: Spielleiter
   email: ""
   phone: ""
+  address: ""
 - 
   name: Jürgen Anic
   aufgabe: Jugendleiter
   email: j.anic@freenet.de
   phone: 0171 50 87 369
-
-----
-
-Headline: Fußball bei den Sportfreunden
-
-----
-
-Infotext: 
-
-Mit mehr als 200 Mitgliedern stellt die Abteilung Fußball die mitgliederstärkste Abteilung der Sportfreunde. Die **erste Herrenmannschaft** spielt in der Kreisliga A Riß Staffel 2 und wird durch die **zweite Mannschaft** in der entsprechend zugehörigen Reserveliga ergänzt.
-
-Im **Jugendbereich** stellen wir gemeinsam mit dem FC Hüttisheim und der TSG Achstetten Mannschaften von der A-Jugend bis zu den Bambini. Weitere Informationen gibt es [hier](https://sf-bronnen.de/fussball/jugend/informationen).
-
-Für das etwas fortgeschrittenere Alter bieten die Sportfreunde zudem eine **[Ü30](/fussball/ah/ue30)** sowie eine **[Ü50-Mannschaft](/fussball/ah/ue50)**, über die Sie sich ebenfalls auf dieser Seite informieren können.
+  address: ""

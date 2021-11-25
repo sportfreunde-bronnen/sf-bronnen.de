@@ -2,7 +2,15 @@ Title: Informationen
 
 ----
 
-People: 
+Headline: Aikido bei den Sportfreunden
+
+----
+
+Infotext: <p>Die Abteilung Aikido mit derzeit 20 Mitgliedern teilt sich je zur Hälfte in eine Erwachsenengruppe und in eine Kinder- und Jugendgruppe auf. Wir freuen uns über jeden den wir für die Kampfkunst Aikido begeistern können. Daher sind neue Mitglieder jederzeit herzlich willkommen.</p><p><br></p><p>Wann? Jederzeit möglich! Trainingsanzug oder Jogginghose und T-Shirt genügen. Umkleideräume und Duschen sind vorhanden. Schuhe werden in der Halle nicht getragen.</p><p><br></p><p><strong>Trainingszeiten</strong></p><p><br></p><p>Trainiert wird Mittwochs für</p><p><br></p><p>Kinder und Jugendliche (6-14 Jahre) von 17:30 bis 18:45 Uhr</p><p><br></p><p>Erwachsene (ab 15 Jahre) von 18:45 bis 20:00 Uhr</p><p><br></p><p><strong>Anschrift</strong></p><p><br></p><p>Sportfreunde Bronnen e.V. Abt. Aikido<br><br>Holzweg 3<br><br>88480 Achstetten</p>
+
+----
+
+People:
 
 - 
   name: Klaus Romer
@@ -16,29 +24,3 @@ People:
   email: ""
   phone: ""
   address: ""
-
-----
-
-Headline: Aikido bei den Sportfreunden
-
-----
-
-Infotext: 
-
-Die Abteilung Aikido mit derzeit 20 Mitgliedern teilt sich je zur Hälfte in eine Erwachsenengruppe und in eine Kinder- und Jugendgruppe auf. Wir freuen uns über jeden den wir für die Kampfkunst Aikido begeistern können. Daher sind neue Mitglieder jederzeit herzlich willkommen.
-
-Wann? Jederzeit möglich! Trainingsanzug oder Jogginghose und T-Shirt genügen. Umkleideräume und Duschen sind vorhanden. Schuhe werden in der Halle nicht getragen.
-
-**Trainingszeiten**
-
-Trainiert wird Mittwochs für
-
-Kinder und Jugendliche (6-14 Jahre) von 17:30 bis 18:45 Uhr
-
-Erwachsene (ab 15 Jahre) von 18:45 bis 20:00 Uhr
-
-**Anschrift**
-
-Sportfreunde Bronnen e.V. Abt. Aikido  
-Holzweg 3  
-88480 Achstetten
