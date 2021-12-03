@@ -6,17 +6,49 @@ options:
   template: false
   status: false
   files: false
-fields:
-  headline: fields/headline
-  ereignisse:
-    label: Ereignisse
-    type: structure
-    entry: >
-      {{jahr}} - {{ereignis}}
-    fields:
-      jahr:
-        label: Jahr
-        type: text
-      ereignis:
-        label: Ereignis
-        type: textarea
+tabs:
+  content:
+    label: Content
+    icon: text
+    columns:
+      main:
+        sections:
+          content:
+            type: fields
+            fields:
+              headline: fields/headline
+              ereignisse:
+                label: Ereignisse
+                type: structure
+                sortBy: jahr desc
+                entry: >
+                  {{jahr}} - {{ereignis}}
+                fields:
+                  jahr:
+                    label: Jahr
+                    type: text
+                  ereignis:
+                    label: Ereignis
+                    type: textarea
+                  images:
+                    label: Bilder zum jeweiligen Jahr
+                    help: Optional - Werden unter der Liste des jeweiligen Jahres angezeigt
+                    type: files
+                    query: page.images
+  header:
+    label: Header
+    icon: image
+    columns:
+      main:
+        width: 1/2
+        sections:
+          header:
+            type: fields
+            fields:
+              header: fields/header
+      sidebar:
+        width: 1/2
+        sections:
+          dateien:
+            type: files
+            label: Dateien

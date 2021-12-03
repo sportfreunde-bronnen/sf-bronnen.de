@@ -2,154 +2,35 @@ Title: Vereinschronik
 
 ----
 
-Ereignisse: 
+Headline: Wichtige Ereignisse der Vereinsgeschichte
+
+----
+
+Ereignisse:
 
 - 
-  jahr: "1949"
-  ereignis: >
-    Gründung der Sportfreunde Bronnen (9.
-    April)
-- 
-  jahr: "1950"
-  ereignis: >
-    Einstieg in den Verbandsspielbetrieb
-    (C-Klasse)
-- 
-  jahr: "1951"
-  ereignis: >
-    Erste Einweihung Spielfeld mit
-    Pokalspielen
-- 
-  jahr: "1953"
-  ereignis: >
-    Meister C-Klasse, Aufstieg in die
-    B-Klasse
-- 
-  jahr: "1955"
-  ereignis: >
-    Meister B-Klasse, Aufstieg in die
-    A-Klasse
-- 
-  jahr: "1956"
-  ereignis: Abstieg in die B-Klasse
-- 
-  jahr: "1959"
+  jahr: "2020"
   ereignis: |
-    - Meister B-Klasse
-    - Aufstieg in die A-Klasse
-    - Bezirkspokalsieger
-    - 10 jähriges Vereinsjubiläum mit Pokalturnier
+    - Renovierung des SVZ (Streichen von innen und außen)
+    - Integration einer smarten Bewässerungsanlage
+    - COVID-19 Pandemie inklusive Einstellung des gesamten Sportbetriebs sowie Saisonabbruch zur Winterpause
+  images: [ ]
 - 
-  jahr: "1962"
-  ereignis: Zweite Einweihung Sportplatz
-- 
-  jahr: "1965"
-  ereignis: Abstieg in die B-Klasse
-- 
-  jahr: "1967"
-  ereignis: >
-    Pokalbester der B-Klasse,
-    Vize-Bezirkspokalsieger, Eintragung ins
-    Vereinsregister
-- 
-  jahr: "1968"
-  ereignis: Bau einer Gerätehütte
-- 
-  jahr: "1969"
-  ereignis: >
-    20jähriges Vereinsjubiläum mit
-    Pokalturnier
-- 
-  jahr: "1974"
+  jahr: "2019"
   ereignis: |
-    - Abstieg in die C-Klasse (Kreisliga B)
-    - Start der ersten Frauengymnastik-Gruppe
-    - Sportplatzrenovierung
-    - 25 jähriges Vereinsjubiläum mit Pokalturnier
+    - Feier des 70-jährigen Vereinsbestehens mit einem Festabend sowie der Ausrichtung des Rottalpokals
+    - Erstellung einer zweiten Vereinschronik in Buchform
+  images:
+    - heidisfb26719-9071.jpg
+    - chronik-teaser1.jpg
 - 
-  jahr: "1977"
-  ereignis: Vize-Bezirkspokalsieger
-- 
-  jahr: "1979"
+  jahr: "2018"
   ereignis: |
-    - Erweiterung Geräte-/Vereinshütte
-    - Erstellung sanitärer Anlagen
-    - 30 jähriges Vereinsjubiläum mit Pokalturnier
-- 
-  jahr: "1980"
-  ereignis: Start der Männer-Gymnastikgruppe
-- 
-  jahr: "1984"
-  ereignis: Erneute Vergrößerung der Vereinshütte
-- 
-  jahr: "1985"
-  ereignis: |
-    - Meister Kreisliga B
-    - Aufstieg in die Kreisliga A
-- 
-  jahr: "1987"
-  ereignis: Baubeginn zweites Rasenspielfeld
-- 
-  jahr: "1989"
-  ereignis: |
-    - Fertigstellung des zweiten Rasenspielfeldes
-    - 40 jähriges Vereinsjubiläum mit Pokalturnier
-- 
-  jahr: "1992"
-  ereignis: Vizemeister Kreisliga A
-- 
-  jahr: "1994"
-  ereignis: Erster Zwickel-Night-Cup
-- 
-  jahr: "1995"
-  ereignis: >
-    Vergrößerung/Modernisierung der
-    Vereinshütte und sanitären Anlagen
-- 
-  jahr: "1997"
-  ereignis: Abstieg in die Kreisliga B
-- 
-  jahr: "1998"
-  ereignis: >
-    Meister Kreisliga B, Aufstieg in die
-    Kreisliga A
-- 
-  jahr: "1999"
-  ereignis: |
-    - Abstieg in die Kreisliga B
-    - 50 jähriges Vereinsjubiläum
-- 
-  jahr: "2001"
-  ereignis: |
-    - Meister Kreisliga B
-    - Aufstieg in die Kreisliga A
-- 
-  jahr: "2003"
-  ereignis: |
-    - Abstieg in die Kreisliga B
-    - Zehnter Zwickel-Night-Cup
-- 
-  jahr: "2005"
-  ereignis: |
-    - Meister Kreisliga B
-    - Aufstieg in die Kreisliga A
-- 
-  jahr: "2006"
-  ereignis: Gründung der Abteilung Aikido
-- 
-  jahr: "2008"
-  ereignis: Baubeginn SVZ
-- 
-  jahr: "2009"
-  ereignis: |
-    - 60 jähriges Vereinsjubiläum
-    - Einweihung des neuen Sportheims
-- 
-  jahr: "2014"
-  ereignis: 20jähriges Jubiläum Zwickel-Night-Cup
-- 
-  jahr: "2016"
-  ereignis: 20jähriges Jubiläum Uhlmann-Halder-Cup
+    - Fertigstellung des neuen Hauptspielfeldes
+    - Renovierung des Trainingsplatzes
+    - Pflasterung der Fläche zwischen SVZ und Hauptspielfeld
+    - Instandsetzung des Parkplatzes mit Abgrenzung der einzelnen Parkflächen sowie Installation einer Höhenbegrenzung bei der Einfahrt auf das Vereinsgelände
+  images: [ ]
 - 
   jahr: "2017"
   ereignis: |
@@ -159,25 +40,190 @@ Ereignisse:
     - Neue Fangzäune für den Trainingsplatz
     - Errichtung eines Fußgängerbereiches zwischen den beiden Spielfeldern
     - Neugestaltung des angrenzenden Spielplatzes, TÜV-Abnahme und Übergabe an Gemeinde
+  images:
+    - img-20170615-wa0016.jpg
+    - 2017-05-05-18.30.56.jpg
+    - 2017-08-02-15.47.21.jpg
 - 
-  jahr: "2018"
-  ereignis: |
-    - Fertigstellung des neuen Hauptspielfeldes
-    - Renovierung des Trainingsplatzes
-    - Pflasterung der Fläche zwischen SVZ und Hauptspielfeld
-    - Instandsetzung des Parkplatzes mit Abgrenzung der einzelnen Parkflächen sowie Installation einer Höhenbegrenzung bei der Einfahrt auf das Vereinsgelände
+  jahr: "2016"
+  ereignis: '- 20jähriges Jubiläum Uhlmann-Halder-Cup'
+  images: [ ]
 - 
-  jahr: "2019"
-  ereignis: |
-    - Feier des 70-jährigen Vereinsbestehens mit einem Festabend sowie der Ausrichtung des Rottalpokals
-    - Erstellung einer zweiten Vereinschronik in Buchform
+  jahr: "2014"
+  ereignis: '- 20jähriges Jubiläum Zwickel-Night-Cup'
+  images: [ ]
 - 
-  jahr: "2020"
+  jahr: "2009"
   ereignis: |
-    - Renovierung des SVZ (Streichen von innen und außen)
-    - Integration einer smarten Bewässerungsanlage
-    - COVID-19 Pandemie
+    - 60 jähriges Vereinsjubiläum
+    - Einweihung des neuen Sportheims
+  images: [ ]
+- 
+  jahr: "2008"
+  ereignis: '- Baubeginn SVZ'
+  images: [ ]
+- 
+  jahr: "2006"
+  ereignis: '- Gründung der Abteilung Aikido'
+  images: [ ]
+- 
+  jahr: "2005"
+  ereignis: |
+    - Meister Kreisliga B
+    - Aufstieg in die Kreisliga A
+  images: [ ]
+- 
+  jahr: "2003"
+  ereignis: |
+    - Abstieg in die Kreisliga B
+    - Zehnter Zwickel-Night-Cup
+  images: [ ]
+- 
+  jahr: "2001"
+  ereignis: |
+    - Meister Kreisliga B
+    - Aufstieg in die Kreisliga A
+  images: [ ]
+- 
+  jahr: "1999"
+  ereignis: |
+    - Abstieg in die Kreisliga B
+    - 50 jähriges Vereinsjubiläum
+  images: [ ]
+- 
+  jahr: "1998"
+  ereignis: '- Meister Kreisliga B, Aufstieg in die Kreisliga A'
+  images: [ ]
+- 
+  jahr: "1997"
+  ereignis: '- Abstieg in die Kreisliga B'
+  images: [ ]
+- 
+  jahr: "1995"
+  ereignis: '- Vergrößerung/Modernisierung der Vereinshütte und sanitären Anlagen'
+  images: [ ]
+- 
+  jahr: "1994"
+  ereignis: '- Erster Zwickel-Night-Cup'
+  images: [ ]
+- 
+  jahr: "1992"
+  ereignis: '- Vizemeister Kreisliga A'
+  images: [ ]
+- 
+  jahr: "1989"
+  ereignis: |
+    - Fertigstellung des zweiten Rasenspielfeldes
+    - 40 jähriges Vereinsjubiläum mit Pokalturnier
+  images: [ ]
+- 
+  jahr: "1987"
+  ereignis: '- Baubeginn zweites Rasenspielfeld'
+  images: [ ]
+- 
+  jahr: "1985"
+  ereignis: |
+    - Meister Kreisliga B
+    - Aufstieg in die Kreisliga A
+  images: [ ]
+- 
+  jahr: "1984"
+  ereignis: '- Erneute Vergrößerung der Vereinshütte'
+  images: [ ]
+- 
+  jahr: "1980"
+  ereignis: '- Start der Männer-Gymnastikgruppe'
+  images: [ ]
+- 
+  jahr: "1979"
+  ereignis: |
+    - Erweiterung Geräte-/Vereinshütte
+    - Erstellung sanitärer Anlagen
+    - 30 jähriges Vereinsjubiläum mit Pokalturnier
+  images: [ ]
+- 
+  jahr: "1977"
+  ereignis: '- Vize-Bezirkspokalsieger'
+  images: [ ]
+- 
+  jahr: "1974"
+  ereignis: |
+    - Abstieg in die C-Klasse (Kreisliga B)
+    - Start der ersten Frauengymnastik-Gruppe
+    - Sportplatzrenovierung
+    - 25 jähriges Vereinsjubiläum mit Pokalturnier
+  images: [ ]
+- 
+  jahr: "1969"
+  ereignis: '- 20jähriges Vereinsjubiläum mit Pokalturnier'
+  images: [ ]
+- 
+  jahr: "1968"
+  ereignis: '- Bau einer Gerätehütte'
+  images: [ ]
+- 
+  jahr: "1967"
+  ereignis: '- Pokalbester der B-Klasse, Vize-Bezirkspokalsieger, Eintragung ins Vereinsregister'
+  images: [ ]
+- 
+  jahr: "1965"
+  ereignis: '- Abstieg in die B-Klasse'
+  images: [ ]
+- 
+  jahr: "1962"
+  ereignis: '- Zweite Einweihung Sportplatz'
+  images: [ ]
+- 
+  jahr: "1959"
+  ereignis: |
+    - Meister B-Klasse
+    - Aufstieg in die A-Klasse
+    - Bezirkspokalsieger
+    - 10 jähriges Vereinsjubiläum mit Pokalturnier
+  images: [ ]
+- 
+  jahr: "1956"
+  ereignis: '- Abstieg in die B-Klasse'
+  images: [ ]
+- 
+  jahr: "1955"
+  ereignis: '- Meister B-Klasse, Aufstieg in die A-Klasse'
+  images: [ ]
+- 
+  jahr: "1953"
+  ereignis: '- Meister C-Klasse, Aufstieg in die B-Klasse'
+  images: [ ]
+- 
+  jahr: "1951"
+  ereignis: '- Erste Einweihung Spielfeld mit Pokalspielen'
+  images: [ ]
+- 
+  jahr: "1950"
+  ereignis: '- Einstieg in den Verbandsspielbetrieb (C-Klasse)'
+  images: [ ]
+- 
+  jahr: "1949"
+  ereignis: '- Gründung der Sportfreunde Bronnen (9. April)'
+  images: [ ]
 
 ----
 
-Headline: Wichtige Ereignisse der Vereinsgeschichte
+Individualheader: true
+
+----
+
+Headerstyle: default
+
+----
+
+Headerimage:
+
+- header.jpg
+
+----
+
+Style: default
+
+----
+
+Image: 

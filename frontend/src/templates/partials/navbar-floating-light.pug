@@ -8,15 +8,12 @@ header.header.navbar.navbar-expand-lg.navbar-dark.navbar-floating.navbar-sticky(
     button(type='button' data-bs-toggle='offcanvas' data-bs-target='#primaryMenu').navbar-toggler.ms-n2.me-2
       span.navbar-toggler-icon
     a(href='index.html').navbar-brand.flex-shrink-0.order-lg-1.mx-auto.ms-lg-0.pe-lg-2.me-lg-4
-      img(src='img/logo/logo-light.png' alt='Around' width='153').navbar-floating-logo.d-none.d-lg-block
-      img(src='img/logo/logo-dark.png' alt='Around' width='153').navbar-stuck-logo
-      img(src='img/logo/logo-icon.png' alt='Around' width='58').d-lg-none
+      img(src='img/logo/sfb.svg' alt='Around' width='153').navbar-floating-logo.d-none.d-lg-block.w-50
+      img(src='img/logo/sfb.svg' alt='Around' width='153').navbar-stuck-logo.w-50
+      img(src='img/logo/sfb.svg' alt='Around' width='58').d-lg-none
     .d-flex.align-items-center.order-lg-3.ms-lg-auto
-      a(href='#modal-signin' data-bs-toggle='modal' data-view='#modal-signin-view').nav-link-style.fs-sm.text-nowrap
-        i.ai-user.fs-xl.me-2.align-middle
-        | Sign in
-      a(href='#modal-signin' data-bs-toggle='modal' data-view='#modal-signup-view')&attributes(isNavbarButtonLight ? {'class': 'btn btn-translucent-light ms-grid-gutter d-none d-lg-inline-block navbar-btn'} : {'class': 'btn btn-primary ms-grid-gutter d-none d-lg-inline-block navbar-btn'}) Sign up
-      a(href='#modal-signin' data-bs-toggle='modal' data-view='#modal-signup-view').btn.btn-primary.ms-grid-gutter.d-none.d-lg-inline-block.navbar-stuck-btn Sign up
+      a(href='#modal-signin' data-bs-toggle='modal' data-view='#modal-signup-view')&attributes(isNavbarButtonLight ? {'class': 'btn btn-translucent-light ms-grid-gutter d-none d-lg-inline-block navbar-btn'} : {'class': 'btn btn-primary ms-grid-gutter d-none d-lg-inline-block navbar-btn'}) Kontakt
+      a(href='#modal-signin' data-bs-toggle='modal' data-view='#modal-signup-view').btn.btn-primary.ms-grid-gutter.d-none.d-lg-inline-block.navbar-stuck-btn Kontakt
     #primaryMenu.offcanvas.offcanvas-collapse.order-lg-2
       .offcanvas-header.navbar-shadow
         h5.mt-1.mb-0 Menu

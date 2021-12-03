@@ -37,7 +37,7 @@ class HomePage extends Page
             ->listed()
             ->filterBy('template', 'bericht')
             ->sortBy('datum', 'desc')
-            ->limit(6);
+            ->limit(4);
     }
 
     public function formatDate($date) {

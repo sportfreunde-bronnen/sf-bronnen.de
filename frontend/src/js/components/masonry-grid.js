@@ -1,6 +1,6 @@
 /**
  * Cascading (Masonry) grid layout
- * 
+ *
  * @requires https://github.com/desandro/imagesloaded
  * @requires https://github.com/Vestride/Shuffle
 */

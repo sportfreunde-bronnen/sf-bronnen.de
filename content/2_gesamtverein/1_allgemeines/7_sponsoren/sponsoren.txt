@@ -6,11 +6,15 @@ Headline: Unsere Sponsoren und Partner
 
 ----
 
-Text: Wir bedanken uns recht herzlich bei unseren Sponsoren, Partnern und sonstigen Unterstützern.
+Text: Dasdasds
 
 ----
 
-Sponsoren: 
+Image: - sponsoren.jpg
+
+----
+
+Sponsoren:
 
 - 
   name: Academy Fahrschule Roloff GmbH
@@ -253,3 +257,19 @@ Sponsoren:
   name: 'M & D Flachdachtechnik'
   ort: Laupheim
   webseite: http://www.md-dachtechnik.de/
+- 
+  name: e.systeme21 GmbH
+  ort: Ulm
+  webseite: https://esysteme21.de/
+
+----
+
+Individualheader: true
+
+----
+
+Headerstyle: default
+
+----
+
+Headerimage: - sponsoren.jpg

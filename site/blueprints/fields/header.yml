@@ -1,0 +1,34 @@
+type: group
+label: Header konfigurieren
+help: Test
+fields:
+  individualHeader:
+    label: Individuellen Header für diese Seite?
+    type: toggle
+    text:
+      - "Nein"
+      - "Ja"
+    default: "no"
+  headerStyle:
+    type: select
+    required: true
+    label: Style des Headers
+    help:
+    options:
+      default: Bild wird ganz normal angezeigt
+      slantBottomRight: Bild wird am unteren Rand von links unten nach rechts abgeschnitten
+      slantBottomLeft: Bild wird am unteren Rand von links nach rechts unten abgeschnitten
+      curveBottomCenter: Unter dem Bild wird eine mittige Kurve angezeigt
+      curveBottomLeft: Under dem Bild wird eine Kurve von links nach rechts angezeigt
+    default: default
+    when:
+      individualHeader: true
+
+  headerImage:
+    type: files
+    label: Welches Bild soll im Header angezeigt werden?
+    query: page.images
+    required: true
+    multiple: false
+    when:
+      individualHeader: true

@@ -1,26 +1,56 @@
 title: Sponsoren
 pages: false
 files: true
-fields:
-  title: title
-  headline: fields/headline
-  text:
-    label: Text
-    type:  wysiwyg
-  sponsoren:
-    type: structure
-    label: Sponsoren und Partner
-    entry: >
-      <b>{{name}}</b> ({{ort}})
-    fields:
-      name:
-        type: text
-        label: Werbepartner
-        required: true
-      ort:
-        type: text
-        label: Ortschaft
-        required: true
-      webseite:
-        type: url
-        label: Webseite
+tabs:
+  content:
+    label: Content
+    icon: text
+    columns:
+      main:
+        sections:
+          content:
+            type: fields
+            fields:
+              title: title
+              headline: fields/headline
+              text:
+                label: Text
+                type:  textarea
+              image:
+                label: Bild für Sponsorenseite
+                type: files
+                query: page.images
+              sponsoren:
+                type: structure
+                label: Sponsoren und Partner
+                entry: >
+                  <b>{{name}}</b> ({{ort}})
+                fields:
+                  name:
+                    type: text
+                    label: Werbepartner
+                    required: true
+                  ort:
+                    type: text
+                    label: Ortschaft
+                    required: true
+                  webseite:
+                    type: url
+                    label: Webseite
+  header:
+    label: Header
+    icon: image
+    columns:
+      main:
+        width: 1/2
+        sections:
+          header:
+            type: fields
+            fields:
+              header: fields/header
+      sidebar:
+        width: 1/2
+        sections:
+          dateien:
+            type: files
+            label: Dateien

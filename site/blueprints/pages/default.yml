@@ -5,3 +5,11 @@ fields:
     label: Text
     type: textarea
     size: large
+  navType:
+    type: select
+    label: Wie soll die Seite innerhalb der Navigation angezeigt werden?
+    help: Muss nur für die Unterseiten angelegt werden
+    options:
+      column: Als eigene Spalte
+      among: Untereinander
+    default: column
