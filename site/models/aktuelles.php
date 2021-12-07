@@ -32,6 +32,21 @@ class AktuellesPage extends \Kirby\Cms\Page
             ->sortBy('datum', 'desc');
     }
 
+    public function getTrendingArticles()
+    {
+        return site()
+            ->index()
+            ->children()
+            ->filterBy('template', 'bericht')
+            ->filter(function($p) {
+                /** @var $p \Kirby\Cms\Page */
+                return $p->parent()->parent()->parent()->id() != $this->parent()->parent()->id();
+            })
+            ->listed()
+            ->sortBy('datum', 'desc')
+            ->slice(0,3);
+    }
+
     public function isInitialFiltering()
     {
         return !is_null(get('tag', null));

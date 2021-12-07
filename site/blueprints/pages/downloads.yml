@@ -4,19 +4,52 @@ options:
   url: false
   status: true
 pages: false
-preset: page
-fields:
-  title: title
-  headline: fields/headline
-  downloads:
-    title: Dateien
-    type: structure
-    fields:
-      category:
-        label: Kategorie
-        type: text
-        required: true
-      downloads:
-        label: Dateien
-        type: files
-        multiple: true
+tabs:
+  content:
+    label: Content
+    icon: text
+    columns:
+      main:
+        width: 1/2
+        sections:
+          content:
+            type: fields
+            fields:
+              title: title
+              headline: fields/headline
+              downloads:
+                title: Dateien
+                type: structure
+                fields:
+                  category:
+                    label: Kategorie
+                    type: text
+                    required: true
+                  downloads:
+                    label: Dateien
+                    type: files
+                    multiple: true
+      sidebar:
+        width: 1/2
+        sections:
+          dateien:
+            type: files
+            label: Dateien
+
+  header:
+    label: Header
+    icon: image
+    columns:
+      main:
+        width: 1/2
+        sections:
+          header:
+            type: fields
+            fields:
+              header: fields/header
+      sidebar:
+        width: 1/2
+        sections:
+          dateien:
+            type: files
+            label: Dateien

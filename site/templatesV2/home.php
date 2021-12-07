@@ -75,13 +75,13 @@
     <div class="container my-2 my-md-0">
         <div class="row align-items-center">
             <div class="col-12 p-5">
-                <h1 class="text-primary">Herzlich willkommen bei den Sportfreunden Bronnen</h1>
+                <h1>Herzlich willkommen bei den Sportfreunden Bronnen</h1>
                 <hr>
-                <h3 class="text-primary">Wir stehen für Spaß und Freude am Sport und an der Bewegung.</h3>
-                <p class="text-primary">In unseren Abteilungen Fitness/Gymnastik, Fußball und Aikido trainieren unsere Mitglieder gemeinsam für ihre sportlichen Erfolge und Ziele. Unser Ziel ist es, für Mitglieder jeden Alters die bestmöglichen Voraussetzungen zu schaffen. Dafür setzen sich unsere ehrenamtlichen Helfer mit viel Einsatz, Freude und Herzblut ein. Kameradschaft, Engagement und gegenseitiger Respekt sind unsere Leitsätze.</p>
-                <p class="text-primary">Mit unseren tollen Sponsoren und Unterstützern und in Zusammenarbeit mit unserer Heimatgemeinde wollen wir diesen Weg auch in Zukunft zielstrebig weiter gehen. Werden Sie Teil der Sportfreunde Familie und begleiten Sie uns auf diesem Weg.</p>
-                <p class="text-primary">Nun wünschen wir Ihnen viel Spaß beim Stöbern auf unserer Homepage.</p>
-                <h3 class="text-primary">Respekt. Engagement. Kameradschaft.</h3>
+                <h3>Wir stehen für Spaß und Freude am Sport und an der Bewegung.</h3>
+                <p>In unseren Abteilungen Fitness/Gymnastik, Fußball und Aikido trainieren unsere Mitglieder gemeinsam für ihre sportlichen Erfolge und Ziele. Unser Ziel ist es, für Mitglieder jeden Alters die bestmöglichen Voraussetzungen zu schaffen. Dafür setzen sich unsere ehrenamtlichen Helfer mit viel Einsatz, Freude und Herzblut ein. Kameradschaft, Engagement und gegenseitiger Respekt sind unsere Leitsätze.</p>
+                <p>Mit unseren tollen Sponsoren und Unterstützern und in Zusammenarbeit mit unserer Heimatgemeinde wollen wir diesen Weg auch in Zukunft zielstrebig weiter gehen. Werden Sie Teil der Sportfreunde Familie und begleiten Sie uns auf diesem Weg.</p>
+                <p>Nun wünschen wir Ihnen viel Spaß beim Stöbern auf unserer Homepage.</p>
+                <h3>Respekt. Engagement. Kameradschaft.</h3>
                 <hr>
             </div>
         </div>

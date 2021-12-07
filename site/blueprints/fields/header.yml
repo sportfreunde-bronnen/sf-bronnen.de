@@ -2,6 +2,13 @@ type: group
 label: Header konfigurieren
 help: Test
 fields:
+  disableHeader:
+    label: Header für diese Seite deaktivieren?
+    type: toggle
+    text:
+      - "Nein"
+      - "Ja"
+    default: false
   individualHeader:
     label: Individuellen Header für diese Seite?
     type: toggle
@@ -9,6 +16,8 @@ fields:
       - "Nein"
       - "Ja"
     default: "no"
+    when:
+      disableHeader: false
   headerStyle:
     type: select
     required: true
@@ -22,6 +31,7 @@ fields:
       curveBottomLeft: Under dem Bild wird eine Kurve von links nach rechts angezeigt
     default: default
     when:
+      disableHeader: false
       individualHeader: true
 
   headerImage:
@@ -31,4 +41,5 @@ fields:
     required: true
     multiple: false
     when:
+      disableHeader: false
       individualHeader: true

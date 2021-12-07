@@ -8,7 +8,7 @@ Datum: 2021-11-25
 
 Author:
 
-- 16pohVSK
+- 69A5h99k
 
 ----
 
@@ -22,21 +22,17 @@ Teaserimage:
 
 ----
 
-Text: Testdasdasd
-
-----
-
 Textimages:
 
 - img_9631.jpg
 
 ----
 
-Tags: fussball, saison2122, spielbericht
+Text: Testdasdasd
 
 ----
 
-Gallerytoggle: false
+Tags: fussball, saison2122, spielbericht
 
 ----
 
@@ -45,3 +41,25 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Disableheader: false
+
+----
+
+Individualheader: true
+
+----
+
+Headerstyle: curveBottomCenter
+
+----
+
+Headerimage:
+
+- img_9631.jpg
+
+----
+
+Gallerytoggle: false

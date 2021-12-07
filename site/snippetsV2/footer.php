@@ -1,5 +1,5 @@
 </main>
-<!-- Footer-->
+
 <footer class="footer bg-dark pt-5 pt-md-6">
     <div class="container pt-3 pt-md-0">
         <div class="row pb-3">
@@ -46,7 +46,12 @@
         </div>
     </div>
 </footer>
-<!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+
+<button class="btn btn-primary btn-sm is-sidebar sidebar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#blog-sidebar"><i class="ai-sidebar fs-base me-2"></i>Sidebar</button>
+
+<!-- Back to top button-->
+<a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+
 <!-- Vendor scrits: js libraries and plugins-->
 <script src="/assetsV2/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/assetsV2/vendor/simplebar/dist/simplebar.min.js"></script>

@@ -1,18 +1,21 @@
-Title: Downloads
-
-----
-
 Headline: Förderverein Downloads
 
 ----
 
-Downloads: 
+Downloads:
 
 - 
   category: Allgemeines
-  downloads: >
-    angebote-foerdervereinsfb-20190401.pdf,datenschutzordnung-forderverein-stand-21.04.2020.pdf,satzung-fordervereins-sf-bronnen-e.v-20170303.pdf,vordruck-beitrittserklarung-premiumpartner-forderverein-sportfreunde-bronnen-ab-februar-2020.pdf
+  downloads:
+    - angebote-foerdervereinsfb-20190401.pdf
+    - >
+      datenschutzordnung-forderverein-stand-21.04.2020.pdf
+    - >
+      satzung-fordervereins-sf-bronnen-e.v-20170303.pdf
+    - >
+      vordruck-beitrittserklarung-premiumpartner-forderverein-sportfreunde-bronnen-ab-februar-2020.pdf
 - 
   category: Pflegepatenschaft Sportplatz
-  downloads: >
-    vordruck-pflegepatenschaft-sportplatzparzelle-neu-mit-hinweis-dsgvo.pdf
+  downloads:
+    - >
+      vordruck-pflegepatenschaft-sportplatzparzelle-neu-mit-hinweis-dsgvo.pdf

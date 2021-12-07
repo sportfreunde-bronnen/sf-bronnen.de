@@ -8,7 +8,7 @@ Datum: 2021-10-28
 
 Author:
 
-- 16pohVSK
+- 69A5h99k
 
 ----
 
@@ -19,6 +19,13 @@ Author2:
 Teaserimage:
 
 - img_9310.jpg
+
+----
+
+Textimages:
+
+- img_9350.jpg
+- img_9486.jpg
 
 ----
 
@@ -42,18 +49,7 @@ Am kommenden **Sonntag (31.10.2021)** stehen die folgenden Partien auf dem Progr
 
 ----
 
-Textimages:
-
-- img_9350.jpg
-- img_9486.jpg
-
-----
-
 Tags: fussball, spielbericht, saison2122, jugend, erste mannschaft, zweite mannschaft
-
-----
-
-Gallerytoggle: false
 
 ----
 
@@ -84,3 +80,23 @@ Galleryimages:
 - img_9452.jpg
 - img_9486.jpg
 - img_9493.jpg
+
+----
+
+Disableheader: true
+
+----
+
+Individualheader: false
+
+----
+
+Headerstyle: 
+
+----
+
+Headerimage: 
+
+----
+
+Gallerytoggle: false

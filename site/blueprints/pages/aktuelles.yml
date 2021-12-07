@@ -1,16 +1,39 @@
 title: Aktuelles
-sections:
-  pages:
-    headline: News
-    status: all
-    templates: bericht
-    sortBy: datum desc
-    limit: 12
-    layout: cards
 options:
   url: false
   status: false
   template: false
   delete: false
+tabs:
+  content:
+    label: Content
+    icon: text
+    columns:
+      main:
+        sections:
+          pages:
+            headline: News
+            status: all
+            templates: bericht
+            sortBy: datum desc
+            limit: 12
+            layout: cards
+  header:
+    label: Header
+    icon: image
+    columns:
+      main:
+        width: 1/2
+        sections:
+          header:
+            type: fields
+            fields:
+              header: fields/header
+      sidebar:
+        width: 1/2
+        sections:
+          dateien:
+            type: files
+            label: Dateien
 
 

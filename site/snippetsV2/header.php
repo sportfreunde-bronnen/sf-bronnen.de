@@ -10,6 +10,7 @@
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
+    <link href="/assets/images/sfb/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assetsV2/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assetsV2/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assetsV2/favicon-16x16.png">
@@ -107,13 +108,16 @@
     <link rel="stylesheet" media="screen" href="/assetsV2/css/theme.min.css">
 </head>
 <!-- Body-->
-<body class="">
+<body class="is-sidebar">
 <!-- Page loading spinner-->
 <div class="page-loading active">
     <div class="page-loading-inner">
-        <div class="page-spinner"></div><span>Loading...</span>
+        <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
     </div>
 </div>
+
 <main class="page-wrapper">
     <!-- Sign In Modal-->
     <div class="modal fade" id="modal-signin" tabindex="-1">
@@ -193,7 +197,8 @@
     </div>
     <!-- Navbar (Floating light)-->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-    <header class="header navbar navbar-expand-lg navbar-dark navbar-floating navbar-sticky" data-scroll-header data-fixed-element>
+    <?php $headerClasses = $page->disableHeader()->toBool() === true ? [' bg-primary'] : [' navbar-floating']; ?>
+    <header class="header navbar navbar-expand-lg navbar-dark navbar-sticky<?= implode(' ', $headerClasses);?>" data-scroll-header data-fixed-element>
         <div class="container px-0 px-xl-3">
             <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="/"><img class="navbar-floating-logo d-none d-lg-block w-50" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="153"><img class="navbar-stuck-logo w-50" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="153"><img class="d-lg-none" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="58"></a>
             <div class="d-flex align-items-center order-lg-3 ms-lg-auto"><a class="btn btn-translucent-light ms-grid-gutter d-none d-lg-inline-block navbar-btn" href="#modal-signin" data-bs-toggle="modal" data-view="#modal-signup-view">Kontakt</a><a class="btn btn-primary ms-grid-gutter d-none d-lg-inline-block navbar-stuck-btn" href="#modal-signin" data-bs-toggle="modal" data-view="#modal-signup-view">Kontakt</a></div>
@@ -208,7 +213,7 @@
                         <?php foreach($pages->listed() as $mainCategory): ?>
                         <?php if ($mainCategory->children()->listed()->count()): ?>
                             <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle<?= $mainCategory->isOpen() ? ' active':'';?>" href="#" data-bs-toggle="dropdown"><?= $mainCategory->title();?></a>
+                                <a class="nav-link dropdown-toggle<?= $mainCategory->isOpen() ? ' active':'';?>" href="<?= $mainCategory->url();?>" data-bs-toggle="dropdown"><?= $mainCategory->title();?></a>
                                 <div class="dropdown-menu">
                                 <?php $i = 0; foreach ($mainCategory->children()->listed() as $key => $subPage): $i++; ?>
                                     <?php $isDropdownOpen = false;?>
@@ -218,7 +223,7 @@
                                         <?php $isDropdownOpen = true;?>
                                         <div class="dropdown-column mb-2 mb-lg-0">
                                         <?php endif; ?>
-                                        <h5 class="dropdown-header<?= $subPage->navType() == 'among' ? ' mt-4' : '';?>"><?= $subPage->title();?></h5>
+                                        <h5 class="dropdown-header<?= $subPage->navType() == 'among' ? ' mt-lg-4' : '';?>"><?= $subPage->title();?></h5>
                                         <?php if ($subPage->title() == 'Veranstaltungen'):?>
                                             <?php foreach ($subPage->children()->listed()->filterBy('datum', 'date >=', date('Y-m-d'))->sortBy('datum') as $subSubPage): ?>
                                                 <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?><br/><small><?= $subSubPage->datum()->toDate('d.m.Y');?></small></a>
@@ -246,6 +251,7 @@
         </div>
     </header>
     <?php if (!$page->isHomePage()):?>
+    <?php if ($page->disableHeader()->toBool() === false): ?>
     <?php if ($page->individualHeader()->toBool() === false):?>
     <section class="jarallax bg-gradient pt-5 pt-md-7 pb-7" data-jarallax="" data-speed="0.25" style="background-image: none;">
         <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient opacity-80"></span>
@@ -268,5 +274,6 @@
     </section>
     <?php else: ?>
     <?php snippet('headerImage');?>
+    <?php endif; ?>
     <?php endif; ?>
     <?php endif; ?>

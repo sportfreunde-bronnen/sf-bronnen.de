@@ -4,7 +4,6 @@ options:
   template: false
   url: false
   delete: false
-  status: false
 fields:
   zitate:
     label: Zitate für Kursseiten
