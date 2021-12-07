@@ -107,10 +107,6 @@
     size: $dropdown-item-font-size;
     weight: $nav-link-font-weight;
   }
-  &.active {
-    pointer-events: none;
-    cursor: default;
-  }
   > i, .badge { vertical-align: middle; }
 }
 

@@ -32,7 +32,7 @@
                 <div class="py-4">
                     <?php if ($moreImages = $page->getMoreImages()): ?>
                         <?php $i = 0; foreach ($moreImages as $textImage): $i++; ?>
-                            <figure class="figure px-0 text-md-start<?= ($i % 2 == 0) ? ' float-none float-md-end pe-0' : ' float-none float-md-start ps-0'; ?>">
+                            <figure class="figure px-4 text-md-start<?= ($i % 2 == 0) ? ' float-none float-md-end pe-0' : ' float-none float-md-start ps-0'; ?>">
                                 <img src="<?= $textImage->resize(500)->url();?>" class="figure-img img-fluid" alt="Bild: <?= $textImage->caption();?>">
                                 <figcaption class="figure-caption w-75"><?= $textImage->caption();?></figcaption>
                             </figure>
