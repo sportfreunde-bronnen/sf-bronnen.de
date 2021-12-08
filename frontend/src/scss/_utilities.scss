@@ -1,7 +1,7 @@
 //
 // Utilities
 // Extends default Bootstrap utility classes
-// Classes with a purpose to reduce the frequency of 
+// Classes with a purpose to reduce the frequency of
 // highly repetitive declarations
 // --------------------------------------------------
 
@@ -14,13 +14,37 @@ $utilities: map-merge(
   $utilities,
   (
 
+    'viewport-height': (
+      property: height,
+      class: vh,
+      values: (
+        25: 25vh,
+        40: 40vh,
+        50: 50vh,
+        75: 75vh,
+        100: 100vh
+      )
+    ),
+
+    'min-viewport-height': (
+      property: min-height,
+      class: min-vh,
+      values: (
+        25: 25vh,
+        40: 40vh,
+        50: 50vh,
+        75: 75vh,
+        100: 100vh
+      )
+    ),
+
     // Border colors
     'border-color': (
       property: border-color,
       class: border,
       values: $border-colors
     ),
-    
+
     // Background colors
     'background-color': map-merge(
       map-get($utilities, 'background-color'),
@@ -94,7 +118,7 @@ $utilities: map-merge(
         )
       )
     ),
-    
+
     // Background faded colors
     'background-faded-color': (
       property: background-color,

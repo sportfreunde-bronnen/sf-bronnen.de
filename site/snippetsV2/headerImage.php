@@ -1,4 +1,4 @@
-<section class="jarallax bg-gradient pt-5 pt-md-7 pb-7" data-jarallax="" data-speed="0.25" style="background-image: none;">
+<section class="d-flex align-items-center justify-content-center jarallax bg-gradient vh-40" data-jarallax="" data-speed="0.25" style="background-image: none;">
     <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient opacity-80"></span>
     <?php if($page->headerStyle() == 'slantBottomRight'): ?>
     <div class="shape shape-bottom shape-slant bg-body">
@@ -25,10 +25,10 @@
         </svg>
     </div>
     <?php endif; ?>
-    <div class="container position-relative zindex-5 pt-0 pt-md-3 pt-lg-3 pb-0 pb-md-2 pb-lg-5">
-        <div class="row pb-0 pb-md-2 pb-lg-5">
-            <div class="col-12 pt-5 pt-md-3 pt-lg-5 text-center">
-                <h1 class="text-light"><?= $page->title();?></h1>
+    <div class="d-flex container justify-content-start position-relative zindex-5">
+        <div class="row w-100">
+            <div class="col-12">
+                <h1 class="text-light display-1"><?= $page->title();?></h1>
                 <p class="text-light">Test 123</p>
             </div>
         </div>

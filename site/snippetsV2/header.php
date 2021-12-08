@@ -149,8 +149,8 @@
                         <?php foreach($pages->listed() as $mainCategory): ?>
                         <?php if ($mainCategory->children()->listed()->count()): ?>
                             <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle<?= $mainCategory->isOpen() ? ' active':'';?>" href="<?= $mainCategory->url();?>" data-bs-toggle="dropdown"><?= $mainCategory->title();?></a>
-                                <div class="dropdown-menu">
+                                <a class="nav-link dropdown-toggle<?= $mainCategory->isOpen() ? ' show active':'';?>" href="<?= $mainCategory->url();?>" data-bs-toggle="dropdown"><?= $mainCategory->title();?></a>
+                                <div class="dropdown-menu<?= $mainCategory->isOpen() ? ' show' : '';?>">
                                 <?php $i = 0; foreach ($mainCategory->children()->listed() as $key => $subPage): $i++; ?>
                                     <?php $isDropdownOpen = false;?>
                                     <?php if ($subPage->children()->listed()->count()): ?>
@@ -189,23 +189,20 @@
     <?php if (!$page->isHomePage()):?>
     <?php if ($page->disableHeader()->toBool() === false): ?>
     <?php if ($page->individualHeader()->toBool() === false):?>
-    <section class="jarallax bg-gradient pt-5 pt-md-7 pb-7" data-jarallax="" data-speed="0.25" style="background-image: none;">
+    <section class="d-flex align-items-center jarallax bg-gradient vh-40" data-jarallax="" data-speed="0.25" style="background-image: none;">
         <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient opacity-80"></span>
         <div class="shape shape-bottom shape-slant bg-body">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 260">
                 <polygon fill="currentColor" points="0,257 0,260 3000,260 3000,0"></polygon>
             </svg>
         </div>
-        <div class="container position-relative zindex-5 pt-0 pt-md-3 pt-lg-3 pb-0 pb-md-2 pb-lg-5">
-            <div class="row pb-0 pb-md-2 pb-lg-5">
-                <div class="col-12 col-lg-10 pt-5 pt-md-3 pt-lg-5">
-                    <h1 class="text-light"><?= $page->title();?></h1>
+        <div class="d-flex justify-content-start container position-relative zindex-5 mt-5 mt-lg-4">
+            <div class="row w-100">
+                <div class="col-12 col-lg-10">
+                    <h1 class="text-light display-1"><?= $page->title();?></h1>
                     <p class="text-light">Test 123</p>
                 </div>
             </div>
-        </div>
-        <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
-            <div class="jarallax-img" style="background-image: url('/assetsV2/img/pages/contacts/page-title-bdg.jpg'); object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 105.125px; transform: translate3d(0px, -85.375px, 0px);" data-jarallax-original-styles="background-image: url(/assetsV2/img/pages/contacts/page-title-bg.jpg);"></div>
         </div>
     </section>
     <?php else: ?>
