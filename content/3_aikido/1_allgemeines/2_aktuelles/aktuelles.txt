@@ -1,0 +1,17 @@
+Title: Aktuelles
+
+----
+
+Disableheader: true
+
+----
+
+Individualheader: false
+
+----
+
+Headerstyle: default
+
+----
+
+Headerimage: 

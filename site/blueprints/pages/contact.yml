@@ -6,21 +6,47 @@ options:
   template: false
   visible: false
   status: false
-fields:
-  headline: fields/headline
-  ansprechpartner:
-    label: Ansprechpartner
-    type: structure
-    entry: >
-      <b>{{name}}</b> ({{aufgabe}} / {{email}})
-    fields:
-      name:
-        label: Vollständiger Name
-        type: text
-      aufgabe:
-        label: Aufgabe
-        type: text
-      email:
-        label: E-Mail
-        help: Wird nicht öffentlich angezeigt
-        type: email
+tabs:
+  content:
+    label: Content
+    icon: text
+    columns:
+      main:
+        sections:
+          content:
+            type: fields
+            fields:
+              headline: fields/headline
+              ansprechpartner:
+                label: Ansprechpartner
+                type: structure
+                entry: >
+                  <b>{{name}}</b> ({{aufgabe}} / {{email}})
+                fields:
+                  name:
+                    label: Vollständiger Name
+                    type: text
+                  aufgabe:
+                    label: Aufgabe
+                    type: text
+                  email:
+                    label: E-Mail
+                    help: Wird nicht öffentlich angezeigt
+                    type: email
+  header:
+    label: Header
+    icon: image
+    columns:
+      main:
+        width: 1/2
+        sections:
+          header:
+            type: fields
+            fields:
+              header: fields/header
+      sidebar:
+        width: 1/2
+        sections:
+          dateien:
+            type: files
+            label: Dateien

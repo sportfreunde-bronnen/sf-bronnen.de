@@ -2,30 +2,24 @@
     <div class="container">
         <div class="row justify-content-center">
             <!-- Content-->
-            <div class="col-lg-10 py-4 mb-2 mb-sm-0 pb-sm-5">
+            <div class="col-lg-10 mb-2 mb-sm-0 pb-sm-5">
+                <?php if ($page->disableHeader()->toBool() === true): ?>
                 <div class="pb-4">
-                    <?php if ($page->disableHeader()->toBool() === true): ?>
                     <h1><?= $page->title();?></h1>
-                    <?php endif; ?>
                 </div>
+                <?php endif; ?>
                 <!-- Post author + Sharing-->
                 <div class="row position-relative g-0 align-items-center border-top border-bottom mb-4">
                     <div class="col-md-6 py-3 pe-md-3">
                         <div class="d-flex align-items-center justify-content-center justify-content-md-start">
                             <div class="d-flex align-items-center me-grid-gutter">
                                 <div class="ps-2">
-                                    <h6 class="nav-heading mb-1"><a href="#"><?= $page->author()->toUser()?->alias() ?? 'Autor';?></a></h6>
+                                    <h6 class="nav-heading mb-1">Von: <a href="#"><?= $page->author()->toUser()?->alias() ?? 'Autor';?></a></h6>
                                     <div class="text-nowrap">
                                         <div class="meta-link fs-xs"><i class="ai-calendar me-1 align-vertical"></i>&nbsp;<?= $page->datum()->toDate('d.m.Y');?></div></a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="d-none d-md-block position-absolute border-start h-100" style="top: 0; left: 50%; width: 1px;"></div>
-                    <div class="col-md-6 ps-md-3 py-3">
-                        <div class="d-flex align-items-center justify-content-center justify-content-md-end">
-                            <h6 class="text-nowrap my-2 me-3">Share post:</h6><a class="btn-social bs-outline bs-facebook ms-2 my-2" href="#"><i class="ai-facebook"></i></a><a class="btn-social bs-outline bs-twitter ms-2 my-2" href="#"><i class="ai-twitter"></i></a><a class="btn-social bs-outline bs-google ms-2 my-2" href="#"><i class="ai-google"></i></a><a class="btn-social bs-outline bs-email ms-2 my-2" href="#"><i class="ai-mail"></i></a>
                         </div>
                     </div>
                 </div>
@@ -40,6 +34,7 @@
                     <?php endif; ?>
                     <?= $page->text()->kirbytext();?>
                 </div>
+
                 <!--
                 <h2 class="h3 pt-1 pb-4">Expert opinion</h2>
                 <div class="bg-faded-primary rounded-3 p-4 mb-4">

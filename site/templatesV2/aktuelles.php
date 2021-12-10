@@ -7,7 +7,7 @@
             <div class="sidebar col-lg-3 pt-lg-5">
                 <div class="offcanvas offcanvas-collapse" id="blog-sidebar">
                     <div class="offcanvas-header navbar-shadow px-4 mb-3">
-                        <h5 class="mt-1 mb-0">Sidebar</h5>
+                        <h5 class="mt-1 mb-0">Navigation</h5>
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body px-4 pt-3 pt-lg-0 ps-lg-0 pe-lg-2 pe-xl-4" data-simplebar>
@@ -18,14 +18,6 @@
                                 <?php foreach(site()->index()->children()->listed()->filterBy('template', 'aktuelles') as $category): ?>
                                 <li><a class="widget-link<?= $category->isOpen() ? ' active' : '';?>" href="<?= $category->url();?>"><?= $category->parent()->parent()->title();?><small class="text-muted ps-1 ms-2"><?= $category->children()->listed()->filterBy('template', 'bericht')->count();?></small></a></li>
                                 <?php endforeach; ?>
-                                <!--
-                                <li><a class="widget-link" href="#">Digital design<small class="text-muted ps-1 ms-2">23</small></a></li>
-                                <li><a class="widget-link" href="#">Brand strategy<small class="text-muted ps-1 ms-2">14</small></a></li>
-                                <li><a class="widget-link" href="#">Project management<small class="text-muted ps-1 ms-2">7</small></a></li>
-                                <li><a class="widget-link" href="#">Business<small class="text-muted ps-1 ms-2">19</small></a></li>
-                                <li><a class="widget-link" href="#">Technology<small class="text-muted ps-1 ms-2">35</small></a></li>
-                                <li><a class="widget-link" href="#">Travel &amp; Vacation<small class="text-muted ps-1 ms-2">28</small></a></li>
-                                -->
                             </ul>
                         </div>
 
@@ -50,7 +42,7 @@
                         <div class="widget mb-5">
                             <h3 class="widget-title pb-1">Tags</h3>
                             <?php foreach ($page->getUsedTags() as $tag): ?>
-                                <a class="btn-tag me-2 mb-2" href="#">#<?= trim($tag);?></a>
+                                <a class="btn-tag me-2 mb-2<?= get('tag') == trim($tag) ? ' bg-primary text-white' : '';?>" href="<?= $page->url();?>?tag=<?= trim($tag);?>">#<?= trim($tag);?></a>
                             <?php endforeach; ?>
                         </div>
                     </div>
@@ -60,6 +52,17 @@
             <div class="col-lg-9 content py-5 mb-2 mb-sm-0 pb-sm-5">
 
                 <h1 class="mb-5"><?= $page->title();?> - <?= $page->parent()->parent()->title();?></h1>
+
+                <?php if(get('tag', null) !== null): ?>
+                <div class="d-flex align-items-center justify-content-between border-top border-bottom mb-5">
+                    <div class="d-flex align-items-center py-1 text-center text-md-start">
+                        <a class="d-flex btn-tag me-2 my-2 bg-primary text-white" href="">#<?= trim(get('tag'));?></a>
+                    </div>
+                    <div class="d-flex fs-6 ml-5 d-flex align-items-center">
+                        <a href="<?= $page->url();?>">Filter zurücksetzen</a>
+                    </div>
+                </div>
+                <?php endif; ?>
 
                 <!-- Post-->
                 <?php $i = 0; foreach ($page->getArticles()->slice(0, 1000) as $post): $i++; ?>

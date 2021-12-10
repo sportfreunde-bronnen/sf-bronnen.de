@@ -1772,6 +1772,17 @@ progress {
   }
 }
 
+.display-7 {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 600;
+  line-height: 1;
+}
+@media (min-width: 1200px) {
+  .display-7 {
+    font-size: 1.5rem;
+  }
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -21215,4 +21226,9 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 
 .shape-curve {
   padding-bottom: 6.2%;
+}
+
+.uniform__potty, .honey {
+  position: absolute;
+  left: -9999px;
 }

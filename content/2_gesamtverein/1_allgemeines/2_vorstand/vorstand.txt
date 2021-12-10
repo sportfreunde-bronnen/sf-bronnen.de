@@ -1,8 +1,8 @@
-Title: Vorstand
+Title: Vorstandschaft
 
 ----
 
-Personen: 
+Personen:
 
 - 
   name: Martin Pannek

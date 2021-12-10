@@ -27,9 +27,16 @@ class AktuellesPage extends \Kirby\Cms\Page
      */
     public function getArticles()
     {
-        return $this->children()
+        // Check if we have a selected tag
+        $articles = $this->children()
             ->listed()
             ->sortBy('datum', 'desc');
+
+        if ($this->isInitialFiltering()) {
+            $articles = $articles->filterBy('tags', get('tag'), ',');
+        }
+
+        return $articles;
     }
 
     public function getTrendingArticles()

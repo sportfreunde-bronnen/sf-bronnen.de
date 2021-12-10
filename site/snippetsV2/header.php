@@ -108,7 +108,7 @@
     <link rel="stylesheet" media="screen" href="/assetsV2/css/theme.min.css">
 </head>
 <!-- Body-->
-<body class="<?= in_array($page->template(), ['aktuelles']) ? 'is-sidebar' : '';?>">
+<body class="bg-secondary<?= in_array($page->template(), ['aktuelles']) ? ' is-sidebar' : '';?>">
 <!-- Page loading spinner-->
 <div class="page-loading active">
     <div class="page-loading-inner">
@@ -121,7 +121,7 @@
 <main class="page-wrapper">
     <!-- Navbar (Floating light)-->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-    <?php $headerClasses = $page->disableHeader()->toBool() === true ? [' bg-primary'] : [' navbar-floating']; ?>
+    <?php $headerClasses = $page->template() != 'contact' && $page->disableHeader()->toBool() === true ? [' bg-primary'] : [' navbar-floating']; ?>
     <header class="header navbar navbar-expand-lg navbar-dark navbar-sticky<?= implode(' ', $headerClasses);?>" data-scroll-header data-fixed-element>
         <div class="container px-0 px-xl-3">
             <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
@@ -130,14 +130,14 @@
             <a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="/">
                 <img class="navbar-floating-logo d-none d-lg-block w-50" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="153">
                 <img class="navbar-stuck-logo w-50" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="153">
-                <!--
-                <img class="d-lg-none" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="58">
-                -->
-                <span class="d-lg-none display-6">
+                <span class="text-start d-lg-none display-7 ms-n5 ms-lg-0">
                     Sportfreunde Bronnen e.V.
                 </span>
             </a>
-            <div class="d-flex align-items-center order-lg-3 ms-lg-auto"><a class="btn btn-translucent-light ms-grid-gutter d-none d-lg-inline-block navbar-btn" href="#modal-signin" data-bs-toggle="modal" data-view="#modal-signup-view">Kontakt</a><a class="btn btn-primary ms-grid-gutter d-none d-lg-inline-block navbar-stuck-btn" href="#modal-signin" data-bs-toggle="modal" data-view="#modal-signup-view">Kontakt</a></div>
+            <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+                <a class="btn btn-translucent-light ms-grid-gutter d-none d-lg-inline-block navbar-btn" href="<?= $site->homePage()->headerCtaLink()->toPage()->url();?>"><?= $site->homePage()->headerCtaText();?></a>
+                <a class="btn btn-primary ms-grid-gutter d-none d-lg-inline-block navbar-stuck-btn" href="<?= $site->homePage()->headerCtaLink()->toPage()->url();?>"><?= $site->homePage()->headerCtaText();?></a>
+            </div>
             <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
                 <div class="offcanvas-header navbar-shadow">
                     <h5 class="mt-1 mb-0">Menu</h5>
@@ -189,17 +189,17 @@
     <?php if (!$page->isHomePage()):?>
     <?php if ($page->disableHeader()->toBool() === false): ?>
     <?php if ($page->individualHeader()->toBool() === false):?>
-    <section class="d-flex align-items-center jarallax bg-gradient vh-40" data-jarallax="" data-speed="0.25" style="background-image: none;">
+    <section class="d-flex align-items-center justify-content-center jarallax bg-gradient vh-40" data-jarallax="" data-speed="0.25" style="background-image: none;">
         <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient opacity-80"></span>
-        <div class="shape shape-bottom shape-slant bg-body">
+        <div class="shape shape-bottom shape-slant bg-body bg-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 260">
                 <polygon fill="currentColor" points="0,257 0,260 3000,260 3000,0"></polygon>
             </svg>
         </div>
-        <div class="d-flex justify-content-start container position-relative zindex-5 mt-5 mt-lg-4">
-            <div class="row w-100">
-                <div class="col-12 col-lg-10">
-                    <h1 class="text-light display-1"><?= $page->title();?></h1>
+        <div class="d-flex flex-column container justify-content-start position-relative zindex-5 mt-5 mt-lg-4 mt-xl-2">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-light display-2"><?= $page->title();?></h1>
                     <p class="text-light">Test 123</p>
                 </div>
             </div>

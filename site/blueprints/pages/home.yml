@@ -81,3 +81,13 @@ fields:
       link:
         label: Link
         type: url
+  headerInfo:
+    label: Header
+    type: headline
+  headerCtaText:
+    type: text
+    label: Beschriftung des Buttons im Header
+  headerCtaLink:
+    type: pages
+    multiple: false
+    label: Link zur Seite

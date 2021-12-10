@@ -61,7 +61,8 @@ Ereignisse:
 - 
   jahr: "2008"
   ereignis: '- Baubeginn SVZ'
-  images: [ ]
+  images:
+    - 2008072318595401.jpeg
 - 
   jahr: "2006"
   ereignis: '- Gründung der Abteilung Aikido'
@@ -205,6 +206,10 @@ Ereignisse:
   jahr: "1949"
   ereignis: '- Gründung der Sportfreunde Bronnen (9. April)'
   images: [ ]
+
+----
+
+Disableheader: false
 
 ----
 

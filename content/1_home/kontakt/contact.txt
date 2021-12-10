@@ -2,7 +2,11 @@ Title: Kontakt
 
 ----
 
-Ansprechpartner: 
+Headline: Ansprechpartner für alle Anliegen
+
+----
+
+Ansprechpartner:
 
 - 
   name: Gesamte Vorstandschaft
@@ -75,4 +79,16 @@ Ansprechpartner:
 
 ----
 
-Headline: Ansprechpartner für alle Anliegen
+Disableheader: true
+
+----
+
+Individualheader: false
+
+----
+
+Headerstyle: 
+
+----
+
+Headerimage: 

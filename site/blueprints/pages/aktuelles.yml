@@ -1,7 +1,6 @@
 title: Aktuelles
 options:
   url: false
-  status: false
   template: false
   delete: false
 tabs:

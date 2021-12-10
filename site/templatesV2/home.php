@@ -3,7 +3,7 @@
     <!-- Background-->
     <div class="position-absolute jarallax bg-gradient w-100" style="top: 0; left: 0; height: 667px;" data-jarallax data-speed="0.25"><span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient" style="opacity: .80;"></span>
         <div class="jarallax-img" style="background-image: url(assetsV2/img/sfb/home/svz.jpg);"></div>
-        <div class="shape shape-bottom shape-curve-side bg-body">
+        <div class="shape shape-bottom shape-curve-side bg-body bg-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 250">
                 <path fill="currentColor" d="M3000,0v250H0v-51c572.7,34.3,1125.3,34.3,1657.8,0C2190.3,164.8,2637.7,98.4,3000,0z"></path>
             </svg>
@@ -77,15 +77,11 @@
             <div class="col-12 p-5">
                 <h1>Herzlich willkommen bei den Sportfreunden Bronnen</h1>
                 <hr>
-                <h3>Wir stehen für Spaß und Freude am Sport und an der Bewegung.</h3>
-                <p>In unseren Abteilungen Fitness/Gymnastik, Fußball und Aikido trainieren unsere Mitglieder gemeinsam für ihre sportlichen Erfolge und Ziele. Unser Ziel ist es, für Mitglieder jeden Alters die bestmöglichen Voraussetzungen zu schaffen. Dafür setzen sich unsere ehrenamtlichen Helfer mit viel Einsatz, Freude und Herzblut ein. Kameradschaft, Engagement und gegenseitiger Respekt sind unsere Leitsätze.</p>
-                <p>Mit unseren tollen Sponsoren und Unterstützern und in Zusammenarbeit mit unserer Heimatgemeinde wollen wir diesen Weg auch in Zukunft zielstrebig weiter gehen. Werden Sie Teil der Sportfreunde Familie und begleiten Sie uns auf diesem Weg.</p>
-                <p>Nun wünschen wir Ihnen viel Spaß beim Stöbern auf unserer Homepage.</p>
-                <h3>Respekt. Engagement. Kameradschaft.</h3>
+                <?= $page->text()->kirbytext();?>
                 <hr>
             </div>
         </div>
-        <div class="shape shape-top shape-curve bg-body">
+        <div class="shape shape-top shape-curve bg-body bg-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
                 <path fill="currentColor" d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z"></path>
             </svg>

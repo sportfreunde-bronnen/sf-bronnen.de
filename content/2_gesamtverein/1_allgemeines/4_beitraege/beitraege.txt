@@ -23,7 +23,7 @@ Beitraege:
   aikido: 35
   aikidozusatz: '*'
 - 
-  name: Erwachsene ab 18 Jahren
+  name: Erwachsene ab 18 J.
   grundbeitrag: 32.5
   grundbeitragzusatz: ""
   fussball: 30
@@ -63,6 +63,10 @@ Zusatz:
 **pF** = pro Familie
 **pK** = pro Kopf
 ****
+
+----
+
+Disableheader: false
 
 ----
 
