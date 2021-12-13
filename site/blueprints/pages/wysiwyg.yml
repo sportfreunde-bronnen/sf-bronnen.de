@@ -1,0 +1,32 @@
+title: Individuelle Seite
+pages: false
+options:
+  template: false
+  url: false
+  status: true
+tabs:
+  content:
+    label: Content
+    icon: text
+    columns:
+      main:
+        sections:
+          content:
+
+  header:
+    label: Header
+    icon: image
+    columns:
+      main:
+        width: 1/2
+        sections:
+          header:
+            type: fields
+            fields:
+              header: fields/header
+      sidebar:
+        width: 1/2
+        sections:
+          dateien:
+            type: files
+            label: Dateien

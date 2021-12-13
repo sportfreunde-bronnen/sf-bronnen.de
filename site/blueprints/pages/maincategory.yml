@@ -1,0 +1,29 @@
+title: Hauptkategorie
+options:
+  url: false
+  template: false
+  delete: false
+  duplicate: false
+columns:
+  main:
+    type: fields
+    width: 4/6
+    fields:
+      navType:
+        type: select
+        label: Wie soll die Kategorie innerhalb der Navigation angezeigt werden?
+        help: Muss nur für die Unterseiten angelegt werden
+        options:
+          column: Als eigene Spalte
+          among: Untereinander
+        default: column
+  sidebar:
+    width: 2/6
+    sections:
+      pages:
+        type: pages
+        headline: Unterkategorien
+        templates:
+          - subcategory
+      files:
+        type: files

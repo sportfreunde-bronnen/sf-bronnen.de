@@ -1,3 +1,35 @@
 title: Site
-preset: pages
 unlisted: true
+tabs:
+  main:
+    label: Seiten
+    columns:
+      main:
+        sections:
+          pages:
+            headline: Kategorien
+            section: pages
+            layout: cards
+  others:
+    label: Sonstiges
+    columns:
+      main:
+        sections:
+          fields:
+            section: fields
+            fields:
+              zitate:
+                label: Zitate für Kursseiten
+                type: structure
+                sortable: false
+                help: Werden auf den einzelnen Kursseiten zufällig ausgewählt und angezeigt
+                entry: >
+                  <b>{{text}}</b> ({{person}})
+                fields:
+                  text:
+                    label: Zitat
+                    type: text
+                  person:
+                    label: Zitat von
+                    type: text
+

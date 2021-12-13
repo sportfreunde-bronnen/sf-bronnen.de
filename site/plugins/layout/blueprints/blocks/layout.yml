@@ -1,0 +1,69 @@
+name: Layout
+icon: dashboard
+tabs:
+  content:
+    fields:
+      layout:
+        type: layout
+        layouts:
+          - "1/1"
+          - "1/2, 1/2"
+          - "1/4, 1/4, 1/4, 1/4"
+          - "1/3, 2/3"
+          - "2/3, 1/3"
+          - "1/3, 1/3, 1/3"
+        fieldsets:
+          - heading
+          - text
+          - list
+          - button
+          - icon
+          - image
+          - video
+          - code
+          - markdown
+          - counter
+          - search-profile
+        settings:
+          fields:
+            css:
+              extends: fields/css
+              fields:
+                CSSid:
+                  disabled: true
+                  placeholder: ID des Layouts
+            alignmentX:
+              label: Ausrichtung X-Achse
+              type: radio
+              default: "justify-content-start"
+              options:
+                justify-content-start: Links
+                justify-content-center: Mittig
+                justify-content-end: Rechts
+                justify-content-between: Elemente links und rechts außen
+            alignmentY:
+              label: Ausrichtung Y-Achse
+              type: radio
+              default: "align-items-start"
+              options:
+                align-items-start: Oben
+                align-items-center: Mittig
+                align-items-end: Unten
+            rowPadding:
+              type: radio
+              label: Zeilen Padding (Y-Achse)
+              default: "big"
+              options:
+                none: Kein Padding
+                big: Großes Padding
+  styles:
+    fields:
+      css: fields/css
+      background: fields/background
+      sectionPadding:
+        type: radio
+        label: Section Padding (Y-Achse)
+        default: "big"
+        options:
+          none: Kein Padding
+          big: Großes Padding

@@ -1,5 +1,6 @@
 title: Default Page
 preset: page
+pages:
 fields:
   text:
     label: Text

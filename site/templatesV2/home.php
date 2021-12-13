@@ -12,7 +12,7 @@
     <!-- Tabs-->
     <div class="container position-relative zindex-5 pt-lg-7 mb-5">
         <div class="row pt-4">
-            <div class="col-lg-3">
+            <div class="col-lg-3 order-2 order-lg-1 pt-7 pt-md-0">
                 <?php if ($page->slides()->isNotEmpty()): ?>
                     <ul class="nav nav-tabs media-tabs media-tabs-light justify-content-center justify-content-lg-start pb-3 mb-4 pb-lg-0 mb-lg-0" role="tablist">
                     <?php foreach ($page->slides()->toStructure() as $slide):?>
@@ -31,7 +31,7 @@
                     </ul>
                 <?php endif; ?>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 order-1 order-lg-2 vh-25">
                 <?php if ($page->slides()->isNotEmpty()): ?>
                     <div class="tab-content">
                     <?php foreach ($page->slides()->toStructure() as $slide):?>
@@ -71,7 +71,7 @@
         </div>
     </div>
 </section>
-<section class="bg-faded-primary position-relative py-md-6 py-3" style="margin-top: 300px;">
+<section class="bg-faded-primary position-relative py-md-6 py-3" style="margin-top: 100px;">
     <div class="container my-2 my-md-0">
         <div class="row align-items-center">
             <div class="col-12 p-5">

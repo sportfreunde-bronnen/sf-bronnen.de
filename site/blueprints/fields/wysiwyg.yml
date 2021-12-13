@@ -1,0 +1,42 @@
+type: group
+fields:
+  wysiwyg:
+    label: Inhaltsblöcke
+    type: blocks
+    fieldsets:
+      hero:
+        label: Neue Blocks
+        type: group
+        fieldsets:
+          - hero
+          - layout
+          - keyfacts
+          - team
+          - contact
+          - pagelink
+          - badges
+          - reviews
+          - steps
+          - expand
+          - search-profile
+      text:
+        label: Text
+        type: group
+        fieldsets:
+          - heading
+          - text
+          - list
+      media:
+        label: Media
+        type: group
+        fieldsets:
+          - image
+          - gallery
+          - slider
+          - video
+      code:
+        label: Code
+        type: group
+        fieldsets:
+          - code
+          - markdown
