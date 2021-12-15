@@ -65,7 +65,7 @@
                 <?php endif; ?>
 
                 <!-- Post-->
-                <?php $i = 0; foreach ($page->getArticles()->slice(0, 1000) as $post): $i++; ?>
+                <?php $i = 0; foreach ($articles = $page->getArticles()->paginate(10) as $post): $i++; ?>
                 <article class="card card-horizontal card-hover mb-grid-gutter">
                     <a class="card-img-top<?= $i % 2 == 0 ? ' order-sm-2' : ' order-sm-1';?>" href="<?= $post->url();?>" style="background-image: url(<?= $post->teaserimage()->toFile()->crop(510, 340, 'top left')->url(); ?>);"></a>
                     <div class="card-body<?= $i % 2 == 0 ? ' order-sm-1' : ' order-sm-2';?>">
@@ -84,29 +84,25 @@
                 <?php endforeach; ?>
 
                 <!-- Pagination-->
-                <div class="d-md-flex justify-content-between align-items-center pt-3 pb-2">
-                    <div class="d-flex justify-content-center align-items-center mb-4">
-                        <label class="pe-1 me-2">Show</label>
-                        <select class="form-select me-2" style="width: 5rem;">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                            <option value="50">50</option>
-                        </select>
-                        <div class="fs-sm text-nowrap ps-1 mb-1">posts per page</div>
-                    </div>
-                    <nav class="mb-4" aria-label="Page navigation">
+                <div class="d-md-flex justify-content-center align-items-center pt-3 pb-2">
+                    <?php $pagination = $articles->pagination() ?>
+                    <nav>
                         <ul class="pagination justify-content-center">
-                            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><i class="ai-chevron-left"></i></a></li>
-                            <li class="page-item d-sm-none"><span class="page-link page-link-static">2 / 10</span></li>
-                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active d-none d-sm-block" aria-current="page"><span class="page-link">2<span class="visually-hidden">(current)</span></span></li>
-                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item d-none d-sm-block">...</li>
-                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">10</a></li>
-                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><i class="ai-chevron-right"></i></a></li>
+                            <?php if ($pagination->hasPrevPage()): ?>
+                                <li class="page-item"><a class="page-link" href="<?= $pagination->prevPageURL() ?>" aria-label="Previous"><i class="ai-chevron-left"></i></a></li>
+                            <?php endif; ?>
+
+                            <?php foreach ($pagination->range(10) as $r): ?>
+                                <?php if ($pagination->page() === $r): ?>
+                                    <li class="page-item active d-none d-sm-block" aria-current="page"><span class="page-link"><?= $r;?><span class="visually-hidden">(current)</span></span></li>
+                                <?php else: ?>
+                                    <li class="page-item d-none d-sm-block"><a class="page-link" href="<?= $pagination->pageURL($r) ?>"><?= $r ?></a></li>
+                                <?php endif; ?>
+                            <?php endforeach ?>
+
+                            <?php if ($pagination->hasNextPage()): ?>
+                                <li class="page-item"><a class="page-link" href="<?= $pagination->nextPageURL() ?>" aria-label="Next"><i class="ai-chevron-right"></i></a></li>
+                            <?php endif; ?>
                         </ul>
                     </nav>
                 </div>
