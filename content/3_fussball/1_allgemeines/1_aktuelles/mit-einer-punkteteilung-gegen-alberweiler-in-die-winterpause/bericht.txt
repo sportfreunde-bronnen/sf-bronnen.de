@@ -22,21 +22,17 @@ Teaserimage:
 
 ----
 
-Text: Testdasdasd
-
-----
-
 Textimages:
 
 - img_9631.jpg
 
 ----
 
-Tags: fussball, saison2122, spielbericht
+Text: Testdasdasds1
 
 ----
 
-Gallerytoggle: false
+Tags: erste mannschaft, fussball, saison2122, spielbericht
 
 ----
 
@@ -45,3 +41,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Gallerytoggle: false

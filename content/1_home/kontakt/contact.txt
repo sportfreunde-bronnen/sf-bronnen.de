@@ -2,7 +2,11 @@ Title: Kontakt
 
 ----
 
-Ansprechpartner: 
+Headline: Ansprechpartner für alle Anliegen
+
+----
+
+Ansprechpartner:
 
 - 
   name: Gesamte Vorstandschaft
@@ -13,9 +17,9 @@ Ansprechpartner:
   aufgabe: 1. Vorsitzender
   email: martin-pannek@web.de
 - 
-  name: Simon Baur
+  name: Thomas Baur-Beyerlin
   aufgabe: 2. Vorsitzender
-  email: simon.baur@gmx.de
+  email: Thomas.Baur2@gmx.de
 - 
   name: Magnus Buk
   aufgabe: 2. Vorsitzender, Webseite
@@ -72,7 +76,3 @@ Ansprechpartner:
   name: Sonstiges
   aufgabe: Für sonstige Belange
   email: info@sf-bronnen.de
-
-----
-
-Headline: Ansprechpartner für alle Anliegen
