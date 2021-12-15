@@ -92,6 +92,8 @@
                                 <li class="page-item"><a class="page-link" href="<?= $pagination->prevPageURL() ?>" aria-label="Previous"><i class="ai-chevron-left"></i></a></li>
                             <?php endif; ?>
 
+                            <li class="page-item d-sm-none"><span class="page-link page-link-static"><?= $pagination->page();?> / <?= $pagination->pages();?></span></li>
+
                             <?php foreach ($pagination->range(10) as $r): ?>
                                 <?php if ($pagination->page() === $r): ?>
                                     <li class="page-item active d-none d-sm-block" aria-current="page"><span class="page-link"><?= $r;?><span class="visually-hidden">(current)</span></span></li>
