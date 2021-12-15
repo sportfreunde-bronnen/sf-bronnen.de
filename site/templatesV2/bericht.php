@@ -1,4 +1,5 @@
 <?php snippet('header');?>
+<section>
     <div class="container">
         <div class="row justify-content-center">
             <!-- Content-->
@@ -36,7 +37,7 @@
                 </div>
 
                 <!--
-                <h2 class="h3 pt-1 pb-4">Expert opinion</h2>
+                <h2 class="h3 pt-1 pb-4">Stimmen zum Spiel</h2>
                 <div class="bg-faded-primary rounded-3 p-4 mb-4">
                     <div class="p-md-3">
                         <blockquote class="blockquote mb-0">
@@ -48,12 +49,10 @@
                 </div>
                 -->
 
-                <!-- Bildergalerie-->
                 <?php if ($page->galleryImages()->isNotEmpty()): ?>
                     <?php snippet('gallery', ['images' => $page->galleryImages()->toFiles(), 'desc' => $page->galleryName()]); ?>
                 <?php endif; ?>
 
-                <!-- Tags + Sharing-->
                 <div class="row g-0 position-relative align-items-center">
                     <div class="my-5 py-2 py-dm-3 pe-md-3 text-center text-md-start border-top border-bottom">
                         <?php foreach (explode(',', $page->tags()) as $tag): ?>
@@ -61,27 +60,16 @@
                         <?php endforeach; ?>
                     </div>
                 </div>
-
-                <!-- Related posts (carousel)-->
-                <!--
-                <div class="pb-4 pb-md-5">
-                    <h2 class="h3 pb-4">Related posts</h2>
-                    <div class="tns-carousel-wrapper">
-                        <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 16},&quot;850&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 16}, &quot;1100&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 23}}}">
-                            <div class="pb-2">
-                                <article class="card card-hover mx-1"><a class="card-img-top" href="#"><img src="img/blog/02.jpg" alt="Post thumbnail"></a>
-                                    <div class="card-body"><a class="meta-link fs-sm mb-2" href="#">Technology</a>
-                                        <h2 class="h5 nav-heading mb-4"><a href="#">How technology affect our decisions</a></h2><a class="d-flex meta-link fs-sm align-items-center pt-3" href="#"><img class="rounded-circle" src="img/blog/avatar/03.jpg" alt="Jessica Miller" width="36">
-                                            <div class="ps-2 ms-1 mt-n1">by<span class="fw-semibold ms-1">Jessica Miller</span></div></a>
-                                        <div class="mt-3 text-end text-nowrap"><a class="meta-link fs-xs" href="#"><i class="ai-message-square me-1"></i>&nbsp;3</a><span class="meta-divider"></span><a class="meta-link fs-xs" href="#"><i class="ai-calendar me-1 mt-n1"></i>&nbsp;Feb 4</a></div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
             </div>
         </div>
     </div>
+</section>
+<section>
+    <div class="container">
+        <div class="pb-4 pb-md-5">
+            <h2 class="h3 pb-4">Auch interessant</h2>
+            <?php snippet('news-slider', ['news' => $page->getLatestNews()]);?>
+        </div>
+    </div>
+</section>
 <?php snippet('footer');?>

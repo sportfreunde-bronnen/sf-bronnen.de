@@ -43,6 +43,7 @@ class BerichtPage extends DownloadsPage
             ->index()
             ->listed()
             ->filterBy('template', 'bericht')
+            ->filterBy('id', '!=', $this->id())
             ->sortBy('datum', 'desc')
             ->limit(6);
     }

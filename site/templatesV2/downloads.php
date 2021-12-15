@@ -18,14 +18,14 @@
                                     <?php if ($ii > 1): ?>
                                     <hr class="my-0"/>
                                     <?php endif; ?>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 px-3 border-0 bg-secondary">
+                                    <li class="list-group-item d-flex flex-column flex-md-row justify-content-between align-items-start rounded-0 px-3 border-0 bg-secondary">
                                         <span>
                                             <i class="ai-link"></i>
                                             <a href="<?= $download->url();?>">
                                                 <b><?= $download->description();?></b>
                                             </a>
                                         </span>
-                                        <span class="badge rounded-pill bg-primary py-1 px-2"><?= strtoupper($download->extension());?>, <?= $download->niceSize();?></span>
+                                        <span class="badge rounded-pill bg-primary py-1 px-2 d-none d-md-block"><?= strtoupper($download->extension());?>, <?= $download->niceSize();?></span>
                                     </li>
                                     <?php endforeach;?>
                                 </ul>

@@ -130,7 +130,7 @@
             <a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="/">
                 <img class="navbar-floating-logo d-none d-lg-block w-50" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="153">
                 <img class="navbar-stuck-logo w-50" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="153">
-                <span class="text-start d-lg-none display-7 ms-n5 ms-lg-0">
+                <span class="text-start d-lg-none navbar-display-text">
                     Sportfreunde Bronnen e.V.
                 </span>
             </a>
@@ -159,7 +159,7 @@
                                         <?php $isDropdownOpen = true;?>
                                         <div class="dropdown-column mb-2 mb-lg-0">
                                         <?php endif; ?>
-                                        <h5 class="dropdown-header<?= $subPage->navType() == 'among' ? ' mt-lg-4' : '';?>"><?= $subPage->title();?></h5>
+                                        <h5 class="dropdown-header<?= $subPage->navType() == 'among' ? ' mt-2 mt-lg-4' : '';?>"><?= $subPage->title();?></h5>
                                         <?php if ($subPage->title() == 'Veranstaltungen'):?>
                                             <?php foreach ($subPage->children()->listed()->filterBy('datum', 'date >=', date('Y-m-d'))->sortBy('datum') as $subSubPage): ?>
                                                 <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?><br/><small><?= $subSubPage->datum()->toDate('d.m.Y');?></small></a>
@@ -198,8 +198,8 @@
         </div>
         <div class="d-flex flex-column container justify-content-start position-relative zindex-5 mt-5 mt-lg-4 mt-xl-2">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="text-light display-2"><?= $page->title();?></h1>
+                <div class="col-12<?= $page->template() == 'bericht' ? ' text-start' : ' text-center';?>">
+                    <h1 class="text-light display-3"><?= $page->title();?></h1>
                     <p class="text-light">Test 123</p>
                 </div>
             </div>

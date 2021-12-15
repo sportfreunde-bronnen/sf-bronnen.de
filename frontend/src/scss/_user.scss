@@ -6,3 +6,18 @@
   position: absolute;
   left: -9999px;
 }
+
+#home-jarallax,
+#section-home-jarallax {
+  height: 100vh;
+  @include media-breakpoint-up(lg) {
+    height: 667px;
+  }
+}
+
+.navbar-display-text {
+  font-size: $display8-size;
+  @include media-breakpoint-up(md) {
+    font-size: $display6-size;
+  }
+}

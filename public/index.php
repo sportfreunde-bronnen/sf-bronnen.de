@@ -2,7 +2,7 @@
 
 include __DIR__ . '/../kirby/bootstrap.php';
 
-$template = $_SERVER['HTTP_HOST'] == 'dev.sfb:1949' ? 'V2' : '';
+$template = in_array($_SERVER['HTTP_HOST'], ['dev.sfb:1949','192.168.9.22:1949']) ? 'V2' : '';
 
 $kirby = new Kirby([
     'roots' => [

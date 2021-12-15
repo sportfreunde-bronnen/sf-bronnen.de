@@ -94,6 +94,10 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 5,
   7: $spacer * 6,
+  8: $spacer * 7,
+  9: $spacer * 8,
+  10: $spacer * 9,
+  11: $spacer * 10,
   'grid-gutter': $grid-gutter-width
 ) !default;
 
@@ -250,6 +254,7 @@ $display4-size:                 3rem !default;
 $display5-size:                 2.5rem !default;
 $display6-size:                 2rem !default;
 $display7-size:                 1.5rem !default;
+$display8-size:                 1.1rem !default;
 
 $display-font-sizes: (
   1: $display1-size,
@@ -258,7 +263,8 @@ $display-font-sizes: (
   4: $display4-size,
   5: $display5-size,
   6: $display6-size,
-  7: $display7-size
+  7: $display7-size,
+  8: $display8-size
 ) !default;
 
 $display-font-weight:           $headings-font-weight !default;
