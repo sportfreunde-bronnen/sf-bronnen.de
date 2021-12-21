@@ -10,7 +10,7 @@
                 </div>
                 <?php endif; ?>
                 <!-- Post author + Sharing-->
-                <div class="row position-relative g-0 align-items-center border-top border-bottom mb-4">
+                <div class="row position-relative g-0 align-items-center border-top border-bottom">
                     <div class="col-md-6 py-3 pe-md-3">
                         <div class="d-flex align-items-center justify-content-center justify-content-md-start">
                             <div class="d-flex align-items-center me-grid-gutter">
