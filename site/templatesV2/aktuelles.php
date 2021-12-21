@@ -13,7 +13,7 @@
                     <div class="offcanvas-body px-4 pt-3 pt-lg-0 ps-lg-0 pe-lg-2 pe-xl-4" data-simplebar>
                         <!-- Categories-->
                         <div class="widget widget-categories mb-5">
-                            <h3 class="widget-title">Kategorien</h3>
+                            <h3 class="widget-title">Abteilungen</h3>
                             <ul>
                                 <?php foreach(site()->index()->children()->listed()->filterBy('template', 'aktuelles') as $category): ?>
                                 <li><a class="widget-link<?= $category->isOpen() ? ' active' : '';?>" href="<?= $category->url();?>"><?= $category->parent()->parent()->title();?><small class="text-muted ps-1 ms-2"><?= $category->children()->listed()->filterBy('template', 'bericht')->count();?></small></a></li>

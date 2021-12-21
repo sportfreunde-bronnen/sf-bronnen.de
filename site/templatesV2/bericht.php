@@ -27,27 +27,28 @@
                 <div class="py-4">
                     <?php if ($moreImages = $page->getMoreImages()): ?>
                         <?php $i = 0; foreach ($moreImages as $textImage): $i++; ?>
-                            <figure class="figure px-4 text-md-start<?= ($i % 2 == 0) ? ' float-none float-md-end pe-0' : ' float-none float-md-start ps-0'; ?>">
-                                <img src="<?= $textImage->resize(500)->url();?>" class="figure-img img-fluid" alt="Bild: <?= $textImage->caption();?>">
-                                <figcaption class="figure-caption w-75"><?= $textImage->caption();?></figcaption>
+                            <figure class="figure px-4 gallery text-md-start<?= ($i % 2 == 0) ? ' float-none float-md-end pe-0' : ' float-none float-md-start ps-0'; ?>">
+                                <a href="<?= $textImage->url();?>" class="gallery-item" data-sub-html='<h6 class="fs-sm text-light"><?= $textImage->caption();?></h6>'>
+                                <img src="<?= $textImage->resize(500)->url();?>" class="figure-img img-fluid mb-0" alt="Bild: <?= $textImage->caption();?>">
+                                </a>
+                                <figcaption class="figure-caption w-75 py-2"><?= $textImage->caption();?></figcaption>
                             </figure>
                         <?php endforeach; ?>
                     <?php endif; ?>
                     <?= $page->text()->kirbytext();?>
                 </div>
 
-                <!--
+                <?php if ($page->quote()->isNotEmpty()): ?>
                 <h2 class="h3 pt-1 pb-4">Stimmen zum Spiel</h2>
                 <div class="bg-faded-primary rounded-3 p-4 mb-4">
                     <div class="p-md-3">
                         <blockquote class="blockquote mb-0">
-                            <p class="text-nav">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-                            <p class="text-nav">Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
-                            <footer class="blockquote-footer">Miguel Sánchez</footer>
+                            <p class="text-nav"><?= $page->quote();?></p>
+                            <footer class="blockquote-footer"><?= $page->quoteFrom();?></footer>
                         </blockquote>
                     </div>
                 </div>
-                -->
+                <?php endif; ?>
 
                 <?php if ($page->galleryImages()->isNotEmpty()): ?>
                     <?php snippet('gallery', ['images' => $page->galleryImages()->toFiles(), 'desc' => $page->galleryName()]); ?>

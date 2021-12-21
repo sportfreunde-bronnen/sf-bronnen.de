@@ -57,6 +57,15 @@ tabs:
                 label: Tags/Kategorien
                 type: tags
                 required: true
+              quote:
+                width: 1/2
+                label: Zitat (Text)
+                type: text
+                help: Nicht verpflichtend
+              quoteFrom:
+                width: 1/2
+                label: Zitat (Von wem?)
+                type: text
               gallery:
                 extends: fields/gallery
       sidebar:
