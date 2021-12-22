@@ -1,7 +1,7 @@
 <?php snippet('header');?>
 <section class="mt-5">
     <div class="container">
-        <h2 class="text-center mb-5"><?= $page->headline();?></h2>
+        <h2 class="text-center text-lg-start mb-5"><?= $page->headline();?></h2>
         <div class="row">
         <?php $box = false; $last = ''; foreach ($page->sponsoren()->toStructure()->sortBy('name', 'asc') as $sponsor): $current = strtoupper(substr($sponsor->name(), 0, 1)); ?>
         <?php if ($last != $current): ?>

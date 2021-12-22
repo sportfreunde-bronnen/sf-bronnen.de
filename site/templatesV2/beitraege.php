@@ -1,7 +1,7 @@
 <?php snippet('header');?>
 <section class="my-5">
     <div class="container">
-        <h2 class="text-center mb-5"><?= $page->headline();?></h2>
+        <h2 class="text-center text-lg-start mb-5"><?= $page->headline();?></h2>
         <p><?= $page->text()->kirbytext();?></p>
         <div class="row">
             <?php foreach ($page->beitraege()->toStructure() as $beitrag): ?>

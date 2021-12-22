@@ -1,7 +1,7 @@
 <?php snippet('header');?>
 <section class="my-5">
     <div class="container pt-3 pt-md-0">
-        <h2 class="text-center mb-5"><?= $page->headline();?></h2>
+        <h2 class="text-center text-lg-start mb-5"><?= $page->headline();?></h2>
         <?php $i = 0; foreach ($page->ereignisse()->toStructure()->sortBy('jahr', 'desc') as $ereignis): $i++; ?>
             <div class="border-top py-4<?= $i % 2 != 0 ? ' bg-secondary' : '';?>">
                 <div class="row py-md-2">

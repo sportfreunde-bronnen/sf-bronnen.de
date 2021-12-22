@@ -1,8 +1,8 @@
 <?php snippet('header'); ?>
 <section class="my-5">
     <div class="container">
-        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
-        <span class="text-center">
+        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-start"><?= $page->headline();?></h2>
+        <span class="text-center text-lg-start">
             <?= $page->text()->kirbytext();?>
         </span>
         <div class="row mt-5">
@@ -12,7 +12,7 @@
 
                     <?php $articles = $page->articles()->sortBy('datum', 'desc')->toStructure();?>
                     <?php if ($articles->count() > 0): ?>
-                        <ul class="masonry-filters nav nav-tabs justify-content-center pb-4">
+                        <ul class="masonry-filters nav nav-tabs justify-content-center justify-content-lg-start pb-4">
                             <li class="nav-item bg-faded-info my-1">
                                 <a class="rounded-0 nav-link active<?= ('all' === $page->getActiveTagGroup()) ? ' active' : '';?>" href="#" data-group="all">Alles</a>
                             </li>
