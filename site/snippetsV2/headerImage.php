@@ -37,12 +37,16 @@
                 <div class="row">
                     <div class="col-12 text-center text-lg-start">
                         <h1 class="text-light<?= $page->template() == 'bericht' ? ' article-display-text' : ' display-4';?>"><?= $page->title();?></h1>
+                        <?php if ($page->getSubHeadline() !== null):?>
+                        <h2 class="text-light fs-6 fw-normal"><?= $page->getSubHeadline();?></h2>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
             <?php
             $headerImage = ($page->headerImage()->toFile() !== null && $page->individualHeader()->toBool() === true) ? $page->headerImage()->toFile() : null;
             $headerImage = is_null($headerImage) && $page->template() == 'bericht' ? $page->teaserImage()->toFile() : $headerImage;
+            $headerImage = is_null($headerImage) && $page->template() == 'veranstaltung' ? $page->vimage()->toFile() : $headerImage;
             ?>
             <?php if ($headerImage !== null): ?>
                 <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">

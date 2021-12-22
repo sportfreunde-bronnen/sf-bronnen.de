@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="py-4">
+                <div class="py-4 px-2">
                     <?php if ($moreImages = $page->getMoreImages()): ?>
                         <?php $i = 0; foreach ($moreImages as $textImage): $i++; ?>
                             <figure class="figure px-4 gallery text-md-start<?= ($i % 2 == 0) ? ' float-none float-md-end pe-0' : ' float-none float-md-start ps-0'; ?>">
