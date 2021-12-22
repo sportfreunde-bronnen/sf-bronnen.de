@@ -8,7 +8,7 @@
         <?php if ($box): ?>
         </ul></div>
         <?php endif; ?>
-        <div class="col-12 col-md-6 col-lg-4 mb-4"><ul class="list-group list-group-flush">
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mb-4"><ul class="list-group list-group-flush">
                 <li class="list-group-item active font-weight-bold"><b><?= strtoupper($current);?></b></li>
             <?php endif; ?>
             <?php if ($sponsor->webseite()->isNotEmpty()):?>

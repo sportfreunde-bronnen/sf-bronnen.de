@@ -47,6 +47,7 @@
             $headerImage = ($page->headerImage()->toFile() !== null && $page->individualHeader()->toBool() === true) ? $page->headerImage()->toFile() : null;
             $headerImage = is_null($headerImage) && $page->template() == 'bericht' ? $page->teaserImage()->toFile() : $headerImage;
             $headerImage = is_null($headerImage) && $page->template() == 'veranstaltung' ? $page->vimage()->toFile() : $headerImage;
+            $headerImage = is_null($headerImage) && $page->template() == 'kurs' ? ($page->images()->count() > 0 ? $page->images()->first() : null) : $headerImage;
             ?>
             <?php if ($headerImage !== null): ?>
                 <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">

@@ -1,5 +1,10 @@
 <?php snippet('header');?>
 <section>
+    <div class="gallery text-black text-center">
+        <a href="<?= $page->teaserImage()->toFile()->url();?>" class="gallery-item text-black py-2" data-sub-html='<h6 class="fs-sm text-light"><?= $page->teaserImage()->toFile()->caption();?></h6>'>
+            <i class="ai-image"></i> Titelbild anzeigen
+        </a>
+    </div>
     <div class="container">
         <div class="row justify-content-center">
             <!-- Content-->

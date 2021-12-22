@@ -5,7 +5,7 @@
         <p><?= $page->text()->kirbytext();?></p>
         <div class="row">
             <?php foreach ($page->beitraege()->toStructure() as $beitrag): ?>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
                 <div class="card w-100 mt-5">
                     <div class="card-img-top bg-gradient text-center py-5 px-grid-gutter">
                         <h3 class="mb-0 text-white"><?= $beitrag->name();?></h3>

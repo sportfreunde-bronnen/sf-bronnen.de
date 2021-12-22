@@ -128,8 +128,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="/">
-                <img class="navbar-floating-logo d-none d-lg-block w-50 rotate" src="/assetsV2/img/logo/sfb.svg" alt="Logo der Sportfreunde Bronnen e.V." width="153">
-                <img class="navbar-stuck-logo w-50 rotate" src="/assetsV2/img/logo/sfb.svg" alt="Logo der Sportfreunde Bronnen e.V." width="153">
+                <img class="navbar-floating-logo d-none d-lg-block w-50 rotate" src="/assetsV2/img/logo/sfb.svg" alt="Logo der Sportfreunde Bronnen e.V." width="130">
+                <img class="navbar-stuck-logo w-50 rotate" src="/assetsV2/img/logo/sfb.svg" alt="Logo der Sportfreunde Bronnen e.V." width="130">
                 <span class="text-start d-lg-none navbar-display-text">
                     Sportfreunde Bronnen e.V.
                 </span>

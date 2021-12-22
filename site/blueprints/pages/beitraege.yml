@@ -3,7 +3,6 @@ pages: false
 options:
   template: false
   url: false
-  status: false
 tabs:
   content:
     label: Content

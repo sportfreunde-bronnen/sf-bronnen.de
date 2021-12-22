@@ -1860,6 +1860,7 @@ progress {
 
 .container,
 .container-fluid,
+.container-xxl,
 .container-xl,
 .container-lg,
 .container-md,
@@ -1889,6 +1890,11 @@ progress {
 @media (min-width: 1280px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1260px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1500px;
   }
 }
 .row {
@@ -5617,7 +5623,8 @@ textarea.form-control-lg {
 .navbar > .container-sm,
 .navbar > .container-md,
 .navbar > .container-lg,
-.navbar > .container-xl {
+.navbar > .container-xl,
+.navbar > .container-xxl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
@@ -18074,7 +18081,7 @@ iframe {
 }
 
 @media (min-width: 1280px) {
-  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     padding-right: 1.875rem;
     padding-left: 1.875rem;
   }
@@ -23775,7 +23782,7 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
     font-size: 2.5rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   .article-display-text {
     font-size: 3rem;
   }

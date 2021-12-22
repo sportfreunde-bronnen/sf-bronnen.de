@@ -9,6 +9,12 @@ Headline: Wichtige Ereignisse der Vereinsgeschichte
 Ereignisse:
 
 - 
+  jahr: "2021"
+  ereignis: |
+    - Covid Pandemie mit vielen Beeinträchtigungen des Sport- und Vereinslebens
+    - Erneuter Ausfall des gesamten Festwochenendes
+  images: [ ]
+- 
   jahr: "2020"
   ereignis: |
     - Renovierung des SVZ (Streichen von innen und außen)

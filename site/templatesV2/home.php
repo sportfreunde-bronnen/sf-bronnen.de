@@ -7,7 +7,7 @@
     <!-- Tabs-->
     <div class="container position-relative zindex-5">
         <div class="row pt-4 pt-lg-5">
-            <div class="col-lg-3 col-xl-4 order-2 order-lg-1 pt-7 pt-md-5 pt-xl-0 d-flex align-items-center justify-content-center">
+            <div class="col-lg-4 order-2 order-lg-1 pt-7 pt-md-5 pt-xl-0 d-flex align-items-center justify-content-center">
                 <?php if ($page->slides()->isNotEmpty()): ?>
                     <ul class="nav nav-tabs media-tabs media-tabs-light justify-content-center justify-content-lg-start pb-3 mb-4 pb-lg-0 mb-lg-0" role="tablist">
                     <?php foreach ($page->slides()->toStructure() as $slide):?>
@@ -26,7 +26,7 @@
                     </ul>
                 <?php endif; ?>
             </div>
-            <div class="col-lg-9 col-xl-8 order-1 order-lg-2 vh-25 d-flex align-items-center justify-content-center justify-content-xl-start">
+            <div class="col-lg-8 order-1 order-lg-2 vh-25 d-flex align-items-center justify-content-center justify-content-xl-start">
                 <?php if ($page->slides()->isNotEmpty()): ?>
                     <div class="tab-content">
                     <?php foreach ($page->slides()->toStructure() as $slide):?>
@@ -69,7 +69,7 @@
 <section class="position-relative">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 py-8">
+            <div class="col-12 py-6 px-5">
                 <h1>Herzlich willkommen bei den Sportfreunden Bronnen</h1>
                 <hr>
                 <?= $page->text()->kirbytext();?>
