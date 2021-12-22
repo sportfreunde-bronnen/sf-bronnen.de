@@ -21,3 +21,34 @@
     font-size: $display6-size;
   }
 }
+
+.article-display-text {
+  font-size: $display7-size;
+  @include media-breakpoint-up(md) {
+    font-size: $display5-size;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: $display4-size;
+  }
+}
+
+.rotate{
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform;
+  -ms-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow:hidden;
+}
+
+.rotate:hover {
+  -webkit-transform:rotateY(360deg);
+  -moz-transform:rotateY(360deg);
+  -ms-transform:rotateY(360deg);
+  -o-transform:rotateY(360deg);
+}

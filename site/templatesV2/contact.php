@@ -1,8 +1,7 @@
 <?php snippet('header');?>
 
-<section class="d-flex align-items-center justify-content-center jarallax bg-gradient vh-40" data-jarallax="" data-speed="0.25" style="background-image: none;">
+<section class="d-flex align-items-center justify-content-center jarallax bg-gradient vh-40 pt-5" data-jarallax="" data-speed="0.25" style="background-image: none;">
     <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient opacity-80"></span>
-    <div class="jarallax-img" style="background-image: url(img/pages/contacts/page-title-bg.jpg);"></div>
     <div class="shape shape-bottom shape-slant bg-body bg-secondary">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 260">
             <polygon fill="currentColor" points="0,257 0,260 3000,260 3000,0"></polygon>
@@ -10,7 +9,7 @@
     </div>
     <div class="container position-relative zindex-5 pt-3 pb-7 pt-md-0">
         <div class="row justify-content-center pb-7">
-            <div class="col-lg-10">
+            <div class="col-lg-10 text-center text-lg-start">
                 <h1 class="text-light"><?= $page->title();?></h1>
                 <p class="text-light"><?= $page->headline();?></p>
             </div>
@@ -21,7 +20,7 @@
 <!-- Contact form + details-->
 <section class="container position-relative zindex-5 pb-5">
     <div class="row">
-        <div class="col-lg-6 col-md-7 offset-lg-1 pb-2 mb-5" style="margin-top: -260px;">
+        <div class="col-lg-6 col-md-7 offset-lg-1 pb-2 mb-5" style="margin-top: -150px;">
             <?php if ($form->success()): ?>
                 <div class="alert d-flex alert-success" role="alert">
                     <i class="ai-check-circle fs-xl me-3"></i>
@@ -79,7 +78,7 @@
                 </form>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 offset-md-1">
+        <div class="col-lg-4 col-md-4 offset-lg-1">
             <h2 class="h4 pb-3">Adressen</h2>
             <h3 class="h6 pb-2">Geschäftsadresse</h3>
             <ul class="list-unstyled fs-sm pb-3">

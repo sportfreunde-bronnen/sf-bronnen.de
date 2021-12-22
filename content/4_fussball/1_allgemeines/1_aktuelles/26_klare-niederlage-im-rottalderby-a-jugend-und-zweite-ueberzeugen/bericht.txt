@@ -53,6 +53,14 @@ Tags: fussball, spielbericht, saison2122, jugend, erste mannschaft, zweite manns
 
 ----
 
+Quote: 
+
+----
+
+Quotefrom: 
+
+----
+
 Galleryname: Bilder der Spiele
 
 ----
@@ -83,7 +91,7 @@ Galleryimages:
 
 ----
 
-Disableheader: true
+Disableheader: false
 
 ----
 

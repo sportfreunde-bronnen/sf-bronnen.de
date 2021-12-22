@@ -1,6 +1,6 @@
 <?php if (!$page->isHomePage()):?>
     <?php if ($page->disableHeader()->toBool() === false): ?>
-        <section class="d-flex align-items-center justify-content-center jarallax bg-gradient vh-40" data-jarallax="" data-speed="0.25" style="background-image: none;">
+        <section class="d-flex align-items-center justify-content-center jarallax bg-gradient vh-30" data-jarallax="" data-speed="0.25" style="background-image: none;">
             <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient opacity-80"></span>
             <?php if($page->headerStyle() == 'slantBottomRight'): ?>
                 <div class="shape shape-bottom shape-slant bg-body bg-secondary">
@@ -35,13 +35,8 @@
             <?php endif; ?>
             <div class="d-flex flex-column container justify-content-start position-relative zindex-5 mt-5 mt-lg-4 mt-xl-2">
                 <div class="row">
-                    <div class="col-12<?= $page->template() == 'bericht' ? ' text-start' : ' text-center';?>">
-                        <h1 class="text-light display-4"><?= $page->title();?></h1>
-                        <?php if ($page->template() == 'bericht' && $page->teaserImage()->toFile() !== Null): ?>
-                            <p class="text-light"><?= $page->teaserImage()->toFile()->caption();?></p>
-                        <?php else: ?>
-                            <p class="text-light">Test 123</p>
-                        <?php endif; ?>
+                    <div class="col-12 text-center text-lg-start">
+                        <h1 class="text-light<?= $page->template() == 'bericht' ? ' article-display-text' : ' display-4';?>"><?= $page->title();?></h1>
                     </div>
                 </div>
             </div>

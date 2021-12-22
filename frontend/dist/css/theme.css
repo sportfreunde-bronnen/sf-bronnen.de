@@ -8603,8 +8603,20 @@ textarea.form-control-lg {
   height: 25vh !important;
 }
 
+.vh-30 {
+  height: 30vh !important;
+}
+
+.vh-35 {
+  height: 35vh !important;
+}
+
 .vh-40 {
   height: 40vh !important;
+}
+
+.vh-45 {
+  height: 45vh !important;
 }
 
 .vh-50 {
@@ -23753,4 +23765,31 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
   .navbar-display-text {
     font-size: 2rem;
   }
+}
+
+.article-display-text {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .article-display-text {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .article-display-text {
+    font-size: 3rem;
+  }
+}
+
+.rotate {
+  transition-duration: 0.8s;
+  transition-property: transform;
+  overflow: hidden;
+}
+
+.rotate:hover {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
 }

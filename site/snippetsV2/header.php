@@ -121,15 +121,15 @@
 <main class="page-wrapper">
     <!-- Navbar (Floating light)-->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-    <?php $headerClasses = $page->template() != 'contact' && $page->disableHeader()->toBool() === true ? [' bg-primary'] : [' navbar-floating']; ?>
+    <?php $headerClasses = $page->disableHeader()->toBool() === true ? [' bg-primary'] : [' navbar-floating']; ?>
     <header class="header navbar navbar-expand-lg navbar-dark navbar-sticky<?= implode(' ', $headerClasses);?>" data-scroll-header data-fixed-element>
         <div class="container px-0 px-xl-3">
             <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="/">
-                <img class="navbar-floating-logo d-none d-lg-block w-50" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="153">
-                <img class="navbar-stuck-logo w-50" src="/assetsV2/img/logo/sfb.svg" alt="Around" width="153">
+                <img class="navbar-floating-logo d-none d-lg-block w-50 rotate" src="/assetsV2/img/logo/sfb.svg" alt="Logo der Sportfreunde Bronnen e.V." width="153">
+                <img class="navbar-stuck-logo w-50 rotate" src="/assetsV2/img/logo/sfb.svg" alt="Logo der Sportfreunde Bronnen e.V." width="153">
                 <span class="text-start d-lg-none navbar-display-text">
                     Sportfreunde Bronnen e.V.
                 </span>

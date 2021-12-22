@@ -29,7 +29,7 @@
                         <?php $i = 0; foreach ($moreImages as $textImage): $i++; ?>
                             <figure class="figure px-4 gallery text-md-start<?= ($i % 2 == 0) ? ' float-none float-md-end pe-0' : ' float-none float-md-start ps-0'; ?>">
                                 <a href="<?= $textImage->url();?>" class="gallery-item" data-sub-html='<h6 class="fs-sm text-light"><?= $textImage->caption();?></h6>'>
-                                <img src="<?= $textImage->resize(500)->url();?>" class="figure-img img-fluid mb-0" alt="Bild: <?= $textImage->caption();?>">
+                                    <img src="<?= $textImage->resize(500)->url();?>" class="figure-img img-fluid mb-0" alt="Bild: <?= $textImage->caption();?>">
                                 </a>
                                 <figcaption class="figure-caption w-75 py-2"><?= $textImage->caption();?></figcaption>
                             </figure>
