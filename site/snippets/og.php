@@ -1,5 +1,5 @@
 <?php
-if ($page->template() === 'bericht') {
+if ($page->template() == 'bericht') {
 
     foreach ($page->getMoreImages() as $image):
         echo sprintf('<meta property="og:title" content="%s"/>', $page->title());
