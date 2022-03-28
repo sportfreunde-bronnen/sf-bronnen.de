@@ -50,8 +50,8 @@
                                 <?php if ($moreImages = $page->getMoreImages()): ?>
                                     <?php $i = 0; foreach ($moreImages as $textImage): $i++; ?>
                                         <figure class="figure<?= ($i % 2 === 0) ? ' pull-right' : ' pull-right'; ?>">
-                                            <img src="<?= $textImage->resize(500)->url();?>" class="figure-img img-fluid" alt="Bild: <?= $textImage->caption();?>">
-                                            <figcaption class="figure-caption"><?= $textImage->caption();?></figcaption>
+                                            <img src="<?= $textImage->resize(500)->url();?>" class="figure-img img-fluid" alt="Bild: <?= $textImage->caption()->value() ?? $textImage->description();?>">
+                                            <figcaption class="figure-caption"><?= $textImage->caption()->value() ?? $textImage->description();?></figcaption>
                                         </figure>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
