@@ -1,8 +1,7 @@
 <?php
 if ($page->template() === 'bericht') {
 
-    foreach (explode(',', $page->textImages()) as $imageUrl):
-        $image = $page->images()->find($imageUrl);
+    foreach ($page->getMoreImages() as $image):
         echo sprintf('<meta property="og:title" content="%s"/>', $page->title());
         echo sprintf('<meta property="og:type" content="%s"/>', "article");
         echo sprintf('<meta property="og:url" content="%s"/>', $page->url());
