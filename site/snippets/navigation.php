@@ -1,3 +1,4 @@
+<?php if (EXTRACT_CONTENT === false): ?>
 <nav id="nav" class="main-menu navbar navbar-expand-md rounded-0">
     <div class="container pl-sm-0 pr-sm-0">
         <div class="col-12 col-md-10 pl-md-0">
@@ -43,3 +44,4 @@
         </div>
     </div>
 </nav>
+<?php endif; ?>

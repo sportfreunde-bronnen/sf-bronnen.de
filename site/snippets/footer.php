@@ -1,3 +1,4 @@
+<?php if (EXTRACT_CONTENT === false): ?>
 <section class="footer-top">
     <div class="container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left text-lite-color">
         <div class="row">
@@ -44,6 +45,7 @@
         <em class="text-weight-light">&copy; <?= date('Y');?> - Sportfreunde Bronnen 1949 e.V. | Made with <a href="https://getkirby.com/">Kirby</a> and <b class="red">♥</b></em>
     </div>
 </footer>
+<?php endif; ?>
 <script src="/assets/js/jquery-3.3.1.min.js"></script>
 <script src="/assets/js/popper.min.js"></script>
 <script src="/assets/js/bootstrap.js"></script>

@@ -2,6 +2,8 @@
 
 include __DIR__ . '/../kirby/bootstrap.php';
 
+define('EXTRACT_CONTENT', (bool)($_GET['extractContent'] ?? false));
+
 $kirby = new Kirby([
     'roots' => [
         'index'    => __DIR__,

@@ -20,23 +20,26 @@
 </head>
 <body>
 <div class="container-fluid pl-0 pr-0 d-none d-md-block">
-    <div class="top-bar">
-        <div class="container">
-            <div class="container-fluid clearfix text-xs-center text-sm-center text-md-left pl-sm-0 pr-sm-0">
-                <ul class="list-unstyled list-inline float-md-left mb-0 animation">
-                    <li class="list-inline-item"><a href="https://www.facebook.com/sportfreundebronnen/" title="Die Sportfreunde Bronnen auf Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.instagram.com/sfb1949/" title="Die Sportfreunde Bronnen auf Instagram"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/sportfreunde-bronnen/" title="Die Sportfreunde Bronnen auf Github - Open Source"><i class="fa fa-github"></i></a></li>
-                    <li class="list-inline-item"><a href="https://shop.sf-bronnen.de" title="Der Online Shop der Sportfreunde Bronnen"><i class="fa fa-shopping-cart"></i></a></li>
-                </ul>
-                <p class="float-md-right mb-0 text-xs-center text-sm-center text-md-right text-weight-light">
-                    <?php snippet('department');?>
-                </p>
-            </div>
-        </div>
-    </div>
+    <?php if (EXTRACT_CONTENT === false): ?>
+      <div class="top-bar">
+          <div class="container">
+              <div class="container-fluid clearfix text-xs-center text-sm-center text-md-left pl-sm-0 pr-sm-0">
+                  <ul class="list-unstyled list-inline float-md-left mb-0 animation">
+                      <li class="list-inline-item"><a href="https://www.facebook.com/sportfreundebronnen/" title="Die Sportfreunde Bronnen auf Facebook"><i class="fa fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.instagram.com/sfb1949/" title="Die Sportfreunde Bronnen auf Instagram"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="https://github.com/sportfreunde-bronnen/" title="Die Sportfreunde Bronnen auf Github - Open Source"><i class="fa fa-github"></i></a></li>
+                      <li class="list-inline-item"><a href="https://shop.sf-bronnen.de" title="Der Online Shop der Sportfreunde Bronnen"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <p class="float-md-right mb-0 text-xs-center text-sm-center text-md-right text-weight-light">
+                      <?php snippet('department');?>
+                  </p>
+              </div>
+          </div>
+      </div>
+    <?php endif; ?>
 </div>
 <header class="main-header">
+    <?php if (EXTRACT_CONTENT === false): ?>
     <div class="container text-xs-center pl-sm-0 pr-sm-0">
         <div class="row">
             <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
@@ -44,5 +47,6 @@
             </div>
         </div>
     </div>
+    <?php endif; ?>
 </header>
 <?php snippet('navigation'); ?>
