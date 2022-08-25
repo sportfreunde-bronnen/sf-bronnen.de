@@ -3,6 +3,7 @@
 include __DIR__ . '/../kirby/bootstrap.php';
 
 define('EXTRACT_CONTENT', (bool)($_GET['extractContent'] ?? false));
+define('APPEND_TITLE', $_GET['appendTitle'] ?? '');
 
 $kirby = new Kirby([
     'roots' => [
