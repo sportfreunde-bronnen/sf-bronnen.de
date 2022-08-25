@@ -17,6 +17,13 @@
     <link href="/assets/js/plugins/owl-carousel2/owl.carousel.min.css" rel="stylesheet">
     <link href="/assets/js/plugins/owl-carousel2/owl.theme.default.min.css" rel="stylesheet">
     <link href="/assets/js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <?php if (EXTRACT_CONTENT === true): ?>
+    <style type="text/css">
+      div.page {
+        background: #ffffff;
+      }
+    </style>
+    <?php endif; ?>
 </head>
 <body>
 <div class="container-fluid pl-0 pr-0 d-none d-md-block">
