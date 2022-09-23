@@ -2,8 +2,8 @@ Title: Jugend
 
 ----
 
-Headline: 
+Text: 
 
 ----
 
-Text: 
+Headline: 

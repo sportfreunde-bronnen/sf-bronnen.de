@@ -31,6 +31,19 @@ Slides:
   externallink: ""
   buttontext: ""
 - 
+  title: Photovoltaikanlage
+  text: >
+    Für Interessierte stellen wir die
+    aktuellen Echtzeit Leistungsdaten
+    unserer 44,8 kWp PV-Anlage öffentlich
+    zur Verfügung
+  textposition: left
+  sliderimage:
+    - slider-pv2-sfb.jpg
+  internallink: [ ]
+  externallink: https://pv.sf-bronnen.de
+  buttontext: Leistungsdaten einsehen
+- 
   title: Amazon Smile
   text: >
     Du willst mit deinen nächsten
@@ -43,20 +56,6 @@ Slides:
     - gesamtverein/allgemeines/amazon-smile
   externallink: ""
   buttontext: "So geht's"
-- 
-  title: Regeln für Heimspiele (2G+)
-  text: >
-    Zutritt auf Sportgelände nur noch mit
-    2G PLUS Nachweis möglich! Jetzt über
-    das Prozedere vor Ort informieren.
-  textposition: left
-  sliderimage:
-    - slider-dummy.jpg
-  internallink:
-    - >
-      gesamtverein/allgemeines/besucheranmeldung
-  externallink: ""
-  buttontext: Erklärung + Hygienekonzept
 
 ----
 

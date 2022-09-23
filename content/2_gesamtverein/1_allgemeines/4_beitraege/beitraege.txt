@@ -2,52 +2,60 @@ Title: Beiträge
 
 ----
 
-Beitraege: 
+Headline: Jährliche Beiträge
+
+----
+
+Text: Bei Fragen zu unseren Beiträgen dürfen Sie sich gerne jederzeit an unsere Mitgliederverwaltung wenden. Diese erreichen Sie über unser **[Kontaktformular](/home/kontakt)**.
+
+----
+
+Beitraege:
 
 - 
   name: Jugendliche bis 18 J.
-  grundbeitrag: "22.5"
+  grundbeitrag: 23
   grundbeitragzusatz: ""
-  fussball: "25.00"
+  fussball: 25
   fussballzusatz: ""
-  gymnastik: "35.00"
+  gymnastik: 35
   gymnastikzusatz: ""
-  aikido: "35.00"
+  aikido: 35
   aikidozusatz: '*'
 - 
   name: Erwachsene ab 18 Jahren
-  grundbeitrag: "32.5"
+  grundbeitrag: 33.5
   grundbeitragzusatz: ""
-  fussball: "30.00"
+  fussball: 30
   fussballzusatz: ""
-  gymnastik: "35.00"
+  gymnastik: 35
   gymnastikzusatz: ""
-  aikido: "35.00"
+  aikido: 35
   aikidozusatz: '*'
 - 
   name: Familie pF / pK
-  grundbeitrag: "55"
+  grundbeitrag: 56.5
   grundbeitragzusatz: pF
-  fussball: "25.00"
+  fussball: 25
   fussballzusatz: pK
-  gymnastik: "15.00"
+  gymnastik: 15
   gymnastikzusatz: pK
-  aikido: "35.00"
+  aikido: 35
   aikidozusatz: 'pK *'
 - 
   name: Passive Mitglieder
-  grundbeitrag: "27.5"
+  grundbeitrag: 28
   grundbeitragzusatz: ""
-  fussball: "0"
+  fussball: 0
   fussballzusatz: ""
-  gymnastik: "0"
+  gymnastik: 0
   gymnastikzusatz: ""
-  aikido: "0"
+  aikido: 0
   aikidozusatz: ""
 
 ----
 
-Zusatz: 
+Zusatz:
 
 ****
 \*  = Nur zur Information, der Aikido Beitrag wird über eine getrennte Einzugsermächtigung erhoben.
@@ -55,11 +63,3 @@ Zusatz:
 **pF** = pro Familie
 **pK** = pro Kopf
 ****
-
-----
-
-Headline: Jährliche Beiträge
-
-----
-
-Text: Bei Fragen zu unseren Beiträgen dürfen Sie sich gerne jederzeit an unsere Mitgliederverwaltung wenden. Diese erreichen Sie über unser **[Kontaktformular](/home/kontakt)**.

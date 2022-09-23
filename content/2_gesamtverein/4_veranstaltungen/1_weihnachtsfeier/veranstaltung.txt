@@ -1,0 +1,52 @@
+Shorttitle: Weihnachtsfeier 2022
+
+----
+
+Datum: 2022-12-10 19:00:00
+
+----
+
+Datumbis: 
+
+----
+
+Ort: SVZ
+
+----
+
+Text:
+
+## Weihnachtsfeier 2022
+
+Die Weihnachtsfeier des Gesamtvereins findet am 10.12.2022 um 19:00 Uhr im SVZ statt.
+
+Eine offizielle Einladung folgt rechtzeitig vor der Veranstaltung.
+
+----
+
+Vimage:
+
+- cookie-2957962_1280.jpg
+
+----
+
+Imageposition: top
+
+----
+
+Doc: 
+
+----
+
+Documentdescription: 
+
+----
+
+Related:
+
+- >
+  gesamtverein/veranstaltungen/zwickel-gemeindecup
+
+----
+
+Document: 

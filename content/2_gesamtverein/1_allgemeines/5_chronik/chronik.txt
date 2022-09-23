@@ -2,7 +2,11 @@ Title: Vereinschronik
 
 ----
 
-Ereignisse: 
+Headline: Wichtige Ereignisse der Vereinsgeschichte
+
+----
+
+Ereignisse:
 
 - 
   jahr: "1949"
@@ -177,7 +181,6 @@ Ereignisse:
     - Renovierung des SVZ (Streichen von innen und außen)
     - Integration einer smarten Bewässerungsanlage
     - COVID-19 Pandemie
-
-----
-
-Headline: Wichtige Ereignisse der Vereinsgeschichte
+- 
+  jahr: "2022"
+  ereignis: '- Inbetriebnahme unserer Photovoltaikanlage mit einer Gesamtleistung von 44,8kWp'
