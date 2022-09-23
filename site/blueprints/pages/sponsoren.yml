@@ -2,7 +2,6 @@ title: Sponsoren
 pages: false
 files: true
 fields:
-  title: title
   headline: fields/headline
   text:
     label: Text

@@ -1,6 +1,5 @@
 title: Förderverein
 fields:
-  title: title
   headline: fields/headline
   text:
     type: textarea

@@ -7,7 +7,6 @@ options:
   visible: true
   status: true
 fields:
-  title: title
   headline: fields/headline
   subTitle:
     label: Text Überschrift

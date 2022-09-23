@@ -6,7 +6,6 @@ options:
 pages: false
 preset: page
 fields:
-  title: title
   headline: fields/headline
   downloads:
     title: Dateien

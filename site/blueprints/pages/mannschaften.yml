@@ -1,7 +1,5 @@
 title: Mannschaften
 preset: page
-fields:
-  title: title
 pages:
   template: mannschaft
 options:

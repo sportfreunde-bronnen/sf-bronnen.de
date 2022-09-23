@@ -1,6 +1,5 @@
 title: Gymnastik Kurs
 fields:
-  title: title
   headline: fields/headline
   text:
     label: Beschreibungstext

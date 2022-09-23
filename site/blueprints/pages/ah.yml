@@ -4,7 +4,6 @@ options:
   url: false
   status: false
 fields:
-  title: title
   headline: fields/headline
   text:
     type: textarea

@@ -1,6 +1,5 @@
 type: group
 fields:
-  title: title
   shorttitle:
     type: text
     label: Kurzbeschreibung

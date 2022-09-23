@@ -4,7 +4,6 @@ options:
   delete: false
   url: false
 fields:
-  title: title
   headline: fields/headline
   text:
     label: Text
