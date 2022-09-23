@@ -6,10 +6,10 @@ Headline: Kreisliga A Riß Staffel II - Reserven
 
 ----
 
-Fupawidget: 
+Fupawidget:
 
 <script type="text/javascript" src="https://www.fupa.net/fupa/widget.min.js"></script>
-<div id="widget_6108094cea8fc" >... lade FuPa Widget ...
+<div id="widget_62f11344123c1" >... lade FuPa Widget ...
 <script type="text/javascript">
-!function(i){window.setTimeout(function(){"undefined"===typeof fupa_widget_domain?--i.t>0&&window.setTimeout(arguments.callee,i.i):i.f()},i.i)}({i:20,t:100,f:function(){team_widget(987293,{act:"team",hea:0,nav:1,div:"widget_6108094cea8fc",mod:"0"})}});</script>
+!function(i){window.setTimeout(function(){"undefined"===typeof fupa_widget_domain?--i.t>0&&window.setTimeout(arguments.callee,i.i):i.f()},i.i)}({i:20,t:100,f:function(){team_widget(1077364,{act:"team",hea:0,nav:1,div:"widget_62f11344123c1",mod:"0"})}});</script>
 </div><a href="https://www.fupa.net/club/sf-bronnen" target="_blank" class="fupa_link">SF Bronnen II auf FuPa</a>
