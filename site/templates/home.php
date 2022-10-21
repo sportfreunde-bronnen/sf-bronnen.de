@@ -11,7 +11,7 @@
                             <h5 class="text-weight-light"><?= $slide->text();?></h5>
                             <?php if ($slide->internallink()->toPage()): ?>
                                 <a href="<?= $slide->internallink()->toPage()->url();?>" class="btn btn-1 animation text-weight-medium">
-                                    <?php if ($slide->buttonText()->empty()): ?>
+                                    <?php if ($slide->buttonText()->isEmpty()): ?>
                                         Mehr erfahren
                                     <?php else: ?>
                                         <?= $slide->buttonText();?>
@@ -19,7 +19,7 @@
                                 </a>
                             <?php elseif($slide->externallink()->isNotEmpty()): ?>
                                 <a href="<?= $slide->externallink();?>" class="btn btn-1 animation text-weight-medium">
-                                    <?php if ($slide->buttonText()->empty()): ?>
+                                    <?php if ($slide->buttonText()->isEmpty()): ?>
                                         Mehr erfahren
                                     <?php else: ?>
                                         <?= $slide->buttonText();?>
