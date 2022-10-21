@@ -15,6 +15,7 @@ fields:
     label: Bildergalerie
     type: files
     multiple: true
+    help: Zum Bearbeiten der Bildbeschreibungen Bild anklicken
   quotes:
     label: Stimmen
     type: structure
