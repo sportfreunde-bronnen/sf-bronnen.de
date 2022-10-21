@@ -5,7 +5,7 @@ fields:
   headline: fields/headline
   text:
     label: Text
-    type:  wysiwyg
+    type: textarea
   sponsoren:
     type: structure
     label: Sponsoren und Partner
