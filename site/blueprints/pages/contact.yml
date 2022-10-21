@@ -24,3 +24,6 @@ fields:
         label: E-Mail
         help: Wird nicht öffentlich angezeigt
         type: email
+      shortcut:
+        label: Kürzel
+        type: text

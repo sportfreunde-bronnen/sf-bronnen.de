@@ -23,9 +23,18 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="selectEmpfaenger">Empfänger: *</label>
-                                    <select class="form-control flat no-border-radius" id="selectEmpfaenger" name="empfaenger">
+                                    <select class="form-control flat no-border-radius p-2" id="selectEmpfaenger" name="empfaenger">
                                         <?php $i = 0; foreach ($page->ansprechpartner()->toStructure() as $ansprechpartner): $i++; ?>
-                                            <?php $selected = ($form->old('empfaenger') == $ansprechpartner->email()) ? ' selected ' : ' ';?>
+                                            <?php
+                                            $init = get('rec', null);
+                                            $selected = ' ';
+                                            if ($init !== null && empty($form->old('empfaenger'))) {
+                                              $selected = ($init == $ansprechpartner->shortcut()) ? ' selected ' : ' ';
+                                            }
+                                            if (!empty($form->old('empfaenger'))) {
+                                              $selected = ($form->old('empfaenger') == $ansprechpartner->email()) ? ' selected ' : ' ';
+                                            }
+                                            ?>
                                             <option<?= $selected; ?>value="<?= $ansprechpartner->email();?>"><?= $ansprechpartner->name();?> (<?= $ansprechpartner->aufgabe();?>)</option>
                                         <?php endforeach; ?>
                                     </select>
