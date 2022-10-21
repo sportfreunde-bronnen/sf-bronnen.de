@@ -25,6 +25,4 @@ fields:
         label: Stimme
 files:
   fields:
-    caption:
-      type: text
-      label: Beschreibung
+    type: files

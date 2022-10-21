@@ -7,8 +7,8 @@
                     <img src="<?= $image->resize(400)->url();?>" alt="Gallery Image 1" class="img-fluid img-center animation-1">
                     <div class="overlay animation text-lite-color">
                         <h6 class="text-uppercase animation-1"><?= $desc;?></h6>
-                        <p class="animation-1"><?= $image->caption();?></p>
-                        <a href="<?= $image->url();?>" title="<?= $image->caption();?>" class="btn btn-1 animation-1"><i class="fa fa-search"></i></a>
+                        <p class="animation-1"><?= $image->description()->isEmpty() ? $image->caption() : $image->description();?></p>
+                        <a href="<?= $image->url();?>" title="<?= $image->description()->isEmpty() ? $image->caption() : $image->description();?>" class="btn btn-1 animation-1"><i class="fa fa-search"></i></a>
                     </div>
                 </div>
             </li>
