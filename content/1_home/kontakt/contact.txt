@@ -12,67 +12,84 @@ Ansprechpartner:
   name: Gesamte Vorstandschaft
   aufgabe: E-Mail Verteiler
   email: vorstand@sf-bronnen.de
+  shortcut: vorstand
 - 
   name: Martin Pannek
   aufgabe: 1. Vorsitzender
   email: martin-pannek@web.de
+  shortcut: ""
 - 
   name: Thomas Baur-Beyerlin
   aufgabe: 2. Vorsitzender
   email: Thomas.Baur2@gmx.de
+  shortcut: ""
 - 
   name: Magnus Buk
   aufgabe: 2. Vorsitzender, Webseite
   email: MagnusBuk@gmx.de
+  shortcut: website
 - 
   name: Martin Bringazi
   aufgabe: Kassierer
   email: martin_bringazi@web.de
+  shortcut: ""
 - 
   name: Ruth Hofele
   aufgabe: Schriftführerin
   email: molly@ruthili.de
+  shortcut: ""
 - 
   name: Conny Rohmer
   aufgabe: Vermietung SVZ
   email: connyrohmer@web.de
+  shortcut: svz
 - 
   name: Oliver Bentele
   aufgabe: Bandenwerbung
   email: o.bentele@bs-bo.de
+  shortcut: ""
 - 
   name: Jürgen Anic
   aufgabe: Jugendleiter Gesamtverein
   email: j.anic@freenet.de
+  shortcut: ""
 - 
   name: Klaus Romer
   aufgabe: Abteilungsleiter Aikido
   email: SFB-Abt-Aikido@web.de
+  shortcut: ""
 - 
   name: Melanie Schmid
   aufgabe: Abteilungsleiterin Gymnastik
   email: mullusch@web.de
+  shortcut: ""
 - 
   name: Tobias Wischnat
   aufgabe: Abteilungsleiter Fußball
   email: TobiasWischnat@gmx.de
+  shortcut: ""
 - 
   name: Roland Schick
   aufgabe: 'Spielleiter - Ü30 Fußball'
   email: roland.schick@web.de
+  shortcut: ""
 - 
   name: Thomas Glass
   aufgabe: 'Spielleiter - Ü50 Fußball'
   email: info@glass-hobby-design.de
+  shortcut: ""
 - 
   name: Petra Hannes
   aufgabe: Mitgliederverwaltung
   email: petra@hannes.me
+  shortcut: ""
 - 
   name: Martin Halder
   aufgabe: 1. Vorsitzender Förderverein
   email: foerderverein@sf-bronnen.de
+  shortcut: ""
 - 
   name: Sonstiges
   aufgabe: Für sonstige Belange
   email: info@sf-bronnen.de
+  shortcut: ""
