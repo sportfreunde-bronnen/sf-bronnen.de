@@ -6,17 +6,21 @@ Headline: Feiern in unserem Sportvereinszentrum
 
 ----
 
-Text: 
+Text:
 
-Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 neu erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Das SVZ liegt idyllisch im Grünen, hat eine große Terasse, die bei schlechtem Wetter mit Hilfe einer Plane komplett geschlossen werden kann und bietet für die kleineren Besucher einen direkt angrenzenden und im Jahr 2017 erneuerten Spielplatz.
+Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Das SVZ liegt idyllisch im Grünen, hat eine große und überdachte Terrasse, die bei schlechtem Wetter mit Hilfe einer Plane komplett geschlossen werden kann und bietet für die kleineren Besucher einen direkt angrenzenden und im Jahr 2017 erneuerten Spielplatz (siehe Bilder unten).
 
 Die Räumlichkeiten lassen sich flexibel nutzen und aufteilen. Der "kleine Gastraum" (75 Quadratmeter) mit großzügiger Theke bietet Platz für bis zu 35 Personen. Bei Bedarf kann der Saal mit zusätzlichen 90 Quadratmetern mitbenutzt werden. Eine Bestuhlung für **bis zu 100 Personen** ist somit möglich.
 
 In der modernen und voll ausgestatteten Küche können Speisen sowohl aufgewärmt als auch frisch zubereitet werden.
 
-Für Vorträge oder Filmpräsentationen steht ein fest installierter Beamer sowie eine Musikanlage zur Verfügung. Sie benötigen für Ihren Vortrag oder Ihre Präsentation einen Internetanschluss? Kein Problem - unser Gast WLAN (50 MBit/s) steht Ihnen als Besucher kostenfrei zur Verfügung.
+Für Vorträge oder Filmpräsentationen steht ein fest installierter Beamer sowie eine Musikanlage und ein 65 Zoll Fernseher zur Verfügung. Sie benötigen für Ihren Vortrag oder Ihre Präsentation einen Internetanschluss? Kein Problem - unser Gast WLAN (50 MBit/s) steht Ihnen als Besucher kostenfrei zur Verfügung.
 
-Auch für die Kleinsten ist gesorgt: Wickeltisch sowie Kinderstühle sind vorhanden. Großzügige Parkmöglichkeiten finden Sie direkt vor der Tür.
+Auch für die kleinsten Gäste ist natürlich gesorgt: Ein Wickeltisch sowie Kinderstühle sind vorhanden.
+
+Großzügige **Parkmöglichkeiten** finden Sie direkt vor der Tür.
+
+Auch Ihr ökologischer Fußabdruck wird Ihnen eine Veranstaltung in unserem SVZ danken. Durch unsere Photovoltaikanlage inklusive Batteriespeicher versorgen Sie sich während Ihrer Veranstaltung zum größten Teil direkt mit Sonnenstrom vom eigenen Dach.
 
 Weitere Informationen (Nutzungsvertrag, Terminliste, Hausordnung etc.) finden Sie unter dem Punkt **[Downloads](/gesamtverein/allgemeines/downloads) (Sportvereinszentrum)**.
 
@@ -26,7 +30,7 @@ Wir freuen uns auf Ihre Anfrage!
 
 ----
 
-Facts: 
+Facts:
 
 - 2008 erbaut
 - bis zu 100 Sitzplätze (5 Tische mit 35 Stühlen im Gastraum, 12 Tische und 72 Stühle im Saal)
@@ -37,18 +41,17 @@ Facts:
 - große Terasse
 - toller Kinderspielplatz
 - fest installierter Beamer
+- 65 Zoll Fernseher mit Kabelanschluss
 - Musikanlage
-- kostenloses WLAN
+- kostenloses WLAN (50 MBit/s)
 - Wickeltisch, zwei Kinderstühle
 - Parkplätze
-
-----
-
-Textimages: svz_2.jpg,svz_5.jpg,svz_6.jpg,svz_9.jpg
+- Regenerative Energieversorgung (PV)
 
 ----
 
 Gallery:
+
 - img_5320.jpg
 - spielplatz-1.jpg
 - spielplatz-2.jpg
@@ -59,7 +62,7 @@ Gallery:
 
 ----
 
-Quotes: 
+Quotes:
 
 - 
   quote: >
@@ -80,3 +83,7 @@ Quotes:
     technischen Ausstattung blieben
     keinerlei Wünsche unsererseits offen.
     Wir können es absolut empfehlen.
+
+----
+
+Textimages: svz_2.jpg,svz_5.jpg,svz_6.jpg,svz_9.jpg

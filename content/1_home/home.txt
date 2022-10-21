@@ -75,14 +75,11 @@ Footeraddress:
 Links:
 
 - 
-  name: 'SV Baustetten <3'
-  link: http://www.sv-baustetten.de
-- 
   name: Musikverein Oberholzheim
   link: http://mv-oberholzheim.de/
 - 
-  name: TSG Achstetten
-  link: http://tsg-achstetten.de/
-- 
   name: Narrenzunft Bronnen
   link: https://nz-bronnen.de/
+- 
+  name: TSG Achstetten
+  link: http://tsg-achstetten.de/
