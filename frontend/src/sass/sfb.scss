@@ -1,7 +1,6 @@
 // Add own variables (overwrite bootstrap defaults for instance)
+@import "_fonts";
 @import "_variables";
-
-@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,500,700,900');
 
 // Import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
