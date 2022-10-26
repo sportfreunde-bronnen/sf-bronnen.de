@@ -1,0 +1,44 @@
+.pricing-table {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+
+  .plan-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $brightBlue;
+  }
+
+  .plan-price {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $darkBlue;
+    color: #fff;
+  }
+
+  .plan-name h5,
+  .plan-name h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+  }
+
+  .plan-list {
+    ul.list-unstyled {
+      margin-bottom: 0;
+    }
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      border-bottom: 1px solid #dcdcdc;
+      &:nth-child(even) {
+        background-color: #f5f5f5;
+      }
+      &:nth-child(odd):hover {
+        background-color: #fafafa;
+      }
+    }
+  }
+}

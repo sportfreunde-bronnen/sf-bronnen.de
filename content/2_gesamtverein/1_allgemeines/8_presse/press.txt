@@ -25,7 +25,7 @@ Articles:
     sich zu sein“
   url: 'https://www.schwaebische.de/landkreis/landkreis-biberach/laupheim_artikel,-den-frauen-gef%C3%A4llt-es-mal-unter-sich-zu-sein-_arid,10915660.html'
   text: 'In fünf Wochen steigt in der Laupheimer Innenstadt eine Premiere: eine Laufveranstaltung nur für Frauen, organisiert von zwei Männern und unterstützt von einem Schirm-Herrn, nämlich Oberbürgermeister Gerold Rechle. Die beiden Veranstalter Alexander Schwarz und Thorsten Schmid haben hierfür extra eine Sportevent GbR gegründet und hoffen am Samstag, 15. September, auf viel Frauenpower in Laupheim. „Wir sind guter Dinge, dass wir 350 Läuferinnen an den Start bekommen“, sagt Alexander Schwarz im Gespräch mit SZ-Redakteur Reiner Schick.'
-  date: 2018201820182018-0808-1010
+  date: 2018-08-10
   tags: gymnastik, aktionen
 - 
   title: Ein Jahr im Zeichen des Sportplatzbaus
