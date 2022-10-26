@@ -1,0 +1,33 @@
+// Add own variables (overwrite bootstrap defaults for instance)
+@import "_fonts";
+@import "_variables";
+
+// Import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "base";
+
+// Main navigation
+@import "components/_header.scss";
+@import "components/_navigation.scss";
+@import "components/_footer.scss";
+@import "components/_pricing.scss";
+@import "components/_chronik.scss";
+@import "components/_downloads.scss";
+@import "components/_downloadAccordion.scss";
+@import "components/_veranstaltung.scss";
+@import "components/_slider.scss";
+@import "components/_timeline.scss";
+@import "components/_vorstandschaft.scss";
+@import "components/_bericht.scss";
+@import "components/_fupa.scss";
+@import "components/_articles.scss";
+@import "components/_sponsors.scss";
+@import "components/_rotate.scss";
+
+// Import template styles
+@import "templates/home.scss";
+
+@import "responsive";
+
+@import "style";

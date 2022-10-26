@@ -1,0 +1,8 @@
+a.sfb-headline {
+  background: linear-gradient(to bottom, #ffffff 30%, #919191 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include media-breakpoint-down(sm) {
+    margin-top: 2rem;
+  }
+}
