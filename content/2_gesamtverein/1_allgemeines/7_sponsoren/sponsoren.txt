@@ -10,7 +10,7 @@ Text: Wir bedanken uns recht herzlich bei unseren Sponsoren, Partnern und sonsti
 
 ----
 
-Sponsoren: 
+Sponsoren:
 
 - 
   name: Academy Fahrschule Roloff GmbH
@@ -65,10 +65,6 @@ Sponsoren:
   name: Autohaus Filser
   ort: Laupheim
   webseite: http://www.autohaus-filser.net/
-- 
-  name: Reisebüro Flöter
-  ort: Laupheim
-  webseite: https://www.rbfloeter.de/
 - 
   name: Glass Hobby Design
   ort: Laupheim
@@ -138,7 +134,7 @@ Sponsoren:
   ort: Achstetten
   webseite: http://www.kuehnbach-beton.de/
 - 
-  name: Uwe Lengenfelder
+  name: "Lengenfelder's Gartengestaltung"
   ort: Oberholzheim
   webseite: ""
 - 
@@ -154,10 +150,6 @@ Sponsoren:
   ort: Erbach
   webseite: >
     http://www.locher-haustechnik.de/cms/front_content.php
-- 
-  name: Lutz Bau
-  ort: Burgrieden
-  webseite: http://baulutz.de/
 - 
   name: Mangold Immobilien
   ort: Laupheim
@@ -253,3 +245,7 @@ Sponsoren:
   name: 'M & D Flachdachtechnik'
   ort: Laupheim
   webseite: http://www.md-dachtechnik.de/
+- 
+  name: e.systeme21
+  ort: Ulm
+  webseite: https://esysteme21.de/

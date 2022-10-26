@@ -1,0 +1,5 @@
+Description: Direkt angrenzender Spielplatz.
+
+----
+
+Caption: Zugehöriger Spielplatz

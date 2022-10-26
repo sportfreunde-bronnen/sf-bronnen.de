@@ -21,15 +21,15 @@ Bleiben Sie sportlich.
 Slides:
 
 - 
-  title: Sie suchen eine Location?
-  text: Wir haben da was!
+  title: Location zum Feiern gesucht?
+  text: 'Wir haben da was - unser SVZ!'
   textposition: left
   sliderimage:
     - slider-sfb-3.jpg
   internallink:
     - gesamtverein/allgemeines/svz
   externallink: ""
-  buttontext: ""
+  buttontext: Jetzt informieren und mieten
 - 
   title: Photovoltaikanlage
   text: >
@@ -75,14 +75,11 @@ Footeraddress:
 Links:
 
 - 
-  name: 'SV Baustetten <3'
-  link: http://www.sv-baustetten.de
-- 
   name: Musikverein Oberholzheim
   link: http://mv-oberholzheim.de/
 - 
-  name: TSG Achstetten
-  link: http://tsg-achstetten.de/
-- 
   name: Narrenzunft Bronnen
   link: https://nz-bronnen.de/
+- 
+  name: TSG Achstetten
+  link: http://tsg-achstetten.de/

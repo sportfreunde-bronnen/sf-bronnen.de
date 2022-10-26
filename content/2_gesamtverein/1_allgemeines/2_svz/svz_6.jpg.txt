@@ -1,0 +1,5 @@
+Description: Kleiner Saal / Theke
+
+----
+
+Caption: Kleiner Saal / Bar

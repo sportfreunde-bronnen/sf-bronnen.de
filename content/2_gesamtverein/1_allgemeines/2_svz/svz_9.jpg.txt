@@ -1,0 +1,5 @@
+Description: Blick in den Saal bei geöffneter Abtrennung.
+
+----
+
+Caption: Saal
