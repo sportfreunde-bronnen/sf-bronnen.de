@@ -10,6 +10,14 @@ fields:
   text:
     label: Begrüßungstext
     type: textarea
+  homeBannerText:
+    label: Banner Überschrift
+    type: text
+    help: Alles was innerhalb des Spans steht wird fett geschrieben.
+  homeBanner:
+    label: Banner
+    type: files
+    help: Wenn keine Datei ausgewählt wird findet keine Anzeige statt
   slider:
     label: Slider
     type: headline

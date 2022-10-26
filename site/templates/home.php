@@ -72,6 +72,19 @@
             </div>
         </section>
 
+      <?php if ($page->homeBanner()->isNotEmpty()):?>
+        <section class="pt-5">
+          <div class="container  pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mt-0"><?= $page->homeBannerText();?></h4>
+                <img class="img-fluid" src="<?= $page->homeBanner()->toFile()->url();?>"/>
+              </div>
+            </div>
+          </div>
+        </section>
+      <?php endif; ?>
+
         <div class="main-container container pl-sm-0 pr-sm-0 pb-0 text-xs-center text-sm-center text-md-left">
             <section class="section-latest-news">
                 <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mb-0"><span>Aktuelles</span> aus dem Verein</h4>

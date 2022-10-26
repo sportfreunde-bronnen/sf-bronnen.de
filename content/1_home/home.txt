@@ -18,6 +18,16 @@ Bleiben Sie sportlich.
 
 ----
 
+Homebannertext: Unsere <span>Werte</span>
+
+----
+
+Homebanner:
+
+- banner-sfb.png
+
+----
+
 Slides:
 
 - 
