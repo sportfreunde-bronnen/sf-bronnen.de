@@ -1,0 +1,5 @@
+Description: Gesamtfläche mit geöffneter Abtrennung.
+
+----
+
+Caption: Gesamtfläche

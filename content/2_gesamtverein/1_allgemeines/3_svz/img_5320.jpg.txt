@@ -1,5 +1,0 @@
-Description: Thekenbereich mit Durchgang zur Kücher
-
-----
-
-Caption: 
