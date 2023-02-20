@@ -19,8 +19,8 @@
                         <tr>
                             <td class="font-weight-bold">Wann?</td>
                             <td>
-                                <?= $page->datum()->toGermanDate();?>
-                                <?php if ($page->datumbis()->isNotEmpty()): ?> - <?= $page->datumbis()->toGermanDate();?><?endif; ?>
+                                <?= $page->datum()->toDate('d.m.Y H:i');?>
+                                <?php if ($page->datumbis()->isNotEmpty()): ?> - <?= $page->datumbis()->toDate('d.m.Y H:i');?><?php endif; ?>
                             </td>
                         </tr>
                         <tr>
@@ -48,7 +48,7 @@
                                     <div class="inner">
                                         <p class="date-meta text-grey-color text-uppercase">
                                     <span class="badge p-1 badge-secondary">
-                                        <i class="fa fa-calendar"></i>&nbsp; <?= $related->datum()->toGermanDate(); ?>
+                                        <i class="fa fa-calendar"></i>&nbsp; <?= $related->datum()->toDate('d.m.Y'); ?>
                                     </span>
                                         </p>
                                         <h6 class="sub-heading-1 tiny text-weight-medium text-xs-center text-sm-center text-md-left">
