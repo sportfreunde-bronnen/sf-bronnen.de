@@ -2,7 +2,7 @@ Title: Datenschutz
 
 ----
 
-Text: 
+Text:
 
 ## Datenschutzerklärung
 
@@ -67,11 +67,11 @@ Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten 
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter sind die:
 
 Sportfreunde Bronnen 1949 e.V.  
-Adam-Ries-Straße 13  
- 88471 Laupheim  
- Deutschland  
- E-Mail: datenschutz@sf-bronnen.de  
- Website: www.sf-bronnen.de
+Höhenweg 1
+88480 Bronnen
+Deutschland  
+E-Mail: datenschutz@sf-bronnen.de  
+Website: www.sf-bronnen.de
 
 ### 3. Cookies
 

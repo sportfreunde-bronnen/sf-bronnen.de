@@ -44,10 +44,7 @@ Documentdescription:
 
 ----
 
-Related:
-
-- >
-  gesamtverein/veranstaltungen/zwickel-gemeindecup
+Related: 
 
 ----
 

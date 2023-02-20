@@ -1,0 +1,43 @@
+Title: Kinderfasching
+
+----
+
+Shorttitle: Kinderfasching
+
+----
+
+Datum: 2023-02-12 14:00:00
+
+----
+
+Datumbis: 
+
+----
+
+Ort: SVZ Bronnen
+
+----
+
+Text: 
+
+----
+
+Vimage:
+
+- img-20230108-wa0007.jpg
+
+----
+
+Imageposition: top
+
+----
+
+Doc: 
+
+----
+
+Documentdescription: 
+
+----
+
+Related: 
