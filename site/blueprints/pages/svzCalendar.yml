@@ -1,0 +1,10 @@
+title: SVZ Kalender
+fields:
+  headline: fields/headline
+  text:
+    type: textarea
+    required: true
+    label: Text
+files:
+  fields:
+    type: files
