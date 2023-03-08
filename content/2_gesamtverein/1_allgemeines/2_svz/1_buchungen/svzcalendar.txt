@@ -1,9 +1,0 @@
-Title: Buchungen
-
-----
-
-Headline: TEst12
-
-----
-
-Text: 3123
