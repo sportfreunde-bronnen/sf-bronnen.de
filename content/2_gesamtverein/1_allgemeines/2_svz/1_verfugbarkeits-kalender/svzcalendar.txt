@@ -1,9 +1,0 @@
-Title: Verfügbarkeits Kalender
-
-----
-
-Headline: Ist das SVZ an Ihrem Termin noch verfügbar?
-
-----
-
-Text: Sie würden gerne unser SVZ mieten? Einfach unten den Monat und das Jahr auswählen und sehen, ob das SVZ an diesem Tag noch verfügbar ist.
