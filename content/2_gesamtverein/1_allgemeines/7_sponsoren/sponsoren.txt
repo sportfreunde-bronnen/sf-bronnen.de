@@ -249,3 +249,7 @@ Sponsoren:
   name: e.systeme21
   ort: Ulm
   webseite: https://esysteme21.de/
+- 
+  name: BiberPark
+  ort: Biberach
+  webseite: https://biberpark-biberach.de/

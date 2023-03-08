@@ -182,5 +182,8 @@ Ereignisse:
     - Integration einer smarten Bewässerungsanlage
     - COVID-19 Pandemie
 - 
+  jahr: "2021"
+  ereignis: '- COVID-19 Pandemie'
+- 
   jahr: "2022"
-  ereignis: '- Inbetriebnahme unserer Photovoltaikanlage mit einer Gesamtleistung von 44,8kWp'
+  ereignis: '- Inbetriebnahme einer Photovoltaikanlage mit einer Gesamtleistung von 44,8kWp auf dem Dach unseres SVZ.'

@@ -31,6 +31,30 @@ Homebanner:
 Slides:
 
 - 
+  title: Jahreshauptversammlung
+  text: >
+    JHV von Förderverein und Hauptverein am
+    Fr., 03.03.2023
+  textposition: left
+  sliderimage:
+    - slider-dummy.jpg
+  internallink:
+    - >
+      gesamtverein/veranstaltungen/jahreshauptversammlung
+  externallink: ""
+  buttontext: 'Einladung, Infos & Tagesordnungen'
+- 
+  title: Sportfreunde Fanshop
+  text: >
+    Unseren neuen Fanshop schon entdeckt?
+    Viel Spaß beim Shoppen!
+  textposition: left
+  sliderimage:
+    - slider-sportplatz.jpg
+  internallink: [ ]
+  externallink: https://fanshop.sf-bronnen.de
+  buttontext: Zum Fanshop
+- 
   title: Location zum Feiern gesucht?
   text: 'Wir haben da was - unser SVZ!'
   textposition: left
@@ -76,8 +100,8 @@ Footertext: Die Sportfreunde Bronnen sind ein über 600 Mitglieder fassender Ver
 Footeraddress:
 
 **Sportfreunde Bronnen 1949 e.V.**  
- Adam-Ries-Straße 13  
- 88471 Laupheim  
+ Höhenweg 1
+ 88480 Bronnen
  info@sf-bronnen.de
 
 ----
