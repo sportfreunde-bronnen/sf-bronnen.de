@@ -9,20 +9,13 @@ Headline: Downloads rund um den Gesamtverein
 Downloads:
 
 - 
-  category: COVID-19
-  downloads:
-    - >
-      2021102_hk_sport-und-trainingsbetrieb.pdf
-    - 20211102_hk_wettkampfbetrieb.pdf
-- 
   category: Sportvereinszentrum
   downloads:
     - flyer_svz-bronnen.pdf
     - >
       sfb-bewirtungscheckliste_svz_kurz_20141021mh.pdf
     - sfb-hausordnung_svz_20141021mh.pdf
-    - >
-      vordruck-nutzungsvertrag-svz-ab-juni-2021.pdf
+    - sfb-svz-nutzungsvertrag_03-2023.pdf
 - 
   category: Verein
   downloads:

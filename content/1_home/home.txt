@@ -77,19 +77,6 @@ Slides:
   internallink: [ ]
   externallink: https://pv.sf-bronnen.de
   buttontext: Leistungsdaten einsehen
-- 
-  title: Amazon Smile
-  text: >
-    Du willst mit deinen nächsten
-    Einkäufen auf Amazon die Sportfreunde
-    unterstützen?
-  textposition: left
-  sliderimage:
-    - slider-sfb-4.jpg
-  internallink:
-    - gesamtverein/allgemeines/amazon-smile
-  externallink: ""
-  buttontext: "So geht's"
 
 ----
 
