@@ -1,4 +1,5 @@
 title: SVZ
+preset: page
 fields:
   headline: fields/headline
   text:
