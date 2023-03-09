@@ -1,0 +1,9 @@
+Title: SVZ Buchungen
+
+----
+
+Headline: Ist das SVZ an meinem Wunschtermin noch verfügbar?
+
+----
+
+Text: Einfach unten Monat und Jahr auswählen, auf "Verfügbarkeit anzeigen" klicken und sehen, ob das SVZ am gewünschten Tag frei (= grün) oder belegt (=rot) ist.

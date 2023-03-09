@@ -31,18 +31,15 @@ Homebanner:
 Slides:
 
 - 
-  title: Jahreshauptversammlung
-  text: >
-    JHV von Förderverein und Hauptverein am
-    Fr., 03.03.2023
+  title: Location zum Feiern gesucht?
+  text: 'Wir haben da was - unser SVZ!'
   textposition: left
   sliderimage:
-    - slider-dummy.jpg
+    - slider-sfb-3.jpg
   internallink:
-    - >
-      gesamtverein/veranstaltungen/jahreshauptversammlung
+    - gesamtverein/allgemeines/svz
   externallink: ""
-  buttontext: 'Einladung, Infos & Tagesordnungen'
+  buttontext: Jetzt informieren und mieten
 - 
   title: Sportfreunde Fanshop
   text: >
@@ -54,16 +51,6 @@ Slides:
   internallink: [ ]
   externallink: https://fanshop.sf-bronnen.de
   buttontext: Zum Fanshop
-- 
-  title: Location zum Feiern gesucht?
-  text: 'Wir haben da was - unser SVZ!'
-  textposition: left
-  sliderimage:
-    - slider-sfb-3.jpg
-  internallink:
-    - gesamtverein/allgemeines/svz
-  externallink: ""
-  buttontext: Jetzt informieren und mieten
 - 
   title: Photovoltaikanlage
   text: >
