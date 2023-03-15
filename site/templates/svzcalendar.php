@@ -91,11 +91,11 @@
               $date = "$year-$month-$currentDayRel";
               $occupied = array_key_exists($date, $dateArray);
               $class = $occupied ? 'bg-danger' : 'bg-success';
-              $text = $occupied ? 'Belegt' : 'Frei';
+              $text = $occupied ? 'B' : 'F';
               if ($date === date('Y-m-d')) {
                 $class = 'bg-info';
               }
-              $calendar .= "<td class='w-auto day text-center $class' rel='$date'><b>$currentDay</b> ($text)</td>";
+              $calendar .= "<td class='w-auto day text-center $class' rel='$date'><b>$currentDay</b><br/>($text)</td>";
               $currentDay++;
               $dayOfWeek++;
             }
