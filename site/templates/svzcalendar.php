@@ -43,7 +43,7 @@
           </div>
 
 
-
+          <div class="col-12">
           <?php
 
           function build_calendar ($month,$year,$dateArray) {
@@ -74,7 +74,7 @@
 
             $currentDay = 1;
 
-            $calendar .= "</tr><tr style='height:150px;'>";
+            $calendar .= "</tr><tr style='max-height:100px;'>";
 
             if ($dayOfWeek > 0) {
               $calendar .= "<td class='text-center' colspan='$dayOfWeek'>&nbsp;</td>";
@@ -85,14 +85,17 @@
             while ($currentDay <= $numberDays) {
               if ($dayOfWeek == 7) {
                 $dayOfWeek = 0;
-                $calendar .= "</tr><tr style='height:150px;'>";
+                $calendar .= "</tr><tr style='max-height:100px;'>";
               }
               $currentDayRel = str_pad($currentDay, 2, "0", STR_PAD_LEFT);
               $date = "$year-$month-$currentDayRel";
               $occupied = array_key_exists($date, $dateArray);
               $class = $occupied ? 'bg-danger' : 'bg-success';
-              $text = $occupied ? 'B' : ' F ';
-              $calendar .= "<td class='w-auto day text-center $class' rel='$date'><b>$currentDay</b></td>";
+              $text = $occupied ? 'Belegt' : 'Frei';
+              if ($date === date('Y-m-d')) {
+                $class = 'bg-info';
+              }
+              $calendar .= "<td class='w-auto day text-center $class' rel='$date'><b>$currentDay</b> ($text)</td>";
               $currentDay++;
               $dayOfWeek++;
             }
@@ -113,6 +116,7 @@
           echo build_calendar($month, $year, $bookings);
 
           ?>
+          </div>
 
         </div>
         <hr/>
