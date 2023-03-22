@@ -21,7 +21,8 @@
         "php": ">=8.0.0 <8.1.0",
         "getkirby/cms": "^3.6.0",
         "mzur/kirby-uniform": "^4.0",
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "s1syphos/php-simple-captcha": "^2.0"
     },
     "scripts": {
         "start": [

@@ -4,8 +4,8 @@ RUN docker-php-ext-install opcache
 RUN apk add --no-cache libzip-dev && docker-php-ext-configure zip && docker-php-ext-install zip
 
 # install gdlib
-RUN apk add --no-cache libpng libpng-dev libwebp-dev libjpeg-turbo-dev
-RUN docker-php-ext-configure gd --enable-gd --with-jpeg --with-webp
+RUN apk add --no-cache libpng libpng-dev libwebp-dev libjpeg-turbo-dev freetype-dev
+RUN docker-php-ext-configure gd --enable-gd --with-jpeg --with-webp --with-freetype
 RUN docker-php-ext-install gd
 
 ADD ./docker/fpm.conf /usr/local/etc/php-fpm.d/zzzz-sock.conf
