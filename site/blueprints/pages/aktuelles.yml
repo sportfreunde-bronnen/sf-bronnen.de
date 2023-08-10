@@ -9,7 +9,7 @@ sections:
     layout: cards
 options:
   url: false
-  status: false
+  status: true
   template: false
   delete: false
 

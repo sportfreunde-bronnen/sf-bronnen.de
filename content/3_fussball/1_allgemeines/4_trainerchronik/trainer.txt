@@ -6,7 +6,7 @@ Headline: Alle Trainer der Sportfreunde Bronnen
 
 ----
 
-Coaches: 
+Coaches:
 
 - 
   name: >
@@ -113,3 +113,7 @@ Coaches:
 - 
   name: 'Sven Manz (Trainer) & Johannes Schupp (Spielertrainer)'
   zeitraum: ab 08/2020
+
+----
+
+Uuid: e6XVMupxzMd5MlBG

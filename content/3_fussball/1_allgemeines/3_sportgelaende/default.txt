@@ -2,7 +2,7 @@ Title: Sportgelände
 
 ----
 
-Text: 
+Text:
 
 Das Bronner Sportgelände wurde im Jahr 2017 umfassend saniert und erweitert. Die Maßnahmen umfassten den Hauptumbau des Hauptspielfeldes, die Beregnung auf beiden Sportplätzen, die Ertüchtigung der Flutlichtanlagen auf dem Hauptspielfeld sowie der Ersatz der Flutlichtanlage auf dem Trainingsplatz und die Aufwertung der Infrastruktur auf dem Vereinsgelände. Im Jahr 2018 wird das Projekt durch weitere Maßnahmen rund um das SVZ abgeschlossen werden.
 
@@ -11,3 +11,7 @@ Weitere Informationen folgen schon bald.
 ----
 
 Headline: Sportgelände in Bronnen
+
+----
+
+Uuid: hDU5Wu1Vi9XjPMYU
