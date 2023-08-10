@@ -2,11 +2,11 @@ Title: Weihnachtsfeier
 
 ----
 
-Shorttitle: Weihnachtsfeier 2022
+Shorttitle: Weihnachtsfeier 2023
 
 ----
 
-Datum: 2022-12-10 19:00:00
+Datum: 2023-12-09 19:00:00
 
 ----
 
@@ -20,19 +20,15 @@ Ort: SVZ
 
 Text:
 
-## Weihnachtsfeier 2022
+## Weihnachtsfeier 2023
 
-Die Weihnachtsfeier des Gesamtvereins findet am 10.12.2022 um 19:00 Uhr im SVZ statt.
+Die Weihnachtsfeier des Gesamtvereins findet am Samstag, 09.12.2023 um 19:00 Uhr im SVZ statt.
 
 Eine offizielle Einladung folgt rechtzeitig vor der Veranstaltung.
 
-**Termin für die Weihnachtsfeier 2023: 09.12.2023**
-
 ----
 
-Vimage:
-
-- cookie-2957962_1280.jpg
+Vimage: - file://2LorCOXYLZ1UVonz
 
 ----
 
@@ -48,11 +44,12 @@ Documentdescription:
 
 ----
 
-Related:
-
-- >
-  gesamtverein/veranstaltungen/zwickel-gemeindecup
+Related: - page://D7q4m6TDvMgClsE5
 
 ----
 
 Document: 
+
+----
+
+Uuid: THHmnXjy8eKe1Chx

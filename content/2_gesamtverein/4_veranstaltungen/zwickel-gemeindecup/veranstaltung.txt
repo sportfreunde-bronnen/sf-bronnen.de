@@ -18,7 +18,7 @@ Ort: Sportgelände Bronnen
 
 ----
 
-Text: 
+Text:
 
 ## 3. Zwickel-Elfer-Cup
 
@@ -51,3 +51,7 @@ Related: gesamtverein/veranstaltungen/uhlmann-halder-cup
 ----
 
 Datumbis: 
+
+----
+
+Uuid: GSyE6eZK6oYuAcUa

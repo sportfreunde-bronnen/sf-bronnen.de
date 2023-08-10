@@ -187,3 +187,7 @@ Ereignisse:
 - 
   jahr: "2022"
   ereignis: '- Inbetriebnahme einer Photovoltaikanlage mit einer Gesamtleistung von 44,8kWp auf dem Dach unseres SVZ.'
+
+----
+
+Uuid: cRK28JZ38fVXPL68

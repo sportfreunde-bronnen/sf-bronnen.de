@@ -10,7 +10,7 @@ Ort: SVZ Bronnen
 
 ----
 
-Text: 
+Text:
 
 ## Oktoberfest 2019
 
@@ -57,3 +57,7 @@ Documentdescription: Flyer
 ----
 
 Datumbis: 
+
+----
+
+Uuid: 5lvt2Xh1cZk3NJZW

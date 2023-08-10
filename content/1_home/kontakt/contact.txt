@@ -84,7 +84,7 @@ Ansprechpartner:
   email: petra@hannes.me
   shortcut: ""
 - 
-  name: Martin Halder
+  name: Benjamin Baur
   aufgabe: 1. Vorsitzender Förderverein
   email: foerderverein@sf-bronnen.de
   shortcut: ""
@@ -93,3 +93,7 @@ Ansprechpartner:
   aufgabe: Für sonstige Belange
   email: info@sf-bronnen.de
   shortcut: ""
+
+----
+
+Uuid: pODhpL2pencRioK8

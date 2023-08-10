@@ -84,6 +84,9 @@ Links:
   name: Musikverein Oberholzheim
   link: http://mv-oberholzheim.de/
 - 
+  name: Lebensfreude Oberholzheim
+  link: https://lebensfreude-oberholzheim.de/
+- 
   name: Narrenzunft Bronnen
   link: https://nz-bronnen.de/
 - 
@@ -92,4 +95,4 @@ Links:
 
 ----
 
-Uuid: iZxyedn1Gv8gi7Le
+Uuid: 4cDIGeizMey8ASHA

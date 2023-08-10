@@ -31,7 +31,7 @@ Bei Fragen können Sie sich jederzeit über unser **[Kontaktformular](/home/kont
 Wir freuen uns auf Ihre Anfrage!
 
 ### Jetzt Verfügbarkeit prüfen
-Sie interessieren sich, ob das SVZ zu Ihrem gewünschten Termin noch frei ist? **(link: https://sf-bronnen.de/gesamtverein/allgemeines/svz/buchungen text: Hier entlang zum Buchungskalender)**.
+Sie interessieren sich, ob das SVZ an Ihrem gewünschten Termin noch frei ist? **(link: https://sf-bronnen.de/gesamtverein/allgemeines/svz/buchungen text: Hier entlang zum Buchungskalender)**.
 
 ----
 
@@ -59,6 +59,7 @@ Facts:
 - Toilette für Menschen mit Behinderung
 - Ausreichend Parkplätze
 - Regenerative Energieversorgung (PV)
+- Lademöglichkeit für E-Fahrzeuge
 
 ----
 
@@ -99,3 +100,7 @@ Quotes:
 ----
 
 Textimages: svz_2.jpg,svz_5.jpg,svz_6.jpg,svz_9.jpg
+
+----
+
+Uuid: CTiBBmnrhRlQJEKg

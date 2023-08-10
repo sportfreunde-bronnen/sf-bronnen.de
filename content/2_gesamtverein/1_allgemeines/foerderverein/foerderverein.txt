@@ -2,7 +2,7 @@ Title: Förderverein
 
 ----
 
-Text: 
+Text:
 
 Wir sind ein kleiner Verein mit tollen Mitgliedern und Sponsoren. Durch Spenden und Sponsoring helfen Sie mit, die ehrgeizigen Ziele und herausfordernden Aufgaben des Vereins und dessen Mitglieder zu unterstützen und zu erreichen.   
  Werden Sie Teil unserer Sportfreunde Familie.
@@ -30,7 +30,7 @@ Headline: Förderverein SF Bronnen e.V.
 
 ----
 
-People: 
+People:
 
 - 
   name: Martin Halder
@@ -38,3 +38,7 @@ People:
   email: foerderverein@sf-bronnen.de
   phone: ""
   address: 'Gartenstraße 38<br/>88480 Achstetten'
+
+----
+
+Uuid: Ok4usujKdLBJ2jph

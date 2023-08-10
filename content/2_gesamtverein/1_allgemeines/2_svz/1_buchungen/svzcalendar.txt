@@ -6,4 +6,4 @@ Headline: Ist das SVZ an meinem Wunschtermin noch verfügbar?
 
 ----
 
-Text: Einfach unten Monat und Jahr auswählen, auf "Verfügbarkeit anzeigen" klicken und sehen, ob das SVZ am gewünschten Tag frei (= grün) oder belegt (=rot) ist.
+Text: Einfach unten Monat und Jahr auswählen, auf "Verfügbarkeit anzeigen" klicken und sehen, ob das SVZ am gewünschten Tag frei (= grün) oder belegt (=rot) ist. Falls unser SVZ an Ihrem Wunschtermin noch zur Verfügung steht freuen wir uns über Ihre Buchung. Das geht schnell und einfach über unser (link: https://www.sf-bronnen.de/home/kontakt?rec=svz text: Kontaktformular).

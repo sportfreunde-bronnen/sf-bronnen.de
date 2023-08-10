@@ -14,7 +14,7 @@ Beitraege:
 
 - 
   name: Jugendliche bis 18 J.
-  grundbeitrag: 23
+  grundbeitrag: 24
   grundbeitragzusatz: ""
   fussball: 25
   fussballzusatz: ""
@@ -24,7 +24,7 @@ Beitraege:
   aikidozusatz: '*'
 - 
   name: Erwachsene ab 18 Jahren
-  grundbeitrag: 33.5
+  grundbeitrag: 35
   grundbeitragzusatz: ""
   fussball: 30
   fussballzusatz: ""
@@ -34,7 +34,7 @@ Beitraege:
   aikidozusatz: '*'
 - 
   name: Familie pF / pK
-  grundbeitrag: 56.5
+  grundbeitrag: 59
   grundbeitragzusatz: pF
   fussball: 25
   fussballzusatz: pK
@@ -44,7 +44,7 @@ Beitraege:
   aikidozusatz: 'pK *'
 - 
   name: Passive Mitglieder
-  grundbeitrag: 28
+  grundbeitrag: 29
   grundbeitragzusatz: ""
   fussball: 0
   fussballzusatz: ""
@@ -63,3 +63,7 @@ Zusatz:
 **pF** = pro Familie
 **pK** = pro Kopf
 ****
+
+----
+
+Uuid: kjNG57OjBIhMj0Js

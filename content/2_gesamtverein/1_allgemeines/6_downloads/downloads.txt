@@ -11,25 +11,27 @@ Downloads:
 - 
   category: Sportvereinszentrum
   downloads:
-    - flyer_svz-bronnen.pdf
-    - >
-      sfb-bewirtungscheckliste_svz_kurz_20141021mh.pdf
-    - sfb-hausordnung_svz_20141021mh.pdf
-    - sfb-svz-nutzungsvertrag_03-2023.pdf
+    - file://nibw1zlEbDBIBQ9o
+    - file://CEyF6IYwjEI3r7Kk
+    - file://kfQk3YV7hfNSz2Nt
+    - file://GtmiL5pKhCoSiNBJ
 - 
   category: Verein
   downloads:
-    - ehrenordnung_2014.pdf
-    - sfb-aktuell_ausgabe2.pdf
-    - sfb_aktuell_3.pdf
-    - sfb_aktuell_coronaspezial.pdf
-    - sfb_datenschutzordnung.pdf
-    - >
-      vereinssatzung_-hauptsatzung-_stand_06.03.2015.pdf
-    - beitrittserklarung_stand_08.2022.pdf
+    - file://UFwyzlwGi9QEyt7O
+    - file://BaVkmLoUGNGYyxfr
+    - file://dhEgJNLoSkSwchFU
+    - file://qsXxEluGGsO2aZGm
+    - file://38YDEpNEcjov3Al3
+    - file://91jvcRlNaQJet3xc
+    - file://b7CzzpQG30iphjSs
 - 
   category: Presse und Medien
   downloads:
-    - logo_sfb.png
-    - sportfreunde_bronnen_logo.eps
-    - sportfreunde_bronnen_logo.pdf
+    - file://GsV1Z4DigKgyQOdt
+    - file://ajRwpoXzJAzvxb4t
+    - file://wvhVWvSvDBrnvhCs
+
+----
+
+Uuid: yFV744ikvpeUr9Vr

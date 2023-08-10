@@ -6,7 +6,7 @@ Headline: 70 Jahre Sportfreunde Bronnen - die Chronik
 
 ----
 
-Text: 
+Text:
 
 Zum 70-jährigen Geburtstag wurde 20 Jahre nach dem letzten Erscheinen wieder eine Vereinschronik in Buchform erstellt. Auf 136 Seiten könnt ihr euch über das Vereinsleben aus den letzten zwanzig Jahren informieren und in Erinnerungen schwelgen. Mit dabei sind Berichte, Bilder, Statistiken, Schmankerl aus Gästebüchern, Blüten aus Protokollen oder Zitate rund um das Vereinsleben. Ein Buch, in das man auch in zwanzig Jahren noch gerne hineinschaut.
 
@@ -19,3 +19,7 @@ Um euch nicht die Katze im Sack zu verkaufen folgen nun ein paar Auszüge aus un
 Da die Auflage begrenzt ist empfehlen wir, nicht zu viel Zeit ins Land streichen zu lassen :-)
 
 Euer Chronik-Team
+
+----
+
+Uuid: MBXDfD05vChk99up
