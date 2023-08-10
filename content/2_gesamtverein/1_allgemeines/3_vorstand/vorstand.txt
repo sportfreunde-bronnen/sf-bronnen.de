@@ -2,7 +2,7 @@ Title: Vorstand
 
 ----
 
-Personen: 
+Personen:
 
 - 
   name: Martin Pannek
@@ -29,3 +29,7 @@ Personen:
   funktion: Kassierer
   start: "2011"
   bild: bringazi_martin.jpg
+
+----
+
+Uuid: soEXqPOIjnrXB5i2

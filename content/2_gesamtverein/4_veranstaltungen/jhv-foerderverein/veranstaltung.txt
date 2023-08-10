@@ -22,7 +22,7 @@ Ort: SVZ
 
 ----
 
-Text: 
+Text:
 
 **Einladung zur 10. ordentlichen Generalversammlung..**
 
@@ -70,3 +70,7 @@ Documentdescription: Einladung als PDF (Download)
 ----
 
 Related: gesamtverein/veranstaltungen/uhlmann-halder-cup
+
+----
+
+Uuid: hONHb0gTY7uVZy37

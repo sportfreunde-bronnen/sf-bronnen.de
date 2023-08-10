@@ -22,7 +22,7 @@ Ort: SVZ
 
 ----
 
-Text: 
+Text:
 
 Bereits zum 6. Mal findet in diesem Jahr unser beliebtes Tischfußball-Turnier statt.
 
@@ -63,3 +63,7 @@ Documentdescription: Einladung
 ----
 
 Related: gesamtverein/veranstaltungen/weihnachtsfeier
+
+----
+
+Uuid: 4xJITaPt8n2OCmoM

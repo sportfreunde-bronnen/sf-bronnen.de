@@ -13,8 +13,12 @@ Infotext: <p>Wir sind ein kleiner Verein mit tollen Mitgliedern und Sponsoren. D
 People:
 
 - 
-  name: Martin Halder
+  name: Benjamin Baur
   aufgabe: 1. Vorsitzender
   email: foerderverein@sf-bronnen.de
   phone: ""
-  address: Gartenstraße 38, 84480 Achstetten
+  address: ""
+
+----
+
+Uuid: xtL1Lc0hJYY7BmSs

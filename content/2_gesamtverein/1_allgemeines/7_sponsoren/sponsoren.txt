@@ -52,7 +52,8 @@ Sponsoren:
 - 
   name: Apotheker Andreas Buck
   ort: Laupheim
-  webseite: ""
+  webseite: >
+    https://www.neue-apotheke-laupheim-app.de/
 - 
   name: Flaschnerei Dürr
   ort: Laupheim
@@ -69,10 +70,6 @@ Sponsoren:
   name: Glass Hobby Design
   ort: Laupheim
   webseite: http://www.glass-hobby-design.de/
-- 
-  name: Glasprinter
-  ort: Riedlingen
-  webseite: https://www.glasprinter.de/
 - 
   name: GMS Biogas
   ort: Oberholzheim
@@ -100,7 +97,8 @@ Sponsoren:
 - 
   name: Autohaus Humm
   ort: Laupheim
-  webseite: ""
+  webseite: >
+    https://www.volkswagen.de/de/haendler-werkstatt/autohaus-humm-laupheim
 - 
   name: Paul Jäger
   ort: Achstetten
@@ -194,7 +192,7 @@ Sponsoren:
 - 
   name: Ingenierbüro Sauter
   ort: Oberholzheim
-  webseite: ""
+  webseite: https://sauter.autopartner-portal.de/
 - 
   name: Gartengestaltung Schick
   ort: Bronnen
@@ -208,10 +206,6 @@ Sponsoren:
   ort: Laupheim
   webseite: >
     https://www.sparkassenversicherung.de/content/aussendienst/d/dietmar_koenig/team/
-- 
-  name: Tabak Gartenbau
-  ort: Bronnen
-  webseite: https://www.gartenbau-tabak.de/
 - 
   name: VR Laupheim-Illertal
   ort: Laupheim
@@ -253,3 +247,31 @@ Sponsoren:
   name: BiberPark
   ort: Biberach
   webseite: https://biberpark-biberach.de/
+- 
+  name: AutoCenter Benz GmbH
+  ort: Laupheim
+  webseite: https://www.autocenter-benz.de
+- 
+  name: Knaak Fensterbau GmbH
+  ort: Laupheim
+  webseite: https://www.fensterbau-knaak.de
+- 
+  name: Schrepler Stephan Fliesenleger
+  ort: Laupheim
+  webseite: ""
+- 
+  name: Scheffold Immobilien GmbH
+  ort: Laupheim
+  webseite: https://scheffold-immobilien.de
+- 
+  name: 'Württembergische Versicherung Mayer & Neu'
+  ort: Laupheim
+  webseite: 'https://www.wuerttembergische.de/versicherungen/mayer&neu'
+- 
+  name: Bacher IT-Dienstleistungen
+  ort: Laupheim
+  webseite: https://www.bacher-it.com
+
+----
+
+Uuid: Ncr5rw8YIRxwEMWn

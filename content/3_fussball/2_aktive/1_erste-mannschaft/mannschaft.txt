@@ -9,7 +9,11 @@ Headline: Kreisliga A Riß Staffel II
 Fupawidget:
 
 <script type="text/javascript" src="https://www.fupa.net/fupa/widget.min.js"></script>
-<div id="widget_62f11325cf89e" >... lade FuPa Widget ...
+<div id="widget_64b9468b76ed2" >... lade FuPa Widget ...
 <script type="text/javascript">
-!function(i){window.setTimeout(function(){"undefined"===typeof fupa_widget_domain?--i.t>0&&window.setTimeout(arguments.callee,i.i):i.f()},i.i)}({i:20,t:100,f:function(){team_widget(1039751,{act:"team",hea:0,nav:1,div:"widget_62f11325cf89e",mod:"0"})}});</script>
+!function(i){window.setTimeout(function(){"undefined"===typeof fupa_widget_domain?--i.t>0&&window.setTimeout(arguments.callee,i.i):i.f()},i.i)}({i:20,t:100,f:function(){team_widget(1153671,{act:"team",hea:0,nav:1,div:"widget_64b9468b76ed2",mod:"0"})}});</script>
 </div><a href="https://www.fupa.net/club/sf-bronnen" target="_blank" class="fupa_link">SF Bronnen auf FuPa</a>
+
+----
+
+Uuid: EaMnWmTZEhs5g27U

@@ -22,7 +22,7 @@ Ort: Sportgelände Bronnen
 
 ----
 
-Text: 
+Text:
 
 ## Rottalpokal 2019 in Bronnen
 
@@ -80,3 +80,7 @@ Documentdescription: Spielplan
 ----
 
 Related: gesamtverein/veranstaltungen/zwickel-gemeindecup
+
+----
+
+Uuid: 61eADaCQYktiXCNW

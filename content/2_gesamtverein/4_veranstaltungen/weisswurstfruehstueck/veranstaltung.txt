@@ -22,7 +22,7 @@ Ort: SVZ
 
 ----
 
-Text: 
+Text:
 
 Am 26.04.2020 veranstaltet unser Förderverein im SVZ wieder ein Weißwurstfrühstück, zu dem wir hiermit herzlichst einladen. Neben leckeren Weißwürsten und frischen Brezeln können natürlich auch das ein oder andere Weißbier oder sonstige Getränke konsumiert werden.
 
@@ -53,3 +53,7 @@ Documentdescription:
 ----
 
 Related: gesamtverein/veranstaltungen/oktoberfest
+
+----
+
+Uuid: wcBmyiVte3kKC7fW

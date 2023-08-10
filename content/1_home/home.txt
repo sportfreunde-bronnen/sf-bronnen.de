@@ -22,9 +22,7 @@ Homebannertext: Unsere <span>Werte</span>
 
 ----
 
-Homebanner:
-
-- banner-sfb.png
+Homebanner: - banner-sfb.png
 
 ----
 
@@ -86,8 +84,15 @@ Links:
   name: Musikverein Oberholzheim
   link: http://mv-oberholzheim.de/
 - 
+  name: Lebensfreude Oberholzheim
+  link: https://lebensfreude-oberholzheim.de/
+- 
   name: Narrenzunft Bronnen
   link: https://nz-bronnen.de/
 - 
   name: TSG Achstetten
   link: http://tsg-achstetten.de/
+
+----
+
+Uuid: 4cDIGeizMey8ASHA

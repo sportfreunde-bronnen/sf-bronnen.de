@@ -22,7 +22,7 @@ Ort: Gemeindezentrum Bronnen
 
 ----
 
-Zeiten: Montag, 15:00 - 16:00 Uhr
+Zeiten: Montag, 15:30 - 16:30 Uhr
 
 ----
 
@@ -35,3 +35,7 @@ Kosten: 10er Block (Mitglieder: 30€ / Nichtmitglieder: 45€)
 ----
 
 Alexaid: 
+
+----
+
+Uuid: htyC4m057ZAiVgh0

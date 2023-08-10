@@ -6,18 +6,7 @@ Headline: Förderverein SF Bronnen e.V.
 
 ----
 
-People: 
-
-- 
-  name: Martin Halder
-  aufgabe: 1. Vorsitzender
-  email: foerderverein@sf-bronnen.de
-  phone: ""
-  address: 'Gartenstraße 38<br/>88480 Achstetten'
-
-----
-
-Text: 
+Text:
 
 Wir sind ein kleiner Verein mit tollen Mitgliedern und Sponsoren. Durch Spenden und Sponsoring helfen Sie mit, die ehrgeizigen Ziele und herausfordernden Aufgaben des Vereins und dessen Mitglieder zu unterstützen und zu erreichen. Werden Sie Teil unserer Sportfreunde Familie.
 
@@ -35,3 +24,14 @@ Förderverein Sportfreunde Bronnen e.V.
 **Downloads**
 
 [Zu den Downloads](/gesamtverein/foerderverein/downloads)
+
+----
+
+People:
+
+- 
+  name: Benjamin Baur
+  aufgabe: 1. Vorsitzender
+  email: foerderverein@sf-bronnen.de
+  phone: ""
+  address: ""
