@@ -33,6 +33,10 @@
                                     <h5><?= number_format($beitrag->aikido()->float(), 2, ',', '.'); ?> € <?= $beitrag->aikidozusatz();?></h5>
                                     Beitrag Aikido
                                 </li>
+                                <li class="animation">
+                                  <h5><?= number_format($beitrag->darts()->float(), 2, ',', '.'); ?> € <?= $beitrag->dartszusatz();?></h5>
+                                  Beitrag Aikido
+                                </li>
                             </ul>
                         </div>
                     </div>
