@@ -35,7 +35,7 @@
                                 </li>
                                 <li class="animation">
                                   <h5><?= number_format($beitrag->darts()->float(), 2, ',', '.'); ?> € <?= $beitrag->dartszusatz();?></h5>
-                                  Beitrag Aikido
+                                  Beitrag Darts
                                 </li>
                             </ul>
                         </div>
