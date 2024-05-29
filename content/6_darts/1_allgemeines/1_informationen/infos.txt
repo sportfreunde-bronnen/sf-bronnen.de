@@ -13,7 +13,7 @@ Infotext: <p>Seit dem Sommer 2023 fliegen im SVZ zusätzlich zu unseren sonstige
 People:
 
 - 
-  name: Gruppenleitung
+  name: Abteilungsleiter
   aufgabe: Ansprechpartner der Gruppe
   email: darts@sf-bronnen.de
   phone: ""

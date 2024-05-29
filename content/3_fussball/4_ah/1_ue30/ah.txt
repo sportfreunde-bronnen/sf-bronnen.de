@@ -6,9 +6,9 @@ Headline: Attraktive Herren - Ü30
 
 ----
 
-Text: 
+Text:
 
-Die Ah der SFB besteht vorwiegend aus ehemaligen Spielern der Ersten und Zweiten Mannschaften. Aber auch einige, die nur Spaß am Fußballspielen haben, sind bei uns zu Gast, um sich sportlich zu betätigen. Der Spielerkader besteht aus 15-20 Spielern im Alter zwischen 30 und 60 Jahren.
+Die AH der SFB besteht vorwiegend aus ehemaligen Spielern der Ersten und Zweiten Mannschaften. Aber auch einige, die nur Spaß am Fußballspielen haben, sind bei uns zu Gast, um sich sportlich zu betätigen. Der Spielerkader besteht aus 15-20 Spielern im Alter zwischen 30 und 60 Jahren.
 
 Wir treffen uns jede Woche am **Donnerstag um 19.30 Uhr zum Training**. In den Sommermonaten trainieren wir auf dem Sportplatz - während der kalten Jahreszeit gelegentlich in der Sporthalle.
 
@@ -16,14 +16,19 @@ Jährlich nehmen wir an ein bis zwei Kleinfeldturnieren teil. Dazu bestreiten wi
 
 Wir legen aber auch sehr großen Wert auf eine gepflegte Kameradschaft - auch außerhalb des Fußballfeldes. Eine Nachtwanderung zum Saisonstart und das jährliche Hüttenwochenende  in den Allgäuer Bergen in Bolsterlang gehören ebenfalls zur Kameradschaftspflege.
 
-Über Neuzugänge würden wir uns sehr freuen. Unser Ansprechpartner ist Roland Schick sowie alle AH-Mitglieder.
+Über Neuzugänge würden wir uns sehr freuen. Unser Ansprechpartner ist Ralf Mäschle sowie alle AH-Mitglieder.
 
 ----
 
-People: 
+People:
 
 - 
-  name: Roland Schick
+  name: Ralf Mäschle
   aufgabe: Spielleiter
-  email: ""
-  phone: 0157 34990293
+  email: ralfmaeschle@web.de
+  phone: 0173 3191266
+  address: ""
+
+----
+
+Uuid: kNk0LmBdCsO0p8oH

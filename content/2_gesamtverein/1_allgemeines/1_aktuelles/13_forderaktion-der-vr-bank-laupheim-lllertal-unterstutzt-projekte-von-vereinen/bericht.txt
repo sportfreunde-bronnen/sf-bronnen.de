@@ -6,9 +6,7 @@ Datum: 2021-12-15
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,15 +14,11 @@ Author2: Philip Hertle (SZ)
 
 ----
 
-Teaserimage:
-
-- vr-foerderaktion2021_max1024x.jpeg
+Teaserimage: - vr-foerderaktion2021_max1024x.jpeg
 
 ----
 
-Textimages:
-
-- vr-foerderaktion2021_max1024x.jpeg
+Textimages: - vr-foerderaktion2021_max1024x.jpeg
 
 ----
 
@@ -66,3 +60,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: s5wPXgMIEsHcDNwD

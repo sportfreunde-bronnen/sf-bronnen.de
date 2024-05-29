@@ -6,9 +6,7 @@ Datum: 2021-09-24
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2: SZ
 
 ----
 
-Teaserimage:
-
-- dsc_0964.jpg
+Teaserimage: - dsc_0964.jpg
 
 ----
 
@@ -72,9 +68,7 @@ Zum Abschluss der Versammlung wurde Simon Baur verabschiedet. Martin Pannek und 
 
 ----
 
-Textimages:
-
-- dsc_0964.jpg
+Textimages: - dsc_0964.jpg
 
 ----
 
@@ -91,3 +85,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: BetD9gO2PtMysigs

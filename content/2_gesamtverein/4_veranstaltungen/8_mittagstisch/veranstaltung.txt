@@ -1,0 +1,61 @@
+Title: Mittagstisch
+
+----
+
+Shorttitle: Lecker, frisch und angesagt: unser Mittagstisch.
+
+----
+
+Datum: 2023-11-05 11:30:00
+
+----
+
+Datumbis: 
+
+----
+
+Ort: SVZ
+
+----
+
+Text:
+
+### Herzliche Einladung zum Mittagessen
+
+am Sonntag, 05. November 2023 ab 11.30 Uhr im Sportvereinszentrum in Bronnen
+
+Auf der Speisekarte werden Gerichte wie Spanferkelbraten mit Spätzla und Salat, Saure Kutteln mit Wecken, Kässpätzla mit Salat sowie Pommes angeboten. Zum Nachtisch verwöhnen wir Euch gerne mit Kaffee und einem reichhaltigen Kuchenbuffet.
+
+Wir freuen uns auf Euren Besuch, und auf Eure Unterstützung bei den beiden Heimspielen unserer 2. Mannschaft um 12.45 Uhr und der 1. Mannschaft um 14.30 Uhr gegen die SGM Laupertshausen/Maselheim-Sulmingen.  
+
+ 
+
+Sportfreunde Bronnen e.V.
+
+----
+
+Vimage: - file://sdPfMPRSwSc5v3SC
+
+----
+
+Imageposition: top
+
+----
+
+Doc: 
+
+----
+
+Documentdescription: 
+
+----
+
+Related: - page://THHmnXjy8eKe1Chx
+
+----
+
+Document: 
+
+----
+
+Uuid: PhAauNuZvjPQ1JRd

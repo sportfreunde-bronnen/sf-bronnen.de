@@ -10,6 +10,10 @@ Text: Fun and easy, das ist Zumba®, eine Kombination aus Fitness und Tanz zu mi
 
 ----
 
+Hinweis: 
+
+----
+
 Trainer: Edith Zagst (Zumba®-Instructor)
 
 ----
@@ -18,10 +22,7 @@ Ort: Gemeindezentrum Bronnen
 
 ----
 
-Zeiten: 
-
-Montag, 18:30 - 19:30 Uhr (Kurs 1)  
-Dienstag, 19:30 - 20:30 Uhr (Kurs 2)
+Zeiten: Montag, 18:30 - 19:30 Uhr
 
 ----
 
@@ -29,7 +30,15 @@ Anmeldung: 0151-12442725 oder zagst@t-online.de
 
 ----
 
-Kosten: 
+Kosten:
 
-Mitglieder: 35€ (10er-Block)  
-Nichtmitglieder: 50€ (10er-Block)
+Mitglieder: 45€ (10er-Block)  
+Nichtmitglieder: 60€ (10er-Block)
+
+----
+
+Alexaid: 
+
+----
+
+Uuid: wJTOnmxoOTqZILhH

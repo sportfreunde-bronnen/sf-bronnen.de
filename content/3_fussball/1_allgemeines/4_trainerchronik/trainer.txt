@@ -112,7 +112,13 @@ Coaches:
   zeitraum: '01/2019 - 07/2020'
 - 
   name: 'Sven Manz (Trainer) & Johannes Schupp (Spielertrainer)'
-  zeitraum: ab 08/2020
+  zeitraum: '08/2020 - 07/2023'
+- 
+  name: 'Erich Kraus (Trainer) & Johannes Schupp (Spielertrainer)'
+  zeitraum: '08/2023 - 12/2023'
+- 
+  name: 'Johannes Schupp & Oliver Maunz (beide Spielertrainer)'
+  zeitraum: seit 01/2024
 
 ----
 

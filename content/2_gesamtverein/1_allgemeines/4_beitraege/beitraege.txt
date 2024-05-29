@@ -14,27 +14,31 @@ Beitraege:
 
 - 
   name: Jugendliche bis 18 J.
-  grundbeitrag: 24
+  grundbeitrag: 25
   grundbeitragzusatz: ""
-  fussball: 25
+  fussball: 35
   fussballzusatz: ""
   gymnastik: 35
   gymnastikzusatz: ""
   aikido: 35
   aikidozusatz: '*'
+  darts: 35
+  dartszusatz: ""
 - 
   name: Erwachsene ab 18 Jahren
-  grundbeitrag: 35
+  grundbeitrag: 36.5
   grundbeitragzusatz: ""
-  fussball: 30
+  fussball: 35
   fussballzusatz: ""
   gymnastik: 35
   gymnastikzusatz: ""
   aikido: 35
   aikidozusatz: '*'
+  darts: 35
+  dartszusatz: ""
 - 
   name: Familie pF / pK
-  grundbeitrag: 59
+  grundbeitrag: 61
   grundbeitragzusatz: pF
   fussball: 25
   fussballzusatz: pK
@@ -42,9 +46,11 @@ Beitraege:
   gymnastikzusatz: pK
   aikido: 35
   aikidozusatz: 'pK *'
+  darts: 25
+  dartszusatz: ""
 - 
   name: Passive Mitglieder
-  grundbeitrag: 29
+  grundbeitrag: 30
   grundbeitragzusatz: ""
   fussball: 0
   fussballzusatz: ""
@@ -52,6 +58,8 @@ Beitraege:
   gymnastikzusatz: ""
   aikido: 0
   aikidozusatz: ""
+  darts: null
+  dartszusatz: ""
 
 ----
 

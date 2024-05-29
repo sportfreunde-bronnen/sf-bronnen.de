@@ -8,7 +8,7 @@ Zitat: Wir stehen für Spaß und Freude am Sport und an der Bewegung.
 
 Text:
 
-In unseren Abteilungen [Fitness/Gymnastik](/gymnastik/allgemeines/infos), [Fußball](/fussball/allgemeines/infos) und [Aikido](/aikido/allgemeines/infos) trainieren unsere Mitglieder gemeinsam für ihre sportlichen Erfolge und Ziele. Unser Ziel ist es, für Mitglieder jeden Alters die bestmöglichen Voraussetzungen zu schaffen. Dafür setzen sich unsere ehrenamtlichen Helfer mit viel Einsatz, Freude und Herzblut ein. **Kameradschaft, Engagement und gegenseitiger Respekt** sind unsere Leitsätze.
+In unseren Abteilungen [Fitness/Gymnastik](/gymnastik/allgemeines/infos), [Fußball](/fussball/allgemeines/infos) und [Aikido](/aikido/allgemeines/infos) und [Darts](/darts/allgemeines/informationen) trainieren unsere Mitglieder gemeinsam für ihre sportlichen Erfolge und Ziele. Unser Ziel ist es, für Mitglieder jeden Alters die bestmöglichen Voraussetzungen zu schaffen. Dafür setzen sich unsere ehrenamtlichen Helfer mit viel Einsatz, Freude und Herzblut ein. **Kameradschaft, Engagement und gegenseitiger Respekt** sind unsere Leitsätze.
 
 Mit unseren tollen [Sponsoren](/gesamtverein/allgemeines/sponsoren) und Unterstützern und in Zusammenarbeit mit unserer Heimatgemeinde wollen wir diesen Weg auch in Zukunft zielstrebig weiter gehen. Werden Sie Teil der Sportfreunde Familie und begleiten Sie uns auf diesem Weg.
 
@@ -22,20 +22,30 @@ Homebannertext: Unsere <span>Werte</span>
 
 ----
 
-Homebanner: - banner-sfb.png
+Homebanner: - file://9O7IcYVV3GVUHWUN
 
 ----
 
 Slides:
 
 - 
+  title: 2. SFB Dartsturnier
+  text: Samstag, 06.07.2024
+  textposition: left
+  sliderimage:
+    - file://0TucyIQuQPyT4ZVM
+  internallink:
+    - page://Qigya7VTmBF4aWr1
+  externallink: ""
+  buttontext: 'Infos & Anmeldung'
+- 
   title: Location zum Feiern gesucht?
   text: 'Wir haben da was - unser SVZ!'
   textposition: left
   sliderimage:
-    - slider-sfb-3.jpg
+    - file://7DBTWdRCRQ6H48JD
   internallink:
-    - gesamtverein/allgemeines/svz
+    - page://CTiBBmnrhRlQJEKg
   externallink: ""
   buttontext: Jetzt informieren und mieten
 - 
@@ -45,7 +55,7 @@ Slides:
     Viel Spaß beim Shoppen!
   textposition: left
   sliderimage:
-    - slider-sportplatz.jpg
+    - file://kTxVllEu9wPnC1pu
   internallink: [ ]
   externallink: https://fanshop.sf-bronnen.de
   buttontext: Zum Fanshop
@@ -58,14 +68,14 @@ Slides:
     zur Verfügung
   textposition: left
   sliderimage:
-    - slider-pv2-sfb.jpg
+    - file://pe2gldWNZ0MACnLZ
   internallink: [ ]
   externallink: https://pv.sf-bronnen.de
   buttontext: Leistungsdaten einsehen
 
 ----
 
-Footertext: Die Sportfreunde Bronnen sind ein über 600 Mitglieder fassender Verein bei Laupheim in Oberschwaben. Mit unseren Abteilungen Fitness/Gymnastik, Fußball und Aikido vermitteln wir Spaß und Freude am Sport und an der Bewegung.
+Footertext: Die Sportfreunde Bronnen sind ein über 600 Mitglieder fassender Verein bei Laupheim in Oberschwaben. Mit unseren Abteilungen Fitness/Gymnastik, Fußball, Aikido und Darts vermitteln wir Spaß und Freude am Sport und an der Bewegung.
 
 ----
 

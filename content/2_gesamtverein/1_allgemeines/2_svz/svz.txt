@@ -55,6 +55,7 @@ Facts:
 - Tischkicker
 - Kostenloses WLAN (50 MBit/s)
 - Wickeltisch, zwei Kinderstühle
+- 5 Stehtische (nicht im Mietpreis enthalten)
 - Barrierefreier Zugang über Rampe
 - Toilette für Menschen mit Behinderung
 - Ausreichend Parkplätze
@@ -65,13 +66,13 @@ Facts:
 
 Gallery:
 
-- img_5320.jpg
-- svz_2.jpg
-- svz_5.jpg
-- svz_6.jpg
-- svz_9.jpg
-- spielplatz-1.jpg
-- spielplatz-2.jpg
+- file://cMUUudR3k89Uck4t
+- file://5ZNHgf1fVqv3MruX
+- file://fwlGazTcIpM5CBfZ
+- file://ts4m2VZU0I4xcM7e
+- file://RUoOSLi8iM8mHqDz
+- file://it0HpXsiaPrfG5MP
+- file://mDhD3stPsTI17otQ
 
 ----
 

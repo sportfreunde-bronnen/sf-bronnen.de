@@ -6,9 +6,7 @@ Datum: 2020-04-08
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2:
 
 ----
 
-Teaserimage:
-
-- img_7708.jpg
+Teaserimage: - img_7708.jpg
 
 ----
 
@@ -77,9 +73,7 @@ Sobald es weitere Informationen seitens der Gemeinde gibt werden wir euch inform
 
 ----
 
-Textimages:
-
-- img_7708.jpg
+Textimages: - img_7708.jpg
 
 ----
 
@@ -96,3 +90,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: 6e5kJfEdYck7NxAg

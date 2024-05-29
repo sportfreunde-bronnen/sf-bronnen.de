@@ -6,9 +6,7 @@ Datum: 2019-03-07
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2: Reiner Schick (SZ)
 
 ----
 
-Teaserimage:
-
-- jhv2019-szon.jpg
+Teaserimage: - jhv2019-szon.jpg
 
 ----
 
@@ -56,9 +52,7 @@ Link zum Artikel der Schwäbischen Zeitung: https://www.schwaebische.de/landkre
 
 ----
 
-Textimages:
-
-- jhv2019-szon.jpg
+Textimages: - jhv2019-szon.jpg
 
 ----
 
@@ -75,3 +69,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: fAyGRjb0TdSjxZRT

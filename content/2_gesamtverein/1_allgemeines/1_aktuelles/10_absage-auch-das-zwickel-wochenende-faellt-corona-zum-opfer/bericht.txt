@@ -6,9 +6,7 @@ Datum: 2020-05-03
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2:
 
 ----
 
-Teaserimage:
-
-- p1010599.jpg
+Teaserimage: - p1010599.jpg
 
 ----
 
@@ -45,9 +41,7 @@ Sportliche Grüße
 
 ----
 
-Textimages:
-
-- p1010599.jpg
+Textimages: - p1010599.jpg
 
 ----
 
@@ -64,3 +58,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: I66DmUFWhPsb4XYT

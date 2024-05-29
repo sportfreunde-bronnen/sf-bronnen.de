@@ -22,10 +22,7 @@ Ort: SVZ Bronnen
 
 ----
 
-Zeiten:
-
-Mittwoch, 19:30 – 20:45 Uhr  
- Freitag, 08:30 - 09:45 Uhr
+Zeiten: Mittwoch, 18:15 – 19:30 Uhr und 19:45 - 21:00 Uhr.
 
 ----
 
@@ -41,3 +38,7 @@ Nichtmitglieder: 10€ pro Einheit
 ----
 
 Alexaid: 
+
+----
+
+Uuid: AtWBcVaJbsrAWblE
