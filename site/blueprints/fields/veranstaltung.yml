@@ -51,7 +51,6 @@ fields:
     type: files
     multiple: false
     width: 1/2
-    help: Um ein Dokument hinzufügen zu können, muss es vorher auf der linken Seite hochgeladen werden.
   documentDescription:
     label: Beschreibung des Dokuments
     help: Zum Beispiel "Flyer", "Preisliste" o.ä.

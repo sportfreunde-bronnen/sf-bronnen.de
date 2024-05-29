@@ -2,6 +2,15 @@ title: Veranstaltung
 options:
   url: false
   delete: false
-fields:
-  veranstaltung:
-    extends: fields/veranstaltung
+columns:
+  main:
+    width: 3/4
+    fields:
+      veranstaltung:
+        extends: fields/veranstaltung
+  sidebar:
+    width: 1/4
+    sections:
+      files:
+        type: files
+        headline: Dateien
