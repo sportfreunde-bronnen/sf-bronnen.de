@@ -4,6 +4,7 @@ options:
   template: false
   url: false
 fields:
+  headline: fields/headline
   personen:
     label: Personen
     type: structure
