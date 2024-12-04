@@ -34,7 +34,7 @@ Anmeldung: 0172 8856451 oder bb-yoga@gmx.de
 
 ----
 
-Kosten: 
+Kosten:
 
 Schnupperstunde: 10€ Mitglieder/ 15€ Nichtmitglieder  
  1 Monat (1x pro Woche): 35€ Mitglieder/ 45€ Nichtmitglieder  
@@ -43,3 +43,7 @@ Schnupperstunde: 10€ Mitglieder/ 15€ Nichtmitglieder
 ----
 
 Alexaid: Vinyasa-Yoga
+
+----
+
+Uuid: HsXCAaUl7Q4eQ2Gk

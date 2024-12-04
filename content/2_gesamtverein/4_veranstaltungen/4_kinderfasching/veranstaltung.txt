@@ -6,11 +6,11 @@ Shorttitle: Kinderfasching
 
 ----
 
-Datum: 2023-02-12 14:00:00
+Datum: 2024-02-11 14:00:00
 
 ----
 
-Datumbis: 
+Datumbis: 2024-02-11 17:00:00
 
 ----
 
@@ -22,7 +22,7 @@ Text:
 
 ----
 
-Vimage: - img-20230108-wa0007.jpg
+Vimage: - file://RHTA4ldtPP1NcKrV
 
 ----
 
@@ -30,11 +30,11 @@ Imageposition: top
 
 ----
 
-Doc: 
+Doc: - file://JRHpGeFzAZuuBekw
 
 ----
 
-Documentdescription: 
+Documentdescription: Flyer
 
 ----
 

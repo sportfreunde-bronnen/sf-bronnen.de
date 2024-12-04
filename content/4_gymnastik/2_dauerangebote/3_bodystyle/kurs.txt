@@ -6,11 +6,15 @@ Headline: Training und Workout für eine sportliche Figur
 
 ----
 
-Text: 
+Text:
 
 **Feste Po Muskeln, einen flachen Bauch, straffe Arme und Beine**
 
 In dieser Stunde trainierst Du Deinen ganzen Körper. Ein Ganzkörpertraining, das noch zusätzlich Dein Herz-Kreislauf-System mit Elementen aus dem Aerobic stärkt, was will man mehr?
+
+----
+
+Hinweis: 
 
 ----
 
@@ -22,18 +26,14 @@ Ort: Gemeindezentrum Bronnen
 
 ----
 
-Zeiten: 
+Zeiten:
 
 Montag, 17:15 – 18:15 Uhr (Kurs 1)  
- Dienstag, 18:30 - 19:30 Uhr (Kurs 2)
+Dienstag, 18:15 - 19:15 Uhr (Kurs 2)
 
 ----
 
 Anmeldung: 0151-12442725 oder zagst@t-online.de
-
-----
-
-Hinweis: 
 
 ----
 
@@ -42,3 +42,7 @@ Kosten:
 ----
 
 Alexaid: 
+
+----
+
+Uuid: w07rd3iMD7NoG6xy

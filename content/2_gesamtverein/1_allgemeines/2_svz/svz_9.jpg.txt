@@ -3,3 +3,7 @@ Description: Blick in den Saal bei geöffneter Abtrennung.
 ----
 
 Caption: Saal
+
+----
+
+Uuid: RUoOSLi8iM8mHqDz

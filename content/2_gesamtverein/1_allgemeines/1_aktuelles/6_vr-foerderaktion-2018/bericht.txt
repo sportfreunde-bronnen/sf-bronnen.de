@@ -6,9 +6,7 @@ Datum: 2018-11-08
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2:
 
 ----
 
-Teaserimage:
-
-- sfb.1024x0.jpg
+Teaserimage: - sfb.1024x0.jpg
 
 ----
 
@@ -49,9 +45,7 @@ Eure Sportfreunde
 
 ----
 
-Textimages:
-
-- sfb.1024x0.jpg
+Textimages: - sfb.1024x0.jpg
 
 ----
 
@@ -68,3 +62,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: BthDW4dCr1IbTaK7

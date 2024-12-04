@@ -24,8 +24,6 @@ Text:
 
 Die Weihnachtsfeier des Gesamtvereins findet am Samstag, 09.12.2023 um 19:00 Uhr im SVZ statt.
 
-Eine offizielle Einladung folgt rechtzeitig vor der Veranstaltung.
-
 ----
 
 Vimage: - file://2LorCOXYLZ1UVonz
@@ -36,11 +34,11 @@ Imageposition: top
 
 ----
 
-Doc: 
+Doc: - file://7V78ag5HZqWVtmbB
 
 ----
 
-Documentdescription: 
+Documentdescription: Einladung
 
 ----
 

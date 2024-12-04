@@ -10,7 +10,7 @@ Text: Egal, ob Einsteiger oder Fortgeschrittener, jeder kommt auf seine Kosten! 
 
 ----
 
-Hinweis: 
+Hinweis: Dieser Kurs ist nicht mehr aktuell. Bitte unter "Kursangebote -> Fit-Mix" schauen. Danke :)
 
 ----
 
@@ -38,3 +38,7 @@ Nichtmitglieder: 27,50€ (5er Block)
 ----
 
 Alexaid: 
+
+----
+
+Uuid: R5yVSMyine4ZTX4K

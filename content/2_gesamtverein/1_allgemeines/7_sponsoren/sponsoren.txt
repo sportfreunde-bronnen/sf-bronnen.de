@@ -140,10 +140,6 @@ Sponsoren:
   ort: Untersulmetingen
   webseite: http://www.licon.com/de
 - 
-  name: Steuerkanzlei Lifka
-  ort: Bronnen
-  webseite: http://lifka.info/
-- 
   name: Locher Haustechnik
   ort: Erbach
   webseite: >
@@ -168,11 +164,6 @@ Sponsoren:
   name: Bauunternehmen Maucher
   ort: Burgrieden
   webseite: http://maucher-bau.de/de
-- 
-  name: 'MCI Marketing Services & Partner'
-  ort: Achstetten
-  webseite: >
-    http://www.mci-marketing.ch/mci-partner.html
 - 
   name: Möbel Borst
   ort: Bietigheim-Bissingen
@@ -226,10 +217,6 @@ Sponsoren:
   name: Exapt Solutions
   ort: Bronnen
   webseite: https://www.exapt-solutions.de/
-- 
-  name: 'Sarikaya Garten- und Pflasterarbeiten'
-  ort: Aßmannshardt
-  webseite: https://www.sarikaya-c.de
 - 
   name: Röchling Industrial Laupheim GmbH
   ort: Laupheim

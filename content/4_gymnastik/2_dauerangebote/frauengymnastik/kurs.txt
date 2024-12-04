@@ -6,7 +6,7 @@ Headline: Frauengymnastik
 
 ----
 
-Text: 
+Text:
 
 **Abwechslung und Spaß!**
 
@@ -27,3 +27,7 @@ Zeiten: Mittwoch, 20:00 – 21:00 Uhr
 ----
 
 Anmeldung: 07392-6871 bei Renate Speidel
+
+----
+
+Uuid: ORs9E7cPiZAAUCjE

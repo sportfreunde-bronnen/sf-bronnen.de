@@ -6,7 +6,7 @@ Shorttitle: Das Kleinfeldturnier für Betriebsmannschaften in Oberschwaben.
 
 ----
 
-Datum: 2023-06-30 18:00:00
+Datum: 2024-07-05 18:00:00
 
 ----
 
@@ -20,13 +20,13 @@ Ort: Sportgelände Bronnen
 
 Text:
 
-## 25. Uhlmann-Halder-Cup 2023
+## 26. Uhlmann-Halder-Cup 2024
 
 <div>Einladungen werden rechtzeitig versendet. Weitere Informationen bald.</div>
 
 ----
 
-Vimage: - uhlmann-halder-cup.jpg
+Vimage: - file://jiY9JTnHF14iMzVa
 
 ----
 

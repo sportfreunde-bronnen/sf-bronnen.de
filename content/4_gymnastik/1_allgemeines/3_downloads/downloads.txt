@@ -6,9 +6,13 @@ Headline: Gymnastik Downloads
 
 ----
 
-Downloads: 
+Downloads:
 
 - 
   category: Übersichtspläne
-  downloads: >
-    turnuebersicht_2016.08.16.pdf,uebersicht-sfb-gymnastikangebote_2016-2017.pdf,uebersicht-sfb-kinderturnen.pdf
+  downloads:
+    - file://gA7z8PrfnhmjGvG0
+
+----
+
+Uuid: 7vIIKTivAC1fY6fL

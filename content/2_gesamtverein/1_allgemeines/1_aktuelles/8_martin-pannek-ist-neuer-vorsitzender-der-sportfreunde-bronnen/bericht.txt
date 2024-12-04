@@ -6,9 +6,7 @@ Datum: 2020-03-10
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2: Sonja Niederer (SZ)
 
 ----
 
-Teaserimage:
-
-- a_ehrungen.jpg
+Teaserimage: - a_ehrungen.jpg
 
 ----
 
@@ -56,9 +52,7 @@ Der neue Vorsitzende Martin Pannek stellte sich kurz vor. Seit 2017 wohnt er mit
 
 ----
 
-Textimages:
-
-- a_ehrungen.jpg
+Textimages: - a_ehrungen.jpg
 
 ----
 
@@ -75,3 +69,7 @@ Galleryname: Bilder der JHV
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: 7F685r2bAgGzKt4Z

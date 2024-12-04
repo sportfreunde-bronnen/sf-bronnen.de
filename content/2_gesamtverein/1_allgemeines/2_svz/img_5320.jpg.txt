@@ -3,3 +3,7 @@ Description: Thekenbereich mit Tischkicker und Durchgang zur Küche.
 ----
 
 Caption: 
+
+----
+
+Uuid: cMUUudR3k89Uck4t

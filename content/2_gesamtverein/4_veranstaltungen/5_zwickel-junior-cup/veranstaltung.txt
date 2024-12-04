@@ -6,7 +6,7 @@ Shorttitle: Unser Turniertag für Jugendmannschaften von den Bambinis bis zur D-
 
 ----
 
-Datum: 2023-07-09 09:30:00
+Datum: 2024-07-07 09:30:00
 
 ----
 
@@ -20,13 +20,11 @@ Ort: Sportgelände Bronnen
 
 Text:
 
-# 13. Zwickel-Junior-Cup
+# 14. Zwickel-Junior-Cup
 
-Sonntag, den 09.07.2023
-- D-Juniorenvormittags 6+1 pro Team Jg. 2010/11
-- E-Juniorenvormittags 6+1 pro Team Jg. 2012/13
-- F-Juniorennachmittags 4+1 pro Team Jg. 2014/15
-- Bambininachmittags 3 pro Team bis Jg. 2016
+Sonntag, den 07.07.2023
+
+Weitere Informationen folgen.
 
 ----
 
@@ -38,11 +36,11 @@ Imageposition: top
 
 ----
 
-Doc: - file://EVrRr7QGKLQyNkpk
+Doc: 
 
 ----
 
-Documentdescription: Einladung
+Documentdescription: 
 
 ----
 

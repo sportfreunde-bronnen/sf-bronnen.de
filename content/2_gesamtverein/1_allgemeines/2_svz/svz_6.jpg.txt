@@ -3,3 +3,7 @@ Description: Kleiner Saal / Theke
 ----
 
 Caption: Kleiner Saal / Bar
+
+----
+
+Uuid: ts4m2VZU0I4xcM7e
