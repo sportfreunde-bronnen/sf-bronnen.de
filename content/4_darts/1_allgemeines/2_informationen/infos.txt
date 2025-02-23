@@ -1,0 +1,36 @@
+Title: Informationen
+
+----
+
+Headline: Darts bei den Sportfreunden Bronnen
+
+----
+
+Infotext: <p>Seit dem Sommer 2023 fliegen im SVZ zusätzlich zu unseren sonstigen Sportangeboten auch die Pfeile. In ungezwungener Atmosphäre treffen wir uns jeden <strong>Mittwoch</strong> (ganzjährig) um <strong>19:30 Uhr</strong> zum Werfen.</p><p>Unsere mobilen und im Handumdrehen aufgebauten Dartscheiben mit integrierter Beleuchtung und Oche bieten beste Bedingungen.</p><p>Nach einem kurzen Einwerfen und einer Runde Cricket spielen wir in aller Regel kleine Turniere im Modus 501 Double Out an allen drei Scheiben. Der Spaß steht hierbei stets im Vordergrund.</p><p>Seit Juni 2024 sind wir zudem eine offizielle Abteilung des Vereins und freuen uns über Neumitglieder und weitere Spielerinnen und Spieler.</p><p><strong>Du willst dabei sein? </strong>Kein Problem. Komm einfach mittwochs um 19:30 Uhr zu uns ins SVZ. Nach ein paar Schnupperbesuchen kannst Du entscheiden, ob Du längerfristig dabei sein und Mitglied werden möchtest. Schicke aber am besten vorher eine kurze E-Mail an <strong><em><a href="mailto:darts@sf-bronnen.de">darts@sf-bronnen.de</a></em></strong> oder schreib uns auf Instagram an, ob am jeweiligen Mittwoch auch ein Treff stattfindet. Durch Sitzungen oder sonstige Belegungen im SVZ kommt es immer wieder zu Verschiebungen.</p><p>Für weitere Informationen und alles Aktuelle folgt uns gerne auf <a href="https://www.instagram.com/sfb.darts/" rel="noopener noreferrer">Instagram</a> (@sfb.darts). Unsere Beitrittserklärung findest Du unter dem Menüpunkt "Darts -&gt; Allgemeines -&gt; Downloads" oder <a href="https://www.sf-bronnen.de/media/pages/darts/allgemeines/downloads/e8ff2c8486-1718019726/beitrittserklarung_stand_04.2024.pdf" target="_blank" title="hier" rel="noopener noreferrer">hier</a>.</p><h4>Impressionen</h4>
+
+----
+
+People:
+
+- 
+  name: Michael Hoffmann
+  aufgabe: Abteilungsleiter
+  email: darts@sf-bronnen.de
+  phone: 01578 2466709
+  address: ""
+- 
+  name: Felix Schöffmann
+  aufgabe: Stellv. Abteilungsleiter
+  email: darts@sf-bronnen.de
+  phone: ""
+  address: ""
+- 
+  name: Markus Buk
+  aufgabe: Schriftführer
+  email: darts@sf-bronnen.de
+  phone: ""
+  address: ""
+
+----
+
+Uuid: gt6aKiekCebfp19q

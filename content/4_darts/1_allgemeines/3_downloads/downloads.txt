@@ -1,0 +1,23 @@
+Title: Downloads
+
+----
+
+Headline: Downloads
+
+----
+
+Downloads:
+
+- 
+  category: 'Verein & Abteilung'
+  downloads:
+    - file://4iUBKuPnKVW2kQTC
+- 
+  category: 'Presse & Medien'
+  downloads:
+    - file://oSYNPZQ2VhELN3uD
+    - file://F2N6IrBofzsIWri2
+
+----
+
+Uuid: 7KfHpicblckQcgCZ

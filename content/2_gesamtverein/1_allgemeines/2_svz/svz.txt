@@ -60,7 +60,7 @@ Facts:
 - Toilette für Menschen mit Behinderung
 - Ausreichend Parkplätze
 - Regenerative Energieversorgung (PV)
-- Lademöglichkeit für E-Fahrzeuge
+- Lademöglichkeit für E-Fahrzeuge (Typ 2, 11 kW)
 
 ----
 

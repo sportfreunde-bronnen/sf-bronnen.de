@@ -2,11 +2,11 @@ Title: Weihnachtsfeier
 
 ----
 
-Shorttitle: Weihnachtsfeier 2023
+Shorttitle: Weihnachtsfeier 2025
 
 ----
 
-Datum: 2023-12-09 19:00:00
+Datum: 2025-12-13 19:00:00
 
 ----
 
@@ -20,9 +20,9 @@ Ort: SVZ
 
 Text:
 
-## Weihnachtsfeier 2023
+## Weihnachtsfeier 2025
 
-Die Weihnachtsfeier des Gesamtvereins findet am Samstag, 09.12.2023 um 19:00 Uhr im SVZ statt.
+Die Weihnachtsfeier des Gesamtvereins findet am Samstag, 13.12.2025 um 19:00 Uhr im SVZ statt.
 
 ----
 
@@ -34,11 +34,11 @@ Imageposition: top
 
 ----
 
-Doc: - file://7V78ag5HZqWVtmbB
+Doc: 
 
 ----
 
-Documentdescription: Einladung
+Documentdescription: 
 
 ----
 

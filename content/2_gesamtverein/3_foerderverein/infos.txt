@@ -6,7 +6,7 @@ Headline: Förderverein SF Bronnen e.V.
 
 ----
 
-Infotext: <p>Wir sind ein kleiner Verein mit tollen Mitgliedern und Sponsoren. Durch Spenden und Sponsoring helfen Sie mit, die ehrgeizigen Ziele und herausfordernden Aufgaben des Vereins und dessen Mitglieder zu unterstützen und zu erreichen. Werden Sie Teil unserer Sportfreunde Familie.</p><p><strong>Zweck</strong></p><p>Der Verein verfolgt ausschließlich gemeinnützige Zwecke und fördert den Sport und die soziale Verantwortung in finanzieller und ideeller Weise.</p><p><strong>Spendenkonto</strong></p><p>Förderverein Sportfreunde Bronnen e.V.<br>IBAN: DE63 6549 1320 0071 1910 03<br>BIC: GENODES1VBL<br>Institut: Volksbank Raiffeisenbank Laupheim-Illertal eG</p><p><strong>Downloads</strong></p><p><a href="http://localhost:1949/gesamtverein/foerderverein/downloads" rel="noopener noreferrer">Zu den Downloads</a></p>
+Infotext: <p>Wir sind ein kleiner Verein mit tollen Mitgliedern und Sponsoren. Durch Spenden und Sponsoring helfen Sie mit, die ehrgeizigen Ziele und herausfordernden Aufgaben des Vereins und dessen Mitglieder zu unterstützen und zu erreichen. Werden Sie Teil unserer Sportfreunde Familie.</p><p><strong>Zweck</strong></p><p>Der Verein verfolgt ausschließlich gemeinnützige Zwecke und fördert den Sport und die soziale Verantwortung in finanzieller und ideeller Weise.</p><p><strong>Spendenkonto</strong></p><p>Förderverein Sportfreunde Bronnen e.V.<br>IBAN: DE77 6509 1040 0733 1890 08<br>BIC: GENODES1LEU<br>Institut: Volksbank Allgäu-Oberschwaben eG</p><p><strong>Downloads</strong></p><p><a href="http://localhost:1949/gesamtverein/foerderverein/downloads" rel="noopener noreferrer">Zu den Downloads</a></p>
 
 ----
 

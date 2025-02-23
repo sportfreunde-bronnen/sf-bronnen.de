@@ -1,0 +1,30 @@
+Title: Informationen
+
+----
+
+Headline: Aikido bei den Sportfreunden
+
+----
+
+Infotext: <p>Herzlich willkommen auf der Webseite der Abteilung Aikido der Sportfreunde Bronnen.</p><p>Wir freuen uns, dass du Interesse an dieser faszinierenden Kampfkunst hast.</p><p>Aikido ist nicht nur eine effektive Selbstverteidigungstechnik, sondern auch eine wunderbare Möglichkeit, Körper und Geist in Einklang zu bringen.</p><p>Wenn du neu im Aikido bist, laden wir dich herzlich ein, bei einer unserer Trainingseinheiten zuzuschauen. So kannst du einen ersten Eindruck von der Atmosphäre und den Techniken gewinnen. Unsere Trainer und Mitglieder stehen dir gerne zur Verfügung, um deine Fragen zu beantworten und dir mehr über Aikido zu erzählen.</p><p>Noch besser ist: einfach mal mitmachen und ausprobieren. Bei uns kannst du direkt mittrainieren!</p><p>In unseren Trainingseinheiten lernst du nicht nur die Techniken, sondern auch den respektvollen Umgang miteinander. Komm vorbei, lerne uns kennen und mach mit.</p><p>Deshalb gilt: Neu-Einsteiger, Wieder-Einsteiger und Gäste sind willkommen.</p><p><strong>Was wird zum trainieren benötigt?</strong></p><p>Als aller erstes Spaß an Bewegung und partnerschaftlichem Üben. Für den Anfang genügt ein Trainingsanzug oder eine Jogginghose und T-Shirt. Schuhe werden in der Halle nicht getragen.</p><p>Umkleideräume und Duschen sind vorhanden.</p><p>Wir freuen uns über jeden den wir für die Aikido begeistern können.</p><p><strong>Trainingszeiten</strong></p><p>Trainiert wird Mittwochs für</p><p>Kinder und Jugendliche (6-14 Jahre) von 17:30 bis 18:45 Uhr</p><p>Erwachsene (ab 15 Jahre) von 18:45 bis 20:00 Uhr</p><p><strong>Anschrift</strong></p><p>Sportfreunde Bronnen e.V. Abt. Aikido<br>Holzweg 3<br>88480 Achstetten</p>
+
+----
+
+People:
+
+- 
+  name: Klaus Romer
+  aufgabe: 1. Vorsitzender
+  email: SFB-Abt-Aikido@web.de
+  phone: ""
+  address: ""
+- 
+  name: Laura Donat
+  aufgabe: 2. Vorsitzende
+  email: ""
+  phone: ""
+  address: ""
+
+----
+
+Uuid: AsRsuaJc2MNdNhHd

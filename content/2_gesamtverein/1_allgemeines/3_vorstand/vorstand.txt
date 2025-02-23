@@ -2,33 +2,42 @@ Title: Vorstand
 
 ----
 
+Headline: Vorstandschaft
+
+----
+
 Personen:
 
 - 
   name: Martin Pannek
   funktion: 1. Vorstand
   start: "2020"
-  bild: baur_ben.jpg
+  bild:
+    - file://KzrrTWy0U44sG28R
 - 
   name: Thomas Baur-Beyerlin
   funktion: 2. Vorstand
   start: "2021"
-  bild: baur_simon.jpg
+  bild:
+    - file://FNs2e3jp0fPdOr9P
 - 
   name: Magnus Buk
   funktion: 2. Vorstand
   start: "2017"
-  bild: buk_magnus.jpg
+  bild:
+    - file://PMUbZoHF2YnybSfE
 - 
   name: Ruth Hofele
   funktion: Schriftführerein
   start: "2018"
-  bild: braig_andrea.jpg
+  bild:
+    - file://BNaGOCL6FYpWDDbs
 - 
   name: Martin Bringazi
   funktion: Kassierer
   start: "2011"
-  bild: bringazi_martin.jpg
+  bild:
+    - file://TIEcy3Rh3tJ569Vl
 
 ----
 

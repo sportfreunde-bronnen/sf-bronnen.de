@@ -1,0 +1,128 @@
+Title: Trainerchronik
+
+----
+
+Headline: Alle Trainer der Sportfreunde Bronnen
+
+----
+
+Coaches:
+
+- 
+  name: >
+    Widmayer, Josef Zoller (Spielertrainer),
+    Ackermann, Rudolf Rechtsteiner
+  zeitraum: '1949 - 1958'
+- 
+  name: Rudolf Rechtsteiner
+  zeitraum: '1958 - 1963'
+- 
+  name: Alfred Rodi
+  zeitraum: '1963 - 1964'
+- 
+  name: Rudolf Rechtsteiner
+  zeitraum: '1964 - 1965'
+- 
+  name: Horst Kutz
+  zeitraum: '1965 - 1970'
+- 
+  name: Jürgen Hackbarth
+  zeitraum: '1970 - 1972'
+- 
+  name: Hermann Sontheimer
+  zeitraum: '1972 - 1974'
+- 
+  name: Horst Kutz
+  zeitraum: '1974 - 1975'
+- 
+  name: Alfred Branz
+  zeitraum: '1975 - 1976'
+- 
+  name: Erich Siebert
+  zeitraum: '1976 - 1977'
+- 
+  name: Hermann Sontheimer
+  zeitraum: '1977 - 1978'
+- 
+  name: Josef Halder
+  zeitraum: '1978 - 1981'
+- 
+  name: Günther Seidler
+  zeitraum: '1981 - 1984'
+- 
+  name: >
+    Karl-Heinz Lemke (einige Wochen Hans
+    Heim / Krankheitsvertretung)
+  zeitraum: '1984 - 1986'
+- 
+  name: >
+    Gottfried Wirth / Erich Heber, Peter
+    Schlecht
+  zeitraum: '1986 - 1987'
+- 
+  name: Peter Schlecht
+  zeitraum: '1987 - 1988'
+- 
+  name: Uli Schmid
+  zeitraum: '1988 - 1990'
+- 
+  name: Günther Seidler
+  zeitraum: '1990 - 1994'
+- 
+  name: Ingo Werner
+  zeitraum: '1994 - 1995'
+- 
+  name: Hans Schädler
+  zeitraum: '1995 - 1996'
+- 
+  name: Lorenz Moll
+  zeitraum: '1996 - 1997'
+- 
+  name: Karl-Heinz Kösling
+  zeitraum: '1997 - 2000'
+- 
+  name: Dzevit Rusiti
+  zeitraum: '2000 - 2003'
+- 
+  name: Alfred Rieger
+  zeitraum: '2003 - 2004'
+- 
+  name: Erich Kraus
+  zeitraum: '2004 - 2007'
+- 
+  name: Georg Ströbele
+  zeitraum: '2007 - 2008'
+- 
+  name: Hartmut Pohl
+  zeitraum: '2008 - 2009'
+- 
+  name: Timo Räpple
+  zeitraum: '07/2009 - 10/2012'
+- 
+  name: Hartmut Pohl
+  zeitraum: '10/2012 - 08/2014'
+- 
+  name: Sergej Haus
+  zeitraum: '08/2014 - 06/2017'
+- 
+  name: 'Michael Laupheimer & Marc Nilius (beide Spielertrainer)'
+  zeitraum: '07/2017 - 12/2018'
+- 
+  name: 'Marc Nilius & Johannes Schupp (beide Spielertrainer)'
+  zeitraum: '01/2019 - 07/2020'
+- 
+  name: 'Sven Manz (Trainer) & Johannes Schupp (Spielertrainer)'
+  zeitraum: '08/2020 - 07/2023'
+- 
+  name: 'Erich Kraus (Trainer) & Johannes Schupp (Spielertrainer)'
+  zeitraum: '08/2023 - 12/2023'
+- 
+  name: 'Johannes Schupp & Oliver Maunz (beide Spielertrainer)'
+  zeitraum: '01/2024 - 05/2024'
+- 
+  name: 'Klaus Wurm & Oliver Maunz (Spielertrainer)'
+  zeitraum: seit 06/2024
+
+----
+
+Uuid: e6XVMupxzMd5MlBG
