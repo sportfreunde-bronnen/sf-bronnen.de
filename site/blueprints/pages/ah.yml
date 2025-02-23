@@ -2,7 +2,7 @@ title: Attraktive Herren
 options:
   delete: true
   url: false
-  status: false
+  status: true
   changeStatus: true
   changeTitle: true
   changeTemplate: true
