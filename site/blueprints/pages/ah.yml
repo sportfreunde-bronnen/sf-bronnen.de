@@ -5,6 +5,7 @@ options:
   status: false
   changeStatus: true
   changeTitle: true
+  changeTemplate: true
 fields:
   headline: fields/headline
   text:
