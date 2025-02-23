@@ -1,6 +1,9 @@
 title: Infos
 options:
   pages: false
+  changeStatus: true
+  changeTitle: true
+  delete: true
 preset: page
 fields:
   headline:
