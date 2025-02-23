@@ -1,8 +1,10 @@
 title: Attraktive Herren
 options:
-  delete: false
+  delete: true
   url: false
   status: false
+  changeStatus: true
+  changeTitle: true
 fields:
   headline: fields/headline
   text:
