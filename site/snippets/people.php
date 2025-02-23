@@ -1,3 +1,4 @@
+<?php if ($page->people()->toStructure()->isNotEmpty()): ?>
 <h3 class="main-heading-1 text-spl-color text-weight-normal text-center-xs mt-5">Verantwortliche</h3>
 <div class="row">
     <div class="col-12">
@@ -20,3 +21,4 @@
         </div>
     </div>
 </div>
+<?php endif;?>
