@@ -50,7 +50,7 @@
         <div class="row">
             <?php if((string)$page->parents()->last()?->title()->lower() === 'darts'): ?>
               <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
-                      <a href="/" class="sfb-headline"><img class="sfblogo darts rotate" src="/assets/images/sfb/sfbdarts.svg"/><span class="claim">Sportfreunde Bronnen e.V. - Abteilung Darts</span></a>
+                      <a href="/" class="sfb-headline"><img class="sfblogo darts rotate" src="/assets/images/sfb/sfbdarts.svg"/><span class="claim">Sportfreunde Bronnen e.V. - Darts</span></a>
               </div>
             <?php else: ?>
               <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
