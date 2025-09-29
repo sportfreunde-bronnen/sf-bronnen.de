@@ -20,7 +20,7 @@ return function ($kirby) {
         }
 
         foreach ($data as $entry) {
-            $date = $entry[2];
+            $date = $entry[1];
             if (false !== strtotime($date)) {
                 $bookings[date('Y-m-d', strtotime($date))] = $entry;
             }

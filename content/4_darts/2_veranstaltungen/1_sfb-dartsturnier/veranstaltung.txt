@@ -1,12 +1,12 @@
-Title: SFB Dartsturnier
+Title: 1. Zwickel-Darts-Cup
 
 ----
 
-Shorttitle: Die dritte Auflage unseres SFB Dartsturniers.
+Shorttitle: Die vierte Auflage unseres SFB Dartsturniers.
 
 ----
 
-Datum: 2025-01-25 17:00:00
+Datum: 2025-07-05 17:00:00
 
 ----
 
@@ -20,39 +20,32 @@ Ort: SVZ Bronnen
 
 Text:
 
-## 3. SFB Dartsturnier
+## 1. Zwickel-Darts-Cup
 
-Herzliche Einladung an alle Dartsbegeisterten zur dritten Auflage unseres Steeldartsturniers. Termin: **Samstag, den 25.01.2025**.
+Herzliche Einladung an alle Dartsbegeisterten zur vierten Auflage unseres Steeldartsturniers.
+
+Termin: **Samstag, den 05.07.2025**.
 
 ### Facts:
-- Samstag, 25.01.2025
-- SVZ Bronnen (Oberer Espach, 88480 Achstetten-Bronnen)
-- Einlass: 16:00 Uhr / Turnierstart: 17:00 Uhr
+- Samstag, 05.07.2025
+- SVZ Bronnen (Oberer Espach 3, 88480 Achstetten-Bronnen)
 - Keine Ligaspieler
+- Einlass: 16:00 Uhr / Turnierstart: 17:00 Uhr
 
 ### Modus + Ablauf
-- 56 Spielerinnen und Spieler
-- Vorrunde: 301 DO Best of 3
-- Ab K.O. Phase 501 DO (Legs sind abhängig von der finalen Teilnehmeranzahl)
-- Geld- und Pokalgewinne für die Top 3
-- Walk-Ins ab Viertelfinale
+- Vorrunde: 301 Double Out | Best of three
+- K.O. Phase: Double Out | Best of three/five
 
 Für eure Verpflegung und einen stimmungsgeladenen Turnierablauf ist selbstverständlich gesorgt. Auch über Zuschauerinnen und Zuschauer während und nach des Turniers freuen wir uns sehr!
 
 ### Anmeldung
-Die 48 Startplätze waren in weniger als 12 Stunden **restlos vergeben**. Ihr könnt euch aber gerne für die Warteliste anmelden und wir melden uns bei euch, falls ein Platz frei wird!
+Das Teilnehmerfeld ist bereits vollständig. Anmeldungen für die Warteliste sind noch möglich:
 
-Hier geht's zur Wartelisten-Anmeldung: https://besucher.sf-bronnen.de
-
----
-
-#### Impression vom ersten Turnier
-
-(image: turnier-eins-2.jpeg imgclass: img-fluid)
+**(link: https://besucher.sf-bronnen.de text: >>> ZUR ANMELDUNG <<<)**
 
 ----
 
-Vimage: - file://PcfnDhsSQxOVfQ6y
+Vimage: - file://w6WTVzmGEoTJWCRW
 
 ----
 
@@ -60,11 +53,11 @@ Imageposition: top
 
 ----
 
-Doc: - file://Qa1XMzLdiR5cwRAM
+Doc: - file://jpENGR95CTLeCGoY
 
 ----
 
-Documentdescription: Flyer
+Documentdescription: FLYER
 
 ----
 

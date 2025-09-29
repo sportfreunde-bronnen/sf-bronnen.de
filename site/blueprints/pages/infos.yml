@@ -4,7 +4,6 @@ options:
   changeStatus: true
   changeTitle: true
   delete: true
-preset: page
 fields:
   headline:
     extends: fields/headline

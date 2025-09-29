@@ -44,9 +44,11 @@ Ansprechpartner:
   email: connyrohmer@web.de
   shortcut: svz
 - 
-  name: Oliver Bentele
+  name: >
+    Ansprechpartner Bandenwerbung
+    (Förderverein)
   aufgabe: Bandenwerbung
-  email: o.bentele@bs-bo.de
+  email: info@sf-bronnen.de
   shortcut: ""
 - 
   name: Jürgen Anic

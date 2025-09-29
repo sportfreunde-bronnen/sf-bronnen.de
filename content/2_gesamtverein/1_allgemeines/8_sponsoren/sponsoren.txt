@@ -153,10 +153,6 @@ Sponsoren:
   ort: Staig
   webseite: http://www.kuechen-mangold.de/
 - 
-  name: Bäckerei Mäschle
-  ort: Laupheim
-  webseite: http://www.baeckerei-maeschle.de/
-- 
   name: Elektro Mäschle
   ort: Oberholzheim
   webseite: ""
@@ -168,10 +164,6 @@ Sponsoren:
   name: Möbel Borst
   ort: Bietigheim-Bissingen
   webseite: https://www.moebel-borst.de/
-- 
-  name: Ingenierbüro Reuder
-  ort: Bronnen
-  webseite: http://www.reuder.de/
 - 
   name: Ingenierbüro Rohmer
   ort: Laupheim
@@ -267,6 +259,14 @@ Sponsoren:
   name: Transportbeton Biberach
   ort: Biberach
   webseite: https://www.trans-beton.de/
+- 
+  name: Bailer Raumausstattung oHG
+  ort: Laupheim
+  webseite: https://bailer-raumausstattung.de
+- 
+  name: 'Bausthoffhandel J. Wilhelm GmbH & Co. KG'
+  ort: Laupheim
+  webseite: https://www.wilhelm-laupheim.de
 
 ----
 

@@ -9,12 +9,12 @@
         <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
         <?= $page->text()->kirbytext();?>
         <div class="row mt-5">
-            <?php $box = false; $last = ''; foreach ($page->sponsoren()->toStructure()->sortBy('name', 'asc') as $sponsor): $current = strtoupper(substr($sponsor->name(), 0, 1)); ?>
+            <?php $box = false; $last = ''; foreach ($page->sponsoren()->toStructure()->sortBy('name', 'asc') as $sponsor): $current = strtoupper(substr($sponsor->name(), 0, 1));?>
                 <?php if ($last != $current): ?>
                     <?php if ($box): ?>
                     </div>
                     <?php endif; ?>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 sponsor-box">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 supporter-box">
                     <h3 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left mb-3 mb-md-5"><?= strtoupper($current);?></h3>
                 <?php endif; ?>
                 <?php if ($sponsor->webseite()->isNotEmpty()):?>

@@ -23,6 +23,21 @@ Personen:
   funktion: Ehrenmitglied
   start: "2019"
   bild: [ ]
+- 
+  name: Martin Halder
+  funktion: Ehrenmitglied
+  start: "2025"
+  bild: [ ]
+- 
+  name: Karlheinz Kösling
+  funktion: Ehrenmitglied
+  start: "2025"
+  bild: [ ]
+- 
+  name: Heinz Maiser
+  funktion: Ehrenmitglied
+  start: "2025"
+  bild: [ ]
 
 ----
 

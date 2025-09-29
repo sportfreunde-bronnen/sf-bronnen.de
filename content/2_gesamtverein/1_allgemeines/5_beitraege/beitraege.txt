@@ -14,7 +14,7 @@ Beitraege:
 
 - 
   name: Jugendliche bis 18 J.
-  grundbeitrag: 25
+  grundbeitrag: 25.5
   grundbeitragzusatz: ""
   fussball: 30
   fussballzusatz: ""
@@ -26,7 +26,7 @@ Beitraege:
   dartszusatz: ""
 - 
   name: Erwachsene ab 18 Jahren
-  grundbeitrag: 36.5
+  grundbeitrag: 37.5
   grundbeitragzusatz: ""
   fussball: 35
   fussballzusatz: ""
@@ -38,7 +38,7 @@ Beitraege:
   dartszusatz: ""
 - 
   name: Familie pF / pK
-  grundbeitrag: 61
+  grundbeitrag: 62.5
   grundbeitragzusatz: pF
   fussball: 25
   fussballzusatz: pK
@@ -50,7 +50,7 @@ Beitraege:
   dartszusatz: ""
 - 
   name: Passive Mitglieder
-  grundbeitrag: 30
+  grundbeitrag: 30.5
   grundbeitragzusatz: ""
   fussball: 0
   fussballzusatz: ""

@@ -13,7 +13,7 @@ Infotext: <p>Wir sind ein kleiner Verein mit tollen Mitgliedern und Sponsoren. D
 People:
 
 - 
-  name: Benjamin Baur
+  name: Axel Endlichhofer
   aufgabe: 1. Vorsitzender
   email: foerderverein@sf-bronnen.de
   phone: ""

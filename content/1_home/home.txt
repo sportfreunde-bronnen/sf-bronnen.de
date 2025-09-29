@@ -29,6 +29,18 @@ Homebanner: - file://9O7IcYVV3GVUHWUN
 Slides:
 
 - 
+  title: SFB Oktoberfest 2025
+  text: >
+    .. am 10.10.2025 ab 19:00 Uhr. Jetzt
+    Tisch reservieren!
+  textposition: left
+  sliderimage:
+    - file://kTxVllEu9wPnC1pu
+  internallink:
+    - page://5lvt2Xh1cZk3NJZW
+  externallink: ""
+  buttontext: ""
+- 
   title: Übungsleiter gesucht!
   text: >
     Für unser Eltern-Kind-Turnen suchen wir
@@ -83,10 +95,15 @@ Footertext: Die Sportfreunde Bronnen sind ein über 600 Mitglieder fassender Ver
 
 Footeraddress:
 
-**Sportfreunde Bronnen 1949 e.V.**  
+**Sportfreunde Bronnen e.V.** 
  Höhenweg 1
  88480 Bronnen
  info@sf-bronnen.de
+
+**Geschäftstelle / Sportgelände**
+Oberer Espach 3
+88480 Achstetten-Bronnen
+Telefon: 07392 / 9289899
 
 ----
 

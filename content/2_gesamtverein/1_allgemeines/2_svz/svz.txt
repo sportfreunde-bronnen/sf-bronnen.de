@@ -53,7 +53,7 @@ Facts:
 - 65 Zoll Fernseher mit Kabelanschluss
 - Musikanlage
 - Tischkicker
-- Kostenloses WLAN (50 MBit/s)
+- Kostenloses WLAN (100 MBit/s down, 50 MBit/s up)
 - Wickeltisch, zwei Kinderstühle
 - 5 Stehtische (nicht im Mietpreis enthalten)
 - Barrierefreier Zugang über Rampe

@@ -30,7 +30,7 @@ Institut: Volksbank Allgäu-Oberschwaben eG
 People:
 
 - 
-  name: Benjamin Baur
+  name: Axel Endlichhofer
   aufgabe: 1. Vorsitzender
   email: foerderverein@sf-bronnen.de
   phone: ""

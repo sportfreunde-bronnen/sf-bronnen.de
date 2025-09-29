@@ -12,13 +12,13 @@ Downloads:
   category: Sportvereinszentrum
   downloads:
     - file://nibw1zlEbDBIBQ9o
-    - file://XcGet43B91BjlMGo
+    - file://vCYuFzQWHMQJUWpT
     - file://kfQk3YV7hfNSz2Nt
     - file://qLBGnYc0jLGNdrSF
 - 
   category: Verein
   downloads:
-    - file://eGKODIpfDMAOCyvf
+    - file://JgIFS0I1De9E9J5c
     - file://UFwyzlwGi9QEyt7O
     - file://BaVkmLoUGNGYyxfr
     - file://dhEgJNLoSkSwchFU

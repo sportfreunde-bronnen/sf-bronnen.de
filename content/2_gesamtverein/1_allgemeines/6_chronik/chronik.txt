@@ -187,6 +187,11 @@ Ereignisse:
 - 
   jahr: "2022"
   ereignis: '- Inbetriebnahme einer Photovoltaikanlage mit einer Gesamtleistung von 44,8kWp auf dem Dach unseres SVZ.'
+- 
+  jahr: "2024"
+  ereignis: |
+    - Familientag zum 75-jährigen Vereinsjubiläum
+    - Gründung der Abteilung Darts
 
 ----
 

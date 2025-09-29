@@ -7,7 +7,9 @@ Text:
 ## Durchgeführte Dartsturniere
 Seit dem Jahr 2024 sind wir regelmäßiger Ausrichter von Dartsturnieren für Hobbyspieler.
 
-### 1. SFB Dartsturnier
+---
+
+#### 1. SFB Dartsturnier
 Datum: 27.01.2024
 Teilnehmer: 36
 Ort: SVZ Bronnen
@@ -18,7 +20,9 @@ Ort: SVZ Bronnen
 2 - Andy Haller (Scratchy)
 3 - Daniel Rapp (Raptor)
 
-### 2. SFB Dartsturnier
+---
+
+#### 2. SFB Dartsturnier
 Datum: 06.07.2024
 Teilnehmer: 36
 Ort: Gemeindezentrum Bronnen
@@ -29,7 +33,9 @@ Ort: Gemeindezentrum Bronnen
 2 - Felix Mahr (Mr. Eighty One)
 3 - Achim Traub (TrAchi)
 
-### 3. SFB Dartsturnier
+---
+
+#### 3. SFB Dartsturnier
 Datum: 25.01.2025
 Teilnehmer: 56
 Ort: SVZ Bronnen
@@ -39,6 +45,19 @@ Ort: SVZ Bronnen
 1 - Marcel Braith (Bello)
 2 - Patrick Braith (Schwenk)
 3 - Johannes Thielen (Josi)
+
+---
+
+#### 4. SFB Dartsturnier
+Datum: 06.07.2025
+Teilnehmer: 48
+Ort: SVZ Bronnen
+(link: https://sfbracket.sf-bronnen.de/display/tournament/46 text: Spielplan + Ergebnisse)
+
+**Platzierungen**
+1 - Marcel Braith (Bello)
+2 - Simon Hämmerle (Simon)
+3 - David Ludwig (Unlucky)
 
 ----
 

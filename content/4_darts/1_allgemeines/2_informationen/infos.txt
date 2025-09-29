@@ -30,6 +30,18 @@ People:
   email: darts@sf-bronnen.de
   phone: ""
   address: ""
+- 
+  name: Johannes Thielen
+  aufgabe: Beisitzer
+  email: ""
+  phone: ""
+  address: ""
+- 
+  name: Christoph Engelhardt
+  aufgabe: Beisitzer
+  email: ""
+  phone: ""
+  address: ""
 
 ----
 
