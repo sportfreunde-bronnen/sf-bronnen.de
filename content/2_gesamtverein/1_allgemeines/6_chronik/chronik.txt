@@ -1,0 +1,198 @@
+Title: Vereinschronik
+
+----
+
+Headline: Wichtige Ereignisse der Vereinsgeschichte
+
+----
+
+Ereignisse:
+
+- 
+  jahr: "1949"
+  ereignis: >
+    Gründung der Sportfreunde Bronnen (9.
+    April)
+- 
+  jahr: "1950"
+  ereignis: >
+    Einstieg in den Verbandsspielbetrieb
+    (C-Klasse)
+- 
+  jahr: "1951"
+  ereignis: >
+    Erste Einweihung Spielfeld mit
+    Pokalspielen
+- 
+  jahr: "1953"
+  ereignis: >
+    Meister C-Klasse, Aufstieg in die
+    B-Klasse
+- 
+  jahr: "1955"
+  ereignis: >
+    Meister B-Klasse, Aufstieg in die
+    A-Klasse
+- 
+  jahr: "1956"
+  ereignis: Abstieg in die B-Klasse
+- 
+  jahr: "1959"
+  ereignis: |
+    - Meister B-Klasse
+    - Aufstieg in die A-Klasse
+    - Bezirkspokalsieger
+    - 10 jähriges Vereinsjubiläum mit Pokalturnier
+- 
+  jahr: "1962"
+  ereignis: Zweite Einweihung Sportplatz
+- 
+  jahr: "1965"
+  ereignis: Abstieg in die B-Klasse
+- 
+  jahr: "1967"
+  ereignis: >
+    Pokalbester der B-Klasse,
+    Vize-Bezirkspokalsieger, Eintragung ins
+    Vereinsregister
+- 
+  jahr: "1968"
+  ereignis: Bau einer Gerätehütte
+- 
+  jahr: "1969"
+  ereignis: >
+    20jähriges Vereinsjubiläum mit
+    Pokalturnier
+- 
+  jahr: "1974"
+  ereignis: |
+    - Abstieg in die C-Klasse (Kreisliga B)
+    - Start der ersten Frauengymnastik-Gruppe
+    - Sportplatzrenovierung
+    - 25 jähriges Vereinsjubiläum mit Pokalturnier
+- 
+  jahr: "1977"
+  ereignis: Vize-Bezirkspokalsieger
+- 
+  jahr: "1979"
+  ereignis: |
+    - Erweiterung Geräte-/Vereinshütte
+    - Erstellung sanitärer Anlagen
+    - 30 jähriges Vereinsjubiläum mit Pokalturnier
+- 
+  jahr: "1980"
+  ereignis: Start der Männer-Gymnastikgruppe
+- 
+  jahr: "1984"
+  ereignis: Erneute Vergrößerung der Vereinshütte
+- 
+  jahr: "1985"
+  ereignis: |
+    - Meister Kreisliga B
+    - Aufstieg in die Kreisliga A
+- 
+  jahr: "1987"
+  ereignis: Baubeginn zweites Rasenspielfeld
+- 
+  jahr: "1989"
+  ereignis: |
+    - Fertigstellung des zweiten Rasenspielfeldes
+    - 40 jähriges Vereinsjubiläum mit Pokalturnier
+- 
+  jahr: "1992"
+  ereignis: Vizemeister Kreisliga A
+- 
+  jahr: "1994"
+  ereignis: Erster Zwickel-Night-Cup
+- 
+  jahr: "1995"
+  ereignis: >
+    Vergrößerung/Modernisierung der
+    Vereinshütte und sanitären Anlagen
+- 
+  jahr: "1997"
+  ereignis: Abstieg in die Kreisliga B
+- 
+  jahr: "1998"
+  ereignis: >
+    Meister Kreisliga B, Aufstieg in die
+    Kreisliga A
+- 
+  jahr: "1999"
+  ereignis: |
+    - Abstieg in die Kreisliga B
+    - 50 jähriges Vereinsjubiläum
+- 
+  jahr: "2001"
+  ereignis: |
+    - Meister Kreisliga B
+    - Aufstieg in die Kreisliga A
+- 
+  jahr: "2003"
+  ereignis: |
+    - Abstieg in die Kreisliga B
+    - Zehnter Zwickel-Night-Cup
+- 
+  jahr: "2005"
+  ereignis: |
+    - Meister Kreisliga B
+    - Aufstieg in die Kreisliga A
+- 
+  jahr: "2006"
+  ereignis: Gründung der Abteilung Aikido
+- 
+  jahr: "2008"
+  ereignis: Baubeginn SVZ
+- 
+  jahr: "2009"
+  ereignis: |
+    - 60 jähriges Vereinsjubiläum
+    - Einweihung des neuen Sportheims
+- 
+  jahr: "2014"
+  ereignis: 20jähriges Jubiläum Zwickel-Night-Cup
+- 
+  jahr: "2016"
+  ereignis: 20jähriges Jubiläum Uhlmann-Halder-Cup
+- 
+  jahr: "2017"
+  ereignis: |
+    - Austausch der Flutlichtanlagen gegen moderne LED Scheinwerfer
+    - Neubau das Hauptspielfeldes
+    - Bewässerungsanlage für beide Spielfelder
+    - Neue Fangzäune für den Trainingsplatz
+    - Errichtung eines Fußgängerbereiches zwischen den beiden Spielfeldern
+    - Neugestaltung des angrenzenden Spielplatzes, TÜV-Abnahme und Übergabe an Gemeinde
+- 
+  jahr: "2018"
+  ereignis: |
+    - Fertigstellung des neuen Hauptspielfeldes
+    - Renovierung des Trainingsplatzes
+    - Pflasterung der Fläche zwischen SVZ und Hauptspielfeld
+    - Instandsetzung des Parkplatzes mit Abgrenzung der einzelnen Parkflächen sowie Installation einer Höhenbegrenzung bei der Einfahrt auf das Vereinsgelände
+- 
+  jahr: "2019"
+  ereignis: |
+    - Feier des 70-jährigen Vereinsbestehens mit einem Festabend sowie der Ausrichtung des Rottalpokals
+    - Erstellung einer zweiten Vereinschronik in Buchform
+- 
+  jahr: "2020"
+  ereignis: |
+    - Renovierung des SVZ (Streichen von innen und außen)
+    - Integration einer smarten Bewässerungsanlage
+    - COVID-19 Pandemie
+- 
+  jahr: "2021"
+  ereignis: '- COVID-19 Pandemie'
+- 
+  jahr: "2022"
+  ereignis: '- Inbetriebnahme einer Photovoltaikanlage mit einer Gesamtleistung von 44,8kWp auf dem Dach unseres SVZ.'
+- 
+  jahr: "2024"
+  ereignis: |
+    - Familientag zum 75-jährigen Vereinsjubiläum
+    - Gründung der Abteilung Darts
+
+----
+
+Uuid: cRK28JZ38fVXPL68

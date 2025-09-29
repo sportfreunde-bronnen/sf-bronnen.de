@@ -8,7 +8,7 @@ Zitat: Wir stehen für Spaß und Freude am Sport und an der Bewegung.
 
 Text:
 
-In unseren Abteilungen [Fitness/Gymnastik](/gymnastik/allgemeines/infos), [Fußball](/fussball/allgemeines/infos) und [Aikido](/aikido/allgemeines/infos) und [Darts](/darts/allgemeines/informationen) trainieren unsere Mitglieder gemeinsam für ihre sportlichen Erfolge und Ziele. Unser Ziel ist es, für Mitglieder jeden Alters die bestmöglichen Voraussetzungen zu schaffen. Dafür setzen sich unsere ehrenamtlichen Helfer mit viel Einsatz, Freude und Herzblut ein. **Kameradschaft, Engagement und gegenseitiger Respekt** sind unsere Leitsätze.
+In unseren Abteilungen [Fitness/Gymnastik](/gymnastik/allgemeines/infos), [Fußball](/fussball/allgemeines/infos), [Aikido](/aikido/allgemeines/infos) und [Darts](/darts/allgemeines/informationen) trainieren unsere Mitglieder gemeinsam für ihre sportlichen Erfolge und Ziele. Unser Ziel ist es, für Mitglieder jeden Alters die bestmöglichen Voraussetzungen zu schaffen. Dafür setzen sich unsere ehrenamtlichen Helfer mit viel Einsatz, Freude und Herzblut ein. **Kameradschaft, Engagement und gegenseitiger Respekt** sind unsere Leitsätze.
 
 Mit unseren tollen [Sponsoren](/gesamtverein/allgemeines/sponsoren) und Unterstützern und in Zusammenarbeit mit unserer Heimatgemeinde wollen wir diesen Weg auch in Zukunft zielstrebig weiter gehen. Werden Sie Teil der Sportfreunde Familie und begleiten Sie uns auf diesem Weg.
 
@@ -29,15 +29,29 @@ Homebanner: - file://9O7IcYVV3GVUHWUN
 Slides:
 
 - 
-  title: 2. SFB Dartsturnier
-  text: Samstag, 06.07.2024
+  title: SFB Oktoberfest 2025
+  text: >
+    .. am 10.10.2025 ab 19:00 Uhr. Jetzt
+    Tisch reservieren!
   textposition: left
   sliderimage:
-    - file://0TucyIQuQPyT4ZVM
+    - file://kTxVllEu9wPnC1pu
   internallink:
-    - page://Qigya7VTmBF4aWr1
+    - page://5lvt2Xh1cZk3NJZW
   externallink: ""
-  buttontext: 'Infos & Anmeldung'
+  buttontext: ""
+- 
+  title: Übungsleiter gesucht!
+  text: >
+    Für unser Eltern-Kind-Turnen suchen wir
+    motivierte Übungsleiter (m/w/d).
+  textposition: left
+  sliderimage:
+    - file://fEJCQoXX6LWgguia
+  internallink: [ ]
+  externallink: >
+    https://www.sf-bronnen.de/media/pages/gymnastik/allgemeines/downloads/e8adb68a75-1738924884/flyer-uebungsleiter-elki.jpg
+  buttontext: Weitere Informationen
 - 
   title: Location zum Feiern gesucht?
   text: 'Wir haben da was - unser SVZ!'
@@ -81,10 +95,15 @@ Footertext: Die Sportfreunde Bronnen sind ein über 600 Mitglieder fassender Ver
 
 Footeraddress:
 
-**Sportfreunde Bronnen 1949 e.V.**  
+**Sportfreunde Bronnen e.V.** 
  Höhenweg 1
  88480 Bronnen
  info@sf-bronnen.de
+
+**Geschäftstelle / Sportgelände**
+Oberer Espach 3
+88480 Achstetten-Bronnen
+Telefon: 07392 / 9289899
 
 ----
 
@@ -96,6 +115,9 @@ Links:
 - 
   name: Lebensfreude Oberholzheim
   link: https://lebensfreude-oberholzheim.de/
+- 
+  name: Gemeinde Achstetten
+  link: https://www.achstetten.de
 - 
   name: Narrenzunft Bronnen
   link: https://nz-bronnen.de/

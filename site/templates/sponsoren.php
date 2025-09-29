@@ -9,7 +9,7 @@
         <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
         <?= $page->text()->kirbytext();?>
         <div class="row mt-5">
-            <?php $box = false; $last = ''; foreach ($page->sponsoren()->toStructure()->sortBy('name', 'asc') as $sponsor): $current = strtoupper(substr($sponsor->name(), 0, 1)); ?>
+            <?php $box = false; $last = ''; foreach ($page->sponsoren()->toStructure()->sortBy('name', 'asc') as $sponsor): $current = strtoupper(substr($sponsor->name(), 0, 1));?>
                 <?php if ($last != $current): ?>
                     <?php if ($box): ?>
                     </div>

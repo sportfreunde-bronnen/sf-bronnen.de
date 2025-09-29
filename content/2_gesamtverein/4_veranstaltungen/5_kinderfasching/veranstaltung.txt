@@ -1,0 +1,45 @@
+Title: Kinderfasching
+
+----
+
+Shorttitle: Kinderfasching
+
+----
+
+Datum: 2025-03-02 14:00:00
+
+----
+
+Datumbis: 2025-03-02 17:00:00
+
+----
+
+Ort: SVZ Bronnen
+
+----
+
+Text: 
+
+----
+
+Vimage: - file://NM3oPyNP5jykfFVc
+
+----
+
+Imageposition: top
+
+----
+
+Doc: - file://NM3oPyNP5jykfFVc
+
+----
+
+Documentdescription: Flyer
+
+----
+
+Related: 
+
+----
+
+Uuid: hljyHzym6o1YElMW

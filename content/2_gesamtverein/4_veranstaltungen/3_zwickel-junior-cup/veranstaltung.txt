@@ -1,0 +1,49 @@
+Title: Zwickel-Junior-Cup
+
+----
+
+Shorttitle: Zwickel-Junior-Cup
+
+----
+
+Datum: 2025-07-06 09:30:00
+
+----
+
+Datumbis: 
+
+----
+
+Ort: Sportgelände Bronnen
+
+----
+
+Text:
+
+Einladungen zum Turnier werden rechtzeitig versendet.
+
+Eure Sportfreunde Bronnen
+
+----
+
+Vimage: - file://3RTGAVLJSVTSx4is
+
+----
+
+Imageposition: top
+
+----
+
+Doc: 
+
+----
+
+Documentdescription: 
+
+----
+
+Related: - page://D7q4m6TDvMgClsE5
+
+----
+
+Uuid: 0JciBBrFTKp8jnA0

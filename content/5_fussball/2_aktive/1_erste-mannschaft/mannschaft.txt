@@ -1,0 +1,16 @@
+Title: Erste Mannschaft
+
+----
+
+Headline: Kreisliga A Riß Staffel II
+
+----
+
+Fupawidget:
+
+<div id="fp-widget_root-2krwA7HAADRaniSUL8G9VZTHEKn"><a href="https://www.fupa.net/club/sf-bronnen" target="_blank" rel="noopener">SF Bronnen auf FuPa</a></div>
+<script src="https://widget-api.fupa.net/vendor/widget.js?v1"></script>
+
+----
+
+Uuid: EaMnWmTZEhs5g27U

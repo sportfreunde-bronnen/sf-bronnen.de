@@ -2,11 +2,11 @@ Title: Uhlmann-Halder-Cup
 
 ----
 
-Shorttitle: Das Kleinfeldturnier für Betriebsmannschaften in Oberschwaben.
+Shorttitle: Das Freizeitturnier für Betriebsmannschaften
 
 ----
 
-Datum: 2024-07-05 18:00:00
+Datum: 2025-07-04 18:00:00
 
 ----
 
@@ -20,9 +20,9 @@ Ort: Sportgelände Bronnen
 
 Text:
 
-## 26. Uhlmann-Halder-Cup 2024
+Der Uhlmann-Halder-Cup 2025 findet am 04.07.2025 statt. Entsprechende Einladungen an Firmen werden zeitnah versendet.
 
-<div>Einladungen werden rechtzeitig versendet. Weitere Informationen bald.</div>
+Eure Sportfreunde Bronnen
 
 ----
 
@@ -42,7 +42,7 @@ Documentdescription:
 
 ----
 
-Related: 
+Related: - page://Qigya7VTmBF4aWr1
 
 ----
 

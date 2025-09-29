@@ -1,0 +1,72 @@
+Title: Informationen
+
+----
+
+Headline: Jugendfußball
+
+----
+
+Infotext: <p>Stand: 01.09.2025</p><h3>A-Junioren</h3><p>Teamgröße: 11<br>Trainer: Niko Fegler, Moritz Kuhn, Carmine Filosa<br>Trainingszeiten: Di. 17:30 - 19:00 Uhr, Do. 18:30 - 20:00 Uhr<br>Training/Spiele: Achstetten<br>Jahrgänge: 2007, 2008</p><h3>B-Junioren</h3><p>Teamgröße: 11<br>Trainer: Ralf Seifert, Moritz Gruschka, Matthias Weide<br>Trainingszeiten: Mo. + Mi. 18:00 - 19:30 Uhr<br>Training/Spiele: Bronnen<br>Jahrgänge: 2009, 2010</p><h3>C-Junioren</h3><p>Teamgröße: 11<br>Trainer: Michael Baur, Jürgen Beck, Daniel Sießegger, Markus Steck<br>Trainingszeiten: Di. + Do. 17:30 - 19.00 Uhr<br>Training/Spiele: Bronnen<br>Jahrgang: 2011, 2012</p><h3>D-Junioren (Jahrgang 2013)</h3><p>Teamgröße: 9<br>Trainer: Dirk Malas, Dimitri Heinz, Yannick Maiser<br>Trainingszeiten: Di. + Do. 17:30 - 19:00 Uhr<br>Training/Spiele: Achstetten<br>Jahrgänge: 2013</p><h3>D-Junioren (Jahrgang 2014)</h3><p>Teamgröße: 9<br>Trainer: Tobias Wischnat, Manuel Wieder, Oliver Ivanic<br>Trainingszeiten: Mo. + Mi. 17:15 - 18:45 Uhr<br>Training/Spiele: Bronnen<br>Jahrgänge: 2014</p><h3>E-Junioren</h3><p>Teamgröße: 7 + 7<br>Trainer: Dominic Wilutzk, Robert Pravdic, Thomas Wagner, Roland Albert, Andreas Enchelmaier<br>Trainingszeiten: Mo. + Mi. 17:30 - 19:00 Uhr<br>Training/Spiele: Hüttisheim<br>Jahrgänge: 2015, 2016</p><h3>F-Junioren</h3><p>Teamgröße: keine Runde, nur Spieltage<br>Trainer: Adriano Azevedo, Tina Zilles, Marco Boese, Tim Münkle<br>Trainingszeiten: Mo. + Mi. 17:15 - 18:45 Uhr<br>Training/Spiele: Achstetten<br>Jahrgänge: 2017, 2018</p><h3>Bambini</h3><p>Teamgröße: keine Runde, nur Spieltage<br>Trainer: Raphael Schneiderhan, Raimund Bailer<br>Trainingszeiten: Mi. 17:00 - 18:00 Uhr<br>Training/Spiele: Achstetten<br>Jahrgänge: 2019, 2020</p>
+
+----
+
+People:
+
+- 
+  name: Jürgen Anic
+  aufgabe: Jugendleiter SFB
+  email: j.anic@freenet.de
+  phone: 0171 / 5087 369
+  address: ""
+
+----
+
+Head-infotext:
+
+Im Jugendbereich stellen wir alle Mannschaften von den A-Junioren bis zu den Bambini.
+
+In allen Altersklassen spielen wir als Spielgemeinschaft (SGM) mit unseren Nachbarvereinen von der TSG Achstetten und dem FC Hüttisheim.
+
+**Trainingsorte und -zeiten Saison 2021/2022:**
+
+**A-Junioren:
+**Trainingszeiten: Di. 18:00 - 19:30 & Do. 19:00 - 20:30
+ Training/Spiele: Bronnen
+ Jahrgang: 2003/2004
+
+**B-Junioren:**
+ Trainingszeiten: Di. + Do. 17:30 - 19:00
+ Training/Spiele: Achstetten
+ Jahrgang: 2005/2006
+
+**C-Junioren:**
+ Trainingszeiten: Di. + Do. 18:00 - 19:30
+ Training/Spiele: Hüttisheim
+ Jahrgang: 2007/2008
+
+**D-Junioren:**
+ Trainingszeiten: Di. + Do. 17:30 - 19:00
+ Training/Spiele: Achstetten
+ Jahrgang: 2009/2010
+
+**E-Junioren:**
+ Trainingszeiten: Mo. + Mi. 17:30 - 19:00
+ Training/Spiele: Bronnen
+ Jahrgang: 2011/2012
+
+**E-Junioren:**
+ Trainingszeiten: Mo. + Mi. 17:30 - 19:00
+ Training/Spiele: Achstetten
+ Jahrgang: 2013/2014
+
+**Bambini:**
+ Trainingszeiten: Mi. 16:30 - 17:30
+ Training/Spiele: Achstetten
+ Jahrgang: 2015/2016
+=======
+Infotext: <p>Im Jugendbereich stellen wir alle Mannschaften von den A-Junioren bis zu den Bambini.</p><p><br></p><p>In allen Altersklassen spielen wir als Spielgemeinschaft (SGM) mit unseren Nachbarvereinen von der TSG Achstetten und dem FC Hüttisheim.</p><p><br></p><p><strong>Trainingsorte und -zeiten Saison 2021/2022:</strong></p><p><br></p><p><strong>A-Junioren:<br><br></strong>Trainingszeiten: Di. 18:00 - 19:30 &amp; Do. 19:00 - 20:30<br><br>Training/Spiele: Bronnen<br><br>Jahrgang: 2003/2004</p><p><br></p><p><strong>B-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2005/2006</p><p><br></p><p><strong>C-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 18:00 - 19:30<br><br>Training/Spiele: Hüttisheim<br><br>Jahrgang: 2007/2008</p><p><br></p><p><strong>D-Junioren:</strong><br><br>Trainingszeiten: Di. + Do. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2009/2010</p><p><br></p><p><strong>E-Junioren:</strong><br><br>Trainingszeiten: Mo. + Mi. 17:30 - 19:00<br><br>Training/Spiele: Bronnen<br><br>Jahrgang: 2011/2012</p><p><br></p><p><strong>E-Junioren:</strong><br><br>Trainingszeiten: Mo. + Mi. 17:30 - 19:00<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2013/2014</p><p><br></p><p><strong>Bambini:</strong><br><br>Trainingszeiten: Mi. 16:30 - 17:30<br><br>Training/Spiele: Achstetten<br><br>Jahrgang: 2015/2016</p>
+>>>>>>> 7869c9923c38c5da0bc5a3395142aa7b1bb08569
+
+----
+
+Uuid: tRpIGUsXgqiU3S67

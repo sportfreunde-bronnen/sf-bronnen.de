@@ -1,0 +1,44 @@
+Title: Ehrenriege
+
+----
+
+Headline: Die Ehrenriege der Sportfreunde Bronnen
+
+----
+
+Personen:
+
+- 
+  name: Adolf Schick (✝)
+  funktion: Ehrenvorsitzender
+  start: "1999"
+  bild: [ ]
+- 
+  name: Andreas Lebherz
+  funktion: Ehrenmitglied
+  start: "2011"
+  bild: [ ]
+- 
+  name: Oliver Bentele
+  funktion: Ehrenmitglied
+  start: "2019"
+  bild: [ ]
+- 
+  name: Martin Halder
+  funktion: Ehrenmitglied
+  start: "2025"
+  bild: [ ]
+- 
+  name: Karlheinz Kösling
+  funktion: Ehrenmitglied
+  start: "2025"
+  bild: [ ]
+- 
+  name: Heinz Maiser
+  funktion: Ehrenmitglied
+  start: "2025"
+  bild: [ ]
+
+----
+
+Uuid: Ghz4iMiSFtKi76gl
