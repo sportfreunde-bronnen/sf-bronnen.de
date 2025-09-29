@@ -1,8 +1,12 @@
+const sass = require('node-sass');
+
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
-      options: {livereload: true},
+      options: {
+        livereload: true,
+      },
       scss: {
         files: ['src/sass/**/*.scss'],
         tasks: ['sass', 'postcss'],
@@ -15,6 +19,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           outputStyle: 'compressed',
+          implementation: sass,
           sourceMap: false
         },
         files: [{
