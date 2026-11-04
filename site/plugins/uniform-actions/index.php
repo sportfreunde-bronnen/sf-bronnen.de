@@ -12,7 +12,9 @@ class PhpMailerAction extends Action
     {
         try {
 
+            // HTML-escaped data for the HTML body, raw data for the addresses
             $data = $this->form->data();
+            $rawData = $this->form->data('', '', false);
 
             $mail = new PHPMailer;
             $mail->isSMTP();
@@ -26,8 +28,8 @@ class PhpMailerAction extends Action
             $mail->CharSet = 'UTF-8';
 
             $mail->setFrom(c::get('mailerFrom'), 'sf-bronnen.de - Kontaktformular');
-            $mail->addAddress($data['empfaenger']);
-            $mail->addReplyTo($data['email']);
+            $mail->addAddress($rawData['empfaenger']);
+            $mail->addReplyTo($rawData['email']);
 
             $mail->isHTML(true);
 
@@ -68,7 +70,8 @@ class CertificateAction extends Action
 
             $client = new Client(['base_uri' => c::get('backendApiUri')]);
 
-            $data = $this->form->data();
+            // raw (not HTML-escaped) data, because it is sent as JSON
+            $data = $this->form->data('', '', false);
 
             $response = $client->request('POST', '/api/certificate', ['json' => [
                 'address' => $data['address'],

@@ -1,9 +1,9 @@
 {
 	"name": "getkirby/cms",
-	"description": "The Kirby 3 core",
+	"description": "The Kirby core",
 	"license": "proprietary",
 	"type": "kirby-cms",
-	"version": "3.9.2",
+	"version": "5.6.2",
 	"keywords": [
 		"kirby",
 		"cms",
@@ -24,8 +24,7 @@
 		"source": "https://github.com/getkirby/kirby"
 	},
 	"require": {
-		"php": ">=8.0.0 <8.3.0",
-		"ext-SimpleXML": "*",
+		"php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
 		"ext-ctype": "*",
 		"ext-curl": "*",
 		"ext-dom": "*",
@@ -36,26 +35,34 @@
 		"ext-libxml": "*",
 		"ext-mbstring": "*",
 		"ext-openssl": "*",
-		"claviska/simpleimage": "3.7.2",
-		"composer/semver": "3.3.2",
-		"filp/whoops": "2.14.6",
+		"ext-simplexml": "*",
+		"christian-riesen/base32": "1.6.0",
+		"claviska/simpleimage": "4.4.2",
+		"composer/semver": "3.5.2",
+		"erusev/parsedown": "1.8.0",
+		"erusev/parsedown-extra": "0.9.0",
+		"filp/whoops": "2.18.7",
 		"getkirby/composer-installer": "^1.2.1",
-		"laminas/laminas-escaper": "2.12.0",
+		"laminas/laminas-escaper": "2.18.0",
 		"michelf/php-smartypants": "1.8.1",
-		"phpmailer/phpmailer": "6.7.1",
-		"symfony/polyfill-intl-idn": "1.27.0",
-		"symfony/polyfill-mbstring": "1.27.0"
+		"phpmailer/phpmailer": "7.1.1",
+		"symfony/polyfill-intl-idn": "1.43.0",
+		"symfony/polyfill-mbstring": "1.43.0",
+		"symfony/yaml": "7.4.21"
 	},
 	"replace": {
 		"symfony/polyfill-php72": "*"
 	},
 	"suggest": {
-		"ext-PDO": "Support for using databases",
 		"ext-apcu": "Support for the Apcu cache driver",
 		"ext-exif": "Support for exif information from images",
 		"ext-fileinfo": "Improved mime type detection for files",
+		"ext-imagick": "Improved thumbnail generation",
 		"ext-intl": "Improved i18n number formatting",
 		"ext-memcached": "Support for the Memcached cache driver",
+		"ext-pdo": "Support for using databases",
+		"ext-redis": "Support for the Redis cache driver",
+		"ext-sodium": "Support for the crypto class and more robust session handling",
 		"ext-zip": "Support for ZIP archive file functions",
 		"ext-zlib": "Sanitization and validation for svgz files"
 	},
@@ -77,36 +84,31 @@
 		},
 		"optimize-autoloader": true,
 		"platform": {
-			"php": "8.0.0"
+			"php": "8.3.0"
 		},
 		"platform-check": false
-	},
-	"extra": {
-		"unused": [
-			"symfony/polyfill-intl-idn"
-		]
 	},
 	"scripts": {
 		"post-update-cmd": "curl -o cacert.pem https://curl.se/ca/cacert.pem",
 		"analyze": [
 			"@analyze:composer",
-			"@analyze:psalm",
-			"@analyze:phpcpd",
-			"@analyze:phpmd"
+			"@analyze:composer:unused",
+			"@analyze:psalm"
 		],
 		"analyze:composer": "composer validate --strict --no-check-version --no-check-all",
-		"analyze:phpcpd": "phpcpd --fuzzy --exclude tests --exclude vendor .",
-		"analyze:phpmd": "phpmd . ansi phpmd.xml.dist --exclude 'dependencies/*,tests/*,vendor/*'",
-		"analyze:psalm": "psalm",
-		"build": "./scripts/build",
+		"analyze:composer:unused": "./scripts/cpx icanhazstring/composer-unused:0.9.6 --no-progress",
+		"analyze:psalm": "./scripts/cpx vimeo/psalm:6.16.1",
 		"ci": [
 			"@fix",
 			"@analyze",
 			"@test"
 		],
-		"fix": "php-cs-fixer fix",
-		"test": "phpunit --stderr",
-		"test:coverage": "phpunit --stderr --coverage-html=tests/coverage",
+		"fix": "./scripts/cpx friendsofphp/php-cs-fixer:3.95.1 fix",
+		"test": "./scripts/cpx phpunit/phpunit:11.5.55",
+		"test:coverage": [
+			"@putenv XDEBUG_MODE=coverage",
+			"@test --coverage-html=tests/coverage"
+		],
 		"zip": "composer archive --format=zip --file=dist"
 	}
 }
