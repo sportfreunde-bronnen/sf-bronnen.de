@@ -1,108 +1,99 @@
 <?php snippet('header'); ?>
+<?php
+$title = (string)$page->title();
+$titleImage = $page->getTitleImage();
+$tags = $page->getDisplayTags();
+$overviewUrl = $page->parent()->url();
+$imageCaption = static function ($image) {
+    $caption = trim((string)$image->caption()->value());
+    return $caption !== '' ? $caption : trim((string)$image->description()->value());
+};
+?>
 <div class="page">
-    <div class="container p-0 container--first--article">
-        <div class="page page--single--article">
-            <div class="first--article">
-                <?php if ($page->getTitleImage()):?>
-                    <img src="<?= $page->getTitleImage()->resize(1500)->url();?>"/>
-                    <div class="first--article--headline">
-                        <span class="title">
-                            <?= $page->title();?>
-                        </span>
-                        <span class="date">
-                            <?= date('d.m.Y', strtotime($page->datum()));?>
-                            <?php if ($page->author2()->isEmpty()): ?>
-                                <i class="fa fa-user ml-2"></i>&nbsp; <?= $page->author()->toUser()?->alias() ?? 'SFB';?>
-                            <?php else: ?>
-                                <i class="fa fa-user ml-2"></i>&nbsp; <?= sprintf('%s', $page->author2());?>
-                            <?php endif; ?>
-                        </span>
-                    </div>
-                    <div class="first--article--desc text-center text-md-right">
-                        <?= $page->getTitleImage()->caption()->value() ?? $page->getTitleImage()->description();?>
-                    </div>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
-    <div class="container pl-sm-0 pr-sm-0 page--bericht">
-        <div class="row">
-            <div class="col-12">
-                <div class="blog-post single mt-0">
-                    <div class="mb-3 box-3">
-                        <div class="inner">
-                            <?php if (!$page->getTitleImage()): ?>
-                                <p class="date-meta text-grey-color pt-4">
-                                <span class="badge badge-primary">
-                                    <i class="fa fa-calendar"></i>&nbsp; <?= date('d.m.Y', strtotime($page->datum()));?>
-                                    <?php if ($page->author2()->isEmpty()): ?>
-                                        <i class="fa fa-user ml-2"></i>&nbsp; <?= sprintf('%s %s', site()->user($page->author())->firstName(), site()->user($page->author())->lastName());?>
-                                    <?php else: ?>
-                                        <i class="fa fa-user ml-2"></i>&nbsp; <?= sprintf('%s', $page->author2());?>
-                                    <?php endif; ?>
-                                </span>&nbsp
-                                </p>
-                                <h1 class="sub--1 tiny text-medium h3">
-                                    <?= $page->title();?>
-                                </h1>
-                            <?php endif; ?>
-                            <div class="blog-post-content pt-2">
-                                <?php if ($moreImages = $page->getMoreImages()): ?>
-                                    <?php $i = 0; foreach ($moreImages as $textImage): $i++; ?>
-                                        <figure class="figure<?= ($i % 2 === 0) ? ' pull-right' : ' pull-right'; ?>">
-                                            <img src="<?= $textImage->resize(500)->url();?>" class="figure-img img-fluid" alt="Bild: <?= $textImage->caption()->value() ?? $textImage->description();?>">
-                                            <figcaption class="figure-caption"><?= $textImage->caption()->value() ?? $textImage->description();?></figcaption>
-                                        </figure>
-                                    <?php endforeach; ?>
-                                <?php endif; ?>
-                                <?= $page->text()->kirbytext(); ?>
-                            </div>
-                            <div class="clearfix">
-                                <h6 class="mb-0">Tags:</h6>
-                                <ul class="list-unstyled list-inline blog-post-tags float-md-left animation">
-                                    <?php foreach (explode(',', $page->tags()) as $tag): ?>
-                                        <li class="list-inline-item"><i class="fa fa-tag"></i> <a href="<?= $page->parent()->url();?>?tag=<?= trim($tag);?>"><?= trim($tag);?></a></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
-                        </div>
+    <article class="page--bericht">
+        <header class="post-hero<?= $titleImage ? '' : ' post-hero--noimage';?>">
+            <div class="container pl-sm-0 pr-sm-0">
+                <div class="post-hero-inner">
+                    <a class="post-back" href="<?= $overviewUrl;?>"><i class="fa fa-long-arrow-left"></i> Alle Beiträge</a>
+                    <?php if ($tags): ?>
+                        <ul class="post-tags">
+                            <?php foreach ($tags as $tag): ?>
+                                <li><a href="<?= $overviewUrl;?>?tag=<?= urlencode($tag);?>"><?= esc($tag);?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+                    <h1 class="post-title"><?= $title;?></h1>
+                    <div class="post-meta post-meta--lg">
+                        <time datetime="<?= $page->getDateIso();?>"><i class="fa fa-calendar-o"></i><?= $page->getDateLong();?></time>
+                        <span><i class="fa fa-user-o"></i><?= esc($page->getAuthorName());?></span>
+                        <span><i class="fa fa-clock-o"></i><?= $page->getReadingTime();?> Min. Lesezeit</span>
                     </div>
                 </div>
             </div>
+        </header>
 
-            <div class="col-12 right-column">
+        <div class="container pl-sm-0 pr-sm-0">
+            <?php if ($titleImage): ?>
+                <figure class="post-cover">
+                    <img src="<?= $titleImage->resize(1500)->url();?>" alt="Titelbild - <?= esc($title);?> - Sportfreunde Bronnen">
+                    <?php if ($imageCaption($titleImage) !== ''): ?>
+                        <figcaption><?= esc($imageCaption($titleImage));?></figcaption>
+                    <?php endif; ?>
+                </figure>
+            <?php endif; ?>
 
-                <?php if ($page->galleryImages()->isNotEmpty()): ?>
-                    <?php snippet('gallery', ['images' => $page->galleryImages()->toFiles(), 'desc' => $page->galleryName()]); ?>
-                <?php endif; ?>
-
-                <h5 class="sub-heading-2 mb-0">Auch interessant</h5>
-                <div class="row">
-                    <?php foreach ($page->getLatestNews()->slice(1,3) as $post): ?>
-                        <div class="col-12 col-md-6 col-lg-4 news-box">
-                            <a href="<?= $post->url();?>" title="Zum Artikel - <?= $post->title();?>">
-                                <?php if ($post->teaserimage()->isNotEmpty()): ?>
-                                  <img src="<?= $post->teaserimage()->toFile()->url();?>" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
-                                <?php else: ?>
-                                    <img src="/assets/images/blog/blog-thumb-2.jpg" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
+            <div class="post-content-wrap">
+                <div class="post-content">
+                    <?php if ($moreImages = $page->getMoreImages()): ?>
+                        <?php foreach ($moreImages as $textImage): ?>
+                            <figure class="post-figure">
+                                <img src="<?= $textImage->resize(600)->url();?>" class="img-fluid" alt="Bild: <?= esc($imageCaption($textImage));?>">
+                                <?php if ($imageCaption($textImage) !== ''): ?>
+                                    <figcaption><?= esc($imageCaption($textImage));?></figcaption>
                                 <?php endif; ?>
-                            </a>
-                            <div class="news-box-content">
-                                <div class="time-stamp text-center">
-                                    <span class="text-weight-light"><?= date('d.m.Y', strtotime($post->datum()));?> - <?= $post->parents()->last()->title();?></span>
-                                </div>
-                                <h6 class="text-weight-medium"><a title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>"><?= $post->title();?></a></h6>
-                                <hr/>
-                                <p><?= substr($post->text(), 0, 100); ?>...</p>
-                                <ul class="list-unstyled list-inline text-normal">
-                                    <li class="list-inline-item text-weight-medium"><a class="h6" title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>">Weiterlesen</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
+                            </figure>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                    <?= $page->text()->kirbytext(); ?>
                 </div>
+
+                <footer class="post-footer">
+                    <?php if ($tags): ?>
+                        <div class="post-footer-tags">
+                            <span class="post-footer-label"><i class="fa fa-tag"></i> Themen</span>
+                            <ul class="post-tags">
+                                <?php foreach ($tags as $tag): ?>
+                                    <li><a href="<?= $overviewUrl;?>?tag=<?= urlencode($tag);?>"><?= esc($tag);?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+                    <a class="btn btn-1" href="<?= $overviewUrl;?>"><i class="fa fa-long-arrow-left"></i> Zurück zur Übersicht</a>
+                </footer>
             </div>
         </div>
-    </div>
+
+        <?php if ($page->galleryImages()->isNotEmpty()): ?>
+            <div class="post-gallery">
+                <?php snippet('gallery', ['images' => $page->galleryImages()->toFiles(), 'desc' => $page->galleryName()]); ?>
+            </div>
+        <?php endif; ?>
+
+        <?php $related = $page->getLatestNews()->not($page)->limit(3); ?>
+        <?php if ($related->count() > 0): ?>
+            <section class="post-related">
+                <div class="container pl-sm-0 pr-sm-0">
+                    <h2 class="blog-section-title">Auch interessant</h2>
+                    <div class="row">
+                        <?php foreach ($related as $post): ?>
+                            <div class="col-12 col-md-6 col-lg-4 post-related-item">
+                                <?php snippet('post-card', ['post' => $post]); ?>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </section>
+        <?php endif; ?>
+    </article>
 </div>
 <?php snippet('footer'); ?><?php snippet('close'); ?>

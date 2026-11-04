@@ -16,6 +16,9 @@
     <link href="/assets/js/plugins/owl-carousel2/owl.carousel.min.css" rel="stylesheet">
     <link href="/assets/js/plugins/owl-carousel2/owl.theme.default.min.css" rel="stylesheet">
     <link href="/assets/js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <?php foreach (($styles ?? []) as $style): ?>
+    <link href="/assets/css/<?= $style;?>.css?d=<?= filemtime('assets/css/' . $style . '.css');?>" rel="stylesheet">
+    <?php endforeach; ?>
     <?php if (EXTRACT_CONTENT === true): ?>
     <style type="text/css">
       div.page {

@@ -1,13 +1,52 @@
+// Brand colors
 $lightBlue: #0088df;
 $brightBlue: #007cb5;
 $darkBlue: #004869;
 $color-red: #d9534f;
 
-$navBgColor: #f9f9f9;
-$navBgColorDarker: #EAEAEA;
+// Extended blue palette (derived from the brand blues)
+$deepBlue: #00314a;
+$deeperBlue: #00222f;
+$paleBlue: #e8f3f9;
+$mistBlue: #f4f8fb;
+
+// Neutrals (slightly tinted blue)
+$textColor: #243240;
+$textMuted: #5f7080;
+$borderColor: #dde6ec;
+
+$navBgColor: #ffffff;
+$navBgColorDarker: $paleBlue;
+
+// Shape & elevation
+$radiusSm: 6px;
+$radius: 10px;
+$radiusLg: 16px;
+$shadowSm: 0 1px 3px rgba(0, 49, 74, 0.08), 0 1px 2px rgba(0, 49, 74, 0.06);
+$shadow: 0 4px 16px rgba(0, 49, 74, 0.1);
+$shadowLg: 0 12px 32px rgba(0, 49, 74, 0.16);
+$transition: all 0.2s ease;
 
 // Bootstrap overwrites
 $blue: $darkBlue;
+$body-color: $textColor;
+$link-color: $brightBlue;
+$link-hover-color: $darkBlue;
+$link-hover-decoration: none;
+
+$border-radius: $radiusSm;
+$border-radius-lg: $radius;
+$border-radius-sm: 4px;
+$border-color: $borderColor;
+
+$input-border-color: #c9d6df;
+$input-focus-border-color: $brightBlue;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba(0, 124, 181, 0.2);
+$input-btn-focus-color: rgba(0, 124, 181, 0.25);
+
+$dropdown-border-radius: $radius;
+$card-border-color: $borderColor;
+$card-border-radius: $radius;
 
 $navigationHeightXS: 116px;
 $navigationHeightXSArticle: 196px;

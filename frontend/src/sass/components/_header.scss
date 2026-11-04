@@ -1,8 +1,12 @@
 a.sfb-headline {
-  background: linear-gradient(to bottom, #ffffff 30%, #919191 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 8px rgba(0, 20, 31, 0.35);
   @include media-breakpoint-down(sm) {
     margin-top: 2rem;
+  }
+  &:hover,
+  &:focus {
+    color: #ffffff;
   }
 }

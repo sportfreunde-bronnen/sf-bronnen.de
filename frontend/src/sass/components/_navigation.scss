@@ -1,8 +1,11 @@
 .main-menu {
+  position: relative;
+  z-index: 1030;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
   background-color: $brightBlue;
+  box-shadow: 0 2px 10px rgba(0, 49, 74, 0.25);
 }
 
 .main-menu.one {
@@ -41,9 +44,6 @@ button.navbar-toggler {
   color: #fff;
 }
 
-.main-menu .navbar-toggler:hover {
-}
-
 .main-menu .navbar-toggler:focus {
   outline: none;
 }
@@ -51,14 +51,16 @@ button.navbar-toggler {
 .main-menu .navbar-toggler:hover,
 .main-menu .navbar-toggler:focus {
   color: #fff;
-  background-color: #fff;
+  background: none;
 }
 
 .main-menu .navbar-nav > .nav-item > a {
-  padding: 14px 15px 14px 15px;
+  padding: 15px 18px;
   color: #fff;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background-color 0.2s ease;
 }
 
 .main-menu .navbar-nav > .nav-item > .dropdown-toggle::after {
@@ -72,14 +74,15 @@ button.navbar-toggler {
 .main-menu .navbar-nav > .nav-item:hover > a,
 .main-menu .navbar-nav > .nav-item > a:hover,
 .main-menu .navbar-nav > .nav-item > a:focus {
+  background-color: rgba(255, 255, 255, 0.14);
 }
 
 .main-menu .navbar-nav > .nav-item.active {
-  background-color: $darkBlue;
-  margin-top: -1px;
-  border-right: 1px solid $darkBlue;
-  border-left: 1px solid $darkBlue;
-  border-top: 1px solid $lightBlue;
+  background-color: rgba(0, 49, 74, 0.28);
+  box-shadow: inset 4px 0 0 #fff;
+  @include media-breakpoint-up(md) {
+    box-shadow: inset 0 -3px 0 #fff;
+  }
 }
 
 .main-menu .navbar-nav > .nav-item.active > a {
@@ -152,8 +155,13 @@ button.navbar-toggler {
   background: none;
   border: none;
   @include media-breakpoint-up(md) {
-    border: none;
+    min-width: 15rem;
+    padding: 0.4rem 0;
+    overflow: hidden;
     background-color: $navBgColor;
+    border: none;
+    border-radius: 0 0 $radius $radius;
+    box-shadow: $shadowLg;
   }
 }
 
@@ -163,7 +171,10 @@ button.navbar-toggler {
   color: #fff;
   font-size: 0.9rem;
   @include media-breakpoint-up(md) {
-    color: #000;
+    padding: 7px 22px;
+    color: $textColor;
+    font-size: 0.95rem;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
   &.sub {
     padding-top: 5px;
@@ -172,27 +183,34 @@ button.navbar-toggler {
     font-size: 1rem;
     font-weight: bold;
     @include media-breakpoint-up(md) {
-      font-weight: normal;
-      color: #fff;
-      background-color: $brightBlue;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      padding: 6px 22px;
+      color: $darkBlue;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background-color: $mistBlue;
+      border-top: 1px solid $borderColor;
+      border-bottom: 1px solid $borderColor;
     }
     &:hover, &:focus {
-      @include media-breakpoint-up(md) {
-        background-color: $brightBlue;
-      }
       padding-left: 17px;
+      @include media-breakpoint-up(md) {
+        padding-left: 22px;
+        background-color: $mistBlue;
+      }
     }
     &.active {
       padding-left: 17px;
       @include media-breakpoint-up(md) {
-        background-color: $darkBlue;
+        padding-left: 22px;
+        background-color: $paleBlue;
       }
       &:hover, &:focus {
         padding-left: 17px;
         @include media-breakpoint-up(md) {
-          background-color: $brightBlue;
+          padding-left: 22px;
+          background-color: $paleBlue;
         }
       }
     }
@@ -206,6 +224,7 @@ button.navbar-toggler {
 .main-menu .dropdown-menu > a.dropdown-item:focus {
   background: none;
   @include media-breakpoint-up(md) {
+    color: $darkBlue;
     background-color: $navBgColorDarker;
   }
 }
@@ -215,6 +234,7 @@ button.navbar-toggler {
 .main-menu .dropdown-menu > a.dropdown-item.active:focus {
   background: none;
   @include media-breakpoint-up(md) {
+    color: $darkBlue;
     background-color: $navBgColorDarker;
   }
   font-weight: bold;

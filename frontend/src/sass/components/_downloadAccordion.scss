@@ -4,14 +4,18 @@
 
 #accordion-downloads .card {
   margin-top: 20px;
-  border: none;
+  overflow: hidden;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
 }
 
 #accordion-downloads .card-header {
   padding: 15px 30px;
   position: relative;
-  background-color: $navBgColor;
+  background-color: $mistBlue;
   border: none;
+  border-radius: 0;
   text-align: left;
 }
 
@@ -30,7 +34,7 @@
 #accordion-downloads .card-title a,
 #accordion-downloads .card-title a:hover,
 #accordion-downloads .card-title a:focus {
-  color: #323946;
+  color: $darkBlue;
   font-weight: normal;
   text-decoration: none;
 }
@@ -43,6 +47,7 @@
   color: #fff;
   cursor: pointer;
   background-color: $brightBlue;
+  transition: background-color 0.2s ease;
 }
 
 #accordion-downloads .card-body {

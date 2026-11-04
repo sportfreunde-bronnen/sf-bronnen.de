@@ -1,54 +1,276 @@
-div.page--single--article {
-  h1 {
-    text-shadow: none;
-    margin-bottom: 1rem;
-    @include media-breakpoint-down(md) {
-      font-size: 1.5rem;
+// Article detail page (blog post)
+
+.page--bericht {
+
+  // Header with topics, title and meta data
+  .post-hero {
+    padding: 2.5rem 0 6rem;
+    text-align: center;
+    background: linear-gradient(180deg, $mistBlue 0%, $paleBlue 100%);
+    border-bottom: 1px solid $borderColor;
+    @include media-breakpoint-down(sm) {
+      padding: 1.5rem 0 4.5rem;
     }
   }
-  padding-top: 0;
 
-  div.blog-post-content {
+  .post-hero--noimage {
+    padding-bottom: 3rem;
+  }
 
-    @include media-breakpoint-up(lg) {
-      text-align: justify;
+  .post-hero-inner {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 840px;
+  }
+
+  .post-back {
+    margin-bottom: 1.25rem;
+    display: inline-block;
+    color: $brightBlue;
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    .fa {
+      margin-right: 0.35rem;
+    }
+
+    &:hover,
+    &:focus {
+      color: $darkBlue;
+    }
+  }
+
+  .post-hero .post-tags {
+    margin-bottom: 0.75rem;
+    justify-content: center;
+
+    li {
+      background-color: #fff;
+      box-shadow: $shadowSm;
+    }
+  }
+
+  .post-title {
+    margin: 0 0 1.25rem;
+    color: $darkBlue;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-shadow: none;
+    @include media-breakpoint-down(md) {
+      font-size: 2.1rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 1.7rem;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  // Cover image overlapping the header
+  .post-cover {
+    margin: -4rem 0 0;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      margin: -3rem 15px 0;
+    }
+
+    img {
+      width: 100%;
+      max-height: 560px;
+      display: block;
+      object-fit: cover;
+      object-position: center 30%;
+      background-color: $paleBlue;
+      border-radius: $radiusLg;
+      box-shadow: $shadowLg;
+    }
+
+    figcaption {
+      margin-top: 0.75rem;
+      color: $textMuted;
+      font-size: 0.88rem;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+
+  // Reading column
+  .post-content-wrap {
+    margin: 0 auto;
+    padding: 2.75rem 0 1rem;
+    max-width: 760px;
+    @include media-breakpoint-down(sm) {
+      padding: 2rem 15px 1rem;
+    }
+  }
+
+  .post-content {
+    color: $textColor;
+    font-size: 1.15rem;
+    line-height: 1.8;
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    h2,
+    h3,
+    h4 {
+      margin: 2.25rem 0 1rem;
+      color: $darkBlue;
+      font-weight: 700;
+      letter-spacing: 0;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.45rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: rgba(0, 124, 181, 0.35);
+      text-underline-offset: 3px;
+
+      &:hover,
+      &:focus {
+        text-decoration-color: currentColor;
+      }
+    }
+
+    ul,
+    ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: $radius;
     }
 
     figure {
-      &.pull-right {
-        padding-left: 20px;
+      margin: 2rem 0;
+    }
+
+    blockquote {
+      margin: 2rem 0;
+      padding: 1.25rem 1.5rem;
+      color: $darkBlue;
+      font-size: 1.2rem;
+      font-style: italic;
+      background-color: $mistBlue;
+      border-left: 4px solid $brightBlue;
+      border-radius: 0 $radius $radius 0;
+
+      p:last-child {
+        margin-bottom: 0;
       }
     }
 
+    hr {
+      margin: 2.5rem 0;
+    }
   }
 
-  div.right-column {
-    position: relative;
-    padding-top: 1rem;
-    a {
-      color: inherit;
-      font-weight: bold;
+  // Additional image next to the text
+  .post-figure {
+    margin: 0.35rem 0 1.5rem;
+    @include media-breakpoint-up(md) {
+      width: 44%;
+      float: right;
+      margin: 0.35rem 0 1.25rem 2rem;
     }
-    div.images {
-      border-bottom: 3px solid #fff;
+
+    img {
+      width: 100%;
+      box-shadow: $shadow;
     }
-    ul.list-post-1 {
-      li {
+
+    figcaption {
+      margin-top: 0.5rem;
+      color: $textMuted;
+      font-size: 0.82rem;
+      line-height: 1.4;
+    }
+  }
+
+  // Topics and back link below the text
+  .post-footer {
+    margin-top: 2.5rem;
+    padding-top: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $borderColor;
+
+    .post-footer-tags {
+      margin-right: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .post-footer-label {
+      margin: 0 0.75rem 0.4rem 0;
+      color: $textMuted;
+      font-size: 0.9rem;
+      font-weight: 600;
+
+      .fa {
+        margin-right: 0.3rem;
+        color: $brightBlue;
       }
     }
-  }
 
-  div.first--article {
-    @include media-breakpoint-down(sm) {
-      height: calc(100vh - #{$navigationHeightXSArticleDetail});
-      height: calc((var(--vh, 1vh) * 100) - #{$navigationHeightXSArticleDetail});
-      img {
-        height: 100%;
-        width: 100% ! important;
-        object-fit: cover;
-        object-position: top center;
-      }
+    .post-tags {
+      margin: 0;
+    }
+
+    .btn {
+      margin: 0.25rem 0;
     }
   }
 
+  .post-gallery {
+    margin-top: 3rem;
+  }
+
+  // "Auch interessant"
+  .post-related {
+    margin-top: 3.5rem;
+    padding: 0.5rem 0 1.5rem;
+    background-color: $mistBlue;
+    border-top: 1px solid $borderColor;
+
+    .blog-section-title {
+      margin-top: 2.5rem;
+    }
+  }
 }

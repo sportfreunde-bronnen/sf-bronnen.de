@@ -1,25 +1,63 @@
 body {
-  font: 16px/24px 'Saira Semi Condensed', sans-serif;
-  color: #323946;
+  font: 17px/1.65 'Saira Semi Condensed', sans-serif;
+  color: $textColor;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 div.page {
-  background: linear-gradient(to bottom, #ffffff 30%, #dddddd 100%);
+  background: #fff;
+}
+
+::selection {
+  color: #fff;
+  background: $brightBlue;
 }
 
 /* Standard Styles Starts */
 
 a {
   color: $brightBlue;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 
 a:hover,
 a:focus {
-  color: #2d2d2d;
+  color: $darkBlue;
 }
 
 a:focus {
   outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid $lightBlue;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+hr {
+  border-top: 1px solid $borderColor;
+}
+
+.main-container img.img-fluid,
+.main-container figure img,
+.page img.figure-img {
+  border-radius: $radiusSm;
+}
+
+blockquote {
+  padding: 0.75rem 1.25rem;
+  color: $textMuted;
+  background-color: $mistBlue;
+  border-left: 4px solid $brightBlue;
+  border-radius: 0 $radiusSm $radiusSm 0;
+}
+
+p.lead {
+  color: $darkBlue;
+  line-height: 1.5;
 }
 
 /* Heading Styles Starts */
@@ -31,47 +69,49 @@ h4,
 h5,
 h6 {
   font-family: 'Saira Semi Condensed', sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 h3 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 h4 {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 @include media-breakpoint-down(md) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 
 @include media-breakpoint-down(sm) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -92,7 +132,8 @@ h6 {
 }
 
 h2.main-heading-1 {
-  color: #004869;
+  color: $darkBlue;
+  font-weight: 500;
 }
 
 .main-heading-1::after,
@@ -102,12 +143,13 @@ h2.main-heading-1 {
 }
 
 .main-heading-1::after {
-  margin-top: 30px;
-  width: 100px;
-  height: 2px;
-  background-color: #d5d5d5;
+  margin-top: 20px;
+  width: 64px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: $brightBlue;
   @include media-breakpoint-down(sm) {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -137,42 +179,44 @@ h2.main-heading-1 {
 
 .sub-heading-1::after {
   margin-top: 20px;
-  width: 70px;
-  height: 2px;
+  width: 56px;
+  height: 3px;
+  border-radius: 3px;
   background-color: $brightBlue;
 }
 
 .sub-heading-1.tiny::after {
   margin-top: 12px;
-  width: 70px;
-  height: 2px;
+  width: 56px;
+  height: 3px;
 }
 
 .sub-heading-2 {
   margin-top: 0;
   margin-bottom: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #b4b4b4;
+  border-bottom: 1px solid $borderColor;
 }
 
 .section-heading-1 {
   margin-top: 30px;
   margin-bottom: 25px;
-  color: #222;
-  font-size: 30px;
-  font-weight: 300;
+  color: $darkBlue;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .section-heading-1 span {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .section-heading-1:after {
   content: "";
-  margin-top: 15px;
-  width: 70px;
-  height: 3px;
+  margin-top: 14px;
+  width: 56px;
+  height: 4px;
   display: block;
+  border-radius: 4px;
   background-color: $brightBlue;
 }
 
@@ -187,26 +231,50 @@ h2.main-heading-1 {
 
 /* Form & Buttons Styles Starts */
 
+.btn {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border-radius: $radiusSm;
+  transition: $transition;
+}
+
+.btn-1,
+.btn-main,
+.btn-black,
+.btn-primary {
+  padding: 0.55rem 1.4rem;
+  border: none;
+  box-shadow: $shadowSm;
+}
+
+.btn-1:hover,
+.btn-main:hover,
+.btn-black:hover,
+.btn-primary:hover {
+  box-shadow: $shadow;
+  transform: translateY(-1px);
+}
+
 .btn-main {
-  background-color: #323946;
+  background-color: $darkBlue;
 }
 
 .btn-main:hover,
 .btn-main:focus,
 .btn-main:active,
 .btn-main.active {
-  background-color: #2d2d2d;
+  background-color: $deepBlue;
 }
 
 .btn-black {
-  background-color: #252525;
+  background-color: $deepBlue;
 }
 
 .btn-black:hover,
 .btn-black:focus,
 .btn-black:active,
 .btn-black.active {
-  background-color: #414a5c;
+  background-color: $darkBlue;
 }
 
 .btn-1 {
@@ -247,14 +315,15 @@ h2.main-heading-1 {
 /* Top Bar Styles Starts */
 
 .top-bar {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: $brightBlue;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 15px;
+  background-color: $deepBlue;
 }
 
 .top-bar,
 .top-bar a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .top-bar ul {
@@ -264,9 +333,10 @@ h2.main-heading-1 {
 .top-bar li {
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
+.top-bar a:hover,
 .top-bar li a:hover {
   color: #89daff;
 }
@@ -274,9 +344,9 @@ h2.main-heading-1 {
 /* Header Styles Starts */
 
 .main-header {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border: none;
   background-color: $darkBlue;
+  background-image: linear-gradient(120deg, $deepBlue 0%, $darkBlue 50%, #0a6a96 100%);
 }
 
 .main-header .logo {
@@ -316,11 +386,11 @@ h2.main-heading-1 {
 
 .main-header {
   .logo {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 2.5rem;
     color: #fff;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     @include media-breakpoint-down(md) {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
@@ -472,12 +542,14 @@ h2.main-heading-1 {
 /* Main Banner Styles Starts */
 
 .main-banner {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   background-color: $darkBlue;
+  background-image: linear-gradient(120deg, $darkBlue 0%, $brightBlue 100%);
   color: #fff ! important;
   h1 {
     margin-bottom: 0;
+    font-weight: 500;
   }
   @include media-breakpoint-down(sm) {
     padding-top: 20px;
@@ -490,12 +562,12 @@ h2.main-heading-1 {
 .breadcrumb {
   padding: 20px 0 15px;
   background: none;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid $borderColor;
 }
 
 .breadcrumb .breadcrumb-item,
 .breadcrumb .breadcrumb-item a {
-  color: #30383b;
+  color: $textMuted;
 }
 
 .breadcrumb > .breadcrumb-item + .breadcrumb-item:before {
@@ -529,11 +601,11 @@ h2.main-heading-1 {
 }
 
 .section-style-1 {
-  background-color: #edf3f5;
+  background-color: $paleBlue;
 }
 
 .section-style-2 {
-  background-color: #f7f7f7;
+  background-color: $mistBlue;
 }
 
 /* Section Info Styles Starts */
@@ -890,9 +962,18 @@ h2.main-heading-1 {
 .news-box {
   margin-top: 15px;
   margin-bottom: 10px;
-  border: 1px solid #e7e7e7;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
   img {
     width: 100%;
+  }
+  &:hover {
+    box-shadow: $shadowLg;
+    transform: translateY(-3px);
   }
 }
 
@@ -903,7 +984,7 @@ h2.main-heading-1 {
 
 .news-box-content,
 .news-box-content a {
-  color: #323946;
+  color: $textColor;
 }
 
 .news-box-content a:hover,
@@ -913,12 +994,15 @@ h2.main-heading-1 {
 
 .news-box-content .time-stamp {
   position: absolute;
-  top: -25px;
-  padding: 10px;
+  top: -18px;
+  left: 20px;
+  padding: 6px 14px;
   min-width: 70px;
   width: auto;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
+  border-radius: 20px;
+  box-shadow: $shadow;
   background-color: $brightBlue;
 }
 
@@ -933,13 +1017,13 @@ h2.main-heading-1 {
 
 .news-box-content h6,
 .news-box-content h6 a {
-  color: #222;
+  color: $darkBlue;
 }
 
 .news-box-content ul {
   margin-bottom: 0;
   padding-top: 15px;
-  border-top: 1px solid #e7e7e7;
+  border-top: 1px solid $borderColor;
 }
 
 .news-box-content ul > li {
@@ -1036,29 +1120,6 @@ h2.main-heading-1 {
 }
 
 /* Gallery Page Styles Starts */
-
-ul#article-filter {
-  margin-bottom: 30px;
-}
-
-ul#article-filter li {
-  padding-bottom: 15px;
-}
-
-ul#article-filter li a.btn {
-  padding: 6px 16px;
-  font-size: 14px;
-  color: #323946;
-  background-color: #ddd;
-}
-
-ul#article-filter li a:hover,
-ul#article-filter li a.active,
-ul#article-filter li a:focus {
-  color: #fff;
-  outline: none;
-  background: $darkBlue;
-}
 
 ul#gallery-grid {
   padding: 0;
@@ -1456,9 +1517,11 @@ ul#gallery-grid .hover-content:hover a {
 
 .blog-comments-form .form-control {
   padding: 18px;
-  color: #909090;
-  background-color: #fafafa;
-  border: 1px solid #b7b7b7;
+  color: $textColor;
+  background-color: #fff;
+  border: 1px solid $input-border-color;
+  border-radius: $radiusSm;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .blog-comments-form input[type=text].form-control,
@@ -1488,11 +1551,24 @@ ul#gallery-grid .hover-content:hover a {
   margin-bottom: 20px;
 }
 
+.contact-form label {
+  margin-bottom: 0.4rem;
+  color: $darkBlue;
+  font-weight: 500;
+}
+
 .contact-form .form-control {
   padding: 20px;
-  color: #909090;
-  background-color: #fafafa;
-  border: 1px solid #b7b7b7;
+  color: $textColor;
+  background-color: #fff;
+  border: 1px solid $input-border-color;
+  border-radius: $radiusSm;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-form .form-control:focus,
+.blog-comments-form .form-control:focus {
+  border-color: $brightBlue;
 }
 
 .contact-form input[type=text].form-control,
@@ -1672,6 +1748,27 @@ ul#gallery-grid .hover-content:hover a {
 
 #blog-post-carousel .box-3 {
   margin: 40px 10px;
+}
+
+#blog-post-carousel .owl-stage,
+#blog-post-carousel .owl-item {
+  display: flex;
+}
+
+#blog-post-carousel .owl-item .news-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#blog-post-carousel .owl-item .news-box-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+#blog-post-carousel .owl-item .news-box-content ul {
+  margin-top: auto;
 }
 
 #featured-blog-post-carousel .box-3 {
@@ -2164,8 +2261,6 @@ ul#gallery-grid .hover-content:hover a {
 
 .no-border-radius,
 .flat,
-#accordion-downloads .card,
-#accordion-downloads .card-header,
 #accordion-help .card {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -2200,8 +2295,6 @@ ul#gallery-grid li .img-responsive,
   border-radius: 0 5px 5px 0;
 }
 
-#main-slider .carousel-control-prev,
-#main-slider .carousel-control-next,
 .list-style-5 li .fa {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -2226,7 +2319,6 @@ ul#gallery-grid li .img-responsive,
 }
 
 .no-boxshadow,
-.form-control:focus,
 .main-menu .navbar-form .form-control,
 .main-menu .navbar-form .btn,
 #accordion-downloads .card,

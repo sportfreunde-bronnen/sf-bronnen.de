@@ -8,37 +8,85 @@ Headline: Ihre Räumlichkeit für Veranstaltungen (Hochzeit, Geburtstag, Firmenf
 
 Text:
 
-### Das bieten wir Ihnen
+Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Es liegt idyllisch im Grünen und lässt sich flexibel nutzen: für Ihre Hochzeit, den runden Geburtstag oder die Firmenfeier. Dank Photovoltaikanlage mit Batteriespeicher feiern Sie dabei größtenteils mit Sonnenstrom direkt vom eigenen Dach.
 
-Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Das SVZ liegt idyllisch im Grünen und hat eine große und überdachte Terrasse (ca. 80m²), die bei schlechter Witterung mit Hilfe einer ausziehbaren Plane einfach und unkompliziert geschlossen werden kann.
+----
 
-Die Räumlichkeiten lassen sich flexibel nutzen und aufteilen. Der "kleine Gastraum" (75m²) mit großzügiger Theke bietet Platz für bis zu 35 Personen. Bei Bedarf kann der Saal mit zusätzlichen 90m² mitbenutzt werden. Eine Bestuhlung für **bis zu 100 Personen** ist somit möglich.
+Highlights:
 
-In der modernen und voll ausgestatteten Küche können Speisen sowohl aufgewärmt als auch frisch zubereitet werden. Ein integrierter Kühlraum hält Ihre Getränke und Speisen stets kühl.
+- 
+  value: 165 m²
+  label: Fläche, teilbar in zwei Räume
+- 
+  value: 100
+  label: Sitzplätze
+- 
+  value: 80 m²
+  label: überdachte Terrasse
+- 
+  value: 5 Min.
+  label: bis Laupheim
 
-Für Vorträge oder Filmpräsentationen steht ein fest installierter Beamer sowie eine Musikanlage und ein 65 Zoll Fernseher zur Verfügung. Sie benötigen für Ihren Vortrag oder Ihre Präsentation einen Internetanschluss? Kein Problem - unser Gast WLAN (50 MBit/s) steht Ihnen als Besucher kostenfrei zur Verfügung.
+----
 
-Für die kleinsten Gäste ist ebenfalls gesorgt: Ein Wickeltisch sowie Kinderstühle sind vorhanden. Zudem bietet die weitläufige Umgebung mit direkt angrenzendem Spielplatz jede Menge Platz zum Spielen und Toben für Kinder jeden Alters.
+Features:
 
-Auch Ihr ökologischer Fußabdruck wird Ihnen eine Veranstaltung in unserem SVZ danken. Durch unsere Photovoltaikanlage inklusive Batteriespeicher versorgen Sie sich während Ihrer Veranstaltung zum größten Teil mit Sonnenstrom direkt vom eigenen Dach.
-
-Großzügige **Parkmöglichkeiten** finden Sie direkt vor der Tür.
-
-Weitere Informationen (Nutzungsvertrag, Preisliste, Hausordnung etc.) finden Sie unter dem Punkt **[Downloads](/gesamtverein/allgemeines/downloads) (Sportvereinszentrum)**.
-
-Bei Fragen können Sie sich jederzeit über unser **[Kontaktformular](/home/kontakt?rec=svz)** an uns wenden.
-
-Wir freuen uns auf Ihre Anfrage!
-
-### Jetzt Verfügbarkeit prüfen
-Sie interessieren sich, ob das SVZ an Ihrem gewünschten Termin noch frei ist? **(link: https://sf-bronnen.de/gesamtverein/allgemeines/svz/buchungen text: Hier entlang zum Buchungskalender)**.
+- 
+  icon: fa-map-marker
+  title: Ideale Lage
+  text: >
+    Nur fünf Fahrminuten von Laupheim entfernt,
+    zwischen Ulm und Biberach. Idyllisch im Grünen
+    mit großzügigen Parkmöglichkeiten direkt vor der Tür.
+- 
+  icon: fa-th-large
+  title: Flexible Räume
+  text: >
+    Der kleine Gastraum (75 m²) mit großzügiger Theke bietet
+    Platz für bis zu 35 Personen. Mit dem Saal (zusätzlich 90 m²)
+    ist eine Bestuhlung für bis zu 100 Personen möglich.
+- 
+  icon: fa-sun-o
+  title: Große Terrasse
+  text: >
+    Rund 80 m² überdacht. Bei schlechter Witterung lässt sie sich mit einer
+    ausziehbaren Plane einfach und unkompliziert schließen.
+- 
+  icon: fa-cutlery
+  title: Voll ausgestattete Küche
+  text: >
+    Speisen aufwärmen oder frisch zubereiten: mit Industriespülmaschine
+    und integriertem Kühlraum für Getränke und Speisen.
+- 
+  icon: fa-television
+  title: Technik für Ihre Präsentation
+  text: >
+    Fest installierter Beamer, Musikanlage und 65 Zoll Fernseher.
+    Dazu kostenloses Gast-WLAN für alle Besucher.
+- 
+  icon: fa-child
+  title: Familienfreundlich
+  text: >
+    Wickeltisch, Kinderstühle und ein direkt angrenzender Spielplatz
+    mit viel Platz zum Spielen und Toben für Kinder jeden Alters.
+- 
+  icon: fa-leaf
+  title: Sonnenstrom vom eigenen Dach
+  text: >
+    Unsere Photovoltaikanlage inklusive Batteriespeicher versorgt Ihre
+    Veranstaltung zum größten Teil mit regenerativer Energie. E-Fahrzeuge
+    laden Sie vor Ort (Typ 2, 11 kW).
+- 
+  icon: fa-wheelchair
+  title: Barrierefrei
+  text: >
+    Barrierefreier Zugang über eine Rampe
+    und Toilette für Menschen mit Behinderung.
 
 ----
 
 Facts:
 
-### Kurz und knackig
-- **(link: https://sf-bronnen.de/gesamtverein/allgemeines/svz/buchungen text: Verfügbarkeit prüfen)**
 - 2008 erbaut
 - Bis zu 100 Sitzplätze (5 Tische mit 35 Stühlen im Gastraum, 12 Tische und 72 Stühle im Saal)
 - Theater-, Reihen- und Inselbestuhlung möglich
@@ -47,7 +95,7 @@ Facts:
 - Komplett ausgestattete Küche
 - Industriespülmaschine
 - Kühlraum
-- Große Terasse
+- Große Terrasse
 - Toller Kinderspielplatz
 - Fest installierter Beamer
 - 65 Zoll Fernseher mit Kabelanschluss
@@ -66,11 +114,11 @@ Facts:
 
 Gallery:
 
+- file://fwlGazTcIpM5CBfZ
+- file://RUoOSLi8iM8mHqDz
+- file://ts4m2VZU0I4xcM7e
 - file://cMUUudR3k89Uck4t
 - file://5ZNHgf1fVqv3MruX
-- file://fwlGazTcIpM5CBfZ
-- file://ts4m2VZU0I4xcM7e
-- file://RUoOSLi8iM8mHqDz
 - file://it0HpXsiaPrfG5MP
 - file://mDhD3stPsTI17otQ
 
@@ -97,6 +145,47 @@ Quotes:
     technischen Ausstattung blieben
     keinerlei Wünsche unsererseits offen.
     Wir können es absolut empfehlen.
+
+----
+
+Availabilitytext:
+
+Wählen Sie einen Monat und sehen Sie auf einen Blick, ob das SVZ an Ihrem Wunschtermin **frei (grün)** oder **belegt (rot)** ist. Ist Ihr Termin noch frei? Dann freuen wir uns über Ihre Anfrage über unser **[Kontaktformular](/home/kontakt?rec=svz)**.
+
+----
+
+Prices:
+
+- 
+  package: getraenke
+  room: klein
+  rent: 160
+  minimum: 140
+  memberrent: 80
+- 
+  package: getraenke
+  room: gross
+  rent: 210
+  minimum: 190
+  memberrent: 110
+- 
+  package: raum
+  room: klein
+  rent: 350
+  minimum: 0
+  memberrent: 220
+- 
+  package: raum
+  room: gross
+  rent: 500
+  minimum: 0
+  memberrent: 300
+
+----
+
+Pricenotes:
+
+Alle Preise in Euro. Der Tarif "Aktive Mitglieder" gilt für aktive Mitglieder der Sportfreunde Bronnen. Sie wünschen eine Servicekraft oder haben weitere Fragen? Sprechen Sie uns einfach an. Nutzungsvertrag, aktuelle Preisliste und Hausordnung finden Sie unter **[Downloads](/gesamtverein/allgemeines/downloads)** (Sportvereinszentrum).
 
 ----
 

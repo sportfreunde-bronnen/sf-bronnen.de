@@ -1,0 +1,1514 @@
+// Sportvereinszentrum (SVZ) landing page
+// Standalone stylesheet (loaded in addition to sfb.css by the svz template), so the page
+// can be moved to its own subdomain later on.
+
+@import "variables";
+
+// Page specific colors
+$svzAccent: #ffb703;
+$svzFree: #1a9b67;
+$svzFreeBg: #e7f6ef;
+$svzFreeText: #12794f;
+$svzBooked: #c8423d;
+$svzBookedBg: #fdeceb;
+$svzBookedText: #a8302b;
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes svz-kenburns {
+  from {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.15) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+@keyframes svz-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.svz {
+  color: $textColor;
+  font-size: 1rem;
+  font-weight: 400;
+
+  h1, h2, h3, h4 {
+    margin: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+// ------------------------------------------------------------------
+// Buttons
+// ------------------------------------------------------------------
+.svz-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  .fa {
+    margin-right: 0.55rem;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-2px);
+  }
+
+  &--accent {
+    background: $svzAccent;
+    color: $deepBlue;
+    box-shadow: 0 8px 24px rgba($svzAccent, 0.35);
+
+    &:hover,
+    &:focus {
+      background: #ffc533;
+      color: $deepBlue;
+    }
+  }
+
+  &--primary {
+    background: $brightBlue;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba($brightBlue, 0.28);
+
+    &:hover,
+    &:focus {
+      background: $darkBlue;
+      color: #fff;
+    }
+  }
+
+  &--outline {
+    border-color: $brightBlue;
+    background: transparent;
+    color: $brightBlue;
+
+    &:hover,
+    &:focus {
+      background: $brightBlue;
+      color: #fff;
+    }
+  }
+
+  &--ghost {
+    border-color: rgba(#fff, 0.55);
+    background: rgba(#fff, 0.08);
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      border-color: #fff;
+      background: #fff;
+      color: $darkBlue;
+    }
+  }
+
+  &--link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #fff;
+
+    .fa {
+      margin-right: 0;
+      margin-left: 0.55rem;
+      transition: transform 0.15s ease;
+    }
+
+    &:hover,
+    &:focus {
+      transform: none;
+      color: $svzAccent;
+
+      .fa {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  &--small {
+    padding: 0.5rem 1.15rem;
+    font-size: 0.95rem;
+  }
+
+  &--large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+.svz-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  .svz-btn {
+    margin: 0 0.75rem 0.75rem 0;
+  }
+
+  &--center {
+    justify-content: center;
+
+    .svz-btn {
+      margin-right: 0.4rem;
+      margin-left: 0.4rem;
+    }
+  }
+}
+
+// ------------------------------------------------------------------
+// Hero
+// ------------------------------------------------------------------
+.svz-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(540px, 80vh, 780px);
+  padding: clamp(56px, 9vw, 110px) 0 clamp(32px, 5vw, 56px);
+  overflow: hidden;
+  background: $deeperBlue;
+  color: #fff;
+  isolation: isolate;
+
+  &::before {
+    @include fill;
+    z-index: -1;
+    content: "";
+    background:
+      linear-gradient(100deg, rgba($deeperBlue, 0.9) 0%, rgba($deepBlue, 0.68) 36%, rgba($darkBlue, 0.18) 70%, rgba($deeperBlue, 0.05) 100%),
+      linear-gradient(0deg, rgba($deeperBlue, 0.6) 0%, rgba($deeperBlue, 0) 42%);
+  }
+
+  &__media {
+    @include fill;
+    z-index: -2;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 62%;
+      transform-origin: 70% 50%;
+      animation: svz-kenburns 30s ease-in-out infinite alternate;
+    }
+  }
+
+  &__inner {
+    width: 100%;
+  }
+
+  &__eyebrow {
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem;
+    color: $svzAccent;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    &::before {
+      width: 38px;
+      height: 2px;
+      margin-right: 0.8rem;
+      content: "";
+      background: currentColor;
+    }
+  }
+
+  &__title {
+    margin: 0 0 1rem;
+    font-size: clamp(2.7rem, 7.5vw, 5.4rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.35);
+    color: #fff;
+  }
+
+  &__lead {
+    max-width: 660px;
+    margin: 0;
+    color: rgba(#fff, 0.92);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    line-height: 1.45;
+  }
+
+  .svz-actions {
+    margin-top: 2rem;
+  }
+}
+
+.svz-stats {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  margin-top: clamp(28px, 5vw, 56px);
+  overflow: hidden;
+  border: 1px solid rgba(#fff, 0.22);
+  border-radius: $radius;
+  background: rgba(#fff, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  li {
+    padding: 18px 20px;
+    background: rgba($deeperBlue, 0.5);
+  }
+
+  strong {
+    display: block;
+    color: #fff;
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  span {
+    display: block;
+    margin-top: 0.2rem;
+    color: rgba(#fff, 0.8);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+// ------------------------------------------------------------------
+// Tabs
+// ------------------------------------------------------------------
+.svz-tabs {
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--svz-nav-h, 0);
+  z-index: 20;
+  border-bottom: 1px solid $borderColor;
+  background: rgba(#fff, 0.94);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      margin-bottom: -1px;
+      padding: 1.05rem 1.3rem;
+      border-bottom: 3px solid transparent;
+      color: $textMuted;
+      font-weight: 700;
+      white-space: nowrap;
+      text-decoration: none;
+
+      .fa {
+        margin-right: 0.5rem;
+        color: $brightBlue;
+        font-size: 1.1em;
+      }
+
+      &:hover {
+        color: $darkBlue;
+      }
+
+      &.is-active {
+        border-bottom-color: $svzAccent;
+        color: $darkBlue;
+      }
+    }
+  }
+
+  &__cta {
+    margin-left: 1rem;
+    flex-shrink: 0;
+  }
+}
+
+// ------------------------------------------------------------------
+// Panels
+// ------------------------------------------------------------------
+.svz-panel {
+  padding: clamp(44px, 6vw, 84px) 0;
+  scroll-margin-top: 120px;
+}
+
+html:not(.svz-js) .svz-panel + .svz-panel {
+  border-top: 1px solid $borderColor;
+}
+
+.svz-js .svz-panel:not(.is-active) {
+  display: none;
+}
+
+.svz-js .svz-panel.is-active {
+  animation: svz-fade 0.4s ease;
+}
+
+.svz-section-head {
+  max-width: 780px;
+  margin-bottom: clamp(28px, 4vw, 48px);
+
+  &--spaced {
+    margin-top: clamp(56px, 8vw, 104px);
+  }
+}
+
+.svz-eyebrow {
+  margin: 0 0 0.6rem;
+  color: $brightBlue;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  &--light {
+    color: $svzAccent;
+  }
+}
+
+.svz-title {
+  margin: 0 0 1rem;
+  color: $deepBlue;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+
+  &--light {
+    color: #fff;
+  }
+}
+
+.svz-lead {
+  color: $textMuted;
+  font-size: 1.2rem;
+  line-height: 1.6;
+
+  p {
+    margin: 0 0 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong,
+  a {
+    color: $darkBlue;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.svz-notice {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem 0 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba($brightBlue, 0.22);
+  border-radius: $radius;
+  background: $paleBlue;
+  color: $darkBlue;
+
+  > .fa {
+    margin: 0.2rem 0.9rem 0 0;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 0.5rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  &--warning {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    border-color: #f0d58a;
+    background: #fff6e0;
+    color: #7a5a00;
+  }
+}
+
+// ------------------------------------------------------------------
+// Infos: features
+// ------------------------------------------------------------------
+.svz-features {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.svz-feature {
+  padding: 28px 24px;
+  border: 1px solid $borderColor;
+  border-radius: $radiusLg;
+  background: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba($brightBlue, 0.35);
+    box-shadow: $shadow;
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 1.1rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, $paleBlue, #fff);
+    box-shadow: inset 0 0 0 1px rgba($brightBlue, 0.16);
+    color: $brightBlue;
+    font-size: 1.5rem;
+  }
+
+  &__title {
+    margin: 0 0 0.5rem;
+    color: $deepBlue;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin: 0;
+    color: $textMuted;
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+}
+
+// ------------------------------------------------------------------
+// Infos: exterior view
+// ------------------------------------------------------------------
+.svz-exterior {
+  position: relative;
+  margin: clamp(40px, 6vw, 72px) 0 0;
+  overflow: hidden;
+  border-radius: $radiusLg;
+  box-shadow: $shadow;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: rgba($deeperBlue, 0.78);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-size: 0.9rem;
+
+    .fa {
+      margin-right: 0.4rem;
+      color: $svzAccent;
+    }
+  }
+}
+
+// ------------------------------------------------------------------
+// Infos: gallery
+// ------------------------------------------------------------------
+.svz-gallery {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 14px;
+
+  &__item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: $radius;
+    background: $paleBlue;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    &:hover img,
+    &:focus img {
+      transform: scale(1.06);
+    }
+
+    &.is-feature {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    &.is-wide {
+      grid-column: span 2;
+    }
+
+    &.is-full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2.4rem 1rem 0.8rem;
+    background: linear-gradient(to top, rgba($deeperBlue, 0.88), rgba($deeperBlue, 0));
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.3;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  &__zoom {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(#fff, 0.92);
+    color: $darkBlue;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+}
+
+.svz-gallery__item:hover .svz-gallery__caption,
+.svz-gallery__item:focus .svz-gallery__caption {
+  transform: none;
+}
+
+.svz-gallery__item:hover .svz-gallery__zoom,
+.svz-gallery__item:focus .svz-gallery__zoom {
+  opacity: 1;
+  transform: none;
+}
+
+@media (hover: none) {
+  .svz-gallery__caption {
+    transform: none;
+  }
+}
+
+// ------------------------------------------------------------------
+// Infos: facts
+// ------------------------------------------------------------------
+.svz-facts {
+  display: grid;
+  grid-gap: clamp(24px, 5vw, 64px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  margin-top: clamp(56px, 8vw, 104px);
+  padding: clamp(28px, 5vw, 56px);
+  border: 1px solid $borderColor;
+  border-radius: $radiusLg + 8;
+  background: linear-gradient(135deg, $mistBlue, $paleBlue);
+
+  &__intro .svz-title {
+    margin-bottom: 0.6rem;
+  }
+
+  &__intro .svz-lead {
+    margin: 0;
+  }
+
+  &__list ul {
+    @include list-reset;
+    column-gap: 40px;
+    columns: 2;
+  }
+
+  &__list li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 2.1rem;
+    border-bottom: 1px dashed rgba($darkBlue, 0.16);
+    line-height: 1.4;
+    break-inside: avoid;
+    page-break-inside: avoid;
+
+    &::before {
+      position: absolute;
+      top: 0.62rem;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.35rem;
+      height: 1.35rem;
+      border-radius: 50%;
+      background: $svzFree;
+      color: #fff;
+      content: "\f00c";
+      font-family: FontAwesome;
+      font-size: 0.7rem;
+    }
+  }
+
+  &__list p {
+    margin: 0;
+  }
+}
+
+// ------------------------------------------------------------------
+// Infos: quotes
+// ------------------------------------------------------------------
+.svz-quotes {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.svz-quote {
+  position: relative;
+  margin: 18px 0 0;
+  padding: 40px 32px 32px;
+  border: 1px solid $borderColor;
+  border-radius: $radiusLg;
+  background: #fff;
+  box-shadow: $shadowSm;
+
+  &__mark {
+    position: absolute;
+    top: -18px;
+    left: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: $svzAccent;
+    box-shadow: 0 6px 16px rgba($svzAccent, 0.4);
+    color: $deepBlue;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0;
+    color: $textColor;
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+}
+
+// ------------------------------------------------------------------
+// Availability calendar
+// ------------------------------------------------------------------
+.svz-cal {
+  max-width: 920px;
+  padding: clamp(18px, 3vw, 32px);
+  border: 1px solid $borderColor;
+  border-radius: $radiusLg + 4;
+  background: #fff;
+  box-shadow: $shadow;
+
+  &__legend {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    color: $textMuted;
+    font-size: 0.95rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-right: 1.4rem;
+    }
+  }
+
+  &__bar {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+
+  &__pager {
+    display: flex;
+    flex: 1 1 320px;
+    align-items: center;
+    margin-right: 0.6rem;
+  }
+
+  &__tools {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+  }
+
+  &__nav {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid $borderColor;
+    border-radius: 50%;
+    background: #fff;
+    color: $darkBlue;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      border-color: $brightBlue;
+      background: $brightBlue;
+      color: #fff;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.35;
+    }
+  }
+
+  &__current {
+    flex: 1;
+    padding: 0 0.5rem;
+    color: $deepBlue;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__select {
+    max-width: 200px;
+    height: 44px;
+    margin-right: 0.5rem;
+    padding: 0 0.9rem;
+    border: 1px solid $borderColor;
+    border-radius: 999px;
+    background: #fff;
+    color: $textColor;
+  }
+
+  &__today {
+    height: 44px;
+    padding: 0 1.2rem;
+    border: 0;
+    border-radius: 999px;
+    background: $paleBlue;
+    color: $darkBlue;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:hover,
+    &:focus {
+      background: darken($paleBlue, 6%);
+    }
+  }
+
+  &__free {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $borderColor;
+  }
+
+  &__free-title {
+    margin: 0 0 0.75rem !important;
+    color: $deepBlue;
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    .fa {
+      margin-right: 0.3rem;
+      color: $svzAccent;
+    }
+  }
+
+  > .svz-notice {
+    margin-top: 0;
+  }
+}
+
+.svz-js .svz-cal__bar {
+  display: flex;
+}
+
+.svz-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 0.45rem;
+  border-radius: 4px;
+
+  &--free {
+    background: $svzFree;
+  }
+
+  &--booked {
+    background: $svzBooked;
+  }
+
+  &--today {
+    border: 2px solid $svzAccent;
+    border-radius: 50%;
+    background: #fff;
+  }
+}
+
+.svz-month {
+  margin-bottom: 2.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin: 0 0 1rem !important;
+    color: $deepBlue;
+    font-size: 1.45rem;
+    font-weight: 700;
+  }
+
+  &__weekdays,
+  &__days {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  &__weekdays {
+    margin-bottom: 6px;
+    color: $textMuted;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__days {
+    @include list-reset;
+  }
+}
+
+.svz-js .svz-month {
+  display: none;
+  margin-bottom: 0;
+
+  &.is-active {
+    display: block;
+    animation: svz-fade 0.35s ease;
+  }
+}
+
+.svz-js .svz-month .svz-month__title {
+  display: none;
+}
+
+.svz-day {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 74px;
+  padding: 6px 2px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: $mistBlue;
+  color: $textMuted;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &--blank {
+    background: transparent;
+  }
+
+  &__num {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  &__state {
+    margin-top: 2px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &.is-free {
+    border-color: rgba($svzFree, 0.28);
+    background: $svzFreeBg;
+    color: $svzFreeText;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba($svzFree, 0.25);
+    }
+  }
+
+  &.is-booked {
+    border-color: rgba($svzBooked, 0.28);
+    background-color: $svzBookedBg;
+    background-image: repeating-linear-gradient(135deg, rgba($svzBooked, 0), rgba($svzBooked, 0) 7px, rgba($svzBooked, 0.08) 7px, rgba($svzBooked, 0.08) 14px);
+    color: $svzBookedText;
+  }
+
+  &.is-past {
+    opacity: 0.38;
+    filter: grayscale(0.6);
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .svz-day__state {
+      display: none;
+    }
+  }
+
+  &.is-today {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px $svzAccent;
+  }
+}
+
+.svz-chips {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba($svzFree, 0.3);
+    border-radius: 999px;
+    background: $svzFreeBg;
+    color: $svzFreeText;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus {
+      background: $svzFree;
+      color: #fff;
+    }
+  }
+}
+
+// ------------------------------------------------------------------
+// Prices
+// ------------------------------------------------------------------
+.svz-tariff {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &[hidden] {
+    display: none;
+  }
+
+  &__label {
+    margin-right: 0.9rem;
+    color: $textMuted;
+    font-weight: 700;
+  }
+
+  &__options {
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 999px;
+    background: $paleBlue;
+
+    button {
+      padding: 0.55rem 1.3rem;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: $darkBlue;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+      &.is-active {
+        background: $darkBlue;
+        box-shadow: $shadowSm;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.svz-package {
+  margin-bottom: clamp(36px, 5vw, 56px);
+
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+  }
+
+  &__icon {
+    display: flex;
+    flex: 0 0 56px;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-right: 1rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, $brightBlue, $darkBlue);
+    box-shadow: 0 8px 20px rgba($darkBlue, 0.25);
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  &__title {
+    color: $deepBlue;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: $textMuted;
+  }
+
+  &__text {
+    max-width: 640px;
+    margin: 0 0 1.25rem;
+    color: $textMuted;
+  }
+
+  &__grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.svz-price-card {
+  position: relative;
+  padding: 32px 28px 28px;
+  overflow: hidden;
+  border: 1px solid $borderColor;
+  border-radius: $radiusLg;
+  background: #fff;
+  box-shadow: $shadowSm;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5px;
+    content: "";
+    background: linear-gradient(90deg, $brightBlue, $lightBlue);
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadowLg;
+  }
+
+  &__head h4 {
+    margin: 0 0 0.7rem;
+    color: $deepBlue;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    small {
+      display: block;
+      margin-top: 0.15rem;
+      color: $textMuted;
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+  }
+
+  &__meta {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.1rem;
+
+    li {
+      margin: 0 0.5rem 0.4rem 0;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: $paleBlue;
+      color: $darkBlue;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .fa {
+      margin-right: 0.3rem;
+    }
+  }
+}
+
+.svz-price {
+  padding-top: 1rem;
+  border-top: 1px dashed $borderColor;
+
+  & + & {
+    margin-top: 1rem;
+  }
+
+  &__label {
+    display: block;
+    color: $brightBlue;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__total {
+    display: block;
+    color: $deepBlue;
+    font-size: clamp(2.4rem, 5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  &__breakdown {
+    display: block;
+    color: $textMuted;
+    font-size: 0.95rem;
+  }
+}
+
+// tariff switch (only active if JavaScript is available)
+.svz[data-svz-ready] {
+  .svz-price {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .svz-price__label {
+    display: none;
+  }
+
+  &[data-tariff="regular"] .svz-price[data-svz-price="member"],
+  &[data-tariff="member"] .svz-price[data-svz-price="regular"] {
+    display: none;
+  }
+}
+
+// ------------------------------------------------------------------
+// Call to action
+// ------------------------------------------------------------------
+.svz-cta {
+  position: relative;
+  padding: clamp(56px, 8vw, 104px) 0;
+  overflow: hidden;
+  background:
+    radial-gradient(900px 420px at 88% -10%, rgba($lightBlue, 0.55), rgba($lightBlue, 0) 60%),
+    linear-gradient(135deg, $deepBlue, $darkBlue 60%, $brightBlue);
+  color: #fff;
+  text-align: center;
+  isolation: isolate;
+
+  &::after {
+    position: absolute;
+    bottom: -180px;
+    left: -120px;
+    z-index: -1;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    content: "";
+    background: rgba($svzAccent, 0.12);
+  }
+
+  &__head {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+.svz-steps {
+  @include list-reset;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2.5rem 0;
+  text-align: left;
+
+  li {
+    padding: 28px 24px;
+    border: 1px solid rgba(#fff, 0.18);
+    border-radius: $radiusLg;
+    background: rgba(#fff, 0.08);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
+
+  &__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background: $svzAccent;
+    color: $deepBlue;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    margin: 0 0 0.4rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+    color: rgba(#fff, 0.85);
+  }
+}
+
+// ------------------------------------------------------------------
+// Scroll reveal (only active if JavaScript is available)
+// ------------------------------------------------------------------
+.svz[data-svz-ready] .svz-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// ------------------------------------------------------------------
+// Responsive
+// ------------------------------------------------------------------
+@media (max-width: 1199px) {
+  .svz-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .svz-gallery {
+    grid-auto-rows: 170px;
+  }
+}
+
+@media (max-width: 991px) {
+  .svz-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .svz-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .svz-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .svz-hero {
+    min-height: 0;
+  }
+
+  .svz-tabs__cta {
+    display: none;
+  }
+
+  .svz-tabs__list {
+    flex: 1;
+
+    li {
+      flex: 1 1 0;
+    }
+
+    a {
+      justify-content: center;
+      padding: 0.95rem 0.5rem;
+      font-size: 0.95rem;
+    }
+  }
+
+  .svz-gallery {
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    &__item.is-feature {
+      grid-row: span 2;
+    }
+  }
+
+  .svz-quotes,
+  .svz-package__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .svz-facts__list ul {
+    columns: 1;
+  }
+
+  .svz-cal__select {
+    flex: 1;
+    max-width: none;
+  }
+
+  .svz-cal__tools {
+    flex: 1 1 100%;
+    margin-top: 0.75rem;
+  }
+
+  .svz-cal__pager {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .svz-features {
+    grid-template-columns: 1fr;
+  }
+
+  .svz-tabs__list a .fa {
+    display: none;
+  }
+
+  .svz-hero .svz-btn {
+    width: 100%;
+  }
+
+  .svz-actions--center .svz-btn {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .svz-month__weekdays,
+  .svz-month__days {
+    grid-gap: 4px;
+  }
+
+  .svz-day {
+    min-height: 54px;
+    border-radius: 9px;
+
+    &__num {
+      font-size: 1.05rem;
+    }
+
+    &__state {
+      @include visually-hidden;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svz *,
+  .svz *::before,
+  .svz *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .svz[data-svz-ready] .svz-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

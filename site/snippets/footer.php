@@ -53,3 +53,6 @@
 <script src="/assets/js/plugins/owl-carousel2/owl.carousel.min.js"></script>
 <script src="/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="/assets/js/custom.js?d=<?= filemtime('assets/js/custom.js');?>"></script>
+<?php foreach (($scripts ?? []) as $script): ?>
+<script src="/assets/js/<?= $script;?>.js?d=<?= filemtime('assets/js/' . $script . '.js');?>"></script>
+<?php endforeach; ?>
