@@ -2,7 +2,7 @@ Title: Darts
 
 ----
 
-Text: Test
+Text: Dieser Text wird nirgends angezeigt. Also einfach ignorieren :)
 
 ----
 

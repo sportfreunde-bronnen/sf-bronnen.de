@@ -1,0 +1,48 @@
+Title: Informationen
+
+----
+
+Headline: Darts bei den Sportfreunden Bronnen
+
+----
+
+Infotext: <p>Mittlerweile hat sich Darts bei den Sportfreunden Bronnen etabliert. Im Sommer 2023 wurde lose Darts geworden und ab Sommer 2024 wurde die Abteilung offiziell gegründet. Die Abteilung ist weiter am Wachsen.</p><p></p><p>Wenn <strong>Du</strong> Teil dieses Wachstums sein willst, dann komm doch einfach am <strong>Mittwoch</strong> um <strong>19:30 Uhr</strong> vorbei. Sollte kein offizieller Spieltag sein, findet ein Training statt, bei dem Interessierte gerne reinschnuppern können. Niveau ist egal. Wer Darts mag, wird Darts in Bronnen lieben!</p><p>Für weitere Informationen und alles Aktuelle folgt uns gerne auf <a href="https://www.instagram.com/sfb.darts/" rel="noopener noreferrer">Instagram</a> (@sfb.darts). Unsere Beitrittserklärung findest Du unter dem Menüpunkt "Darts -&gt; Allgemeines -&gt; Downloads" oder <a href="https://www.sf-bronnen.de/media/pages/darts/allgemeines/downloads/e8ff2c8486-1718019726/beitrittserklarung_stand_04.2024.pdf" target="_blank" title="hier" rel="noopener noreferrer">hier</a>.</p><p></p><p>Kurze Historie:</p><p>Anfangs noch lockeres Spielen und Zusammensein. Danach kam immer mehr der Wettkampfgedanke auf und es wurde 2024 das erste Turnier veranstaltet, was ein voller Erfolg war. Die Turniere wurden beigehalten und  sind mittlerweile etabliert. Die begehrten Plätze sind meistens am Tag der Ausschreibung schon weg. 2024 wurde auch das erste Mal eine Vereinsmeisterschaft ausgespielt. Das Finale fand am gleichen Tag wie das Darts Finale der PDC statt. Den ersten Titel schnappte sich Jochen „Jogi“ Mensch im Duell mit seinem Bruder Andy „Mighty“ Mensch. Nachfolger 2025 ist Johannes „Josi“ Thielen.</p><p></p><p>Nach der ersten Vereinsmeisterschaft war der nächste logische Schritt eine Mannschaft für den Spielbetrieb zu melden. Anfangs war es noch die „unkomplizierte“ Sommerliga, wo noch keine Spielerpässe benötigt werden. Schnell war klar, dass dies nur der Anfang sein konnte. Eine Mannschaft wurde für den offiziellen Ligabetrieb gemeldet. Es wurde die Kreisliga D. Die Debütsaison lief auch sehr erfolgreich. Platz 4 ist eine respektable Leistung und der Aufstieg wurde nur knapp verpasst.</p><p>Ab 2026 haben wir 2 Mannschaften gemeldet was zeigt, dass wir sportlich und auch von Wachstum noch lange nicht am Ende angekommen sind.</p><p></p><p>Weitere Informationen wie Spielberichte findest du unter dem Menüpunkt "Darts -&gt; Allgemeines -&gt; Aktuelles</p><h4>Impressionen</h4>
+
+----
+
+People:
+
+- 
+  name: Markus Buk
+  aufgabe: Abteilungsleiter
+  email: darts@sf-bronnen.de
+  phone: ""
+  address: ""
+- 
+  name: Felix Schöffmann
+  aufgabe: Stellv. Abteilungsleiter
+  email: darts@sf-bronnen.de
+  phone: ""
+  address: ""
+- 
+  name: Christoph Engelhardt
+  aufgabe: Schriftführer
+  email: ""
+  phone: ""
+  address: ""
+- 
+  name: Johannes Thielen
+  aufgabe: Beisitzer
+  email: ""
+  phone: ""
+  address: ""
+- 
+  name: Michael Hoffmann
+  aufgabe: Beisitzer
+  email: ""
+  phone: ""
+  address: ""
+
+----
+
+Uuid: gt6aKiekCebfp19q

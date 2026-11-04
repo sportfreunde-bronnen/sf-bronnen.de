@@ -1,9 +1,0 @@
-Description: Turniermodus an allen drei Scheiben
-
-----
-
-Sort: 2
-
-----
-
-Uuid: fsaa9iL79whl3uZV

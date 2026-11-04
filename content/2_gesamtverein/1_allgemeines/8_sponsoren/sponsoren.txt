@@ -116,10 +116,6 @@ Sponsoren:
   ort: Oberholzheim
   webseite: http://www.schreinerei-kennerknecht.com/
 - 
-  name: Imbiss Kley
-  ort: Achstetten
-  webseite: ""
-- 
   name: Kreissparkasse Biberach
   ort: Biberach
   webseite: https://www.ksk-bc.de/de/home.html
@@ -181,10 +177,6 @@ Sponsoren:
   ort: Bronnen
   webseite: http://www.schick-gartengestaltung.de/
 - 
-  name: Schweizer Bau
-  ort: Burgrieden
-  webseite: http://www.schweizerbau.de/
-- 
   name: SV Sparkassen Versicherung
   ort: Laupheim
   webseite: >
@@ -194,10 +186,6 @@ Sponsoren:
   ort: Laupheim
   webseite: >
     https://www.volksbank-allgaeu-oberschwaben.de/startseite.html
-- 
-  name: Cornelia Weber Zentralschmiertechnik
-  ort: Bronnen
-  webseite: https://www.zentralschmiertechnik.info/
 - 
   name: Werz Zerspanungstechnik
   ort: Untersulmetingen
@@ -223,10 +211,6 @@ Sponsoren:
   name: e.systeme21
   ort: Ulm
   webseite: https://esysteme21.de/
-- 
-  name: BiberPark
-  ort: Biberach
-  webseite: https://biberpark-biberach.de/
 - 
   name: AutoCenter Benz GmbH
   ort: Laupheim
@@ -267,6 +251,12 @@ Sponsoren:
   name: 'Bausthoffhandel J. Wilhelm GmbH & Co. KG'
   ort: Laupheim
   webseite: https://www.wilhelm-laupheim.de
+- 
+  name: >
+    HETTICH Sachverständigenbüro für
+    Immobilienbewertung
+  ort: Baustetten
+  webseite: https://www.hettich-gutachten.de
 
 ----
 

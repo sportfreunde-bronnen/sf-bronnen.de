@@ -1,0 +1,72 @@
+Title: Verusch Link + Photos
+
+----
+
+Datum: 2026-09-29
+
+----
+
+Author: - user://swwweG6B
+
+----
+
+Author2: 
+
+----
+
+Teaserimage: - file://q72gqqWxUS5mjHV4
+
+----
+
+Textimages:
+
+- file://q72gqqWxUS5mjHV4
+- file://B0pCK3iowItitkpV
+- file://WhWAFqhEx8x41pKi
+- file://WKnb6dUy2lyqcF0B
+
+----
+
+Text:
+
+### Überschrift
+
+bla bla bla
+
+hier sollte Bild 1 stehen
+
+wer das liest ist blöd
+
+hier sollte Bild 2 stehen
+
+das Leben ist schön
+
+hier sollte Bild 3 stehen
+
+
+Link 1 (Spielbericht):
+https://dvos.de/spielbericht.php?id=24&art=1&a_liga=53&spieltag=0
+
+
+Link 2 (Tabelle):
+https://dvos.de/liga.php?a_liga=53
+
+----
+
+Tags: Darts, Spielbericht
+
+----
+
+Galleryname: Test Galerie
+
+----
+
+Galleryimages:
+
+- file://B0pCK3iowItitkpV
+- file://WhWAFqhEx8x41pKi
+- file://WKnb6dUy2lyqcF0B
+
+----
+
+Uuid: SIvJsI8L9VWHH2mW

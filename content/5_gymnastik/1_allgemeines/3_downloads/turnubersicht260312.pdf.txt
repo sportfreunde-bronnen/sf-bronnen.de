@@ -1,0 +1,9 @@
+Description: Übersichtspläne und Belegungen (Stand: 03/2026)
+
+----
+
+Sort: 7
+
+----
+
+Uuid: bR6fkiLTbn4cmfWv

@@ -1,12 +1,12 @@
-Title: SFB Dartsturnier
+Title: 6. SFB Dartsturnier
 
 ----
 
-Shorttitle: Die zweite Auflage unseres SFB Dartsturniers in unserem SVZ
+Shorttitle: Die sechste Auflage unseres SFB Dartsturniers.
 
 ----
 
-Datum: 2024-07-06 17:00:00
+Datum: 2027-01-23 16:00:00
 
 ----
 
@@ -20,36 +20,17 @@ Ort: SVZ Bronnen
 
 Text:
 
-## 2. SFB Dartsturnier
+## 6. SFB Dartsturnier
 
-Wir laden alle Dartsbegeisterten zur zweiten Auflage unseres Steeldartsturniers ein.
+Herzliche Einladung an alle Dartsbegeisterten zur sechsten Auflage unseres Steeldartsturniers.
 
-### Facts:
-- Samstag, 06.07.2024
-- 16:00 Uhr Opening
-- 17:00 Uhr Turnierberginn
-- SVZ Bronnen (Oberer Espach 3, Bronnen / (link: https://maps.app.goo.gl/LBDFwqha42pVsHD49 text: Google Maps Link))
+SAVE THE DATE: **Samstag, den 23.01.2027**.
 
-### Modus + Ablauf
-- Steeldarts-Hobbyturnier
-- Keine aktiven Ligaspieler
-- Gruppenhase 301 / DO
-- KO-Phase 501 / DO
-- Gespielt wird an 6 modernen Boards
-- 15€ Teilnahmegebühr
-
-Für Verpflegung und einen stimmungsgeladenen Turnierablauf ist selbstverständlich gesorgt. 
-
-### Anmeldung
-(link: https://besucher.sf-bronnen.de text: >> Hier geht es zur Anmeldung <<)
-
----
-
-(image: sfb-darts.jpeg imgclass: img-fluid)
+Weitere Informationen zum Turnier und der Anmeldung schon bald.
 
 ----
 
-Vimage: - file://J9oZOdtfVXKbC6pT
+Vimage: - file://w6WTVzmGEoTJWCRW
 
 ----
 
@@ -65,7 +46,7 @@ Documentdescription:
 
 ----
 
-Related: - page://D7q4m6TDvMgClsE5
+Related: - page://THHmnXjy8eKe1Chx
 
 ----
 

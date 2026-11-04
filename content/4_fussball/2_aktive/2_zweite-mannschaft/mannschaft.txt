@@ -1,0 +1,16 @@
+Title: Zweite Mannschaft
+
+----
+
+Headline: Kreisliga B4 Oberschwaben Reserve
+
+----
+
+Fupawidget:
+
+<div id="fp-widget_root-3Ir8IM8GPkWgnmZ5fwlQbqwZE7t"><a href="https://www.fupa.net/club/sf-bronnen" target="_blank" rel="noopener">SF Bronnen auf FuPa</a></div>
+<script src="https://widget-api.fupa.net/vendor/widget.js?v1"></script>
+
+----
+
+Uuid: 1mw8L1qxJPtxR5VA

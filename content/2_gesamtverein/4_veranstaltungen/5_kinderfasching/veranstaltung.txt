@@ -6,11 +6,11 @@ Shorttitle: Kinderfasching
 
 ----
 
-Datum: 2025-03-02 14:00:00
+Datum: 2026-02-15 14:00:00
 
 ----
 
-Datumbis: 2025-03-02 17:00:00
+Datumbis: 2026-02-15 17:00:00
 
 ----
 
@@ -18,7 +18,7 @@ Ort: SVZ Bronnen
 
 ----
 
-Text: 
+Text: (image: flyer-kinderfasching-2026.jpeg)
 
 ----
 
@@ -30,7 +30,7 @@ Imageposition: top
 
 ----
 
-Doc: - file://NM3oPyNP5jykfFVc
+Doc: - file://i2aNWyfGpMAjrz1k
 
 ----
 

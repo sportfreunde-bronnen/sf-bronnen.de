@@ -1,5 +1,0 @@
-Description: Alles auf einen Blick
-
-----
-
-Uuid: z6rRyHd5YHwbyDi5

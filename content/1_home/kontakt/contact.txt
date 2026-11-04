@@ -86,7 +86,7 @@ Ansprechpartner:
   email: petra@hannes.me
   shortcut: ""
 - 
-  name: Benjamin Baur
+  name: Axel Endlichhofer
   aufgabe: 1. Vorsitzender Förderverein
   email: foerderverein@sf-bronnen.de
   shortcut: ""

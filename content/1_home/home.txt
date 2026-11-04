@@ -29,30 +29,6 @@ Homebanner: - file://9O7IcYVV3GVUHWUN
 Slides:
 
 - 
-  title: SFB Oktoberfest 2025
-  text: >
-    .. am 10.10.2025 ab 19:00 Uhr. Jetzt
-    Tisch reservieren!
-  textposition: left
-  sliderimage:
-    - file://kTxVllEu9wPnC1pu
-  internallink:
-    - page://5lvt2Xh1cZk3NJZW
-  externallink: ""
-  buttontext: ""
-- 
-  title: Übungsleiter gesucht!
-  text: >
-    Für unser Eltern-Kind-Turnen suchen wir
-    motivierte Übungsleiter (m/w/d).
-  textposition: left
-  sliderimage:
-    - file://fEJCQoXX6LWgguia
-  internallink: [ ]
-  externallink: >
-    https://www.sf-bronnen.de/media/pages/gymnastik/allgemeines/downloads/e8adb68a75-1738924884/flyer-uebungsleiter-elki.jpg
-  buttontext: Weitere Informationen
-- 
   title: Location zum Feiern gesucht?
   text: 'Wir haben da was - unser SVZ!'
   textposition: left
