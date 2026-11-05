@@ -1,19 +1,32 @@
-.pricing-table {
-  margin-bottom: 20px;
-  background-color: #fff;
-  border: 1px solid #dcdcdc;
+// Membership fees: one card per fee group
 
-  .plan-name {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: $brightBlue;
+.pricing-table {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 1.5rem);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid $borderColor;
+  border-radius: $radiusLg;
+  box-shadow: $shadow;
+  transition: $transition;
+  animation: content-rise 0.5s ease backwards;
+
+  &:hover {
+    box-shadow: $shadowLg;
+    transform: translateY(-4px);
   }
 
-  .plan-price {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: $darkBlue;
-    color: #fff;
+  @for $i from 1 through 6 {
+    .row > div:nth-child(#{$i}) > & {
+      animation-delay: 0.08s * $i;
+    }
+  }
+
+  .plan-name {
+    padding: 1.1rem 1rem;
+    background: linear-gradient(135deg, $darkBlue 0%, $brightBlue 100%);
   }
 
   .plan-name h5,
@@ -21,24 +34,71 @@
     margin-top: 0;
     margin-bottom: 0;
     color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.01em;
+  }
+
+  .plan-price {
+    padding: 1.4rem 1rem 1.2rem;
+    color: $darkBlue;
+    background-color: $paleBlue;
+
+    h3 {
+      margin: 0 0 0.2rem;
+      color: $darkBlue;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .h5 {
+      color: $textMuted;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
   }
 
   .plan-list {
+    flex: 1;
+    padding: 0.5rem 1.25rem 1rem;
+
     ul.list-unstyled {
       margin-bottom: 0;
     }
+
     li {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      font-size: 18px;
-      font-weight: 300;
-      border-bottom: 1px solid #dcdcdc;
-      &:nth-child(even) {
-        background-color: #f5f5f5;
+      padding: 0.9rem 0;
+      color: $textMuted;
+      font-size: 1rem;
+      font-weight: 400;
+      border-bottom: 1px dashed $borderColor;
+
+      &:last-child {
+        border-bottom: 0;
       }
-      &:nth-child(odd):hover {
-        background-color: #fafafa;
+
+      h5 {
+        margin: 0 0 0.15rem;
+        color: $darkBlue;
+        font-size: 1.25rem;
+        font-weight: 700;
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-table {
+    animation: none;
+    transition: none;
+  }
+}
+
+@media print {
+  .pricing-table {
+    animation: none;
+    box-shadow: none;
   }
 }

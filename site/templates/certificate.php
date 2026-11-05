@@ -40,6 +40,13 @@
                             </div>
                             <div class="col-sm-12">
                                 <hr/>
+                                <div class="form-group">
+                                    <label class="d-block">Spamschutz: *</label>
+                                    <?php snippet('turnstile', ['action' => 'certificate']); ?>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <hr/>
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="customCheck1" name="dataDeclaration" value="0">
                                     <label class="custom-control-label" for="customCheck1">

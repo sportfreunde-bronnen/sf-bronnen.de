@@ -1,0 +1,589 @@
+// Gymnastik course pages (template "kurs")
+// Loaded in addition to sfb.css by the kurs template (see site/templates/kurs.php).
+
+@import "variables";
+
+$kursAccent: #ffb703;
+$kursAccentHover: #ffc82e;
+$kursNoticeBg: #fff8e1;
+$kursNoticeBorder: #ffe29a;
+$kursNoticeText: #5c4300;
+
+@keyframes kurs-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.kurs {
+  color: $textColor;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Hero: headline, description, notice and photos
+// ---------------------------------------------------------------------------------------------------------------------
+
+.kurs-hero {
+  position: relative;
+  display: grid;
+  gap: 1.75rem;
+  padding: 2rem 1.35rem 1.75rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 100% 0, rgba($lightBlue, 0.12), transparent 55%),
+    #fff;
+  border-radius: $radiusLg;
+  box-shadow: $shadow;
+  animation: kurs-rise 0.5s ease both;
+
+  // sporty color bar on top of the card
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, $lightBlue, $brightBlue 55%, $kursAccent);
+  }
+}
+
+.kurs-hero__body {
+  position: relative;
+  min-width: 0;
+}
+
+.kurs-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.9rem;
+  padding: 0.3rem 0.85rem;
+  color: $darkBlue;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: $paleBlue;
+  border-radius: 999px;
+
+  .fa {
+    color: $lightBlue;
+  }
+}
+
+.kurs-hero__title {
+  margin: 0 0 1rem;
+  color: $darkBlue;
+  font-size: 1.85rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.kurs-hero__text {
+  max-width: 62ch;
+  font-size: 1.08rem;
+  line-height: 1.7;
+
+  p + p {
+    margin-top: 1rem;
+  }
+}
+
+.kurs-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-top: 1.4rem;
+  padding: 0.95rem 1.15rem;
+  color: $kursNoticeText;
+  background: $kursNoticeBg;
+  border: 1px solid $kursNoticeBorder;
+  border-left: 5px solid $kursAccent;
+  border-radius: $radius;
+
+  .fa {
+    flex: 0 0 auto;
+    color: #e09a00;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  p {
+    line-height: 1.55;
+  }
+
+  a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}
+
+// Photos
+.kurs-hero__media {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.kurs-hero__media--duo {
+  grid-template-columns: 1fr 1fr;
+}
+
+.kurs-photo {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  background: $paleBlue;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  aspect-ratio: 4 / 3;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.6s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.04);
+  }
+}
+
+@media (min-width: 576px) {
+  .kurs-hero {
+    padding: 2.4rem 2rem 2rem;
+  }
+
+  .kurs-hero__title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .kurs-hero {
+    padding: 2.75rem 2.75rem 2.5rem;
+  }
+
+  .kurs-hero__title {
+    font-size: 2.6rem;
+  }
+
+  .kurs-hero--media {
+    grid-template-columns: minmax(0, 1fr) 400px;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  // courses without photos: decorative center circle lines on the right side of the card
+  .kurs-hero:not(.kurs-hero--media)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -90px;
+    width: 420px;
+    height: 420px;
+    background:
+      radial-gradient(circle, rgba($lightBlue, 0.22) 0 9px, transparent 10px),
+      repeating-radial-gradient(circle, transparent 0 46px, rgba($lightBlue, 0.14) 46px 48px);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+    -webkit-mask-image: radial-gradient(circle, #000 55%, transparent 71%);
+    mask-image: radial-gradient(circle, #000 55%, transparent 71%);
+  }
+
+  // photo collage: big photo with a second, slightly rotated photo overlapping its lower left corner
+  .kurs-hero__media {
+    display: block;
+    position: relative;
+  }
+
+  .kurs-hero__media--duo {
+    padding-bottom: 2.75rem;
+  }
+
+  .kurs-photo--1 {
+    transform: rotate(1.5deg);
+  }
+
+  .kurs-hero__media--duo .kurs-photo--2 {
+    position: absolute;
+    bottom: 0;
+    left: -2.25rem;
+    width: 56%;
+    aspect-ratio: 16 / 10;
+    border: 5px solid #fff;
+    transform: rotate(-3deg);
+  }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Fact cards
+// ---------------------------------------------------------------------------------------------------------------------
+
+.kurs-facts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.kurs-fact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.25rem 1.35rem 1.35rem;
+  background: #fff;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
+  transition: $transition;
+  // "backwards" instead of "both": a retained end state would override the hover transform
+  animation: kurs-rise 0.5s ease backwards;
+
+  &:hover {
+    box-shadow: $shadow;
+    transform: translateY(-3px);
+  }
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.08s * $i;
+    }
+  }
+}
+
+.kurs-fact__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 0.85rem;
+  color: #fff;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, $lightBlue, $darkBlue);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba($lightBlue, 0.3);
+}
+
+.kurs-fact__label {
+  margin: 0 0 0.4rem;
+  color: $textMuted;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.kurs-fact__value {
+  margin: 0;
+  color: $textColor;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+// Training times as chips
+.kurs-times {
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 0.45rem;
+    padding: 0.5rem 0.8rem;
+    color: $darkBlue;
+    font-weight: 600;
+    background: $mistBlue;
+    border-left: 3px solid $lightBlue;
+    border-radius: $radiusSm;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Costs as price list
+.kurs-prices {
+  padding: 0;
+  list-style: none;
+}
+
+.kurs-prices__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed $borderColor;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.kurs-prices__key {
+  color: $textMuted;
+}
+
+.kurs-prices__value {
+  color: $darkBlue;
+  font-weight: 600;
+}
+
+// Registration card: highlighted call to action
+.kurs-fact--cta {
+  color: #fff;
+  background: linear-gradient(135deg, $darkBlue 0%, $brightBlue 100%);
+  border-color: transparent;
+  box-shadow: $shadow;
+
+  .kurs-fact__icon {
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: none;
+  }
+
+  .kurs-fact__label {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .kurs-fact__value {
+    color: #fff;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.kurs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 1.15rem;
+}
+
+.kurs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.15rem;
+  color: $deeperBlue;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  background: $kursAccent;
+  border: 2px solid $kursAccent;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $deeperBlue;
+    text-decoration: none;
+    background: $kursAccentHover;
+    border-color: $kursAccentHover;
+    transform: translateY(-2px);
+  }
+
+  &--ghost {
+    color: #fff;
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.65);
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.16);
+      border-color: #fff;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .kurs-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  // an odd last card spans the whole row
+  .kurs-fact:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 992px) {
+  .kurs-facts {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .kurs-fact {
+    grid-column: span 2;
+  }
+
+  .kurs-facts--has-costs {
+    .kurs-fact--costs,
+    .kurs-fact--cta {
+      grid-column: span 3;
+    }
+  }
+
+  // without costs the registration card gets a wide, horizontal layout: icon | label + text | buttons
+  .kurs-facts:not(.kurs-facts--has-costs) .kurs-fact--cta {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      'icon label actions'
+      'icon value actions';
+    align-items: center;
+    column-gap: 1.25rem;
+
+    .kurs-fact__icon {
+      grid-area: icon;
+      margin-bottom: 0;
+    }
+
+    .kurs-fact__label {
+      grid-area: label;
+      align-self: end;
+    }
+
+    .kurs-fact__value {
+      grid-area: value;
+      align-self: start;
+    }
+
+    .kurs-actions {
+      grid-area: actions;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Quote
+// ---------------------------------------------------------------------------------------------------------------------
+
+.kurs-quote {
+  position: relative;
+  margin: 1.75rem 0 0;
+  padding: 3.25rem 1.5rem 1.75rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba($paleBlue, 0.92));
+  border-radius: $radiusLg;
+  box-shadow: $shadowSm;
+  animation: kurs-rise 0.5s ease 0.5s both;
+
+  &::before {
+    content: '\201C';
+    position: absolute;
+    top: 0.85rem;
+    left: 50%;
+    color: $lightBlue;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 5rem;
+    line-height: 1;
+    opacity: 0.28;
+    transform: translateX(-50%);
+  }
+}
+
+.kurs-quote__text {
+  margin: 0 auto;
+  max-width: 48rem;
+  padding: 0;
+  color: $darkBlue;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.5;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.kurs-quote__author {
+  margin-top: 0.85rem;
+  color: $textMuted;
+  font-size: 0.95rem;
+
+  &::before {
+    content: '\2014\00a0';
+  }
+}
+
+@media (min-width: 768px) {
+  .kurs-quote {
+    padding: 3.5rem 3rem 2rem;
+  }
+
+  .kurs-quote__text {
+    font-size: 1.45rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kurs-hero,
+  .kurs-fact,
+  .kurs-quote {
+    animation: none;
+  }
+
+  .kurs-fact,
+  .kurs-photo img,
+  .kurs-btn {
+    transition: none;
+  }
+}
+
+@media print {
+  .kurs-hero,
+  .kurs-fact,
+  .kurs-quote {
+    animation: none;
+    box-shadow: none;
+    border: 1px solid $borderColor;
+  }
+
+  .kurs-fact--cta {
+    color: $textColor;
+    background: #fff;
+  }
+
+  .kurs-fact--cta .kurs-fact__value,
+  .kurs-fact--cta .kurs-fact__value a {
+    color: $textColor;
+  }
+
+  .kurs-actions {
+    display: none;
+  }
+}

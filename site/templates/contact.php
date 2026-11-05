@@ -67,10 +67,8 @@
                           <div class="col-sm-12">
                             <hr/>
                             <div class="form-group">
-                              <label for="captcha">Spamschutz: *</label><br/>
-                              <img id="cImage" src="/captcha/img"/>
-                              <button class="btn btn-outline-primary btn-sm w-auto" type="button" onclick="document.getElementById('cImage').src = '/captcha/img?' + Math.random(); return false;">Neues Bild</button>
-                              <input type="text" class="form-control flat mt-4" name="captcha" id="captcha" placeholder="Was steht in der oberen Grafik?">
+                              <label class="d-block">Spamschutz: *</label>
+                              <?php snippet('turnstile', ['action' => 'contact']); ?>
                             </div>
                           </div>
                             <div class="col-sm-12">

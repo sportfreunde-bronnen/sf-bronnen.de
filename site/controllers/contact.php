@@ -22,15 +22,11 @@ return function ($site, $pages, $page) {
         'dataDeclaration' => [
             'rules' => ['required'],
             'message' => 'Bitte bestätigen Sie die Einwilligung zur Nutzung Ihrer personenbezogenen Daten'
-        ],
-        'captcha' => [
-            'rules' => ['required','validCaptcha'],
-            'message' => 'Bitte füllen Sie den Spamschutz korrekt aus.'
         ]
     ]);
 
     if (r::is('POST')) {
-        $form->phpMailerAction([
+        $form->guard()->turnstileGuard(['action' => 'contact'])->phpMailerAction([
             'to' => 'me@example.com',
             'from' => 'info@example.com',
         ]);

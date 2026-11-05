@@ -59,6 +59,11 @@ $svzBookedText: #a8302b;
   }
 }
 
+// The landing page brings its own design: no site-wide content background decoration
+div.page.page--svz {
+  background: #fff;
+}
+
 .svz {
   color: $textColor;
   font-size: 1rem;

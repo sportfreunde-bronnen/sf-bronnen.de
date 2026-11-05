@@ -25,6 +25,7 @@
             <?php if (2==2): ?>
             <div class="col-12">
                 <h3 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left mt-2">Anmeldung</h3>
+                <div class="contact-form-wrap">
                 <?php if(isset($success)): ?>
                     <div class="alert alert-success">
                         <?= $success; ?>
@@ -98,6 +99,7 @@
                         <input type="website" name="website" id="website" placeholder="http://example.com" value="<?= isset($data['website']) ? esc($data['website']) : '' ?>"/>
                     </div>
                 </form>
+                </div>
             </div>
             <?php endif; ?>
             <div class="col-12">

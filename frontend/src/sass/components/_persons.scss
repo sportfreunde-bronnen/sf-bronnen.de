@@ -1,0 +1,146 @@
+// Person cards: board members ("Vorstand") and responsible persons of a department
+
+@keyframes content-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.person-card {
+  position: relative;
+  height: 100%;
+  padding: 1.5rem 1.5rem 1.35rem;
+  overflow: hidden;
+  text-align: left;
+  background: #fff;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
+  transition: $transition;
+  animation: content-rise 0.5s ease backwards;
+
+  // sporty color bar on top of the card
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, $lightBlue, $brightBlue 60%, $accentYellow);
+  }
+
+  &:hover {
+    box-shadow: $shadow;
+    transform: translateY(-3px);
+  }
+
+  @for $i from 1 through 8 {
+    .row > div:nth-child(#{$i}) > & {
+      animation-delay: 0.06s * $i;
+    }
+  }
+}
+
+.person-card__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.9rem;
+  color: #fff;
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, $lightBlue, $darkBlue);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba($lightBlue, 0.3);
+}
+
+.person-card .person-card__name {
+  margin: 0 0 0.35rem;
+  color: $darkBlue;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.person-card .person-card__role {
+  margin: 0;
+  color: $textMuted;
+  line-height: 1.45;
+
+  b {
+    display: block;
+    color: $brightBlue;
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+.person-card--contact {
+  padding-top: 1.75rem;
+
+  .person-card__role {
+    font-size: 1.02rem;
+  }
+}
+
+.person-card .person-card__contact {
+  margin: 1rem 0 0;
+  padding: 1rem 0 0;
+  border-top: 1px dashed $borderColor;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.55rem;
+    line-height: 1.45;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .fa {
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      margin: -0.1rem 0.75rem 0 0;
+      color: $brightBlue;
+      font-size: 0.95rem;
+      background: $paleBlue;
+      border-radius: 50%;
+    }
+
+    a,
+    span {
+      min-width: 0;
+      word-break: break-word;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .person-card {
+    animation: none;
+    transition: none;
+  }
+}
+
+@media print {
+  .person-card {
+    animation: none;
+    box-shadow: none;
+  }
+}

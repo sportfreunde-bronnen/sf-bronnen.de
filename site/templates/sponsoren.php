@@ -12,17 +12,29 @@
             <?php $box = false; $last = ''; foreach ($page->sponsoren()->toStructure()->sortBy('name', 'asc') as $sponsor): $current = strtoupper(substr($sponsor->name(), 0, 1));?>
                 <?php if ($last != $current): ?>
                     <?php if ($box): ?>
+                        </ul>
                     </div>
+                </div>
                     <?php endif; ?>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 supporter-box">
-                    <h3 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left mb-3 mb-md-5"><?= strtoupper($current);?></h3>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 supporter-box">
+                    <div class="supporter-card">
+                        <h3 class="supporter-card__letter"><?= strtoupper($current);?></h3>
+                        <ul class="supporter-card__list list-unstyled">
                 <?php endif; ?>
+                            <li class="supporter-card__item">
                 <?php if ($sponsor->webseite()->isNotEmpty()):?>
-                    <a href="<?= $sponsor->webseite();?>" alt="Zur Webseite: <?= $sponsor->name();?> <?= $sponsor->ort();?>" title="Zur Webseite: <?= $sponsor->name();?> <?= $sponsor->ort();?>"><?= $sponsor->name();?></a><br/><small><i><?= $sponsor->ort();?></i></small><br/>
+                                <a href="<?= $sponsor->webseite();?>" title="Zur Webseite: <?= $sponsor->name();?> <?= $sponsor->ort();?>"><?= $sponsor->name();?></a>
                 <?php else: ?>
-                    <?= $sponsor->name();?><br/><small><i><?= $sponsor->ort();?></i></small><br/>
+                                <span class="supporter-card__name"><?= $sponsor->name();?></span>
                 <?php endif; ?>
+                                <small><?= $sponsor->ort();?></small>
+                            </li>
             <?php $last = $current; $box = true; endforeach; ?>
+            <?php if ($box): ?>
+                        </ul>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>

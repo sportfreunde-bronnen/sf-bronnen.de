@@ -1,6 +1,10 @@
 div.fupa_widget {
   font: 16px/24px 'Saira Semi Condensed', sans-serif;
   overflow: hidden;
+  background-color: #fff;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
   div.fupa_widget_navi {
     background-color: $darkBlue;
     color: #fff;

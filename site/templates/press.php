@@ -17,25 +17,23 @@
             <div class="row blog-post" id="article-grid">
                 <?php foreach ($articles as $article): ?>
                     <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-date-created="<?= $article->date()->toDate('Y-m-d');?>" data-groups='<?= $page->getNewsGroupsAsShuffleArray($article);?>'>
-                        <div class="box-3 animation text-xs-center">
-                            <div class="inner">
-                                <p class="date-meta text-grey-color">
-                                    <span class="badge badge-primary">
-                                        <i class="fa fa-calendar"></i>&nbsp; <?= $article->date()->toDate('d.m.Y');?>
-                                        Schwäbische Zeitung
-                                    </span>
-                                </p>
-                                <h6 class="sub-heading-1 tiny text-medium text-xs-center">
+                        <article class="post-card post-card--press">
+                            <div class="post-card-body">
+                                <ul class="post-tags">
+                                    <li>Schwäbische Zeitung</li>
+                                </ul>
+                                <h3 class="post-card-title">
                                     <a target="_blank" href="<?= $article->url();?>"><?= $article->title();?></a>
-                                </h6>
-                                <p class="text-grey-color">
-                                    <?= substr($article->text(), 0, 100) . '...';?>
-                                </p>
-                                <p class="text-md-right">
-                                    <a target="_blank" href="<?= $article->url();?>" class="more-link animation">Zum Artikel</a>
-                                </p>
+                                </h3>
+                                <p class="post-card-excerpt"><?= substr($article->text(), 0, 100) . '...';?></p>
+                                <div class="post-card-footer">
+                                    <div class="post-meta">
+                                        <time datetime="<?= $article->date()->toDate('Y-m-d');?>"><i class="fa fa-calendar-o"></i><?= $article->date()->toDate('d.m.Y');?></time>
+                                    </div>
+                                    <a target="_blank" href="<?= $article->url();?>" class="post-more">Zum Artikel <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 <?php endforeach; ?>
             </div>

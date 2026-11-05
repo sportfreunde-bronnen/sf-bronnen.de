@@ -1,9 +1,93 @@
-div.page--sponsors {
-  div.supporter-box {
-    @include media-breakpoint-down(sm) {
-      &:nth-child(even) {
-        text-align: right;
-      }
+// Sponsors page: one card per initial letter
+
+.supporter-card {
+  height: 100%;
+  padding: 1.35rem 1.5rem 1.4rem;
+  background: #fff;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
+  transition: $transition;
+  animation: content-rise 0.5s ease backwards;
+
+  &:hover {
+    box-shadow: $shadow;
+    transform: translateY(-3px);
+  }
+
+  @for $i from 1 through 9 {
+    .supporter-box:nth-child(#{$i}) > & {
+      animation-delay: 0.05s * $i;
     }
+  }
+}
+
+.supporter-card .supporter-card__letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin: 0 0 1rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  background: linear-gradient(135deg, $lightBlue, $darkBlue);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba($lightBlue, 0.3);
+}
+
+.supporter-card .supporter-card__list {
+  margin: 0;
+}
+
+.supporter-card__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0;
+  line-height: 1.35;
+  border-bottom: 1px dashed $borderColor;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  a,
+  .supporter-card__name {
+    font-weight: 600;
+  }
+
+  a {
+    align-self: flex-start;
+  }
+
+  .supporter-card__name {
+    color: $darkBlue;
+  }
+
+  small {
+    color: $textMuted;
+    font-size: 0.84rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .supporter-card {
+    animation: none;
+    transition: none;
+  }
+}
+
+@media print {
+  .supporter-card {
+    animation: none;
+    box-shadow: none;
   }
 }

@@ -20,6 +20,7 @@ return function ($site, $pages, $page) {
         ]
     ]);
     if (r::is('POST')) {
+        $form->guard()->turnstileGuard(['action' => 'certificate']);
         $form->action(\Uniform\Actions\CertificateAction::class);
         //$form->certificateAction([]);
     }

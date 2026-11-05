@@ -6,7 +6,8 @@
   position: absolute;
   width: 4px;
   display: block;
-  background: $brightBlue;
+  background: linear-gradient(180deg, $brightBlue 0%, rgba($lightBlue, 0.25) 100%);
+  border-radius: 4px;
   top: 60px;
   bottom: 10px;
   margin-left: -18px
@@ -32,7 +33,7 @@
 }
 
 .timeline-separator {
-  border-top: 2px solid $brightBlue;
+  border-top: 1px dashed rgba($brightBlue, 0.45);
   padding: 15px 5px 10px 40px;
   margin-left: -15px;
   margin-top: 20px

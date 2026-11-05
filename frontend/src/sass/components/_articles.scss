@@ -384,11 +384,34 @@ ul#article-filter {
 }
 
 // Same height for all cards of the filterable grid
-#article-grid .post-card {
+#article-grid .post-card:not(.post-card--press) {
   @include media-breakpoint-up(md) {
     min-height: 580px;
   }
   @include media-breakpoint-up(lg) {
     min-height: 560px;
+  }
+}
+
+// Cards without a teaser image: press clippings and the related event in the event sidebar
+.post-card--press {
+  @include media-breakpoint-up(md) {
+    min-height: 300px;
+  }
+
+  .post-card-excerpt {
+    flex: 1;
+  }
+}
+
+.post-card--compact {
+  margin-bottom: 0.5rem;
+
+  .post-card-title {
+    font-size: 1.15rem;
+  }
+
+  .post-card-body {
+    padding: 1.1rem 1.25rem 1rem;
   }
 }

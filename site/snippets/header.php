@@ -22,7 +22,7 @@
     <?php if (EXTRACT_CONTENT === true): ?>
     <style type="text/css">
       div.page {
-        background: #ffffff;
+        background: #ffffff !important;
       }
     </style>
     <?php endif; ?>

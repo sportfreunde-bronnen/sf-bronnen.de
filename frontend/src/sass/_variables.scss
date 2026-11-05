@@ -3,6 +3,7 @@ $lightBlue: #0088df;
 $brightBlue: #007cb5;
 $darkBlue: #004869;
 $color-red: #d9534f;
+$accentYellow: #ffb703;
 
 // Extended blue palette (derived from the brand blues)
 $deepBlue: #00314a;
@@ -17,6 +18,9 @@ $borderColor: #dde6ec;
 
 $navBgColor: #ffffff;
 $navBgColorDarker: $paleBlue;
+
+// Dropdown entries and their parent headings share one font size, so a page never appears larger than its parent
+$navSubFontSize: 0.9rem;
 
 // Shape & elevation
 $radiusSm: 6px;

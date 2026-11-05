@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-12 col-lg-4">
                     <h5 class="sub-heading-2">Kurz und knapp:</h5>
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table--facts">
                         <tbody>
                         <tr>
                             <td class="font-weight-bold">Wann?</td>
@@ -39,29 +39,25 @@
                         <h5 class="sub-heading-2 mt-4">Auch interessant:</h5>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-12">
-                                <div class="box-3 animation text-xs-center text-sm-center text-md-left mt-0">
+                                <article class="post-card post-card--compact">
                                     <?php if ($related->vimage()->isNotEmpty()): ?>
-                                        <p>
-                                            <img src="<?= $related->vimage()->toFile()->resize(350)->url();?>" alt="Veranstaltungsbild - <?= $related->title();?> - Sportfreunde Bronnen" class="img-fluid img-center-xs img-center-sm">
-                                        </p>
+                                        <a class="post-card-media" href="<?= $related->url();?>" tabindex="-1" aria-hidden="true">
+                                            <img src="<?= $related->vimage()->toFile()->resize(350)->url();?>" alt="Veranstaltungsbild - <?= $related->title();?> - Sportfreunde Bronnen" loading="lazy">
+                                        </a>
                                     <?php endif; ?>
-                                    <div class="inner">
-                                        <p class="date-meta text-grey-color text-uppercase">
-                                    <span class="badge p-1 badge-secondary">
-                                        <i class="fa fa-calendar"></i>&nbsp; <?= $related->datum()->toDate('d.m.Y'); ?>
-                                    </span>
-                                        </p>
-                                        <h6 class="sub-heading-1 tiny text-weight-medium text-xs-center text-sm-center text-md-left">
-                                            <?= $related->title();?>
+                                    <div class="post-card-body">
+                                        <div class="post-meta">
+                                            <time datetime="<?= $related->datum()->toDate('Y-m-d'); ?>"><i class="fa fa-calendar-o"></i><?= $related->datum()->toDate('d.m.Y'); ?></time>
+                                        </div>
+                                        <h6 class="post-card-title">
+                                            <a href="<?= $related->url();?>"><?= $related->title();?></a>
                                         </h6>
-                                        <p class="text-grey-color">
-                                            <?= $related->shorttitle();?>
-                                        </p>
-                                        <p class="text-md-right">
-                                            <a href="<?= $related->url();?>" class="more-link animation">Mehr erfahren</a>
-                                        </p>
+                                        <p class="post-card-excerpt"><?= $related->shorttitle();?></p>
+                                        <div class="post-card-footer">
+                                            <a href="<?= $related->url();?>" class="post-more">Mehr erfahren <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
                                     </div>
-                                </div>
+                                </article>
                             </div>
                         </div>
                     <?php endif; ?>

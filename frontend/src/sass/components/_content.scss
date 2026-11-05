@@ -1,0 +1,153 @@
+// Modern content elements for text pages. Shares its design language with the gymnastics course pages (kurs.scss):
+// soft cards, rounded corners, light shadows and the blue/yellow accent colors.
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Lists, dividers and images
+// ---------------------------------------------------------------------------------------------------------------------
+
+.main-container li::marker {
+  color: $brightBlue;
+}
+
+.main-container hr {
+  height: 2px;
+  margin: 1.75rem 0;
+  background: linear-gradient(90deg, rgba($lightBlue, 0.35), rgba($lightBlue, 0.04));
+  border: 0;
+  border-radius: 2px;
+}
+
+.page img.figure-img,
+.main-container img.rounded,
+.veranstaltung--container img.img-fluid {
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+.main-container figcaption,
+.page .figure-caption {
+  color: $textMuted;
+  font-size: 0.88rem;
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Tables
+// ---------------------------------------------------------------------------------------------------------------------
+
+.main-container .table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  color: $textColor;
+  background-color: #fff;
+  border: 1px solid $borderColor;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
+
+  th,
+  td {
+    padding: 0.85rem 1.1rem;
+    vertical-align: middle;
+    border: 0;
+    border-top: 1px solid $borderColor;
+  }
+
+  thead {
+    background-color: $darkBlue;
+    background-image: linear-gradient(135deg, $darkBlue 0%, $brightBlue 100%);
+
+    th {
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  tbody tr:first-child td,
+  tbody tr:first-child th {
+    border-top: 0;
+  }
+
+  tbody tr {
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background-color: $paleBlue;
+    }
+  }
+
+  &.table-striped tbody tr:nth-of-type(odd) {
+    background-color: $mistBlue;
+
+    &:hover {
+      background-color: $paleBlue;
+    }
+  }
+
+  .btn {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    font-size: 0.9rem;
+  }
+}
+
+// Event facts ("Kurz und knapp"): label | value
+.main-container .table--facts {
+  td:first-child {
+    width: 34%;
+    color: $textMuted;
+    font-size: 0.8rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background-color: $mistBlue;
+  }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Notices
+// ---------------------------------------------------------------------------------------------------------------------
+
+.main-container .alert {
+  padding: 1rem 1.25rem;
+  border: 0;
+  border-left: 5px solid;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
+}
+
+.main-container .alert-success {
+  color: #1e5b36;
+  background-color: #e6f5ec;
+  border-left-color: #28a745;
+}
+
+.main-container .alert-info {
+  color: $darkBlue;
+  background-color: $paleBlue;
+  border-left-color: $lightBlue;
+}
+
+.main-container .alert-warning {
+  color: #5c4300;
+  background-color: #fff8e1;
+  border-left-color: $accentYellow;
+}
+
+.main-container .alert-danger {
+  color: #7d2a27;
+  background-color: #fdecea;
+  border-left-color: $color-red;
+}
+
+@media print {
+  .main-container .table,
+  .main-container .alert {
+    box-shadow: none;
+  }
+}

@@ -6,8 +6,49 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+// Content background: diagonal soft gradient, a sporty "center circle" motif and a dot grid in the lower left
+// corner. The SVGs live in public/assets/images/sfb/bg/.
+$pageBgPath: "../images/sfb/bg";
+
+// Short pages: the area below the footer matches the dark footer instead of showing a white strip
+html {
+  background-color: $deeperBlue;
+}
+
 div.page {
-  background: #fff;
+  // Minimum height so the center circle in the lower left corner never overlaps the content on short pages
+  min-height: 560px;
+  background-color: #fff;
+  background-image:
+    url("#{$pageBgPath}/pitch.svg"),
+    url("#{$pageBgPath}/dots.svg"),
+    linear-gradient(160deg, #d6eaf7 0%, #eef6fc 32%, #fff 56%, #e1eef7 100%);
+  background-repeat: no-repeat;
+  background-position:
+    left -260px bottom 120px,
+    left 3% bottom 28px,
+    0 0;
+  background-size:
+    520px 520px,
+    160px 120px,
+    100% 100%;
+
+  @include media-breakpoint-down(md) {
+    min-height: 420px;
+    background-position:
+      left -220px bottom 100px,
+      -300px -300px,
+      0 0;
+    background-size:
+      400px 400px,
+      0 0,
+      100% 100%;
+  }
+
+  @media print {
+    min-height: 0;
+    background: none;
+  }
 }
 
 ::selection {
@@ -44,7 +85,7 @@ hr {
 .main-container img.img-fluid,
 .main-container figure img,
 .page img.figure-img {
-  border-radius: $radiusSm;
+  border-radius: $radius;
 }
 
 blockquote {
@@ -242,8 +283,9 @@ h2.main-heading-1 {
 .btn-main,
 .btn-black,
 .btn-primary {
-  padding: 0.55rem 1.4rem;
+  padding: 0.55rem 1.5rem;
   border: none;
+  border-radius: 999px;
   box-shadow: $shadowSm;
 }
 
@@ -279,6 +321,10 @@ h2.main-heading-1 {
 
 .btn-1 {
   background-color: $brightBlue;
+  background-image: linear-gradient(135deg, $lightBlue 0%, $brightBlue 50%, $darkBlue 100%);
+  background-size: 180% 100%;
+  background-position: 0 0;
+  transition: $transition, background-position 0.4s ease;
 }
 
 .btn-1:hover,
@@ -286,6 +332,11 @@ h2.main-heading-1 {
 .btn-1:active,
 .btn-1.active {
   background-color: $lightBlue;
+  background-position: 100% 0;
+}
+
+.btn-outline-primary {
+  border-radius: 999px;
 }
 
 .btn-main,
@@ -1532,11 +1583,36 @@ ul#gallery-grid .hover-content:hover a {
 /* Contact Form Styles Starts */
 
 .contact-form-wrap {
-  margin-top: 60px;
+  position: relative;
+  margin-top: 2rem;
+  padding: 2.25rem 1.25rem 0.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: $radiusLg;
+  box-shadow: $shadow;
+
+  // sporty color bar on top of the card
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, $lightBlue, $brightBlue 55%, $accentYellow);
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 2.75rem 2.5rem 1rem;
+  }
+
+  @media print {
+    box-shadow: none;
+  }
 }
 
 .contact-form-wrap h5 {
-  margin-bottom: 40px;
+  margin-bottom: 1.75rem;
 }
 
 .contact-status {
@@ -1544,7 +1620,7 @@ ul#gallery-grid .hover-content:hover a {
 }
 
 .contact-form {
-  margin-bottom: 40px;
+  margin-bottom: 1.5rem;
 }
 
 .contact-form .form-group {
@@ -1560,14 +1636,15 @@ ul#gallery-grid .hover-content:hover a {
 .contact-form .form-control {
   padding: 20px;
   color: $textColor;
-  background-color: #fff;
+  background-color: $mistBlue;
   border: 1px solid $input-border-color;
-  border-radius: $radiusSm;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  border-radius: $radius;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
 .contact-form .form-control:focus,
 .blog-comments-form .form-control:focus {
+  background-color: #fff;
   border-color: $brightBlue;
 }
 
@@ -2273,7 +2350,6 @@ ul#gallery-grid .hover-content:hover a {
 .rc-5,
 .box-2 img,
 .sblock-1,
-.pricing-table,
 ul#gallery-grid .hover-content,
 ul#gallery-grid li .img-responsive,
 .comment-box .img-style-1,
@@ -2283,11 +2359,6 @@ ul#gallery-grid li .img-responsive,
   border-radius: 5px;
 }
 
-.pricing-table > div:first-of-type {
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-}
 
 .main-menu.one h6 {
   -webkit-border-radius: 0 5px 5px 0;
@@ -2333,11 +2404,6 @@ ul#article-filter li a:focus {
   box-shadow: none;
 }
 
-.pricing-table:hover {
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
 
 .animation,
 .animation a {
