@@ -64,13 +64,6 @@
                                     <textarea class="form-control flat" rows="8" name="nachricht" id="nachricht" required="required" placeholder="Ihre Nachricht"><?php echo $form->old('nachricht'); ?></textarea>
                                 </div>
                             </div>
-                          <div class="col-sm-12">
-                            <hr/>
-                            <div class="form-group">
-                              <label class="d-block">Spamschutz: *</label>
-                              <?php snippet('turnstile', ['action' => 'contact']); ?>
-                            </div>
-                          </div>
                             <div class="col-sm-12">
                                 <hr/>
                                 <div class="custom-control custom-checkbox">
@@ -85,6 +78,9 @@
                                 <hr/>
                                 <small>* = Pflichtfeld</small>
                                 <hr/>
+                            </div>
+                            <div class="col-sm-12 mb-2">
+                              <?php snippet('turnstile', ['action' => 'contact']); ?>
                             </div>
                             <div class="col-sm-12">
                                 <input type="submit" class="btn btn-1 btn-big animation col-12 col-md-4" value="Nachricht abschicken">

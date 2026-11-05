@@ -40,13 +40,6 @@
                             </div>
                             <div class="col-sm-12">
                                 <hr/>
-                                <div class="form-group">
-                                    <label class="d-block">Spamschutz: *</label>
-                                    <?php snippet('turnstile', ['action' => 'certificate']); ?>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <hr/>
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="customCheck1" name="dataDeclaration" value="0">
                                     <label class="custom-control-label" for="customCheck1">
@@ -59,6 +52,9 @@
                                 <hr/>
                                 <small>* = Pflichtfeld</small>
                                 <hr/>
+                            </div>
+                            <div class="col-sm-12 mb-2">
+                              <?php snippet('turnstile', ['action' => 'certificate']); ?>
                             </div>
                             <div class="col-sm-12">
                                 <input type="submit" class="btn btn-1 btn-big animation col-12 col-md-4" value="Bescheinigung beantragen">
