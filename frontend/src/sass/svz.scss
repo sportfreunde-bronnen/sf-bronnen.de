@@ -2,6 +2,8 @@
 // Standalone stylesheet (loaded in addition to sfb.css by the svz template), so the page
 // can be moved to its own subdomain later on.
 
+@use "sass:color";
+
 @import "variables";
 
 // Page specific colors
@@ -331,7 +333,7 @@ div.page.page--svz {
 .svz-tabs {
   position: -webkit-sticky;
   position: sticky;
-  top: var(--svz-nav-h, 0);
+  top: 0;
   z-index: 20;
   border-bottom: 1px solid $borderColor;
   background: rgba(#fff, 0.94);
@@ -888,7 +890,7 @@ html:not(.svz-js) .svz-panel + .svz-panel {
 
     &:hover,
     &:focus {
-      background: darken($paleBlue, 6%);
+      background: color.adjust($paleBlue, $lightness: -6%);
     }
   }
 

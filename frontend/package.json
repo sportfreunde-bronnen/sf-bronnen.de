@@ -4,9 +4,15 @@
   "description": "website sf-bronnen.de",
   "main": "index.js",
   "scripts": {
-    "dev": "grunt watch",
-    "build": "grunt build"
+    "dev": "node build.mjs --watch",
+    "build": "node build.mjs"
   },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sportfreunde-bronnen/sf-bronnen.de.git"
@@ -25,15 +31,11 @@
   },
   "homepage": "https://github.com/sportfreunde-bronnen/sf-bronnen.de#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.0",
+    "autoprefixer": "^10.6.2",
     "bootstrap": "^4.0.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-pug": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^3.1.0",
     "jquery": "^3.3.1",
-    "node-sass": "^9.0.0",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.12.9",
+    "postcss": "^8.5.32",
+    "sass": "^1.107.1"
   }
 }

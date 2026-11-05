@@ -6,7 +6,7 @@ sourcecode for the website sf-bronnen.de
 
 |Folder|Description|
 |---|---|
-|frontend/|frontend stylesheets built with bootstrap4, sass and grunt|
+|frontend/|frontend stylesheets built with bootstrap4, sass (Dart Sass) and postcss/autoprefixer|
 |kirby/|kirby CMS|
 |content/|page content|
 
@@ -20,7 +20,13 @@ npm install
 #2 Start dev mode (watching for changes)
 cd ./frontend
 npm run dev
+
+#3 Or build the stylesheets once (src/sass/*.scss -> public/assets/css/*.css)
+cd ./frontend
+npm run build
 ```
+
+The build (`frontend/build.mjs`) needs Node.js 20.19 or newer.
 
 ## Spam protection (Cloudflare Turnstile)
 

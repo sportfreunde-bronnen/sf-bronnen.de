@@ -18,23 +18,11 @@
     return;
   }
 
-  var nav = document.getElementById('nav');
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function toArray(list) {
     return Array.prototype.slice.call(list);
   }
-
-  function navHeight() {
-    return (nav && window.innerWidth >= 768) ? nav.offsetHeight : 0;
-  }
-
-  function updateNavOffset() {
-    root.style.setProperty('--svz-nav-h', navHeight() + 'px');
-  }
-
-  updateNavOffset();
-  window.addEventListener('resize', updateNavOffset);
 
   // ------------------------------------------------------------------
   // Tabs
@@ -48,7 +36,8 @@
   });
 
   function panelsScrollTop() {
-    var offset = navHeight() + (tabBar ? tabBar.offsetHeight : 0);
+    // the main navigation scrolls away, so only the sticky tab bar has to be considered
+    var offset = tabBar ? tabBar.offsetHeight : 0;
     return panelsWrap.getBoundingClientRect().top + window.pageYOffset - offset;
   }
 
