@@ -23,7 +23,7 @@ $groups = $page->priceGroups();
     <div class="svz-tariff svz-reveal" data-svz-tariff-switch hidden>
         <span class="svz-tariff__label" id="svz-tariff-label">Ihr Tarif:</span>
         <div class="svz-tariff__options" role="group" aria-labelledby="svz-tariff-label">
-            <button type="button" class="is-active" data-svz-tariff="regular" aria-pressed="true">Standard</button>
+            <button type="button" class="is-active" data-svz-tariff="regular" aria-pressed="true">Externe</button>
             <button type="button" data-svz-tariff="member" aria-pressed="false">Aktive Mitglieder</button>
         </div>
     </div>
@@ -45,7 +45,7 @@ $groups = $page->priceGroups();
                     $hasMinimum = $row['minimum'] > 0;
                     $prices = [
                         'regular' => [
-                            'label' => 'Standard',
+                            'label' => 'Externe',
                             'total' => $row['total'],
                             'rent' => $row['rent'],
                         ],

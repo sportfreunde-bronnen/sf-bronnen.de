@@ -27,15 +27,15 @@ class SvzPage extends DownloadsPage
     public const PACKAGES = [
         'getraenke' => [
             'title' => 'Getränkepaket',
-            'subtitle' => 'Raummiete + Mindestverzehr',
+            'subtitle' => 'Raummiete + Getränke von uns',
             'icon' => 'fa-beer',
-            'description' => 'Raummiete und Mindestverzehr in einem Paket. Die Preise gelten ohne Servicekraft.',
+            'description' => 'Kein Stress für Sie. Sie mieten den Raum und beziehen die Getränke zu unseren gewohnten Konditionen. Es gilt der angezeigte Mindestverzehr.',
         ],
         'raum' => [
             'title' => 'Raumpaket',
             'subtitle' => 'Nur Raummiete',
             'icon' => 'fa-key',
-            'description' => 'Sie mieten ausschließlich die Räumlichkeiten, ohne Mindestverzehr.',
+            'description' => 'Sie mieten ausschließlich die Räumlichkeiten. Die Getränke sowie die Verpflegung sind nicht enthalten. Bitte beachten Sie, dass beim Raumpaket die Nutzung unseres Kühlraums <b>nicht möglich</b> ist. Ein Kühlschrank steht Ihnen natürlich zur Verfügung.',
         ],
     ];
 

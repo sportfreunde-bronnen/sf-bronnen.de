@@ -1,51 +1,61 @@
+// Chronicle page: hint above the timeline and the typography of the event texts (the timeline itself: _timeline.scss)
+
 .page--chronik {
-  ul {
-    list-style-type: disc;
-    padding-left: 15px;
-    margin-bottom: 0 ! important;
-    li {
-      p {
-        margin-bottom: 0;
+  .timeline-hint {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 2.25rem;
+    padding: 0.55rem 1.1rem;
+    color: $darkBlue;
+    font-size: 0.95rem;
+    background-color: $paleBlue;
+    border-radius: 999px;
+
+    .fa {
+      margin-right: 0.6rem;
+      color: $brightBlue;
+      font-size: 1.1rem;
+    }
+
+    a {
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: rgba($brightBlue, 0.4);
+      text-underline-offset: 3px;
+
+      &:hover {
+        text-decoration-color: currentColor;
       }
     }
   }
-  p {
-    margin-bottom: 0 ! important;
-  }
 
-  // event cards
-  .card-group > .card {
-    border: 1px solid $borderColor;
-    border-radius: $radius;
-    box-shadow: $shadowSm;
-    transition: $transition;
-    animation: content-rise 0.5s ease backwards;
-
-    &:hover {
-      box-shadow: $shadow;
-      transform: translateY(-2px);
+  .timeline__content {
+    p {
+      margin-bottom: 0;
     }
-  }
 
-  .card-body {
-    padding: 1.25rem 1.5rem;
-  }
+    ul {
+      margin: 0;
+      padding-left: 1.15rem;
+      list-style-type: disc;
 
-  .timeline-separator h3 {
-    font-weight: 600;
-  }
+      li {
+        padding-left: 0.2rem;
 
-  @media (prefers-reduced-motion: reduce) {
-    .card-group > .card {
-      animation: none;
-      transition: none;
+        + li {
+          margin-top: 0.4rem;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
   @media print {
-    .card-group > .card {
-      animation: none;
-      box-shadow: none;
+    .timeline-hint {
+      display: none;
     }
   }
 }

@@ -6,9 +6,7 @@ Headline: Ihre Räumlichkeit für Veranstaltungen (Hochzeit, Geburtstag, Firmenf
 
 ----
 
-Text:
-
-Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Es liegt idyllisch im Grünen und lässt sich flexibel nutzen: für Ihre Hochzeit, den runden Geburtstag oder die Firmenfeier. Dank Photovoltaikanlage mit Batteriespeicher feiern Sie dabei größtenteils mit Sonnenstrom direkt vom eigenen Dach.
+Text: Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Es liegt idyllisch im Grünen und lässt sich flexibel nutzen: für Ihre Hochzeit, den runden Geburtstag oder die Firmenfeier. Dank Photovoltaikanlage mit Batteriespeicher feiern Sie dabei größtenteils mit Sonnenstrom direkt vom eigenen Dach.
 
 ----
 
@@ -18,7 +16,7 @@ Highlights:
   value: 165 m²
   label: Fläche, teilbar in zwei Räume
 - 
-  value: 100
+  value: "100"
   label: Sitzplätze
 - 
   value: 80 m²
@@ -35,53 +33,65 @@ Features:
   icon: fa-map-marker
   title: Ideale Lage
   text: >
-    Nur fünf Fahrminuten von Laupheim entfernt,
-    zwischen Ulm und Biberach. Idyllisch im Grünen
-    mit großzügigen Parkmöglichkeiten direkt vor der Tür.
+    Nur fünf Fahrminuten von Laupheim
+    entfernt, zwischen Ulm und Biberach.
+    Idyllisch im Grünen mit großzügigen
+    Parkmöglichkeiten direkt vor der Tür.
 - 
   icon: fa-th-large
   title: Flexible Räume
   text: >
-    Der kleine Gastraum (75 m²) mit großzügiger Theke bietet
-    Platz für bis zu 35 Personen. Mit dem Saal (zusätzlich 90 m²)
-    ist eine Bestuhlung für bis zu 100 Personen möglich.
+    Der kleine Gastraum (75 m²) mit
+    großzügiger Theke bietet Platz für
+    bis zu 35 Personen. Mit dem Saal
+    (zusätzlich 90 m²) ist eine Bestuhlung
+    für bis zu 100 Personen möglich.
 - 
   icon: fa-sun-o
   title: Große Terrasse
   text: >
-    Rund 80 m² überdacht. Bei schlechter Witterung lässt sie sich mit einer
-    ausziehbaren Plane einfach und unkompliziert schließen.
+    Rund 80 m² überdacht. Bei schlechter
+    Witterung lässt sie sich mit einer
+    ausziehbaren Plane einfach und
+    unkompliziert schließen.
 - 
   icon: fa-cutlery
   title: Voll ausgestattete Küche
-  text: >
-    Speisen aufwärmen oder frisch zubereiten: mit Industriespülmaschine
-    und integriertem Kühlraum für Getränke und Speisen.
+  text: 'Speisen aufwärmen oder frisch zubereiten: mit Industriespülmaschine und integriertem Kühlraum für Getränke und Speisen.'
 - 
   icon: fa-television
   title: Technik für Ihre Präsentation
   text: >
-    Fest installierter Beamer, Musikanlage und 65 Zoll Fernseher.
-    Dazu kostenloses Gast-WLAN für alle Besucher.
+    Fest installierter Beamer, Musikanlage
+    (inkl. Bluetooth) und 65 Zoll Fernseher.
+    Dazu kostenloses Gast-WLAN für alle
+    Besucher.
 - 
   icon: fa-child
   title: Familienfreundlich
   text: >
-    Wickeltisch, Kinderstühle und ein direkt angrenzender Spielplatz
-    mit viel Platz zum Spielen und Toben für Kinder jeden Alters.
+    Wickeltisch, Kinderstühle und ein
+    direkt angrenzender Spielplatz mit viel
+    Platz zum Spielen und Toben für Kinder
+    jeden Alters.
 - 
   icon: fa-leaf
   title: Sonnenstrom vom eigenen Dach
   text: >
-    Unsere Photovoltaikanlage inklusive Batteriespeicher versorgt Ihre
-    Veranstaltung zum größten Teil mit regenerativer Energie. E-Fahrzeuge
-    laden Sie vor Ort (Typ 2, 11 kW).
+    Unsere Photovoltaikanlage inklusive
+    Batteriespeicher versorgt Ihre
+    Veranstaltung zum größten Teil mit
+    regenerativer Energie. E-Fahrzeuge laden
+    Sie vor Ort (Typ 2, 11 kW). Für
+    Imbisswägen o.ä. stehen CEE Dosen (16
+    + 32 Ampere zur Verfügung).
 - 
   icon: fa-wheelchair
   title: Barrierefrei
   text: >
     Barrierefreier Zugang über eine Rampe
-    und Toilette für Menschen mit Behinderung.
+    und Toilette für Menschen mit
+    Behinderung.
 
 ----
 
@@ -109,6 +119,7 @@ Facts:
 - Ausreichend Parkplätze
 - Regenerative Energieversorgung (PV)
 - Lademöglichkeit für E-Fahrzeuge (Typ 2, 11 kW)
+- CEE-Dosen (16 + 32 Ampere) im Außenbereich für Imbisswägen o.ä. vorhanden
 
 ----
 
@@ -148,9 +159,7 @@ Quotes:
 
 ----
 
-Availabilitytext:
-
-Wählen Sie einen Monat und sehen Sie auf einen Blick, ob das SVZ an Ihrem Wunschtermin **frei (grün)** oder **belegt (rot)** ist. Ist Ihr Termin noch frei? Dann freuen wir uns über Ihre Anfrage über unser **[Kontaktformular](/home/kontakt?rec=svz)**.
+Availabilitytext: Wählen Sie einen Monat und sehen Sie auf einen Blick, ob das SVZ an Ihrem Wunschtermin **frei (grün)** oder **belegt (rot)** ist. Ist Ihr Termin noch frei? Dann freuen wir uns über Ihre Anfrage über unser **[Kontaktformular](/home/kontakt?rec=svz)**.
 
 ----
 
@@ -185,7 +194,9 @@ Prices:
 
 Pricenotes:
 
-Alle Preise in Euro. Der Tarif "Aktive Mitglieder" gilt für aktive Mitglieder der Sportfreunde Bronnen. Sie wünschen eine Servicekraft oder haben weitere Fragen? Sprechen Sie uns einfach an. Nutzungsvertrag, aktuelle Preisliste und Hausordnung finden Sie unter **[Downloads](/gesamtverein/allgemeines/downloads)** (Sportvereinszentrum).
+Alle Preise in Euro inklusive MwSt. Der Tarif "Aktive Mitglieder" gilt für aktive Mitglieder der Sportfreunde Bronnen, die seit mindestens einem Jahr Mitglied (Stichtag: Datum der Vermietung) bei uns im Verein sind.
+
+Sie wünschen eine Servicekraft oder haben weitere Fragen? Sprechen Sie uns einfach an. Nutzungsvertrag, aktuelle Preisliste und Hausordnung finden Sie unter **[Downloads](/gesamtverein/allgemeines/downloads)** (Sportvereinszentrum).
 
 ----
 

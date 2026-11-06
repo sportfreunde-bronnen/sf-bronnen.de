@@ -1,53 +1,222 @@
+// Vertical timeline (club chronicle): a line with one marker and one card per event.
+// Mobile: line on the left, cards on the right. From md: line in the center, cards alternate left/right.
+
+$timelineLine: 4px;
+$timelineMarker: 26px;
+$timelineGutter: 56px;
+
 .timeline {
   position: relative;
+  margin: 0;
+  padding: 0.5rem 0 0;
+  list-style: none;
+
+  // the line
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: ($timelineMarker - $timelineLine) * 0.5 + 8px;
+    width: $timelineLine;
+    background: linear-gradient(180deg, $brightBlue 0%, rgba($lightBlue, 0.12) 100%);
+    border-radius: $timelineLine;
+  }
 }
 
-.timeline-line {
+.timeline__item {
+  position: relative;
+  margin: 0 0 1.5rem;
+  padding: 0 0 0 $timelineGutter;
+  animation: content-rise 0.5s ease backwards;
+
+  @for $i from 1 through 8 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.05s * $i;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline__marker {
   position: absolute;
-  width: 4px;
-  display: block;
-  background: linear-gradient(180deg, $brightBlue 0%, rgba($lightBlue, 0.25) 100%);
-  border-radius: 4px;
-  top: 60px;
-  bottom: 10px;
-  margin-left: -18px
-}
-
-.timeline-line::before {
-  top: -4px
-}
-
-.timeline-line::after {
-  bottom: -4px
-}
-
-.timeline-line::after, .timeline-line::before {
-  content: '';
-  position: absolute;
-  left: -4px;
-  width: 12px;
-  height: 12px;
-  display: block;
+  top: 1.25rem;
+  left: 8px;
+  z-index: 1;
+  width: $timelineMarker;
+  height: $timelineMarker;
+  background: #fff;
+  border: 6px solid $brightBlue;
   border-radius: 50%;
-  background: $brightBlue;
+  box-shadow: 0 0 0 5px $mistBlue, $shadowSm;
+  transition: $transition;
 }
 
-.timeline-separator {
-  border-top: 1px dashed rgba($brightBlue, 0.45);
-  padding: 15px 5px 10px 40px;
-  margin-left: -15px;
-  margin-top: 20px
+.timeline__card {
+  position: relative;
+  padding: 1.25rem 1.5rem 1.35rem;
+  color: $textColor;
+  text-align: left;
+  background: #fff;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
+  transition: $transition;
+
+  // little arrow pointing to the marker
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1.55rem;
+    left: -8px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-bottom: 1px solid $borderColor;
+    border-left: 1px solid $borderColor;
+    transform: rotate(45deg);
+    transition: $transition;
+  }
+
+  // sporty accent on the card edge facing the line
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background: linear-gradient(180deg, $lightBlue, $brightBlue);
+    border-radius: $radius 0 0 $radius;
+    opacity: 0;
+    transition: $transition;
+  }
 }
 
-.timeline-separator h3 {
-  margin-left: -18px;
-  color: $brightBlue;
+.timeline__item:hover {
+  .timeline__card {
+    box-shadow: $shadow;
+    transform: translateY(-2px);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  .timeline__marker {
+    background: $accentYellow;
+    transform: scale(1.12);
+  }
 }
 
-.timeline-icon {
-  margin: 10px 0 0 -7px;
-  height: 1.8em;
-  width: 1.8em;
+.timeline__year {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.2rem 0.95rem;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  background: linear-gradient(135deg, $darkBlue 0%, $brightBlue 100%);
+  border-radius: 999px;
+}
+
+.timeline__content {
+  line-height: 1.6;
+}
+
+// the oldest event ("Gründung") is the origin of the line
+.timeline__item--start {
+  .timeline__marker {
+    background: $accentYellow;
+    border-color: $darkBlue;
+  }
+
+  .timeline__year {
+    background: linear-gradient(135deg, #f29900 0%, $accentYellow 100%);
+    color: $deeperBlue;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .timeline::before {
+    left: 50%;
+    margin-left: -($timelineLine * 0.5);
+  }
+
+  .timeline__item {
+    width: 50%;
+    padding: 0 ($timelineMarker + 22px) 0 0;
+
+    // right-hand side
+    &:nth-child(even) {
+      margin-left: 50%;
+      padding: 0 0 0 ($timelineMarker + 22px);
+    }
+  }
+
+  .timeline__marker {
+    right: -($timelineMarker * 0.5);
+    left: auto;
+  }
+
+  .timeline__item:nth-child(even) .timeline__marker {
+    right: auto;
+    left: -($timelineMarker * 0.5);
+  }
+
+  // arrow and accent edge switch sides with the card
+  .timeline__item:nth-child(odd) .timeline__card {
+    &::before {
+      right: -8px;
+      left: auto;
+      border-top: 1px solid $borderColor;
+      border-right: 1px solid $borderColor;
+      border-bottom: 0;
+      border-left: 0;
+    }
+
+    &::after {
+      right: 0;
+      left: auto;
+      border-radius: 0 $radius $radius 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline__item {
+    animation: none;
+  }
+
+  .timeline__card,
+  .timeline__card::before,
+  .timeline__card::after,
+  .timeline__marker {
+    transition: none;
+  }
+
+  .timeline__item:hover {
+    .timeline__card,
+    .timeline__marker {
+      transform: none;
+    }
+  }
+}
+
+@media print {
+  .timeline__item {
+    animation: none;
+    break-inside: avoid;
+  }
+
+  .timeline__card {
+    box-shadow: none;
+  }
 }
 
 .card-header {
