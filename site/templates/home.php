@@ -1,50 +1,100 @@
+<?php
+$slides = $page->slides()->toStructure();
+$slideCount = $slides->count();
+$areas = $page->getAreas();
+$news = $page->getLatestNews();
+$newsLimit = HomePage::NEWS_LIMIT;
+$events = $page->getNextEvents();
+$banner = $page->homeBanner()->isNotEmpty() ? $page->homeBanner()->toFile() : null;
+?>
 <?php snippet('header'); ?>
 <div class="template--home">
-    <div id="main-slider" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-            <?php if ($page->slides()->isNotEmpty()): ?>
-                <?php $i = 0; foreach ($page->slides()->toStructure() as $slide): $i++;?>
-                    <div class="carousel-item<?= (1 === $i) ? ' active': '';?>">
-                        <img src="<?= $slide->sliderimage()->toFile()->url();?>" alt="Slide 1" class="img-fluid">
-                        <div class="carousel-caption text-lite-color<?= ($slide->textposition() == 'right') ? ' inverse' : '';?>">
-                            <h2 class="text-weight-medium"><?= $slide->title();?></h2>
-                            <h5 class="text-weight-light"><?= $slide->text();?></h5>
-                            <?php if ($slide->internallink()->toPage()): ?>
-                                <a href="<?= $slide->internallink()->toPage()->url();?>" class="btn btn-1 animation text-weight-medium">
-                                    <?php if ($slide->buttonText()->isEmpty()): ?>
-                                        Mehr erfahren
-                                    <?php else: ?>
-                                        <?= $slide->buttonText();?>
-                                    <?php endif; ?>
-                                </a>
-                            <?php elseif($slide->externallink()->isNotEmpty()): ?>
-                                <a href="<?= $slide->externallink();?>" class="btn btn-1 animation text-weight-medium">
-                                    <?php if ($slide->buttonText()->isEmpty()): ?>
-                                        Mehr erfahren
-                                    <?php else: ?>
-                                        <?= $slide->buttonText();?>
-                                    <?php endif; ?>
-                                </a>
-                            <?php else: ?>
-                            <?php endif; ?>
+    <div class="page">
+
+        <section class="home-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 home-intro-main home-reveal">
+                        <h2 class="home-title">Herzlich <span>willkommen!</span></h2>
+                        <?php if ($page->zitat()->isNotEmpty()): ?>
+                            <p class="lead"><?= esc((string)$page->zitat());?></p>
+                        <?php endif; ?>
+                        <div class="home-intro-text">
+                            <?= $page->text()->kirbytext(); ?>
                         </div>
                     </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
-        </div>
-        <?php if ($page->slides()->toStructure()->count() > 1): ?>
-            <a class="carousel-control-prev animation" href="#main-slider" role="button" data-slide="prev">
-                <span class="fa fa-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next animation" href="#main-slider" role="button" data-slide="next">
-                <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        <?php endif; ?>
-    </div>
+                    <?php if ($areas): ?>
+                        <div class="col-lg-5">
+                            <?php /* no <nav> element: custom.js pins every <nav> to the top of the window while scrolling */ ?>
+                            <div class="home-areas home-reveal" role="navigation" aria-label="Unsere Bereiche">
+                                <h3 class="home-areas-title">Unsere Bereiche</h3>
+                                <ul class="home-areas-list">
+                                    <?php foreach ($areas as $area): ?>
+                                        <li>
+                                            <a class="home-area" href="<?= $area['url'];?>" title="Zum Bereich <?= esc($area['title']);?>">
+                                                <span class="home-area-icon"><i class="fa <?= $area['icon'];?>"></i></span>
+                                                <span class="home-area-label"><?= esc($area['title']);?></span>
+                                                <i class="fa fa-angle-right home-area-arrow"></i>
+                                            </a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </section>
 
-    <div class="page">
+        <?php if ($slideCount > 0): ?>
+            <section class="home-slides home-slides--<?= (1 === $slideCount) ? 'single' : 'multi';?>" aria-label="Aktuelle Themen">
+                <?php foreach ($slides as $slide): ?>
+                    <?php
+                    $image = $slide->sliderimage()->toFile();
+                    $text = trim((string)$slide->text());
+                    $link = null;
+                    if ($slide->internallink()->toPage()) {
+                        $link = $slide->internallink()->toPage()->url();
+                    } elseif ($slide->externallink()->isNotEmpty()) {
+                        $link = (string)$slide->externallink();
+                    }
+                    $buttonText = $slide->buttonText()->isEmpty() ? 'Mehr erfahren' : (string)$slide->buttonText();
+
+                    $classes = ['home-slide'];
+                    if ('right' === (string)$slide->textposition()) {
+                        $classes[] = 'home-slide--right';
+                    }
+                    if (!$image) {
+                        $classes[] = 'home-slide--plain';
+                    }
+                    ?>
+                    <article class="<?= implode(' ', $classes);?>">
+                        <?php if ($image): ?>
+                            <?php
+                            $widths = array_values(array_filter([480, 800, 1200, 1600], function ($width) use ($image) {
+                                return $width < $image->width();
+                            }));
+                            $widths[] = $image->width();
+                            ?>
+                            <img class="home-slide-media"
+                                 src="<?= $image->url();?>"
+                                 srcset="<?= $image->srcset($widths);?>"
+                                 sizes="<?= (1 === $slideCount) ? '100vw' : '(min-width: 768px) ' . round(100 / $slideCount, 2) . 'vw, 100vw';?>"
+                                 alt="">
+                        <?php endif; ?>
+                        <div class="home-slide-content">
+                            <h2 class="home-slide-title"><?= esc((string)$slide->title());?></h2>
+                            <?php if ($text !== ''): ?>
+                                <p class="home-slide-text"><?= esc($text);?></p>
+                            <?php endif; ?>
+                            <?php if ($link): ?>
+                                <a class="home-slide-btn stretched-link" href="<?= $link;?>"><?= esc($buttonText);?><i class="fa fa-long-arrow-right"></i></a>
+                            <?php endif; ?>
+                        </div>
+                    </article>
+                <?php endforeach; ?>
+            </section>
+        <?php endif; ?>
 
         <?php if ($upcomingData = $page->getLatestResults() && 1 == 2): ?>
             <section class="football-upcoming">
@@ -58,92 +108,73 @@
             </section>
         <?php endif; ?>
 
-        <section class="pt-5">
-            <div class="container  pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
-                <div class="row">
-                    <div class="col-12">
-                        <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mt-0">Herzlich <span>willkommen!</span></h4>
-                        <p class="lead">
-                            <?= $page->zitat();?>
-                        </p>
-                        <?= $page->text()->kirbytext(); ?>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-      <?php if ($page->homeBanner()->isNotEmpty()):?>
-        <section class="pt-5">
-          <div class="container  pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
-            <div class="row">
-              <div class="col-12">
-                <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mt-0"><?= $page->homeBannerText();?></h4>
-                <img class="img-fluid" src="<?= $page->homeBanner()->toFile()->url();?>"/>
-              </div>
-            </div>
-          </div>
-        </section>
-      <?php endif; ?>
-
-        <div class="main-container container pl-sm-0 pr-sm-0 pb-0 text-xs-center text-sm-center text-md-left">
-            <section class="section-latest-news">
-                <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mb-0"><span>Aktuelles</span> aus dem Verein</h4>
-                <div class="row">
-                    <div id="blog-post-carousel" class="owl-carousel mt-0">
-                        <?php foreach ($page->getLatestNews() as $post): ?>
-                            <div class="box-3 news-box">
-                                <a href="<?= $post->url();?>" title="Zum Artikel - <?= $post->title();?>">
-                                    <?php if ($post->teaserimage()->isNotEmpty()): ?>
-                                        <img src="<?= $post->teaserimage()->toFile()->resize(350)->url(); ?>" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
-                                    <?php else: ?>
-                                        <img src="/assets/images/blog/blog-thumb-2.jpg" alt="Artikelbild - <?= $post->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
-                                    <?php endif; ?>
-                                </a>
-                                <div class="news-box-content">
-                                    <div class="time-stamp text-center">
-                                        <span class="text-weight-light"><?= date('d.m.Y', strtotime($post->datum()));?> - <?= $post->parents()->last()->title();?></span>
-                                    </div>
-                                    <h6 class="text-weight-medium"><a title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>"><?= $post->title();?></a></h6>
-                                    <hr/>
-                                    <p><?= substr(strip_tags($post->text()->kirbytext()), 0, 100); ?>...</p>
-                                    <ul class="list-unstyled list-inline text-normal">
-                                        <li class="list-inline-item text-weight-medium"><a class="h6" title="Zum Artikel - <?= $post->title();?>" href="<?= $post->url();?>">Weiterlesen</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
+        <?php if ($banner): ?>
+            <section class="home-values">
+                <div class="container">
+                    <h2 class="home-values-title home-reveal"><?= $page->homeBannerText();?></h2>
+                    <div class="home-values-scroll home-reveal">
+                        <img class="home-values-image"
+                             src="<?= $banner->url();?>"
+                             srcset="<?= $banner->srcset([800, 1200, 1600]);?>"
+                             sizes="(min-width: 1200px) 1110px, 100vw"
+                             width="<?= $banner->width();?>" height="<?= $banner->height();?>"
+                             alt="<?= esc((string)$banner->alt()->or(strip_tags((string)$page->homeBannerText())));?>"
+                             loading="lazy">
                     </div>
                 </div>
             </section>
-        </div>
+        <?php endif; ?>
 
-        <div class="main-container container pl-sm-0 pr-sm-0 pt-0 text-xs-center text-sm-center text-md-left">
-            <section class="section-upcoming-events">
-                <h4 class="section-heading-1 text-xs-center text-sm-center text-md-left mb-0"><span>Kommende</span> Veranstaltungen</h4>
-                <div class="row mt-4">
-                    <?php foreach ($page->getNextEvents() as $event): ?>
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <a href="<?= $event->url();?>">
-                            <?php if ($event->vimage()->isNotEmpty()): ?>
-                                <img src="<?= $event->vimage()->toFile()->crop(400,200)->url();?>" alt="Veranstaltungsbild - <?= $event->title();?> - Sportfreunde Bronnen" class="img-fluid img-center pb-2">
-                            <?php else: ?>
-                                <img src="/assets/images/blog/blog-thumb-2.jpg" alt="Veranstaltungsbild - <?= $event->title();?> - Sportfreunde Bronnen" class="img-fluid img-center">
-                            <?php endif; ?>
-                            </a>
-                            <a href="<?= $event->url();?>">
-                                <b><?= $page->formatDate($event->datum());?></b>: <?= $event->title();?>
-                            </a>
-                            <br/>
-                            <small><?= $event->shorttitle();?></small>
-                            <br/>
-                            <hr class="d-block d-sm-none"/>
+        <section class="home-news" id="aktuelles" data-news data-limit="<?= $newsLimit;?>">
+            <div class="container">
+                <h2 class="blog-section-title">Aktuelles aus dem Verein</h2>
+
+                <div class="news-filter" role="group" aria-label="Beiträge nach Bereich filtern" data-news-filter hidden>
+                    <button type="button" class="news-filter-card is-active" data-filter="all" aria-pressed="true">
+                        <span class="news-filter-icon"><i class="fa fa-th-large"></i></span>
+                        <span class="news-filter-label">Alle</span>
+                    </button>
+                    <?php foreach ($areas as $area): ?>
+                        <button type="button" class="news-filter-card" data-filter="<?= $area['slug'];?>" data-archive-url="<?= $area['archiveUrl'];?>" data-archive-label="Alle Beiträge: <?= esc($area['title']);?>" aria-pressed="false">
+                            <span class="news-filter-icon"><i class="fa <?= $area['icon'];?>"></i></span>
+                            <span class="news-filter-label"><?= esc($area['title']);?></span>
+                        </button>
+                    <?php endforeach; ?>
+                </div>
+
+                <div class="news-grid" data-news-grid>
+                    <?php $i = 0; foreach ($news as $post): $i++; ?>
+                        <?php
+                        $areaSlug = $page->getAreaSlug($post);
+                        $areaTitle = isset($areas[$areaSlug]) ? $areas[$areaSlug]['title'] : (string)$post->parents()->last()?->title();
+                        ?>
+                        <div class="news-grid-item" data-area="<?= $areaSlug;?>"<?= ($i > $newsLimit) ? ' hidden' : '';?>>
+                            <?php snippet('post-card', ['post' => $post, 'areaTitle' => $areaTitle]); ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
-            </section>
-        </div>
+
+                <p class="news-empty" data-news-empty<?= ($news->count() > 0) ? ' hidden' : '';?>>Für diesen Bereich gibt es aktuell keine Beiträge.</p>
+                <p class="news-archive" data-news-archive hidden><a class="btn btn-1" href="#"></a></p>
+            </div>
+        </section>
+
+        <section class="home-events">
+            <div class="container">
+                <h2 class="blog-section-title">Kommende Veranstaltungen</h2>
+                <?php if ($events->isNotEmpty()): ?>
+                    <div class="event-grid">
+                        <?php foreach ($events as $event): ?>
+                            <?php snippet('event-card', ['event' => $event]); ?>
+                        <?php endforeach; ?>
+                    </div>
+                <?php else: ?>
+                    <p class="event-empty">Aktuell sind keine Veranstaltungen geplant.</p>
+                <?php endif; ?>
+            </div>
+        </section>
 
     </div>
 
 </div>
-<?php snippet('footer'); ?><?php snippet('close'); ?>
+<?php snippet('footer', ['scripts' => ['home']]); ?><?php snippet('close'); ?>

@@ -538,37 +538,6 @@ h2.main-heading-1 {
   color: #fff;
 }
 
-.header-parallax #main-slider,
-.header-full #main-slider {
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 80px;
-}
-
-.header-parallax #main-slider .carousel-inner,
-.header-full #main-slider .carousel-inner {
-  overflow: visible;
-}
-
-.header-parallax #main-slider .carousel-caption,
-.header-full #main-slider .carousel-caption {
-  top: 0;
-  bottom: 0;
-  position: static;
-  text-align: center;
-}
-
-.header-parallax #main-slider .carousel-control-prev,
-.header-full #main-slider .carousel-control-prev {
-  left: -5%;
-}
-
-.header-parallax #main-slider .carousel-control-next,
-.header-full #main-slider .carousel-control-next {
-  right: -5%;
-}
-
-.header-parallax #main-slider,
 .header-parallax #nav,
 .header-parallax .main-menu .navbar-nav > li > a,
 .header-parallax .main-menu .navbar-nav > li:hover > a,
@@ -578,7 +547,6 @@ h2.main-heading-1 {
 .header-parallax .main-menu .navbar-toggler:hover,
 .header-parallax .main-menu .navbar-toggler:focus,
 .header-full > .top-bar,
-.header-full #main-slider,
 .header-full #nav,
 .header-full .main-menu .navbar-nav > li > a,
 .header-full .main-menu .navbar-nav > li:hover > a,
@@ -1004,96 +972,6 @@ h2.main-heading-1 {
   margin-left: 5px;
 }
 
-/*	Section Latest News Styles Starts */
-
-.section-latest-news {
-  padding-bottom: 15px;
-}
-
-.news-box {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  background: #fff;
-  border: 1px solid $borderColor;
-  border-radius: $radius;
-  box-shadow: $shadowSm;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-  img {
-    width: 100%;
-  }
-  &:hover {
-    box-shadow: $shadowLg;
-    transform: translateY(-3px);
-  }
-}
-
-.news-box-content {
-  padding: 25px 25px 15px;
-  position: relative;
-}
-
-.news-box-content,
-.news-box-content a {
-  color: $textColor;
-}
-
-.news-box-content a:hover,
-.news-box-content a:focus {
-  color: $brightBlue;
-}
-
-.news-box-content .time-stamp {
-  position: absolute;
-  top: -18px;
-  left: 20px;
-  padding: 6px 14px;
-  min-width: 70px;
-  width: auto;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 20px;
-  box-shadow: $shadow;
-  background-color: $brightBlue;
-}
-
-.news-box-content .time-stamp span {
-  display: block;
-}
-
-.news-box-content h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.news-box-content h6,
-.news-box-content h6 a {
-  color: $darkBlue;
-}
-
-.news-box-content ul {
-  margin-bottom: 0;
-  padding-top: 15px;
-  border-top: 1px solid $borderColor;
-}
-
-.news-box-content ul > li {
-  font-size: 12px;
-}
-
-.news-box-content ul > li:first-of-type {
-  padding-left: 0;
-}
-
-.news-box-content ul > li:first-of-type + li {
-  padding-left: 20px;
-  padding-right: 0;
-}
-
-.news-box-content ul > li .fa {
-  margin-right: 6px;
-}
-
 /*	Section Our Team Styles Starts */
 
 .section-our-team {
@@ -1379,30 +1257,6 @@ ul#gallery-grid .hover-content:hover a {
 
 #accordion-help .card-body > p:last-of-type {
   margin-bottom: 10px;
-}
-
-/* Blog Post Carousel Styles Starts */
-
-#blog-post-carousel .owl-nav .owl-prev,
-#blog-post-carousel .owl-nav .owl-next {
-  font-size: 50px;
-  color: #323946;
-  opacity: 1;
-  background: none;
-}
-
-#blog-post-carousel .owl-nav .owl-prev:hover,
-#blog-post-carousel .owl-nav .owl-next:hover {
-  color: $brightBlue;
-}
-
-#featured-blog-post-carousel .owl-nav {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-#featured-blog-post-carousel .owl-controls .owl-page span {
-  background-color: $brightBlue;
 }
 
 /* Blog Page Styles Starts */
@@ -1821,35 +1675,6 @@ ul#gallery-grid .hover-content:hover a {
 .blog-post .box-3 {
   margin-top: 0;
   margin-bottom: 40px;
-}
-
-#blog-post-carousel .box-3 {
-  margin: 40px 10px;
-}
-
-#blog-post-carousel .owl-stage,
-#blog-post-carousel .owl-item {
-  display: flex;
-}
-
-#blog-post-carousel .owl-item .news-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#blog-post-carousel .owl-item .news-box-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-}
-
-#blog-post-carousel .owl-item .news-box-content ul {
-  margin-top: auto;
-}
-
-#featured-blog-post-carousel .box-3 {
-  margin-bottom: 30px;
 }
 
 .box-3 .inner {
@@ -2345,8 +2170,6 @@ ul#gallery-grid .hover-content:hover a {
 }
 
 .main-menu.one,
-#main-slider.sub,
-#main-slider.sub > .carousel-inner > .carousel-item > img.img-fluid,
 .rc-5,
 .box-2 img,
 .sblock-1,

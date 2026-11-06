@@ -2,9 +2,6 @@
 
   "use strict";
 
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-  
   if (window.innerWidth >= 768) {
 
     $(window).scroll(function () {
@@ -36,33 +33,6 @@
       //event.preventDefault();
   });	
   
-  // Blog Carousel
-  $("#blog-post-carousel").owlCarousel({
-      autoPlay: true, //Set AutoPlay to 3 seconds
-      items : 3,
-      stopOnHover : true,
-      navigation : true, // Show next and prev buttons
-      pagination : false,
-      navigationText : ["<span class='fa fa-chevron-left animation'></span>","<span class='fa fa-chevron-right animation'></span>"],
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true
-        },
-        768: {
-          items: 2,
-          nav: true
-        },
-        1200: {
-          items: 3,
-          nav: true
-        }
-      }
-  });
-
-  $('div.owl-nav').addClass('text-center');
-
   // ACCORDION
   var $active = $("#accordion .collapse.show")
                   .prev()

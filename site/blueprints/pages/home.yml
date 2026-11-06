@@ -19,11 +19,15 @@ fields:
     type: files
     help: Wenn keine Datei ausgewählt wird findet keine Anzeige statt
   slider:
-    label: Slider
+    label: Slides
     type: headline
   slides:
     label: Slides
-    help: Reihenfolge kann per Drag and Drop angepasst werden. Für neue Slider Bilder gilt das Format 2000x656 Pixel
+    help: >
+      Die Slides werden als Boxen nebeneinander über die gesamte Breite der Startseite angezeigt und teilen sich den
+      verfügbaren Platz (auf kleinen Bildschirmen untereinander). Ein einzelner Slide nimmt die ganze Breite ein.
+      Die Reihenfolge kann per Drag and Drop angepasst werden. Bilder werden zugeschnitten, das Motiv sollte daher
+      mittig liegen. Empfohlen: Querformat, mindestens 1200 Pixel breit.
     type: structure
     entry: >
       <b>{{title}}</b><br/>{{text}}
@@ -40,7 +44,7 @@ fields:
         label: Text
         type: text
       textPosition:
-        label: Textposition
+        label: Textausrichtung
         type: radio
         options:
           left: Links
