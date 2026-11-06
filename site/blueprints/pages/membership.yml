@@ -1,0 +1,9 @@
+title: Mitgliedsantrag
+pages: false
+fields:
+  headline: fields/headline
+  text:
+    type: textarea
+    label: Einleitung
+    size: medium
+    help: Kurzer Text oberhalb des Formulars. Die Empfängeradresse des Antrags wird in der config.php eingestellt (sfb.membership.recipient).

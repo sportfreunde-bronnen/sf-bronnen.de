@@ -84,3 +84,40 @@ The form is protected by Cloudflare Turnstile (action `svz-contact`); the SVZ ho
 
 A click on a day of the availability calendar shows the button "Den xx.xx.xxxx direkt anfragen" below the calendar, which opens the form
 with the date preselected (`/anfrage?datum=YYYY-MM-DD`). Texts of the form page are editable in the panel (page "Anfrage" below the SVZ page).
+
+## Digital membership application ("Mitglied werden")
+
+The page "Mitglied werden" (`gesamtverein/mitglieder/mitglied-werden`, template `membership`) offers the membership application as an online form
+(`site/templates/membership.php`, `site/controllers/membership.php`, `public/assets/js/membership.js`, `frontend/src/sass/membership.scss`).
+After the submission the PDF form `data/beitrittserklarung_stand_03.2026.pdf` (Beitrittserklärung und Vollmacht) is filled in automatically and sent
+as attachment, together with a short summary of the data, to the e-mail address of the membership administration. The mail is sent with the SMTP account
+of the main contact form (action `MembershipMailAction`), the applicant is set as reply-to address. The form is protected by Cloudflare Turnstile
+(action `membership`), see above.
+
+The recipient is configurable in the (gitignored) `site/config/config.php`, as long as it is empty the form rejects every submission:
+
+```php
+// e-mail address of the membership administration which receives the applications
+'sfb.membership.recipient' => 'mitglieder@example.com',
+// optional, path of the PDF form, default: data/beitrittserklarung_stand_03.2026.pdf in the project folder
+// 'sfb.membership.template' => '/path/to/beitrittserklaerung.pdf',
+```
+
+The nested notation (`'sfb' => ['membership' => ['recipient' => '...']]`) is supported as well.
+
+What is filled in:
+
+- personal data (name, address, date of entry (default: today), date of birth, e-mail, phone), the groups / the passive membership and the fee class are entered or checked in the form
+- additional family members (only for the fee class "Familienbeitrag", up to 10 with name, date of birth and group) are written into the line "weitere Familienmitglieder" as far as they fit; all of them are listed on an appendix page (page 4)
+- the SEPA direct debit mandate (IBAN with checksum validation, BIC, bank, account holder)
+- place and date (place from the form, today's date) and the signatures: they are generated from the entered names with a handwriting font
+  (signature of the member on the data protection page, signature of the account holder on the SEPA mandate)
+
+The PDF has no form fields, therefore the texts are written at fixed positions on top of the original pages (`site/plugins/sfb-membership/src/MembershipPdf.php`).
+**If the PDF form is replaced by a new version, the coordinates in `MembershipPdf` and the groups / fee classes in `MembershipApplication` have to be adapted.**
+The groups (with their group numbers) are defined in `MembershipApplication::DEPARTMENTS`.
+
+The PDF is created with [FPDI](https://github.com/Setasign/FPDI) and [TCPDF](https://tcpdf.org) (`composer install`). The signature font
+"Herr Von Muellerhoff" (SIL Open Font License, see `site/plugins/sfb-membership/fonts/OFL.txt`) is converted to the TCPDF font format
+(`TCPDF_FONTS::addTTFfont`), the converted files are part of the repository. The IBAN is only partly readable in the e-mail (it is complete in the PDF).
+The texts of the page are editable in the panel (page "Mitglied werden" below "Mitglieder").

@@ -1,0 +1,13 @@
+Title: Mitglied werden
+
+----
+
+Headline: Jetzt online Mitglied werden!
+
+----
+
+Text: **Sie möchten Mitglied bei den Sportfreunden Bronnen werden? Kein Problem. Füllen Sie einfach das unten stehende Formular aus. Wir füllen damit unsere Beitrittserklärung für Sie aus und senden sie an unsere Mitgliederverwaltung. Diese meldet sich bei Ihnen, sobald Ihr Antrag bearbeitet wurde.**
+
+----
+
+Uuid: mV7pQ2xRk9LdWe4T

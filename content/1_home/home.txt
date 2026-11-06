@@ -18,11 +18,20 @@ Bleiben Sie sportlich.
 
 ----
 
-Homebannertext: Unsere <span>Werte</span>
+Areas:
+
+- 
+  name: Mitglied werden
+  icon: fa-file-text-o
+  link: page://mV7pQ2xRk9LdWe4T
+- 
+  name: Unser SVZ mieten
+  icon: fa-building
+  link: page://CTiBBmnrhRlQJEKg
 
 ----
 
-Homebanner: - file://9O7IcYVV3GVUHWUN
+Homebannertext: Unsere <span>Werte</span>
 
 ----
 

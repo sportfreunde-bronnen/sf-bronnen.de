@@ -338,14 +338,14 @@
     background: linear-gradient(135deg, $deeperBlue 0%, $darkBlue 55%, $brightBlue 130%);
   }
 
+  // Small heading above the statement
   .home-values-title {
-    margin: 0 0 1.75rem;
-    color: #fff;
-    font-size: 1.9rem;
+    margin: 0 0 1.5rem;
+    color: rgba(#fff, 0.8);
+    font-size: 0.95rem;
     font-weight: 400;
-    @include media-breakpoint-up(lg) {
-      font-size: 2.3rem;
-    }
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 
     span {
       color: $accentYellow;
@@ -357,20 +357,61 @@
     }
   }
 
-  // On small screens the banner keeps a readable size and can be swiped
-  .home-values-scroll {
-    overflow-x: auto;
-    border-radius: $radiusLg;
-    box-shadow: $shadowLg;
-    -webkit-overflow-scrolling: touch;
+  // Welcome and fair play statement: two columns on large screens, stacked below
+  .home-values-statement {
+    display: grid;
+    gap: 1.75rem;
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    p {
+      margin: 0;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 1.35;
+      @include media-breakpoint-up(md) {
+        font-size: 1.9rem;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 2.1rem;
+      }
+    }
+
+    strong {
+      font-weight: 700;
+    }
   }
 
-  .home-values-image {
-    width: 100%;
-    min-width: 640px;
-    height: auto;
-    display: block;
-    border-radius: 0;
+  // Accent line: above the claim on small screens, left of it on large screens
+  .home-values-claim {
+    position: relative;
+    padding-top: 1.75rem;
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+      padding-left: 3rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4.5rem;
+      height: 4px;
+      background: linear-gradient(90deg, $accentYellow, $brightBlue);
+      border-radius: 2px;
+      @include media-breakpoint-up(lg) {
+        top: 0.25rem;
+        bottom: 0.25rem;
+        width: 4px;
+        height: auto;
+        background: linear-gradient(180deg, $accentYellow, $brightBlue);
+      }
+    }
   }
 
   // -------------------------------------------------------------------------------------------------------------------

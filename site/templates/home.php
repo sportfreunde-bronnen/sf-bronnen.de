@@ -1,11 +1,11 @@
 <?php
 $slides = $page->slides()->toStructure();
 $slideCount = $slides->count();
-$areas = $page->getAreas();
+$areas = $page->getAreaLinks();
+$newsAreas = $page->getNewsAreas();
 $news = $page->getLatestNews();
 $newsLimit = HomePage::NEWS_LIMIT;
 $events = $page->getNextEvents();
-$banner = $page->homeBanner()->isNotEmpty() ? $page->homeBanner()->toFile() : null;
 ?>
 <?php snippet('header'); ?>
 <div class="template--home">
@@ -26,12 +26,12 @@ $banner = $page->homeBanner()->isNotEmpty() ? $page->homeBanner()->toFile() : nu
                     <?php if ($areas): ?>
                         <div class="col-lg-5">
                             <?php /* no <nav> element: custom.js pins every <nav> to the top of the window while scrolling */ ?>
-                            <div class="home-areas home-reveal" role="navigation" aria-label="Unsere Bereiche">
-                                <h3 class="home-areas-title">Unsere Bereiche</h3>
+                            <div class="home-areas home-reveal" role="navigation" aria-label="Nicht lange suchen">
+                                <h3 class="home-areas-title">Nicht lange suchen</h3>
                                 <ul class="home-areas-list">
                                     <?php foreach ($areas as $area): ?>
                                         <li>
-                                            <a class="home-area" href="<?= $area['url'];?>" title="Zum Bereich <?= esc($area['title']);?>">
+                                            <a class="home-area" href="<?= esc($area['url']);?>" title="Zum Bereich <?= esc($area['title']);?>">
                                                 <span class="home-area-icon"><i class="fa <?= $area['icon'];?>"></i></span>
                                                 <span class="home-area-label"><?= esc($area['title']);?></span>
                                                 <i class="fa fa-angle-right home-area-arrow"></i>
@@ -108,22 +108,17 @@ $banner = $page->homeBanner()->isNotEmpty() ? $page->homeBanner()->toFile() : nu
             </section>
         <?php endif; ?>
 
-        <?php if ($banner): ?>
-            <section class="home-values">
-                <div class="container">
+        <section class="home-values">
+            <div class="container">
+                <?php if ($page->homeBannerText()->isNotEmpty()): ?>
                     <h2 class="home-values-title home-reveal"><?= $page->homeBannerText();?></h2>
-                    <div class="home-values-scroll home-reveal">
-                        <img class="home-values-image"
-                             src="<?= $banner->url();?>"
-                             srcset="<?= $banner->srcset([800, 1200, 1600]);?>"
-                             sizes="(min-width: 1200px) 1110px, 100vw"
-                             width="<?= $banner->width();?>" height="<?= $banner->height();?>"
-                             alt="<?= esc((string)$banner->alt()->or(strip_tags((string)$page->homeBannerText())));?>"
-                             loading="lazy">
-                    </div>
+                <?php endif; ?>
+                <div class="home-values-statement home-reveal">
+                    <p class="home-values-welcome">Herzlich willkommen bei den <strong>Sportfreunden Bronnen</strong>!</p>
+                    <p class="home-values-claim">Für <strong>Fair-Play</strong>, gegen <strong>Rassismus</strong>, <strong>Ausgrenzung</strong> und <strong>Diskriminierung</strong>!</p>
                 </div>
-            </section>
-        <?php endif; ?>
+            </div>
+        </section>
 
         <section class="home-news" id="aktuelles" data-news data-limit="<?= $newsLimit;?>">
             <div class="container">
@@ -134,7 +129,7 @@ $banner = $page->homeBanner()->isNotEmpty() ? $page->homeBanner()->toFile() : nu
                         <span class="news-filter-icon"><i class="fa fa-th-large"></i></span>
                         <span class="news-filter-label">Alle</span>
                     </button>
-                    <?php foreach ($areas as $area): ?>
+                    <?php foreach ($newsAreas as $area): ?>
                         <button type="button" class="news-filter-card" data-filter="<?= $area['slug'];?>" data-archive-url="<?= $area['archiveUrl'];?>" data-archive-label="Alle Beiträge: <?= esc($area['title']);?>" aria-pressed="false">
                             <span class="news-filter-icon"><i class="fa <?= $area['icon'];?>"></i></span>
                             <span class="news-filter-label"><?= esc($area['title']);?></span>
@@ -146,7 +141,7 @@ $banner = $page->homeBanner()->isNotEmpty() ? $page->homeBanner()->toFile() : nu
                     <?php $i = 0; foreach ($news as $post): $i++; ?>
                         <?php
                         $areaSlug = $page->getAreaSlug($post);
-                        $areaTitle = isset($areas[$areaSlug]) ? $areas[$areaSlug]['title'] : (string)$post->parents()->last()?->title();
+                        $areaTitle = isset($newsAreas[$areaSlug]) ? $newsAreas[$areaSlug]['title'] : (string)$post->parents()->last()?->title();
                         ?>
                         <div class="news-grid-item" data-area="<?= $areaSlug;?>"<?= ($i > $newsLimit) ? ' hidden' : '';?>>
                             <?php snippet('post-card', ['post' => $post, 'areaTitle' => $areaTitle]); ?>

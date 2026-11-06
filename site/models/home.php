@@ -9,7 +9,8 @@ class HomePage extends Page
     static $latestCacheFile = __DIR__ . '/../cache/latest.json';
 
     /**
-     * Areas of the club (top level pages) in the order they are offered as news filter, with their icon
+     * Areas of the club (top level pages) in the order they are offered as news filter, with their icon.
+     * (The list "Unsere Bereiche" is maintained in the panel, see getAreaLinks())
      */
     const AREAS = [
         'gesamtverein' => 'fa-users',
@@ -25,11 +26,60 @@ class HomePage extends Page
     const NEWS_LIMIT = 6;
 
     /**
-     * Returns the areas of the club which exist as page
+     * Icon which is used if an entry of "Unsere Bereiche" has no (valid) icon
+     */
+    const DEFAULT_AREA_ICON = 'fa-angle-right';
+
+    /**
+     * Returns the entries of the list "Unsere Bereiche" as they are maintained in the panel (field "areas").
+     * Entries without name or without a resolvable link are skipped.
+     *
+     * @return array[] title, icon (Font Awesome class) and url of every entry
+     */
+    public function getAreaLinks()
+    {
+        $links = [];
+        foreach ($this->areas()->toStructure() as $entry) {
+            $title = trim((string)$entry->name());
+            $url = $this->resolveLink((string)$entry->link());
+            if ($title === '' || $url === null) {
+                continue;
+            }
+            $icon = trim((string)$entry->icon());
+            $links[] = [
+                'title' => $title,
+                'icon'  => preg_match('/^fa-[a-z0-9-]+$/', $icon) ? $icon : self::DEFAULT_AREA_ICON,
+                'url'   => $url,
+            ];
+        }
+        return $links;
+    }
+
+    /**
+     * Turns the value of a link field (page://..., http(s)://...) into an url
+     *
+     * @param string $value
+     * @return string|null null if the value is empty or the linked page does not exist (anymore)
+     */
+    private function resolveLink($value)
+    {
+        $value = trim($value);
+        if ($value === '') {
+            return null;
+        }
+        if (strpos($value, 'page://') === 0) {
+            $page = $this->kirby()->page($value);
+            return $page ? $page->url() : null;
+        }
+        return $value;
+    }
+
+    /**
+     * Returns the areas of the club which exist as page and are offered as filter of the news section
      *
      * @return array[] slug, title, icon, url and the url of the news archive (or null) of every area
      */
-    public function getAreas()
+    public function getNewsAreas()
     {
         $areas = [];
         foreach (self::AREAS as $slug => $icon) {

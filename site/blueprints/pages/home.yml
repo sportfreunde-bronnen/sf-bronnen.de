@@ -10,14 +10,90 @@ fields:
   text:
     label: Begrüßungstext
     type: textarea
+  areasHeadline:
+    label: Unsere Bereiche
+    type: headline
+  areas:
+    label: Einträge
+    help: >
+      Die Einträge erscheinen in dieser Reihenfolge neben dem Begrüßungstext (Box "Unsere Bereiche").
+      Die Reihenfolge kann per Drag and Drop angepasst werden.
+    type: structure
+    entry: >
+      <b>{{name}}</b>
+    fields:
+      name:
+        label: Name
+        type: text
+        required: true
+        width: 1/2
+      icon:
+        label: Icon
+        type: select
+        required: true
+        width: 1/2
+        options:
+          fa-users: Personen / Gemeinschaft
+          fa-user: Person
+          fa-child: Kind
+          fa-female: Frau
+          fa-male: Mann
+          fa-home: Haus / Startseite
+          fa-building: Gebäude
+          fa-futbol-o: Fußball
+          fa-bullseye: Zielscheibe / Darts
+          fa-heartbeat: Herzschlag / Fitness & Gymnastik
+          fa-shield: Schild / Aikido
+          fa-trophy: Pokal
+          fa-flag: Flagge
+          fa-star: Stern
+          fa-heart: Herz
+          fa-bicycle: Fahrrad
+          fa-bolt: Blitz
+          fa-sun-o: Sonne
+          fa-leaf: Blatt
+          fa-calendar: Kalender
+          fa-calendar-check-o: Kalender mit Haken
+          fa-newspaper-o: Zeitung
+          fa-camera: Kamera
+          fa-picture-o: Bild
+          fa-book: Buch
+          fa-file-text-o: Dokument
+          fa-download: Download
+          fa-info-circle: Information
+          fa-question-circle: Fragezeichen
+          fa-life-ring: Rettungsring
+          fa-graduation-cap: Abschlusshut
+          fa-handshake-o: Handschlag
+          fa-gift: Geschenk
+          fa-birthday-cake: Kuchen
+          fa-cutlery: Besteck
+          fa-glass: Glas
+          fa-beer: Bier
+          fa-music: Musik
+          fa-ticket: Ticket
+          fa-shopping-cart: Einkaufswagen
+          fa-euro: Euro
+          fa-envelope: Brief
+          fa-phone: Telefon
+          fa-map-marker: Standort
+          fa-bell: Glocke
+          fa-link: Link
+          fa-th-large: Kacheln
+      link:
+        label: Link
+        type: link
+        required: true
+        options:
+          - page
+          - url
+        help: Interne Seite auswählen oder externen Link (mit https://) angeben
   homeBannerText:
     label: Banner Überschrift
     type: text
-    help: Alles was innerhalb des Spans steht wird fett geschrieben.
-  homeBanner:
-    label: Banner
-    type: files
-    help: Wenn keine Datei ausgewählt wird findet keine Anzeige statt
+    help: >
+      Kleine Überschrift über dem Willkommens- und Fair-Play-Text (blauer Banner-Bereich). Alles was innerhalb des
+      Spans steht wird hervorgehoben. Ohne Eintrag wird keine Überschrift angezeigt.
   slider:
     label: Slides
     type: headline
