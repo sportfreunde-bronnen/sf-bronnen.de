@@ -201,19 +201,72 @@
   // Introduction with the areas of the club
   // -------------------------------------------------------------------------------------------------------------------
 
-  // The introduction opens the page, the slides follow below it
+  // The introduction opens the page, the slides follow below it. It sits on a photo of the club grounds, darkened so the
+  // light text stays readable (the photo itself: .home-intro-bg, the parallax effect: public/assets/js/home.js).
   .home-intro {
-    padding: 3rem 0 2.5rem;
+    position: relative;
+    padding: 4rem 0 3.5rem;
+    overflow: hidden;
+    // same width as the gaps between the slides (.home-slides), so the photo and the slides are separated evenly
+    border-bottom: 4px solid #fff;
+    color: #fff;
+    background-color: $deeperBlue;
+    // keeps the photo and the darkening (negative z-index) above the page background but below the content
+    isolation: isolate;
     @include media-breakpoint-up(lg) {
-      padding: 3.5rem 0 3rem;
+      padding: 5.5rem 0 5rem;
+    }
+
+    // darkening: stronger towards the bottom, on large screens additionally behind the text on the left
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: linear-gradient(to bottom, rgba($deeperBlue, 0.7) 0%, rgba($deeperBlue, 0.88) 100%);
+      @include media-breakpoint-up(lg) {
+        background:
+          linear-gradient(90deg, rgba($deeperBlue, 0.4) 0%, rgba($deeperBlue, 0) 70%),
+          linear-gradient(to bottom, rgba($deeperBlue, 0.62) 0%, rgba($deeperBlue, 0.82) 100%);
+      }
+    }
+
+    // The photo is taller than the section: the overhang (20% above and below) is the room for the parallax movement.
+    // Without JavaScript it simply stays in place.
+    .home-intro-bg {
+      position: absolute;
+      top: -20%;
+      right: 0;
+      bottom: -20%;
+      left: 0;
+      z-index: -2;
+      pointer-events: none;
+      background: url("../images/sfb/home-bg.jpg") 58% 60% / cover no-repeat;
+      transform: translate3d(0, var(--home-parallax, 0px), 0);
+      will-change: transform;
+    }
+
+    p.lead {
+      color: #fff;
+      border-left-color: $accentYellow;
+      text-shadow: 0 1px 10px rgba($deeperBlue, 0.5);
+    }
+
+    .home-areas {
+      box-shadow: $shadowLg;
     }
   }
 
   .home-title {
     margin: 0 0 1.5rem;
-    color: $darkBlue;
+    color: #fff;
     font-size: 2.1rem;
     font-weight: 400;
+    text-shadow: 0 2px 14px rgba($deeperBlue, 0.5);
     @include media-breakpoint-up(lg) {
       font-size: 2.6rem;
     }
@@ -234,6 +287,9 @@
   }
 
   .home-intro-text {
+    color: rgba(#fff, 0.94);
+    text-shadow: 0 1px 10px rgba($deeperBlue, 0.5);
+
     p {
       font-size: 1.05rem;
       line-height: 1.75;
@@ -241,6 +297,20 @@
 
     p:last-child {
       margin-bottom: 0;
+    }
+
+    strong {
+      color: #fff;
+    }
+
+    a {
+      color: $accentYellow;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
     }
   }
 
@@ -332,7 +402,7 @@
   // -------------------------------------------------------------------------------------------------------------------
 
   .home-values {
-    margin-top: 3.5rem;
+    margin-top: 4px;
     padding: 3.25rem 0;
     color: #fff;
     background: linear-gradient(135deg, $deeperBlue 0%, $darkBlue 55%, $brightBlue 130%);

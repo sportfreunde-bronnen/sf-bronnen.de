@@ -12,6 +12,7 @@ $events = $page->getNextEvents();
     <div class="page">
 
         <section class="home-intro">
+            <div class="home-intro-bg" data-parallax aria-hidden="true"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 home-intro-main home-reveal">
