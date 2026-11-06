@@ -26,8 +26,8 @@ $events = $page->getNextEvents();
                     <?php if ($areas): ?>
                         <div class="col-lg-5">
                             <?php /* no <nav> element: custom.js pins every <nav> to the top of the window while scrolling */ ?>
-                            <div class="home-areas home-reveal" role="navigation" aria-label="Nicht lange suchen">
-                                <h3 class="home-areas-title">Nicht lange suchen</h3>
+                            <div class="home-areas home-reveal" role="navigation" aria-label="Schnell zum Ziel">
+                                <h3 class="home-areas-title">Schnell zum Ziel</h3>
                                 <ul class="home-areas-list">
                                     <?php foreach ($areas as $area): ?>
                                         <li>
