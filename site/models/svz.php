@@ -45,7 +45,7 @@ class SvzPage extends DownloadsPage
             'title' => 'Gesamtpaket',
             'subtitle' => 'Raummiete + Getränke von uns',
             'icon' => 'fa-beer',
-            'description' => 'Kein Stress für Sie. Sie mieten den Raum und beziehen die Getränke zu unseren gewohnten Konditionen. Es gilt der angezeigte Mindestverzehr. Der Rechnungsbetrag kann je nach Getränkeverbrauch höher ausfallen.',
+            'description' => 'Kein Stress für Sie. Sie mieten den Raum und beziehen die Getränke zu unseren Konditionen (diese finden Sie im Nutzungsvertrag). Es gilt der angezeigte Mindestverzehr. Die restlichen Getränke werden nach Verbrauch abgerechnet.',
             'fromPrice' => true,
         ],
         'raum' => [

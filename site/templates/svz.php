@@ -14,10 +14,19 @@ $tabs = [
     'infos' => ['label' => 'Infos', 'icon' => 'fa-info-circle'],
     'verfuegbarkeit' => ['label' => 'Verfügbarkeit', 'icon' => 'fa-calendar-check-o'],
     'preise' => ['label' => 'Preise', 'icon' => 'fa-eur'],
+    'faqs' => ['label' => 'FAQs', 'icon' => 'fa-question-circle'],
 ];
+
+// the FAQ tab is only shown if questions are maintained in the backend
+$hasFaqs = $page->faqs()->isNotEmpty();
+
+if (!$hasFaqs) {
+    unset($tabs['faqs']);
+}
 
 // contact form of the SVZ (subpage 'anfrage'), the club's contact form is only the fallback
 $contactUrl = SvzDomain::contactUrl();
+$calendarUrl = SvzDomain::link('svz/termin');
 // links which leave the SVZ site lead to the main domain if the SVZ site is served on its own domain
 $downloadsUrl = SvzDomain::link('gesamtverein/allgemeines/downloads');
 ?>
@@ -89,6 +98,12 @@ $downloadsUrl = SvzDomain::link('gesamtverein/allgemeines/downloads');
             <section class="svz-panel" id="preise" data-svz-panel="preise">
                 <?php snippet('svz/prices', ['page' => $page]); ?>
             </section>
+
+            <?php if ($hasFaqs): ?>
+                <section class="svz-panel" id="faqs" data-svz-panel="faqs">
+                    <?php snippet('svz/faq', ['page' => $page]); ?>
+                </section>
+            <?php endif; ?>
         </div>
     </div>
     <script>
@@ -127,8 +142,8 @@ $downloadsUrl = SvzDomain::link('gesamtverein/allgemeines/downloads');
                 </li>
             </ol>
             <div class="svz-actions svz-actions--center svz-reveal">
-                <a href="<?= $contactUrl;?>" class="svz-btn svz-btn--accent svz-btn--large"><i class="fa fa-envelope-o" aria-hidden="true"></i> Jetzt Termin anfragen</a>
-                <a href="<?= $downloadsUrl;?>" class="svz-btn svz-btn--ghost svz-btn--large"><i class="fa fa-download" aria-hidden="true"></i> Nutzungsvertrag &amp; Preisliste</a>
+              <a href="<?= $contactUrl;?>" class="svz-btn svz-btn--accent svz-btn--large"><i class="fa fa-envelope-o" aria-hidden="true"></i> Jetzt Termin anfragen</a>
+              <a href="<?= $downloadsUrl;?>" class="svz-btn svz-btn--ghost svz-btn--large"><i class="fa fa-download" aria-hidden="true"></i> Nutzungsvertrag &amp; Preisliste</a>
             </div>
         </div>
     </section>

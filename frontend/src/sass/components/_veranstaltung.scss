@@ -1,4 +1,171 @@
-div.veranstaltung--container {
+// Event detail page: header, cover, text and recommendation are shared with the blog post (components/_bericht.scss),
+// the event cards of the recommendation come from components/_event-card.scss. Here: lead text, facts card and layout.
 
+.page--veranstaltung {
 
+  // Short description below the title
+  .event-lead {
+    margin: 0 auto;
+    max-width: 640px;
+    color: $textMuted;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    @include media-breakpoint-down(sm) {
+      font-size: 1.05rem;
+    }
+  }
+
+  // Facts card (on small screens above the text, on large screens next to it)
+  .event-layout {
+    padding-top: 2.75rem;
+    @include media-breakpoint-down(sm) {
+      padding-top: 2rem;
+    }
+  }
+
+  .event-main {
+    min-width: 0;
+  }
+
+  .event-facts {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    border-top: 4px solid $accentYellow;
+    border-radius: $radius;
+    box-shadow: $shadow;
+  }
+
+  .event-facts-head {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  .event-facts-badge {
+    margin-right: 1rem;
+    min-width: 3.6rem;
+    padding: 0.45rem 0.6rem 0.5rem;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    color: $darkBlue;
+    line-height: 1;
+    text-align: center;
+    background-color: $paleBlue;
+    border-radius: $radiusSm;
+  }
+
+  .event-facts-day {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .event-facts-month {
+    margin-top: 0.25rem;
+    color: $brightBlue;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .event-facts-title {
+    margin: 0;
+    color: $darkBlue;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  // Hint for events which are over
+  .event-facts-note {
+    margin: 0 0 1.25rem;
+    padding: 0.6rem 0.85rem;
+    color: $textMuted;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    background-color: $fog;
+    border-radius: $radiusSm;
+
+    .fa {
+      margin-right: 0.5rem;
+      color: $steel;
+    }
+  }
+
+  .event-facts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .event-facts-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .event-facts-icon {
+    margin-right: 0.85rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $brightBlue;
+    font-size: 1.05rem;
+    background-color: $paleBlue;
+    border-radius: 50%;
+  }
+
+  .event-facts-text {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.35;
+  }
+
+  .event-facts-label {
+    color: $textMuted;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .event-facts-value {
+    color: $darkBlue;
+    font-size: 1.05rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+  }
+
+  // Image below the text
+  .event-image {
+    margin: 2rem 0 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background-color: $paleBlue;
+      border-radius: $radiusLg;
+      box-shadow: $shadow;
+    }
+  }
 }

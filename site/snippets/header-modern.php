@@ -33,8 +33,7 @@ $isDarts = $isDarts ?? false;
                     <img class="mh-logo rotate" src="/assets/images/sfb/logo.svg" alt="Logo der Sportfreunde Bronnen">
                 <?php endif; ?>
                 <span class="mh-claim">
-                    <span class="mh-claim-name">Sportfreunde Bronnen</span>
-                    <span class="mh-claim-sub"><?= $isDarts ? 'e.V. &middot; Darts' : 'e.V.';?></span>
+                    <span class="mh-claim-name">Sportfreunde Bronnen e.V.</span>
                 </span>
             </a>
             <button class="navbar-toggler mh-toggler collapsed" type="button" data-toggle="collapse" data-target="#mhMenu" aria-controls="mhMenu" aria-expanded="false" aria-label="Menü öffnen oder schließen">

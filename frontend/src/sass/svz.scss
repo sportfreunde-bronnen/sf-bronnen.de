@@ -394,7 +394,7 @@ div.page.page--svz {
   }
 
   &__title {
-    margin: 0 0 1rem;
+    margin: 0 0 4rem;
     font-size: clamp(2.7rem, 7.5vw, 5.4rem);
     font-weight: 700;
     line-height: 1;
@@ -1345,13 +1345,47 @@ html:not(.svz-js) .svz-panel + .svz-panel {
   }
 }
 
+// Every package (headline, description and price cards) is a box of its own with a tinted background,
+// so the packages are clearly separated from each other. The modifier sets the color of the package.
 .svz-package {
-  margin-bottom: clamp(36px, 5vw, 56px);
+  --svz-package-bg: #{$paleBlue};
+  --svz-package-bg-end: #{$mistBlue};
+  --svz-package-border: #{rgba($brightBlue, 0.28)};
+  --svz-package-accent: #{$brightBlue};
+  --svz-package-accent-end: #{$darkBlue};
+
+  position: relative;
+  margin-bottom: clamp(28px, 4vw, 44px);
+  padding: clamp(22px, 3.5vw, 40px);
+  overflow: hidden;
+  border: 1px solid var(--svz-package-border);
+  border-radius: 24px;
+  background: linear-gradient(160deg, var(--svz-package-bg), var(--svz-package-bg-end));
+  box-shadow: $shadow;
+
+  // colored bar at the top edge of the box
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 6px;
+    content: "";
+    background: linear-gradient(90deg, var(--svz-package-accent), var(--svz-package-accent-end));
+  }
+
+  &--raum {
+    --svz-package-bg: #fff6df;
+    --svz-package-bg-end: #fffbf0;
+    --svz-package-border: #{rgba(#d99100, 0.32)};
+    --svz-package-accent: #{$svzAccent};
+    --svz-package-accent-end: #d99100;
+  }
 
   &__head {
     display: flex;
     align-items: center;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.9rem;
   }
 
   &__icon {
@@ -1855,6 +1889,169 @@ html:not(.svz-js) .svz-panel + .svz-panel {
 }
 
 // ------------------------------------------------------------------
+// FAQs (accordion)
+// Without JavaScript all answers stay open, the toggle only works with the class "svz-js" on <html>.
+// ------------------------------------------------------------------
+.svz-faq {
+  @include list-reset;
+  max-width: 900px;
+
+  &__item {
+    margin-bottom: 14px;
+    border: 1px solid $borderColor;
+    border-radius: $radiusLg;
+    background: #fff;
+    box-shadow: $shadowSm;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+    &.is-open {
+      border-color: rgba($brightBlue, 0.35);
+      box-shadow: $shadow;
+    }
+  }
+
+  &__trigger {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.15rem 1.4rem;
+    border: 0;
+    border-radius: $radiusLg;
+    background: transparent;
+    color: $deepBlue;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: left;
+    cursor: default;
+    transition: color 0.2s ease;
+
+    &:focus-visible {
+      outline: 3px solid rgba($brightBlue, 0.45);
+      outline-offset: -3px;
+    }
+  }
+
+  &__question {
+    flex: 1 1 auto;
+  }
+
+  // plus sign which turns into a minus sign if the item is open
+  &__icon {
+    position: relative;
+    display: none;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    margin-left: 1rem;
+    border-radius: 50%;
+    background: $paleBlue;
+    color: $darkBlue;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.35s ease;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 14px;
+      height: 2px;
+      margin: -1px 0 0 -7px;
+      border-radius: 1px;
+      background: currentColor;
+      content: "";
+      transition: transform 0.35s ease;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__panel {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  &__answer {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 0 1.4rem 1.4rem;
+    color: $textMuted;
+    line-height: 1.7;
+
+    p {
+      margin: 0 0 0.8rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ul,
+    ol {
+      margin: 0 0 0.8rem;
+      padding-left: 1.3rem;
+    }
+
+    strong {
+      color: $textColor;
+    }
+
+    a {
+      color: $darkBlue;
+      text-decoration: underline;
+    }
+  }
+}
+
+.svz-faq-note {
+  max-width: 900px;
+}
+
+.svz-js {
+  .svz-faq__trigger {
+    cursor: pointer;
+
+    &:hover {
+      color: $brightBlue;
+    }
+  }
+
+  .svz-faq__icon {
+    display: block;
+  }
+
+  .svz-faq__item.is-open {
+    .svz-faq__icon {
+      background: $darkBlue;
+      color: #fff;
+      transform: rotate(180deg);
+
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  // collapsed answers are removed from the tab order and the accessibility tree
+  .svz-faq__panel {
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition: grid-template-rows 0.35s ease, visibility 0s linear 0.35s;
+  }
+
+  .svz-faq__item.is-open .svz-faq__panel {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    transition: grid-template-rows 0.35s ease, visibility 0s;
+  }
+}
+
+// ------------------------------------------------------------------
 // Scroll reveal (only active if JavaScript is available)
 // ------------------------------------------------------------------
 .svz[data-svz-ready] .svz-reveal {
@@ -1959,6 +2156,26 @@ html:not(.svz-js) .svz-panel + .svz-panel {
 @media (max-width: 575px) {
   .svz-features {
     grid-template-columns: 1fr;
+  }
+
+  .svz-package {
+    border-radius: 18px;
+
+    &__icon {
+      flex-basis: 48px;
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      font-size: 1.3rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .svz-price-card {
+    padding: 28px 20px 22px;
   }
 
   .svz-tabs__list a .fa {

@@ -141,6 +141,36 @@ fields:
     type: textarea
     label: Hinweise zu den Preisen
     size: small
+  faqsHeadline:
+    type: headline
+    label: Bereich "FAQs"
+  faqsText:
+    type: textarea
+    label: Einleitung über den FAQs
+    size: small
+    help: Optional. Ohne Eintrag erscheint ein Standardtext.
+  faqs:
+    type: structure
+    label: FAQs (Fragen und Antworten)
+    help: Die Einträge erscheinen als Akkordeon im Reiter "FAQs". Ohne Einträge wird der Reiter ausgeblendet. Die Reihenfolge lässt sich per Drag & Drop ändern.
+    columns:
+      question: true
+    fields:
+      question:
+        type: text
+        required: true
+        label: Frage
+      answer:
+        type: textarea
+        required: true
+        label: Antwort
+        size: medium
+        buttons:
+          - bold
+          - italic
+          - link
+          - ul
+          - ol
 files:
   fields:
     type: files

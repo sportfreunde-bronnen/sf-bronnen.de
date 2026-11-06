@@ -15,7 +15,7 @@ $events = $page->getNextEvents();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 home-intro-main home-reveal">
-                        <h2 class="home-title">Herzlich <span>willkommen!</span></h2>
+                        <h2 class="home-title">Herzlich willkommen bei den <span>Sportfreunden Bronnen</span></h2>
                         <?php if ($page->zitat()->isNotEmpty()): ?>
                             <p class="lead"><?= esc((string)$page->zitat());?></p>
                         <?php endif; ?>
@@ -114,7 +114,7 @@ $events = $page->getNextEvents();
                     <h2 class="home-values-title home-reveal"><?= $page->homeBannerText();?></h2>
                 <?php endif; ?>
                 <div class="home-values-statement home-reveal">
-                    <p class="home-values-welcome">Herzlich willkommen bei den <strong>Sportfreunden Bronnen</strong>!</p>
+                    <p class="home-values-welcome">Dafür stehen wir als <strong>Verein</strong> und als <strong>Gemeinschaft</strong>.</p>
                     <p class="home-values-claim">Für <strong>Fair-Play</strong>, gegen <strong>Rassismus</strong>, <strong>Ausgrenzung</strong> und <strong>Diskriminierung</strong>!</p>
                 </div>
             </div>
@@ -154,7 +154,7 @@ $events = $page->getNextEvents();
             </div>
         </section>
 
-        <section class="home-events">
+        <section class="home-events" id="veranstaltungen">
             <div class="container">
                 <h2 class="blog-section-title">Kommende Veranstaltungen</h2>
                 <?php if ($events->isNotEmpty()): ?>

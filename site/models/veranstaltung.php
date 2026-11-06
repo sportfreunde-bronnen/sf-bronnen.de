@@ -56,6 +56,23 @@ class VeranstaltungPage extends Page
     }
 
     /**
+     * Whether the event is over (events without time last until the end of the day, events without end until their start)
+     *
+     * @return bool
+     */
+    public function isPast()
+    {
+        $reference = $this->getEnd() ?: $this->getStart();
+        if (!$reference) {
+            return false;
+        }
+        if (!$this->hasTime($reference)) {
+            $reference = strtotime('tomorrow', $reference) - 1;
+        }
+        return $reference < time();
+    }
+
+    /**
      * Readable date of the event (e.g. "Sa., 12.12.2026" or "20.07.2018 – 22.07.2018" for events over several days)
      *
      * @return string

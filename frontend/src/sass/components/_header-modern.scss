@@ -2,8 +2,8 @@
 // selected with the option 'sfb.header' => 'modern'): graphite info bar with the social links and the department,
 // below it the sticky, frosted main bar with the crest, the name and the menu. The blues stay the accent colors.
 
-$mhBarHeight: 4.75rem;
-$mhBarHeightCompact: 3.75rem;
+$mhBarHeight: 6rem;
+$mhBarHeightCompact: 4rem;
 // below this width the menu collapses to the toggler (breakpoint of navbar-expand-lg)
 $mhMenuBreakpoint: lg;
 
@@ -66,8 +66,8 @@ $mhMenuBreakpoint: lg;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: $accentYellow;
-  box-shadow: 0 0 0 3px rgba($accentYellow, 0.22);
+  background-color: $brightBlue;
+  box-shadow: 0 0 0 3px rgba($brightBlue, 0.22);
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -206,7 +206,6 @@ $mhMenuBreakpoint: lg;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.005em;
-    border-radius: 999px;
     transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 
     &:hover,
@@ -284,7 +283,7 @@ $mhMenuBreakpoint: lg;
   margin-top: 0.4rem;
   padding: 0.65rem 0.9rem 0.3rem;
   color: $steel;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;

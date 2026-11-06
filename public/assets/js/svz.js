@@ -1,9 +1,10 @@
 /**
  * Sportvereinszentrum (SVZ) landing page
  *
- * - tabs (infos, availability, prices) with deep links (#infos, #verfuegbarkeit, #preise)
+ * - tabs (infos, availability, prices, faqs) with deep links (#infos, #verfuegbarkeit, #preise, #faqs)
  * - availability calendar (browse months, request button for the selected day)
  * - tariff switch for the price overview
+ * - FAQ accordion
  * - gallery lightbox and reveal animations
  *
  * Without JavaScript all sections are displayed one below the other.
@@ -299,6 +300,27 @@
           other.setAttribute('aria-pressed', active ? 'true' : 'false');
         });
       });
+    });
+  }
+
+  // ------------------------------------------------------------------
+  // FAQ accordion
+  // ------------------------------------------------------------------
+  var faqList = root.querySelector('[data-svz-faq]');
+
+  if (faqList) {
+    faqList.addEventListener('click', function (event) {
+      var trigger = event.target.closest('[data-svz-faq-trigger]');
+
+      if (!trigger || !faqList.contains(trigger)) {
+        return;
+      }
+
+      var item = trigger.closest('.svz-faq__item');
+      var open = !item.classList.contains('is-open');
+
+      item.classList.toggle('is-open', open);
+      trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
 

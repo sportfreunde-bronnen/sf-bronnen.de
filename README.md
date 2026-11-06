@@ -49,6 +49,18 @@ The nested notation (`'sfb' => ['header' => 'modern']`) is supported as well. Fo
 `?header=modern` or `?header=classic` (the query parameter wins over the configuration, it is not kept on further page views).
 The Sportvereinszentrum site (own domain) always uses its own header.
 
+## Event pages ("Veranstaltung")
+
+The detail page of an event (`site/templates/veranstaltung.php`, `frontend/src/sass/components/_veranstaltung.scss`) follows the design of the article page:
+
+- header with back link to the events on the start page (`/#veranstaltungen`), area chip, title and the short description, followed by the event image (position "Über dem Text", default) as cover
+  (position "Unter dem Text" shows the image below the text)
+- the text next to a card "Kurz und knapp" with date, time, place and the optional download (the card is shown above the text on small screens);
+  events which are over show a hint (`VeranstaltungPage::isPast()`)
+- the recommendation ("Auch interessant") is shown as event card (`snippets/event-card.php`, `frontend/src/sass/components/_event-card.scss`, shared with the start page)
+
+Header, cover, text and recommendation share their styles with the article page (`components/_bericht.scss`, selector `.page--veranstaltung`).
+
 ## Spam protection (Cloudflare Turnstile)
 
 The contact form and the membership certificate form are protected by

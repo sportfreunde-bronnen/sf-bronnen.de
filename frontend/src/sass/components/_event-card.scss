@@ -1,0 +1,163 @@
+// Card of an event (snippet event-card): upcoming events on the start page and the recommendation on the event page.
+// The scope keeps the weight of the selectors the cards had as part of the start page, so the legacy theme rules do not win.
+
+:is(.template--home, .page--veranstaltung) {
+  .event-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    border-radius: $radius;
+    box-shadow: $shadowSm;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+
+    &:hover {
+      box-shadow: $shadowLg;
+      transform: translateY(-4px);
+    }
+  }
+
+  .event-card-media {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: $paleBlue;
+    aspect-ratio: 16 / 10;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 0;
+      transition: transform 0.5s ease;
+    }
+  }
+
+  .event-card:hover .event-card-media img {
+    transform: scale(1.05);
+  }
+
+  .event-date {
+    position: absolute;
+    top: 0.9rem;
+    left: 0.9rem;
+    min-width: 3.6rem;
+    padding: 0.45rem 0.6rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $darkBlue;
+    line-height: 1;
+    text-align: center;
+    background-color: #fff;
+    border-top: 4px solid $accentYellow;
+    border-radius: $radiusSm;
+    box-shadow: $shadow;
+  }
+
+  .event-date-day {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .event-date-month {
+    margin-top: 0.25rem;
+    color: $brightBlue;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .event-card-body {
+    padding: 1.35rem 1.5rem 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .post-tags {
+      margin-bottom: 0.65rem;
+    }
+  }
+
+  .event-card-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+    &::after {
+      content: none;
+    }
+
+    a {
+      color: $darkBlue;
+      &:hover,
+      &:focus {
+        color: $brightBlue;
+      }
+    }
+  }
+
+  .event-card-text {
+    margin-bottom: 1rem;
+    color: $textMuted;
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .event-meta {
+    margin: auto 0 1rem;
+    padding: 1rem 0 0;
+    list-style: none;
+    border-top: 1px solid $borderColor;
+
+    li {
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: baseline;
+      color: $textColor;
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .fa {
+      width: 1.5rem;
+      flex: 0 0 auto;
+      color: $brightBlue;
+    }
+  }
+
+  .event-card-more {
+    color: $brightBlue;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    .fa {
+      margin-left: 0.3rem;
+      transition: margin-left 0.2s ease;
+    }
+
+    &:hover,
+    &:focus {
+      color: $darkBlue;
+      .fa {
+        margin-left: 0.6rem;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.template--home, .page--veranstaltung) .event-card-media img {
+    transition: none;
+  }
+}

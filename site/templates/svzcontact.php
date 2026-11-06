@@ -121,7 +121,7 @@ $selectedPackage = $form->old('paket');
                                         </label>
                                     <?php endforeach; ?>
                                 </div>
-                                <p class="svz-form__hint">Aktive Mitglieder der Sportfreunde Bronnen (seit mindestens einem Jahr im Verein) erhalten einen reduzierten Tarif.</p>
+                                <p class="svz-form__hint">Aktive Vereinsmitglieder der Sportfreunde Bronnen (seit mindestens einem Jahr im Verein) erhalten einen reduzierten Tarif.</p>
                             </fieldset>
 
                             <fieldset class="svz-form__group">

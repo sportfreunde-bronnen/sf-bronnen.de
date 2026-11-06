@@ -1,6 +1,7 @@
-// Article detail page (blog post)
+// Article detail page (blog post), the event detail page (components/_veranstaltung.scss) shares header, cover, text and recommendation
 
-.page--bericht {
+.page--bericht,
+.page--veranstaltung {
 
   // Header with topics, title and meta data
   .post-hero {

@@ -24,12 +24,12 @@ $groups = $page->priceGroups();
         <span class="svz-tariff__label" id="svz-tariff-label">Ihr Tarif:</span>
         <div class="svz-tariff__options" role="group" aria-labelledby="svz-tariff-label">
             <button type="button" class="is-active" data-svz-tariff="regular" aria-pressed="true">Externe</button>
-            <button type="button" data-svz-tariff="member" aria-pressed="false">Aktive Mitglieder</button>
+            <button type="button" data-svz-tariff="member" aria-pressed="false">Aktive Vereinsmitglieder</button>
         </div>
     </div>
 
     <?php foreach ($groups as $group): ?>
-        <section class="svz-package svz-reveal" aria-labelledby="svz-package-<?= $group['key'];?>">
+        <section class="svz-package svz-package--<?= $group['key'];?> svz-reveal" aria-labelledby="svz-package-<?= $group['key'];?>">
             <header class="svz-package__head">
                 <span class="svz-package__icon"><i class="fa <?= $group['icon'];?>" aria-hidden="true"></i></span>
                 <div>
@@ -50,7 +50,7 @@ $groups = $page->priceGroups();
                             'rent' => $row['rent'],
                         ],
                         'member' => [
-                            'label' => 'Aktive Mitglieder',
+                            'label' => 'Aktive Vereinsmitglieder',
                             'total' => $row['memberTotal'],
                             'rent' => $row['memberRent'],
                         ],

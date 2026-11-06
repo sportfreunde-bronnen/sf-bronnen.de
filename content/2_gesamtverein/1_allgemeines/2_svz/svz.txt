@@ -6,7 +6,7 @@ Headline: Ihre Räumlichkeit für Veranstaltungen (Hochzeit, Geburtstag, Firmenf
 
 ----
 
-Text: Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Es liegt idyllisch im Grünen und lässt sich flexibel nutzen: für Ihre Hochzeit, den runden Geburtstag oder die Firmenfeier. Dank Photovoltaikanlage mit Batteriespeicher feiern Sie dabei größtenteils mit Sonnenstrom direkt vom eigenen Dach.
+Text: Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Es liegt idyllisch im Grünen und lässt sich flexibel nutzen: für Ihre Hochzeit, den runden Geburtstag oder die Firmenfeier.
 
 ----
 
@@ -197,6 +197,40 @@ Pricenotes:
 Alle Preise in Euro inklusive MwSt. Der Tarif "Aktive Mitglieder" gilt für aktive Mitglieder der Sportfreunde Bronnen, die seit mindestens einem Jahr Mitglied (Stichtag: Datum der Vermietung) bei uns im Verein sind.
 
 Sie wünschen eine Servicekraft oder haben weitere Fragen? Sprechen Sie uns einfach an. Nutzungsvertrag, aktuelle Preisliste und Hausordnung finden Sie unter **[Downloads](/gesamtverein/allgemeines/downloads)** (Sportvereinszentrum).
+
+----
+
+Faqstext: Hier beantworten wir die finalen Fragen zur Vermietung des SVZ. Sie finden Ihre Frage nicht? Fragen Sie uns einfach direkt an.
+
+----
+
+Faqs:
+
+- 
+  question: Wie viele Personen finden im SVZ Platz?
+  answer: 'Der **kleine Wirtschaftsraum** (75 m²) bietet Platz für bis zu 35 Personen. Zusammen mit dem **großen Wirtschaftsraum** (165 m²) ist eine Bestuhlung für bis zu 100 Personen möglich. Bei unseren internen Vereinsveranstaltungen bestuhlen wir mitunter auch für bis zu 120 Personen. Dann wird es aber schon kuschelig :-) Theater-, Reihen- und Inselbestuhlung sind möglich.'
+- 
+  question: >
+    Was ist der Unterschied zwischen
+    Gesamtpaket und Raumpaket?
+  answer: 'Beim **Gesamtpaket** mieten Sie den Raum und beziehen die Getränke zu unseren gewohnten Konditionen. Beim **Raumpaket** mieten Sie ausschließlich die Räumlichkeiten, Getränke und Verpflegung sind nicht enthalten. Die Nutzung unseres Kühlraums ist beim Raumpaket nicht möglich, ein Kühlschrank steht Ihnen aber zur Verfügung.'
+- 
+  question: Was bedeutet Mindestverzehr?
+  answer: |
+    Beim Gesamtpaket gilt der in der Preisübersicht angezeigte Mindestverzehr. Verbrauchen Sie weniger, bezahlen Sie trotzdem den Mindestverzehr.
+    
+    Beispiel: Der Mindestverzehr liegt bei 140€. Sie verbrauchen aber nur Getränke im Wert von 60€. Abrechnen werden wir dann trotzdem den Mindestverzehr von 140€.
+- 
+  question: Was kosten die Getränke?
+  answer: 'Die jeweils gültige Getränkepreisliste finden Sie im Nutzungsvertrag, den Sie unter **[Downloads](/gesamtverein/allgemeines/downloads)** (Sportvereinszentrum) herunterladen können.'
+- 
+  question: >
+    Wer bekommt den Tarif „Aktive
+    Mitglieder“?
+  answer: 'Der Tarif gilt für aktive Mitglieder der Sportfreunde Bronnen, die seit mindestens einem Jahr Mitglied bei uns im Verein sind (Stichtag: Datum der Vermietung).'
+- 
+  question: Wie läuft eine Anfrage ab?
+  answer: 'Prüfen Sie zuerst im Reiter „Verfügbarkeit“, ob Ihr Wunschtermin frei ist. Anschließend senden Sie uns Ihre Anfrage über das **[Kontaktformular](/gesamtverein/allgemeines/svz/anfrage)**. Nach der Bestätigung durch unsere Vermietungsbeauftragte, erhalten Sie von dort den Nutzungsvertrag.'
 
 ----
 
