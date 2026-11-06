@@ -1,6 +1,6 @@
 <?php
 
-ini_set('display_errors', '0');
+ini_set('display_errors', '1');
 
 define('EXTRACT_CONTENT', (bool)($_GET['extractContent'] ?? false));
 define('APPEND_TITLE', $_GET['appendTitle'] ?? '');
