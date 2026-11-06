@@ -192,6 +192,9 @@ Ereignisse:
   ereignis: |
     - Familientag zum 75-jährigen Vereinsjubiläum
     - Gründung der Abteilung Darts
+- 
+  jahr: "2025"
+  ereignis: '- Start der Umbaumaßnahmen am alten Sportheim zum Dartsheim'
 
 ----
 
