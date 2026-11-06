@@ -7,7 +7,7 @@ use Kirby\Http\Route;
 use Kirby\Toolkit\V;
 
 /**
- * Serves the Sportvereinszentrum (SVZ) page on its own (sub)domain, e.g. svz.sf-bronnen.de.
+ * Serves the Sportvereinszentrum (SVZ) page on its own (sub)domain, e.g. vermietung.sf-bronnen.de.
  *
  * Options (see sfb-svz/index.php):
  * - sfb.svz.host:      host name of the SVZ site (without scheme and port), empty = feature disabled
@@ -22,7 +22,7 @@ class SvzDomain
 {
     /**
      * Slug of the contact form page (subpage of the SVZ page). On the SVZ domain the form is
-     * available as short URL: svz.sf-bronnen.de/anfrage
+     * available as short URL: vermietung.sf-bronnen.de/anfrage
      */
     public const CONTACT_SLUG = 'anfrage';
 
@@ -72,7 +72,7 @@ class SvzDomain
 
     /**
      * Host name of the main site: from sfb.svz.mainUrl, otherwise the SVZ host without its first label
-     * (svz.sf-bronnen.de -> sf-bronnen.de)
+     * (vermietung.sf-bronnen.de -> sf-bronnen.de)
      */
     public static function mainHost(): ?string
     {

@@ -71,7 +71,7 @@ the guard reads both notations. The public site key is `sfb.turnstile.sitekey` (
 ## Sportvereinszentrum (SVZ) on its own subdomain
 
 The page "Sportvereinszentrum" (`gesamtverein/allgemeines/svz`) is served on its own subdomain
-(production: `svz.sf-bronnen.de`, local: `svz.sf-bronnen.de.test`) by the plugin `site/plugins/sfb-svz`.
+(production: `vermietung.sf-bronnen.de`, local: `vermietung.sf-bronnen.de.test`) by the plugin `site/plugins/sfb-svz`.
 The subdomain must point to the same document root (`public/`) as the main domain, no further webserver configuration is needed.
 
 - `svz.<domain>/` renders the SVZ page with an own header (no main navigation of the club site, with a link back to the club site); the footer stays.
@@ -83,10 +83,10 @@ The subdomain must point to the same document root (`public/`) as the main domai
 The domain is configurable in the (gitignored) `site/config/config.php`:
 
 ```php
-// host of the SVZ site (without scheme and port), default: 'svz.sf-bronnen.de'
+// host of the SVZ site (without scheme and port), default: 'vermietung.sf-bronnen.de'
 // empty = own domain disabled, the page is served below the main domain as usual
-'sfb.svz.host' => 'svz.sf-bronnen.de.test',
-// optional, URL of the main site, default: the SVZ host without its first label (svz.sf-bronnen.de -> sf-bronnen.de)
+'sfb.svz.host' => 'vermietung.sf-bronnen.de.test',
+// optional, URL of the main site, default: the SVZ host without its first label (vermietung.sf-bronnen.de -> sf-bronnen.de)
 // 'sfb.svz.mainUrl' => 'https://www.sf-bronnen.de',
 // optional, id of the SVZ page, default: 'gesamtverein/allgemeines/svz'
 // 'sfb.svz.page' => 'gesamtverein/allgemeines/svz',
