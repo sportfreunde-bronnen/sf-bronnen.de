@@ -28,6 +28,38 @@
 
   }
 
+  // MODERN HEADER: the sticky main bar gets compact (and casts a shadow) once the page is scrolled.
+  // Two thresholds (hysteresis), so the changing height of the bar can not make it flicker around one position.
+  var $siteHeader = $('#siteHeader');
+
+  if ($siteHeader.length) {
+    var headerCompact = false;
+    var headerTicking = false;
+
+    var updateHeader = function () {
+      var toTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (!headerCompact && toTop > 80) {
+        headerCompact = true;
+        $siteHeader.addClass('is-scrolled');
+      } else if (headerCompact && toTop < 30) {
+        headerCompact = false;
+        $siteHeader.removeClass('is-scrolled');
+      }
+
+      headerTicking = false;
+    };
+
+    window.addEventListener('scroll', function () {
+      if (!headerTicking) {
+        headerTicking = true;
+        window.requestAnimationFrame(updateHeader);
+      }
+    }, { passive: true });
+
+    updateHeader();
+  }
+
   // REMOVE # FROM URL
   $( 'a[href="#"]' ).click( function(event) {
       //event.preventDefault();

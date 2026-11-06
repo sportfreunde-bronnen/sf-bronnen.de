@@ -1,6 +1,12 @@
 <?php
 // On its own domain the SVZ site brings its own header (no main navigation of the club site), see plugin sfb-svz
 $isSvzSite = SvzDomain::isSvzRequest();
+// Header variant: 'classic' (default) or 'modern', set with 'sfb.header' in the (gitignored) site/config/config.php.
+// ?header=modern / ?header=classic previews a variant for a single request.
+$headerVariant = (string)get('header', option('sfb.header', 'classic'));
+$useModernHeader = $headerVariant === 'modern';
+// The pages of the darts department show the crest of the department instead of the club crest
+$isDarts = (string)$page->parents()->last()?->title()->lower() === 'darts';
 ?>
 <!-- Nope, its not wordpress -->
 <!DOCTYPE html>
@@ -32,6 +38,8 @@ $isSvzSite = SvzDomain::isSvzRequest();
 <body<?= $isSvzSite ? ' class="svz-site"' : '' ?>>
 <?php if ($isSvzSite): ?>
 <?php snippet('svz/header'); ?>
+<?php elseif ($useModernHeader): ?>
+<?php snippet('header-modern', ['isDarts' => $isDarts]); ?>
 <?php else: ?>
 <div class="container-fluid pl-0 pr-0 d-none d-md-block">
     <?php if (EXTRACT_CONTENT === false): ?>
@@ -39,10 +47,7 @@ $isSvzSite = SvzDomain::isSvzRequest();
           <div class="container">
               <div class="container-fluid clearfix text-xs-center text-sm-center text-md-left pl-sm-0 pr-sm-0">
                   <ul class="list-unstyled list-inline float-md-left mb-0 animation">
-                      <li class="list-inline-item"><a href="https://www.facebook.com/sportfreundebronnen/" title="Die Sportfreunde Bronnen auf Facebook"><i class="fa fa-facebook"></i></a></li>
-                      <li class="list-inline-item"><a href="https://www.instagram.com/sfb1949/" title="Die Sportfreunde Bronnen auf Instagram"><i class="fa fa-instagram"></i></a></li>
-                      <li class="list-inline-item"><a href="https://github.com/sportfreunde-bronnen/" title="Die Sportfreunde Bronnen auf Github - Open Source"><i class="fa fa-github"></i></a></li>
-                      <li class="list-inline-item"><a href="https://shop.sf-bronnen.de" title="Der Online Shop der Sportfreunde Bronnen"><i class="fa fa-shopping-cart"></i></a></li>
+                      <?php snippet('social-links'); ?>
                   </ul>
                   <p class="float-md-right mb-0 text-xs-center text-sm-center text-md-right text-weight-light">
                       <?php snippet('department');?>
@@ -56,7 +61,7 @@ $isSvzSite = SvzDomain::isSvzRequest();
     <?php if (EXTRACT_CONTENT === false): ?>
     <div class="container text-xs-center pl-sm-0 pr-sm-0">
         <div class="row">
-            <?php if((string)$page->parents()->last()?->title()->lower() === 'darts'): ?>
+            <?php if ($isDarts): ?>
               <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
                       <a href="/" class="sfb-headline"><img class="sfblogo darts rotate" src="/assets/images/sfb/sfbdarts.svg"/><span class="claim">Sportfreunde Bronnen e.V. - Darts</span></a>
               </div>

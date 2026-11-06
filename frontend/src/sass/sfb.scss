@@ -30,5 +30,8 @@
 @import "components/_pricing.scss";
 @import "components/_content.scss";
 
+// Modern alternative of header and navigation (option sfb.header): own namespace (.mh-), does not touch the classic header
+@import "components/_header-modern.scss";
+
 // Template styles: also loaded last, so they take precedence over the legacy theme rules
 @import "templates/home.scss";

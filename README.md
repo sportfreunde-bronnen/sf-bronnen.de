@@ -28,6 +28,27 @@ npm run build
 
 The build (`frontend/build.mjs`) needs Node.js 20.19 or newer.
 
+## Header variants (classic / modern)
+
+The header and the main navigation exist in two variants:
+
+- `classic` (default): dark blue header with the crest, light blue navigation bar (`snippets/header.php`, `snippets/navigation.php`)
+- `modern`: graphite info bar with the social links and the department, below it a sticky, frosted main bar with the crest, the name and the menu
+  (dropdowns as cards, compact bar and shadow while scrolling, own mobile menu with the social links)
+  (`snippets/header-modern.php`, `snippets/navigation-modern.php`, `frontend/src/sass/components/_header-modern.scss`)
+
+Both variants show the crest of the club or, on the pages of the darts department, the crest of the darts department, and both show the social links
+(`snippets/social-links.php`). The variant is chosen in the (gitignored) `site/config/config.php`:
+
+```php
+// 'classic' (default) or 'modern'
+'sfb.header' => 'modern',
+```
+
+The nested notation (`'sfb' => ['header' => 'modern']`) is supported as well. For a quick comparison a single request can be switched with
+`?header=modern` or `?header=classic` (the query parameter wins over the configuration, it is not kept on further page views).
+The Sportvereinszentrum site (own domain) always uses its own header.
+
 ## Spam protection (Cloudflare Turnstile)
 
 The contact form and the membership certificate form are protected by
