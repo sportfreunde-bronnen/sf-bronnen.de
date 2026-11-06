@@ -48,7 +48,6 @@ class MembershipMailAction extends PhpMailerAction
         } catch (PerformerException $e) {
             throw $e;
         } catch (\Throwable $e) {
-            var_dump($e);die();
             error_log('Membership application failed: ' . get_class($e) . ': ' . $e->getMessage());
             $this->fail('Leider ist ein technischer Fehler aufgetreten. Bitte versuchen Sie es später erneut.');
         }
