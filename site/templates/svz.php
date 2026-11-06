@@ -16,8 +16,9 @@ $tabs = [
     'preise' => ['label' => 'Preise', 'icon' => 'fa-eur'],
 ];
 
+// contact form of the SVZ (subpage 'anfrage'), the club's contact form is only the fallback
+$contactUrl = SvzDomain::contactUrl();
 // links which leave the SVZ site lead to the main domain if the SVZ site is served on its own domain
-$contactUrl = SvzDomain::link('home/kontakt') . '?rec=svz';
 $downloadsUrl = SvzDomain::link('gesamtverein/allgemeines/downloads');
 ?>
 <?php snippet('header', ['styles' => ['svz']]); ?>

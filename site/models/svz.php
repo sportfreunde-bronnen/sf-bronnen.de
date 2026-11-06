@@ -36,19 +36,24 @@ class SvzPage extends DownloadsPage
 
     /**
      * Bookable packages
+     *
+     * 'fromPrice': the displayed total is only a minimum ("ab XXX €"), because the final invoice
+     * amount depends on the actual consumption (e.g. beverages).
      */
     public const PACKAGES = [
-        'getraenke' => [
-            'title' => 'Getränkepaket',
+        'gesamt' => [
+            'title' => 'Gesamtpaket',
             'subtitle' => 'Raummiete + Getränke von uns',
             'icon' => 'fa-beer',
-            'description' => 'Kein Stress für Sie. Sie mieten den Raum und beziehen die Getränke zu unseren gewohnten Konditionen. Es gilt der angezeigte Mindestverzehr.',
+            'description' => 'Kein Stress für Sie. Sie mieten den Raum und beziehen die Getränke zu unseren gewohnten Konditionen. Es gilt der angezeigte Mindestverzehr. Der Rechnungsbetrag kann je nach Getränkeverbrauch höher ausfallen.',
+            'fromPrice' => true,
         ],
         'raum' => [
             'title' => 'Raumpaket',
             'subtitle' => 'Nur Raummiete',
             'icon' => 'fa-key',
             'description' => 'Sie mieten ausschließlich die Räumlichkeiten. Die Getränke sowie die Verpflegung sind nicht enthalten. Bitte beachten Sie, dass beim Raumpaket die Nutzung unseres Kühlraums <b>nicht möglich</b> ist. Ein Kühlschrank steht Ihnen natürlich zur Verfügung.',
+            'fromPrice' => false,
         ],
     ];
 
@@ -120,7 +125,7 @@ class SvzPage extends DownloadsPage
      * Returns the prices grouped by package, each with its rooms:
      *
      * [
-     *   'getraenke' => [
+     *   'gesamt' => [
      *     'title' => ..., 'subtitle' => ..., 'description' => ...,
      *     'rows' => [
      *       'klein' => ['room' => [...], 'rent' => 160.0, 'minimum' => 140.0, 'total' => 300.0,

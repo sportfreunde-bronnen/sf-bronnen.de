@@ -2,7 +2,7 @@
  * Sportvereinszentrum (SVZ) landing page
  *
  * - tabs (infos, availability, prices) with deep links (#infos, #verfuegbarkeit, #preise)
- * - availability calendar (browse months)
+ * - availability calendar (browse months, request button for the selected day)
  * - tariff switch for the price overview
  * - gallery lightbox and reveal animations
  *
@@ -209,6 +209,74 @@
     });
 
     setMonth(current);
+
+    // A click on a day shows the button "Den xx.xx.xxxx direkt anfragen" below the calendar.
+    // It leads to the contact form which has the date preselected (?datum=YYYY-MM-DD).
+    var requestBox = calendar.querySelector('[data-svz-cal-request]');
+    var contactUrl = calendar.getAttribute('data-contact-url');
+    var selectedButton = null;
+
+    var formatDate = function (iso) {
+      var parts = iso.split('-');
+
+      return parts[2] + '.' + parts[1] + '.' + parts[0];
+    };
+
+    var addNote = function (text, modifier) {
+      var note = document.createElement('p');
+
+      note.className = 'svz-cal__request-note' + (modifier ? ' svz-cal__request-note--' + modifier : '');
+      note.textContent = text;
+      requestBox.appendChild(note);
+    };
+
+    var showRequest = function (day) {
+      var iso = day.getAttribute('data-date');
+      var date = formatDate(iso);
+
+      requestBox.textContent = '';
+
+      if (day.classList.contains('is-booked')) {
+        addNote('Der ' + date + ' ist leider bereits belegt. Bitte wählen Sie einen anderen Termin.', 'booked');
+
+        return;
+      }
+
+      if (day.classList.contains('is-free')) {
+        addNote('Der ' + date + ' ist noch frei.', 'free');
+      }
+
+      var button = document.createElement('a');
+      var icon = document.createElement('i');
+
+      icon.className = 'fa fa-envelope-o';
+      icon.setAttribute('aria-hidden', 'true');
+      button.className = 'svz-btn svz-btn--accent';
+      button.href = contactUrl + (contactUrl.indexOf('?') === -1 ? '?' : '&') + 'datum=' + encodeURIComponent(iso);
+      button.appendChild(icon);
+      button.appendChild(document.createTextNode('Den ' + date + ' direkt anfragen'));
+      requestBox.appendChild(button);
+    };
+
+    if (requestBox && contactUrl) {
+      calendar.addEventListener('click', function (event) {
+        var button = event.target.closest('[data-svz-day]');
+
+        if (!button || button.disabled || !calendar.contains(button)) {
+          return;
+        }
+
+        if (selectedButton) {
+          selectedButton.parentNode.classList.remove('is-selected');
+          selectedButton.setAttribute('aria-pressed', 'false');
+        }
+
+        selectedButton = button;
+        button.parentNode.classList.add('is-selected');
+        button.setAttribute('aria-pressed', 'true');
+        showRequest(button.parentNode);
+      });
+    }
   }
 
   // ------------------------------------------------------------------

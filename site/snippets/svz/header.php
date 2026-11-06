@@ -4,11 +4,11 @@
  * All links which leave the SVZ site lead to the main domain, see plugin sfb-svz.
  */
 $mainUrl = SvzDomain::mainUrl();
-$contactUrl = SvzDomain::link('home/kontakt') . '?rec=svz';
+$contactUrl = SvzDomain::contactUrl();
 ?>
 <div class="svz-sitebar">
     <div class="container svz-sitebar__inner">
-        <p class="svz-sitebar__note">Ein Haus der Sportfreunde Bronnen e.V.</p>
+        <p class="svz-sitebar__note">Ein Angebot der Sportfreunde Bronnen e.V.</p>
         <a href="<?= $mainUrl;?>" class="svz-sitebar__back" title="Zur Vereinsseite der Sportfreunde Bronnen"><i class="fa fa-angle-left" aria-hidden="true"></i> Zur Vereinsseite <span>sf-bronnen.de</span></a>
     </div>
 </div>

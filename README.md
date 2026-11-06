@@ -55,7 +55,8 @@ The subdomain must point to the same document root (`public/`) as the main domai
 
 - `svz.<domain>/` renders the SVZ page with an own header (no main navigation of the club site, with a link back to the club site); the footer stays.
 - `<domain>/gesamtverein/allgemeines/svz` (and its subpages) is redirected permanently to the subdomain, every link to the page (navigation, footer, ...) points to the subdomain.
-- Every other path on the subdomain is redirected to the same path on the main domain, links in the SVZ site which leave the SVZ site (contact form, footer, ...) point to the main domain.
+- `svz.<domain>/anfrage` is the own contact form of the SVZ (subpage `anfrage` of the SVZ page, see below); the old URL `<domain>/gesamtverein/allgemeines/svz/anfrage` is redirected to it.
+- Every other path on the subdomain is redirected to the same path on the main domain, links in the SVZ site which leave the SVZ site (footer, ...) point to the main domain.
 - Requests to any other host (e.g. `localhost:1949`) behave as before.
 
 The domain is configurable in the (gitignored) `site/config/config.php`:
@@ -68,6 +69,18 @@ The domain is configurable in the (gitignored) `site/config/config.php`:
 // 'sfb.svz.mainUrl' => 'https://www.sf-bronnen.de',
 // optional, id of the SVZ page, default: 'gesamtverein/allgemeines/svz'
 // 'sfb.svz.page' => 'gesamtverein/allgemeines/svz',
+// recipient of the requests of the SVZ contact form, as long as it is empty the form rejects every submission
+'sfb.svz.recipient' => 'svz@example.com',
 ```
 
-The nested notation (`'sfb' => ['svz' => ['host' => '...']]`) is supported as well.
+The nested notation (`'sfb' => ['svz' => ['host' => '...', 'recipient' => '...']]`) is supported as well.
+
+### SVZ contact form
+
+The form (`site/templates/svzcontact.php`, `site/controllers/svzcontact.php`) asks for first name, last name, e-mail, phone, message
+and additionally for the date, the package (room or beverage package), active member (yes/no) and service staff (yes/no).
+The request is mailed to `sfb.svz.recipient` (action `SvzMailAction` in `site/plugins/uniform-actions`) using the SMTP account of the main contact form.
+The form is protected by Cloudflare Turnstile (action `svz-contact`); the SVZ host is accepted as Turnstile hostname automatically.
+
+A click on a day of the availability calendar shows the button "Den xx.xx.xxxx direkt anfragen" below the calendar, which opens the form
+with the date preselected (`/anfrage?datum=YYYY-MM-DD`). Texts of the form page are editable in the panel (page "Anfrage" below the SVZ page).

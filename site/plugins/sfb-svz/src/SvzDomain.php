@@ -4,20 +4,28 @@ use Kirby\Cms\App;
 use Kirby\Cms\Page;
 use Kirby\Http\Response;
 use Kirby\Http\Route;
+use Kirby\Toolkit\V;
 
 /**
  * Serves the Sportvereinszentrum (SVZ) page on its own (sub)domain, e.g. svz.sf-bronnen.de.
  *
  * Options (see sfb-svz/index.php):
- * - sfb.svz.host:    host name of the SVZ site (without scheme and port), empty = feature disabled
- * - sfb.svz.mainUrl: URL of the main site, optional (default: the SVZ host without its first label)
- * - sfb.svz.page:    id of the SVZ page
+ * - sfb.svz.host:      host name of the SVZ site (without scheme and port), empty = feature disabled
+ * - sfb.svz.mainUrl:   URL of the main site, optional (default: the SVZ host without its first label)
+ * - sfb.svz.page:      id of the SVZ page
+ * - sfb.svz.recipient: e-mail address which receives the requests of the SVZ contact form
  *
  * The feature is only active for requests to the SVZ host or to the main host. Requests to any
  * other host (e.g. localhost:1949 of the docker setup) behave exactly as before.
  */
 class SvzDomain
 {
+    /**
+     * Slug of the contact form page (subpage of the SVZ page). On the SVZ domain the form is
+     * available as short URL: svz.sf-bronnen.de/anfrage
+     */
+    public const CONTACT_SLUG = 'anfrage';
+
     /**
      * Read an option of the sfb-svz plugin.
      *
@@ -137,6 +145,54 @@ class SvzDomain
     }
 
     /**
+     * Id of the contact form page (subpage of the SVZ page)
+     */
+    public static function contactPageId(): string
+    {
+        return static::pageId() . '/' . static::CONTACT_SLUG;
+    }
+
+    /**
+     * The contact form page
+     */
+    public static function contactPage(): ?Page
+    {
+        return App::instance()->site()->find(static::contactPageId());
+    }
+
+    /**
+     * E-mail address which receives the requests of the SVZ contact form (option sfb.svz.recipient)
+     * or null if it is not configured (or not a valid address).
+     */
+    public static function recipient(): ?string
+    {
+        $recipient = static::option('recipient');
+
+        if (!is_string($recipient)) {
+            return null;
+        }
+
+        $recipient = trim($recipient);
+
+        return $recipient !== '' && V::email($recipient) ? $recipient : null;
+    }
+
+    /**
+     * URL of the contact form, optionally with a preselected date (Y-m-d).
+     * Falls back to the contact form of the club if the SVZ contact form page does not exist.
+     */
+    public static function contactUrl(?string $date = null): string
+    {
+        $page = static::contactPage();
+
+        if ($page === null) {
+            return static::link('home/kontakt') . '?rec=svz';
+        }
+
+        return $page->url() . ($date === null ? '' : '?' . http_build_query(['datum' => $date]));
+    }
+
+    /**
      * Does the path belong to the SVZ page (the page itself or one of its subpages)?
      */
     public static function isSvzPath(string $path): bool
@@ -192,7 +248,8 @@ class SvzDomain
      * Route action (catch all, runs after the routes of the Kirby core like panel, api and media)
      *
      * - SVZ domain, start page: render the SVZ page
-     * - SVZ domain, old URL of the SVZ page: redirect to the start page
+     * - SVZ domain, /anfrage: render the contact form page
+     * - SVZ domain, old URL of the SVZ page or the contact form page: redirect to the short URL
      * - SVZ domain, any other page: redirect to the main site
      * - main domain, URL of the SVZ page: redirect to the SVZ domain
      *
@@ -220,8 +277,20 @@ class SvzDomain
                 return $kirby->site()->visit($page);
             }
 
+            if ($path === static::CONTACT_SLUG) {
+                $contactPage = static::contactPage();
+
+                if ($contactPage !== null) {
+                    return $kirby->site()->visit($contactPage);
+                }
+            }
+
             if ($path === static::pageId()) {
                 return Response::redirect(static::url() . '/' . $query, 301);
+            }
+
+            if ($path === static::contactPageId()) {
+                return Response::redirect(static::url(static::CONTACT_SLUG) . $query, 301);
             }
 
             if (str_starts_with($path, static::pageId() . '/')) {
@@ -233,7 +302,13 @@ class SvzDomain
         }
 
         if (static::isSvzPath($path)) {
-            $target = $path === static::pageId() ? static::url() . '/' : static::url($path);
+            if ($path === static::pageId()) {
+                $target = static::url() . '/';
+            } elseif ($path === static::contactPageId()) {
+                $target = static::url(static::CONTACT_SLUG);
+            } else {
+                $target = static::url($path);
+            }
 
             return Response::redirect($target . $query, 301);
         }

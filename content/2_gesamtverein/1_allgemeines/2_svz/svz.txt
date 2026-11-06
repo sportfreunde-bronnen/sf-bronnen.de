@@ -159,20 +159,20 @@ Quotes:
 
 ----
 
-Availabilitytext: Wählen Sie einen Monat und sehen Sie auf einen Blick, ob das SVZ an Ihrem Wunschtermin **frei (grün)** oder **belegt (rot)** ist. Ist Ihr Termin noch frei? Dann freuen wir uns über Ihre Anfrage über unser **[Kontaktformular](/home/kontakt?rec=svz)**.
+Availabilitytext: Wählen Sie einen Monat und sehen Sie auf einen Blick, ob das SVZ an Ihrem Wunschtermin **frei (grün)** oder **belegt (rot)** ist. Ist Ihr Termin noch frei? Klicken Sie einfach auf den Tag und fragen Sie ihn direkt an, oder nutzen Sie unser **[Kontaktformular](/gesamtverein/allgemeines/svz/anfrage)**.
 
 ----
 
 Prices:
 
 - 
-  package: getraenke
+  package: gesamt
   room: klein
   rent: 160
   minimum: 140
   memberrent: 80
 - 
-  package: getraenke
+  package: gesamt
   room: gross
   rent: 210
   minimum: 190

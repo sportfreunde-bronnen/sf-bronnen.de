@@ -1,48 +1,64 @@
 <?php snippet('header'); ?>
+<?php $downloadGroups = $page->downloads()->toStructure(); ?>
 <div class="page page--downloads">
     <?php snippet('h1'); ?>
     <div class="main-container container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
         <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
-        <div id="accordion-downloads">
-            <?php if ($page->downloads()->toStructure()->count() > 0): ?>
-            <?php $i = 0; foreach ($page->downloads()->toStructure() as $downloadBlock): $i++; ?>
-                <div class="card flat">
-                <!-- Card Heading Starts -->
-                <div class="card-header flat">
-                        <a data-toggle="collapse" data-target="#collapse<?= $i;?>" aria-expanded="true"
-                           aria-controls="#collapse<?= $i;?>">
-                            <h5 class="card-title">
-                            <?= $downloadBlock->category();?>
-                            <span class="fa fa-plus float-right"></span>
-                            </h5>
-                        </a>
-                </div>
-                <!-- Card Heading Ends -->
-                <!-- Card Body Starts -->
-                <div id="collapse<?= $i;?>" class="collapse" data-parent="#accordion-downloads">
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <?php foreach ($downloadBlock->downloads()->toFiles() as $download):; ?>
-                                <li class="list-group-item d-sm-flex justify-content-between align-items-center text-left">
-                                    <a href="<?= $download->url();?>">
-                                        <strong><?= $download->description();?></strong>
+        <?php if ($downloadGroups->count() > 0): ?>
+        <div class="download-groups" id="download-groups">
+            <?php $i = 0; foreach ($downloadGroups as $downloadGroup): $i++; ?>
+                <?php
+                $files = $downloadGroup->downloads()->toFiles();
+                $fileCount = $files->count();
+                $isOpen = $i === 1;
+                ?>
+                <section class="download-group">
+                    <h3 class="download-group__heading">
+                        <button class="download-group__toggle<?= $isOpen ? '' : ' collapsed'; ?>" type="button"
+                                data-toggle="collapse" data-target="#download-group-<?= $i; ?>"
+                                aria-expanded="<?= $isOpen ? 'true' : 'false'; ?>"
+                                aria-controls="download-group-<?= $i; ?>">
+                            <span class="download-group__icon" aria-hidden="true"><i class="fa fa-folder-open-o"></i></span>
+                            <span class="download-group__name"><?= $downloadGroup->category()->esc(); ?></span>
+                            <span class="download-group__count"><?= $fileCount; ?> <?= $fileCount === 1 ? 'Datei' : 'Dateien'; ?></span>
+                            <span class="download-group__chevron" aria-hidden="true"><i class="fa fa-angle-down"></i></span>
+                        </button>
+                    </h3>
+                    <div id="download-group-<?= $i; ?>" class="collapse<?= $isOpen ? ' show' : ''; ?>" data-parent="#download-groups">
+                        <ul class="download-list list-unstyled">
+                            <?php foreach ($files as $download): ?>
+                                <?php
+                                $fileType = $page->fileTypeInfo($download->extension());
+                                $title = $download->description()->isNotEmpty() ? $download->description()->value() : $download->name();
+                                ?>
+                                <li>
+                                    <a class="download-item" href="<?= $download->url(); ?>">
+                                        <span class="download-item__type download-item__type--<?= $fileType['type']; ?>" aria-hidden="true"><i class="fa <?= $fileType['icon']; ?>"></i></span>
+                                        <span class="download-item__text">
+                                            <span class="download-item__title"><?= esc($title); ?></span>
+                                            <span class="download-item__meta"><?= strtoupper($download->extension()); ?> &middot; <?= $page->convertFileSize($download->size()); ?></span>
+                                        </span>
+                                        <span class="download-item__action">
+                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                            <span class="download-item__label">Herunterladen</span>
+                                        </span>
                                     </a>
-                                    <span class="d-block d-sm-none"><?= strtoupper($download->extension());?>, <?= $page->convertFileSize($download->size());?></span>
-                                    <span class="badge badge-primary badge-pill d-none d-sm-block"><?= strtoupper($download->extension());?>, <?= $page->convertFileSize($download->size());?></span>
                                 </li>
                             <?php endforeach; ?>
+                            <?php if ($fileCount === 0): ?>
+                                <li class="download-list__empty">In dieser Kategorie sind aktuell keine Dateien vorhanden.</li>
+                            <?php endif; ?>
                         </ul>
                     </div>
-                </div>
-                <!-- Card Body Ends -->
-            </div>
+                </section>
             <?php endforeach; ?>
-            <?php else: ?>
-                <div class="alert alert-secondary">
-                    Aktuell sind keine Downloads vorhanden
-                </div>
-            <?php endif; ?>
         </div>
+        <?php else: ?>
+            <div class="download-empty">
+                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                Aktuell sind keine Downloads vorhanden
+            </div>
+        <?php endif; ?>
     </div>
 </div>
 <?php snippet('footer'); ?><?php snippet('close'); ?>

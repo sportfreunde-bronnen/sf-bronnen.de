@@ -1,15 +1,325 @@
-.page--downloads {
-  div.collapse {
-    div.card-body {
-      ul {
-        padding-left: 0;
-        li.list-group-item {
-          border-radius: 0 ! important;
-          &:hover {
-            background-color: $navBgColor;
-          }
-        }
-      }
+// Downloads page: one collapsible card per category, every file is a row with file type icon, size and download action
+
+$downloadTypeColors: (
+  pdf: #d9534f,
+  word: #2b6cb0,
+  excel: #2f855a,
+  powerpoint: #dd6b20,
+  archive: #8a6d3b,
+  image: #7e57c2,
+  text: #5f7080,
+  file: $brightBlue
+);
+
+.download-groups {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.download-group {
+  margin-bottom: 1.1rem;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  box-shadow: $shadowSm;
+  transition: $transition;
+  animation: content-rise 0.5s ease backwards;
+
+  &:hover {
+    box-shadow: $shadow;
+  }
+
+  @for $i from 1 through 8 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.06s * $i;
     }
+  }
+}
+
+.download-group__heading {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.download-group__toggle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.1rem 1.25rem;
+  color: $darkBlue;
+  text-align: left;
+  background-color: $mistBlue;
+  border: 0;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: $paleBlue;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba($brightBlue, 0.4);
+    outline-offset: -3px;
+  }
+
+  &[aria-expanded="true"] {
+    background-color: $paleBlue;
+
+    .download-group__chevron {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.download-group__icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 1.15rem;
+  background: linear-gradient(135deg, $lightBlue, $darkBlue);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba($lightBlue, 0.3);
+}
+
+.download-group__name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.download-group__count {
+  flex: 0 0 auto;
+  margin: 0 0.9rem;
+  padding: 0.2rem 0.75rem;
+  color: $darkBlue;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid $borderColor;
+  border-radius: 999px;
+}
+
+.download-group__chevron {
+  flex: 0 0 auto;
+  width: 1.5rem;
+  color: $brightBlue;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.download-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid $borderColor;
+
+  > li + li {
+    border-top: 1px solid $borderColor;
+  }
+}
+
+.download-list__empty {
+  padding: 1.1rem 1.25rem;
+  color: $textMuted;
+}
+
+.download-item {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1.25rem;
+  color: $textColor;
+  text-decoration: none;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $textColor;
+    text-decoration: none;
+    background-color: $mistBlue;
+
+    .download-item__title {
+      color: $brightBlue;
+    }
+
+    .download-item__action {
+      color: #fff;
+      background-color: $brightBlue;
+      border-color: $brightBlue;
+    }
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba($brightBlue, 0.4);
+    outline-offset: -3px;
+  }
+}
+
+.download-item__type {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 1rem;
+  font-size: 1.35rem;
+  border-radius: $radiusSm;
+
+  @each $type, $color in $downloadTypeColors {
+    &--#{$type} {
+      color: $color;
+      background-color: rgba($color, 0.12);
+    }
+  }
+}
+
+.download-item__text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.download-item__title {
+  display: block;
+  color: $darkBlue;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  transition: $transition;
+}
+
+.download-item__meta {
+  display: block;
+  margin-top: 0.1rem;
+  color: $textMuted;
+  font-size: 0.85rem;
+}
+
+.download-item__action {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+  padding: 0 0.75rem;
+  color: $brightBlue;
+  font-weight: 600;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid $brightBlue;
+  border-radius: 999px;
+  transition: $transition;
+
+  .fa + .download-item__label {
+    margin-left: 0.5rem;
+  }
+}
+
+// icon only on small screens
+.download-item__label {
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    display: inline;
+  }
+}
+
+.download-empty {
+  margin-top: 2.5rem;
+  padding: 2.5rem 1.5rem;
+  color: $textMuted;
+  text-align: center;
+  background-color: $mistBlue;
+  border: 1px dashed #c9d6df;
+  border-radius: $radius;
+
+  .fa {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: $brightBlue;
+    font-size: 2rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .download-group__toggle {
+    padding: 0.95rem 1rem;
+  }
+
+  .download-group__icon {
+    width: 38px;
+    height: 38px;
+    margin-right: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .download-group__name {
+    font-size: 1.1rem;
+  }
+
+  .download-group__count {
+    display: none;
+  }
+
+  .download-group__chevron {
+    margin-left: 0.5rem;
+  }
+
+  .download-item {
+    padding: 0.85rem 1rem;
+  }
+
+  .download-item__type {
+    width: 38px;
+    height: 38px;
+    margin-right: 0.75rem;
+    font-size: 1.15rem;
+  }
+
+  .download-item__action {
+    margin-left: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .download-group {
+    animation: none;
+  }
+
+  .download-group,
+  .download-group__toggle,
+  .download-group__chevron,
+  .download-item,
+  .download-item__title,
+  .download-item__action {
+    transition: none;
+  }
+}
+
+@media print {
+  .download-group {
+    animation: none;
+    box-shadow: none;
+  }
+
+  .download-item__action {
+    display: none;
   }
 }

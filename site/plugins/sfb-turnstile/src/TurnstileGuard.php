@@ -14,6 +14,8 @@ use Kirby\Cms\App;
  * Plugin options (see sfb-turnstile/index.php):
  * - sfb.turnstile.secret: the widget secret key (never commit it)
  * - sfb.turnstile.hostnames: frontend hostnames accepted in the siteverify response
+ *
+ * The host of the SVZ site (option sfb.svz.host of the sfb-svz plugin) is always accepted in addition.
  */
 class TurnstileGuard extends Guard
 {
@@ -42,6 +44,10 @@ class TurnstileGuard extends Guard
         $expectedAction = $this->requireOption('action');
         $secret = static::pluginOption('secret');
         $hostnames = array_filter((array) static::pluginOption('hostnames', []), 'is_string');
+        $svzHost = class_exists(\SvzDomain::class) ? \SvzDomain::host() : null;
+        if (is_string($svzHost) && $svzHost !== '' && !empty($hostnames)) {
+            $hostnames[] = $svzHost;
+        }
         $token = $app->request()->body()->get(self::FIELD_NAME);
 
         if (!is_string($secret) || trim($secret) === '' || empty($hostnames)) {

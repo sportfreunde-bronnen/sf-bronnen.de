@@ -13,6 +13,9 @@ Kirby::plugin('sfb/svz', [
         'mainUrl' => null,
         // id of the SVZ page
         'page' => 'gesamtverein/allgemeines/svz',
+        // e-mail address which receives the requests of the SVZ contact form (subpage 'anfrage' of the SVZ page).
+        // Set 'sfb.svz.recipient' in the (gitignored) site/config/config.php. As long as it is empty the form rejects every submission.
+        'recipient' => null,
     ],
     'routes' => [
         [

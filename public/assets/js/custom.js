@@ -64,7 +64,7 @@
   $('div.owl-nav').addClass('text-center');
 
   // ACCORDION
-  var $active = $("#accordion .collapse.show, #accordion-downloads .collapse.show")
+  var $active = $("#accordion .collapse.show")
                   .prev()
                   .addClass("active");
   
@@ -80,7 +80,7 @@
       .find("a")
       .append("<span class=\"fa fa-minus float-left\"></span>");
       
-  $("#accordion .card-header, #accordion-downloads .card-header")
+  $("#accordion .card-header")
       .not($active)
       .find('a')
       .prepend("<span class=\"fa fa-plus float-right\"></span>");
@@ -90,7 +90,7 @@
       .find('a')
       .prepend("<span class=\"fa fa-plus float-left\"></span>");
   
-  $("#accordion, #accordion-downloads, #accordion-help").on("shown.bs.collapse", function (e) {
+  $("#accordion, #accordion-help").on("shown.bs.collapse", function (e) {
       $("#accordion .card-header.active, #accordion-faqs .card-header.active, #accordion-help .card-header.active")
           .removeClass("active")
           .find(".fa")
@@ -102,7 +102,7 @@
           .toggleClass("fa-plus fa-minus");		
   });
   
-  $("#accordion, #accordion-downloads, #accordion-help").on("hidden.bs.collapse", function (e) {
+  $("#accordion, #accordion-help").on("hidden.bs.collapse", function (e) {
       $(e.target)
           .prev()
           .removeClass("active")

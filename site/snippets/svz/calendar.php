@@ -3,7 +3,8 @@
  * Availability calendar of the SVZ.
  *
  * Renders SvzPage::CALENDAR_MONTHS months. Without JavaScript all months are listed one below the other,
- * with JavaScript (svz.js) one month is shown at a time and can be browsed.
+ * with JavaScript (svz.js) one month is shown at a time and can be browsed. A click on a day shows the button
+ * "Den xx.xx.xxxx direkt anfragen" below the calendar, which leads to the contact form with the date preselected.
  *
  * @var array|null $bookings booked days ('Y-m-d' => row) or null if the bookings are not available
  */
@@ -14,6 +15,9 @@ $weekdaysLong = ['Mo' => 'Montag', 'Di' => 'Dienstag', 'Mi' => 'Mittwoch', 'Do' 
 
 $bookings ??= null;
 $available = is_array($bookings);
+
+// contact form, svz.js appends ?datum=YYYY-MM-DD
+$contactUrl = SvzDomain::contactUrl();
 
 $today = new DateTimeImmutable('today');
 $firstMonth = $today->modify('first day of this month');
@@ -52,12 +56,12 @@ if ($available) {
     }
 }
 ?>
-<div class="svz-cal" data-svz-calendar data-active="<?= $activeIndex;?>">
+<div class="svz-cal" data-svz-calendar data-active="<?= $activeIndex;?>" data-contact-url="<?= esc($contactUrl, 'attr');?>">
 
     <?php if (!$available): ?>
         <div class="svz-notice svz-notice--warning" role="status">
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-            <span>Der Belegungskalender ist gerade nicht erreichbar. Bitte fragen Sie Ihren Wunschtermin direkt über unser <a href="<?= SvzDomain::link('home/kontakt');?>?rec=svz">Kontaktformular</a> an.</span>
+            <span>Der Belegungskalender ist gerade nicht erreichbar. Bitte fragen Sie Ihren Wunschtermin direkt über unser <a href="<?= esc($contactUrl, 'attr');?>">Kontaktformular</a> an.</span>
         </div>
     <?php endif; ?>
 
@@ -134,18 +138,23 @@ if ($available) {
                         }
 
                         $label = $weekdaysLong[$weekdays[(int)$date->format('N') - 1]] . ', ' . $day . '. ' . $monthNames[$monthNumber - 1] . ' ' . $year;
+                        $description = $label . ($state !== '' ? ': ' . $state : '');
                         ?>
-                        <li class="<?= implode(' ', $classes);?>" data-date="<?= $key;?>" title="<?= esc($label . ($state !== '' ? ': ' . $state : ''));?>">
-                            <span class="svz-day__num"><?= $day;?></span>
-                            <?php if ($state !== ''): ?>
-                                <span class="svz-day__state"><?= $state;?></span>
-                            <?php endif; ?>
+                        <li class="<?= implode(' ', $classes);?>" data-date="<?= $key;?>" title="<?= esc($description);?>">
+                            <button type="button" class="svz-day__select" data-svz-day aria-pressed="false" aria-label="<?= esc($description);?>"<?= $date < $today ? ' disabled' : '';?>>
+                                <span class="svz-day__num"><?= $day;?></span>
+                                <?php if ($state !== ''): ?>
+                                    <span class="svz-day__state"><?= $state;?></span>
+                                <?php endif; ?>
+                            </button>
                         </li>
                     <?php endfor; ?>
                 </ol>
             </section>
         <?php endforeach; ?>
     </div>
+
+    <div class="svz-cal__request" data-svz-cal-request aria-live="polite"></div>
 
     <?php if ($freeSaturdays !== []): ?>
         <div class="svz-cal__free">

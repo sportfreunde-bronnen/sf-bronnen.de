@@ -628,6 +628,27 @@ html:not(.svz-js) .svz-panel + .svz-panel {
     background: #fff6e0;
     color: #7a5a00;
   }
+
+  &--success {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    border-color: rgba($svzFree, 0.35);
+    background: $svzFreeBg;
+    color: $svzFreeText;
+  }
+
+  &--error {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-color: rgba($svzBooked, 0.3);
+    background: $svzBookedBg;
+    color: $svzBookedText;
+
+    ul {
+      margin: 0.4rem 0 0;
+      padding-left: 1.2rem;
+    }
+  }
 }
 
 // ------------------------------------------------------------------
@@ -1019,6 +1040,40 @@ html:not(.svz-js) .svz-panel + .svz-panel {
     }
   }
 
+  // button "Den xx.xx.xxxx direkt anfragen" below the calendar (filled by svz.js)
+  &__request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1.25rem 1rem;
+    border: 1px dashed rgba($brightBlue, 0.35);
+    border-radius: $radius;
+    background: $mistBlue;
+    text-align: center;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__request-note {
+    margin: 0 0 0.9rem;
+    font-weight: 700;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--free {
+      color: $svzFreeText;
+    }
+
+    &--booked {
+      color: $svzBookedText;
+    }
+  }
+
   &__free {
     margin-top: 1.75rem;
     padding-top: 1.5rem;
@@ -1136,6 +1191,33 @@ html:not(.svz-js) .svz-panel + .svz-panel {
     background: transparent;
   }
 
+  // the whole day is a button (selects the day, see svz.js)
+  &__select {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: inherit;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+    cursor: default;
+
+    &:focus-visible {
+      outline: 3px solid $brightBlue;
+      outline-offset: 2px;
+    }
+  }
+
+  .svz-js &__select:not(:disabled) {
+    cursor: pointer;
+  }
+
   &__num {
     font-size: 1.2rem;
     font-weight: 700;
@@ -1184,6 +1266,10 @@ html:not(.svz-js) .svz-panel + .svz-panel {
 
   &.is-today {
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px $svzAccent;
+  }
+
+  &.is-selected {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px $brightBlue;
   }
 }
 
@@ -1394,6 +1480,14 @@ html:not(.svz-js) .svz-panel + .svz-panel {
     letter-spacing: -0.02em;
   }
 
+  &__from {
+    margin-right: 0.15em;
+    color: $textMuted;
+    font-size: 0.45em;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
   &__breakdown {
     display: block;
     color: $textMuted;
@@ -1495,6 +1589,272 @@ html:not(.svz-js) .svz-panel + .svz-panel {
 }
 
 // ------------------------------------------------------------------
+// Contact form (subpage "anfrage", see templates/svzcontact.php)
+// ------------------------------------------------------------------
+.svz--form {
+  .svz-formhead {
+    padding: clamp(32px, 5vw, 64px) 0 clamp(88px, 10vw, 128px);
+    background: linear-gradient(135deg, $deepBlue 0%, $darkBlue 100%);
+    color: #fff;
+
+    &__back {
+      display: inline-block;
+      margin-bottom: 1.25rem;
+      color: rgba(#fff, 0.8);
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $svzAccent;
+      }
+
+      .fa {
+        margin-right: 0.4rem;
+      }
+    }
+
+    &__title {
+      margin: 0 0 0.75rem;
+      color: #fff;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+    }
+
+    &__lead {
+      max-width: 720px;
+      margin: 0;
+      color: rgba(#fff, 0.85);
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      line-height: 1.5;
+    }
+  }
+
+  .svz-formwrap {
+    position: relative;
+    margin-top: -64px;
+    padding-bottom: clamp(48px, 8vw, 96px);
+  }
+
+  .svz-formcard {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: clamp(22px, 4vw, 44px);
+    border: 1px solid $borderColor;
+    border-radius: $radiusLg + 4;
+    background: #fff;
+    box-shadow: $shadowLg;
+
+    &__intro {
+      margin-bottom: 1.75rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  .svz-form {
+    &__group {
+      min-width: 0;
+      margin: 0 0 1.75rem;
+      padding: 0;
+      border: 0;
+
+      legend {
+        width: 100%;
+        margin: 0 0 0.75rem;
+        padding: 0;
+        color: $deepBlue;
+        font-size: 1.15rem;
+        font-weight: 700;
+      }
+    }
+
+    &__row {
+      margin-bottom: 0;
+
+      &--split {
+        display: grid;
+        grid-gap: 0 1.5rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    &__hint {
+      margin: 0.35rem 0 0;
+      color: $textMuted;
+      font-size: 0.9rem;
+    }
+
+    &__consent {
+      margin-bottom: 1rem;
+      padding: 1rem 1.15rem;
+      border: 1px solid transparent;
+      border-radius: $radius;
+      background: $mistBlue;
+
+      &.is-invalid {
+        border-color: $svzBooked;
+      }
+    }
+
+    &__turnstile {
+      margin: 1.25rem 0 0;
+    }
+
+    .svz-actions {
+      margin-top: 1.25rem;
+    }
+  }
+
+  .svz-field {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: $deepBlue;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    &--date {
+      max-width: 260px;
+    }
+  }
+
+  .svz-input {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid $input-border-color;
+    border-radius: $radius;
+    background: #fff;
+    color: $textColor;
+    font-size: 1rem;
+    line-height: 1.4;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &:focus {
+      outline: 0;
+      border-color: $input-focus-border-color;
+      box-shadow: $input-focus-box-shadow;
+    }
+
+    &.is-invalid {
+      border-color: $svzBooked;
+      background: #fffafa;
+    }
+  }
+
+  textarea.svz-input {
+    min-height: 9rem;
+    resize: vertical;
+  }
+
+  .svz-choices {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.35rem;
+
+    &.is-invalid .svz-choice__box {
+      border-color: $svzBooked;
+    }
+  }
+
+  .svz-choice {
+    position: relative;
+    margin: 0 0.35rem 0.7rem;
+    cursor: pointer;
+
+    input {
+      @include visually-hidden;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 5.5rem;
+      height: 100%;
+      padding: 0.7rem 1.4rem;
+      border: 2px solid $borderColor;
+      border-radius: $radius;
+      background: #fff;
+      color: $textColor;
+      text-align: center;
+      transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    &__title {
+      color: $deepBlue;
+      font-weight: 700;
+    }
+
+    &__text {
+      margin-top: 0.15rem;
+      color: $textMuted;
+      font-size: 0.9rem;
+    }
+
+    &:hover .svz-choice__box {
+      border-color: rgba($brightBlue, 0.5);
+    }
+
+    input:checked + .svz-choice__box {
+      border-color: $brightBlue;
+      background: $paleBlue;
+      box-shadow: 0 0 0 1px $brightBlue;
+    }
+
+    input:focus-visible + .svz-choice__box {
+      outline: 3px solid rgba($brightBlue, 0.5);
+      outline-offset: 2px;
+    }
+  }
+
+  .svz-choices--cards {
+    .svz-choice {
+      flex: 1 1 260px;
+    }
+
+    .svz-choice__box {
+      align-items: flex-start;
+      padding: 1rem 1.25rem;
+      text-align: left;
+
+      .fa {
+        margin-bottom: 0.4rem;
+        color: $brightBlue;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .svz-check {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    color: $textMuted;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    cursor: pointer;
+
+    input {
+      flex: 0 0 auto;
+      width: 1.1rem;
+      height: 1.1rem;
+      margin: 0.2rem 0.75rem 0 0;
+    }
+
+    a {
+      color: $darkBlue;
+      text-decoration: underline;
+    }
+  }
+}
+
+// ------------------------------------------------------------------
 // Scroll reveal (only active if JavaScript is available)
 // ------------------------------------------------------------------
 .svz[data-svz-ready] .svz-reveal {
@@ -1589,6 +1949,10 @@ html:not(.svz-js) .svz-panel + .svz-panel {
 
   .svz-cal__pager {
     margin-right: 0;
+  }
+
+  .svz--form .svz-form__row--split {
+    grid-template-columns: 1fr;
   }
 }
 

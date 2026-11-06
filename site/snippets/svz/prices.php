@@ -10,13 +10,13 @@ $groups = $page->priceGroups();
 <div class="svz-section-head svz-reveal">
     <p class="svz-eyebrow">Preisübersicht</p>
     <h2 class="svz-title">Das passende Paket für Ihre Feier</h2>
-    <p class="svz-lead">Wählen Sie zwischen Getränkepaket und Raumpaket, jeweils für den kleinen oder den großen Wirtschaftsraum.</p>
+    <p class="svz-lead">Wählen Sie zwischen Gesamt- und Raumpaket, jeweils für den kleinen oder den großen Wirtschaftsraum.</p>
 </div>
 
 <?php if ($groups === []): ?>
     <div class="svz-notice" role="status">
         <i class="fa fa-info-circle" aria-hidden="true"></i>
-        <span>Die Preise erfragen Sie bitte direkt über unser <a href="<?= SvzDomain::link('home/kontakt');?>?rec=svz">Kontaktformular</a>.</span>
+        <span>Die Preise erfragen Sie bitte direkt über unser <a href="<?= esc(SvzDomain::contactUrl(), 'attr');?>">Kontaktformular</a>.</span>
     </div>
 <?php else: ?>
 
@@ -68,7 +68,12 @@ $groups = $page->priceGroups();
                         <?php foreach ($prices as $tariff => $price): ?>
                             <div class="svz-price" data-svz-price="<?= $tariff;?>">
                                 <span class="svz-price__label"><?= $price['label'];?></span>
-                                <span class="svz-price__total"><?= SvzPage::formatPrice($price['total']);?></span>
+                                <span class="svz-price__total">
+                                    <?php if (!empty($group['fromPrice'])): ?>
+                                        <span class="svz-price__from">ab</span>
+                                    <?php endif; ?>
+                                    <?= SvzPage::formatPrice($price['total']);?>
+                                </span>
                                 <span class="svz-price__breakdown">
                                     <?php if ($hasMinimum): ?>
                                         <?= SvzPage::formatPrice($price['rent']);?> Raummiete + <?= SvzPage::formatPrice($row['minimum']);?> Mindestverzehr

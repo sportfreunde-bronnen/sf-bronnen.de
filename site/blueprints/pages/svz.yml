@@ -109,7 +109,7 @@ fields:
         label: Paket
         width: 1/2
         options:
-          getraenke: Getränkepaket
+          gesamt: Gesamtpaket
           raum: Raumpaket
       room:
         type: select
