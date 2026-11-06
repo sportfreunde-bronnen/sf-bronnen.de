@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Story 2: "Das passende Paket für Ihre Feier" (Preisübersicht)
+  Format 1080 x 1920 px (9:16). Wichtiges bleibt zwischen y = 270 und y = 1580 (Instagram blendet oben und unten Bedienelemente ein).
+  Preise: Stand der Preisübersicht auf der SVZ-Seite (Externe). Bei Preisänderungen die Zahlen in den Karten anpassen.
+  Farben der Webseite: #00222f / #00314a / #004869 (Dunkelblau), #007cb5 / #0088df (Blau), #ffb703 (Gelb), #e8f3f9 (Hellblau)
+  Schriften der Webseite: "Saira Semi Condensed" (Überschriften), "Lato" (Fließtext)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <title>Story 2 - Das passende Paket für Ihre Feier</title>
+  <defs>
+    <style>
+      @font-face { font-family: 'Saira Semi Condensed'; font-weight: 700; src: url('../../../public/assets/fonts/gf/saira-semi-condensed-v11-latin-700.woff2') format('woff2'); }
+      @font-face { font-family: 'Saira Semi Condensed'; font-weight: 900; src: url('../../../public/assets/fonts/gf/saira-semi-condensed-v11-latin-900.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 400; src: url('../../../public/assets/fonts/gf/lato-v23-latin-regular.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 700; src: url('../../../public/assets/fonts/gf/lato-v23-latin-700.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 900; src: url('../../../public/assets/fonts/gf/lato-v23-latin-900.woff2') format('woff2'); }
+    </style>
+    <linearGradient id="hintergrund-verlauf" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#007cb5"/>
+      <stop offset="0.45" stop-color="#004869"/>
+      <stop offset="1" stop-color="#00222f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect id="hintergrund" x="0" y="0" width="1080" height="1920" fill="url(#hintergrund-verlauf)"/>
+  <circle id="deko-kreis-1" cx="1040" cy="250" r="360" fill="#ffffff" fill-opacity="0.06"/>
+  <circle id="deko-kreis-2" cx="60" cy="1500" r="420" fill="#ffffff" fill-opacity="0.05"/>
+
+  <!-- Überschrift -->
+  <g id="text-ueberschrift" font-family="Saira Semi Condensed, Arial Narrow, sans-serif">
+    <rect id="eyebrow-linie" x="80" y="322" width="40" height="4" fill="#ffb703"/>
+    <text id="eyebrow" x="140" y="336" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="5" fill="#ffb703">PREISÜBERSICHT</text>
+    <text id="titel-zeile-1" x="76" y="466" font-weight="900" font-size="112" letter-spacing="-1.5" fill="#ffffff">Das passende Paket</text>
+    <text id="titel-zeile-2" x="76" y="578" font-weight="900" font-size="112" letter-spacing="-1.5" fill="#ffffff">für Ihre <tspan fill="#ffb703">Feier.</tspan></text>
+  </g>
+
+  <!-- Karte 1: Gesamtpaket -->
+  <g id="karte-gesamtpaket">
+    <rect id="karte-1-flaeche" x="80" y="664" width="920" height="400" rx="32" fill="#ffffff"/>
+    <rect id="karte-1-akzent" x="80" y="664" width="14" height="400" fill="#ffb703" clip-path="inset(0 round 32px)"/>
+    <text id="karte-1-titel" x="130" y="738" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="58" fill="#00314a">Gesamtpaket</text>
+    <text id="karte-1-untertitel" x="130" y="782" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="28" fill="#007cb5">Raummiete + Getränke von uns</text>
+    <rect id="karte-1-trenner" x="130" y="816" width="820" height="2" fill="#00314a" fill-opacity="0.12"/>
+
+    <g id="karte-1-klein">
+      <text x="130" y="884" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="34" fill="#00314a">Kleiner Raum</text>
+      <text x="130" y="926" font-family="Lato, Arial, sans-serif" font-weight="400" font-size="27" fill="#00314a" fill-opacity="0.75">75 m² · bis 35 Personen</text>
+      <text x="732" y="926" text-anchor="end" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="30" fill="#00314a" fill-opacity="0.7">ab</text>
+      <text x="950" y="926" text-anchor="end" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="78" fill="#00314a">300 €</text>
+    </g>
+    <g id="karte-1-gross">
+      <text x="130" y="1000" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="34" fill="#00314a">Großer Raum</text>
+      <text x="130" y="1040" font-family="Lato, Arial, sans-serif" font-weight="400" font-size="27" fill="#00314a" fill-opacity="0.75">165 m² · bis 100 Personen</text>
+      <text x="732" y="1040" text-anchor="end" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="30" fill="#00314a" fill-opacity="0.7">ab</text>
+      <text x="950" y="1040" text-anchor="end" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="78" fill="#00314a">400 €</text>
+    </g>
+  </g>
+
+  <!-- Karte 2: Raumpaket -->
+  <g id="karte-raumpaket">
+    <rect id="karte-2-flaeche" x="80" y="1100" width="920" height="330" rx="32" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+    <text id="karte-2-titel" x="130" y="1174" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="58" fill="#ffffff">Raumpaket</text>
+    <text id="karte-2-untertitel" x="130" y="1218" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="28" fill="#ffb703">Nur Raummiete</text>
+    <rect id="karte-2-trenner" x="130" y="1250" width="820" height="2" fill="#ffffff" fill-opacity="0.25"/>
+
+    <g id="karte-2-klein">
+      <text x="130" y="1318" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="34" fill="#ffffff">Kleiner Raum</text>
+      <text x="950" y="1326" text-anchor="end" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="64" fill="#ffffff">350 €</text>
+    </g>
+    <g id="karte-2-gross">
+      <text x="130" y="1394" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="34" fill="#ffffff">Großer Raum</text>
+      <text x="950" y="1402" text-anchor="end" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="64" fill="#ffffff">500 €</text>
+    </g>
+  </g>
+
+  <!-- Hinweise -->
+  <g id="hinweise" font-family="Lato, Arial, sans-serif" font-weight="400" font-size="27" fill="#ffffff" fill-opacity="0.88">
+    <text id="hinweis-1" x="80" y="1488">Alle Preise inkl. MwSt. Beim Gesamtpaket ist der</text>
+    <text id="hinweis-2" x="80" y="1524">Mindestverzehr enthalten. Ermäßigter Tarif für aktive Mitglieder.</text>
+  </g>
+
+  <!-- Button -->
+  <g id="button">
+    <rect id="button-flaeche" x="80" y="1572" width="620" height="96" rx="48" fill="#ffb703"/>
+    <text id="button-text" x="124" y="1633" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="38" fill="#00314a">Jetzt Termin anfragen</text>
+    <path id="button-pfeil" d="M638 1606 L664 1620 L638 1634" fill="none" stroke="#00314a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Absender -->
+  <g id="absender">
+    <image id="wappen" x="80" y="1728" width="64" height="71" href="../images/wappen.svg"/>
+    <text id="absender-name" x="170" y="1758" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="24" letter-spacing="3.5" fill="#ffb703">SPORTVEREINSZENTRUM BRONNEN</text>
+    <text id="absender-url" x="170" y="1796" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="30" fill="#ffffff">vermietung.sf-bronnen.de</text>
+  </g>
+</svg>

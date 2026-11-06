@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Story 1: "Ihre Feier. Unser SVZ." (Foto + Kennzahlen)
+  Format 1080 x 1920 px (9:16). Wichtiges bleibt zwischen y = 270 und y = 1580 (Instagram blendet oben und unten Bedienelemente ein).
+  Farben der Webseite: #00222f / #00314a / #004869 (Dunkelblau), #007cb5 / #0088df (Blau), #ffb703 (Gelb), #e8f3f9 (Hellblau)
+  Schriften der Webseite: "Saira Semi Condensed" (Überschriften), "Lato" (Fließtext) - siehe README.md
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <title>Story 1 - Ihre Feier. Unser SVZ.</title>
+  <defs>
+    <style>
+      @font-face { font-family: 'Saira Semi Condensed'; font-weight: 700; src: url('../../../public/assets/fonts/gf/saira-semi-condensed-v11-latin-700.woff2') format('woff2'); }
+      @font-face { font-family: 'Saira Semi Condensed'; font-weight: 900; src: url('../../../public/assets/fonts/gf/saira-semi-condensed-v11-latin-900.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 400; src: url('../../../public/assets/fonts/gf/lato-v23-latin-regular.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 700; src: url('../../../public/assets/fonts/gf/lato-v23-latin-700.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 900; src: url('../../../public/assets/fonts/gf/lato-v23-latin-900.woff2') format('woff2'); }
+    </style>
+    <linearGradient id="foto-verlauf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00222f" stop-opacity="0.55"/>
+      <stop offset="0.3" stop-color="#00222f" stop-opacity="0.05"/>
+      <stop offset="0.55" stop-color="#00314a" stop-opacity="0.35"/>
+      <stop offset="0.82" stop-color="#00222f" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#00222f" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect id="hintergrund" x="0" y="0" width="1080" height="1920" fill="#00222f"/>
+  <circle id="deko-kreis" cx="1000" cy="1560" r="520" fill="#007cb5" fill-opacity="0.16"/>
+
+  <!-- Foto (Austauschen: Datei in images/ ersetzen oder href anpassen) -->
+  <image id="foto" x="0" y="0" width="1080" height="1060" preserveAspectRatio="xMidYMid slice" href="../images/saal-sonnenblumen.jpg"/>
+  <rect id="foto-verlauf" x="0" y="0" width="1080" height="1110" fill="url(#foto-verlauf)"/>
+
+  <!-- Überschrift -->
+  <g id="text-ueberschrift" font-family="Saira Semi Condensed, Arial Narrow, sans-serif">
+    <rect id="eyebrow-linie" x="80" y="772" width="40" height="4" fill="#ffb703"/>
+    <text id="eyebrow" x="140" y="786" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="5" fill="#ffb703">HOCHZEIT · GEBURTSTAG · FIRMENFEIER</text>
+    <text id="titel-zeile-1" x="76" y="945" font-weight="900" font-size="156" letter-spacing="-2" fill="#ffffff">Ihre Feier.</text>
+    <text id="titel-zeile-2" x="76" y="1092" font-weight="900" font-size="156" letter-spacing="-2" fill="#ffffff">Unser <tspan fill="#ffb703">SVZ.</tspan></text>
+  </g>
+
+  <!-- Untertitel -->
+  <g id="text-untertitel" font-family="Lato, Arial, sans-serif" font-weight="400" font-size="42" fill="#ffffff" fill-opacity="0.92">
+    <text id="untertitel-zeile-1" x="80" y="1178">Mitten im Grünen, fünf Minuten von Laupheim.</text>
+    <text id="untertitel-zeile-2" x="80" y="1234">Platz für bis zu 100 Gäste.</text>
+  </g>
+
+  <!-- Kennzahlen -->
+  <g id="kennzahlen">
+    <g id="kennzahl-1">
+      <rect x="80" y="1286" width="288" height="124" rx="20" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+      <text x="108" y="1346" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="56" fill="#ffffff">165 m²</text>
+      <text x="108" y="1386" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="25" fill="#ffffff" fill-opacity="0.85">Fläche, teilbar</text>
+    </g>
+    <g id="kennzahl-2">
+      <rect x="396" y="1286" width="288" height="124" rx="20" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+      <text x="424" y="1346" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="56" fill="#ffffff">100</text>
+      <text x="424" y="1386" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="25" fill="#ffffff" fill-opacity="0.85">Sitzplätze</text>
+    </g>
+    <g id="kennzahl-3">
+      <rect x="712" y="1286" width="288" height="124" rx="20" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+      <text x="740" y="1346" font-family="Saira Semi Condensed, Arial Narrow, sans-serif" font-weight="900" font-size="56" fill="#ffffff">80 m²</text>
+      <text x="740" y="1386" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="25" fill="#ffffff" fill-opacity="0.85">überdachte Terrasse</text>
+    </g>
+  </g>
+
+  <!-- Button -->
+  <g id="button">
+    <rect id="button-flaeche" x="80" y="1456" width="620" height="96" rx="48" fill="#ffb703"/>
+    <text id="button-text" x="124" y="1517" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="38" fill="#00314a">Jetzt Termin anfragen</text>
+    <path id="button-pfeil" d="M638 1490 L664 1504 L638 1518" fill="none" stroke="#00314a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Absender -->
+  <g id="absender">
+    <image id="wappen" x="80" y="1612" width="80" height="89" href="../images/wappen.svg"/>
+    <text id="absender-name" x="190" y="1650" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="26" letter-spacing="3.5" fill="#ffb703">SPORTVEREINSZENTRUM BRONNEN</text>
+    <text id="absender-url" x="190" y="1694" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="34" fill="#ffffff">vermietung.sf-bronnen.de</text>
+  </g>
+</svg>

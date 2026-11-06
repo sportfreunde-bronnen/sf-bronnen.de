@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Story 3: "Feiern mit der ganzen Familie" (Highlights: Spielplatz, Terrasse, Küche, barrierefrei)
+  Format 1080 x 1920 px (9:16). Wichtiges bleibt zwischen y = 270 und y = 1580 (Instagram blendet oben und unten Bedienelemente ein).
+  Farben der Webseite: #00222f / #00314a / #004869 (Dunkelblau), #007cb5 / #0088df (Blau), #ffb703 (Gelb), #e8f3f9 (Hellblau)
+  Schriften der Webseite: "Saira Semi Condensed" (Überschriften), "Lato" (Fließtext)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <title>Story 3 - Feiern mit der ganzen Familie</title>
+  <defs>
+    <style>
+      @font-face { font-family: 'Saira Semi Condensed'; font-weight: 700; src: url('../../../public/assets/fonts/gf/saira-semi-condensed-v11-latin-700.woff2') format('woff2'); }
+      @font-face { font-family: 'Saira Semi Condensed'; font-weight: 900; src: url('../../../public/assets/fonts/gf/saira-semi-condensed-v11-latin-900.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 400; src: url('../../../public/assets/fonts/gf/lato-v23-latin-regular.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 700; src: url('../../../public/assets/fonts/gf/lato-v23-latin-700.woff2') format('woff2'); }
+      @font-face { font-family: 'Lato'; font-weight: 900; src: url('../../../public/assets/fonts/gf/lato-v23-latin-900.woff2') format('woff2'); }
+    </style>
+    <linearGradient id="foto-verlauf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00222f" stop-opacity="0.5"/>
+      <stop offset="0.3" stop-color="#00222f" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#00314a" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#e8f3f9" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="foto-ausschnitt">
+      <path d="M0 0 H1080 V700 Q540 800 0 700 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Hintergrund (hell, wie die Abschnitte der Webseite) -->
+  <rect id="hintergrund" x="0" y="0" width="1080" height="1920" fill="#e8f3f9"/>
+  <circle id="deko-kreis" cx="1000" cy="1700" r="420" fill="#007cb5" fill-opacity="0.1"/>
+
+  <!-- Foto (Austauschen: Datei in images/ ersetzen oder href anpassen) -->
+  <g id="foto-gruppe" clip-path="url(#foto-ausschnitt)">
+    <image id="foto" x="0" y="0" width="1080" height="800" preserveAspectRatio="xMidYMid slice" href="../images/spielplatz.jpg"/>
+    <rect id="foto-verlauf" x="0" y="0" width="1080" height="800" fill="url(#foto-verlauf)"/>
+  </g>
+
+  <!-- Überschrift -->
+  <g id="text-ueberschrift" font-family="Saira Semi Condensed, Arial Narrow, sans-serif">
+    <rect id="eyebrow-linie" x="80" y="846" width="40" height="4" fill="#007cb5"/>
+    <text id="eyebrow" x="140" y="860" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="5" fill="#007cb5">FAMILIENFREUNDLICH</text>
+    <text id="titel-zeile-1" x="76" y="974" font-weight="900" font-size="104" letter-spacing="-1.5" fill="#00314a">Feiern mit der</text>
+    <text id="titel-zeile-2" x="76" y="1074" font-weight="900" font-size="104" letter-spacing="-1.5" fill="#00314a">ganzen <tspan fill="#007cb5">Familie.</tspan></text>
+  </g>
+
+  <!-- Vorteile -->
+  <g id="vorteile" font-family="Lato, Arial, sans-serif">
+    <g id="vorteil-1">
+      <circle cx="124" cy="1170" r="34" fill="#ffb703"/>
+      <path d="M108 1170 L120 1182 L142 1158" fill="none" stroke="#00314a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="186" y="1164" font-weight="900" font-size="36" fill="#00314a">Spielplatz direkt nebenan</text>
+      <text x="186" y="1202" font-weight="400" font-size="27" fill="#00314a" fill-opacity="0.8">Wickeltisch und Kinderstühle inklusive</text>
+    </g>
+    <g id="vorteil-2">
+      <circle cx="124" cy="1286" r="34" fill="#ffb703"/>
+      <path d="M108 1286 L120 1298 L142 1274" fill="none" stroke="#00314a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="186" y="1280" font-weight="900" font-size="36" fill="#00314a">80 m² überdachte Terrasse</text>
+      <text x="186" y="1318" font-weight="400" font-size="27" fill="#00314a" fill-opacity="0.8">Bei Regen mit ausziehbarer Plane schließbar</text>
+    </g>
+    <g id="vorteil-3">
+      <circle cx="124" cy="1402" r="34" fill="#ffb703"/>
+      <path d="M108 1402 L120 1414 L142 1390" fill="none" stroke="#00314a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="186" y="1396" font-weight="900" font-size="36" fill="#00314a">Voll ausgestattete Küche</text>
+      <text x="186" y="1434" font-weight="400" font-size="27" fill="#00314a" fill-opacity="0.8">Mit Industriespülmaschine und Kühlraum</text>
+    </g>
+    <g id="vorteil-4">
+      <circle cx="124" cy="1518" r="34" fill="#ffb703"/>
+      <path d="M108 1518 L120 1530 L142 1506" fill="none" stroke="#00314a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="186" y="1512" font-weight="900" font-size="36" fill="#00314a">Barrierefrei &amp; ausreichend Parkplätze</text>
+      <text x="186" y="1550" font-weight="400" font-size="27" fill="#00314a" fill-opacity="0.8">Zugang über Rampe, WC für Menschen mit Behinderung</text>
+    </g>
+  </g>
+
+  <!-- Absender-Leiste -->
+  <g id="absender">
+    <rect id="absender-flaeche" x="0" y="1612" width="1080" height="308" fill="#00314a"/>
+    <image id="wappen" x="80" y="1660" width="80" height="89" href="../images/wappen.svg"/>
+    <text id="absender-name" x="190" y="1698" font-family="Lato, Arial, sans-serif" font-weight="900" font-size="26" letter-spacing="3.5" fill="#ffb703">SPORTVEREINSZENTRUM BRONNEN</text>
+    <text id="absender-url" x="190" y="1742" font-family="Lato, Arial, sans-serif" font-weight="700" font-size="34" fill="#ffffff">vermietung.sf-bronnen.de</text>
+  </g>
+</svg>
