@@ -57,7 +57,7 @@ if ($available) {
     <?php if (!$available): ?>
         <div class="svz-notice svz-notice--warning" role="status">
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-            <span>Der Belegungskalender ist gerade nicht erreichbar. Bitte fragen Sie Ihren Wunschtermin direkt über unser <a href="/home/kontakt?rec=svz">Kontaktformular</a> an.</span>
+            <span>Der Belegungskalender ist gerade nicht erreichbar. Bitte fragen Sie Ihren Wunschtermin direkt über unser <a href="<?= SvzDomain::link('home/kontakt');?>?rec=svz">Kontaktformular</a> an.</span>
         </div>
     <?php endif; ?>
 

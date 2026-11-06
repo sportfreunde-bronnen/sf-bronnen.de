@@ -16,7 +16,7 @@ $groups = $page->priceGroups();
 <?php if ($groups === []): ?>
     <div class="svz-notice" role="status">
         <i class="fa fa-info-circle" aria-hidden="true"></i>
-        <span>Die Preise erfragen Sie bitte direkt über unser <a href="/home/kontakt?rec=svz">Kontaktformular</a>.</span>
+        <span>Die Preise erfragen Sie bitte direkt über unser <a href="<?= SvzDomain::link('home/kontakt');?>?rec=svz">Kontaktformular</a>.</span>
     </div>
 <?php else: ?>
 

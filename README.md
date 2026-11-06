@@ -46,3 +46,28 @@ Add the secret key of the widget to the (gitignored) `site/config/config.php`. U
 
 The same options can also be written as nested array (`'sfb' => ['turnstile' => ['secret' => '...', 'hostnames' => [...]]]`);
 the guard reads both notations. The public site key is `sfb.turnstile.sitekey` (default is set in the plugin).
+
+## Sportvereinszentrum (SVZ) on its own subdomain
+
+The page "Sportvereinszentrum" (`gesamtverein/allgemeines/svz`) is served on its own subdomain
+(production: `svz.sf-bronnen.de`, local: `svz.sf-bronnen.de.test`) by the plugin `site/plugins/sfb-svz`.
+The subdomain must point to the same document root (`public/`) as the main domain, no further webserver configuration is needed.
+
+- `svz.<domain>/` renders the SVZ page with an own header (no main navigation of the club site, with a link back to the club site); the footer stays.
+- `<domain>/gesamtverein/allgemeines/svz` (and its subpages) is redirected permanently to the subdomain, every link to the page (navigation, footer, ...) points to the subdomain.
+- Every other path on the subdomain is redirected to the same path on the main domain, links in the SVZ site which leave the SVZ site (contact form, footer, ...) point to the main domain.
+- Requests to any other host (e.g. `localhost:1949`) behave as before.
+
+The domain is configurable in the (gitignored) `site/config/config.php`:
+
+```php
+// host of the SVZ site (without scheme and port), default: 'svz.sf-bronnen.de'
+// empty = own domain disabled, the page is served below the main domain as usual
+'sfb.svz.host' => 'svz.sf-bronnen.de.test',
+// optional, URL of the main site, default: the SVZ host without its first label (svz.sf-bronnen.de -> sf-bronnen.de)
+// 'sfb.svz.mainUrl' => 'https://www.sf-bronnen.de',
+// optional, id of the SVZ page, default: 'gesamtverein/allgemeines/svz'
+// 'sfb.svz.page' => 'gesamtverein/allgemeines/svz',
+```
+
+The nested notation (`'sfb' => ['svz' => ['host' => '...']]`) is supported as well.

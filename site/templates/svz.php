@@ -16,7 +16,9 @@ $tabs = [
     'preise' => ['label' => 'Preise', 'icon' => 'fa-eur'],
 ];
 
-$contactUrl = '/home/kontakt?rec=svz';
+// links which leave the SVZ site lead to the main domain if the SVZ site is served on its own domain
+$contactUrl = SvzDomain::link('home/kontakt') . '?rec=svz';
+$downloadsUrl = SvzDomain::link('gesamtverein/allgemeines/downloads');
 ?>
 <?php snippet('header', ['styles' => ['svz']]); ?>
 <div class="page page--svz">
@@ -125,7 +127,7 @@ $contactUrl = '/home/kontakt?rec=svz';
             </ol>
             <div class="svz-actions svz-actions--center svz-reveal">
                 <a href="<?= $contactUrl;?>" class="svz-btn svz-btn--accent svz-btn--large"><i class="fa fa-envelope-o" aria-hidden="true"></i> Jetzt Termin anfragen</a>
-                <a href="/gesamtverein/allgemeines/downloads" class="svz-btn svz-btn--ghost svz-btn--large"><i class="fa fa-download" aria-hidden="true"></i> Nutzungsvertrag &amp; Preisliste</a>
+                <a href="<?= $downloadsUrl;?>" class="svz-btn svz-btn--ghost svz-btn--large"><i class="fa fa-download" aria-hidden="true"></i> Nutzungsvertrag &amp; Preisliste</a>
             </div>
         </div>
     </section>

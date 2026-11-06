@@ -25,7 +25,7 @@
                 <h5>Auf die Schnelle</h5>
                 <ul class="list-unstyled foot-list-style-1 text-weight-light">
                     <?php foreach ($site->homePage()->children() as $item): ?>
-                        <li><a href="<?= $item->url();?>"><?php echo $item->title();?></a></li>
+                        <li><a href="<?= SvzDomain::pageUrl($item);?>"><?php echo $item->title();?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>

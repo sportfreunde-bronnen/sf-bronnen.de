@@ -209,6 +209,131 @@ div.page.page--svz {
 }
 
 // ------------------------------------------------------------------
+// Site header
+// The SVZ site on its own domain brings its own header instead of the navigation of the club site.
+// ------------------------------------------------------------------
+.svz-sitebar {
+  background: $deeperBlue;
+  color: rgba(#fff, 0.78);
+  font-size: 0.85rem;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+
+  &__note {
+    margin: 0;
+    letter-spacing: 0.02em;
+  }
+
+  &__back {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none !important;
+    white-space: nowrap;
+
+    .fa {
+      margin-right: 0.4rem;
+    }
+
+    span {
+      margin-left: 0.3rem;
+      font-weight: 400;
+      opacity: 0.7;
+    }
+
+    &:hover,
+    &:focus {
+      color: $svzAccent;
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__note {
+      display: none;
+    }
+  }
+}
+
+.svz-siteheader {
+  background: #fff;
+  border-bottom: 1px solid rgba($deepBlue, 0.1);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  &__cta {
+    margin-left: 1rem;
+  }
+
+  @media (max-width: 575px) {
+    &__inner {
+      padding-top: 0.65rem;
+      padding-bottom: 0.65rem;
+    }
+
+    &__cta {
+      display: none;
+    }
+  }
+}
+
+.svz-brand {
+  display: flex;
+  align-items: center;
+  color: $deepBlue;
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    color: $deepBlue;
+  }
+
+  &__logo {
+    flex: 0 0 auto;
+    height: 52px;
+    margin-right: 0.9rem;
+
+    img {
+      display: block;
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    display: block;
+    font-size: clamp(1.25rem, 3.4vw, 1.7rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  &__place {
+    display: block;
+    margin-top: 0.2rem;
+    color: rgba($deepBlue, 0.62);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+}
+
+// ------------------------------------------------------------------
 // Hero
 // ------------------------------------------------------------------
 .svz-hero {

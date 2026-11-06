@@ -22,6 +22,19 @@ class SvzPage extends DownloadsPage
     public const CALENDAR_MONTHS = 24;
 
     /**
+     * The SVZ page is served on its own (sub)domain (see plugin sfb-svz), so every link to it
+     * (main navigation, footer, ...) has to point to that domain.
+     */
+    public function url($options = null): string
+    {
+        if ($options === null && SvzDomain::enabled() && $this->id() === SvzDomain::pageId()) {
+            return SvzDomain::url();
+        }
+
+        return parent::url($options);
+    }
+
+    /**
      * Bookable packages
      */
     public const PACKAGES = [

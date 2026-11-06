@@ -1,3 +1,7 @@
+<?php
+// On its own domain the SVZ site brings its own header (no main navigation of the club site), see plugin sfb-svz
+$isSvzSite = SvzDomain::isSvzRequest();
+?>
 <!-- Nope, its not wordpress -->
 <!DOCTYPE html>
 <html lang="de">
@@ -27,7 +31,10 @@
     </style>
     <?php endif; ?>
 </head>
-<body>
+<body<?= $isSvzSite ? ' class="svz-site"' : '' ?>>
+<?php if ($isSvzSite): ?>
+<?php snippet('svz/header'); ?>
+<?php else: ?>
 <div class="container-fluid pl-0 pr-0 d-none d-md-block">
     <?php if (EXTRACT_CONTENT === false): ?>
       <div class="top-bar">
@@ -65,3 +72,4 @@
     <?php endif; ?>
 </header>
 <?php snippet('navigation'); ?>
+<?php endif; ?>
