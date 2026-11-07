@@ -45,7 +45,7 @@ In der SVG-Datei das Element `<image id="foto" … href="../images/….jpg"/>` a
 
 ### Preise ändern
 
-Die Preise in Story 2 sind feste Texte (Stand der Preisübersicht auf der SVZ-Seite, Tarif „Externe"). Bei Preisänderungen in `src/story-2-preise.svg` die Zahlen in den Elementen der Gruppen `karte-1-klein`, `karte-1-gross`, `karte-2-klein` und `karte-2-gross` anpassen. Die Quelle der Preise ist `content/2_gesamtverein/1_allgemeines/2_svz/svz.txt`.
+Die Preise in Story 2 sind feste Texte (Stand der Preisübersicht auf der SVZ-Seite, Tarif „Extern"). Bei Preisänderungen in `src/story-2-preise.svg` die Zahlen in den Elementen der Gruppen `karte-1-klein`, `karte-1-gross`, `karte-2-klein` und `karte-2-gross` anpassen. Die Quelle der Preise ist `content/2_gesamtverein/1_allgemeines/2_svz/svz.txt`.
 
 ## Design-Hinweise
 
