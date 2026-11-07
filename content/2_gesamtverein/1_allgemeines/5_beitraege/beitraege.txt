@@ -25,7 +25,7 @@ Beitraege:
   darts: 35
   dartszusatz: ""
 - 
-  name: Erwachsene ab 18 Jahren
+  name: Erwachsene ab 18 J.
   grundbeitrag: 38.5
   grundbeitragzusatz: ""
   fussball: 35
@@ -58,7 +58,7 @@ Beitraege:
   gymnastikzusatz: ""
   aikido: 0
   aikidozusatz: ""
-  darts: null
+  darts: ""
   dartszusatz: ""
 
 ----

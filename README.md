@@ -90,6 +90,7 @@ The subdomain must point to the same document root (`public/`) as the main domai
 - `<domain>/gesamtverein/allgemeines/svz` (and its subpages) is redirected permanently to the subdomain, every link to the page (navigation, footer, ...) points to the subdomain.
 - `svz.<domain>/anfrage` is the own contact form of the SVZ (subpage `anfrage` of the SVZ page, see below); the old URL `<domain>/gesamtverein/allgemeines/svz/anfrage` is redirected to it.
 - Every other path on the subdomain is redirected to the same path on the main domain, links in the SVZ site which leave the SVZ site (footer, ...) point to the main domain.
+- Every page of the SVZ site (start page, `/anfrage`, further subpages) carries `<link rel="canonical">` pointing to its URL on the subdomain (without query string), see `SvzDomain::canonicalUrl()` and `site/snippets/header.php`. Other pages and requests to any other host get no canonical tag.
 - Requests to any other host (e.g. `localhost:1949`) behave as before.
 
 The domain is configurable in the (gitignored) `site/config/config.php`:
@@ -154,3 +155,21 @@ The PDF is created with [FPDI](https://github.com/Setasign/FPDI) and [TCPDF](htt
 "Herr Von Muellerhoff" (SIL Open Font License, see `site/plugins/sfb-membership/fonts/OFL.txt`) is converted to the TCPDF font format
 (`TCPDF_FONTS::addTTFfont`), the converted files are part of the repository. The IBAN is only partly readable in the e-mail (it is complete in the PDF).
 The texts of the page are editable in the panel (page "Mitglied werden" below "Mitglieder").
+
+## Fee calculator ("Beitragsrechner")
+
+The page "Beiträge" (`gesamtverein/allgemeines/beitraege`, template `beitraege`) shows a calculator below the fee cards where interested people can calculate their annual fee
+(`site/templates/beitraege.php`, `site/models/beitraege.php`, `public/assets/js/fee-calculator.js`, `frontend/src/sass/fee-calculator.scss`).
+The calculator is a progressive enhancement: it is hidden until the script runs.
+
+The amounts are not hard-coded: `BeitraegePage::calculator()` reads them from the structure field "Beiträge" of the page (panel), so a change of the fees is picked up automatically.
+The rows of the structure field are assigned to the fee classes by a part of their name (`jugend`, `erwachsen`, `famil`, `passiv`, case-insensitive, see `BeitraegePage::FEE_CLASSES`).
+If a row is missing, the calculator is not shown.
+
+Calculation (per year):
+
+- Jugendlich / Erwachsen: base fee + the fees of the chosen departments (several departments can be chosen)
+- Familie: base fee once per family (pF) + the department fees per head (pK) for every family member, each member (including the main person) chooses his or her own departments, up to 11 members
+- Passiv: base fee only, a passive member cannot choose a department
+- Aikido is included in the total, with a note that it is collected by a separate direct debit mandate (`BeitraegePage::DEPARTMENTS`, `separate`)
+- A department is only offered if its fee in the fee class is greater than zero

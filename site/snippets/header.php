@@ -19,6 +19,10 @@ $isDarts = (string)$page->parents()->last()?->title()->lower() === 'darts';
     <?php snippet('og');?>
 
     <?php snippet('metatitle');?>
+    <?php // the SVZ site is reachable via its subdomain and via the main domain, the subdomain is the original ?>
+    <?php if ($canonicalUrl = SvzDomain::canonicalUrl($page)): ?>
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES);?>">
+    <?php endif; ?>
 
     <link href="/assets/images/sfb/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link href="/assets/css/sfb.css?d=<?= filemtime('assets/css/sfb.css');?>" rel="stylesheet">

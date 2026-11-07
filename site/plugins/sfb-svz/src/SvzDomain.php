@@ -245,6 +245,32 @@ class SvzDomain
     }
 
     /**
+     * Canonical URL of a page of the SVZ site (the SVZ page, the contact form and all other subpages).
+     *
+     * All pages of the SVZ site are reachable via the SVZ domain and via the main domain, so search engines
+     * have to be told that the SVZ domain is the original. The URL never contains a query string.
+     *
+     * Returns null for every other page and if the SVZ domain is not active for the current request
+     * (feature disabled or request to any other host, e.g. localhost:1949), so no canonical URL is set there.
+     */
+    public static function canonicalUrl(Page $page): ?string
+    {
+        if (!static::enabled() || !static::isSvzPath($page->id())) {
+            return null;
+        }
+
+        if ($page->id() === static::pageId()) {
+            return static::url() . '/';
+        }
+
+        if ($page->id() === static::contactPageId()) {
+            return static::url(static::CONTACT_SLUG);
+        }
+
+        return static::url($page->uri());
+    }
+
+    /**
      * Route action (catch all, runs after the routes of the Kirby core like panel, api and media)
      *
      * - SVZ domain, start page: render the SVZ page

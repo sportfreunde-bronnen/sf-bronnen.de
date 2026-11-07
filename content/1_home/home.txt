@@ -50,8 +50,8 @@ Slides:
 - 
   title: Sportfreunde Fanshop
   text: >
-    Unseren neuen Fanshop schon entdeckt?
-    Viel Spaß beim Shoppen!
+    Auf der Suche nach SFB Merch oder
+    Geschenken? Viel Spaß beim Shoppen!
   textposition: left
   sliderimage:
     - file://kTxVllEu9wPnC1pu

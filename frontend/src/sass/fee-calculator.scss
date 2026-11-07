@@ -1,0 +1,223 @@
+// Fee calculator ("Beitragsrechner", template beitraege.php)
+// Standalone stylesheet (loaded in addition to sfb.css by the template beitraege.php).
+// Shares its design language with the membership application: soft cards, rounded corners, blue/yellow accents.
+
+@import "variables";
+
+.fee-calculator {
+  margin-top: 2.5rem;
+
+  [hidden] {
+    display: none !important;
+  }
+
+  &[hidden] {
+    display: none !important;
+  }
+
+  .fee-calculator__intro {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .fee-calculator__hint,
+  .fee-calculator__disclaimer {
+    color: $textMuted;
+    font-size: 0.9rem;
+  }
+
+  .fee-calculator__disclaimer {
+    margin-top: 1.5rem;
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Steps of the form
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .fee-calculator__step {
+    margin: 0 0 1.5rem;
+    padding: 1.25rem 1.25rem 0.5rem;
+    min-width: 0;
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    border-radius: $radius;
+    box-shadow: $shadowSm;
+    @media (min-width: 768px) {
+      padding: 1.5rem 1.75rem 0.75rem;
+    }
+
+    // A <legend> is rendered on top of the border of its <fieldset> by the browsers, i.e. it protrudes into the card.
+    // Floating it moves it into the content area of the card (below the border and the padding).
+    legend {
+      margin-bottom: 1rem;
+      padding: 0 0 0.6rem;
+      width: 100%;
+      float: left;
+      color: $darkBlue;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.3;
+      border-bottom: 2px solid $paleBlue;
+    }
+
+    legend + * {
+      clear: both;
+    }
+  }
+
+  .fee-calculator__classes {
+    margin-bottom: 1rem;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  }
+
+  .fee-calculator__class {
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    background-color: $mistBlue;
+    border: 1px solid $borderColor;
+    border-radius: $radius;
+    transition: $transition;
+
+    &:hover,
+    &:focus-within {
+      border-color: $brightBlue;
+    }
+
+    .custom-control-label {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .fee-calculator__class-hint {
+    display: block;
+    color: $textMuted;
+    font-size: 0.85rem;
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Persons and their departments
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .fee-calculator__person {
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 0.5rem;
+    background-color: $mistBlue;
+    border: 1px solid $borderColor;
+    border-radius: $radius;
+  }
+
+  .fee-calculator__person-head {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fee-calculator__person-title {
+    color: $darkBlue;
+    font-weight: 700;
+  }
+
+  .fee-calculator__departments {
+    display: grid;
+    gap: 0.25rem 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr));
+  }
+
+  .fee-calculator__department {
+    margin-bottom: 0.5rem;
+  }
+
+  .fee-calculator__price {
+    display: block;
+    color: $textMuted;
+    font-size: 0.85rem;
+  }
+
+  .fee-calculator__add {
+    margin-bottom: 1.25rem;
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Result
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .fee-calculator__result {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    border-radius: $radiusLg;
+    box-shadow: $shadow;
+    @media (min-width: 992px) {
+      position: sticky;
+      top: 1.5rem;
+    }
+  }
+
+  .fee-calculator__placeholder {
+    margin: 0;
+    color: $textMuted;
+  }
+
+  .fee-calculator__total {
+    margin: -1.5rem -1.5rem 1.25rem;
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, $darkBlue 0%, $brightBlue 100%);
+    border-radius: $radiusLg $radiusLg 0 0;
+  }
+
+  .fee-calculator__total-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .fee-calculator__total-amount {
+    display: block;
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .fee-calculator__lines {
+    margin: 0 0 1rem;
+  }
+
+  .fee-calculator__line {
+    padding: 0.4rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid $borderColor;
+
+    &.is-muted {
+      color: $textMuted;
+    }
+  }
+
+  .fee-calculator__line-amount {
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .fee-calculator__line-title {
+    padding-top: 0.75rem;
+    color: $brightBlue;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .fee-calculator__note {
+    margin: 0;
+    color: $textMuted;
+    font-size: 0.85rem;
+  }
+}
