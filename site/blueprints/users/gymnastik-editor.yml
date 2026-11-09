@@ -1,0 +1,3 @@
+title: Gymnastik Redakteur
+description: Bearbeitet Seiten und Dateien im Gymnastik Bereich
+extends: users/editor

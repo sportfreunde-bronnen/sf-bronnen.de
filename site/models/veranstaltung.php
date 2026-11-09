@@ -5,7 +5,7 @@
  *
  * An event of the club, shown as card on the start page.
  */
-class VeranstaltungPage extends Page
+class VeranstaltungPage extends RoleAwarePage
 {
     private static $months = [
         1 => 'Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez',

@@ -1,3 +1,65 @@
 title: Site
-preset: pages
-unlisted: true
+options:
+  update:
+    admin: true
+    '*': false
+tabs:
+  pages:
+    label: Seiten
+    icon: page
+    preset: pages
+    unlisted: true
+  permissions:
+    label: Seitenrechte
+    icon: lock
+    fields:
+      rolePermissionsInfo:
+        type: info
+        label: Seitenrechte pro Rolle
+        text: |
+          Hier legen Admins fest, welche Seiten (samt **aller** Unterseiten, auch später angelegter) für eine Rolle im Panel gesperrt sind.
+
+          - **Nur ansehen:** Die Seite ist sichtbar, kann aber nicht verändert werden. Das gilt auch für ihre Dateien, Unterseiten können dort nicht angelegt und Seiten nicht dorthin verschoben werden.
+          - **Ausblenden:** Die Seite ist im Panel unsichtbar und lässt sich auch über die Adresse nicht aufrufen.
+
+          Kommt eine Seite in mehreren Regeln vor, gilt die strengere Stufe (Ausblenden). Seiten, die hier nicht stehen, behalten die Rechte der Rolle. Admins sind nie eingeschränkt, die öffentliche Website bleibt unverändert.
+      rolePermissions:
+        label: Regeln
+        type: structure
+        empty: Noch keine Seitenrechte eingerichtet.
+        columns:
+          role:
+            width: 1/4
+          level:
+            width: 1/4
+          pages:
+            width: 1/2
+        fields:
+          role:
+            label: Rolle
+            type: select
+            required: true
+            empty: false
+            width: 1/3
+            options:
+              type: query
+              query: kirby.roles.not('admin')
+              text: "{{ item.title }}"
+              value: "{{ item.id }}"
+          level:
+            label: Berechtigung
+            type: select
+            required: true
+            empty: false
+            default: readonly
+            width: 1/3
+            options:
+              readonly: Nur ansehen
+              hidden: Ausblenden
+          pages:
+            label: Seiten
+            type: pages
+            multiple: true
+            required: true
+            width: 1/1
+            help: Die Regel gilt für die gewählten Seiten und alle ihre Unterseiten.

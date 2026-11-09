@@ -5,7 +5,7 @@
  *
  * @author Magnus Buk <MagnusBuk@gmx.de>
  */
-class AktuellesPage extends \Kirby\Cms\Page
+class AktuellesPage extends RoleAwarePage
 {
     /**
      * Get all used tags for the page

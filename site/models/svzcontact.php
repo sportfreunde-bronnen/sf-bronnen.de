@@ -8,7 +8,7 @@
  *
  * @author Magnus Buk <MagnusBuk@gmx.de>
  */
-class SvzcontactPage extends Page
+class SvzcontactPage extends RoleAwarePage
 {
     public function url($options = null): string
     {

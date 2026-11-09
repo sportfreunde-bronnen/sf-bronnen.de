@@ -9,7 +9,7 @@
  *
  * @author Magnus Buk <MagnusBuk@gmx.de>
  */
-class BeitraegePage extends Page
+class BeitraegePage extends RoleAwarePage
 {
     /**
      * Fee classes of the calculator. The rows of the structure field "beitraege" are assigned by a part of their name

@@ -1,0 +1,13 @@
+title: Redakteur
+description: Bearbeitet Seiten und Dateien
+extends: users/admin
+permissions:
+  access:
+    languages: false
+    system: false
+    users: false
+  languages: false
+  users: false
+  user:
+    changeRole: false
+    delete: false

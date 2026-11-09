@@ -1,0 +1,3 @@
+title: Darts Redakteur
+description: Bearbeitet Seiten und Dateien im Darts Bereich
+extends: users/editor

@@ -219,3 +219,38 @@ the toggle "In neuem Tab öffnen" (default: yes) adds `target="_blank" rel="noop
 `LinkPage::url()` (`site/models/link.php`) returns the external target, so the main navigation (`site/snippets/navigation.php`, `site/snippets/navigation-modern.php`)
 and the footer link directly to the external page. The template (`site/templates/link.php`) is only a fallback: it redirects if the internal URL of the page is called directly.
 A link page which has subpages of its own is shown as group heading (like "Allgemeines"), not as link.
+
+## Role based page permissions ("Seitenrechte")
+
+Kirby only knows page permissions (`access`, `list`, `read`, `update`, ...) per user role **and page template**, they are never page specific and are not inherited by subpages.
+The plugin `site/plugins/sfb-roles` adds rules per page tree: admins decide in the panel which pages (including **all** their subpages, also those created later) are restricted for a role.
+Everything else keeps the permissions of the role blueprint. The public website is not affected, pages stay visible for visitors.
+
+### Setup
+
+1. Create a role as blueprint `site/blueprints/users/<role>.yml`. The role "Redakteur" (`site/blueprints/users/editor.yml`) is an example: panel access without system, users and languages.
+   The page permissions of the role (`pages`, `files`) stay in the role blueprint, the plugin only restricts them for the selected pages.
+2. Open the site page of the panel and the tab "Seitenrechte". Every rule consists of a **role**, a **level** and the **pages** (multiple selection). The rules are stored in `content/site.txt` (field `rolePermissions`, pages are referenced by UUID),
+   so they stay valid if a page is renamed or moved. Only admins can change them (`options.update` in `site/blueprints/site.yml`).
+
+| Level | Effect for the role |
+|-------|---------------------|
+| Nur ansehen (`readonly`) | The page is visible, but cannot be changed: edit, title, slug, status, template, sort, duplicate, move, delete and creating subpages are rejected by the server. The same applies to the files of the page (upload, replace, rename, edit, sort, delete). Other pages cannot be moved below it. In the panel the form and the actions are disabled. |
+| Ausblenden (`hidden`) | The page is invisible in the panel (page tree, lists, search, page picker) and cannot be opened by its panel URL ("not found"), neither can its files. |
+
+If a page is affected by several rules the stricter level wins (Ausblenden before Nur ansehen). Rules for deleted pages, unknown roles or invalid levels are ignored.
+The admin is never restricted, neither are visitors who are not logged in.
+
+### How it works
+
+- `RoleAwarePage` (`site/plugins/sfb-roles/src/RoleAwarePage.php`) is the base class of all page models (registered as `default` model, the models in `site/models` extend it).
+  It overrides `isAccessible()` and `isListable()` (level "hidden") and returns `RolePagePermissions` as `permissions()` (level "readonly", all write actions are denied).
+- `RolePageAccess` resolves the rules once per request and role (page IDs of the selected pages) and decides by the ID prefix, so subpages are covered without any further configuration.
+- Kirby has no file models: the hooks `file.*:before` (create, replace, update, delete, changeName, changeSort, changeTemplate) and `page.move:before` in `site/plugins/sfb-roles/index.php` cover the files and moving pages.
+
+### Limits
+
+- No exceptions inside a restricted tree: a subpage below a read only page cannot be made editable again.
+- Rights for users, system and languages stay in the role blueprint.
+- The home and error page can be hidden as well. This is possible, but the role then cannot reach them in the panel.
+- Kirby 6 is going to remove the page permission `read`. The plugin does not use it, it overrides `isAccessible()` and `isListable()`. After an update to Kirby 6 please check these overrides and the hooks.

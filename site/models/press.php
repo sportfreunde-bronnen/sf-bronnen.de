@@ -5,7 +5,7 @@
  *
  * @author Magnus Buk <MagnusBuk@gmx.de>
  */
-class PressPage extends Page
+class PressPage extends RoleAwarePage
 {
     /**
      * Get all used tags for the page

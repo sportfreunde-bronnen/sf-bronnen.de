@@ -1,0 +1,3 @@
+title: Fussball Redakteur
+description: Bearbeitet Seiten und Dateien im Fussball Bereich
+extends: users/editor

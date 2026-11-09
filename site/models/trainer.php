@@ -9,7 +9,7 @@ use Kirby\Toolkit\Html;
  *
  * @author Magnus Buk <MagnusBuk@gmx.de>
  */
-class TrainerPage extends \Kirby\Cms\Page
+class TrainerPage extends RoleAwarePage
 {
     /** @var array|null cache of the prepared coach stations (newest first) */
     private ?array $stations = null;

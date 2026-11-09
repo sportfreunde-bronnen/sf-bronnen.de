@@ -1,0 +1,3 @@
+title: Aikido Redakteur
+description: Bearbeitet Seiten und Dateien im Aikido Bereich
+extends: users/editor

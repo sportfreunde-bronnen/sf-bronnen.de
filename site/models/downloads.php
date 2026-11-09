@@ -5,7 +5,7 @@
  *
  * @author Magnus Buk <MagnusBuk@gmx.de>
  */
-class DownloadsPage extends Page
+class DownloadsPage extends RoleAwarePage
 {
     /**
      * Converts the files selected by selector to file collection

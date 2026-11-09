@@ -8,7 +8,7 @@
  *
  * @author Magnus Buk <MagnusBuk@gmx.de>
  */
-class LinkPage extends Page
+class LinkPage extends RoleAwarePage
 {
     /**
      * External target of the menu entry (empty if not maintained yet)

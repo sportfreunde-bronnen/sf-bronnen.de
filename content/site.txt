@@ -1,1 +1,42 @@
 Title: Sportfreunde Bronnen e.V.
+
+----
+
+Rolepermissions:
+
+- 
+  role: darts-editor
+  level: hidden
+  pages:
+    - page://4cDIGeizMey8ASHA
+    - page://Eo6Hf25DfcN3x5yt
+    - page://YxLlUQDN4EB8I0j9
+    - page://xk8EtxdwGvkmYrTH
+    - page://AauEigPuu0FmYDB6
+- 
+  role: fussball-editor
+  level: hidden
+  pages:
+    - page://4cDIGeizMey8ASHA
+    - page://Eo6Hf25DfcN3x5yt
+    - page://YxLlUQDN4EB8I0j9
+    - page://AauEigPuu0FmYDB6
+    - page://qN4HkbFXmdOe5683
+- 
+  role: aikido-editor
+  level: hidden
+  pages:
+    - page://4cDIGeizMey8ASHA
+    - page://Eo6Hf25DfcN3x5yt
+    - page://AauEigPuu0FmYDB6
+    - page://xk8EtxdwGvkmYrTH
+    - page://qN4HkbFXmdOe5683
+- 
+  role: gymnastik-editor
+  level: hidden
+  pages:
+    - page://4cDIGeizMey8ASHA
+    - page://Eo6Hf25DfcN3x5yt
+    - page://YxLlUQDN4EB8I0j9
+    - page://xk8EtxdwGvkmYrTH
+    - page://qN4HkbFXmdOe5683

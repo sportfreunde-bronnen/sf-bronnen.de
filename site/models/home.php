@@ -3,7 +3,7 @@
 /**
  * Startpage model
  */
-class HomePage extends Page
+class HomePage extends RoleAwarePage
 {
 
     static $latestCacheFile = __DIR__ . '/../cache/latest.json';
