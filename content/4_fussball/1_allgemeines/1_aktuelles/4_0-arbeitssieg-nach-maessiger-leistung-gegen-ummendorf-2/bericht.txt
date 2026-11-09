@@ -6,9 +6,7 @@ Datum: 2018-04-30
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2:
 
 ----
 
-Teaserimage:
-
-- teaser9.png
+Teaserimage: - teaser9.png
 
 ----
 
@@ -42,9 +38,7 @@ Somit bleiben die Sportfreunde auch im sechsten Spiel nach der Winterpause unges
 
 ----
 
-Textimages:
-
-- teaser9.png
+Textimages: - teaser9.png
 
 ----
 
@@ -61,3 +55,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: pkrddets9bzsdtjp

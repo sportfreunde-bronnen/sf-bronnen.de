@@ -170,6 +170,28 @@ The PDF is created with [FPDI](https://github.com/Setasign/FPDI) and [TCPDF](htt
 (`TCPDF_FONTS::addTTFfont`), the converted files are part of the repository. The IBAN is only partly readable in the e-mail (it is complete in the PDF).
 The texts of the page are editable in the panel (page "Mitglied werden" below "Mitglieder").
 
+## Partnership request of the Förderverein ("Partnerschaft")
+
+The page "Partnerschaft" (`gesamtverein/foerderverein/partnerschaft`, template `partnership`) replaces the PDF form "Vordruck Werbemöglichkeiten
+Förderverein Sportfreunde Bronnen e.V." (`site/templates/partnership.php`, `site/controllers/partnership.php`, `frontend/src/sass/partnership.scss`).
+Companies and private persons choose the offers they are interested in (Bandenwerbung, Bannerwerbung, Pflegepatenschaft, Spende, ...), enter company, contact person,
+address, phone and e-mail and confirm the data protection consent (replaces "Datum, Unterschrift", the date of the request is added automatically).
+The request is sent as e-mail (summary of all data, the sender is set as reply-to address) to the Förderverein. The mail is sent with the SMTP account of the
+main contact form (action `PartnershipMailAction`, plugin `site/plugins/sfb-partnership`). The form is protected by Cloudflare Turnstile (action `partnership`), see above.
+The design is shared with the membership application (`membership.css`), `partnership.css` only adds the list of the offers.
+
+The recipient is configurable in the (gitignored) `site/config/config.php`, as long as it is empty the form rejects every submission:
+
+```php
+// e-mail address which receives the partnership requests
+'sfb.partnership.recipient' => 'foerderverein@example.com',
+```
+
+The nested notation (`'sfb' => ['partnership' => ['recipient' => '...']]`) is supported as well.
+
+The offers are defined in `PartnershipRequest::INTERESTS` (plugin `sfb-partnership`). **If the offers of the Förderverein change, this list has to be adapted.**
+The texts of the page and the contact person are editable in the panel (page "Partnerschaft" below "Förderverein").
+
 ## Fee calculator ("Beitragsrechner")
 
 The page "Beiträge" (`gesamtverein/allgemeines/beitraege`, template `beitraege`) shows a calculator below the fee cards where interested people can calculate their annual fee

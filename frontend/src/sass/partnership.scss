@@ -1,0 +1,28 @@
+// Partnership request of the Förderverein ("Partnerschaft", template partnership.php)
+// Standalone stylesheet (loaded in addition to membership.css, which provides the design of the form sections,
+// by the partnership template). Only the list of the offers is specific to this page.
+
+@import "variables";
+
+.template--partnership {
+  // list of the offers the sender can be interested in: one soft card, the options in several columns
+  .partnership-interests {
+    margin-bottom: 1rem;
+    padding: 0.9rem 1rem;
+    display: grid;
+    gap: 0.6rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    background-color: $mistBlue;
+    border: 1px solid $borderColor;
+    border-radius: $radius;
+
+    .form-check {
+      margin-bottom: 0;
+    }
+
+    // invalid selection (single fields are marked by Bootstrap)
+    &.is-invalid {
+      border-color: $color-red;
+    }
+  }
+}

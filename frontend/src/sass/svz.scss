@@ -1894,7 +1894,6 @@ html:not(.svz-js) .svz-panel + .svz-panel {
 // ------------------------------------------------------------------
 .svz-faq {
   @include list-reset;
-  max-width: 900px;
 
   &__item {
     margin-bottom: 14px;

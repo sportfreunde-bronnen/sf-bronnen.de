@@ -6,9 +6,7 @@ Datum: 2019-09-06
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2:
 
 ----
 
-Teaserimage:
-
-- img_7816.jpg
+Teaserimage: - img_7816.jpg
 
 ----
 
@@ -43,9 +39,7 @@ Zweite Mannschaft: 13:15 Uhr
 
 ----
 
-Textimages:
-
-- img_7816.jpg
+Textimages: - img_7816.jpg
 
 ----
 
@@ -62,3 +56,7 @@ Galleryname:
 ----
 
 Galleryimages: 
+
+----
+
+Uuid: ruasq7gzgbjobsqg

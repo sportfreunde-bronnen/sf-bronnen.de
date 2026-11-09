@@ -1,0 +1,24 @@
+Title: Partnerschaft
+
+----
+
+Headline: Möglichkeiten einer Werbepartnerschaft
+
+----
+
+Text: **Sie möchten die Sportfreunde Bronnen als Partner unterstützen? Kein Problem. Wählen Sie im unten stehenden Formular aus, woran Sie Interesse haben, und hinterlassen Sie Ihre Kontaktdaten. Der Förderverein nimmt anschließend Kontakt mit Ihnen auf.**
+
+----
+
+People:
+
+- 
+  name: Axel Endlichhofer
+  aufgabe: 1. Vorstand Förderverein Sportfreunde Bronnen e.V.
+  email: foerderverein@sf-bronnen.de
+  phone: 0174/6965554
+  address: ""
+
+----
+
+Uuid: pR7nT3wK9bXq2LcV
