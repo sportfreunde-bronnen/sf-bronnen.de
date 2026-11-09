@@ -2,7 +2,7 @@ a.sfb-headline {
   color: #ffffff;
   letter-spacing: 0.01em;
   text-shadow: 0 2px 8px rgba(0, 20, 31, 0.35);
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     margin-top: 2rem;
   }
   &:hover,

@@ -258,7 +258,7 @@ $downloadTypeColors: (
   }
 }
 
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(sm) {
   .download-group__toggle {
     padding: 0.95rem 1rem;
   }

@@ -6,7 +6,7 @@ sourcecode for the website sf-bronnen.de
 
 |Folder|Description|
 |---|---|
-|frontend/|frontend stylesheets built with bootstrap4, sass (Dart Sass) and postcss/autoprefixer|
+|frontend/|frontend stylesheets built with Bootstrap 5, sass (Dart Sass) and postcss/autoprefixer|
 |kirby/|kirby CMS|
 |content/|page content|
 
@@ -26,7 +26,21 @@ cd ./frontend
 npm run build
 ```
 
-The build (`frontend/build.mjs`) needs Node.js 20.19 or newer.
+The build (`frontend/build.mjs`) needs Node.js 20.19 or newer. Besides the stylesheets it copies the JavaScript of Bootstrap (`bootstrap.bundle.min.js`, including Popper)
+to `public/assets/js`, so scripts and styles always have the same version.
+
+### Grid breakpoints
+
+Besides the Bootstrap breakpoints `sm` (576px), `md` (768px), `lg` (992px) and `xl` (1200px) the grid has the additional breakpoint `xxl`.
+It can be used like the others (`col-xxl-*`, `d-xxl-*`, `ps-xxl-*`, `media-breakpoint-up(xxl)`, ...).
+Both values are configured in `frontend/src/sass/_variables.scss`:
+
+|Variable|Default|Description|
+|---|---|---|
+|`$breakpointXxl`|`1500px`|viewport width from which the breakpoint `xxl` applies|
+|`$containerMaxWidthXxl`|`1300px`|max width of the `.container` from the breakpoint `xxl` on|
+
+Run `npm run build` after a change.
 
 ## Header variants (classic / modern)
 

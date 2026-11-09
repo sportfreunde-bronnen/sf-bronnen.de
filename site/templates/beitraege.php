@@ -18,9 +18,9 @@ $calculatorPerson = function ($index) use ($calculator): void { ?>
         </div>
         <div class="fee-calculator__departments">
             <?php foreach ($calculator['departments'] as $key => $department): ?>
-                <div class="custom-control custom-checkbox fee-calculator__department" data-fee-department="<?= $key;?>" hidden>
-                    <input type="checkbox" class="custom-control-input" id="fee-person-<?= $index;?>-<?= $key;?>" value="<?= $key;?>" data-fee-department-input>
-                    <label class="custom-control-label" for="fee-person-<?= $index;?>-<?= $key;?>">
+                <div class="form-check fee-calculator__department" data-fee-department="<?= $key;?>" hidden>
+                    <input type="checkbox" class="form-check-input" id="fee-person-<?= $index;?>-<?= $key;?>" value="<?= $key;?>" data-fee-department-input>
+                    <label class="form-check-label" for="fee-person-<?= $index;?>-<?= $key;?>">
                         <?= esc($department['label']);?>
                         <span class="fee-calculator__price" data-fee-price></span>
                     </label>
@@ -31,14 +31,14 @@ $calculatorPerson = function ($index) use ($calculator): void { ?>
 <?php };
 ?>
 <?php snippet('header', $calculator ? ['styles' => ['fee-calculator']] : []); ?>
-<section class="main-banner text-xs-center text-sm-center text-md-left">
-    <div class="container text-lite-color pl-sm-0 pr-sm-0">
+<section class="main-banner text-xs-center text-sm-center text-md-start">
+    <div class="container text-lite-color ps-sm-0 pe-sm-0">
         <h1 class="text-weight-medium"><?= $page->title() . APPEND_TITLE;; ?></h1>
     </div>
 </section>
 <div class="page">
-    <div class="main-container container pl-sm-0 pr-sm-0">
-        <h2 class="main-heading-1 text-spl-color text-weight-normal text-uppercase text-center text-md-left"><?= $page->headline();?></h2>
+    <div class="main-container container ps-sm-0 pe-sm-0">
+        <h2 class="main-heading-1 text-spl-color text-weight-normal text-uppercase text-center text-md-start"><?= $page->headline();?></h2>
         <p><?= $page->text()->kirbytext();?></p>
         <div class="row">
             <?php foreach ($page->beitraege()->toStructure() as $beitrag): ?>
@@ -79,7 +79,7 @@ $calculatorPerson = function ($index) use ($calculator): void { ?>
 
         <?php if ($calculator): ?>
             <section class="fee-calculator" id="beitragsrechner" data-fee-calculator data-config="<?= htmlspecialchars(json_encode($calculator, JSON_UNESCAPED_UNICODE), ENT_QUOTES);?>" hidden>
-                <h2 class="main-heading-1 text-spl-color text-weight-normal text-uppercase text-center text-md-left">Beitragsrechner</h2>
+                <h2 class="main-heading-1 text-spl-color text-weight-normal text-uppercase text-center text-md-start">Beitragsrechner</h2>
                 <p class="fee-calculator__intro">Berechnen Sie hier unverbindlich Ihren Jahresbeitrag: Wählen Sie die Beitragsklasse und die Abteilung(en), in denen Sie aktiv sein möchten.</p>
 
                 <div class="row">
@@ -88,9 +88,9 @@ $calculatorPerson = function ($index) use ($calculator): void { ?>
                             <legend>1. Beitragsklasse</legend>
                             <div class="fee-calculator__classes">
                                 <?php foreach ($calculator['classes'] as $key => $class): ?>
-                                    <div class="custom-control custom-radio fee-calculator__class">
-                                        <input type="radio" class="custom-control-input" id="fee-class-<?= $key;?>" name="fee-class" value="<?= $key;?>">
-                                        <label class="custom-control-label" for="fee-class-<?= $key;?>">
+                                    <div class="form-check fee-calculator__class">
+                                        <input type="radio" class="form-check-input" id="fee-class-<?= $key;?>" name="fee-class" value="<?= $key;?>">
+                                        <label class="form-check-label" for="fee-class-<?= $key;?>">
                                             <strong><?= esc($class['label']);?></strong>
                                             <span class="fee-calculator__class-hint"><?= esc($class['hint']);?></span>
                                         </label>

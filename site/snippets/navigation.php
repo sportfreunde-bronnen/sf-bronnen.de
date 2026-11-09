@@ -1,8 +1,8 @@
 <?php if (EXTRACT_CONTENT === false): ?>
 <nav id="nav" class="main-menu navbar navbar-expand-md rounded-0">
-    <div class="container pl-sm-0 pr-sm-0">
-        <div class="col-12 col-md-10 pl-md-0">
-            <button class="navbar-toggler ml-auto pl-0 collapsed" type="button" data-toggle="collapse" data-target=".navbar-cat-collapse" aria-controls=".navbar-cat-collapse" aria-expanded="false" aria-badge="Toggle navigation">
+    <div class="container ps-sm-0 pe-sm-0">
+        <div class="col-12 col-md-10 px-3 ps-md-0">
+            <button class="navbar-toggler ms-auto ps-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-cat-collapse" aria-controls=".navbar-cat-collapse" aria-expanded="false" aria-badge="Toggle navigation">
                 <span class="navbar-toggler-icon fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse navbar-cat-collapse animation">
@@ -10,7 +10,7 @@
                     <?php foreach($pages->listed() as $page): ?>
                         <?php if ($page->children()->listed()->count()): ?>
                             <li class="nav-item dropdown<?= ($page->isOpen()) ? ' active show' : '';?>">
-                                <a href="<?= $page->url();?>" class="nav-link dropdown-toggle" data-toggle="dropdown"><?= $page->title();?> <i class="fa fa-angle-down"></i></a>
+                                <a href="<?= $page->url();?>" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><?= $page->title();?> <i class="fa fa-angle-down"></i></a>
                                 <?php if ($page->hasChildren()): ?>
                                     <div class="dropdown-menu rounded-0">
                                         <?php foreach ($page->children()->listed() as $subPage): ?>

@@ -45,15 +45,15 @@ $isDarts = (string)$page->parents()->last()?->title()->lower() === 'darts';
 <?php elseif ($useModernHeader): ?>
 <?php snippet('header-modern', ['isDarts' => $isDarts]); ?>
 <?php else: ?>
-<div class="container-fluid pl-0 pr-0 d-none d-md-block">
+<div class="container-fluid ps-0 pe-0 d-none d-md-block">
     <?php if (EXTRACT_CONTENT === false): ?>
       <div class="top-bar">
           <div class="container">
-              <div class="container-fluid clearfix text-xs-center text-sm-center text-md-left pl-sm-0 pr-sm-0">
-                  <ul class="list-unstyled list-inline float-md-left mb-0 animation">
+              <div class="container-fluid clearfix text-xs-center text-sm-center text-md-start ps-sm-0 pe-sm-0">
+                  <ul class="list-unstyled list-inline float-md-start mb-0 animation">
                       <?php snippet('social-links'); ?>
                   </ul>
-                  <p class="float-md-right mb-0 text-xs-center text-sm-center text-md-right text-weight-light">
+                  <p class="float-md-end mb-0 text-xs-center text-sm-center text-md-end text-weight-light">
                       <?php snippet('department');?>
                   </p>
               </div>
@@ -63,14 +63,14 @@ $isDarts = (string)$page->parents()->last()?->title()->lower() === 'darts';
 </div>
 <header class="main-header">
     <?php if (EXTRACT_CONTENT === false): ?>
-    <div class="container text-xs-center pl-sm-0 pr-sm-0">
+    <div class="container text-xs-center ps-sm-0 pe-sm-0">
         <div class="row">
             <?php if ($isDarts): ?>
-              <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
+              <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-start logo align-middle">
                       <a href="/" class="sfb-headline"><img class="sfblogo darts rotate" src="/assets/images/sfb/sfbdarts.svg"/><span class="claim">Sportfreunde Bronnen e.V. - Darts</span></a>
               </div>
             <?php else: ?>
-              <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-left logo align-middle">
+              <div class="col-lg-10 col-sm-12 text-xs-center text-sm-center text-md-start logo align-middle">
                       <a href="/" class="sfb-headline"><img class="sfblogo club rotate" src="/assets/images/sfb/logo.svg"/><span class="claim">Sportfreunde Bronnen e.V.</span></a>
               </div>
             <?php endif; ?>

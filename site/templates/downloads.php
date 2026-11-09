@@ -2,8 +2,8 @@
 <?php $downloadGroups = $page->downloads()->toStructure(); ?>
 <div class="page page--downloads">
     <?php snippet('h1'); ?>
-    <div class="main-container container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left">
-        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-left"><?= $page->headline();?></h2>
+    <div class="main-container container ps-sm-0 pe-sm-0 text-xs-center text-sm-center text-md-start">
+        <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-start"><?= $page->headline();?></h2>
         <?php if ($downloadGroups->count() > 0): ?>
         <div class="download-groups" id="download-groups">
             <?php $i = 0; foreach ($downloadGroups as $downloadGroup): $i++; ?>
@@ -15,7 +15,7 @@
                 <section class="download-group">
                     <h3 class="download-group__heading">
                         <button class="download-group__toggle<?= $isOpen ? '' : ' collapsed'; ?>" type="button"
-                                data-toggle="collapse" data-target="#download-group-<?= $i; ?>"
+                                data-bs-toggle="collapse" data-bs-target="#download-group-<?= $i; ?>"
                                 aria-expanded="<?= $isOpen ? 'true' : 'false'; ?>"
                                 aria-controls="download-group-<?= $i; ?>">
                             <span class="download-group__icon" aria-hidden="true"><i class="fa fa-folder-open-o"></i></span>
@@ -24,7 +24,7 @@
                             <span class="download-group__chevron" aria-hidden="true"><i class="fa fa-angle-down"></i></span>
                         </button>
                     </h3>
-                    <div id="download-group-<?= $i; ?>" class="collapse<?= $isOpen ? ' show' : ''; ?>" data-parent="#download-groups">
+                    <div id="download-group-<?= $i; ?>" class="collapse<?= $isOpen ? ' show' : ''; ?>" data-bs-parent="#download-groups">
                         <ul class="download-list list-unstyled">
                             <?php foreach ($files as $download): ?>
                                 <?php

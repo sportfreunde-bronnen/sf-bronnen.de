@@ -33,7 +33,7 @@ $quote = $department?->zitate()->toStructure()->shuffle()->first();
 <?php snippet('header', ['styles' => ['kurs']]); ?>
 <?php snippet('h1'); ?>
 <div class="page page--kurs">
-    <div class="main-container container pl-sm-0 pr-sm-0">
+    <div class="main-container container ps-sm-0 pe-sm-0">
         <article class="kurs">
 
             <section class="kurs-hero<?= $imageCount > 0 ? ' kurs-hero--media' : ''; ?>">

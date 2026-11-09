@@ -395,7 +395,7 @@ $mhMenuBreakpoint: lg;
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .mh-container {
     flex-wrap: wrap;
   }
@@ -422,7 +422,7 @@ $mhMenuBreakpoint: lg;
     border-top: 1px solid $borderColor;
 
     // the panel spans the whole width of the window (the container has a padding of 15px there)
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       margin: 0 -15px;
       padding-right: 15px;
       padding-left: 15px;

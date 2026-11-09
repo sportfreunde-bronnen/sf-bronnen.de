@@ -10,7 +10,7 @@
     color: $textMuted;
     font-size: 1.2rem;
     line-height: 1.5;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       font-size: 1.05rem;
     }
   }
@@ -18,7 +18,7 @@
   // Facts card (on small screens above the text, on large screens next to it)
   .event-layout {
     padding-top: 2.75rem;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       padding-top: 2rem;
     }
   }

@@ -14,7 +14,7 @@ $isDarts = $isDarts ?? false;
 ?>
 <?php if (EXTRACT_CONTENT === false): ?>
 <div class="mh-topbar d-none d-md-block">
-    <div class="container pl-sm-0 pr-sm-0">
+    <div class="container ps-sm-0 pe-sm-0">
         <div class="mh-topbar-inner">
             <ul class="mh-social list-unstyled mb-0">
                 <?php snippet('social-links', ['itemClass' => 'mh-social-item']); ?>
@@ -25,7 +25,7 @@ $isDarts = $isDarts ?? false;
 </div>
 <header class="mh-header" id="siteHeader">
     <div class="mh-nav navbar navbar-expand-lg" role="navigation" aria-label="Hauptmenü">
-        <div class="container pl-sm-0 pr-sm-0 mh-container">
+        <div class="container ps-sm-0 pe-sm-0 mh-container">
             <a href="/" class="mh-brand<?= $isDarts ? ' mh-brand--darts' : '';?>" title="Zur Startseite">
                 <?php if ($isDarts): ?>
                     <img class="mh-logo rotate" src="/assets/images/sfb/sfbdarts.svg" alt="Logo der Dartsabteilung der Sportfreunde Bronnen">
@@ -36,7 +36,7 @@ $isDarts = $isDarts ?? false;
                     <span class="mh-claim-name">Sportfreunde Bronnen e.V.</span>
                 </span>
             </a>
-            <button class="navbar-toggler mh-toggler collapsed" type="button" data-toggle="collapse" data-target="#mhMenu" aria-controls="mhMenu" aria-expanded="false" aria-label="Menü öffnen oder schließen">
+            <button class="navbar-toggler mh-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mhMenu" aria-controls="mhMenu" aria-expanded="false" aria-label="Menü öffnen oder schließen">
                 <span class="mh-toggler-bars" aria-hidden="true"><span></span><span></span><span></span></span>
             </button>
             <div class="collapse navbar-collapse mh-collapse" id="mhMenu">

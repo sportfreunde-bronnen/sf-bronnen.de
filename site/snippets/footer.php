@@ -1,6 +1,6 @@
 <?php if (EXTRACT_CONTENT === false): ?>
 <section class="footer-top">
-    <div class="container pl-sm-0 pr-sm-0 text-xs-center text-sm-center text-md-left text-lite-color">
+    <div class="container ps-sm-0 pe-sm-0 text-xs-center text-sm-center text-md-start text-lite-color">
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="foot-info">
@@ -41,14 +41,13 @@
     </div>
 </section>
 <footer class="copyright">
-    <div class="container pl-sm-0 pr-sm-0 text-center text-lite-color">
+    <div class="container ps-sm-0 pe-sm-0 text-center text-lite-color">
         <em class="text-weight-light">&copy; <?= date('Y');?> - Sportfreunde Bronnen 1949 e.V. | Made with <a href="https://getkirby.com/">Kirby</a> and <b class="red">♥</b></em>
     </div>
 </footer>
 <?php endif; ?>
 <script src="/assets/js/jquery-3.3.1.min.js"></script>
-<script src="/assets/js/popper.min.js"></script>
-<script src="/assets/js/bootstrap.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js?d=<?= filemtime('assets/js/bootstrap.bundle.min.js');?>"></script>
 <script src="/assets/js/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
 <script src="/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="/assets/js/custom.js?d=<?= filemtime('assets/js/custom.js');?>"></script>

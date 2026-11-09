@@ -21,7 +21,7 @@ $overviewUrl = $site->url() . '#veranstaltungen';
 <div class="page">
     <article class="page--veranstaltung">
         <header class="post-hero<?= ($image && !$imageBottom) ? '' : ' post-hero--noimage';?>">
-            <div class="container pl-sm-0 pr-sm-0">
+            <div class="container ps-sm-0 pe-sm-0">
                 <div class="post-hero-inner">
                     <a class="post-back" href="<?= $overviewUrl;?>"><i class="fa fa-long-arrow-left"></i> Zu den Veranstaltungen</a>
                     <?php if ($area !== ''): ?>
@@ -37,7 +37,7 @@ $overviewUrl = $site->url() . '#veranstaltungen';
             </div>
         </header>
 
-        <div class="container pl-sm-0 pr-sm-0">
+        <div class="container ps-sm-0 pe-sm-0">
             <?php if ($image && !$imageBottom): ?>
                 <figure class="post-cover">
                     <img src="<?= $image->resize(1500)->url();?>" alt="<?= esc($imageAlt);?>">
@@ -122,7 +122,7 @@ $overviewUrl = $site->url() . '#veranstaltungen';
 
         <?php if ($related): ?>
             <section class="post-related">
-                <div class="container pl-sm-0 pr-sm-0">
+                <div class="container ps-sm-0 pe-sm-0">
                     <h2 class="blog-section-title">Auch interessant</h2>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4 post-related-item">

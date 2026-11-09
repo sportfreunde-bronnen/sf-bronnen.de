@@ -76,21 +76,21 @@
                   
   $active
       .find("a")
-      .append("<span class=\"fa fa-minus float-right\"></span>");
+      .append("<span class=\"fa fa-minus float-end\"></span>");
   
   $active1
       .find("a")
-      .append("<span class=\"fa fa-minus float-left\"></span>");
+      .append("<span class=\"fa fa-minus float-start\"></span>");
       
   $("#accordion .card-header")
       .not($active)
       .find('a')
-      .prepend("<span class=\"fa fa-plus float-right\"></span>");
+      .prepend("<span class=\"fa fa-plus float-end\"></span>");
   
   $("#accordion-help .card-header")
       .not($active1)
       .find('a')
-      .prepend("<span class=\"fa fa-plus float-left\"></span>");
+      .prepend("<span class=\"fa fa-plus float-start\"></span>");
   
   $("#accordion, #accordion-help").on("shown.bs.collapse", function (e) {
       $("#accordion .card-header.active, #accordion-faqs .card-header.active, #accordion-help .card-header.active")

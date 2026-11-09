@@ -32,9 +32,8 @@
   "homepage": "https://github.com/sportfreunde-bronnen/sf-bronnen.de#readme",
   "devDependencies": {
     "autoprefixer": "^10.6.2",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^5.3.8",
     "jquery": "^3.3.1",
-    "popper.js": "^1.12.9",
     "postcss": "^8.5.32",
     "sass": "^1.107.1"
   }

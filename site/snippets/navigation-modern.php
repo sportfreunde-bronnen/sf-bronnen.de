@@ -15,8 +15,8 @@ $topLevelIndex = 0;
     ?>
     <?php if ($subPages->count()): ?>
         <li class="nav-item dropdown<?= $topLevelPage->isOpen() ? ' active' : '';?>">
-            <a href="<?= $topLevelPage->url();?>" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $topLevelPage->title();?></a>
-            <div class="dropdown-menu<?= $alignRight ? ' dropdown-menu-right' : '';?>">
+            <a href="<?= $topLevelPage->url();?>" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $topLevelPage->title();?></a>
+            <div class="dropdown-menu<?= $alignRight ? ' dropdown-menu-end' : '';?>">
                 <?php foreach ($subPages as $subPage): ?>
                     <?php if ($subPage->hasChildren()): ?>
                         <span class="mh-dropdown-label"><?= $subPage->title();?></span>

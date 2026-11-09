@@ -341,7 +341,7 @@
     display: grid;
     gap: 0.65rem;
     list-style: none;
-    @include media-breakpoint-between(sm, md) {
+    @include media-breakpoint-between(sm, lg) {
       grid-template-columns: repeat(2, 1fr);
     }
   }

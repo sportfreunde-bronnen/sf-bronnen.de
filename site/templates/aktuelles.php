@@ -1,7 +1,7 @@
 <?php snippet('header'); ?>
 <?php snippet('h1'); ?>
 <div class="page">
-    <div class="main-container container pl-sm-0 pr-sm-0 page--blog">
+    <div class="main-container container ps-sm-0 pe-sm-0 page--blog">
         <?php $firstArticle = $page->getArticles()->first();?>
         <?php if ($firstArticle): ?>
             <?php

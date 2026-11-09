@@ -9,7 +9,7 @@
     text-align: center;
     background: linear-gradient(180deg, $mistBlue 0%, $paleBlue 100%);
     border-bottom: 1px solid $borderColor;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       padding: 1.5rem 0 4.5rem;
     }
   }
@@ -58,10 +58,10 @@
     font-weight: 700;
     line-height: 1.15;
     text-shadow: none;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 2.1rem;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       font-size: 1.7rem;
     }
 
@@ -74,7 +74,7 @@
   .post-cover {
     margin: -4rem 0 0;
     position: relative;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin: -3rem 15px 0;
     }
 
@@ -103,7 +103,7 @@
     margin: 0 auto;
     padding: 2.75rem 0 1rem;
     max-width: 760px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       padding: 2rem 15px 1rem;
     }
   }

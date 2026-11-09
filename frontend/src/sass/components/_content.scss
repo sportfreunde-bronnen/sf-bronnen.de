@@ -35,6 +35,9 @@
 // ---------------------------------------------------------------------------------------------------------------------
 
 .main-container .table {
+  // the stripes and the hover color are painted on the rows below, not by the cells of Bootstrap 5
+  --#{$prefix}table-striped-bg: transparent;
+  --#{$prefix}table-hover-bg: transparent;
   width: 100%;
   margin-bottom: 1.5rem;
   overflow: hidden;

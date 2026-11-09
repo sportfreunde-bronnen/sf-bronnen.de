@@ -35,7 +35,7 @@ $familyRows = is_array($oldFamily) && $oldFamily !== [] ? array_values($oldFamil
 
 // group selection of a family member
 $familyGroupSelect = function (string $name, string $selected, string $id) use ($departments): void { ?>
-    <select class="form-control flat" id="<?= $id;?>" name="<?= $name;?>">
+    <select class="form-select flat" id="<?= $id;?>" name="<?= $name;?>">
         <option value="">Bitte wählen</option>
         <option value="<?= MembershipApplication::PASSIVE;?>"<?= $selected === MembershipApplication::PASSIVE ? ' selected' : '';?>>Passive Mitgliedschaft</option>
         <?php foreach ($departments as $department): ?>
@@ -60,25 +60,25 @@ $familyRow = function ($index, array $member) use ($familyGroupSelect, $today): 
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="m-familie-<?= $index;?>-nachname">Nachname</label>
                     <input type="text" class="form-control flat" id="m-familie-<?= $index;?>-nachname" name="familie[<?= $index;?>][nachname]" value="<?= $field('nachname');?>" maxlength="100" autocomplete="off">
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="m-familie-<?= $index;?>-vorname">Vorname</label>
                     <input type="text" class="form-control flat" id="m-familie-<?= $index;?>-vorname" name="familie[<?= $index;?>][vorname]" value="<?= $field('vorname');?>" maxlength="100" autocomplete="off">
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="m-familie-<?= $index;?>-geburtsdatum">Geburtsdatum</label>
                     <input type="date" class="form-control flat" id="m-familie-<?= $index;?>-geburtsdatum" name="familie[<?= $index;?>][geburtsdatum]" value="<?= $field('geburtsdatum');?>" min="1900-01-01" max="<?= $today;?>" autocomplete="off">
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="m-familie-<?= $index;?>-gruppe">Gruppe / Abteilung</label>
                     <?php $familyGroupSelect('familie[' . $index . '][gruppe]', $field('gruppe'), 'm-familie-' . $index . '-gruppe'); ?>
                 </div>
@@ -89,16 +89,16 @@ $familyRow = function ($index, array $member) use ($familyGroupSelect, $today): 
 ?>
 <?php snippet('header', ['styles' => ['membership']]); ?>
 <div class="page template--membership">
-    <section class="main-banner text-xs-center text-sm-center text-md-left">
-        <div class="container text-lite-color pl-sm-0 pr-sm-0">
+    <section class="main-banner text-xs-center text-sm-center text-md-start">
+        <div class="container text-lite-color ps-sm-0 pe-sm-0">
             <h1 class="text-weight-medium"><?= $page->title() . APPEND_TITLE;?></h1>
         </div>
     </section>
-    <div class="main-container container pl-sm-0 pr-sm-0">
-        <div class="row text-md-left">
+    <div class="main-container container ps-sm-0 pe-sm-0">
+        <div class="row text-md-start">
             <div class="col-12">
                 <?php if ($page->headline()->isNotEmpty()): ?>
-                    <h2 class="main-heading-1 text-spl-color text-uppercase text-weight-normal text-center text-md-left"><?= $page->headline();?></h2>
+                    <h2 class="main-heading-1 text-spl-color text-uppercase text-weight-normal text-center text-md-start"><?= $page->headline();?></h2>
                 <?php endif; ?>
                 <div class="contact-form-wrap membership-wrap">
                     <?php if ($page->text()->isNotEmpty()): ?>
@@ -135,55 +135,55 @@ $familyRow = function ($index, array $member) use ($familyGroupSelect, $today): 
                                 <legend>Persönliche Daten</legend>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-nachname">Name *</label>
                                             <input type="text" class="form-control flat<?= $invalid('nachname');?>" id="m-nachname" name="nachname" value="<?= $form->old('nachname');?>" maxlength="100" autocomplete="family-name" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-vorname">Vorname *</label>
                                             <input type="text" class="form-control flat<?= $invalid('vorname');?>" id="m-vorname" name="vorname" value="<?= $form->old('vorname');?>" maxlength="100" autocomplete="given-name" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-strasse">Straße und Hausnummer *</label>
                                             <input type="text" class="form-control flat<?= $invalid('strasse');?>" id="m-strasse" name="strasse" value="<?= $form->old('strasse');?>" maxlength="100" autocomplete="street-address" required>
                                         </div>
                                     </div>
                                     <div class="col-5 col-md-3">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-plz">PLZ *</label>
                                             <input type="text" class="form-control flat<?= $invalid('plz');?>" id="m-plz" name="plz" value="<?= $form->old('plz');?>" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="postal-code" required>
                                         </div>
                                     </div>
                                     <div class="col-7 col-md-9">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-ort">Ort *</label>
                                             <input type="text" class="form-control flat<?= $invalid('ort');?>" id="m-ort" name="ort" value="<?= $form->old('ort');?>" maxlength="100" autocomplete="address-level2" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-eintrittsdatum">Gewünschtes Eintrittsdatum *</label>
                                             <input type="date" class="form-control flat<?= $invalid('eintrittsdatum');?>" id="m-eintrittsdatum" name="eintrittsdatum" value="<?= $form->old('eintrittsdatum', $today);?>" min="<?= $today;?>" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-geburtsdatum">Geburtsdatum *</label>
                                             <input type="date" class="form-control flat<?= $invalid('geburtsdatum');?>" id="m-geburtsdatum" name="geburtsdatum" value="<?= $form->old('geburtsdatum');?>" min="1900-01-01" max="<?= $today;?>" autocomplete="bday" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-email">E-Mail Adresse *</label>
                                             <input type="email" class="form-control flat<?= $invalid('email');?>" id="m-email" name="email" value="<?= $form->old('email');?>" maxlength="200" autocomplete="email" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-telefon">Telefonnummer *</label>
                                             <input type="tel" class="form-control flat<?= $invalid('telefon');?>" id="m-telefon" name="telefon" value="<?= $form->old('telefon');?>" maxlength="30" autocomplete="tel" required>
                                         </div>
@@ -196,18 +196,18 @@ $familyRow = function ($index, array $member) use ($familyGroupSelect, $today): 
                                 <p class="membership-hint">Bitte wählen Sie die Gruppe(n) bzw. Abteilung(en), in der bzw. denen Sie aktiv sein möchten, oder die passive Mitgliedschaft. Eine Mehrfachauswahl ist möglich.</p>
                                 <div class="membership-groups<?= $invalid('gruppen');?>">
                                     <div class="membership-department">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="m-gruppe-passiv" name="gruppen[]" value="<?= MembershipApplication::PASSIVE;?>"<?= in_array(MembershipApplication::PASSIVE, $selectedGroups, true) ? ' checked' : '';?> data-membership-passive>
-                                            <label class="custom-control-label" for="m-gruppe-passiv"><strong>Passive Mitgliedschaft</strong></label>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="m-gruppe-passiv" name="gruppen[]" value="<?= MembershipApplication::PASSIVE;?>"<?= in_array(MembershipApplication::PASSIVE, $selectedGroups, true) ? ' checked' : '';?> data-membership-passive>
+                                            <label class="form-check-label" for="m-gruppe-passiv"><strong>Passive Mitgliedschaft</strong></label>
                                         </div>
                                     </div>
                                     <?php foreach ($departments as $departmentKey => $department): ?>
                                         <div class="membership-department">
                                             <h3 class="membership-department__title"><?= esc($department['title']);?></h3>
                                             <?php foreach ($department['groups'] as $key => $title): ?>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="m-gruppe-<?= $key;?>" name="gruppen[]" value="<?= $key;?>"<?= in_array((string) $key, $selectedGroups, true) ? ' checked' : '';?> data-membership-group>
-                                                    <label class="custom-control-label" for="m-gruppe-<?= $key;?>"><?= esc($title);?></label>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="m-gruppe-<?= $key;?>" name="gruppen[]" value="<?= $key;?>"<?= in_array((string) $key, $selectedGroups, true) ? ' checked' : '';?> data-membership-group>
+                                                    <label class="form-check-label" for="m-gruppe-<?= $key;?>"><?= esc($title);?></label>
                                                 </div>
                                             <?php endforeach; ?>
                                         </div>
@@ -225,9 +225,9 @@ $familyRow = function ($index, array $member) use ($familyGroupSelect, $today): 
                                 </p>
                                 <div class="membership-fees<?= $invalid('beitragsklasse');?>">
                                     <?php foreach ($feeClasses as $key => $title): ?>
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" id="m-beitrag-<?= $key;?>" name="beitragsklasse" value="<?= $key;?>"<?= $selectedFeeClass === $key ? ' checked' : '';?> required>
-                                            <label class="custom-control-label" for="m-beitrag-<?= $key;?>"><?= esc($title);?></label>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="m-beitrag-<?= $key;?>" name="beitragsklasse" value="<?= $key;?>"<?= $selectedFeeClass === $key ? ' checked' : '';?> required>
+                                            <label class="form-check-label" for="m-beitrag-<?= $key;?>"><?= esc($title);?></label>
                                         </div>
                                     <?php endforeach; ?>
                                 </div>
@@ -265,38 +265,38 @@ $familyRow = function ($index, array $member) use ($familyGroupSelect, $today): 
                                 </div>
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-iban">IBAN *</label>
                                             <input type="text" class="form-control flat<?= $invalid('iban');?>" id="m-iban" name="iban" value="<?= $form->old('iban');?>" maxlength="42" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="DE00 0000 0000 0000 0000 00" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-bic">BIC *</label>
                                             <input type="text" class="form-control flat<?= $invalid('bic');?>" id="m-bic" name="bic" value="<?= $form->old('bic');?>" maxlength="14" autocomplete="off" autocapitalize="characters" spellcheck="false" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-kreditinstitut">Kreditinstitut *</label>
                                             <input type="text" class="form-control flat<?= $invalid('kreditinstitut');?>" id="m-kreditinstitut" name="kreditinstitut" value="<?= $form->old('kreditinstitut');?>" maxlength="100" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <p class="membership-hint mb-2"><strong>Kontoinhaber</strong></p>
-                                        <div class="custom-control custom-checkbox mb-3" data-membership-account-copy-wrap hidden>
-                                            <input type="checkbox" class="custom-control-input" id="m-kontoinhaber-gleich" data-membership-account-copy>
-                                            <label class="custom-control-label" for="m-kontoinhaber-gleich">Der Kontoinhaber ist das Mitglied selbst (Name aus den persönlichen Daten übernehmen)</label>
+                                        <div class="form-check mb-3" data-membership-account-copy-wrap hidden>
+                                            <input type="checkbox" class="form-check-input" id="m-kontoinhaber-gleich" data-membership-account-copy>
+                                            <label class="form-check-label" for="m-kontoinhaber-gleich">Der Kontoinhaber ist das Mitglied selbst (Name aus den persönlichen Daten übernehmen)</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-kontoinhaber-nachname">Kontoinhaber: Name *</label>
                                             <input type="text" class="form-control flat<?= $invalid('kontoinhaberNachname');?>" id="m-kontoinhaber-nachname" name="kontoinhaberNachname" value="<?= $form->old('kontoinhaberNachname');?>" maxlength="100" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
+                                        <div class="mb-3">
                                             <label for="m-kontoinhaber-vorname">Kontoinhaber: Vorname *</label>
                                             <input type="text" class="form-control flat<?= $invalid('kontoinhaberVorname');?>" id="m-kontoinhaber-vorname" name="kontoinhaberVorname" value="<?= $form->old('kontoinhaberVorname');?>" maxlength="100" autocomplete="off" required>
                                         </div>
@@ -316,9 +316,9 @@ $familyRow = function ($index, array $member) use ($familyGroupSelect, $today): 
                                         <p class="mb-0">Sie können darüber hinaus jederzeit ohne Angabe von Gründen von Ihrem Widerspruchsrecht Gebrauch machen und die erteilte Einwilligungserklärung mit Wirkung für die Zukunft abändern oder gänzlich widerrufen. Sie können den Widerruf entweder postalisch oder per E-Mail (<a href="mailto:datenschutz@sf-bronnen.de">datenschutz@sf-bronnen.de</a>) an die Sportfreunde Bronnen 1949 e.V. übermitteln. Es entstehen Ihnen dabei keine anderen Kosten als die Portokosten bzw. die Übermittlungskosten nach den bestehenden Basistarifen.</p>
                                     </div>
                                 </details>
-                                <div class="custom-control custom-checkbox membership-consent<?= $invalid('dataDeclaration');?>">
-                                    <input type="checkbox" class="custom-control-input" id="m-datenschutz" name="dataDeclaration" value="1" required>
-                                    <label class="custom-control-label" for="m-datenschutz">
+                                <div class="form-check membership-consent<?= $invalid('dataDeclaration');?>">
+                                    <input type="checkbox" class="form-check-input" id="m-datenschutz" name="dataDeclaration" value="1" required>
+                                    <label class="form-check-label" for="m-datenschutz">
                                         * Die Erklärung zur Erhebung und Verarbeitung personenbezogener Daten nach DSGVO sowie die Belehrung meiner Betroffenenrechte habe ich gelesen und zur Kenntnis genommen. Zugleich erteile ich die Einwilligung zur Verwendung meiner personenbezogenen Daten zu den oben angegebenen Zwecken.
                                         Weitere Informationen zum Datenschutz finden Sie auch in der <a href="<?= $privacyUrl;?>" target="_blank" rel="noopener" title="Zur Datenschutzerklärung der Sportfreunde Bronnen">Datenschutzerklärung</a> dieser Webseite.
                                     </label>

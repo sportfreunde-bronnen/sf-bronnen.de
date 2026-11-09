@@ -12,7 +12,7 @@ $imageCaption = static function ($image) {
 <div class="page">
     <article class="page--bericht">
         <header class="post-hero<?= $titleImage ? '' : ' post-hero--noimage';?>">
-            <div class="container pl-sm-0 pr-sm-0">
+            <div class="container ps-sm-0 pe-sm-0">
                 <div class="post-hero-inner">
                     <a class="post-back" href="<?= $overviewUrl;?>"><i class="fa fa-long-arrow-left"></i> Alle Beiträge</a>
                     <?php if ($tags): ?>
@@ -32,7 +32,7 @@ $imageCaption = static function ($image) {
             </div>
         </header>
 
-        <div class="container pl-sm-0 pr-sm-0">
+        <div class="container ps-sm-0 pe-sm-0">
             <?php if ($titleImage): ?>
                 <figure class="post-cover">
                     <img src="<?= $titleImage->resize(1500)->url();?>" alt="Titelbild - <?= esc($title);?> - Sportfreunde Bronnen">
@@ -82,7 +82,7 @@ $imageCaption = static function ($image) {
         <?php $related = $page->getLatestNews()->not($page)->limit(3); ?>
         <?php if ($related->count() > 0): ?>
             <section class="post-related">
-                <div class="container pl-sm-0 pr-sm-0">
+                <div class="container ps-sm-0 pe-sm-0">
                     <h2 class="blog-section-title">Auch interessant</h2>
                     <div class="row">
                         <?php foreach ($related as $post): ?>

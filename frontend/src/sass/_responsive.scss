@@ -40,7 +40,7 @@
 }
 
 /* Large devices - lg (desktops, 992px and up) */
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
 
   /* Heading Styles Starts */
 
@@ -183,7 +183,7 @@
 }
 
 /* Medium devices - md (tablets, 768px and up) */
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
 
   /* Heading Styles Starts */
 
@@ -378,7 +378,7 @@
 }
 
 /* Small devices - sm (landscape phones, 576px and up) */
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
 
   /* Heading Styles Starts */
 
@@ -606,7 +606,7 @@
 }
 
 /* Extra small devices - xs (portrait phones, less than 576px) */
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(sm) {
 
   /* Heading Styles Starts */
 

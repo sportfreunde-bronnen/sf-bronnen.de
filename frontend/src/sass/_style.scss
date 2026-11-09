@@ -33,7 +33,7 @@ div.page {
     160px 120px,
     100% 100%;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     min-height: 420px;
     background-position:
       left -220px bottom 100px,
@@ -80,6 +80,23 @@ a:focus-visible {
 
 hr {
   border-top: 1px solid $borderColor;
+}
+
+// Bootstrap 4 gave every label a bottom margin, Bootstrap 5 only does so for .form-label
+label:not(.form-check-label) {
+  margin-bottom: $form-label-margin-bottom;
+}
+
+// Bootstrap 4 reset the font weight of <small>, Bootstrap 5 inherits it
+small,
+.small {
+  font-weight: 400;
+}
+
+// Bootstrap 5 reduces the indent of lists to 2rem, Bootstrap 4 kept the 40px of the browser
+ol,
+ul {
+  padding-left: 2.5rem;
 }
 
 .main-container img.img-fluid,
@@ -138,7 +155,7 @@ h6 {
   font-size: 1.15rem;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   h1 {
     font-size: 2.25rem;
   }
@@ -147,7 +164,7 @@ h6 {
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   h1 {
     font-size: 1.85rem;
   }
@@ -189,7 +206,7 @@ h2.main-heading-1 {
   height: 4px;
   border-radius: 4px;
   background-color: $brightBlue;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     margin-top: 15px;
   }
 }
@@ -442,11 +459,11 @@ h2.main-heading-1 {
     color: #fff;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
@@ -460,18 +477,18 @@ h2.main-heading-1 {
       width: 80px;
       height: 89px;
       margin-right: 3rem;
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         margin-right: 1rem;
         width: 30px;
         height: 33px;
         float: left;
       }
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 2rem;
       line-height: 2rem;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       font-size: 1.25rem;
     }
   }
@@ -570,7 +587,7 @@ h2.main-heading-1 {
     margin-bottom: 0;
     font-weight: 500;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -1487,8 +1504,8 @@ ul#gallery-grid .hover-content:hover a {
   font-weight: 500;
 }
 
-.contact-form .form-control {
-  padding: 20px;
+.contact-form .form-control,
+.contact-form .form-select {
   color: $textColor;
   background-color: $mistBlue;
   border: 1px solid $input-border-color;
@@ -1496,7 +1513,12 @@ ul#gallery-grid .hover-content:hover a {
   transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
+.contact-form .form-control {
+  padding: 20px;
+}
+
 .contact-form .form-control:focus,
+.contact-form .form-select:focus,
 .blog-comments-form .form-control:focus {
   background-color: #fff;
   border-color: $brightBlue;
@@ -1504,7 +1526,7 @@ ul#gallery-grid .hover-content:hover a {
 
 .contact-form input[type=text].form-control,
 .contact-form input[type=email].form-control,
-.contact-form select.form-control{
+.contact-form select.form-select {
   height: 58px ! important;
 }
 

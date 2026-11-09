@@ -102,7 +102,7 @@ $events = $page->getNextEvents();
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 pt-2 pb-2 text-center">
-                            <i class="fa fa-calendar pr-2"></i><?= $upcomingData;?><i class="fa fa-calendar pl-2"></i>
+                            <i class="fa fa-calendar pe-2"></i><?= $upcomingData;?><i class="fa fa-calendar ps-2"></i>
                         </div>
                     </div>
                 </div>
