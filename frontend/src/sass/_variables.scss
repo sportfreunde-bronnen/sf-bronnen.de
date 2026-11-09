@@ -40,8 +40,8 @@ $transition: all 0.2s ease;
 // Grid breakpoints: sm, md, lg and xl are the Bootstrap defaults, "xxl" is the additional largest breakpoint.
 // $breakpointXxl: viewport width (min-width) from which the breakpoint "xxl" applies (col-xxl-*, d-xxl-*, ...)
 // $containerMaxWidthXxl: max width of the .container from the breakpoint "xxl" on
-$breakpointXxl: 1500px;
-$containerMaxWidthXxl: 1300px;
+$breakpointXxl: 1800px;
+$containerMaxWidthXxl: 1600px;
 
 // Bootstrap overwrites
 $grid-breakpoints: (

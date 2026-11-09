@@ -49,7 +49,7 @@
             </ul>
             <div class="row blog-post" id="article-grid">
                 <?php foreach ($page->getArticles()->slice(0, 1000) as $post): ?>
-                    <div class="col-lg-4 col-md-6 col-sm-12 article-grid-item" data-groups='<?= $post->getNewsGroupsAsShuffleArray();?>'>
+                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 article-grid-item" data-groups='<?= $post->getNewsGroupsAsShuffleArray();?>'>
                         <?php snippet('post-card', ['post' => $post]); ?>
                     </div>
                 <?php endforeach; ?>

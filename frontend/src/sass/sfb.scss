@@ -26,6 +26,7 @@
 
 // Modern content elements: loaded after the base styles so they take precedence over the legacy theme rules
 @import "components/_persons.scss";
+@import "components/_coaches.scss";
 @import "components/_sponsors.scss";
 @import "components/_pricing.scss";
 @import "components/_content.scss";

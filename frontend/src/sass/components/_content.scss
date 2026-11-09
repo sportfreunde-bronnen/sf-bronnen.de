@@ -2,6 +2,81 @@
 // soft cards, rounded corners, light shadows and the blue/yellow accent colors.
 
 // ---------------------------------------------------------------------------------------------------------------------
+// Content card: headline, text and images of a text page (default template) on a white card instead of directly on the
+// page background. Same look as the other cards (colored bar on top, rounded corners, soft shadow).
+// ---------------------------------------------------------------------------------------------------------------------
+
+.content-card {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2.25rem 1.25rem 1.25rem;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  background-color: #fff;
+  border-radius: $radiusLg;
+  box-shadow: $shadow;
+  animation: content-rise 0.5s ease backwards;
+
+  // sporty color bar on top of the card
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, $lightBlue, $brightBlue 55%, $accentYellow);
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 2.75rem 2.75rem 2rem;
+  }
+
+  // the card provides the spacing at the bottom
+  > :last-child,
+  .content-card__text > :last-child {
+    margin-bottom: 0;
+  }
+
+  .content-card__text > :first-child {
+    margin-top: 0;
+  }
+
+  // no card within the card: tables lose their own shadow
+  .table {
+    box-shadow: none;
+  }
+
+  // the separator between stacked images (mobile) is not needed below the last one
+  .row > :last-child > hr.d-md-none {
+    display: none;
+  }
+
+  // a figure at the end of the card must not add spacing below the card padding
+  figure:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-card {
+    animation: none;
+  }
+}
+
+@media print {
+  .content-card {
+    box-shadow: none;
+    animation: none;
+  }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
 // Lists, dividers and images
 // ---------------------------------------------------------------------------------------------------------------------
 

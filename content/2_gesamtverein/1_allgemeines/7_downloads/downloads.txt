@@ -9,13 +9,6 @@ Headline: Downloads rund um den Gesamtverein
 Downloads:
 
 - 
-  category: Sportvereinszentrum
-  downloads:
-    - file://nibw1zlEbDBIBQ9o
-    - file://vCYuFzQWHMQJUWpT
-    - file://kfQk3YV7hfNSz2Nt
-    - file://qLBGnYc0jLGNdrSF
-- 
   category: Verein
   downloads:
     - file://uA7AP0YlJAf1saUw
@@ -25,6 +18,13 @@ Downloads:
     - file://qsXxEluGGsO2aZGm
     - file://38YDEpNEcjov3Al3
     - file://xbvVVCXmAIZp6wzF
+- 
+  category: Sportvereinszentrum
+  downloads:
+    - file://vCYuFzQWHMQJUWpT
+    - file://kfQk3YV7hfNSz2Nt
+    - file://qLBGnYc0jLGNdrSF
+    - file://nibw1zlEbDBIBQ9o
 - 
   category: Presse und Medien
   downloads:
