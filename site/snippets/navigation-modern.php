@@ -6,6 +6,8 @@
 $topLevelPages = $pages->listed();
 $topLevelCount = $topLevelPages->count();
 $topLevelIndex = 0;
+// external link pages (template "link") are opened in a new tab if wanted
+$linkAttributes = fn ($item) => ($item instanceof LinkPage && $item->opensInNewTab()) ? ' target="_blank" rel="noopener"' : '';
 ?>
 <?php foreach ($topLevelPages as $topLevelPage): ?>
     <?php
@@ -26,15 +28,15 @@ $topLevelIndex = 0;
                             <?php $groupPages = $subPage->children()->listed(); ?>
                         <?php endif; ?>
                         <?php foreach ($groupPages as $groupPage): ?>
-                            <a class="dropdown-item<?= $groupPage->isOpen() ? ' active' : '';?>" href="<?= $groupPage->url();?>"><?= $groupPage->title();?></a>
+                            <a class="dropdown-item<?= $groupPage->isOpen() ? ' active' : '';?>" href="<?= $groupPage->url();?>"<?= $linkAttributes($groupPage);?>><?= $groupPage->title();?></a>
                         <?php endforeach; ?>
                     <?php else: ?>
-                        <a class="dropdown-item<?= $subPage->isOpen() ? ' active' : '';?>" href="<?= $subPage->url();?>"><?= $subPage->title();?></a>
+                        <a class="dropdown-item<?= $subPage->isOpen() ? ' active' : '';?>" href="<?= $subPage->url();?>"<?= $linkAttributes($subPage);?>><?= $subPage->title();?></a>
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>
         </li>
     <?php else: ?>
-        <li class="nav-item<?= $topLevelPage->isOpen() ? ' active' : '';?>"><a href="<?= $topLevelPage->url();?>" class="nav-link"><?= $topLevelPage->title();?></a></li>
+        <li class="nav-item<?= $topLevelPage->isOpen() ? ' active' : '';?>"><a href="<?= $topLevelPage->url();?>" class="nav-link"<?= $linkAttributes($topLevelPage);?>><?= $topLevelPage->title();?></a></li>
     <?php endif; ?>
 <?php endforeach; ?>

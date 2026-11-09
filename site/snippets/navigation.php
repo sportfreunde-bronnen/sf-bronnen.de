@@ -1,4 +1,8 @@
 <?php if (EXTRACT_CONTENT === false): ?>
+<?php
+// external link pages (template "link") are opened in a new tab if wanted
+$linkAttributes = fn ($item) => ($item instanceof LinkPage && $item->opensInNewTab()) ? ' target="_blank" rel="noopener"' : '';
+?>
 <nav id="nav" class="main-menu navbar navbar-expand-md rounded-0">
     <div class="container ps-sm-0 pe-sm-0">
         <div class="col-12 col-md-10 px-3 ps-md-0">
@@ -18,22 +22,22 @@
                                                 <a class="dropdown-item sub <?= ($subPage->isOpen()) ? ' active' : '';?>"><?= $subPage->title();?></a>
                                                 <?php if ($subPage->title() == 'Veranstaltungen'):?>
                                                     <?php foreach ($subPage->children()->listed()->sortBy('datum') as $subSubPage): ?>
-                                                        <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?></a>
+                                                        <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"<?= $linkAttributes($subSubPage);?>><?= $subSubPage->title();?></a>
                                                     <?php endforeach;?>
                                                 <?php else: ?>
                                                     <?php foreach ($subPage->children()->listed() as $subSubPage): ?>
-                                                        <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"><?= $subSubPage->title();?></a>
+                                                        <a class="dropdown-item<?= ($subSubPage->isOpen()) ? ' active' : '';?>" href="<?= $subSubPage->url();?>"<?= $linkAttributes($subSubPage);?>><?= $subSubPage->title();?></a>
                                                     <?php endforeach;?>
                                                 <?php endif; ?>
                                             <?php else: ?>
-                                                <a class="dropdown-item<?= ($subPage->isOpen()) ? ' active' : '';?>" href="<?= $subPage->url();?>"><?= $subPage->title();?></a>
+                                                <a class="dropdown-item<?= ($subPage->isOpen()) ? ' active' : '';?>" href="<?= $subPage->url();?>"<?= $linkAttributes($subPage);?>><?= $subPage->title();?></a>
                                             <?php endif; ?>
                                         <?php endforeach; ?>
                                     </div>
                                 <?php endif; ?>
                             </li>
                         <?php else: ?>
-                            <li class="nav-item<?= ($page->isOpen()) ? ' active' : '';?>"><a href="<?= $page->url();?>" class="nav-link"><?= $page->title();?></a></li>
+                            <li class="nav-item<?= ($page->isOpen()) ? ' active' : '';?>"><a href="<?= $page->url();?>" class="nav-link"<?= $linkAttributes($page);?>><?= $page->title();?></a></li>
                         <?php endif; ?>
                     <?php endforeach; ?>
             </div>

@@ -1,0 +1,17 @@
+title: Externer Link
+options:
+  preview: false
+  changeTemplate: false
+fields:
+  link:
+    label: Link-Ziel
+    type: url
+    required: true
+    help: Vollständige Adresse der externen Seite, z.B. https://www.dvos.de/liga.php?a_liga=53
+  newTab:
+    label: In neuem Tab öffnen
+    type: toggle
+    default: true
+    text:
+      - nein
+      - ja

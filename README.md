@@ -209,3 +209,13 @@ Calculation (per year):
 - Passiv: base fee only, a passive member cannot choose a department
 - Aikido is included in the total, with a note that it is collected by a separate direct debit mandate (`BeitraegePage::DEPARTMENTS`, `separate`)
 - A department is only offered if its fee in the fee class is greater than zero
+
+## External menu links ("Externer Link")
+
+A menu entry can point to an external page, e.g. "Spielbetrieb" > "Erste Mannschaft" of the darts department opens `https://www.dvos.de/liga.php?a_liga=53`.
+In the panel create a subpage with the template "Externer Link" (`site/blueprints/pages/link.yml`) and enter the target in the field "Link-Ziel";
+the toggle "In neuem Tab öffnen" (default: yes) adds `target="_blank" rel="noopener"` to the menu entry. The page has to be "listed" to appear in the menu.
+
+`LinkPage::url()` (`site/models/link.php`) returns the external target, so the main navigation (`site/snippets/navigation.php`, `site/snippets/navigation-modern.php`)
+and the footer link directly to the external page. The template (`site/templates/link.php`) is only a fallback: it redirects if the internal URL of the page is called directly.
+A link page which has subpages of its own is shown as group heading (like "Allgemeines"), not as link.
