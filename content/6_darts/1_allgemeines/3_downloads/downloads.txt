@@ -11,7 +11,7 @@ Downloads:
 - 
   category: 'Verein & Abteilung'
   downloads:
-    - file://ZdFY7NGZnx40Ohsh
+    - file://4uv25fbbdmipycxx
 - 
   category: 'Presse & Medien'
   downloads:
