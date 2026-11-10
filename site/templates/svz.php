@@ -8,7 +8,7 @@
  * @var SvzPage $page
  */
 
-$hero = $page->image('img_5320.jpg') ?? $page->gallery()->toFiles()->first();
+$hero = $page->image('p2223766.jpg') ?? $page->gallery()->toFiles()->first();
 
 $tabs = [
     'infos' => ['label' => 'Infos', 'icon' => 'fa-info-circle'],
