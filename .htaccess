@@ -8,8 +8,16 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
-RedirectMatch 301 /aikido/allgemeines/infos(?!$) https://sf-bronnen.de/aikido/allgemeines/infos
-RedirectMatch 301 ^/darts$ https://www.sf-bronnen.de/darts/allgemeines/informationen
+RewriteCond %{HTTPS} =on [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} =https [NC]
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+# http
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+
+RedirectMatch 301 /aikido/allgemeines/infos(?!$) /aikido/allgemeines/infos
+RedirectMatch 301 ^/darts$ /darts/allgemeines/informationen
 
 # make sure to set the RewriteBase correctly
 # if you are running the site in a subfolder;
