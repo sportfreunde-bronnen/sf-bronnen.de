@@ -39,7 +39,9 @@ $isDarts = (string)$page->parents()->last()?->title()->lower() === 'darts';
     </style>
     <?php endif; ?>
 </head>
-<body<?= $isSvzSite ? ' class="svz-site"' : '' ?>>
+<?php // data-1p-ignore: the forms of this site are no login forms, so password managers (1Password) shall not offer to fill or save anything.
+// The attributes of the other password managers are only evaluated on the fields and are added by the plugin sfb-password-manager ?>
+<body<?= $isSvzSite ? ' class="svz-site"' : '' ?> data-1p-ignore>
 <?php if ($isSvzSite): ?>
 <?php snippet('svz/header'); ?>
 <?php elseif ($useModernHeader): ?>
