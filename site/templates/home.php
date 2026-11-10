@@ -14,7 +14,7 @@ $events = $page->getNextEvents();
         <section class="home-intro">
             <div class="home-intro-bg" data-parallax aria-hidden="true"></div>
             <div class="container">
-                <div class="row">
+                <div class="row gx-xl-5">
                     <div class="col-lg-7 home-intro-main home-reveal">
                         <h2 class="home-title">Herzlich willkommen bei den <span>Sportfreunden Bronnen</span></h2>
                         <?php if ($page->zitat()->isNotEmpty()): ?>
@@ -25,7 +25,7 @@ $events = $page->getNextEvents();
                         </div>
                     </div>
                     <?php if ($areas): ?>
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-xxl-4">
                             <?php /* no <nav> element: custom.js pins every <nav> to the top of the window while scrolling */ ?>
                             <div class="home-areas home-reveal" role="navigation" aria-label="Schnell zum Ziel">
                                 <h3 class="home-areas-title">Schnell zum Ziel</h3>
@@ -94,18 +94,6 @@ $events = $page->getNextEvents();
                         </div>
                     </article>
                 <?php endforeach; ?>
-            </section>
-        <?php endif; ?>
-
-        <?php if ($upcomingData = $page->getLatestResults() && 1 == 2): ?>
-            <section class="football-upcoming">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 pt-2 pb-2 text-center">
-                            <i class="fa fa-calendar pe-2"></i><?= $upcomingData;?><i class="fa fa-calendar ps-2"></i>
-                        </div>
-                    </div>
-                </div>
             </section>
         <?php endif; ?>
 
