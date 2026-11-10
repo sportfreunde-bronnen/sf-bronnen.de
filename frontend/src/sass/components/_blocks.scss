@@ -1,0 +1,338 @@
+// Content blocks of the text pages (default template): headings, text, images, text with image and galleries.
+// The blocks sit in the content card (components/_content.scss), the markup is rendered by site/snippets/blocks/*.php.
+// A click on an image opens the lightbox (Magnific Popup, see public/assets/js/custom.js).
+
+.content-card .content-card__text + .content-blocks {
+  margin-top: 2rem;
+}
+
+.content-blocks {
+  .block {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .block--heading {
+    margin-bottom: 0.75rem;
+
+    // a heading opens a new section
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+      color: $darkBlue;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      overflow-wrap: break-word;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    h2 {
+      font-size: 1.85rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      h3 {
+        font-size: 1.35rem;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .block + .block--heading {
+    margin-top: 2.75rem;
+  }
+
+  // text of the text block and of the block "text with image"
+  .block--text,
+  .block-textimage__text {
+    color: $textColor;
+    font-size: 1.08rem;
+    line-height: 1.75;
+
+    p {
+      margin-bottom: 1.25rem;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.35rem;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: rgba($brightBlue, 0.35);
+      text-underline-offset: 3px;
+
+      &:hover,
+      &:focus {
+        text-decoration-color: currentColor;
+      }
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Image (block "Bild" and image of the block "Text mit Bild")
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block-figure {
+    margin: 0;
+  }
+
+  .block-figure--medium {
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .block-figure__link,
+  .block-gallery__link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: $paleBlue;
+    cursor: zoom-in;
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 0;
+      transition: transform 0.5s ease;
+    }
+
+    // darkening at the bottom, so the zoom icon is visible on every picture
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, transparent 55%, rgba($deepBlue, 0.45));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover,
+    &:focus-visible {
+      img {
+        transform: scale(1.04);
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .block-figure__link {
+    border-radius: $radiusLg;
+    box-shadow: $shadow;
+    transition: box-shadow 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: $shadowLg;
+    }
+
+    img {
+      height: auto;
+    }
+  }
+
+  // magnifier in the corner of an image
+  .block-figure__zoom,
+  .block-gallery__zoom {
+    position: absolute;
+    right: 0.85rem;
+    bottom: 0.85rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    color: #fff;
+    font-size: 1.05rem;
+    background-color: rgba($deepBlue, 0.72);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .block-figure__link:hover .block-figure__zoom,
+  .block-figure__link:focus-visible .block-figure__zoom,
+  .block-gallery__link:hover .block-gallery__zoom,
+  .block-gallery__link:focus-visible .block-gallery__zoom {
+    opacity: 1;
+    transform: none;
+  }
+
+  // devices without hover (touch) always show the magnifier, but only discreetly
+  @media (hover: none) {
+    .block-figure__zoom,
+    .block-gallery__zoom {
+      opacity: 0.85;
+      transform: none;
+    }
+  }
+
+  .block-figure__caption {
+    margin-top: 0.75rem;
+    color: $textMuted;
+    font-size: 0.9rem;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Text with image: side by side on wide screens, the image is above the text on small screens
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block-textimage {
+    display: grid;
+    gap: 1.5rem;
+    align-items: start;
+    grid-template-columns: minmax(0, 1fr);
+
+    @include media-breakpoint-up(md) {
+      gap: 2.5rem;
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+
+      &--left {
+        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      }
+
+      &--noimage {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      // in the markup the image is first, so it is on top on small screens
+      &--right .block-textimage__media {
+        order: 2;
+      }
+    }
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Gallery: grid of equally sized thumbnails
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block-gallery {
+    margin: 0;
+  }
+
+  .block-gallery__grid {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: minmax(0, 1fr);
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .block-gallery--cols-3 .block-gallery__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .block-gallery--cols-4 .block-gallery__grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .block-gallery__item {
+    margin: 0;
+  }
+
+  .block-gallery__link {
+    aspect-ratio: 4 / 3;
+    border-radius: $radius;
+    box-shadow: $shadowSm;
+    transition: box-shadow 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: $shadow;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .block-gallery > .block-figure__caption {
+    margin-top: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-blocks {
+    .block-figure__link img,
+    .block-gallery__link img,
+    .block-figure__zoom,
+    .block-gallery__zoom {
+      transition: none;
+    }
+
+    .block-figure__link:hover img,
+    .block-figure__link:focus-visible img,
+    .block-gallery__link:hover img,
+    .block-gallery__link:focus-visible img {
+      transform: none;
+    }
+  }
+}
+
+@media print {
+  .content-blocks {
+    .block-figure__link,
+    .block-gallery__link {
+      box-shadow: none;
+    }
+
+    .block-figure__zoom,
+    .block-gallery__zoom {
+      display: none;
+    }
+  }
+}

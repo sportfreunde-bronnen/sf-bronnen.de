@@ -1,0 +1,32 @@
+name: Galerie
+icon: dashboard
+preview: gallery
+fields:
+  images:
+    label: Bilder
+    type: files
+    query: model.images
+    multiple: true
+    layout: cards
+    size: small
+    empty: Noch keine Bilder ausgewählt
+    image:
+      ratio: 1/1
+    help: Die Bilder müssen zuerst bei der Seite hochgeladen werden. Ein Klick auf ein Bild öffnet es groß, die Bildbeschreibung der Datei wird als Untertitel angezeigt.
+  columns:
+    label: Spalten
+    type: toggles
+    default: "3"
+    required: true
+    options:
+      - value: "2"
+        text: 2 Spalten
+      - value: "3"
+        text: 3 Spalten
+      - value: "4"
+        text: 4 Spalten
+  caption:
+    label: Bildunterschrift der Galerie
+    type: writer
+    icon: text
+    inline: true

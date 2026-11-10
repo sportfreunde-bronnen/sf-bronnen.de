@@ -7,19 +7,33 @@
 <?php
 $hasHeadline = $page->headline()->isNotEmpty();
 $hasText = $page->text()->isNotEmpty();
-$images = $page->images();
-$hasImages = $images->count() > 0;
+// content blocks (text, images, galleries ...): they place the images of the page themselves,
+// pages without blocks show all images of the page as grid below the text
+$blocks = $page->blocks()->toBlocks()->filterBy('isHidden', false);
+$hasBlocks = $blocks->isNotEmpty();
+$images = $hasBlocks ? null : $page->images();
+$hasImages = $images !== null && $images->count() > 0;
 ?>
 <div class="page">
 <div class="main-container container ps-sm-0 pe-sm-0">
-    <?php if ($hasHeadline || $hasText || $hasImages): ?>
-        <article class="content-card">
+    <?php if ($hasHeadline || $hasText || $hasBlocks || $hasImages): ?>
+        <article class="content-card<?= $hasBlocks ? ' content-card--blocks' : '';?>">
             <?php if ($hasHeadline): ?>
                 <h2 class="main-heading-1 text-spl-color text-weight-normal text-center text-lg-start"><?= $page->headline();?></h2>
             <?php endif; ?>
             <?php if ($hasText): ?>
                 <div class="content-card__text">
                     <?= $page->text()->kirbytext();?>
+                </div>
+            <?php endif; ?>
+            <?php if ($hasBlocks): ?>
+                <div class="content-blocks">
+                    <?php foreach ($blocks as $block): ?>
+                        <?php $html = trim((string)$block); ?>
+                        <?php if ($html !== ''): ?>
+                            <div class="block block--<?= $block->type();?>"><?= $html;?></div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </div>
             <?php endif; ?>
             <?php if ($hasImages): ?>

@@ -1,0 +1,41 @@
+name: Text mit Bild
+icon: layout
+preview: fields
+fields:
+  text:
+    label: Text
+    type: writer
+    nodes:
+      - bulletList
+      - orderedList
+    required: true
+    placeholder: Text …
+  image:
+    label: Bild
+    type: files
+    query: model.images
+    multiple: false
+    required: true
+    image:
+      back: black
+    help: Das Bild muss zuerst bei der Seite hochgeladen werden (Dateien rechts bzw. unten).
+  alt:
+    label: Alternativtext
+    type: text
+    icon: title
+    width: 1/2
+    help: Beschreibt das Bild für Screenreader. Ohne Angabe wird die Bildbeschreibung der Datei verwendet.
+  caption:
+    label: Bildunterschrift
+    type: writer
+    icon: text
+    inline: true
+    width: 1/2
+  position:
+    label: Position des Bildes
+    type: toggles
+    default: right
+    required: true
+    options:
+      left: Links
+      right: Rechts

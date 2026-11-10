@@ -1,0 +1,22 @@
+title: Spielerstatistik
+options:
+  changeTemplate: false
+  delete: true
+pages: false
+preset: page
+fields:
+  headline:
+    extends: fields/headline
+  text:
+    label: Einleitungstext
+    type: writer
+    help: Wird oberhalb der Statistik angezeigt. Die Statistik selbst kommt vom DVOS und wird automatisch alle 12 Stunden aktualisiert.
+  club:
+    label: Verein beim DVOS
+    type: number
+    min: 1
+    step: 1
+    default: 71
+    required: true
+    width: 1/3
+    help: ID des Vereins auf www.dvos.de (Sportfreunde Bronnen = 71)

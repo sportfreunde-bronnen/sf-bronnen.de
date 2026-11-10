@@ -2,15 +2,15 @@ Title: Sportgelände
 
 ----
 
-Text:
-
-Das Bronner Sportgelände wurde im Jahr 2017 umfassend saniert und erweitert. Die Maßnahmen umfassten den Hauptumbau des Hauptspielfeldes, die Beregnung auf beiden Sportplätzen, die Ertüchtigung der Flutlichtanlagen auf dem Hauptspielfeld sowie der Ersatz der Flutlichtanlage auf dem Trainingsplatz und die Aufwertung der Infrastruktur auf dem Vereinsgelände. Im Jahr 2018 wird das Projekt durch weitere Maßnahmen rund um das SVZ abgeschlossen werden.
-
-Weitere Informationen folgen schon bald.
+Headline: Sportgelände in Bronnen
 
 ----
 
-Headline: Sportgelände in Bronnen
+Text: 
+
+----
+
+Blocks: [{"content":{"text":"<p>Das Bronner Sportgelände wurde im Jahr 2017 umfassend saniert und erweitert. Die Maßnahmen umfassten den Hauptumbau des Hauptspielfeldes, die Beregnung auf beiden Sportplätzen, die Ertüchtigung der Flutlichtanlagen auf dem Hauptspielfeld sowie der Ersatz der Flutlichtanlage auf dem Trainingsplatz und die Aufwertung der Infrastruktur auf dem Vereinsgelände. Im Jahr 2018 wird das Projekt durch weitere Maßnahmen rund um das SVZ abgeschlossen werden.</p><p>Weitere Informationen folgen schon bald.</p>"},"id":"6418f4dc-0bed-4a2e-9496-8b853bf37b30","isHidden":false,"type":"text"},{"content":{"image":["file://uwuwoxukbuloqtht"],"alt":"","caption":"","size":"full"},"id":"bd453512-8a1a-4108-b5be-3c3f8a398e96","isHidden":false,"type":"image"},{"content":{"images":["file://yhqmegvnsjfetkuq","file://bgbnunex9bcle9ff"],"columns":"2","caption":""},"id":"4bad8df7-fe63-4215-b208-271ae37a3b4d","isHidden":false,"type":"gallery"}]
 
 ----
 

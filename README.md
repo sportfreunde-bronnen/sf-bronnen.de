@@ -75,6 +75,26 @@ The detail page of an event (`site/templates/veranstaltung.php`, `frontend/src/s
 
 Header, cover, text and recommendation share their styles with the article page (`components/_bericht.scss`, selector `.page--veranstaltung`).
 
+## Text pages with content blocks (template "Default Page")
+
+The default template (`site/templates/default.php`, blueprint `site/blueprints/pages/default.yml`) shows the headline, the classic text and the field "Inhalt"
+(Kirby blocks) in a white content card, e.g. the page "Sportgelände". The field offers these blocks (blueprints in `site/blueprints/blocks/`, markup in `site/snippets/blocks/`):
+
+|Block|Description|
+|---|---|
+|Überschrift|section heading (H2 to H4)|
+|Text|formatted text with links, bold/italic text and lists|
+|Bild|single image with caption, full width or medium sized|
+|Text mit Bild|text and image side by side (image left or right), the image is above the text on small screens|
+|Galerie|grid of equally sized thumbnails with 2, 3 or 4 columns; the description of the image file is shown as caption in the lightbox|
+
+- The images must be uploaded to the page first (files section of the page), the blocks select them from there.
+- A click on an image opens it in the lightbox (Magnific Popup, initialised in `public/assets/js/custom.js`); the images of a gallery can be browsed.
+- Pages without blocks look as before: headline, classic text (field "Text (klassisch)") and all images of the page as grid below the text.
+  A page with blocks shows the classic text above the blocks and places the images only via the blocks.
+- The styles are in `frontend/src/sass/components/_blocks.scss` (run `npm run build` after a change), the image markup shared by the blocks is `snippets/block-image.php`.
+- Hidden blocks (eye icon in the Panel) are not rendered.
+
 ## Spam protection (Cloudflare Turnstile)
 
 The contact form and the membership certificate form are protected by
@@ -219,6 +239,31 @@ the toggle "In neuem Tab öffnen" (default: yes) adds `target="_blank" rel="noop
 `LinkPage::url()` (`site/models/link.php`) returns the external target, so the main navigation (`site/snippets/navigation.php`, `site/snippets/navigation-modern.php`)
 and the footer link directly to the external page. The template (`site/templates/link.php`) is only a fallback: it redirects if the internal URL of the page is called directly.
 A link page which has subpages of its own is shown as group heading (like "Allgemeines"), not as link.
+
+## Player statistics of the darts department ("Spielerstatistik")
+
+The page "Darts" > "Spielbetrieb" > "Spielerstatistik" (`content/6_darts/3_spielbetrieb/2_spielerstatistik`, template "Spielerstatistik", `site/blueprints/pages/spielerstatistik.yml`)
+shows the statistics of the players of "Liga" and "Pokal": the best players as cards (most points, wins, best quote, 180s, highest high finish) and a table with all values
+(points, games, wins, quote, single / double / team game, 180s, high finishes, short games). The style is in `frontend/src/sass/spielerstatistik.scss` (`public/assets/css/spielerstatistik.css`).
+
+The data only exists as HTML on the website of the DVOS (Dartverband Oberschwaben), so it is requested in the background (plugin `site/plugins/sfb-dvos`):
+
+- `POST https://www.dvos.de/ligaauswertung.php?seite=0` with `input[2]=<id of the club>`, the id of the Sportfreunde Bronnen is `71` (field "Verein beim DVOS" of the page)
+- `DvosPlayerStatisticsParser` turns the "div tables" of the page into an array (the DVOS sends every table in three widths, only the widest one with all columns is used)
+- `DvosPlayerStatistics::forClub()` caches the prepared data **for 12 hours** with the Kirby cache `sfb.dvos.playerstatistics` (stored as JSON in `storage/cache`).
+  The cache is activated by the plugin itself, nothing has to be added to the (gitignored) `config.php`
+- If the DVOS cannot be reached (or answers with an unknown page) the last good data is used for up to two weeks and the DVOS is requested again after 10 minutes only.
+  Without any data the page shows a note with a link to the DVOS
+
+Options (all optional, in the `config.php`):
+
+```php
+'sfb.dvos.cacheMinutes' => 12 * 60,                // lifetime of the prepared statistics
+'sfb.dvos.timeout' => 10,                          // seconds until a request to the DVOS is aborted
+'sfb.dvos.cache.playerstatistics' => false,        // switch the cache off, e.g. while developing
+```
+
+To refresh the data immediately delete the folder `storage/cache/<host>/sfb/dvos` (the folder name depends on the host name).
 
 ## Role based page permissions ("Seitenrechte")
 

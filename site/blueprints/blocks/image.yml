@@ -1,0 +1,31 @@
+name: Bild
+icon: image
+preview: image
+fields:
+  image:
+    label: Bild
+    type: files
+    query: model.images
+    multiple: false
+    required: true
+    image:
+      back: black
+    help: Das Bild muss zuerst bei der Seite hochgeladen werden (Dateien rechts bzw. unten).
+  alt:
+    label: Alternativtext
+    type: text
+    icon: title
+    help: Beschreibt das Bild für Screenreader. Ohne Angabe wird die Bildbeschreibung der Datei verwendet.
+  caption:
+    label: Bildunterschrift
+    type: writer
+    icon: text
+    inline: true
+  size:
+    label: Größe
+    type: toggles
+    default: full
+    required: true
+    options:
+      full: Volle Breite
+      medium: Mittelgroß

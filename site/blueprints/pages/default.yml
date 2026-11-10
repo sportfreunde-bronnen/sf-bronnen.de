@@ -1,7 +1,22 @@
 title: Default Page
 preset: page
 fields:
+  headline:
+    extends: fields/headline
+    required: false
+    help: Überschrift oberhalb des Inhalts (optional)
   text:
-    label: Text
+    label: Text (klassisch)
     type: textarea
     size: large
+    help: Bisheriger Text der Seite, wird oberhalb der Inhaltsblöcke angezeigt. Für neue Inhalte bitte die Blöcke unten verwenden.
+  blocks:
+    label: Inhalt
+    type: blocks
+    empty: Noch kein Inhalt. Mit dem Plus lassen sich Überschriften, Texte, Bilder und Galerien hinzufügen.
+    fieldsets:
+      - heading
+      - text
+      - image
+      - textimage
+      - gallery

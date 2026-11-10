@@ -1,0 +1,17 @@
+Title: Spielerstatistik
+
+----
+
+Headline: Unsere Spieler in Zahlen
+
+----
+
+Text: <p>Hier findest Du die Statistik unserer Spielerinnen und Spieler aus Liga und Pokal. Alle Werte stammen vom <a href="https://www.dvos.de" target="_blank" rel="noopener">Dartverband Oberschwaben (DVOS)</a>.</p>
+
+----
+
+Club: 71
+
+----
+
+Uuid: 7kq2xw9mdh4tnb5e

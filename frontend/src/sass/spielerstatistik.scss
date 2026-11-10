@@ -1,0 +1,336 @@
+// Player statistics of the darts department ("Spielerstatistik", template spielerstatistik.php)
+// Standalone stylesheet (loaded in addition to sfb.css by the template), the markup is described in the template.
+
+@import "variables";
+
+// Medals of the first three ranks
+$statsGold: #e0a800;
+$statsSilver: $steel;
+$statsBronze: #b5733c;
+
+.template--spielerstatistik {
+  .stats-intro {
+    max-width: 60rem;
+    margin-bottom: 1.5rem;
+    color: $textColor;
+  }
+
+  // Liga / Pokal
+  .stats-tabs {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+
+    .nav-link {
+      padding: 0.45rem 1.1rem;
+      border-radius: 999px;
+      background-color: $paleBlue;
+      color: $darkBlue;
+      font-weight: 500;
+      transition: $transition;
+
+      &:hover {
+        background-color: #d6e9f4;
+      }
+
+      &.active {
+        background-color: $brightBlue;
+        color: #fff;
+        box-shadow: $shadowSm;
+      }
+    }
+
+    .stats-tabs__count {
+      display: inline-block;
+      min-width: 1.6em;
+      margin-left: 0.5rem;
+      padding: 0 0.45em;
+      border-radius: 999px;
+      background-color: rgba($deepBlue, 0.12);
+      font-size: 0.75em;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .active .stats-tabs__count {
+      background-color: rgba(#fff, 0.25);
+    }
+  }
+
+  // Best players
+  .stats-highlights {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  }
+
+  .stats-highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 1rem 1.1rem;
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    border-top: 3px solid $lightBlue;
+    border-radius: $radius;
+    box-shadow: $shadowSm;
+
+    &__label {
+      color: $textMuted;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      small {
+        letter-spacing: 0;
+        text-transform: none;
+      }
+    }
+
+    &__value {
+      color: $darkBlue;
+      font-size: 1.6rem;
+      line-height: 1.2;
+    }
+
+    &__names {
+      color: $textColor;
+      font-size: 0.9rem;
+    }
+  }
+
+  // Table: scrolls horizontally on small screens, the player stays visible
+  .stats-table-wrap {
+    overflow-x: auto;
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    border-radius: $radius;
+    box-shadow: $shadowSm;
+  }
+
+  .stats-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: $textColor;
+    font-size: 0.92rem;
+
+    th,
+    td {
+      padding: 0.65rem 0.8rem;
+      border-bottom: 1px solid $borderColor;
+      text-align: right;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    thead th {
+      background-color: $darkBlue;
+      border-bottom: 0;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 500;
+
+      small {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 400;
+        opacity: 0.75;
+      }
+    }
+
+    tbody tr:last-child > * {
+      border-bottom: 0;
+    }
+
+    tbody tr:hover > * {
+      background-color: $mistBlue;
+    }
+
+    tbody th {
+      font-weight: 400;
+    }
+
+    .stats-player {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 15rem;
+      background-color: #fff;
+      border-right: 1px solid $borderColor;
+      text-align: left;
+    }
+
+    thead .stats-player {
+      background-color: $darkBlue;
+    }
+
+    .is-inactive {
+      color: $textMuted;
+
+      .stats-player__name {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .stats-player__inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .stats-player__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.1rem 0.4rem;
+    line-height: 1.3;
+  }
+
+  .stats-player__name {
+    color: $darkBlue;
+    font-weight: 600;
+  }
+
+  .stats-player__squad {
+    flex-basis: 100%;
+    color: $textMuted;
+    font-size: 0.78rem;
+  }
+
+  .stats-rank {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background-color: $paleBlue;
+    color: $darkBlue;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    &--1 {
+      background-color: $statsGold;
+      color: #fff;
+    }
+
+    &--2 {
+      background-color: $statsSilver;
+      color: #fff;
+    }
+
+    &--3 {
+      background-color: $statsBronze;
+      color: #fff;
+    }
+  }
+
+  .stats-badge {
+    padding: 0.05rem 0.5rem;
+    border-radius: 999px;
+    background-color: $paleBlue;
+    color: $darkBlue;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    &--damen,
+    &--juniorinnen {
+      background-color: #fbe4e3;
+      color: #a8302b;
+    }
+
+    &--junioren {
+      background-color: #e7f6ef;
+      color: #12794f;
+    }
+
+    &--inactive {
+      background-color: $fog;
+      color: $textMuted;
+    }
+  }
+
+  .stats-points {
+    color: $darkBlue;
+    font-weight: 700;
+  }
+
+  .stats-main {
+    display: block;
+  }
+
+  .stats-sub {
+    display: block;
+    color: $textMuted;
+    font-size: 0.72rem;
+  }
+
+  .stats-empty {
+    color: $steel;
+  }
+
+  // Quote with a bar (--value: percent)
+  .stats-quote {
+    min-width: 7.5rem;
+  }
+
+  .stats-bar {
+    display: block;
+    height: 0.35rem;
+    margin-top: 0.3rem;
+    overflow: hidden;
+    border-radius: 999px;
+    background-color: $paleBlue;
+
+    &::after {
+      content: "";
+      display: block;
+      width: calc(var(--value, 0) * 1%);
+      height: 100%;
+      border-radius: inherit;
+      background-color: $lightBlue;
+    }
+  }
+
+  .stats-meta {
+    margin-top: 1rem;
+    color: $textMuted;
+    font-size: 0.82rem;
+  }
+
+  // The DVOS is not reachable and no older data exists
+  .stats-notice {
+    padding: 1rem 1.25rem;
+    background-color: $mistBlue;
+    border: 1px solid $borderColor;
+    border-left: 4px solid $accentYellow;
+    border-radius: $radius;
+    color: $textColor;
+  }
+
+  @media (max-width: 575.98px) {
+    .stats-highlights {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .stats-highlight {
+      padding: 0.8rem;
+
+      &__value {
+        font-size: 1.3rem;
+      }
+    }
+
+    .stats-table .stats-player {
+      min-width: 12rem;
+    }
+  }
+}

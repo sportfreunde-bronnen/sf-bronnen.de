@@ -139,5 +139,28 @@
           enabled: true
       }
   });
+
+  // MAGNIFIC POPUP of the image blocks (default template, snippets/blocks): the images of a gallery block are browsable,
+  // single images open on their own. The caption is taken from the attribute data-caption of the link.
+  var blockImageOptions = {
+      type: 'image',
+      closeOnContentClick: true,
+      image: {
+          titleSrc: 'data-caption'
+      }
+  };
+
+  $('.js-lightbox-gallery').each(function () {
+      $(this).magnificPopup($.extend(true, {}, blockImageOptions, {
+          delegate: 'a',
+          closeOnContentClick: false,
+          gallery: {
+              enabled: true,
+              tCounter: '%curr% von %total%'
+          }
+      }));
+  });
+
+  $('a.js-lightbox').magnificPopup(blockImageOptions);
 	
 })(window.jQuery);
