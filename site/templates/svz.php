@@ -128,7 +128,7 @@ $downloadsUrl = SvzDomain::link('gesamtverein/allgemeines/downloads');
                 <li class="svz-reveal">
                     <span class="svz-steps__num">1</span>
                     <h3>Termin prüfen</h3>
-                    <p>Im Kalender sehen Sie sofort, ob Ihr Wunschtermin frei ist.</p>
+                  <p>Im Kalender sehen Sie sofort, ob Ihr Wunschtermin frei ist.</p>
                 </li>
                 <li class="svz-reveal">
                     <span class="svz-steps__num">2</span>

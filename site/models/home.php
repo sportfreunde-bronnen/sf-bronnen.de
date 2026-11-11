@@ -129,7 +129,7 @@ class HomePage extends RoleAwarePage
                     return (strtotime($page->datum()) > time());
                 })
                 ->sortBy('datum', 'asc')
-                ->limit(3);
+                ->limit(4);
     }
 
     /**

@@ -1,4 +1,4 @@
-Title: Sportvereinszentrum
+Title: Sportvereinszentrum Bronnen
 
 ----
 
@@ -75,6 +75,13 @@ Features:
     Platz zum Spielen und Toben für Kinder
     jeden Alters.
 - 
+  icon: fa-wheelchair
+  title: Barrierefrei
+  text: >
+    Barrierefreier Zugang über eine Rampe
+    und Toilette für Menschen mit
+    Behinderung.
+- 
   icon: fa-leaf
   title: Sonnenstrom vom eigenen Dach
   text: >
@@ -85,13 +92,6 @@ Features:
     Sie vor Ort (Typ 2, 11 kW). Für
     Imbisswägen o.ä. stehen CEE Dosen (16
     + 32 Ampere zur Verfügung).
-- 
-  icon: fa-wheelchair
-  title: Barrierefrei
-  text: >
-    Barrierefreier Zugang über eine Rampe
-    und Toilette für Menschen mit
-    Behinderung.
 
 ----
 

@@ -63,6 +63,22 @@
   }
 }
 
+// Team photo next to the text of a department page (ah template)
+.content-card__media {
+  margin: 0;
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: $radius;
+    box-shadow: $shadow;
+  }
+
+  figcaption {
+    margin-top: 0.75rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .content-card {
     animation: none;

@@ -42,7 +42,7 @@
 </section>
 <footer class="copyright">
     <div class="container ps-sm-0 pe-sm-0 text-center text-lite-color">
-        <em class="text-weight-light">&copy; <?= date('Y');?> - Sportfreunde Bronnen 1949 e.V. | Made with <a href="https://getkirby.com/">Kirby</a> and <b class="red">♥</b></em>
+        <em class="text-weight-light">&copy; <?= date('Y');?> Sportfreunde Bronnen e.V.</em>
     </div>
 </footer>
 <?php endif; ?>

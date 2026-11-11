@@ -72,7 +72,7 @@ class MembershipApplication
                 '7007' => 'Spielturnen | Conny Wilhelm',
                 '7008' => 'Eltern+Kind Turnen | Oli Maunz',
                 '7010' => '(Kurs) Zumba | Edith Zagst',
-                '7013' => '(Kurs) Zwergen Turnen | Maren Pannek',
+                '7013' => '(Kurs) Zwergen Turnen | Bianca Leiprecht',
                 'sonstiges' => 'Sonstiges',
             ],
         ],

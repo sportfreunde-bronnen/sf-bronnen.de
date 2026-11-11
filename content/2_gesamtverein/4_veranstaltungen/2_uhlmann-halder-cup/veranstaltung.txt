@@ -6,7 +6,7 @@ Shorttitle: Das Freizeitturnier für Betriebsmannschaften
 
 ----
 
-Datum: 2026-07-03 18:00:00
+Datum: 2027-07-02 18:00:00
 
 ----
 
@@ -20,7 +20,7 @@ Ort: Sportgelände Bronnen
 
 Text:
 
-Der Uhlmann-Halder-Cup 2026 findet am 03.07.2026 statt. Entsprechende Einladungen an Firmen werden rechtzeitig versendet.
+Der Uhlmann-Halder-Cup 2027 findet am 02.07.2026 statt. Entsprechende Einladungen an Firmen werden rechtzeitig versendet.
 
 Eure Sportfreunde Bronnen
 
@@ -42,7 +42,7 @@ Documentdescription:
 
 ----
 
-Related: - page://Qigya7VTmBF4aWr1
+Related: - page://0JciBBrFTKp8jnA0
 
 ----
 

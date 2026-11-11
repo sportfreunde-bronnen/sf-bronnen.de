@@ -6,11 +6,11 @@ Shorttitle: Kinderfasching
 
 ----
 
-Datum: 2026-02-15 14:00:00
+Datum: 2027-02-07 14:00:00
 
 ----
 
-Datumbis: 2026-02-15 17:00:00
+Datumbis: 2027-02-07 17:00:00
 
 ----
 
@@ -18,11 +18,11 @@ Ort: SVZ Bronnen
 
 ----
 
-Text: (image: flyer-kinderfasching-2026.jpeg)
+Text: SAVE THE DATE! Der Kinderfasching 2027 findet am Sonntag, den 07.02. statt!
 
 ----
 
-Vimage: - file://NM3oPyNP5jykfFVc
+Vimage: 
 
 ----
 
@@ -30,7 +30,7 @@ Imageposition: top
 
 ----
 
-Doc: - file://i2aNWyfGpMAjrz1k
+Doc: 
 
 ----
 

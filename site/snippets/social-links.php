@@ -7,9 +7,8 @@
  */
 $itemClass = $itemClass ?? 'list-inline-item';
 $socialLinks = [
-    ['url' => 'https://www.facebook.com/sportfreundebronnen/', 'title' => 'Die Sportfreunde Bronnen auf Facebook', 'icon' => 'fa-facebook'],
     ['url' => 'https://www.instagram.com/sfb1949/', 'title' => 'Die Sportfreunde Bronnen auf Instagram', 'icon' => 'fa-instagram'],
-    ['url' => 'https://github.com/sportfreunde-bronnen/', 'title' => 'Die Sportfreunde Bronnen auf Github - Open Source', 'icon' => 'fa-github'],
+    ['url' => 'https://www.facebook.com/sportfreundebronnen/', 'title' => 'Die Sportfreunde Bronnen auf Facebook', 'icon' => 'fa-facebook'],
     ['url' => 'https://shop.sf-bronnen.de', 'title' => 'Der Online Shop der Sportfreunde Bronnen', 'icon' => 'fa-shopping-cart'],
 ];
 ?>
