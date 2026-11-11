@@ -105,7 +105,7 @@ class BerichtPage extends DownloadsPage
     {
         $text = trim(strip_tags((string)$this->text()->kirbytext()->value()));
         $words = preg_split('/\s+/u', $text, -1, PREG_SPLIT_NO_EMPTY);
-        return max(1, (int)ceil(count($words ?: []) / 200));
+        return max(1, (int)ceil(count($words ?: []) / 100));
     }
 
     public function getMoreImages()

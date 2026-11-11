@@ -8,11 +8,9 @@ $useModernHeader = $headerVariant === 'modern';
 // The pages of the darts department show the crest of the department instead of the club crest
 $isDarts = (string)$page->parents()->last()?->title()->lower() === 'darts';
 ?>
-<!-- Nope, its not wordpress -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Sportfreunde Bronnen 1949 e.V.">
