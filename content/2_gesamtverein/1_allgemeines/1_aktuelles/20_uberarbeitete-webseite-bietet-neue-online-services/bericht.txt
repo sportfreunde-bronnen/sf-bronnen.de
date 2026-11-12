@@ -6,11 +6,11 @@ Datum: 2026-11-10
 
 ----
 
-Author: - user://69A5h99k
+Author: - user://e2hYcP58
 
 ----
 
-Author2: 
+Author2: MB
 
 ----
 
@@ -26,7 +26,21 @@ Text:
 
 ## Herzlich willkommen auf der überarbeitenden Webseite der Sportfreunde Bronnen!
 
-Sieben Jahre nach dem Launch der alten Webseite war es an der Zeit, das nächste digitale Kapitel einzuleuten.
+Sieben Jahre nach dem Launch der alten Webseite war es an der Zeit für eine Modernisierung der bestehenden Webseite und deren Funktionalitäten. Neben der Überarbeitung des Layouts sowie einiger Inhalte, sind besonders die Online-Services in den Mittelpunkt gerückt.
+
+Unser (link: page://CTiBBmnrhRlQJEKg text: Sportvereinszentrum) verfügt nun über eine eigene Landingpage (vermietung.sf-bronnen.de), mit der wir unsere Vermietungen noch gezielter bewerben können. Zudem wurde der Verfügbarkeitskalender optimiert und eine Möglichkeit geschaffen, per Formular unter Abfrage aller vermietungsrelevanter Daten direkt für einen freien Termin anfragen zu können. Zur Klärung weiterer Rückfragen gibt es zudem einen FAQ Bereich (Häufig gestellte Fragen), der immer wiederkehrende Fragen zur Vermietung klären soll. Ebenfalls wurden die Konditionen sowie Vermietungsumfänge angepasst, um das SVZ einem noch breiteren Publikum anbieten zu können. Vereinsmitglieder erhalten ab sofort vergünstigte Konditionen.
+
+Der händisch ausgefüllte Mitgliederantrag soll nun ebenfalls der Vergangenheit angehören. Über das neue Formular (link: page://mV7pQ2xRk9LdWe4T text: Mitglied werden) werden alle benötigten Daten abgefragt und landen nach dem Absenden direkt bei unserer Mitgliederverwaltung. Das Ausdrucken, ausfüllen sowie anschließende scannen oder fotografieren sind somit nicht mehr nötig. Eine Win-win-Situation! Bitte nutzt daher ab sofort nur noch die digitale Möglichkeit des Vereinsbeitritts. Nicht neu, aber ebenfalls überarbeitet wurde das Formular zur Beantragung einer (link: page://y4dvx7l0c30lyc1y text: Mitgliederbescheinigung) für Krankenkassen oder sonstige offizielle Stellen.
+
+Unter (link: page://kjNG57OjBIhMj0Js text: Beiträge) gibt es für Interessenten ab sofort einen Beitragsrechner, mit dem ihr eure jährlichen Beiträge berechnen könnt.
+
+Im Bereich des Fördervereins gibt es mit dem Formular zur Anfrage einer (link: page://pR7nT3wK9bXq2LcV text: Partnerschaft) ebenfalls eine zeitgemäße Möglichkeit, potentielle Partnerschaften anzufragen bzw. in Kontakt zu treten.
+
+Die restlichen Änderungen entdeckt ihr am besten bei einem kurzen Rundgang selbst.
+
+Wir wünschen euch viel Spaß beim Erkunden.
+
+Eure Vorstandschaft
 
 ----
 
