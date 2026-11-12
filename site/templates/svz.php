@@ -46,7 +46,7 @@ $downloadsUrl = SvzDomain::link('gesamtverein/allgemeines/downloads');
         <div class="container svz-hero__inner">
             <p class="svz-hero__eyebrow">Sportfreunde Bronnen e.V.</p>
             <h1 class="svz-hero__title"><?= $page->title() . APPEND_TITLE;?></h1>
-            <p class="svz-hero__lead"><?= $page->headline()->esc();?></p>
+            <p class="svz-hero__lead mt-3"><?= $page->headline()->esc();?></p>
             <div class="svz-actions">
                 <a href="#verfuegbarkeit" data-svz-tab="verfuegbarkeit" class="svz-btn svz-btn--accent"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Verfügbarkeit prüfen</a>
                 <a href="#preise" data-svz-tab="preise" class="svz-btn svz-btn--ghost"><i class="fa fa-eur" aria-hidden="true"></i> Preise ansehen</a>
