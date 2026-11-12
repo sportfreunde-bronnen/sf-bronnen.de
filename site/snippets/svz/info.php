@@ -12,7 +12,7 @@ $exterior = $page->image('svz_footer.jpg');
 
 <div class="svz-section-head svz-reveal">
     <p class="svz-eyebrow">Das bieten wir Ihnen</p>
-    <h2 class="svz-title">Ihr Platz zum Feiern. So flexibel, wie Sie es brauchen.</h2>
+    <h2 class="svz-title">Ihr Platz zum Feiern. So flexibel wie Sie es brauchen.</h2>
     <div class="svz-lead mt-2"><?= $page->text()->kirbytext();?></div>
     <div class="svz-actions">
         <a href="#verfuegbarkeit" data-svz-tab="verfuegbarkeit" class="svz-btn svz-btn--primary"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Verfügbarkeit prüfen</a>
