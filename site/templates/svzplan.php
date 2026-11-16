@@ -51,7 +51,7 @@ $groups = SvzFloorplan::groups();
                             <li><span class="svz-plan__swatch svz-plan__swatch--theke" aria-hidden="true"></span>Theke</li>
                             <li><span class="svz-plan__swatch svz-plan__swatch--stool" aria-hidden="true"></span>Barhocker</li>
                         </ul>
-                        <p>Maße in Metern (Breite × Tiefe), Flächen in m². Die gestrichelte Wand zwischen Gymnastik und Gastraum lässt sich einfahren, beide Räume werden dann zu einem großen Raum. Im Gastraum steht die Theke mit <?= count(SvzFloorplan::stools());?> Barhockern (Kreise).</p>
+                        <p>Maße in Metern (Breite × Tiefe), Flächen in m². Die gestrichelte Wand zwischen Gymnastik und Gastraum lässt sich einfahren, beide Räume werden dann zu einem großen Saal. Im Gastraum steht die Theke mit <?= count(SvzFloorplan::stools());?> Barhockern (Kreise).</p>
                     </figcaption>
                 </figure>
 
@@ -61,7 +61,7 @@ $groups = SvzFloorplan::groups();
                         <thead>
                             <tr>
                                 <th scope="col">Raum</th>
-                                <th scope="col">Breite × Tiefe</th>
+                                <th scope="col">Maße</th>
                                 <th scope="col">Fläche</th>
                             </tr>
                         </thead>
@@ -78,9 +78,8 @@ $groups = SvzFloorplan::groups();
                 </div>
 
                 <p class="svz-plan__note">
-                    Grundlage ist der Bauplan des Vereinsheims (Baugesuch vom 28.01.2008, Grundriss M 1:100). Die Skizze zeigt nur die Räume,
-                    die für Gäste interessant sind. Die Maße sind lichte Innenmaße. Die Küche ist L-förmig, deshalb sind beide Teile angegeben.
-                    WC-Beh. steht für das Behinderten-WC. Die Flächen stammen aus der Nutzflächenaufstellung des Plans (DIN 277). Wegen Nischen und
+                    Grundlage ist der Bauplan des SVV (Grundriss M 1:100). Die Skizze zeigt nur die Räume,
+                    die für Gäste interessant sind. Die Maße sind lichte Innenmaße. Die Flächen stammen aus der Nutzflächenaufstellung des Plans (DIN 277). Wegen Nischen und
                     Türöffnungen können sie leicht von Breite × Tiefe abweichen, zum Beispiel bei Geräte und Gastraum.
                 </p>
 

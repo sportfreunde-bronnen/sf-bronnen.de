@@ -26,7 +26,7 @@ $exterior = $page->image('svz_footer.jpg');
             <li class="svz-feature svz-reveal">
                 <span class="svz-feature__icon"><i class="fa <?= esc($feature->icon());?>" aria-hidden="true"></i></span>
                 <h3 class="svz-feature__title"><?= $feature->title()->esc();?></h3>
-                <p class="svz-feature__text"><?= $feature->text()->esc();?></p>
+                <p class="svz-feature__text"><?= $feature->text()->kirbytext();?></p>
             </li>
         <?php endforeach; ?>
     </ul>
@@ -77,9 +77,9 @@ $exterior = $page->image('svz_footer.jpg');
         <span class="svz-planteaser__icon" aria-hidden="true"><i class="fa fa-map-o"></i></span>
         <div class="svz-planteaser__body">
             <h2 class="svz-planteaser__title" id="svz-planteaser-title">Wie sind die Räume aufgeteilt?</h2>
-            <p class="svz-planteaser__text">Unsere Raumskizze zeigt Gastraum, Gymnastik, Küche, Garderobe und WCs mit allen Maßen.</p>
+            <p class="svz-planteaser__text">Unser Raumplan zeigt Gastraum, Gymnastik, Küche, Garderobe und WCs mit allen Maßen.</p>
         </div>
-        <a href="<?= $floorplan->url();?>" class="svz-btn svz-btn--primary">Raumskizze ansehen <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="<?= $floorplan->url();?>" class="svz-btn svz-btn--primary">Raumplan ansehen <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
     </section>
 <?php endif; ?>
 

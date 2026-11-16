@@ -1,4 +1,4 @@
-Title: Raumskizze
+Title: Raumplan
 
 ----
 
@@ -6,4 +6,8 @@ Headline: So sind die Räume im Sportvereinszentrum aufgeteilt
 
 ----
 
-Text: Die Skizze zeigt die wichtigsten Räume des SVZ mit Breite, Tiefe und Fläche. So können Sie sich schon vor Ihrer Anfrage ein Bild machen, wo Gastraum, Küche, Garderobe und WCs liegen.
+Text: 
+
+----
+
+Uuid: psshwpdamoq0ang1

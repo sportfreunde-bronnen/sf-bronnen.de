@@ -79,7 +79,7 @@ $lineBottom = $y(0) + 28;
 $lineLeft = $x(0) - 28;
 ?>
 <svg class="svz-plan__svg" viewBox="0 0 <?= $viewWidth;?> <?= $viewHeight;?>" role="img" aria-labelledby="svz-plan-title svz-plan-desc" focusable="false">
-    <title id="svz-plan-title">Raumskizze des Sportvereinszentrums Bronnen</title>
+    <title id="svz-plan-title">Raumplan des Sportvereinszentrums Bronnen</title>
     <desc id="svz-plan-desc">Vereinfachter Grundriss mit Gastraum, Gymnastik, Geräteraum, Küche, Kühlzelle, Lager, Garderobe, Geschäftszimmer, Eingang und WCs. Garderobe und Gastraum gehen offen ineinander über, Türen verbinden Gastraum und Küche sowie Küche und Lager. Die Wand zwischen Gymnastik und Gastraum ist gestrichelt, sie lässt sich einfahren. Im Gastraum steht die Theke mit <?= count($stools);?> Barhockern. Zu jedem Raum sind Breite mal Tiefe in Metern und die Fläche in Quadratmetern angegeben.</desc>
     <defs>
         <pattern id="svz-plan-hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
@@ -92,7 +92,7 @@ $lineLeft = $x(0) - 28;
 
     <?php foreach (SvzFloorplan::otherRooms() as $rect): ?>
         <rect class="svz-plan__other" <?= $rectAttributes($rect);?> fill="url(#svz-plan-hatch)"></rect>
-        <text class="svz-plan__text svz-plan__text--other" x="<?= $x($rect[0] + $rect[2] / 2);?>" y="<?= $y($rect[1] + $rect[3] / 2);?>">weitere Räume</text>
+        <text class="svz-plan__text svz-plan__text--other" x="<?= $x($rect[0] + $rect[2] / 2);?>" y="<?= $y($rect[1] + $rect[3] / 2);?>">Sportlerbereich</text>
     <?php endforeach; ?>
 
     <?php foreach ($rooms as $room): ?>

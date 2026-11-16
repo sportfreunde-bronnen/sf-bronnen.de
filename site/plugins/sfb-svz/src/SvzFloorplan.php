@@ -53,7 +53,7 @@ class SvzFloorplan
     {
         return [
             'geraete' => [
-                'name' => 'Geräte',
+                'name' => 'Lager',
                 'group' => 'saal',
                 'rects' => [[0.30, 0.30, 3.76, 8.70]],
                 'area' => 32.99,
@@ -74,7 +74,7 @@ class SvzFloorplan
                 'area' => 71.47,
             ],
             'garderobe' => [
-                'name' => 'Garderobe',
+                'name' => 'Eingangsbereich',
                 'group' => 'empfang',
                 'rects' => [[17.865, 9.24, 5.135, 2.385]],
                 // the upper half of the former wall to the dining room (overlaps the dining room and reaches 0.075 m into
@@ -90,25 +90,25 @@ class SvzFloorplan
                 'lines' => ['Geschäfts-', 'zimmer'],
             ],
             'eingang' => [
-                'name' => 'Eingang',
+                'name' => 'Garderobe',
                 'group' => 'empfang',
                 'rects' => [[20.99, 11.625, 2.01, 5.80]],
                 'area' => 11.66,
             ],
             'wc-beh-personal' => [
-                'name' => 'WC-Beh./Personal',
+                'name' => 'WC P. m. Behinderung',
                 'group' => 'wc',
                 'rects' => [[23.115, 16.24, 3.76, 2.45]],
                 'area' => 9.21,
             ],
             'wc-damen' => [
-                'name' => 'WC-Damen',
+                'name' => 'WC Damen',
                 'group' => 'wc',
                 'rects' => [[23.115, 14.175, 3.76, 1.89]],
                 'area' => 7.11,
             ],
             'wc-herren' => [
-                'name' => 'WC-Herren',
+                'name' => 'WC Herren',
                 'group' => 'wc',
                 'rects' => [[23.115, 11.74, 3.76, 2.26]],
                 'area' => 8.50,

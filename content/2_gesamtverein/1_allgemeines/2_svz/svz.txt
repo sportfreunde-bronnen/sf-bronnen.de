@@ -40,12 +40,7 @@ Features:
 - 
   icon: fa-th-large
   title: Flexible Räume
-  text: >
-    Der kleine Gastraum (75 m²) mit
-    großzügiger Theke bietet Platz für
-    bis zu 35 Personen. Mit dem Saal
-    (zusätzlich 90 m²) ist eine Bestuhlung
-    für bis zu 100 Personen möglich.
+  text: 'Der kleine Gastraum (ca. 75 m²) mit großzügiger Theke bietet Platz für bis zu 35 Personen. Mit dem Saal (zusätzlich 90 m²) ist eine Bestuhlung für bis zu 100 Personen möglich. (link: page://psshwpdamoq0ang1 text: Zum Raumplan).'
 - 
   icon: fa-sun-o
   title: Große Terrasse
