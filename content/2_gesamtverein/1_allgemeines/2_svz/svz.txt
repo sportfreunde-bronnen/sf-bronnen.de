@@ -6,7 +6,7 @@ Headline: Ihre Räumlichkeit für Veranstaltungen (Hochzeit, Geburtstag, Firmenf
 
 ----
 
-Text: Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Es liegt idyllisch im Grünen und lässt sich flexibel nutzen: für Ihre Hochzeit, den runden Geburtstag oder die Firmenfeier.
+Text: Lediglich fünf Fahrminuten von **Laupheim (zwischen Ulm und Biberach)** entfernt steht das 2008 erbaute Sportvereinszentrum (SVZ) der Sportfreunde Bronnen. Es liegt idyllisch am Ortsausgang von Bronnen und bildet den Mittelpunkt unseres Sportgeländes.
 
 ----
 
@@ -259,6 +259,33 @@ Faqs:
     
     **Ab 4 Wochen vor der Veranstaltung**
     100% des Gesamtbetrages
+- 
+  question: Wie ist die Ausstattung der Küche?
+  answer: |
+    - Industriespülmaschine (+ kleinere Glasspülmaschine im Thekenbereich)
+    - Kühlschrank
+    - Gefrierschrank
+    - Kühlraum (nur beim Gesamtpaket)
+    - 2 Fritteusen
+    - Herd mit vier Herdplatten
+    - Backofen
+    - Pfannen, Töpfe, Schüsseln etc.
+    - Großzügige Arbeitsplatten
+    - Servierwagen
+- 
+  question: >
+    Können wir während der Veranstaltung
+    die Ladestation (Wallbox) für E-Autos
+    benutzen?
+  answer: >
+    Ja, die Nutzung der Wallbox ist
+    möglich. Der Preis pro Kilowattstunde
+    beträgt 0,40€ und wird über Ihre
+    Rechnung abgerechnet. Bitte geben Sie
+    uns am Tag der Veranstaltung Bescheid
+    (per E-Mail an info@sf-bronnen.de). Wir
+    kümmern uns dann um die Freischaltung
+    der Wallbox.
 
 ----
 
