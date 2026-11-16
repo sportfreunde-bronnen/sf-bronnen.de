@@ -79,14 +79,10 @@ Features:
 - 
   icon: fa-leaf
   title: Sonnenstrom vom eigenen Dach
-  text: >
-    Unsere Photovoltaikanlage inklusive
-    Batteriespeicher versorgt Ihre
-    Veranstaltung zum größten Teil mit
-    regenerativer Energie. E-Fahrzeuge laden
-    Sie vor Ort (Typ 2, 11 kW). Für
-    Imbisswägen o.ä. stehen CEE Dosen (16
-    + 32 Ampere zur Verfügung).
+  text: |
+    Unsere Photovoltaikanlage inklusive Batteriespeicher versorgt Ihre Veranstaltung zum größten Teil mit regenerativer Energie. E-Fahrzeuge laden Sie vor Ort (Typ 2, 11 kW).
+    
+    Für Imbisswägen o.ä. stehen CEE Dosen (16 + 32 Ampere zur Verfügung).
 
 ----
 
@@ -217,7 +213,7 @@ Faqs:
     Beispiel: Der Mindestverzehr liegt bei 140€. Sie verbrauchen aber nur Getränke im Wert von 60€. Abrechnen werden wir dann trotzdem den Mindestverzehr von 140€.
 - 
   question: Was kosten die Getränke?
-  answer: 'Die jeweils gültige Getränkepreisliste finden Sie im Nutzungsvertrag, den Sie unter **[Downloads](/gesamtverein/allgemeines/downloads)** (Sportvereinszentrum) herunterladen können.'
+  answer: 'Die jeweils gültige Getränkepreisliste finden Sie im Nutzungsvertrag, den Sie (link: file://vCYuFzQWHMQJUWpT text: hier) herunterladen können.'
 - 
   question: >
     Wer bekommt den Tarif
