@@ -201,6 +201,12 @@ Faqs:
   question: Wie viele Personen finden im SVZ Platz?
   answer: 'Der **kleine Wirtschaftsraum** (75 m²) bietet Platz für bis zu 35 Personen. Zusammen mit dem **großen Wirtschaftsraum** (165 m²) ist eine Bestuhlung für bis zu 100 Personen möglich. Bei unseren internen Vereinsveranstaltungen bestuhlen wir mitunter auch für bis zu 120 Personen. Dann wird es aber schon kuschelig :-) Theater-, Reihen- und Inselbestuhlung sind möglich.'
 - 
+  question: Wieviele Stühle und Tische gibt es?
+  answer: |
+    Im Kleinen Wirtschaftsraum stehen Ihnen 5 Tische mit 35 Stühlen zur Verfügung. Der Große Wirtschaftsraum umfasst zusätzliche 12 Tische mit insgesamt 72 Stühlen.
+    
+    Zum Inventar gehören ebenfalls 5 Stehtische, die Sie für 6,00€ pro Stehtisch dazu mieten können.
+- 
   question: >
     Was ist der Unterschied zwischen
     Gesamtpaket und Raumpaket?
@@ -213,7 +219,7 @@ Faqs:
     Beispiel: Der Mindestverzehr liegt bei 140€. Sie verbrauchen aber nur Getränke im Wert von 60€. Abrechnen werden wir dann trotzdem den Mindestverzehr von 140€.
 - 
   question: Was kosten die Getränke?
-  answer: 'Die jeweils gültige Getränkepreisliste finden Sie im Nutzungsvertrag, den Sie (link: file://vCYuFzQWHMQJUWpT text: hier) herunterladen können.'
+  answer: 'Die jeweils gültige Getränkepreisliste finden Sie im Nutzungsvertrag, den Sie **(link: file://vCYuFzQWHMQJUWpT text: hier einsehen)** können.'
 - 
   question: >
     Wer bekommt den Tarif
