@@ -199,11 +199,11 @@ Faqs:
 
 - 
   question: Wie viele Personen finden im SVZ Platz?
-  answer: 'Der **kleine Wirtschaftsraum** (75 m²) bietet Platz für bis zu 35 Personen. Zusammen mit dem **großen Wirtschaftsraum** (165 m²) ist eine Bestuhlung für bis zu 100 Personen möglich. Bei unseren internen Vereinsveranstaltungen bestuhlen wir mitunter auch für bis zu 120 Personen. Dann wird es aber schon kuschelig :-) Theater-, Reihen- und Inselbestuhlung sind möglich.'
+  answer: 'Der **kleine Gastraum** (75 m²) bietet Platz für bis zu 35 Personen. Zusammen mit dem **Saal** (165 m²) ist eine Bestuhlung für bis zu 100 Personen möglich. Bei unseren internen Vereinsveranstaltungen bestuhlen wir mitunter auch für bis zu 120 Personen. Dann wird es aber schon kuschelig :-) Theater-, Reihen- und Inselbestuhlung sind möglich.'
 - 
   question: Wieviele Stühle und Tische gibt es?
   answer: |
-    Im Kleinen Wirtschaftsraum stehen Ihnen 5 Tische mit 35 Stühlen zur Verfügung. Der Große Wirtschaftsraum umfasst zusätzliche 12 Tische mit insgesamt 72 Stühlen.
+    Im kleinen Gastraum stehen Ihnen 5 Tische mit 35 Stühlen zur Verfügung. Der Saal umfasst zusätzliche 12 Tische mit insgesamt 72 Stühlen.
     
     Zum Inventar gehören ebenfalls 5 Stehtische, die Sie für 6,00€ pro Stehtisch dazu mieten können.
 - 

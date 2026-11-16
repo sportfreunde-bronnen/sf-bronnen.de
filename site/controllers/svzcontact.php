@@ -8,6 +8,7 @@ use Uniform\Form;
  */
 return function ($site, $pages, $page) {
     $packages = array_keys(SvzPage::PACKAGES);
+    $rooms = array_keys(SvzPage::ROOMS);
     $today = date('Y-m-d');
 
     $form = new Form([
@@ -40,6 +41,10 @@ return function ($site, $pages, $page) {
         'paket' => [
             'rules' => ['required', 'in' => [$packages]],
             'message' => 'Bitte entscheiden Sie sich für ein Paket',
+        ],
+        'raum' => [
+            'rules' => ['required', 'in' => [$rooms]],
+            'message' => 'Bitte wählen Sie aus, ob Sie den Kleinen Gastraum oder den Saal mieten möchten.',
         ],
         'mitglied' => [
             'rules' => ['required', 'in' => [['ja', 'nein']]],
@@ -78,6 +83,7 @@ return function ($site, $pages, $page) {
     return [
         'form' => $form,
         'packages' => SvzPage::PACKAGES,
+        'rooms' => SvzPage::ROOMS,
         'minDate' => $today,
         'presetDate' => $presetDate,
     ];

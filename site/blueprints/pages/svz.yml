@@ -117,8 +117,8 @@ fields:
         label: Raum
         width: 1/2
         options:
-          klein: Kleiner Wirtschaftsraum
-          gross: Großer Wirtschaftsraum
+          klein: Kleiner Gastraum
+          gross: Saal
       rent:
         type: number
         required: true

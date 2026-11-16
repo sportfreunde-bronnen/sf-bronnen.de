@@ -101,6 +101,7 @@ class SvzMailAction extends PhpMailerAction
             $weekdays = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
             $dateText = $date->format('d.m.Y') . ' (' . $weekdays[(int) $date->format('N') - 1] . ')';
             $package = \SvzPage::PACKAGES[$rawData['paket']]['title'] ?? $data['paket'];
+            $room = \SvzPage::ROOMS[$rawData['raum']]['title'] ?? $data['raum'];
             $yesNo = ['ja' => 'Ja', 'nein' => 'Nein'];
             $phone = $data['telefon'] !== '' ? $data['telefon'] : '-';
             $member = $yesNo[$rawData['mitglied']] ?? $data['mitglied'];
@@ -119,6 +120,7 @@ Hallo,
 <hr/>
 Wunschtermin: <b>{$dateText}</b>
 Paket: {$package}
+Raum: {$room}
 Aktives Mitglied: {$member}
 Servicekraft gewünscht: {$service}
 

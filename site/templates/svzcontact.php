@@ -8,6 +8,7 @@
  * @var SvzcontactPage $page
  * @var Uniform\Form $form
  * @var array $packages
+ * @var array $rooms
  * @var string $minDate
  * @var string $presetDate
  */
@@ -26,6 +27,7 @@ foreach ($form->errors() as $messages) {
 $invalid = fn(string $field): string => $form->error($field) !== [] ? ' is-invalid' : '';
 $choices = ['ja' => 'Ja', 'nein' => 'Nein'];
 $selectedPackage = $form->old('paket');
+$selectedRoom = $form->old('raum');
 ?>
 <?php snippet('header', ['styles' => ['svz']]); ?>
 <div class="page page--svz">
@@ -104,6 +106,22 @@ $selectedPackage = $form->old('paket');
                                             <i class="fa <?= $package['icon'];?>" aria-hidden="true"></i>
                                             <span class="svz-choice__title"><?= esc($package['title']);?></span>
                                             <span class="svz-choice__text"><?= esc($package['subtitle']);?></span>
+                                        </span>
+                                    </label>
+                                <?php endforeach; ?>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="svz-form__group">
+                            <legend>Raum *</legend>
+                            <div class="svz-choices svz-choices--cards<?= $invalid('raum');?>">
+                                <?php foreach ($rooms as $key => $room): ?>
+                                    <label class="svz-choice">
+                                        <input type="radio" name="raum" value="<?= $key;?>"<?= $selectedRoom === $key ? ' checked' : '';?> required>
+                                        <span class="svz-choice__box">
+                                            <i class="fa <?= $room['icon'];?>" aria-hidden="true"></i>
+                                            <span class="svz-choice__title"><?= esc($room['title']);?></span>
+                                            <span class="svz-choice__text"><?= esc($room['size']);?>, <?= esc($room['capacity']);?>, <?= esc($room['subtitle']);?></span>
                                         </span>
                                     </label>
                                 <?php endforeach; ?>

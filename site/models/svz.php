@@ -62,14 +62,14 @@ class SvzPage extends DownloadsPage
      */
     public const ROOMS = [
         'klein' => [
-            'title' => 'Kleiner Wirtschaftsraum',
+            'title' => 'Kleiner Gastraum',
             'subtitle' => 'mit Küche',
             'size' => '75 m²',
             'capacity' => 'bis 35 Personen',
             'icon' => 'fa-glass',
         ],
         'gross' => [
-            'title' => 'Großer Wirtschaftsraum',
+            'title' => 'Saal',
             'subtitle' => 'mit Küche',
             'size' => '165 m²',
             'capacity' => 'bis 100 Personen',
