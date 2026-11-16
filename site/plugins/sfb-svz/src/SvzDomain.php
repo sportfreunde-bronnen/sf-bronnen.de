@@ -27,6 +27,12 @@ class SvzDomain
     public const CONTACT_SLUG = 'anfrage';
 
     /**
+     * Slug of the floor plan sketch page (subpage of the SVZ page). On the SVZ domain the sketch is
+     * available as short URL: vermietung.sf-bronnen.de/grundriss
+     */
+    public const PLAN_SLUG = 'grundriss';
+
+    /**
      * Read an option of the sfb-svz plugin.
      *
      * Kirby's option() does not find a value that is written as nested array in the config.php
@@ -161,6 +167,22 @@ class SvzDomain
     }
 
     /**
+     * Id of the floor plan sketch page (subpage of the SVZ page)
+     */
+    public static function planPageId(): string
+    {
+        return static::pageId() . '/' . static::PLAN_SLUG;
+    }
+
+    /**
+     * The floor plan sketch page
+     */
+    public static function planPage(): ?Page
+    {
+        return App::instance()->site()->find(static::planPageId());
+    }
+
+    /**
      * E-mail address which receives the requests of the SVZ contact form (option sfb.svz.recipient)
      * or null if it is not configured (or not a valid address).
      */
@@ -267,6 +289,10 @@ class SvzDomain
             return static::url(static::CONTACT_SLUG);
         }
 
+        if ($page->id() === static::planPageId()) {
+            return static::url(static::PLAN_SLUG);
+        }
+
         return static::url($page->uri());
     }
 
@@ -275,7 +301,8 @@ class SvzDomain
      *
      * - SVZ domain, start page: render the SVZ page
      * - SVZ domain, /anfrage: render the contact form page
-     * - SVZ domain, old URL of the SVZ page or the contact form page: redirect to the short URL
+     * - SVZ domain, /grundriss: render the floor plan sketch page
+     * - SVZ domain, old URL of the SVZ page, the contact form page or the sketch page: redirect to the short URL
      * - SVZ domain, any other page: redirect to the main site
      * - main domain, URL of the SVZ page: redirect to the SVZ domain
      *
@@ -311,12 +338,24 @@ class SvzDomain
                 }
             }
 
+            if ($path === static::PLAN_SLUG) {
+                $planPage = static::planPage();
+
+                if ($planPage !== null) {
+                    return $kirby->site()->visit($planPage);
+                }
+            }
+
             if ($path === static::pageId()) {
                 return Response::redirect(static::url() . '/' . $query, 301);
             }
 
             if ($path === static::contactPageId()) {
                 return Response::redirect(static::url(static::CONTACT_SLUG) . $query, 301);
+            }
+
+            if ($path === static::planPageId()) {
+                return Response::redirect(static::url(static::PLAN_SLUG) . $query, 301);
             }
 
             if (str_starts_with($path, static::pageId() . '/')) {
@@ -332,6 +371,8 @@ class SvzDomain
                 $target = static::url() . '/';
             } elseif ($path === static::contactPageId()) {
                 $target = static::url(static::CONTACT_SLUG);
+            } elseif ($path === static::planPageId()) {
+                $target = static::url(static::PLAN_SLUG);
             } else {
                 $target = static::url($path);
             }

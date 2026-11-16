@@ -123,6 +123,7 @@ The subdomain must point to the same document root (`public/`) as the main domai
 - `svz.<domain>/` renders the SVZ page with an own header (no main navigation of the club site, with a link back to the club site); the footer stays.
 - `<domain>/gesamtverein/allgemeines/svz` (and its subpages) is redirected permanently to the subdomain, every link to the page (navigation, footer, ...) points to the subdomain.
 - `svz.<domain>/anfrage` is the own contact form of the SVZ (subpage `anfrage` of the SVZ page, see below); the old URL `<domain>/gesamtverein/allgemeines/svz/anfrage` is redirected to it.
+- `svz.<domain>/grundriss` is the floor plan sketch of the SVZ (subpage `grundriss`, see below); the old URL `<domain>/gesamtverein/allgemeines/svz/grundriss` is redirected to it.
 - Every other path on the subdomain is redirected to the same path on the main domain, links in the SVZ site which leave the SVZ site (footer, ...) point to the main domain.
 - Every page of the SVZ site (start page, `/anfrage`, further subpages) carries `<link rel="canonical">` pointing to its URL on the subdomain (without query string), see `SvzDomain::canonicalUrl()` and `site/snippets/header.php`. Other pages and requests to any other host get no canonical tag.
 - Requests to any other host (e.g. `localhost:1949`) behave as before.
@@ -152,6 +153,18 @@ The form is protected by Cloudflare Turnstile (action `svz-contact`); the SVZ ho
 
 A click on a day of the availability calendar shows the button "Den xx.xx.xxxx direkt anfragen" below the calendar, which opens the form
 with the date preselected (`/anfrage?datum=YYYY-MM-DD`). Texts of the form page are editable in the panel (page "Anfrage" below the SVZ page).
+
+### SVZ floor plan sketch
+
+The subpage `grundriss` (template `svzplan`, linked in the "Infos" section of the SVZ page) shows a simplified floor plan of the SVZ as an inline SVG
+with the dimensions (width x depth) and areas of the rooms which are relevant for guests, plus a table of all rooms.
+The sketch also shows the doors between dining room and kitchen, and kitchen and storage room (`SvzFloorplan::doors()`),
+and the movable partition wall between gym and dining room as a dashed wall (`SvzFloorplan::movableWall()`).
+There is no wall between garderobe and dining room, they are one open area (only the colors change, see `joints` of both rooms in `SvzFloorplan::rooms()`).
+The counter in the dining room (`SvzFloorplan::counter()`: U-shaped counter at the north side with block, connecting piece and cabinet, L-shaped bar with rounded corner, one more cabinet) is drawn with its 11 bar stools as circles (`SvzFloorplan::stools()`).
+The data (rooms, doors, coordinates in meters, areas) comes from the building plan `data/svz-plan.pdf` and is maintained in `site/plugins/sfb-svz/src/SvzFloorplan.php`;
+the drawing is done by the snippet `site/snippets/svz/floorplan.php`, the styles are part of `frontend/src/sass/svz.scss` (`.svz-plan`).
+Texts of the page are editable in the panel (page "Raumskizze" below the SVZ page). If the page is deleted, the link in the "Infos" section disappears.
 
 ## Digital membership application ("Mitglied werden")
 

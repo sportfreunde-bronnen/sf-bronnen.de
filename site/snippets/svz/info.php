@@ -71,6 +71,18 @@ $exterior = $page->image('svz_footer.jpg');
     </div>
 <?php endif; ?>
 
+<?php // sketch of the floor plan with the dimensions of the rooms (subpage with the template svzplan) ?>
+<?php if ($floorplan = $page->children()->template('svzplan')->first()): ?>
+    <section class="svz-planteaser svz-reveal" aria-labelledby="svz-planteaser-title">
+        <span class="svz-planteaser__icon" aria-hidden="true"><i class="fa fa-map-o"></i></span>
+        <div class="svz-planteaser__body">
+            <h2 class="svz-planteaser__title" id="svz-planteaser-title">Wie sind die Räume aufgeteilt?</h2>
+            <p class="svz-planteaser__text">Unsere Raumskizze zeigt Gastraum, Gymnastik, Küche, Garderobe und WCs mit allen Maßen.</p>
+        </div>
+        <a href="<?= $floorplan->url();?>" class="svz-btn svz-btn--primary">Raumskizze ansehen <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    </section>
+<?php endif; ?>
+
 <?php if ($page->facts()->isNotEmpty()): ?>
     <section class="svz-facts svz-reveal" aria-labelledby="svz-facts-title">
         <div class="svz-facts__intro">

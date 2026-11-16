@@ -1889,6 +1889,407 @@ html:not(.svz-js) .svz-panel + .svz-panel {
 }
 
 // ------------------------------------------------------------------
+// Floor plan sketch (subpage "grundriss", see templates/svzplan.php and snippets/svz/floorplan.php)
+// ------------------------------------------------------------------
+$planSaal: #dcecf7;
+$planKueche: #fff0c9;
+$planEmpfang: #e6ebf0;
+$planWc: #dcf1e6;
+$planTheke: #ecd9b8;
+$planOther: #f4f6f8;
+$planOtherLine: #d3dbe2;
+
+.svz--plan {
+  .svz-formcard {
+    max-width: 1180px;
+  }
+
+  // a sketch is wider than a phone: it scrolls horizontally instead of becoming unreadable
+  .svz-plan {
+    margin: 0 0 clamp(32px, 5vw, 56px);
+
+    &__scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &__svg {
+      display: block;
+      width: 100%;
+      min-width: 820px;
+      height: auto;
+    }
+
+    &__wall {
+      fill: $deepBlue;
+      stroke: $deepBlue;
+      stroke-linejoin: round;
+      stroke-width: 1;
+    }
+
+    &__hatch-background {
+      fill: $planOther;
+    }
+
+    &__hatch-line {
+      stroke: $planOtherLine;
+      stroke-width: 2;
+    }
+
+    &__area {
+      stroke: none;
+      transition: fill 0.2s ease;
+    }
+
+    &__room {
+      &--saal .svz-plan__area {
+        fill: $planSaal;
+      }
+
+      &--kueche .svz-plan__area {
+        fill: $planKueche;
+      }
+
+      &--empfang .svz-plan__area {
+        fill: $planEmpfang;
+      }
+
+      &--wc .svz-plan__area {
+        fill: $planWc;
+      }
+
+      &:hover .svz-plan__area {
+        stroke: $brightBlue;
+        stroke-width: 2;
+      }
+    }
+
+    &__entrance {
+      fill: $planEmpfang;
+    }
+
+    // counter with bar stools in the dining room
+    &__counter {
+      pointer-events: none;
+    }
+
+    &__counter-shape {
+      fill: $planTheke;
+      stroke: $deepBlue;
+      stroke-linejoin: round;
+      stroke-width: 1.4;
+    }
+
+    &__counter-label {
+      fill: $deepBlue;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+
+    &__stool {
+      fill: #fff;
+      stroke: $deepBlue;
+      stroke-width: 1.2;
+    }
+
+    // movable partition wall: the two rooms are one, only a dashed line divides them
+    &__movable {
+      pointer-events: none;
+    }
+
+    &__movable-area {
+      fill: $planSaal;
+    }
+
+    &__movable-line {
+      stroke: $deepBlue;
+      stroke-dasharray: 9 6;
+      stroke-width: 3.5;
+    }
+
+    // doors: gap in the wall and the swing of the leaf
+    &__door {
+      pointer-events: none;
+    }
+
+    &__door-opening {
+      fill: #fff;
+    }
+
+    &__door-swing {
+      fill: none;
+      stroke: $deepBlue;
+      stroke-linejoin: round;
+      stroke-width: 1.4;
+    }
+
+    &__arrow {
+      fill: $svzAccent;
+      stroke: $deepBlue;
+      stroke-linejoin: round;
+      stroke-width: 1.2;
+    }
+
+    &__text {
+      fill: $deepBlue;
+      font-size: 13.5px;
+      text-anchor: middle;
+      dominant-baseline: central;
+      pointer-events: none;
+
+      &--name {
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      &--dimension {
+        fill: $darkBlue;
+        font-weight: 600;
+      }
+
+      &--area {
+        fill: $textMuted;
+      }
+
+      &--other {
+        fill: $steel;
+        font-size: 14px;
+        font-style: italic;
+      }
+    }
+
+    &__room.is-small &__text {
+      font-size: 12px;
+
+      &--name {
+        font-size: 14px;
+      }
+    }
+
+    &__measure {
+      line {
+        stroke: $textMuted;
+        stroke-width: 1.2;
+      }
+
+      text {
+        fill: $textMuted;
+        font-size: 14px;
+        font-weight: 600;
+        text-anchor: middle;
+      }
+    }
+
+    // only needed where the sketch does not fit (see media query below)
+    &__hint {
+      display: none;
+      margin: 0.75rem 0 0;
+      color: $textMuted;
+      font-size: 0.9rem;
+
+      .fa {
+        margin-right: 0.4rem;
+      }
+    }
+
+    &__name {
+      white-space: nowrap;
+    }
+
+    &__legend {
+      margin-top: 1rem;
+      color: $textMuted;
+      font-size: 0.92rem;
+
+      ul {
+        @include list-reset;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      li {
+        margin: 0 1.5rem 0.35rem 0;
+      }
+
+      p {
+        margin: 0.35rem 0 0;
+      }
+    }
+
+    &__swatch {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-right: 0.6rem;
+      border: 1px solid rgba($deepBlue, 0.25);
+      border-radius: 3px;
+      vertical-align: -2px;
+
+      &--saal {
+        background: $planSaal;
+      }
+
+      &--kueche {
+        background: $planKueche;
+      }
+
+      &--empfang {
+        background: $planEmpfang;
+      }
+
+      &--wc {
+        background: $planWc;
+      }
+
+      &--other {
+        background: repeating-linear-gradient(45deg, $planOther, $planOther 3px, $planOtherLine 3px, $planOtherLine 5px);
+      }
+
+      &--door {
+        background: #fff;
+        border-color: $deepBlue;
+        border-radius: 0 100% 0 0;
+      }
+
+      &--theke {
+        background: $planTheke;
+        border-color: $deepBlue;
+      }
+
+      &--stool {
+        background: #fff;
+        border-color: $deepBlue;
+        border-radius: 50%;
+      }
+
+      &--movable {
+        height: 0;
+        border: 0;
+        border-top: 3px dashed $deepBlue;
+        border-radius: 0;
+        vertical-align: 3px;
+      }
+    }
+
+    &__heading {
+      margin: 0 0 1rem;
+      color: $deepBlue;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    &__tablewrap {
+      margin-bottom: 1.5rem;
+      overflow-x: auto;
+      border: 1px solid $borderColor;
+      border-radius: $radius;
+    }
+
+    &__table {
+      width: 100%;
+      margin: 0;
+      border-collapse: collapse;
+      font-variant-numeric: tabular-nums;
+
+      th,
+      td {
+        padding: 0.7rem 1rem;
+        border-bottom: 1px solid $borderColor;
+        text-align: left;
+      }
+
+      thead th {
+        background: $mistBlue;
+        color: $deepBlue;
+        font-size: 0.85rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      tbody tr:last-child th,
+      tbody tr:last-child td {
+        border-bottom: 0;
+      }
+
+      tbody th {
+        color: $deepBlue;
+        font-weight: 600;
+      }
+
+      td,
+      thead th:not(:first-child) {
+        white-space: nowrap;
+      }
+
+      td:last-child,
+      thead th:last-child {
+        text-align: right;
+      }
+    }
+
+    &__note {
+      margin: 0 0 1.75rem;
+      color: $textMuted;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+// ------------------------------------------------------------------
+// Infos: link to the floor plan sketch
+// ------------------------------------------------------------------
+.svz-planteaser {
+  display: flex;
+  align-items: center;
+  margin: clamp(40px, 6vw, 72px) 0 0;
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid $borderColor;
+  border-radius: $radiusLg;
+  background: $mistBlue;
+
+  &__icon {
+    display: flex;
+    flex: 0 0 56px;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-right: 1.25rem;
+    border-radius: 16px;
+    background: $paleBlue;
+    color: $brightBlue;
+    font-size: 1.6rem;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-right: 1.5rem;
+  }
+
+  &__title {
+    margin: 0 0 0.35rem;
+    color: $deepBlue;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  &__text {
+    margin: 0;
+    color: $textMuted;
+  }
+
+  .svz-btn {
+    flex: 0 0 auto;
+  }
+}
+
+// ------------------------------------------------------------------
 // FAQs (accordion)
 // Without JavaScript all answers stay open, the toggle only works with the class "svz-js" on <html>.
 // ------------------------------------------------------------------
@@ -2150,11 +2551,41 @@ html:not(.svz-js) .svz-panel + .svz-panel {
   .svz--form .svz-form__row--split {
     grid-template-columns: 1fr;
   }
+
+  .svz--plan .svz-plan__hint {
+    display: block;
+  }
+
+  .svz-planteaser {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__icon {
+      margin: 0 0 1rem;
+    }
+
+    &__body {
+      margin: 0 0 1.25rem;
+    }
+
+    .svz-btn {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 575px) {
   .svz-features {
     grid-template-columns: 1fr;
+  }
+
+  .svz--plan .svz-plan__table {
+    font-size: 0.9rem;
+
+    th,
+    td {
+      padding: 0.6rem;
+    }
   }
 
   .svz-package {

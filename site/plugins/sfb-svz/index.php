@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/src/SvzDomain.php';
+require_once __DIR__ . '/src/SvzFloorplan.php';
 
 Kirby::plugin('sfb/svz', [
     'options' => [
