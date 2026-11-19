@@ -19,6 +19,9 @@ $categoryLabels = ['damen' => 'Damen', 'junioren' => 'Junioren', 'juniorinnen' =
 
 $dash = '<span class="stats-empty">–</span>';
 
+// teams the list can be filtered by
+$squads = [1, 2];
+
 // wins / games and the quote of single, double and team game
 $resultCell = function (?array $group) use ($dash): string {
     if (!$group || !($group['games'] ?? 0)) {
@@ -79,26 +82,41 @@ $bestCell = function (?array $group, string $bestLabel) use ($dash): string {
                     </ul>
                 <?php endif; ?>
 
+                <div class="stats-squad-filter btn-group mb-3" role="group" aria-label="Nach Mannschaft filtern">
+                    <button type="button" class="btn btn-outline-primary active" data-squad="">Alle</button>
+                    <?php foreach ($squads as $squad): ?>
+                        <button type="button" class="btn btn-outline-primary" data-squad="<?= $squad;?>"><?= $squad;?>. Mannschaft</button>
+                    <?php endforeach; ?>
+                </div>
+
                 <div class="tab-content">
                     <?php $isFirst = true; ?>
                     <?php foreach ($competitions as $key => $competition): ?>
                         <?php
                         $players = $competition['players'];
-                        $highlights = $page->highlights($players);
+                        // highlights and ranks are prepared for all players and for each team separately; the filter only switches
+                        $highlightViews = ['' => $page->highlights($players)];
+                        $squadRanks = [];
+                        foreach ($squads as $squad) {
+                            $highlightViews[$squad] = $page->highlights(SpielerstatistikPage::playersOfSquad($players, $squad));
+                            $squadRanks[$squad] = SpielerstatistikPage::squadRanks($players, $squad);
+                        }
                         $hasTeamgame = array_filter(array_column($players, 'teamgame')) !== [];
                         ?>
                         <section class="tab-pane fade<?= $isFirst ? ' show active' : '';?>" id="stats-<?= $key;?>" role="tabpanel" aria-labelledby="stats-tab-<?= $key;?>" aria-label="<?= esc($competition['title'], 'attr');?>">
-                            <?php if ($highlights !== []): ?>
-                                <div class="stats-highlights">
-                                    <?php foreach ($highlights as $highlight): ?>
-                                        <div class="stats-highlight stats-highlight--<?= $highlight['key'];?>">
-                                            <span class="stats-highlight__label"><?= esc($highlight['label']);?><?php if ($highlight['note']): ?> <small>(<?= esc($highlight['note']);?>)</small><?php endif; ?></span>
-                                            <strong class="stats-highlight__value"><?= esc($highlight['value']);?></strong>
-                                            <span class="stats-highlight__names"><?= esc(implode(', ', $highlight['names']));?></span>
-                                        </div>
-                                    <?php endforeach; ?>
-                                </div>
-                            <?php endif; ?>
+                            <?php foreach ($highlightViews as $squad => $highlights): ?>
+                                <?php if ($highlights !== []): ?>
+                                    <div class="stats-highlights" data-squad-view="<?= $squad;?>"<?= $squad === '' ? '' : ' hidden';?>>
+                                        <?php foreach ($highlights as $highlight): ?>
+                                            <div class="stats-highlight stats-highlight--<?= $highlight['key'];?>">
+                                                <span class="stats-highlight__label"><?= esc($highlight['label']);?><?php if ($highlight['note']): ?> <small>(<?= esc($highlight['note']);?>)</small><?php endif; ?></span>
+                                                <strong class="stats-highlight__value"><?= esc($highlight['value']);?></strong>
+                                                <span class="stats-highlight__names"><?= esc(implode(', ', $highlight['names']));?></span>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
 
                             <div class="stats-table-wrap">
                                 <table class="stats-table">
@@ -124,11 +142,12 @@ $bestCell = function (?array $group, string $bestLabel) use ($dash): string {
                                             <?php
                                             $rank = (int)$player['rank'];
                                             $categoryLabel = $categoryLabels[$player['category']] ?? null;
+                                            $playerKey = SpielerstatistikPage::playerKey($player);
                                             ?>
-                                            <tr<?= $player['active'] ? '' : ' class="is-inactive"';?>>
+                                            <tr data-squad="<?= SpielerstatistikPage::squadNumber($player['squad']);?>"<?php foreach ($squads as $squad): ?><?= isset($squadRanks[$squad][$playerKey]) ? ' data-rank-' . $squad . '="' . $squadRanks[$squad][$playerKey] . '"' : '';?><?php endforeach; ?><?= $player['active'] ? '' : ' class="is-inactive"';?>>
                                                 <th scope="row" class="stats-player">
                                                     <div class="stats-player__inner">
-                                                        <span class="stats-rank<?= in_array($rank, [1, 2, 3], true) ? ' stats-rank--' . $rank : '';?>"><?= $player['rank'] ?? '';?></span>
+                                                        <span class="stats-rank<?= in_array($rank, [1, 2, 3], true) ? ' stats-rank--' . $rank : '';?>" data-rank-all="<?= $player['rank'] ?? '';?>"><?= $player['rank'] ?? '';?></span>
                                                         <span class="stats-player__info">
                                                             <span class="stats-player__name"><?= esc($player['name']);?></span>
                                                             <?php if ($categoryLabel): ?>
@@ -181,4 +200,29 @@ $bestCell = function (?array $group, string $bestLabel) use ($dash): string {
         </div>
     </div>
 </div>
+<script>
+(function () {
+    var buttons = document.querySelectorAll('.stats-squad-filter [data-squad]');
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var squad = button.getAttribute('data-squad');
+            buttons.forEach(function (other) { other.classList.toggle('active', other === button); });
+            document.querySelectorAll('.stats-table tbody tr').forEach(function (row) {
+                var hidden = squad !== '' && row.getAttribute('data-squad') !== squad;
+                row.hidden = hidden;
+                if (hidden) { return; }
+                // ranks start at 1 again within a team (with gold, silver and bronze badges)
+                var badge = row.querySelector('.stats-rank');
+                var rank = (squad === '' ? badge : row).getAttribute(squad === '' ? 'data-rank-all' : 'data-rank-' + squad) || '';
+                badge.textContent = rank;
+                badge.classList.remove('stats-rank--1', 'stats-rank--2', 'stats-rank--3');
+                if (['1', '2', '3'].indexOf(rank) !== -1) { badge.classList.add('stats-rank--' + rank); }
+            });
+            document.querySelectorAll('.stats-highlights').forEach(function (highlights) {
+                highlights.hidden = highlights.getAttribute('data-squad-view') !== squad;
+            });
+        });
+    });
+})();
+</script>
 <?php snippet('footer'); ?><?php snippet('close'); ?>

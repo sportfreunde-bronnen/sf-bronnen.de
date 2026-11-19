@@ -123,6 +123,61 @@ class SpielerstatistikPage extends RoleAwarePage
     }
 
     /**
+     * Players of one team only (all players if $squad is null)
+     */
+    public static function playersOfSquad(array $players, ?int $squad): array
+    {
+        return $squad === null
+            ? array_values($players)
+            : array_values(array_filter($players, fn (array $player) => self::squadNumber($player['squad'] ?? null) === $squad));
+    }
+
+    /**
+     * New ranks within one team: the order of the players is kept, players with the same rank at the DVOS keep
+     * sharing a rank. Returns player id (or name) => rank.
+     */
+    public static function squadRanks(array $players, int $squad): array
+    {
+        $ranks = [];
+        $previousOriginal = null;
+        $previousRank = 0;
+
+        foreach (self::playersOfSquad($players, $squad) as $index => $player) {
+            $original = $player['rank'] ?? null;
+            $rank = ($original !== null && $original === $previousOriginal) ? $previousRank : $index + 1;
+            $ranks[self::playerKey($player)] = $rank;
+            $previousOriginal = $original;
+            $previousRank = $rank;
+        }
+
+        return $ranks;
+    }
+
+    /**
+     * Key to identify a player within a competition
+     */
+    public static function playerKey(array $player): string
+    {
+        return ($player['id'] ?? '') . '|' . $player['name'];
+    }
+
+    /**
+     * Number of the team ("Mannschaft") of a squad name: "Sportfreunde Bronnen I" / "Sportfreunde Bronnen 1" => 1,
+     * "... II" / "... 2" => 2; null if the squad is unknown or has no number
+     */
+    public static function squadNumber(?string $squad): ?int
+    {
+        if ($squad === null || !preg_match('/\s(\d+|[IVX]+)\s*$/i', trim($squad), $matches)) {
+            return null;
+        }
+
+        $value = strtoupper($matches[1]);
+        $roman = ['I' => 1, 'II' => 2, 'III' => 3, 'IV' => 4, 'V' => 5];
+
+        return ctype_digit($value) ? (int)$value : ($roman[$value] ?? null);
+    }
+
+    /**
      * Number in german notation, e.g. 1234 => "1.234"; "–" for values the DVOS does not provide
      */
     public static function number(int|float|null $value): string
