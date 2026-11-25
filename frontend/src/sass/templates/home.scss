@@ -281,7 +281,7 @@
       width: 4.5rem;
       height: 4px;
       display: block;
-      background: linear-gradient(90deg, $brightBlue, $accentYellow);
+      background: linear-gradient(90deg, $lightBlue, $darkBlue);
       border-radius: 2px;
     }
   }
@@ -472,14 +472,14 @@
       left: 0;
       width: 4.5rem;
       height: 4px;
-      background: linear-gradient(90deg, $accentYellow, $brightBlue);
+      background: linear-gradient(90deg, $darkBlue, $lightBlue);
       border-radius: 2px;
       @include media-breakpoint-up(lg) {
         top: 0.25rem;
         bottom: 0.25rem;
         width: 4px;
         height: auto;
-        background: linear-gradient(180deg, $accentYellow, $brightBlue);
+        background: linear-gradient(180deg, $darkBlue, $lightBlue);
       }
     }
   }

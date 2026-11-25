@@ -1470,7 +1470,7 @@ ul#gallery-grid .hover-content:hover a {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, $lightBlue, $brightBlue 55%, $accentYellow);
+    background: linear-gradient(90deg, $lightBlue, $brightBlue 55%, $darkBlue);
   }
 
   @include media-breakpoint-up(md) {
