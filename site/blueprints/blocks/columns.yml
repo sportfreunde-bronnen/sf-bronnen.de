@@ -1,0 +1,26 @@
+name: Spalten
+icon: grid
+preview: fields
+fields:
+  layout:
+    label: Aufteilung
+    type: toggles
+    default: "50-50"
+    required: true
+    options:
+      "50-50": 2 Spalten (1/2 + 1/2)
+      "33-67": 2 Spalten (1/3 + 2/3)
+      "67-33": 2 Spalten (2/3 + 1/3)
+      "33-33-33": 3 Spalten (je 1/3)
+    help: Auf kleinen Bildschirmen werden die Spalten untereinander angezeigt.
+  column1:
+    extends: fields/columnblocks
+    label: Spalte 1
+  column2:
+    extends: fields/columnblocks
+    label: Spalte 2
+  column3:
+    extends: fields/columnblocks
+    label: Spalte 3
+    when:
+      layout: "33-33-33"

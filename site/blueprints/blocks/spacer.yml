@@ -1,0 +1,13 @@
+name: Abstand
+icon: expand
+preview: fields
+fields:
+  size:
+    label: Größe
+    type: toggles
+    default: medium
+    required: true
+    options:
+      small: Klein
+      medium: Mittel
+      large: Groß

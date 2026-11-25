@@ -1,0 +1,39 @@
+name: Button
+icon: url
+preview: fields
+fields:
+  text:
+    label: Beschriftung
+    type: text
+    required: true
+    width: 1/2
+  link:
+    label: Link
+    type: link
+    required: true
+    width: 1/2
+  style:
+    label: Darstellung
+    type: toggles
+    default: primary
+    required: true
+    width: 1/2
+    options:
+      primary: Gefüllt
+      outline: Umrandet
+  align:
+    label: Ausrichtung
+    type: toggles
+    default: left
+    required: true
+    width: 1/2
+    options:
+      left: Links
+      center: Mitte
+      right: Rechts
+  newtab:
+    label: In neuem Tab öffnen
+    type: toggle
+    text:
+      - Nein
+      - Ja
