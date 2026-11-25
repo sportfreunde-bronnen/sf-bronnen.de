@@ -13,6 +13,11 @@ $blocks = $page->blocks()->toBlocks()->filterBy('isHidden', false);
 $hasBlocks = $blocks->isNotEmpty();
 $images = $hasBlocks ? null : $page->images();
 $hasImages = $images !== null && $images->count() > 0;
+$hasPeople = $page->people()->isNotEmpty();
+// pages without any content only structure the navigation: show the pages below instead of an empty page
+$isEmpty = !$hasHeadline && !$hasText && !$hasBlocks && !$hasImages && !$hasPeople;
+$subPages = $isEmpty ? $page->children()->listed() : null;
+$showTree = $subPages !== null && $subPages->isNotEmpty();
 ?>
 <div class="page">
 <div class="main-container container ps-sm-0 pe-sm-0">
@@ -54,9 +59,19 @@ $hasImages = $images !== null && $images->count() > 0;
             <?php endif; ?>
         </article>
     <?php endif; ?>
-    <?php if ($page->people()->isNotEmpty()): ?>
+    <?php if ($showTree): ?>
+        <div class="page-tree" role="navigation" aria-label="Unterseiten von <?= esc($page->title(), 'attr');?>">
+            <div class="page-tree__toolbar">
+                <input type="search" class="page-tree__filter" placeholder="Seiten filtern ..." aria-label="Unterseiten filtern" hidden>
+                <button type="button" class="page-tree__toggle" data-expanded="false" hidden>Alle aufklappen</button>
+            </div>
+            <?php snippet('page-tree', ['items' => $subPages]);?>
+            <p class="page-tree__empty" hidden>Keine passende Seite gefunden.</p>
+        </div>
+    <?php endif; ?>
+    <?php if ($hasPeople): ?>
         <?php snippet('people');?>
     <?php endif; ?>
 </div>
 </div>
-<?php snippet('footer'); ?><?php snippet('close'); ?>
+<?php snippet('footer', $showTree ? ['scripts' => ['page-tree']] : []); ?><?php snippet('close'); ?>

@@ -1,0 +1,239 @@
+// Page tree of empty structure pages (template default, snippet page-tree): one card per subpage in a grid, deeper
+// levels as collapsible lists with connector lines. Filter and expand/collapse all are added by assets/js/page-tree.js.
+
+.page-tree {
+  margin-bottom: 2rem;
+
+  [hidden] {
+    display: none !important;
+  }
+}
+
+.page-tree__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+
+  // both controls are shown by JavaScript only
+  &:not(:has(:not([hidden]))) {
+    display: none;
+  }
+}
+
+.page-tree__filter {
+  flex: 1 1 14rem;
+  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  color: $textColor;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%235f7080' stroke-width='2' stroke-linecap='round' viewBox='0 0 16 16'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='m11 11 3.5 3.5'/%3E%3C/svg%3E") no-repeat 0.9rem center;
+  border: 1px solid $borderColor;
+  border-radius: 50rem;
+  box-shadow: $shadowSm;
+  transition: $transition;
+
+  &:focus {
+    outline: 0;
+    border-color: $brightBlue;
+    box-shadow: 0 0 0 0.2rem rgba(0, 124, 181, 0.2);
+  }
+}
+
+.page-tree__toggle {
+  padding: 0.6rem 1.25rem;
+  font-weight: 500;
+  color: $darkBlue;
+  background: #fff;
+  border: 1px solid $borderColor;
+  border-radius: 50rem;
+  box-shadow: $shadowSm;
+  transition: $transition;
+
+  &:hover,
+  &:focus-visible {
+    color: #fff;
+    background: $brightBlue;
+    border-color: $brightBlue;
+  }
+}
+
+.page-tree__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+.page-tree__card {
+  position: relative;
+  padding: 1.75rem 1.5rem 1.25rem;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: $radiusLg;
+  box-shadow: $shadow;
+  transition: box-shadow 0.25s ease;
+  animation: page-tree-rise 0.5s ease backwards;
+  // staggered only for the first cards, later ones would start the animation long before they are visible
+  animation-delay: calc(min(var(--i, 0), 8) * 60ms);
+
+  // sporty color bar on top, grows on hover
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, $lightBlue, $brightBlue 55%, $darkBlue);
+    transition: height 0.25s ease;
+  }
+
+  // no movement on hover: a card which moves away from the pointer makes hover flicker while scrolling
+  &:hover,
+  &:focus-within {
+    box-shadow: $shadowLg;
+
+    &::before {
+      height: 8px;
+    }
+  }
+}
+
+.page-tree__card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+
+  a {
+    color: $darkBlue;
+
+    &:hover {
+      color: $lightBlue;
+    }
+  }
+}
+
+.page-tree__count {
+  flex: none;
+  min-width: 1.6rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  color: $darkBlue;
+  background-color: $paleBlue;
+  border-radius: 50rem;
+}
+
+.page-tree__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  // nested lists: connector line on the left, one short branch per entry
+  .page-tree__list {
+    margin: 0.15rem 0 0.25rem 0.45rem;
+    padding-left: 1.1rem;
+    border-left: 2px solid $paleBlue;
+  }
+}
+
+.page-tree__item {
+  position: relative;
+  padding: 0.2rem 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1.05rem;
+    left: -1.1rem;
+    width: 0.8rem;
+    border-top: 2px solid $paleBlue;
+  }
+
+  // entries of the first list level sit directly in the card (no connector)
+  .page-tree__card > .page-tree__list > &::before {
+    display: none;
+  }
+
+  a {
+    color: $textColor;
+    transition: color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: $lightBlue;
+    }
+  }
+
+  summary > a {
+    flex: 1;
+  }
+}
+
+.page-tree__details {
+  summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    // chevron which turns when the entry is open
+    &::before {
+      content: '';
+      flex: none;
+      width: 0.45rem;
+      height: 0.45rem;
+      margin: 0 0.15rem 0 0.1rem;
+      border-right: 2px solid $brightBlue;
+      border-bottom: 2px solid $brightBlue;
+      transform: rotate(-45deg);
+      transition: transform 0.2s ease;
+    }
+  }
+
+  &[open] > summary::before {
+    transform: rotate(45deg);
+  }
+
+  &[open] > .page-tree__list {
+    animation: page-tree-open 0.25s ease;
+  }
+}
+
+.page-tree__empty {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  color: $textMuted;
+}
+
+@keyframes page-tree-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+@keyframes page-tree-open {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-tree__card,
+  .page-tree__details[open] > .page-tree__list {
+    animation: none;
+    transition: none;
+  }
+}

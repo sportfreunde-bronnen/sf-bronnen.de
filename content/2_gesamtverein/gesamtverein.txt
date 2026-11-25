@@ -2,7 +2,7 @@ Title: Gesamtverein
 
 ----
 
-Text: Dieser Text wird nirgends angezeigt. Also einfach ignorieren :)
+Text:
 
 ----
 
