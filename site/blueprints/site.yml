@@ -7,8 +7,13 @@ tabs:
   pages:
     label: Seiten
     icon: page
-    preset: pages
-    unlisted: true
+    fields:
+      listed:
+        label: Hauptseiten gemäß Navigation
+        type: pagelist
+        status: listed
+        layout: cards
+        size: small
   permissions:
     label: Seitenrechte
     icon: lock
@@ -58,7 +63,7 @@ tabs:
               hidden: Ausblenden
           pages:
             label: Seiten
-            type: pages
+            type: pagepicker
             multiple: true
             required: true
             width: 1/1

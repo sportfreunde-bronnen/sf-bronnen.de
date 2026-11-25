@@ -1,5 +1,18 @@
 title: Veranstaltungen
-preset: page
-pages:
-  template:
-    - veranstaltung
+columns:
+  main:
+    width: 2/3
+    fields: {}
+  sidebar:
+    width: 1/3
+    fields:
+      pages:
+        label: Seiten
+        type: pagelist
+        status: all
+        layout: list
+        blueprints: veranstaltung
+      files:
+        label: Dateien
+        type: filelist
+        layout: list

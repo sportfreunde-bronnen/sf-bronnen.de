@@ -1,8 +1,22 @@
 title: Angebote
-preset: page
 options:
   template: false
   url: false
   delete: false
-pages:
-  template: kurs
+columns:
+  main:
+    width: 2/3
+    fields: {}
+  sidebar:
+    width: 1/3
+    fields:
+      pages:
+        label: Seiten
+        type: pagelist
+        status: all
+        layout: list
+        blueprints: kurs
+      files:
+        label: Dateien
+        type: filelist
+        layout: list

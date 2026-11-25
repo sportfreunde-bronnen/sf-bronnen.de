@@ -15,7 +15,7 @@ Sponsoren:
 - 
   name: Academy Fahrschule Roloff GmbH
   ort: Laupheim
-  webseite: >
+  webseite: >-
     http://academy-fahrschule-roloff.de/start/start.html
 - 
   name: Landschlächterei Angele
@@ -52,7 +52,7 @@ Sponsoren:
 - 
   name: Apotheker Andreas Buck
   ort: Laupheim
-  webseite: >
+  webseite: >-
     https://www.neue-apotheke-laupheim-app.de/
 - 
   name: Flaschnerei Dürr
@@ -97,7 +97,7 @@ Sponsoren:
 - 
   name: Autohaus Humm
   ort: Laupheim
-  webseite: >
+  webseite: >-
     https://www.volkswagen.de/de/haendler-werkstatt/autohaus-humm-laupheim
 - 
   name: Paul Jäger
@@ -138,7 +138,7 @@ Sponsoren:
 - 
   name: Locher Haustechnik
   ort: Erbach
-  webseite: >
+  webseite: >-
     http://www.locher-haustechnik.de/cms/front_content.php
 - 
   name: Mangold Immobilien
@@ -179,12 +179,12 @@ Sponsoren:
 - 
   name: SV Sparkassen Versicherung
   ort: Laupheim
-  webseite: >
+  webseite: >-
     https://www.sparkassenversicherung.de/content/aussendienst/d/dietmar_koenig/team/
 - 
   name: Volksbank Allgäu-Oberschwaben
   ort: Laupheim
-  webseite: >
+  webseite: >-
     https://www.volksbank-allgaeu-oberschwaben.de/startseite.html
 - 
   name: Werz Zerspanungstechnik
@@ -201,7 +201,7 @@ Sponsoren:
 - 
   name: Röchling Industrial Laupheim GmbH
   ort: Laupheim
-  webseite: >
+  webseite: >-
     https://www.roechling-industrial.com/de/laupheim
 - 
   name: 'M & D Flachdachtechnik'
@@ -252,7 +252,7 @@ Sponsoren:
   ort: Laupheim
   webseite: https://www.wilhelm-laupheim.de
 - 
-  name: >
+  name: >-
     HETTICH Sachverständigenbüro für
     Immobilienbewertung
   ort: Baustetten

@@ -10,27 +10,27 @@ Ereignisse:
 
 - 
   jahr: "1949"
-  ereignis: >
+  ereignis: >-
     Gründung der Sportfreunde Bronnen (9.
     April)
 - 
   jahr: "1950"
-  ereignis: >
+  ereignis: >-
     Einstieg in den Verbandsspielbetrieb
     (C-Klasse)
 - 
   jahr: "1951"
-  ereignis: >
+  ereignis: >-
     Erste Einweihung Spielfeld mit
     Pokalspielen
 - 
   jahr: "1953"
-  ereignis: >
+  ereignis: >-
     Meister C-Klasse, Aufstieg in die
     B-Klasse
 - 
   jahr: "1955"
-  ereignis: >
+  ereignis: >-
     Meister B-Klasse, Aufstieg in die
     A-Klasse
 - 
@@ -38,7 +38,7 @@ Ereignisse:
   ereignis: Abstieg in die B-Klasse
 - 
   jahr: "1959"
-  ereignis: |
+  ereignis: |-
     - Meister B-Klasse
     - Aufstieg in die A-Klasse
     - Bezirkspokalsieger
@@ -51,7 +51,7 @@ Ereignisse:
   ereignis: Abstieg in die B-Klasse
 - 
   jahr: "1967"
-  ereignis: >
+  ereignis: >-
     Pokalbester der B-Klasse,
     Vize-Bezirkspokalsieger, Eintragung ins
     Vereinsregister
@@ -60,12 +60,12 @@ Ereignisse:
   ereignis: Bau einer Gerätehütte
 - 
   jahr: "1969"
-  ereignis: >
+  ereignis: >-
     20jähriges Vereinsjubiläum mit
     Pokalturnier
 - 
   jahr: "1974"
-  ereignis: |
+  ereignis: |-
     - Abstieg in die C-Klasse (Kreisliga B)
     - Start der ersten Frauengymnastik-Gruppe
     - Sportplatzrenovierung
@@ -75,7 +75,7 @@ Ereignisse:
   ereignis: Vize-Bezirkspokalsieger
 - 
   jahr: "1979"
-  ereignis: |
+  ereignis: |-
     - Erweiterung Geräte-/Vereinshütte
     - Erstellung sanitärer Anlagen
     - 30 jähriges Vereinsjubiläum mit Pokalturnier
@@ -87,7 +87,7 @@ Ereignisse:
   ereignis: Erneute Vergrößerung der Vereinshütte
 - 
   jahr: "1985"
-  ereignis: |
+  ereignis: |-
     - Meister Kreisliga B
     - Aufstieg in die Kreisliga A
 - 
@@ -95,7 +95,7 @@ Ereignisse:
   ereignis: Baubeginn zweites Rasenspielfeld
 - 
   jahr: "1989"
-  ereignis: |
+  ereignis: |-
     - Fertigstellung des zweiten Rasenspielfeldes
     - 40 jähriges Vereinsjubiläum mit Pokalturnier
 - 
@@ -106,7 +106,7 @@ Ereignisse:
   ereignis: Erster Zwickel-Night-Cup
 - 
   jahr: "1995"
-  ereignis: >
+  ereignis: >-
     Vergrößerung/Modernisierung der
     Vereinshütte und sanitären Anlagen
 - 
@@ -114,27 +114,27 @@ Ereignisse:
   ereignis: Abstieg in die Kreisliga B
 - 
   jahr: "1998"
-  ereignis: >
+  ereignis: >-
     Meister Kreisliga B, Aufstieg in die
     Kreisliga A
 - 
   jahr: "1999"
-  ereignis: |
+  ereignis: |-
     - Abstieg in die Kreisliga B
     - 50 jähriges Vereinsjubiläum
 - 
   jahr: "2001"
-  ereignis: |
+  ereignis: |-
     - Meister Kreisliga B
     - Aufstieg in die Kreisliga A
 - 
   jahr: "2003"
-  ereignis: |
+  ereignis: |-
     - Abstieg in die Kreisliga B
     - Zehnter Zwickel-Night-Cup
 - 
   jahr: "2005"
-  ereignis: |
+  ereignis: |-
     - Meister Kreisliga B
     - Aufstieg in die Kreisliga A
 - 
@@ -145,7 +145,7 @@ Ereignisse:
   ereignis: Baubeginn SVZ
 - 
   jahr: "2009"
-  ereignis: |
+  ereignis: |-
     - 60 jähriges Vereinsjubiläum
     - Einweihung des neuen Sportheims
 - 
@@ -156,7 +156,7 @@ Ereignisse:
   ereignis: 20jähriges Jubiläum Uhlmann-Halder-Cup
 - 
   jahr: "2017"
-  ereignis: |
+  ereignis: |-
     - Austausch der Flutlichtanlagen gegen moderne LED Scheinwerfer
     - Neubau das Hauptspielfeldes
     - Bewässerungsanlage für beide Spielfelder
@@ -165,19 +165,19 @@ Ereignisse:
     - Neugestaltung des angrenzenden Spielplatzes, TÜV-Abnahme und Übergabe an Gemeinde
 - 
   jahr: "2018"
-  ereignis: |
+  ereignis: |-
     - Fertigstellung des neuen Hauptspielfeldes
     - Renovierung des Trainingsplatzes
     - Pflasterung der Fläche zwischen SVZ und Hauptspielfeld
     - Instandsetzung des Parkplatzes mit Abgrenzung der einzelnen Parkflächen sowie Installation einer Höhenbegrenzung bei der Einfahrt auf das Vereinsgelände
 - 
   jahr: "2019"
-  ereignis: |
+  ereignis: |-
     - Feier des 70-jährigen Vereinsbestehens mit einem Festabend sowie der Ausrichtung des Rottalpokals
     - Erstellung einer zweiten Vereinschronik in Buchform
 - 
   jahr: "2020"
-  ereignis: |
+  ereignis: |-
     - Renovierung des SVZ (Streichen von innen und außen)
     - Integration einer smarten Bewässerungsanlage
     - COVID-19 Pandemie
@@ -189,7 +189,7 @@ Ereignisse:
   ereignis: '- Inbetriebnahme einer Photovoltaikanlage mit einer Gesamtleistung von 44,8kWp auf dem Dach unseres SVZ.'
 - 
   jahr: "2024"
-  ereignis: |
+  ereignis: |-
     - Familientag zum 75-jährigen Vereinsjubiläum
     - Gründung der Abteilung Darts
 - 

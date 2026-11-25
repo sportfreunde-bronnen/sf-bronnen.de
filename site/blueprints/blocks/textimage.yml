@@ -12,7 +12,7 @@ fields:
     placeholder: Text …
   image:
     label: Bild
-    type: files
+    type: filepicker
     query: model.images
     multiple: false
     required: true

@@ -1,0 +1,16 @@
+type: blocks
+label: Inhalt der Spalte
+empty: Noch kein Inhalt. Mit dem Plus lassen sich Überschriften, Texte, Bilder und mehr hinzufügen.
+fieldsets:
+  - heading
+  - text
+  - list
+  - quote
+  - image
+  - gallery
+  - line
+  - button
+  - notice
+  - accordion
+  - spacer
+  - video

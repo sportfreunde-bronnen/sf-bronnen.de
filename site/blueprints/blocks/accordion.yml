@@ -1,0 +1,23 @@
+name: Aufklappbereich
+icon: angle-down
+wysiwyg: true
+fields:
+  title:
+    label: Titel
+    type: text
+    required: true
+    icon: title
+  text:
+    label: Inhalt
+    type: writer
+    nodes:
+      - bulletList
+      - orderedList
+    required: true
+    placeholder: Text …
+  open:
+    label: Standardmäßig geöffnet
+    type: toggle
+    text:
+      - Nein
+      - Ja

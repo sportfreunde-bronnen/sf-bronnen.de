@@ -5,7 +5,7 @@ Title: Gymnastik
 Zitate:
 
 - 
-  text: >
+  text: >-
     Sorge dich gut um deinen Körper. Es ist
     der einzige Ort, den du zum Leben hast.
   person: Jim Rohn
@@ -13,23 +13,23 @@ Zitate:
   text: Im Sport ist kein Moment wie der andere.
   person: Michael Schumacher
 - 
-  text: >
+  text: >-
     Ausdauer wird früher oder später
     belohnt – meistens aber später.
   person: Wilhelm Busch
 - 
-  text: >
+  text: >-
     Der härteste Schritt zu Fitness ist der
     erste. Nimm ihn jetzt!
   person: Heather Montgomery
 - 
-  text: >
+  text: >-
     Bewegung macht beweglich – und
     Beweglichkeit kann manches in Bewegung
     setzen.
   person: Paul Haschek (deutscher Theologe)
 - 
-  text: >
+  text: >-
     Nur wer sich bewegt, steht meist mitten
     im Leben.
   person: Martin Gerhard Reisenberg
@@ -37,7 +37,7 @@ Zitate:
   text: 'Nur wo Körper- und Geistestätigkeit in geordneter lebendiger Wechselwirkung stehen, ist wahres Leben.'
   person: Friedrich Fröbel
 - 
-  text: >
+  text: >-
     Wir sind verantwortlich für das, was
     wir tun, aber auch für das, was wir
     nicht tun.

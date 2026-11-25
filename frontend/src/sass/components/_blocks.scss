@@ -303,6 +303,288 @@
   .block-gallery > .block-figure__caption {
     margin-top: 1rem;
   }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Columns: two or three columns with their own blocks, stacked on small screens
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block-columns {
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+    grid-template-columns: minmax(0, 1fr);
+
+    @include media-breakpoint-up(md) {
+      gap: 2.5rem;
+
+      &--50-50 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      &--33-67 {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+      }
+
+      &--67-33 {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      }
+
+      &--33-33-33 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  }
+
+  // a heading at the top of a column does not need the space of a new section
+  .block-columns__column > .block--heading:first-child {
+    margin-top: 0;
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Divider, quote, list and video
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block--line hr {
+    margin: 0.5rem 0;
+    border: 0;
+    border-top: 1px solid $borderColor;
+    opacity: 1;
+  }
+
+  .block--list {
+    color: $textColor;
+    font-size: 1.08rem;
+    line-height: 1.75;
+
+    ul,
+    ol {
+      margin: 0;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.35rem;
+      }
+    }
+  }
+
+  .block--quote blockquote {
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    border-left: 4px solid $brightBlue;
+    color: $darkBlue;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
+
+    p {
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 0.5rem;
+      color: $textMuted;
+      font-size: 0.95rem;
+      font-style: normal;
+
+      &::before {
+        content: '— ';
+      }
+    }
+  }
+
+  .block--video {
+    figure {
+      margin: 0;
+    }
+
+    video,
+    iframe {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      border-radius: $radius;
+      box-shadow: $shadowSm;
+    }
+
+    figcaption {
+      margin-top: 0.75rem;
+      color: $textMuted;
+      font-size: 0.95rem;
+    }
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Button
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block-button {
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  .block-button__link {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    border: 2px solid $brightBlue;
+    border-radius: $radius;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+    transition: $transition;
+
+    &--primary {
+      background: $brightBlue;
+      color: #fff;
+
+      &:hover,
+      &:focus-visible {
+        border-color: $darkBlue;
+        background: $darkBlue;
+        color: #fff;
+      }
+    }
+
+    &--outline {
+      background: transparent;
+      color: $brightBlue;
+
+      &:hover,
+      &:focus-visible {
+        background: $brightBlue;
+        color: #fff;
+      }
+    }
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Notice
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block-notice {
+    padding: 1.1rem 1.35rem;
+    border-left: 4px solid $brightBlue;
+    border-radius: $radius;
+    background: $paleBlue;
+    color: $textColor;
+    line-height: 1.65;
+
+    &--success {
+      border-left-color: #2e8b57;
+      background: #e9f6ee;
+    }
+
+    &--warning {
+      border-left-color: $accentYellow;
+      background: #fff6e0;
+    }
+  }
+
+  .block-notice__title {
+    margin: 0 0 0.35rem;
+    color: $darkBlue;
+    font-weight: 600;
+  }
+
+  .block-notice__text {
+    p,
+    ul,
+    ol {
+      margin-bottom: 0.75rem;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.5rem;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Spacer
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block-spacer {
+    height: 1rem;
+
+    &--small {
+      height: 0.5rem;
+    }
+
+    &--large {
+      height: 3rem;
+    }
+  }
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // Accordion
+  // -------------------------------------------------------------------------------------------------------------------
+
+  .block-accordion {
+    border: 1px solid $borderColor;
+    border-radius: $radius;
+    background: #fff;
+
+    &[open] .block-accordion__title::after {
+      transform: rotate(-135deg);
+    }
+  }
+
+  .block-accordion__title {
+    position: relative;
+    padding: 0.9rem 3rem 0.9rem 1.25rem;
+    color: $darkBlue;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 1.25rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      margin-top: -0.45rem;
+      border-right: 2px solid $brightBlue;
+      border-bottom: 2px solid $brightBlue;
+      transform: rotate(45deg);
+      transition: transform 0.2s ease;
+    }
+  }
+
+  .block-accordion__text {
+    padding: 0 1.25rem 1.1rem;
+    color: $textColor;
+    line-height: 1.7;
+
+    p,
+    ul,
+    ol {
+      margin-bottom: 0.75rem;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.5rem;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

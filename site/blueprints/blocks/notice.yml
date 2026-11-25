@@ -1,0 +1,27 @@
+name: Hinweisbox
+icon: info
+wysiwyg: true
+preview: fields
+fields:
+  kind:
+    label: Art
+    type: toggles
+    default: info
+    required: true
+    options:
+      info: Info
+      success: Erfolg
+      warning: Wichtig
+  title:
+    label: Titel
+    type: text
+    icon: title
+    help: Optional
+  text:
+    label: Text
+    type: writer
+    nodes:
+      - bulletList
+      - orderedList
+    required: true
+    placeholder: Text …
