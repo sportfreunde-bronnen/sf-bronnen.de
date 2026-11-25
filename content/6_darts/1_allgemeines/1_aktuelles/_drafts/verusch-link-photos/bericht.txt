@@ -6,7 +6,7 @@ Datum: 2026-09-29
 
 ----
 
-Author: - user://swwweG6B
+Author: 
 
 ----
 
@@ -18,12 +18,7 @@ Teaserimage: - file://q72gqqWxUS5mjHV4
 
 ----
 
-Textimages:
-
-- file://q72gqqWxUS5mjHV4
-- file://B0pCK3iowItitkpV
-- file://WhWAFqhEx8x41pKi
-- file://WKnb6dUy2lyqcF0B
+Textimages: - file://WhWAFqhEx8x41pKi
 
 ----
 
