@@ -8,21 +8,12 @@ tabs:
     label: Seiten
     icon: page
     fields:
-      drafts:
-        label: Entwürfe
-        type: pagelist
-        status: drafts
-        layout: list
-      unlisted:
-        label: Nicht gelistet
-        type: pagelist
-        status: unlisted
-        layout: list
       listed:
-        label: Veröffentlicht
+        label: Hauptseiten gemäß Navigation
         type: pagelist
         status: listed
-        layout: list
+        layout: cards
+        size: small
   permissions:
     label: Seitenrechte
     icon: lock

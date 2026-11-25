@@ -2,7 +2,6 @@
 
 use Kirby\Cms\File;
 use Kirby\Cms\Page;
-use Kirby\Cms\Site;
 use Kirby\Exception\PermissionException;
 
 /**
@@ -107,20 +106,6 @@ final class RolePageAccess
         if ($parent instanceof Page && self::levelFor($parent) !== null) {
             throw new PermissionException(
                 message: 'Die Seite "' . $parent->title() . '" ist für Ihre Rolle schreibgeschützt, ihre Dateien können nicht geändert werden.'
-            );
-        }
-    }
-
-    /**
-     * Denies moving a page below a page which is restricted (read only or hidden) for the role of the current user
-     *
-     * @throws PermissionException
-     */
-    public static function guardMove(Page $page, Page|Site $parent): void
-    {
-        if ($parent instanceof Page && self::levelFor($parent) !== null) {
-            throw new PermissionException(
-                message: 'Die Seite "' . $page->title() . '" kann nicht unter "' . $parent->title() . '" verschoben werden, dieser Bereich ist für Ihre Rolle gesperrt.'
             );
         }
     }
