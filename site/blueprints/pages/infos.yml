@@ -3,11 +3,25 @@ options:
   changeStatus: true
   changeTitle: true
   delete: true
-preset: page
-fields:
-  headline:
-    extends: fields/headline
-  infotext:
-    type: writer
-    label: Begrüßungstext
-  people: fields/people
+columns:
+  main:
+    width: 2/3
+    fields:
+      headline:
+        extends: fields/headline
+      infotext:
+        type: writer
+        label: Begrüßungstext
+      people: fields/people
+  sidebar:
+    width: 1/3
+    fields:
+      pages:
+        label: Seiten
+        type: pagelist
+        status: all
+        layout: list
+      files:
+        label: Dateien
+        type: filelist
+        layout: list

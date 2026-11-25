@@ -44,7 +44,7 @@ Ansprechpartner:
   email: connyrohmer@web.de
   shortcut: svz
 - 
-  name: >
+  name: >-
     Ansprechpartner Bandenwerbung
     (Förderverein)
   aufgabe: Bandenwerbung

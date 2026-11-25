@@ -33,7 +33,7 @@ fields:
     type: textarea
   vimage:
     label: Bild
-    type: files
+    type: filepicker
     query: page.images
     multiple: false
     width: 2/3
@@ -48,7 +48,7 @@ fields:
     type: line
   doc:
     label: Optionales Dokument zum Download
-    type: files
+    type: filepicker
     multiple: false
     width: 1/2
   documentDescription:
@@ -59,4 +59,4 @@ fields:
   related:
     label: Veranstaltungs Empfehlung
     help: Wird in der Box "Auch interessant" angezeigt
-    type: pages
+    type: pagepicker

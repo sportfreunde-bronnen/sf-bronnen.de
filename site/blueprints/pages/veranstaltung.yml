@@ -10,7 +10,7 @@ columns:
         extends: fields/veranstaltung
   sidebar:
     width: 1/4
-    sections:
+    fields:
       files:
-        type: files
-        headline: Dateien
+        type: filelist
+        label: Dateien

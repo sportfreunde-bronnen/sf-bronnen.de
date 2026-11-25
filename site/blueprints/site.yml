@@ -7,8 +7,22 @@ tabs:
   pages:
     label: Seiten
     icon: page
-    preset: pages
-    unlisted: true
+    fields:
+      drafts:
+        label: Entwürfe
+        type: pagelist
+        status: drafts
+        layout: list
+      unlisted:
+        label: Nicht gelistet
+        type: pagelist
+        status: unlisted
+        layout: list
+      listed:
+        label: Veröffentlicht
+        type: pagelist
+        status: listed
+        layout: list
   permissions:
     label: Seitenrechte
     icon: lock
@@ -58,7 +72,7 @@ tabs:
               hidden: Ausblenden
           pages:
             label: Seiten
-            type: pages
+            type: pagepicker
             multiple: true
             required: true
             width: 1/1

@@ -3,19 +3,27 @@ options:
   template: false
   url: false
   status: true
-pages: false
-preset: page
-fields:
-  headline: fields/headline
-  downloads:
-    title: Dateien
-    type: structure
+columns:
+  main:
+    width: 2/3
     fields:
-      category:
-        label: Kategorie
-        type: text
-        required: true
+      headline: fields/headline
       downloads:
+        title: Dateien
+        type: structure
+        fields:
+          category:
+            label: Kategorie
+            type: text
+            required: true
+          downloads:
+            label: Dateien
+            type: filepicker
+            multiple: true
+  sidebar:
+    width: 1/3
+    fields:
+      files:
         label: Dateien
-        type: files
-        multiple: true
+        type: filelist
+        layout: list

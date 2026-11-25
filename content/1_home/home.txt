@@ -49,7 +49,7 @@ Slides:
   buttontext: Jetzt informieren und mieten
 - 
   title: Sportfreunde Fanshop
-  text: >
+  text: >-
     Auf der Suche nach SFB Merch oder
     Geschenken? Viel Spaß beim Shoppen!
   textposition: left
@@ -60,7 +60,7 @@ Slides:
   buttontext: Zum Fanshop
 - 
   title: Photovoltaikanlage
-  text: >
+  text: >-
     Für Interessierte stellen wir die
     aktuellen Echtzeit Leistungsdaten
     unserer 44,8 kWp PV-Anlage öffentlich

@@ -9,7 +9,7 @@ Headline: Alle Trainer der Sportfreunde Bronnen
 Coaches:
 
 - 
-  name: >
+  name: >-
     Widmayer, Josef Zoller (Spielertrainer),
     Ackermann, Rudolf Rechtsteiner
   zeitraum: '1949 - 1958'
@@ -50,12 +50,12 @@ Coaches:
   name: Günther Seidler
   zeitraum: '1981 - 1984'
 - 
-  name: >
+  name: >-
     Karl-Heinz Lemke (einige Wochen Hans
     Heim / Krankheitsvertretung)
   zeitraum: '1984 - 1986'
 - 
-  name: >
+  name: >-
     Gottfried Wirth / Erich Heber, Peter
     Schlecht
   zeitraum: '1986 - 1987'

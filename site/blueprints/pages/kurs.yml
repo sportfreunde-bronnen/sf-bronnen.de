@@ -1,14 +1,28 @@
 title: Gymnastik Kurs
-preset: page
-fields:
-  headline: fields/headline
-  text:
-    label: Beschreibungstext
-    type: textarea
-    required: true
-  hinweis:
-    label: Hinweis
-    type: text
-    help: Präsenter Hinweis auf der Kursseite (z.B. "Handtücher mitbringen" o.ä.)
-  kurs:
-    extends: fields/kurs
+columns:
+  main:
+    width: 2/3
+    fields:
+      headline: fields/headline
+      text:
+        label: Beschreibungstext
+        type: textarea
+        required: true
+      hinweis:
+        label: Hinweis
+        type: text
+        help: Präsenter Hinweis auf der Kursseite (z.B. "Handtücher mitbringen" o.ä.)
+      kurs:
+        extends: fields/kurs
+  sidebar:
+    width: 1/3
+    fields:
+      pages:
+        label: Seiten
+        type: pagelist
+        status: all
+        layout: list
+      files:
+        label: Dateien
+        type: filelist
+        layout: list

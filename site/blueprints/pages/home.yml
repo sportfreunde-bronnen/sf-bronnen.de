@@ -127,14 +127,14 @@ fields:
           right: Rechts
       sliderImage:
         label: Bild
-        type: files
+        type: filepicker
       linksHeadline:
         label: Links
         type: headline
         help: Link hinter dem "Mehr erfahren" Button. Internet ODER externer Link
       internalLink:
         label: Internet Link
-        type: pages
+        type: pagepicker
       externalLink:
         label: Externer Link
         type: url

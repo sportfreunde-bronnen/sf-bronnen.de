@@ -1,8 +1,22 @@
 title: Mannschaften
-preset: page
-pages:
-  template: mannschaft
 options:
   template: false
   url: false
   delete: false
+columns:
+  main:
+    width: 2/3
+    fields: {}
+  sidebar:
+    width: 1/3
+    fields:
+      pages:
+        label: Seiten
+        type: pagelist
+        status: all
+        layout: list
+        blueprints: mannschaft
+      files:
+        label: Dateien
+        type: filelist
+        layout: list

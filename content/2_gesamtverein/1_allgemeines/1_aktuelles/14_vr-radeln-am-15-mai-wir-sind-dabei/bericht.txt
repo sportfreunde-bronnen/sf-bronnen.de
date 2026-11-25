@@ -23,9 +23,9 @@ Teaserimage:
 
 Textimages:
 
-- >
+- >-
   webcenterplus_vrradeln_2022_lp_kampagne-startseite_1600x550.jpeg
-- >
+- >-
   stempelstationen-mit-landkreis_2022-01.png
 
 ----

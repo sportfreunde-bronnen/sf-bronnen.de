@@ -24,4 +24,4 @@ fields:
         width: 1/3
       bild:
         label: Bild
-        type: files
+        type: filepicker

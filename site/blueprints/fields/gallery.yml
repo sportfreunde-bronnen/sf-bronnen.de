@@ -9,7 +9,7 @@ fields:
     help: Überschrift der Galerie
   galleryImages:
     label: Bildergalerie
-    type: files
+    type: filepicker
     mode: multiple
     query: page.images
     help: Bilder, die in der Galerie angezeigt werden sollen

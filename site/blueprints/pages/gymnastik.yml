@@ -1,22 +1,36 @@
 title: Gymnastik
-preset: page
 options:
   template: false
   url: false
   delete: false
   status: false
-fields:
-  zitate:
-    label: Zitate für Kursseiten
-    type: structure
-    sortable: false
-    help: Werden auf den einzelnen Kursseiten zufällig ausgewählt und angezeigt
-    entry: >
-      <b>{{text}}</b> ({{person}})
+columns:
+  main:
+    width: 2/3
     fields:
-      text:
-        label: Zitat
-        type: text
-      person:
-        label: Zitat von
-        type: text
+      zitate:
+        label: Zitate für Kursseiten
+        type: structure
+        sortable: false
+        help: Werden auf den einzelnen Kursseiten zufällig ausgewählt und angezeigt
+        entry: >
+          <b>{{text}}</b> ({{person}})
+        fields:
+          text:
+            label: Zitat
+            type: text
+          person:
+            label: Zitat von
+            type: text
+  sidebar:
+    width: 1/3
+    fields:
+      pages:
+        label: Seiten
+        type: pagelist
+        status: all
+        layout: list
+      files:
+        label: Dateien
+        type: filelist
+        layout: list

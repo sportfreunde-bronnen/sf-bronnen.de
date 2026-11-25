@@ -23,7 +23,7 @@ columns:
             help: Schreibgeschützt
           author:
             label: Autor
-            type: users
+            type: userpicker
             required: true
             width: 1/3
             help: Autor des Artikels
@@ -34,7 +34,7 @@ columns:
             help: Externer Autor (z.B. Reporter einer Zeitung)
           teaserImage:
             label: Teaser Bild
-            type: files
+            type: filepicker
             options: query
             required: true
             multiple: false
@@ -42,7 +42,7 @@ columns:
             query: page.images
           textImages:
             label: Bilder für Text
-            type: files
+            type: filepicker
             mode: multiple
             query: page.images
             help: Das erste Bild ist das Hauptbild des Berichts ganz oben. Alle weiteren Bilder werden in den Text eingebettet.
@@ -58,7 +58,7 @@ columns:
 
   sidebar:
     width: 1/4
-    sections:
+    fields:
       files:
-        type: files
-        headline: Dateien
+        type: filelist
+        label: Dateien
