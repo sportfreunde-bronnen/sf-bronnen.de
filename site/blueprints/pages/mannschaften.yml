@@ -15,7 +15,9 @@ columns:
         type: pagelist
         status: all
         layout: list
-        blueprints: mannschaft
+        blueprints:
+        - mannschaft
+        - ah
       files:
         label: Dateien
         type: filelist

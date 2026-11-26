@@ -30,6 +30,9 @@ columns:
         type: pagelist
         status: all
         layout: list
+        templates:
+        - default
+        - angebote
       files:
         label: Dateien
         type: filelist

@@ -2,8 +2,4 @@ Title: AH
 
 ----
 
-Text: 
-
-----
-
 Uuid: EdnYnpF1jRWVTNTL
