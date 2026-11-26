@@ -141,6 +141,40 @@ $statsBronze: #b5733c;
       }
     }
 
+    // sortable column headers
+    .stats-sort {
+      display: block;
+      width: 100%;
+      padding: 0;
+      background: none;
+      border: 0;
+      color: inherit;
+      cursor: pointer;
+      font: inherit;
+      text-align: inherit;
+
+      &::after {
+        content: '\2195';
+        margin-left: 0.3em;
+        opacity: 0.35;
+      }
+
+      &:hover::after,
+      &:focus-visible::after {
+        opacity: 0.8;
+      }
+    }
+
+    thead th[aria-sort='ascending'] .stats-sort::after {
+      content: '\2191';
+      opacity: 1;
+    }
+
+    thead th[aria-sort='descending'] .stats-sort::after {
+      content: '\2193';
+      opacity: 1;
+    }
+
     tbody tr:last-child > * {
       border-bottom: 0;
     }

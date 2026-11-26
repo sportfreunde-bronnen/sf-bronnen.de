@@ -32,17 +32,26 @@ $resultCell = function (?array $group) use ($dash): string {
         . '<span class="stats-sub">' . SpielerstatistikPage::quote($group['quote']) . '</span>';
 };
 
-// number of short games / high finishes and the best one
-$bestCell = function (?array $group, string $bestLabel) use ($dash): string {
-    $count = $group['count'] ?? null;
-    $best = $group['best'] ?? null;
+// number of short games / high finishes
+$countCell = function (?int $count) use ($dash): string {
+    return $count ? SpielerstatistikPage::number($count) . '×' : $dash;
+};
 
-    if ($count === null && $best === null) {
-        return $dash;
-    }
+// best short game / highest high finish
+$bestCell = function (?int $best) use ($dash): string {
+    return $best ? SpielerstatistikPage::number($best) : $dash;
+};
 
-    return '<span class="stats-main">' . SpielerstatistikPage::number($count) . '×</span>'
-        . '<span class="stats-sub">' . $bestLabel . ' ' . SpielerstatistikPage::number($best) . '</span>';
+// attribute with the value a column is sorted by (no attribute: no value, always sorted last)
+$sortValue = function (int|float|null $value): string {
+    return $value === null ? '' : ' data-sort="' . (float)$value . '"';
+};
+
+// header cell that sorts the table; $type: "desc" (highest first) or "asc" (lowest first)
+$sortHeader = function (string $label, string $type, string $small = '') {
+    return '<th scope="col" aria-sort="none">'
+        . '<button type="button" class="stats-sort" data-sort-type="' . $type . '">' . $label
+        . ($small ? '<small>' . $small . '</small>' : '') . '</button></th>';
 };
 ?>
 <?php snippet('header', ['styles' => ['spielerstatistik']]); ?>
@@ -123,18 +132,20 @@ $bestCell = function (?array $group, string $bestLabel) use ($dash): string {
                                     <thead>
                                         <tr>
                                             <th scope="col" class="stats-player">Spieler</th>
-                                            <th scope="col">Punkte</th>
-                                            <th scope="col">Spiele</th>
-                                            <th scope="col">Siege</th>
-                                            <th scope="col">Quote</th>
-                                            <th scope="col">Einzel<small>Siege / Spiele</small></th>
-                                            <th scope="col">Doppel<small>Siege / Spiele</small></th>
+                                            <?= $sortHeader('Punkte', 'desc');?>
+                                            <?= $sortHeader('Spiele', 'desc');?>
+                                            <?= $sortHeader('Siege', 'desc');?>
+                                            <?= $sortHeader('Quote', 'desc');?>
+                                            <?= $sortHeader('Einzel', 'desc', 'Siege / Spiele');?>
+                                            <?= $sortHeader('Doppel', 'desc', 'Siege / Spiele');?>
                                             <?php if ($hasTeamgame): ?>
-                                                <th scope="col">Teamgame<small>Siege / Spiele</small></th>
+                                                <?= $sortHeader('Teamgame', 'desc', 'Siege / Spiele');?>
                                             <?php endif; ?>
-                                            <th scope="col">180er</th>
-                                            <th scope="col">High-Finish<small>Anzahl / höchstes</small></th>
-                                            <th scope="col">Shortgame<small>Anzahl / bestes</small></th>
+                                            <?= $sortHeader('180er', 'desc');?>
+                                            <?= $sortHeader('High-Finishes', 'desc');?>
+                                            <?= $sortHeader('Bestes HF', 'desc');?>
+                                            <?= $sortHeader('Shortgames', 'desc');?>
+                                            <?= $sortHeader('Bestes SG', 'asc');?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -162,10 +173,10 @@ $bestCell = function (?array $group, string $bestLabel) use ($dash): string {
                                                         </span>
                                                     </div>
                                                 </th>
-                                                <td class="stats-points"><?= SpielerstatistikPage::number($player['points']);?></td>
-                                                <td><?= SpielerstatistikPage::number($player['games']);?></td>
-                                                <td><?= SpielerstatistikPage::number($player['wins']);?></td>
-                                                <td class="stats-quote">
+                                                <td class="stats-points"<?= $sortValue($player['points']);?>><?= SpielerstatistikPage::number($player['points']);?></td>
+                                                <td<?= $sortValue($player['games']);?>><?= SpielerstatistikPage::number($player['games']);?></td>
+                                                <td<?= $sortValue($player['wins']);?>><?= SpielerstatistikPage::number($player['wins']);?></td>
+                                                <td class="stats-quote"<?= $sortValue($player['quote']);?>>
                                                     <?php if ($player['quote'] === null): ?>
                                                         <?= $dash;?>
                                                     <?php else: ?>
@@ -173,14 +184,16 @@ $bestCell = function (?array $group, string $bestLabel) use ($dash): string {
                                                         <span class="stats-bar" style="--value: <?= (float)$player['quote'];?>"></span>
                                                     <?php endif; ?>
                                                 </td>
-                                                <td><?= $resultCell($player['single']);?></td>
-                                                <td><?= $resultCell($player['double']);?></td>
+                                                <td<?= $sortValue(($player['single']['games'] ?? 0) ? $player['single']['quote'] : null);?>><?= $resultCell($player['single']);?></td>
+                                                <td<?= $sortValue(($player['double']['games'] ?? 0) ? $player['double']['quote'] : null);?>><?= $resultCell($player['double']);?></td>
                                                 <?php if ($hasTeamgame): ?>
-                                                    <td><?= $resultCell($player['teamgame']);?></td>
+                                                    <td<?= $sortValue(($player['teamgame']['games'] ?? 0) ? $player['teamgame']['quote'] : null);?>><?= $resultCell($player['teamgame']);?></td>
                                                 <?php endif; ?>
-                                                <td><?= $player['count180'] ? SpielerstatistikPage::number($player['count180']) . '×' : $dash;?></td>
-                                                <td><?= $bestCell($player['highfinish'], 'höchstes');?></td>
-                                                <td><?= $bestCell($player['shortgame'], 'bestes');?></td>
+                                                <td<?= $sortValue($player['count180'] ?: null);?>><?= $countCell($player['count180']);?></td>
+                                                <td<?= $sortValue($player['highfinish']['count'] ?? null);?>><?= $countCell($player['highfinish']['count'] ?? null);?></td>
+                                                <td<?= $sortValue($player['highfinish']['best'] ?? null);?>><?= $bestCell($player['highfinish']['best'] ?? null);?></td>
+                                                <td<?= $sortValue($player['shortgame']['count'] ?? null);?>><?= $countCell($player['shortgame']['count'] ?? null);?></td>
+                                                <td<?= $sortValue($player['shortgame']['best'] ?? null);?>><?= $bestCell($player['shortgame']['best'] ?? null);?></td>
                                             </tr>
                                         <?php endforeach; ?>
                                     </tbody>
@@ -203,23 +216,95 @@ $bestCell = function (?array $group, string $bestLabel) use ($dash): string {
 <script>
 (function () {
     var buttons = document.querySelectorAll('.stats-squad-filter [data-squad]');
+    var squad = '';
+
+    // ranks in front of the players: the original ranks (with gold, silver and bronze badges) in the original order,
+    // numbered anew by the sorted column (without badges, same value = same rank) as soon as a column is sorted:
+    // from 1 upwards when sorted descending, from the number of players downwards when sorted ascending
+    function updateRanks() {
+        document.querySelectorAll('.stats-table').forEach(function (table) {
+            var sorted = table.querySelector('thead th[aria-sort="ascending"], thead th[aria-sort="descending"]');
+            var column = sorted ? Array.prototype.indexOf.call(table.tHead.rows[0].cells, sorted) : -1;
+            var ascending = !!sorted && sorted.getAttribute('aria-sort') === 'ascending';
+            var total = Array.prototype.filter.call(table.tBodies[0].rows, function (row) { return !row.hidden; }).length;
+            var position = 0;
+            var rank = 0;
+            var previous = null;
+
+            Array.prototype.forEach.call(table.tBodies[0].rows, function (row) {
+                if (row.hidden) { return; }
+                var badge = row.querySelector('.stats-rank');
+                var value;
+
+                if (sorted) {
+                    var raw = row.cells[column].getAttribute('data-sort');
+                    var key = raw === null || raw === '' ? '' : String(parseFloat(raw));
+                    position++;
+                    // descending: ranks start at 1; ascending: ranks start at the number of players and count down
+                    if (position === 1 || key !== previous) { rank = ascending ? total - position + 1 : position; }
+                    previous = key;
+                    value = String(rank);
+                } else {
+                    // ranks start at 1 again within a team
+                    value = (squad === '' ? badge : row).getAttribute(squad === '' ? 'data-rank-all' : 'data-rank-' + squad) || '';
+                }
+
+                badge.textContent = value;
+                badge.classList.remove('stats-rank--1', 'stats-rank--2', 'stats-rank--3');
+                if (!sorted && ['1', '2', '3'].indexOf(value) !== -1) { badge.classList.add('stats-rank--' + value); }
+            });
+        });
+    }
+
     buttons.forEach(function (button) {
         button.addEventListener('click', function () {
-            var squad = button.getAttribute('data-squad');
+            squad = button.getAttribute('data-squad');
             buttons.forEach(function (other) { other.classList.toggle('active', other === button); });
             document.querySelectorAll('.stats-table tbody tr').forEach(function (row) {
-                var hidden = squad !== '' && row.getAttribute('data-squad') !== squad;
-                row.hidden = hidden;
-                if (hidden) { return; }
-                // ranks start at 1 again within a team (with gold, silver and bronze badges)
-                var badge = row.querySelector('.stats-rank');
-                var rank = (squad === '' ? badge : row).getAttribute(squad === '' ? 'data-rank-all' : 'data-rank-' + squad) || '';
-                badge.textContent = rank;
-                badge.classList.remove('stats-rank--1', 'stats-rank--2', 'stats-rank--3');
-                if (['1', '2', '3'].indexOf(rank) !== -1) { badge.classList.add('stats-rank--' + rank); }
+                row.hidden = squad !== '' && row.getAttribute('data-squad') !== squad;
             });
+            updateRanks();
             document.querySelectorAll('.stats-highlights').forEach(function (highlights) {
                 highlights.hidden = highlights.getAttribute('data-squad-view') !== squad;
+            });
+        });
+    });
+
+    // sorting by a single column: first click highest first (best shortgame lowest first), second click reverses
+    document.querySelectorAll('.stats-table').forEach(function (table) {
+        var headers = table.querySelectorAll('thead th');
+        var tbody = table.querySelector('tbody');
+
+        headers.forEach(function (header, column) {
+            var button = header.querySelector('.stats-sort');
+            if (!button) { return; }
+            button.addEventListener('click', function () {
+                var type = button.getAttribute('data-sort-type');
+                var firstDirection = type === 'desc' ? -1 : 1;
+                var current = header.getAttribute('aria-sort');
+                var direction = current === 'none' ? firstDirection : (current === 'ascending' ? -1 : 1);
+
+                headers.forEach(function (other) { other.setAttribute('aria-sort', 'none'); });
+                header.setAttribute('aria-sort', direction === 1 ? 'ascending' : 'descending');
+
+                var rows = Array.prototype.map.call(tbody.rows, function (row, index) {
+                    var cell = row.cells[column];
+                    var raw = cell.getAttribute('data-sort');
+                    return { row: row, index: index, raw: raw, empty: raw === null || raw === '' };
+                });
+
+                rows.sort(function (a, b) {
+                    // players without a value always stay at the end
+                    if (a.empty !== b.empty) { return a.empty ? 1 : -1; }
+                    var result = 0;
+                    if (!a.empty) {
+                        result = parseFloat(a.raw) - parseFloat(b.raw);
+                    }
+                    return result * direction || a.index - b.index;
+                });
+
+                rows.forEach(function (item) { tbody.appendChild(item.row); });
+                updateRanks();
             });
         });
     });
