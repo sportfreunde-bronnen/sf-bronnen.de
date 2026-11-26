@@ -18,6 +18,13 @@ Kirby::plugin('sfb/svz', [
         // Set 'sfb.svz.recipient' in the (gitignored) site/config/config.php. As long as it is empty the form rejects every submission.
         'recipient' => null,
     ],
+    // Kirby only looks up templates directly in site/templates, so the templates grouped in site/templates/svz are registered here
+    'templates' => [
+        'svz'         => dirname(__DIR__, 2) . '/templates/svz/svz.php',
+        'svzcalendar' => dirname(__DIR__, 2) . '/templates/svz/svzcalendar.php',
+        'svzcontact'  => dirname(__DIR__, 2) . '/templates/svz/svzcontact.php',
+        'svzplan'     => dirname(__DIR__, 2) . '/templates/svz/svzplan.php',
+    ],
     'routes' => [
         [
             'pattern' => '(:all)',

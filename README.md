@@ -146,7 +146,7 @@ The nested notation (`'sfb' => ['svz' => ['host' => '...', 'recipient' => '...']
 
 ### SVZ contact form
 
-The form (`site/templates/svzcontact.php`, `site/controllers/svzcontact.php`) asks for first name, last name, e-mail, phone, message
+The form (`site/templates/svz/svzcontact.php`, `site/controllers/svzcontact.php`) asks for first name, last name, e-mail, phone, message
 and additionally for the date, the package (room or beverage package), the room (small dining room or hall, see `SvzPage::ROOMS`), active member (yes/no) and service staff (yes/no).
 The request is mailed to `sfb.svz.recipient` (action `SvzMailAction` in `site/plugins/uniform-actions`) using the SMTP account of the main contact form.
 The form is protected by Cloudflare Turnstile (action `svz-contact`); the SVZ host is accepted as Turnstile hostname automatically.
