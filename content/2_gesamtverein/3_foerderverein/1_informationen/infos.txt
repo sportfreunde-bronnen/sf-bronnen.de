@@ -1,0 +1,28 @@
+Title: Informationen
+
+----
+
+Headline: Förderverein SF Bronnen e.V.
+
+----
+
+Infotext: 
+
+----
+
+Blocks: [{"content":{"text":"<p>Wir sind ein kleiner Verein mit tollen Mitgliedern und Sponsoren. Durch Spenden und Sponsoring helfen Sie mit, die ehrgeizigen Ziele und herausfordernden Aufgaben des Vereins und dessen Mitglieder zu unterstützen und zu erreichen. Werden Sie Teil unserer Sportfreunde Familie.</p><p><strong>Zweck</strong></p><p>Der Verein verfolgt ausschließlich gemeinnützige Zwecke und fördert den Sport und die soziale Verantwortung in finanzieller und ideeller Weise.</p><p><strong>Spendenkonto</strong></p><p>Förderverein Sportfreunde Bronnen e.V.</p><p>IBAN: DE77 6509 1040 0733 1890 08</p><p>BIC: GENODES1LEU</p><p>Institut: Volksbank Allgäu-Oberschwaben eG</p><p><strong>Downloads</strong></p><p><a href=\"/@/page/X0RsQ1eAW1rxr7mS\">Zu den Downloads</a></p>"},"id":"47a4f613-4dde-46fa-b806-b5f094340afa","isHidden":false,"type":"text"}]
+
+----
+
+People:
+
+-
+  name: 'Axel Endlichhofer'
+  aufgabe: '1. Vorsitzender'
+  email: foerderverein@sf-bronnen.de
+  phone: ''
+  address: ''
+
+----
+
+Uuid: fj5v9kCsZnnlDQFi
