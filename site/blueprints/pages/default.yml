@@ -1,16 +1,32 @@
-title: Leere Seite
+title: Individuelle Seite
 columns:
   main:
     width: 2/3
     fields:
+      folder:
+        label: Ist diese Seite eine übergeordnete Seite und soll in der Navigation lediglich als "Ordner" fungieren?
+        help: Zum Beispiel wie bei "Allgemeines".
+        type: toggle
+        default: true
+        text:
+          - "Nein"
+          - "Ja"
+      line:
+        type: line
+        when:
+          folder: false
       headline:
         extends: fields/headline
         required: false
         help: Überschrift oberhalb des Inhalts (optional)
+        when:
+          folder: false
       blocks:
         label: Inhalt
         type: blocks
         empty: Noch kein Inhalt. Mit dem Plus lassen sich Überschriften, Texte, Bilder, Spalten und mehr hinzufügen.
+        when:
+          folder: false
         fieldsets:
           text:
             label: Text
@@ -50,6 +66,12 @@ columns:
         type: pagelist
         status: all
         layout: list
+        create:
+          - default
+          - infos
+          - downloads
+          - chronik
+          - veranstaltungen
       files:
         label: Dateien
         type: filelist

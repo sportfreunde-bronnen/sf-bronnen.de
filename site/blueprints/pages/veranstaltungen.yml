@@ -1,18 +1,10 @@
-title: Veranstaltungen
+title: Sammelseite für Veranstaltungen
 columns:
   main:
-    width: 2/3
-    fields: {}
-  sidebar:
-    width: 1/3
     fields:
       pages:
-        label: Seiten
+        label: Veranstaltungen
         type: pagelist
         status: all
-        layout: list
+        layout: cards
         blueprints: veranstaltung
-      files:
-        label: Dateien
-        type: filelist
-        layout: list

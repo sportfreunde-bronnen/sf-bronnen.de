@@ -1,7 +1,6 @@
 title: Veranstaltung
 options:
   url: false
-  delete: false
 columns:
   main:
     width: 3/4

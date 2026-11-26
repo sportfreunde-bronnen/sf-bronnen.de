@@ -5,6 +5,9 @@
     </div>
 </section>
 <?php
+$folderField = $page->folder();
+// Toggle "folder": the page only structures the navigation and shows its subpages as tree, otherwise its content is shown
+// pages that never saved the toggle fall back to the former logic (no content at all = folder)
 $hasHeadline = $page->headline()->isNotEmpty();
 $hasText = $page->text()->isNotEmpty();
 // content blocks (text, images, galleries ...): they place the images of the page themselves,
@@ -14,9 +17,17 @@ $hasBlocks = $blocks->isNotEmpty();
 $images = $hasBlocks ? null : $page->images();
 $hasImages = $images !== null && $images->count() > 0;
 $hasPeople = $page->people()->isNotEmpty();
-// pages without any content only structure the navigation: show the pages below instead of an empty page
-$isEmpty = !$hasHeadline && !$hasText && !$hasBlocks && !$hasImages && !$hasPeople;
-$subPages = $isEmpty ? $page->children()->listed() : null;
+if ($folderField->exists() && $folderField->isNotEmpty()) {
+    $isFolder = $folderField->toBool();
+} else {
+    $isFolder = !$hasHeadline && !$hasText && !$hasBlocks && !$hasImages && !$hasPeople;
+}
+if ($isFolder) {
+    $hasHeadline = $hasText = $hasBlocks = $hasImages = $hasPeople = false;
+    $blocks = null;
+    $images = null;
+}
+$subPages = $isFolder ? $page->children()->listed() : null;
 $showTree = $subPages !== null && $subPages->isNotEmpty();
 ?>
 <div class="page">
