@@ -6,9 +6,7 @@ Datum: 2019-03-18
 
 ----
 
-Author:
-
-- 16pohVSK
+Author: - 16pohVSK
 
 ----
 
@@ -16,9 +14,7 @@ Author2:
 
 ----
 
-Teaserimage:
-
-- img_6587.jpg
+Teaserimage: - img_6587.jpg
 
 ----
 
@@ -42,9 +38,7 @@ Sah es am Freitagabend noch danach aus, dass die Zweite Mannschaft zumindest im 
 
 ----
 
-Textimages:
-
-- img_6587.jpg
+Textimages: - img_6587.jpg
 
 ----
 
@@ -80,3 +74,7 @@ Galleryimages:
 - img_6627.jpg
 - img_6630.jpg
 - img_6639.jpg
+
+----
+
+Uuid: ozn2ep0ozgfyhxzt
