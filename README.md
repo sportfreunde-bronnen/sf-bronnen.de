@@ -257,15 +257,18 @@ A link page which has subpages of its own is shown as group heading (like "Allge
 
 The page "Darts" > "Spielbetrieb" > "Spielerstatistik" (`content/6_darts/3_spielbetrieb/2_spielerstatistik`, template "Spielerstatistik", `site/blueprints/pages/spielerstatistik.yml`)
 shows the statistics of the players of "Liga" and "Pokal": the best players as cards (most points, wins, best quote, 180s, highest high finish) and a table with all values
-(points, games, wins, quote, single / double / team game, 180s, high finishes, short games). The style is in `frontend/src/sass/spielerstatistik.scss` (`public/assets/css/spielerstatistik.css`).
+(points, games, wins, quote, single / double / team game, 180s, high finishes, short games). Click a player row or its plus button to expand the individual statistics: results by score, recent form, home / away record, legs, short games, high finishes and match details. The style is in `frontend/src/sass/spielerstatistik.scss` (`public/assets/css/spielerstatistik.css`).
+
+Each individual panel shows the date of the last successful fetch (`Stand: TT.MM.JJJJ`).
 
 The data only exists as HTML on the website of the DVOS (Dartverband Oberschwaben), so it is requested in the background (plugin `site/plugins/sfb-dvos`):
 
 - `POST https://www.dvos.de/ligaauswertung.php?seite=0` with `input[2]=<id of the club>`, the id of the Sportfreunde Bronnen is `71` (field "Verein beim DVOS" of the page)
+- The linked player pages (`GET https://www.dvos.de/ligaauswertung.php?id_s=<id>`) are fetched in parallel with a bounded concurrency; `DvosPlayerDetailsParser` prepares the additional statistics and match list.
 - `DvosPlayerStatisticsParser` turns the "div tables" of the page into an array (the DVOS sends every table in three widths, only the widest one with all columns is used)
-- `DvosPlayerStatistics::forClub()` caches the prepared data **for 12 hours** with the Kirby cache `sfb.dvos.playerstatistics` (stored as JSON in `storage/cache`).
+- `DvosPlayerStatistics::forClub()` caches the prepared club and player data **for 12 hours** with the Kirby cache `sfb.dvos.playerstatistics` (stored as JSON in `storage/cache`). The previous complete data is kept as an unexpired fallback and is only replaced after the club table passes its structural checks.
   The cache is activated by the plugin itself, nothing has to be added to the (gitignored) `config.php`
-- If the DVOS cannot be reached (or answers with an unknown page) the last good data is used for up to two weeks and the DVOS is requested again after 10 minutes only.
+- If the DVOS cannot be reached or its page changes unexpectedly, the last good data is kept and the DVOS is requested again after 10 minutes only. Player details are validated separately; failed or incomplete detail pages leave their previous data and fetch date in place.
   Without any data the page shows a note with a link to the DVOS
 
 Options (all optional, in the `config.php`):
@@ -273,6 +276,7 @@ Options (all optional, in the `config.php`):
 ```php
 'sfb.dvos.cacheMinutes' => 12 * 60,                // lifetime of the prepared statistics
 'sfb.dvos.timeout' => 10,                          // seconds until a request to the DVOS is aborted
+'sfb.dvos.playerConcurrency' => 4,                  // maximum number of player pages fetched in parallel
 'sfb.dvos.cache.playerstatistics' => false,        // switch the cache off, e.g. while developing
 ```
 

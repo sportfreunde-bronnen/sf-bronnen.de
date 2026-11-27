@@ -53,6 +53,116 @@ $sortHeader = function (string $label, string $type, string $small = '') {
         . '<button type="button" class="stats-sort" data-sort-type="' . $type . '">' . $label
         . ($small ? '<small>' . $small . '</small>' : '') . '</button></th>';
 };
+
+$detailPanel = function (array $details, string $competitionTitle): string {
+    $games = $details['games'] ?? [];
+    $updatedAt = isset($details['fetchedAt'])
+        ? (new DateTimeImmutable('@' . $details['fetchedAt']))->setTimezone(new DateTimeZone('Europe/Berlin'))->format('d.m.Y')
+        : null;
+    $form = SpielerstatistikPage::recentForm($games);
+    $legs = SpielerstatistikPage::legTotals($games);
+    $homeAway = SpielerstatistikPage::homeAwayStats($games);
+    $summaryLabels = ['total' => 'Gesamt', 'single' => 'Einzel', 'double' => 'Doppel', 'teamgame' => 'Teamgame'];
+    $resultLabels = ['total' => 'Gesamt', 'single' => 'Einzel', 'double' => 'Doppel'];
+    $scores = ['3:0', '3:1', '3:2', '2:3', '1:3', '0:3'];
+    $html = '<div class="stats-detail__panel">'
+        . '<div class="stats-detail__heading"><div><span class="stats-detail__eyebrow">Individuelle Statistik</span>'
+        . '<h3>' . esc($competitionTitle) . '</h3>'
+        . ($updatedAt !== null ? '<span class="stats-detail__date">Stand: ' . $updatedAt . '</span>' : '')
+        . '</div>';
+
+    if ($form !== []) {
+        $html .= '<div class="stats-detail__form" aria-label="Form der letzten ' . count($form) . ' Spiele">';
+        foreach ($form as $result) {
+            $label = ['W' => 'Sieg', 'L' => 'Niederlage', 'D' => 'Unentschieden'][$result];
+            $html .= '<span class="stats-form stats-form--' . strtolower($result) . '" title="' . $label . '" aria-label="' . $label . '">' . $result . '</span>';
+        }
+        $html .= '</div>';
+    }
+    $html .= '</div>';
+
+    if (($details['summary'] ?? []) !== []) {
+        $html .= '<div class="stats-detail__summary">';
+        foreach ($summaryLabels as $key => $label) {
+            $group = $details['summary'][$key] ?? null;
+            if ($group === null || (($group['games'] ?? 0) === 0 && $key !== 'total')) {
+                continue;
+            }
+            $html .= '<div class="stats-detail__metric"><span>' . $label . '</span>'
+                . '<strong>' . SpielerstatistikPage::number($group['wins'] ?? null) . ' / ' . SpielerstatistikPage::number($group['games'] ?? null) . '</strong>'
+                . '<small>Siege / Spiele · ' . SpielerstatistikPage::quote($group['quote'] ?? null) . '</small></div>';
+        }
+        $html .= '</div>';
+    }
+
+    $html .= '<div class="stats-detail__facts">'
+        . '<div><span>180er</span><strong>' . SpielerstatistikPage::number($details['count180'] ?? null) . '×</strong></div>'
+        . '<div><span>Legs</span><strong>' . SpielerstatistikPage::number($legs['for']) . ' : ' . SpielerstatistikPage::number($legs['against']) . '</strong></div>'
+        . '<div><span>Heim</span><strong>' . SpielerstatistikPage::number($homeAway['home']['wins']) . ' / ' . SpielerstatistikPage::number($homeAway['home']['games']) . '</strong></div>'
+        . '<div><span>Auswärts</span><strong>' . SpielerstatistikPage::number($homeAway['away']['wins']) . ' / ' . SpielerstatistikPage::number($homeAway['away']['games']) . '</strong></div>'
+        . '</div>';
+
+    foreach ([['shortgames', 'Shortgames'], ['highfinishes', 'High-Finishes']] as [$key, $label]) {
+        if (($details[$key] ?? []) === []) {
+            continue;
+        }
+        $html .= '<div class="stats-detail__chips"><span class="stats-detail__label">' . $label . '</span>';
+        foreach ($details[$key] as $value) {
+            $html .= '<span class="stats-detail__chip">' . SpielerstatistikPage::number($value) . '</span>';
+        }
+        $html .= '</div>';
+    }
+
+    if (($details['results'] ?? []) !== []) {
+        $html .= '<div class="stats-detail__results"><h4>Ergebnisverteilung</h4><div class="stats-detail__scroll">'
+            . '<table><thead><tr><th scope="col">Spielart</th>';
+        foreach ($scores as $score) {
+            $html .= '<th scope="col">' . $score . '</th>';
+        }
+        $html .= '</tr></thead><tbody>';
+        foreach ($resultLabels as $key => $label) {
+            if (!isset($details['results'][$key])) {
+                continue;
+            }
+            $html .= '<tr><th scope="row">' . $label . '</th>';
+            foreach ($scores as $score) {
+                $result = $details['results'][$key][$score] ?? [];
+                $count = (int)($result['count'] ?? 0);
+                $quote = (float)($result['quote'] ?? 0);
+                $heat = $quote >= 50 ? ' stats-result--high' : ($quote >= 25 ? ' stats-result--medium' : '');
+                $html .= '<td class="' . trim('stats-result' . $heat) . '"><strong>' . SpielerstatistikPage::number($count) . '</strong>'
+                    . '<small>' . SpielerstatistikPage::quote($quote) . '</small></td>';
+            }
+            $html .= '</tr>';
+        }
+        $html .= '</tbody></table></div></div>';
+    }
+
+    if ($games !== []) {
+        $typeLabels = ['single' => 'Einzel', 'double' => 'Doppel', 'teamgame' => 'Teamgame'];
+        $html .= '<div class="stats-detail__games"><h4>Spielergebnisse</h4><ul>';
+        foreach ($games as $game) {
+            $result = ($game['won'] ?? false) ? 'gewonnen' : 'verloren';
+            $side = ($game['home'] ?? false) ? 'Heim' : 'Auswärts';
+            $opponent = trim((string)($game['opponentSquad'] ?? ''));
+            $html .= '<li class="stats-game stats-game--' . ($game['won'] ? 'win' : 'loss') . '">'
+                . '<time datetime="' . esc($game['date'], 'attr') . '">' . esc($game['dateLabel'] ?? $game['date']) . '</time>'
+                . '<span class="stats-game__type">' . ($typeLabels[$game['type']] ?? 'Spiel') . ' · ' . $side . '</span>'
+                . '<span class="stats-game__opponents">' . ($opponent !== '' ? 'vs. ' . esc($opponent) : '–') . '</span>'
+                . '<span class="stats-game__score" aria-label="' . $result . '">' . SpielerstatistikPage::number($game['legs']['for'] ?? null)
+                . ' : ' . SpielerstatistikPage::number($game['legs']['against'] ?? null) . '</span>';
+            if (($game['partners'] ?? []) !== []) {
+                $html .= '<small>mit ' . esc(implode(', ', $game['partners'])) . '</small>';
+            }
+            $html .= '</li>';
+        }
+        $html .= '</ul></div>';
+    } else {
+        $html .= '<p class="stats-detail__empty">Für diesen Wettbewerb liegen noch keine Spielergebnisse vor.</p>';
+    }
+
+    return $html . '</div>';
+};
 ?>
 <?php snippet('header', ['styles' => ['spielerstatistik']]); ?>
 <div class="template--spielerstatistik">
@@ -154,8 +264,14 @@ $sortHeader = function (string $label, string $type, string $small = '') {
                                             $rank = (int)$player['rank'];
                                             $categoryLabel = $categoryLabels[$player['category']] ?? null;
                                             $playerKey = SpielerstatistikPage::playerKey($player);
+                                            $playerDetails = $player['details']['competitions'][$key] ?? null;
+                                            if (is_array($playerDetails) && isset($player['details']['fetchedAt'])) {
+                                                $playerDetails['fetchedAt'] = $player['details']['fetchedAt'];
+                                            }
+                                            $detailId = 'stats-detail-' . $key . '-' . ($player['id'] ?? $playerKey);
+                                            $hasDetails = is_array($playerDetails);
                                             ?>
-                                            <tr data-squad="<?= SpielerstatistikPage::squadNumber($player['squad']);?>"<?php foreach ($squads as $squad): ?><?= isset($squadRanks[$squad][$playerKey]) ? ' data-rank-' . $squad . '="' . $squadRanks[$squad][$playerKey] . '"' : '';?><?php endforeach; ?><?= $player['active'] ? '' : ' class="is-inactive"';?>>
+                                            <tr class="stats-row<?= $player['active'] ? '' : ' is-inactive';?>" data-squad="<?= SpielerstatistikPage::squadNumber($player['squad']);?>"<?php foreach ($squads as $squad): ?><?= isset($squadRanks[$squad][$playerKey]) ? ' data-rank-' . $squad . '="' . $squadRanks[$squad][$playerKey] . '"' : '';?><?php endforeach; ?>>
                                                 <th scope="row" class="stats-player">
                                                     <div class="stats-player__inner">
                                                         <span class="stats-rank<?= in_array($rank, [1, 2, 3], true) ? ' stats-rank--' . $rank : '';?>" data-rank-all="<?= $player['rank'] ?? '';?>"><?= $player['rank'] ?? '';?></span>
@@ -171,6 +287,11 @@ $sortHeader = function (string $label, string $type, string $small = '') {
                                                                 <span class="stats-player__squad"><?= esc($player['squad']);?></span>
                                                             <?php endif; ?>
                                                         </span>
+                                                        <?php if ($hasDetails): ?>
+                                                            <button class="stats-toggle" type="button" aria-expanded="false" aria-controls="<?= esc($detailId, 'attr');?>" aria-label="Details zu <?= esc($player['name'], 'attr');?> anzeigen">
+                                                                <span class="stats-toggle__icon" aria-hidden="true">+</span>
+                                                            </button>
+                                                        <?php endif; ?>
                                                     </div>
                                                 </th>
                                                 <td class="stats-points"<?= $sortValue($player['points']);?>><?= SpielerstatistikPage::number($player['points']);?></td>
@@ -195,6 +316,13 @@ $sortHeader = function (string $label, string $type, string $small = '') {
                                                 <td<?= $sortValue($player['shortgame']['count'] ?? null);?>><?= $countCell($player['shortgame']['count'] ?? null);?></td>
                                                 <td<?= $sortValue($player['shortgame']['best'] ?? null);?>><?= $bestCell($player['shortgame']['best'] ?? null);?></td>
                                             </tr>
+                                            <?php if ($hasDetails): ?>
+                                                <tr class="stats-detail" id="<?= esc($detailId, 'attr');?>" hidden>
+                                                    <td colspan="<?= $hasTeamgame ? 13 : 12;?>" class="stats-detail__cell">
+                                                        <?= $detailPanel($playerDetails, $competition['title']);?>
+                                                    </td>
+                                                </tr>
+                                            <?php endif; ?>
                                         <?php endforeach; ?>
                                     </tbody>
                                 </table>
@@ -226,12 +354,13 @@ $sortHeader = function (string $label, string $type, string $small = '') {
             var sorted = table.querySelector('thead th[aria-sort="ascending"], thead th[aria-sort="descending"]');
             var column = sorted ? Array.prototype.indexOf.call(table.tHead.rows[0].cells, sorted) : -1;
             var ascending = !!sorted && sorted.getAttribute('aria-sort') === 'ascending';
-            var total = Array.prototype.filter.call(table.tBodies[0].rows, function (row) { return !row.hidden; }).length;
+            var rows = table.querySelectorAll('tbody tr.stats-row');
+            var total = Array.prototype.filter.call(rows, function (row) { return !row.hidden; }).length;
             var position = 0;
             var rank = 0;
             var previous = null;
 
-            Array.prototype.forEach.call(table.tBodies[0].rows, function (row) {
+            Array.prototype.forEach.call(rows, function (row) {
                 if (row.hidden) { return; }
                 var badge = row.querySelector('.stats-rank');
                 var value;
@@ -260,13 +389,41 @@ $sortHeader = function (string $label, string $type, string $small = '') {
         button.addEventListener('click', function () {
             squad = button.getAttribute('data-squad');
             buttons.forEach(function (other) { other.classList.toggle('active', other === button); });
-            document.querySelectorAll('.stats-table tbody tr').forEach(function (row) {
+            document.querySelectorAll('.stats-table tbody tr.stats-row').forEach(function (row) {
                 row.hidden = squad !== '' && row.getAttribute('data-squad') !== squad;
+                var detail = row.nextElementSibling;
+                if (detail && detail.classList.contains('stats-detail')) {
+                    var toggle = row.querySelector('.stats-toggle');
+                    detail.hidden = row.hidden || !toggle || toggle.getAttribute('aria-expanded') !== 'true';
+                }
             });
             updateRanks();
             document.querySelectorAll('.stats-highlights').forEach(function (highlights) {
                 highlights.hidden = highlights.getAttribute('data-squad-view') !== squad;
             });
+        });
+    });
+
+    document.querySelectorAll('.stats-row').forEach(function (row) {
+        var toggle = row.querySelector('.stats-toggle');
+        if (!toggle) { return; }
+        var detail = row.nextElementSibling;
+
+        function setExpanded(expanded) {
+            toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+            toggle.setAttribute('aria-label', toggle.getAttribute('aria-label').replace(expanded ? 'anzeigen' : 'schließen', expanded ? 'schließen' : 'anzeigen'));
+            toggle.querySelector('.stats-toggle__icon').textContent = expanded ? '−' : '+';
+            detail.hidden = !expanded || row.hidden;
+        }
+
+        row.addEventListener('click', function (event) {
+            if (event.target.closest('a, button, input, select, textarea')) {
+                if (event.target.closest('.stats-toggle')) {
+                    setExpanded(toggle.getAttribute('aria-expanded') !== 'true');
+                }
+                return;
+            }
+            setExpanded(toggle.getAttribute('aria-expanded') !== 'true');
         });
     });
 
@@ -287,10 +444,17 @@ $sortHeader = function (string $label, string $type, string $small = '') {
                 headers.forEach(function (other) { other.setAttribute('aria-sort', 'none'); });
                 header.setAttribute('aria-sort', direction === 1 ? 'ascending' : 'descending');
 
-                var rows = Array.prototype.map.call(tbody.rows, function (row, index) {
+                var rows = Array.prototype.map.call(tbody.querySelectorAll('tr.stats-row'), function (row, index) {
                     var cell = row.cells[column];
                     var raw = cell.getAttribute('data-sort');
-                    return { row: row, index: index, raw: raw, empty: raw === null || raw === '' };
+                    var detail = row.nextElementSibling;
+                    return {
+                        row: row,
+                        detail: detail && detail.classList.contains('stats-detail') ? detail : null,
+                        index: index,
+                        raw: raw,
+                        empty: raw === null || raw === ''
+                    };
                 });
 
                 rows.sort(function (a, b) {
@@ -303,7 +467,10 @@ $sortHeader = function (string $label, string $type, string $small = '') {
                     return result * direction || a.index - b.index;
                 });
 
-                rows.forEach(function (item) { tbody.appendChild(item.row); });
+                rows.forEach(function (item) {
+                    tbody.appendChild(item.row);
+                    if (item.detail) { tbody.appendChild(item.detail); }
+                });
                 updateRanks();
             });
         });

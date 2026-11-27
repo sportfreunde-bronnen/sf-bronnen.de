@@ -79,7 +79,7 @@ final class DvosPlayerStatisticsParser
     /**
      * Parses the HTML of the player statistics. Returns no competitions if the page has an unknown structure.
      *
-     * @return array{club: string, competitions: array<string, array{title: string, players: array}>}
+     * @return array{club: string, competitions: array<string, array{title: string, titleRecognized: bool, columns: array, players: array}>}
      */
     public static function parse(string $html): array
     {
@@ -129,21 +129,28 @@ final class DvosPlayerStatisticsParser
                 }
 
                 $key = Str::slug($title) ?: 'statistik';
-                if (!isset($tables[$key]) || $parsed['columns'] > $tables[$key]['columns']) {
-                    $tables[$key] = $parsed + ['title' => $title !== '' ? $title : 'Statistik'];
+                $parsed['title'] = $title !== '' ? $title : 'Statistik';
+                $parsed['titleRecognized'] = $title !== '';
+                if (!isset($tables[$key]) || $parsed['columnCount'] > $tables[$key]['columnCount']) {
+                    $tables[$key] = $parsed;
                 }
             }
         }
 
         foreach ($tables as $key => $table) {
-            $result['competitions'][$key] = ['title' => $table['title'], 'players' => $table['players']];
+            $result['competitions'][$key] = [
+                'title' => $table['title'],
+                'titleRecognized' => $table['titleRecognized'],
+                'columns' => $table['columns'],
+                'players' => $table['players'],
+            ];
         }
 
         return $result;
     }
 
     /**
-     * @return array{columns: int, players: array}|null
+     * @return array{columnCount: int, columns: array, players: array}|null
      */
     private static function parseTable(DOMXPath $xpath, DOMElement $table): ?array
     {
@@ -171,7 +178,11 @@ final class DvosPlayerStatisticsParser
             }
         }
 
-        return $players === [] ? null : ['columns' => count(array_filter($keys)), 'players' => $players];
+        return $players === [] ? null : [
+            'columnCount' => count(array_filter($keys)),
+            'columns' => array_values(array_filter($keys)),
+            'players' => $players,
+        ];
     }
 
     private static function parsePlayer(DOMXPath $xpath, DOMElement $row, array $keys): ?array

@@ -178,6 +178,56 @@ class SpielerstatistikPage extends RoleAwarePage
     }
 
     /**
+     * Recent game form, newest first: W (win), L (loss) or D (draw)
+     */
+    public static function recentForm(array $games, int $limit = 5): array
+    {
+        return array_map(
+            fn (array $game) => ($game['legs']['for'] ?? 0) === ($game['legs']['against'] ?? 0)
+                ? 'D'
+                : (($game['won'] ?? false) ? 'W' : 'L'),
+            array_slice($games, 0, max(0, $limit))
+        );
+    }
+
+    /**
+     * Sum of legs in the listed games
+     *
+     * @return array{for: int, against: int}
+     */
+    public static function legTotals(array $games): array
+    {
+        $totals = ['for' => 0, 'against' => 0];
+        foreach ($games as $game) {
+            $totals['for'] += (int)($game['legs']['for'] ?? 0);
+            $totals['against'] += (int)($game['legs']['against'] ?? 0);
+        }
+
+        return $totals;
+    }
+
+    /**
+     * Wins and games split by home and away matches
+     *
+     * @return array{home: array{games: int, wins: int}, away: array{games: int, wins: int}}
+     */
+    public static function homeAwayStats(array $games): array
+    {
+        $stats = [
+            'home' => ['games' => 0, 'wins' => 0],
+            'away' => ['games' => 0, 'wins' => 0],
+        ];
+
+        foreach ($games as $game) {
+            $key = ($game['home'] ?? false) ? 'home' : 'away';
+            $stats[$key]['games']++;
+            $stats[$key]['wins'] += ($game['won'] ?? false) ? 1 : 0;
+        }
+
+        return $stats;
+    }
+
+    /**
      * Number in german notation, e.g. 1234 => "1.234"; "–" for values the DVOS does not provide
      */
     public static function number(int|float|null $value): string

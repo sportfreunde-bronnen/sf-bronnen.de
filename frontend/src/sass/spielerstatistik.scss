@@ -107,6 +107,7 @@ $statsBronze: #b5733c;
     border: 1px solid $borderColor;
     border-radius: $radius;
     box-shadow: $shadowSm;
+    container-type: inline-size;
   }
 
   .stats-table {
@@ -208,12 +209,347 @@ $statsBronze: #b5733c;
         font-weight: 400;
       }
     }
+
+    .stats-row:has(.stats-toggle) {
+      cursor: pointer;
+    }
+
+    .stats-detail > .stats-detail__cell {
+      position: relative;
+      padding: 0;
+      background-color: $mistBlue;
+      border-bottom: 1px solid $borderColor;
+      text-align: left;
+      white-space: normal;
+    }
+
+    .stats-detail:hover > .stats-detail__cell {
+      background-color: $mistBlue;
+    }
   }
 
   .stats-player__inner {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+  }
+
+  .stats-toggle {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: auto;
+    padding: 0;
+    border: 1px solid rgba($brightBlue, 0.3);
+    border-radius: 50%;
+    background-color: $paleBlue;
+    color: $darkBlue;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $brightBlue;
+      border-color: $brightBlue;
+      color: #fff;
+    }
+
+    &__icon {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+
+  .stats-detail__panel {
+    position: sticky;
+    left: 0;
+    width: 100cqw;
+    padding: 1.25rem clamp(1rem, 2.5cqw, 2rem);
+    animation: stats-reveal 220ms ease-out both;
+    background: linear-gradient(135deg, #f8fbfd, #eef5f9);
+    color: $textColor;
+  }
+
+  @keyframes stats-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(-0.4rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .stats-detail__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    h3 {
+      margin: 0;
+      color: $darkBlue;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  }
+
+  .stats-detail__eyebrow,
+  .stats-detail__label {
+    color: $textMuted;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .stats-detail__date {
+    display: block;
+    margin-top: 0.15rem;
+    color: $textMuted;
+    font-size: 0.75rem;
+  }
+
+  .stats-detail__form {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .stats-form {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    &--w {
+      background-color: #16835d;
+    }
+
+    &--l {
+      background-color: #bb4945;
+    }
+
+    &--d {
+      background-color: $steel;
+    }
+  }
+
+  .stats-detail__summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    gap: 0.65rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .stats-detail__metric,
+  .stats-detail__facts > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid rgba($borderColor, 0.9);
+    border-radius: $radius;
+    background-color: #fff;
+
+    > span {
+      color: $textMuted;
+      font-size: 0.72rem;
+    }
+
+    > strong {
+      color: $darkBlue;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    > small {
+      color: $textMuted;
+      font-size: 0.72rem;
+    }
+  }
+
+  .stats-detail__facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr));
+    gap: 0.55rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .stats-detail__chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    margin: 0.65rem 0;
+  }
+
+  .stats-detail__label {
+    margin-right: 0.3rem;
+  }
+
+  .stats-detail__chip {
+    min-width: 2rem;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid rgba($brightBlue, 0.2);
+    border-radius: 999px;
+    background-color: #fff;
+    color: $darkBlue;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .stats-detail__results,
+  .stats-detail__games {
+    margin-top: 1rem;
+
+    h4 {
+      margin: 0 0 0.55rem;
+      color: $darkBlue;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  }
+
+  .stats-detail__scroll {
+    overflow-x: auto;
+    border: 1px solid $borderColor;
+    border-radius: $radius;
+    background-color: #fff;
+
+    table {
+      width: 100%;
+      min-width: 38rem;
+      margin: 0;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    th,
+    td {
+      padding: 0.45rem 0.6rem;
+      border-bottom: 1px solid $borderColor;
+      white-space: nowrap;
+    }
+
+    thead th {
+      background-color: $darkBlue;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    // the row hover of the surrounding .stats-table must not recolor the header
+    thead tr:hover > th {
+      background-color: $darkBlue;
+    }
+
+    tbody th {
+      color: $darkBlue;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    tr:last-child > * {
+      border-bottom: 0;
+    }
+
+    td small {
+      display: block;
+      color: $textMuted;
+      font-size: 0.65rem;
+    }
+
+    .stats-result--medium {
+      background-color: #e7f2f8;
+    }
+
+    .stats-result--high {
+      background-color: #d2e8f4;
+    }
+  }
+
+  .stats-detail__games ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .stats-game {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.2rem 0.6rem;
+    min-width: 0;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid $borderColor;
+    border-left: 3px solid $steel;
+    border-radius: $radius;
+    background-color: #fff;
+
+    &--win {
+      border-left-color: #16835d;
+    }
+
+    &--loss {
+      border-left-color: #bb4945;
+    }
+
+    time {
+      color: $textMuted;
+      font-size: 0.72rem;
+    }
+
+    &__type {
+      color: $textMuted;
+      font-size: 0.72rem;
+      text-align: right;
+    }
+
+    &__opponents {
+      overflow: hidden;
+      color: $textColor;
+      font-size: 0.8rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__score {
+      color: $darkBlue;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    small {
+      grid-column: 1 / -1;
+      overflow: hidden;
+      color: $textMuted;
+      font-size: 0.68rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .stats-detail__empty {
+    margin: 0.5rem 0 0;
+    color: $textMuted;
+    font-size: 0.85rem;
   }
 
   .stats-player__info {
@@ -365,6 +701,43 @@ $statsBronze: #b5733c;
 
     .stats-table .stats-player {
       min-width: 12rem;
+    }
+
+    .stats-detail__panel {
+      padding: 1rem 0.75rem;
+    }
+
+    .stats-detail__heading {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .stats-detail__summary,
+    .stats-detail__facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stats-game {
+      grid-template-columns: 1fr auto;
+
+      time {
+        grid-column: 1;
+      }
+
+      &__type {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      &__opponents {
+        grid-column: 1;
+      }
+
+      &__score {
+        grid-column: 2;
+        grid-row: 2;
+      }
     }
   }
 }
